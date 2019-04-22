@@ -1,16 +1,7 @@
-# test-dotgov-components
+# dotgov-components
 
-[![Travis][build-badge]][build]
-[![npm package][npm-badge]][npm]
-[![Coveralls][coveralls-badge]][coveralls]
+[![Build Status](https://travis-ci.org/baltimorecounty/dotgov-components.svg?branch=integration)](https://travis-ci.org/baltimorecounty/dotgov-components)
+[![npm version](https://badge.fury.io/js/%40baltimorecounty%2Fdotgov-components.svg)](https://badge.fury.io/js/%40baltimorecounty%2Fdotgov-components)
+[![Coverage Status](https://coveralls.io/repos/github/baltimorecounty/dotgov-components/badge.svg?branch=integration)](https://coveralls.io/github/baltimorecounty/dotgov-components?branch=integration)
 
-Describe test-dotgov-components here.
-
-[build-badge]: https://img.shields.io/travis/user/repo/master.png?style=flat-square
-[build]: https://travis-ci.org/user/repo
-
-[npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
-[npm]: https://www.npmjs.org/package/npm-package
-
-[coveralls-badge]: https://img.shields.io/coveralls/user/repo/master.png?style=flat-square
-[coveralls]: https://coveralls.io/github/user/repo
+UI design system for Baltimore County's primary [website](https://www.baltimorecountymd.gov).
