@@ -31,7 +31,7 @@
   "author": "",
   "homepage": "",
   "license": "MIT",
-  "repository": "",
+  "repository": "https://github.com/baltimorecounty/dotgov-components.git",
   "keywords": [
     "react-component"
   ]
