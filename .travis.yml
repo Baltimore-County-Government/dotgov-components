@@ -16,4 +16,10 @@ branches:
     - integration
     - master
 
-deploy:
+provider: pages
+  skip_cleanup: true
+  github_token: $github_token  # Set in the settings page of your repository in the travis ci
+  keep_history: true
+  local_dir: styleguide
+  on:
+    branch: master
