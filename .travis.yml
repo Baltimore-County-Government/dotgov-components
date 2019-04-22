@@ -13,4 +13,5 @@ after_success:
 
 branches:
   only:
+    - integration
     - master
