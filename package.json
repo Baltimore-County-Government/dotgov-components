@@ -19,7 +19,9 @@
     "test:coverage": "nwb test-react --coverage",
     "test:watch": "nwb test-react --server",
     "styleguide": "styleguidist server",
-    "styleguide:build": "styleguidist build"
+    "styleguide:build": "styleguidist build",
+    "predeploy": "npm run-script styleguide:build",
+    "deploy": "gh-pages -d styleguide"
   },
   "dependencies": {},
   "peerDependencies": {
