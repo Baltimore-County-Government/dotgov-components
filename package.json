@@ -37,7 +37,7 @@
     "webpack": "^4.30.0"
   },
   "author": "",
-  "homepage": "",
+  "homepage": "https://github.com/baltimorecounty/dotgov-components",
   "license": "MIT",
   "repository": "https://github.com/baltimorecounty/dotgov-components.git",
   "keywords": [
