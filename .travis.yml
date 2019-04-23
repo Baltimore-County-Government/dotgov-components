@@ -15,6 +15,7 @@ branches:
   only:
     - integration
     - master
+    - gh-pages
 
 deploy:
   provider: pages
