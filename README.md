@@ -19,5 +19,3 @@ Runs tests for the project. If you wish to watch the tests, use the watch comman
 ### `npm start`
 
 Runs the demo app. Currently we aren't using this app in favor of a styleguide
-
-tset
