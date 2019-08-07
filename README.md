@@ -15,3 +15,7 @@ _Note_: When adding a markdown file for a component you will need to restart.
 ### `npm run test` and `npm run-script test:watch`
 
 Runs tests for the project. If you wish to watch the tests, use the watch command.
+
+### `npm start`
+
+Runs the demo app. Currently we aren't using this app in favor of a styleguide
