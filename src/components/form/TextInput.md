@@ -55,23 +55,3 @@ If you aren't using react, you'll need to use the following html:
         type="text">
 </div>
 ```
-
-### Validate
-
-In order to see the validation,
-
-```jsx
-const fullNameValidator = val => !val
-    ? "Enter your full name"
-    : (
-        val.length < 3
-        ? "Full name must contain at least three characters."
-        : null
-      );
-<TextInput
-    id="full-name-hint"
-    hint="Must contain at least two words with a space between each word."
-    label="Full Name"
-    placeholder="Enter your full name"
-    validate={fullNameValidator} />
-```
