@@ -7,6 +7,5 @@ describe('Text Input', () => {
 		const div = document.createElement('div');
 		ReactDOM.render(<TextInput id="full-name" label="Name" />, div);
 		ReactDOM.unmountComponentAtNode(div);
-		expect(true).toEqual(false);
 	});
 });
