@@ -1,0 +1,27 @@
+* {
+  font-family: $default-body-font;
+  font-size: 16px;
+}
+
+input,
+textarea,
+p {
+  font-family: $default-body-font;
+}
+
+h1,
+h2,
+h3,
+.dg_label,
+.dg_icon-button {
+  font-family: $default-heading-font;
+}
+
+.dg_label {
+  font-weight: 600; //TODO: move to variable
+}
+
+@include placeholder {
+  font-family: $default-body-font;
+  font-style: italic;
+}

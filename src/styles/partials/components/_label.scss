@@ -1,0 +1,13 @@
+.dg_label {
+  .dg_label-hint,
+  .dg_label-validation {
+    margin-top: $default-margin;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .dg_label-hint {
+  }
+  .dg_label-validation {
+    color: $red;
+  }
+}

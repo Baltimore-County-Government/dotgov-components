@@ -1,0 +1,11 @@
+.dg_form-field {
+  input,
+  label,
+  label > span {
+    display: block;
+  }
+
+  label {
+    margin-bottom: $default-margin;
+  }
+}
