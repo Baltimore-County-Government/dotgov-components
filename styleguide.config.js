@@ -1,5 +1,14 @@
+const path = require("path");
 module.exports = {
-  components: "src/**/[A-Z]*.js",
-  ignore: ["src/**/*.test.js", "src/**/FormField.js"],
-  usageMode: "expand"
+  ignore: [
+    "**/components/**/*.test.js",
+    "**/components/**/index.js",
+    "**/components/Form/FormField.js"
+  ],
+  usageMode: "expand",
+  require: [path.join(__dirname, "./src/App.scss")]
+//   ,
+//   webpackConfig: require("react-scripts/config/webpack.config")(
+//     "development"
+//   ) /** Workaround - https://github.com/styleguidist/react-styleguidist/issues/1247 */
 };
