@@ -6,15 +6,9 @@ const TextInput = (props) => {
 	const [ error, setError ] = useState('');
 	const { id, hint, label, validate, ...otherProps } = props;
 
-	const handleKeyup = (keyUpEvent) => {
-		const { value } = keyUpEvent.currentTarget;
-		const error = validate(value);
-		setError(error);
-	};
-
 	return (
 		<FormField id={id} hint={hint} label={label} error={error}>
-			<input id={id} className="dg_form-field_input--text" {...otherProps} onKeyUp={handleKeyup} />
+			<input id={id} className="dg_form-field_input--text" {...otherProps} />
 		</FormField>
 	);
 };
