@@ -3,6 +3,7 @@
 [![Build Status](https://travis-ci.org/baltimorecounty/dotgov-components.svg?branch=integration)](https://travis-ci.org/baltimorecounty/dotgov-components)
 [![npm version](https://badge.fury.io/js/%40baltimorecounty%2Fdotgov-components.svg)](https://badge.fury.io/js/%40baltimorecounty%2Fdotgov-components)
 [![codecov](https://codecov.io/gh/baltimorecounty/dotgov-components/branch/integration/graph/badge.svg)](https://codecov.io/gh/baltimorecounty/dotgov-components)
+[![BCH compliance](https://bettercodehub.com/edge/badge/baltimorecounty/dotgov-components?branch=integration)](https://bettercodehub.com/)
 
 UI design system for Baltimore County's primary [website](https://www.baltimorecountymd.gov).
 
@@ -19,5 +20,3 @@ Runs tests for the project. If you wish to watch the tests, use the watch comman
 ### `npm start`
 
 Runs the demo app. Currently we aren't using this app in favor of a styleguide
-
-test
