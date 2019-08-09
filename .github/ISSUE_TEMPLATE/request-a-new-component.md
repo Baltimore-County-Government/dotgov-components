@@ -29,6 +29,7 @@ Rule Based:
 
 - Rule 1
 - Rule 2
+...
 
 Scenario Based:
 
@@ -36,6 +37,8 @@ Scenario: User clears search terms via Escape key
 Given: User is actively using search field
 When: User clicks Escape Key
 Then: Search field values are emptied
+
+...repeat
 
 **Additional context**
 Add any other context or screenshots about the feature request here.
