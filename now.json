@@ -1,0 +1,11 @@
+{
+  "name": "dev-styleguide-deployment",
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "styleguide:build",
+      "config": { "distDir": "styleguide" }
+    }
+  ]
+}
