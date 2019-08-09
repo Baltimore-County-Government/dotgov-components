@@ -12,14 +12,14 @@
   ],
   "scripts": {
     "build": "styleguidist build",
-    "clean": "nwb clean-module && nwb clean-demo",
+    "build-demo": "nwb build-react-component",
+    "clean-demo": "nwb clean-module && nwb clean-demo",
+    "start-demo": "nwb serve-react-dem",
     "prepublishOnly": "npm run build",
     "start": "styleguidist server",
     "test": "nwb test-react",
     "test:coverage": "nwb test-react --coverage",
     "test:watch": "nwb test-react --server",
-    "styleguide": "styleguidist server",
-    "styleguide:build": "styleguidist build",
     "predeploy": "npm run-script styleguide:build",
     "deploy": "gh-pages -d styleguide --git git"
   },
