@@ -6,17 +6,16 @@ labels: new component
 assignees: ''
 
 ---
-## Component
 
-### Name
+## Component Name
 
 A clear and concise description of what the problem component is.
 
-### Description
+## Description
 
 Describe the requested behavior of the component
 
-### Required and optional properties
+## Required and optional properties
 
 An example of this would be a `<a href="/services" title="View county services"></a>` would require the `href` attribute and the `title` attribute is optional
 
