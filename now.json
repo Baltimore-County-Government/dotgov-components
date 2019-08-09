@@ -4,7 +4,7 @@
   "builds": [
     {
       "src": "package.json",
-      "use": "npm run-script styleguide:build",
+      "use": "@now/static-build",
       "config": { "distDir": "styleguide" }
     }
   ]
