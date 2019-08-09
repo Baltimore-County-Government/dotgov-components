@@ -4,7 +4,7 @@
   "builds": [
     {
       "src": "package.json",
-      "use": "styleguide:build",
+      "use": "npm run-script styleguide:build",
       "config": { "distDir": "styleguide" }
     }
   ]
