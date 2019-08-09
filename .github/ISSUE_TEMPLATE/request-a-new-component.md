@@ -33,10 +33,10 @@ Please include in the following format. In some cases you will not need both typ
 
 **Scenario Based**:
 
-Scenario: User clears search terms via Escape key
-Given: User is actively using search field
-When: User clicks Escape Key
-Then: Search field values are emptied
+**Scenario**: User clears search terms via Escape key
+**Given**: User is actively using search field
+**When**: User clicks Escape Key
+**Then**: Search field values are emptied
 
 ...repeat
 
