@@ -6,7 +6,6 @@ labels: new component
 assignees: ''
 
 ---
-
 **Please name the requested component**
 A clear and concise description of what the problem component is.
 
@@ -22,6 +21,24 @@ An example of this would be a `<a href="/services" title="View county services">
 
 **Example or Mockup**
 Include an example of the component from another site, or a mockup
+
+**Acceptance Criteria**
+Please include in the following format. In some cases you will not need both types.
+
+**Rule Based**:
+
+- Rule 1
+- Rule 2
+...
+
+**Scenario Based**:
+
+**Scenario**: User clears search terms via Escape key
+**Given**: User is actively using search field
+**When**: User clicks Escape Key
+**Then**: Search field values are emptied
+
+...repeat
 
 **Additional context**
 Add any other context or screenshots about the feature request here.
