@@ -15,7 +15,6 @@ branches:
   only:
     - integration
     - master
-    - gh-pages
 
 deploy:
   - provider: pages
@@ -23,9 +22,12 @@ deploy:
     github_token: $GITHUB_TOKEN
     keep_history: true
     local_dir: styleguide
+    script: npm run-script deploy
+    on:
+        branch: master
   - provider: npm
     email: "jepowell@baltimorecountymd.gov"
     api_key: $NPM_TOKEN
-  on:
-    tags: true
-    branch: master
+    on:
+        tags: true
+        branch: master
