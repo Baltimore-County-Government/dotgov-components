@@ -15,17 +15,17 @@ branches:
     - integration
     - master
     - gh-pages
-    - /(\d+\.)?(\d+\.)?(\*|\d+)/ # for tags
-
-before_deploy:
-    - npm install
-    - npm run-script build
+    - /^(\d+\.)?(\d+\.)?(\*|\d+)$/ # for tags
 
 deploy:
-  - provider: pages
-    skip_cleanup: true
-    github_token: $GITHUB_TOKEN
-    keep_history: true
+  - provider: script
+    script: npm run-script-build
+    on:
+        branch: master
+  - provider: script
+    script: npm install
+    on:
+        condition: branch =~ /^(\d+\.)?(\d+\.)?(\*|\d+)$/ # for tags
     local_dir: public
     on:
         branch: master
