@@ -27,5 +27,4 @@ deploy:
     email: "jepowell@baltimorecountymd.gov"
     api_key: $NPM_TOKEN
   on:
-    tags: true
     branch: master
