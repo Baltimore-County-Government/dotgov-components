@@ -1,5 +1,11 @@
+const path = require("path");
 module.exports = {
-  components: "src/**/[A-Z]*.js",
-  ignore: ["src/**/*.test.js", "src/**/FormField.js"],
-  usageMode: "expand"
+  ignore: [
+    "**/components/**/*.test.js",
+    "**/components/**/index.js",
+    "**/components/form/FormField.js"
+  ],
+  usageMode: "expand",
+  require: [path.join(__dirname, "./src/App.scss")],
+  styleguideDir: "public"
 };
