@@ -10,17 +10,15 @@ before_install:
 after_success:
   - npm run-script test
   - cat ./coverage/lcov.info | ./node_modules/codecov.io/bin/codecov.io.js
+  - npm run-script deploy
 
 branches:
   only:
     - integration
     - master
+    - gh-pages
 
 deploy:
-  - provider: script
-    script: npm run-script deploy
-    on:
-        branch: master
   - provider: pages
     skip_cleanup: true
     github_token: $GITHUB_TOKEN
