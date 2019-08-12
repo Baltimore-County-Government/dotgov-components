@@ -17,7 +17,7 @@ branches:
     - integration
     - master
     - gh-pages
-    - /v\d+\.\d+[a-z]/ # for tags
+    - /(\d+\.)?(\d+\.)?(\*|\d+)/ # for tags
 
 deploy:
   - provider: pages
