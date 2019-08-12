@@ -27,7 +27,7 @@ deploy:
     on:
         branch: master
   - provider: npm
-    email: "jepowell@baltimorecountymd.gov"
+    email: $NPM_EMAIL
     api_key: $NPM_TOKEN
     on:
         tags: true
