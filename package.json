@@ -1,6 +1,6 @@
 {
 	"name": "@baltimorecounty/dotgov-components",
-	"version": "0.0.8",
+	"version": "0.0.9",
 	"description": "UI design system for Baltimore County's primary [website](https://www.baltimorecountymd.gov).",
 	"main": "src/index.js",
 	"module": "es/index.js",
