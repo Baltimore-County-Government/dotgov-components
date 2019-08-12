@@ -8,9 +8,7 @@ before_install:
   - npm install codecov.io
 
 after_success:
-  - npm run-script test
   - cat ./coverage/lcov.info | ./node_modules/codecov.io/bin/codecov.io.js
-  - npm run-script deploy
 
 branches:
   only:
@@ -19,16 +17,10 @@ branches:
     - gh-pages
 
 deploy:
-  - provider: pages
+    provider: pages
     skip_cleanup: true
     github_token: $GITHUB_TOKEN
     keep_history: true
     local_dir: styleguide
     on:
-        branch: master
-  - provider: npm
-    email: "jepowell@baltimorecountymd.gov"
-    api_key: $NPM_TOKEN
-    on:
-        tags: true
         branch: master
