@@ -1,10 +1,15 @@
 {
 	"name": "@baltimorecounty/dotgov-components",
-	"version": "0.0.6",
+	"version": "0.0.10",
 	"description": "UI design system for Baltimore County's primary [website](https://www.baltimorecountymd.gov).",
-	"main": "lib/index.js",
+	"main": "src/index.js",
 	"module": "es/index.js",
-	"files": [ "css", "es", "lib", "umd" ],
+	"files": [
+		"css",
+		"es",
+		"lib",
+		"umd"
+	],
 	"scripts": {
 		"build": "styleguidist build",
 		"build-demo": "nwb build-react-component",
@@ -15,7 +20,7 @@
 		"test": "nwb test-react",
 		"test:coverage": "nwb test-react --coverage",
 		"test:watch": "nwb test-react --server",
-		"predeploy": "npm run-script styleguide:build",
+		"predeploy": "npm run-script build",
 		"deploy": "gh-pages -d styleguide --git git"
 	},
 	"dependencies": {},
@@ -40,8 +45,15 @@
 	"homepage": "https://github.com/baltimorecounty/dotgov-components",
 	"license": "MIT",
 	"repository": "https://github.com/baltimorecounty/dotgov-components.git",
-	"keywords": [ "react-component" ],
-	"browserslist": [ ">1%", "last 1 version", "Firefox ESR", "not dead" ],
+	"keywords": [
+		"react-component"
+	],
+	"browserslist": [
+		">1%",
+		"last 1 version",
+		"Firefox ESR",
+		"not dead"
+	],
 	"publishConfig": {
 		"access": "public"
 	}
