@@ -13,8 +13,8 @@ after_success:
 
 branches:
   only:
-    - integration
     - master
+    - integration
 
 deploy:
   - provider: pages
