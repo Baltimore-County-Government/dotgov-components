@@ -19,7 +19,7 @@ branches:
 
 deploy:
   - provider: script
-    script: npm run-script-build
+    script: npm run-script build
     on:
         branch: master
   - provider: script
