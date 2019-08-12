@@ -4,7 +4,12 @@
 	"description": "UI design system for Baltimore County's primary [website](https://www.baltimorecountymd.gov).",
 	"main": "lib/index.js",
 	"module": "es/index.js",
-	"files": [ "css", "es", "lib", "umd" ],
+	"files": [
+		"css",
+		"es",
+		"lib",
+		"umd"
+	],
 	"scripts": {
 		"build": "styleguidist build",
 		"build-demo": "nwb build-react-component",
@@ -40,8 +45,15 @@
 	"homepage": "https://github.com/baltimorecounty/dotgov-components",
 	"license": "MIT",
 	"repository": "https://github.com/baltimorecounty/dotgov-components.git",
-	"keywords": [ "react-component" ],
-	"browserslist": [ ">1%", "last 1 version", "Firefox ESR", "not dead" ],
+	"keywords": [
+		"react-component"
+	],
+	"browserslist": [
+		">1%",
+		"last 1 version",
+		"Firefox ESR",
+		"not dead"
+	],
 	"publishConfig": {
 		"access": "public"
 	}

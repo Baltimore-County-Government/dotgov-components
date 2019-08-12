@@ -17,12 +17,15 @@ branches:
     - master
 
 deploy:
+  - provider: script
+    script: npm run-script deploy
+    on:
+        branch: master
   - provider: pages
     skip_cleanup: true
     github_token: $GITHUB_TOKEN
     keep_history: true
     local_dir: styleguide
-    script: npm run-script deploy
     on:
         branch: master
   - provider: npm
