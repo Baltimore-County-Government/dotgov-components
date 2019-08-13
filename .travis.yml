@@ -37,13 +37,6 @@ deploy:
     on:
         branch: master
 
-  # generate css for npm
-  - provider: script
-    skip_cleanup: true
-    script: npm run-script generate-css
-    on:
-        tags: true # will trigger on a github release
-
   # publish package to npm
   - provider: npm
     skip_cleanup: true
