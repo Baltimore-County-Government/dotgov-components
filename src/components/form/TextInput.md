@@ -27,6 +27,35 @@ If you aren't using react, you'll need to use the following html:
 </div>
 ```
 
+### Email Input
+
+```jsx
+<TextInput
+    id="email"
+    label="Email"
+	placeholder="Enter your primary email address"
+	type="email"
+	required />
+```
+
+If you aren't using react, you'll need to use the following html:
+
+```html
+<div class="dg_form-field">
+    <label
+        for="email"
+        class="dg_label">
+        <span class="dg_label-text">Full Name</span>
+    </label>
+    <input
+        id="email"
+        class="dg_form-field_input--text"
+        label="Email"
+        placeholder="Enter your primary email address"
+        type="email">
+</div>
+```
+
 ### With Hint
 
 ```jsx
