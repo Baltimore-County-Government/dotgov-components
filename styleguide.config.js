@@ -6,6 +6,6 @@ module.exports = {
     "**/components/form/FormField.js"
   ],
   usageMode: "expand",
-  require: [path.join(__dirname, "./src/App.scss")],
+  require: [path.join(__dirname, "./src/dotgov.scss")],
   styleguideDir: "public"
 };

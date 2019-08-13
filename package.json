@@ -1,8 +1,8 @@
 {
 	"name": "@baltimorecounty/dotgov-components",
-	"version": "0.0.10",
+	"version": "0.0.11",
 	"description": "UI design system for Baltimore County's primary [website](https://www.baltimorecountymd.gov).",
-	"main": "src/index.js",
+	"main": "lib/index.js",
 	"module": "es/index.js",
 	"files": [
 		"css",
@@ -15,17 +15,19 @@
 		"build-demo": "nwb build-react-component",
 		"clean-demo": "nwb clean-module && nwb clean-demo",
 		"start-demo": "nwb serve-react-dem",
-		"prepublishOnly": "npm run build",
+		"prepublishOnly": "npm run build-demo",
 		"start": "styleguidist server",
 		"test": "nwb test-react",
 		"test:coverage": "nwb test-react --coverage",
 		"test:watch": "nwb test-react --server",
 		"predeploy": "npm run-script build",
-		"deploy": "gh-pages -d styleguide --git git"
+		"deploy": "gh-pages -d styleguide --git git",
+		"generate-css": "node-sass --include-path src src/dotgov.scss   lib/styles/dotgov.min.css --output-style compressed"
 	},
 	"dependencies": {},
 	"peerDependencies": {
-		"react": "16.x"
+		"react": "16.x",
+		"react-dom": "16.x"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.4.3",
@@ -35,8 +37,8 @@
 		"gh-pages": "^2.1.0",
 		"node-sass": "^4.12.0",
 		"nwb": "0.23.x",
-		"react": "^16.8.6",
-		"react-dom": "^16.8.6",
+		"react": "^16.9.0",
+		"react-dom": "^16.9.0",
 		"react-styleguidist": "^9.1.13",
 		"sass-loader": "^7.1.0",
 		"webpack": "^4.39.1"
