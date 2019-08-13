@@ -21,11 +21,14 @@ before_deploy:
     - npm install
 
 deploy:
+  # build the style guide
   - provider: script
     skip_cleanup: true
     script: npm run-script build
     on:
         branch: master
+
+  # push latest style guide to github pages
   - provider: pages
     skip_cleanup: true
     github_token: $GITHUB_TOKEN
@@ -33,9 +36,18 @@ deploy:
     local_dir: public
     on:
         branch: master
+
+  # generate css for npm
+  - provider: script
+    skip_cleanup: true
+    script: npm run-script generate-css
+    on:
+        tags: true # will trigger on a github release
+
+  # publish package to npm
   - provider: npm
     skip_cleanup: true
     email: $NPM_EMAIL
     api_key: $NPM_TOKEN
     on:
-        tags: true
+        tags: true # will trigger on a github release
