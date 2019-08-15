@@ -22,7 +22,8 @@
 		"test:watch": "nwb test-react --server",
 		"predeploy": "npm run-script build",
 		"deploy": "gh-pages -d styleguide --git git",
-		"generate-css": "node-sass --include-path src src/dotgov.scss   lib/styles/dotgov.min.css --output-style compressed"
+		"generate-css": "node-sass --include-path src src/dotgov.scss   lib/styles/dotgov.min.css --output-style compressed",
+		"test-jest": "jest"
 	},
 	"dependencies": {},
 	"peerDependencies": {
@@ -31,15 +32,19 @@
 	},
 	"devDependencies": {
 		"@babel/core": "^7.4.3",
-		"@babel/preset-env": "^7.4.3",
+		"@babel/preset-env": "^7.5.5",
 		"@babel/preset-react": "^7.0.0",
+		"@testing-library/react": "^9.1.1",
+		"babel-jest": "^24.8.0",
 		"babel-loader": "^8.0.5",
 		"gh-pages": "^2.1.0",
+		"jest": "^24.8.0",
 		"node-sass": "^4.12.0",
 		"nwb": "0.23.x",
 		"react": "^16.9.0",
 		"react-dom": "^16.9.0",
 		"react-styleguidist": "^9.1.13",
+		"react-test-renderer": "^16.9.0",
 		"sass-loader": "^7.1.0",
 		"webpack": "^4.39.1"
 	},
@@ -58,5 +63,11 @@
 	],
 	"publishConfig": {
 		"access": "public"
+	},
+	"jest": {
+		"transform": {
+			"^.+\\.jsx$": "babel-jest",
+			"^.+\\.js$": "babel-jest"
+		}
 	}
 }
