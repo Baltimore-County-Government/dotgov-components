@@ -1,4 +1,4 @@
-Bootstraps mobile-first flexbox grid system. See their docs for [usage](https://getbootstrap.com/docs/4.3/layout/grid/).
+We use Bootstrap 4's mobile-first flexbox grid system. See their docs for [usage](https://getbootstrap.com/docs/4.3/layout/grid/).
 
 ### Basic Example
 
