@@ -7,15 +7,18 @@ module.exports = {
 	sections: [
 		{
 			name: 'Foundation',
-			content: 'src/docs/Foundation.md'
+			content: 'src/docs/Foundation.md',
+			components: 'src/components/foundation/**/*.js'
 		},
 		{
 			name: 'Components',
+			content: 'src/docs/Components.md',
 			components: 'src/components/basic/**/*.js',
 			ignore: [ '**/*FormField.js' ]
 		},
 		{
 			name: 'Template Elements',
+			content: 'src/docs/TemplateElements.md',
 			components: 'src/components/template/**/*.js'
 		}
 	]
