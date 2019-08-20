@@ -7,6 +7,7 @@
 @import "./styles/mixins/placeholder";
 
 /** Base */
+@import "./styles/partials/base/grid";
 @import "./styles/partials/base/reset";
 @import "./styles/partials/base/typography";
 
@@ -19,5 +20,5 @@
 @import "./styles/partials/components/icon-button";
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
