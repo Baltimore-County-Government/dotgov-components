@@ -4,11 +4,17 @@ module.exports = {
 	usageMode: 'expand',
 	require: [ path.join(__dirname, './src/dotgov.scss') ],
 	styleguideDir: 'public',
+	skipComponentsWithoutExample: true,
 	sections: [
 		{
 			name: 'Foundation',
 			content: 'src/docs/Foundation.md',
-			components: 'src/components/foundation/**/*.js'
+			sections: [
+				{
+					name: 'Grid',
+					content: 'src/components/foundation/Grid.md'
+				}
+			]
 		},
 		{
 			name: 'Components',
