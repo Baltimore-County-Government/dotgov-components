@@ -1,0 +1,26 @@
+table {
+    border: 1px solid $lgt-gry;
+    border-collapse: collapse;
+    color: $black;
+    font-family: $default-heading-font;
+    font-size: 16px;
+    text-align: left;
+    width: 100%;
+
+    td {
+        border-bottom: 1px solid $lgt-gry;
+        padding: 10px;
+    }
+
+    thead {
+
+        th {
+            background-color: $white;
+            border-bottom: 5px solid $old-bay-blue;
+            font-size: 18px;
+            font-weight: $font-bold;
+            padding: 10px;
+        }
+
+    }
+}
