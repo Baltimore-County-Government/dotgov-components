@@ -1,4 +1,5 @@
 /** Variables */
+@import "./styles/variables/border";
 @import "./styles/variables/colors";
 @import "./styles/variables/fonts";
 @import "./styles/variables/spacing"; /** contains padding and margin variables */
@@ -9,6 +10,7 @@
 /** Base */
 @import "./styles/partials/base/reset";
 @import "./styles/partials/base/typography";
+@import "./styles/partials/base/state";
 
 /** partials */
 
@@ -19,5 +21,5 @@
 @import "./styles/partials/components/icon-button";
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
