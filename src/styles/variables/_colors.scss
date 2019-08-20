@@ -28,12 +28,13 @@ $pale-blue-darkest: mix(black, $pale-blue, $default-lightest-ratio);
 /* Does not contain any shades */
 $vibrant-blue: #1076bc;
 
+$gray-lightest-ratio: 95%;
 $gray-light-ratio: 60%;
 
 $gray: #666;
-$gray-lightest: mix(white, $gray, 95%);
+$gray-lightest: mix(white, $gray, $gray-lightest-ratio);
 $gray-light: mix(white, $gray, $gray-light-ratio);
 $gray-dark: mix(black, $gray, $gray-light-ratio);
-$gray-darkest: mix(black, $gray, 100%);
+$gray-darkest: mix(black, $gray, $gray-lightest-ratio);
 $black: black;
 $white: white;
