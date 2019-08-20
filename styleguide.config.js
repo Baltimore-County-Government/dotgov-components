@@ -11,8 +11,16 @@ module.exports = {
 			content: 'src/docs/Foundation.md',
 			sections: [
 				{
+					name: 'Colors',
+					content: 'src/components/foundation/Colors.md'
+				},
+				{
 					name: 'Grid',
 					content: 'src/components/foundation/Grid.md'
+				},
+				{
+					name: 'Typography',
+					content: 'src/components/foundation/Typography.md'
 				}
 			]
 		},
