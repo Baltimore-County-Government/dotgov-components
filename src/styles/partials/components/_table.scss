@@ -1,5 +1,5 @@
 table {
-    border: 1px solid $lgt-gry;
+    border: 1px solid #c2c2c2;
     border-collapse: collapse;
     color: $black;
     font-family: $default-heading-font;
@@ -8,7 +8,7 @@ table {
     width: 100%;
 
     td {
-        border-bottom: 1px solid $lgt-gry;
+        border-bottom: 1px solid #c2c2c2;
         padding: 10px;
     }
 
