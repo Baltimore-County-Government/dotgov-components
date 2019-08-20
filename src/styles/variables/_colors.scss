@@ -38,3 +38,38 @@ $gray-dark: mix(black, $gray, $gray-light-ratio);
 $gray-darkest: mix(black, $gray, $gray-lightest-ratio);
 $black: black;
 $white: white;
+
+/*
+  Sass Map for use with generating helper classes, this should be consistent with the variables above .
+  Names should match the classes you will export, this should not change.
+*/
+$colors: (
+	"gold": $gold,
+	"gold--lightest": $gold-lightest,
+	"gold--light": $gold-light,
+	"gold--dark": $gold-dark,
+	"gold--darkest": $gold-darkest,
+	"red": $red,
+	"red--lightest": $red-lightest,
+	"red--light": $red-light,
+	"red--dark": $red-dark,
+	"red--darkest": $red-darkest,
+	"blue": $blue,
+	"blue--lightest": $blue-lightest,
+	"blue--light": $blue-light,
+	"blue--dark": $blue-dark,
+	"blue--darkest": $blue-darkest,
+	"pale-blue": $pale-blue,
+	"pale-blue--lightest": $pale-blue-lightest,
+	"pale-blue--light": $pale-blue-light,
+	"pale-blue--dark": $pale-blue-dark,
+	"pale-blue--darkest": $pale-blue-darkest,
+	"vibrant-blue": $vibrant-blue,
+	"gray": $gray,
+	"gray--lightest": $gray-lightest,
+	"gray--light": $gray-light,
+	"gray--dark": $gray-dark,
+	"gray--darkest": $gray-darkest,
+	"black": $black,
+	"white": $white
+);
