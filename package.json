@@ -4,12 +4,7 @@
 	"description": "UI design system for Baltimore County's primary [website](https://www.baltimorecountymd.gov).",
 	"main": "lib/index.js",
 	"module": "es/index.js",
-	"files": [
-		"css",
-		"es",
-		"lib",
-		"umd"
-	],
+	"files": [ "css", "es", "lib", "umd" ],
 	"scripts": {
 		"build": "styleguidist build",
 		"build-demo": "nwb build-react-component",
@@ -17,7 +12,7 @@
 		"start-demo": "nwb serve-react-dem",
 		"prepublishOnly": "echo \"Starting NPM Publish...\" && npm run build-demo && npm run-script generate-css",
 		"start": "styleguidist server",
-		"test": "nwb test-react",
+		"test": "jest",
 		"test:coverage": "nwb test-react --coverage",
 		"test:watch": "nwb test-react --server",
 		"predeploy": "npm run-script build",
@@ -31,15 +26,19 @@
 	},
 	"devDependencies": {
 		"@babel/core": "^7.4.3",
-		"@babel/preset-env": "^7.4.3",
+		"@babel/preset-env": "^7.5.5",
 		"@babel/preset-react": "^7.0.0",
+		"@testing-library/react": "^9.1.1",
+		"babel-jest": "^24.8.0",
 		"babel-loader": "^8.0.5",
 		"gh-pages": "^2.1.0",
+		"jest": "^24.8.0",
 		"node-sass": "^4.12.0",
 		"nwb": "0.23.x",
 		"react": "^16.9.0",
 		"react-dom": "^16.9.0",
 		"react-styleguidist": "^9.1.13",
+		"react-test-renderer": "^16.9.0",
 		"sass-loader": "^7.1.0",
 		"webpack": "^4.39.1"
 	},
@@ -47,16 +46,15 @@
 	"homepage": "https://github.com/baltimorecounty/dotgov-components",
 	"license": "MIT",
 	"repository": "https://github.com/baltimorecounty/dotgov-components.git",
-	"keywords": [
-		"react-component"
-	],
-	"browserslist": [
-		">1%",
-		"last 1 version",
-		"Firefox ESR",
-		"not dead"
-	],
+	"keywords": [ "react-component" ],
+	"browserslist": [ ">1%", "last 1 version", "Firefox ESR", "not dead" ],
 	"publishConfig": {
 		"access": "public"
+	},
+	"jest": {
+		"transform": {
+			"^.+\\.jsx$": "babel-jest",
+			"^.+\\.js$": "babel-jest"
+		}
 	}
 }
