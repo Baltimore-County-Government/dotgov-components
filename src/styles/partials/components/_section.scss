@@ -1,0 +1,11 @@
+.dg_section {
+	&.dark {
+		background: $pale-blue;
+		color: $white;
+
+		h2 {
+			border-bottom: $border-width-large solid $gold;
+			padding: 0 0 $default-padding * 3;
+		}
+	}
+}
