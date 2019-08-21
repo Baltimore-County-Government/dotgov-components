@@ -1,4 +1,5 @@
 /** Variables */
+@import "./styles/variables/border";
 @import "./styles/variables/colors";
 @import "./styles/variables/fonts";
 @import "./styles/variables/spacing"; /** contains padding and margin variables */
@@ -12,6 +13,7 @@
 @import "./styles/partials/base/grid";
 @import "./styles/partials/base/reset";
 @import "./styles/partials/base/typography";
+@import "./styles/partials/base/state";
 
 /** partials */
 
