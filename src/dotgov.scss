@@ -18,10 +18,15 @@
 /** partials */
 
 /** components */
+@import "./styles/partials/components/section";
 @import "./styles/partials/components/form";
 @import "./styles/partials/components/label";
 @import "./styles/partials/components/input";
 @import "./styles/partials/components/icon-button";
+
+/** template */
+@import "./styles/partials/template/subpage";
+@import "./styles/partials/template/sidebar";
 
 * {
 	box-sizing: border-box;
