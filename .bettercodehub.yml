@@ -1,2 +1,2 @@
 exclude:
-- /*.js
+- /*.js # root js files are config files
