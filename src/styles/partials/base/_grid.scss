@@ -1,0 +1,7 @@
+$grid-breakpoints: (xs: 0, sm: 576px, md: 768px);
+
+/* OVERRIDES */
+$container-max-widths: (sm: 576px, md: 1400px);
+
+@import '../node_modules/bootstrap/scss/bootstrap-grid.scss';
+@import '../node_modules/bootstrap/scss/utilities/sizing.scss';

@@ -1,3 +1,1 @@
-# Typography
-
 Placeholder for documentation

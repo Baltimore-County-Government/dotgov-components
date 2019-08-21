@@ -1,3 +1,1 @@
-# Colors
-
 Placeholder for documentation
