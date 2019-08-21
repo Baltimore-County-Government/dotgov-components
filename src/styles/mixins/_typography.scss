@@ -1,0 +1,4 @@
+@mixin alt-h2-heading($color) {
+	border-bottom: $border-width-large solid $color;
+	padding: 0 0 $padding-large;
+}

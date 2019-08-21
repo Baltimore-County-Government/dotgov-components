@@ -24,7 +24,9 @@
 		"deploy": "gh-pages -d styleguide --git git",
 		"generate-css": "node-sass --include-path src src/dotgov.scss   lib/styles/dotgov.min.css --output-style compressed"
 	},
-	"dependencies": {},
+	"dependencies": {
+		"classnames": "^2.2.6"
+	},
 	"peerDependencies": {
 		"react": "16.x",
 		"react-dom": "16.x"

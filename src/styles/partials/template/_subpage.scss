@@ -1,0 +1,5 @@
+.subpage {
+	h2 {
+		@include alt-h2-heading($blue);
+	}
+}

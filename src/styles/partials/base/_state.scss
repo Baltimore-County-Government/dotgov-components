@@ -1,3 +1,5 @@
-:focus {
-	border: 2px solid $vibrant-blue;
+:focus,
+.focused {
+	outline: 2px solid $vibrant-blue;
+	outline-offset: 2px;
 }
