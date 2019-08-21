@@ -36,6 +36,7 @@ const Color = (props) => {
 		borderBottom: shouldAddBorder ? '1px solid lightgray' : 'none'
 	};
 
+	/** Get Hex Values based on the elements background color */
 	useEffect(() => {
 		const newShadeHexes = { ...shadeHexes };
 		shadeReferences.forEach((shadeRef) => {
