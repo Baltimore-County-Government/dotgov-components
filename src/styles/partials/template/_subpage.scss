@@ -1,6 +1,5 @@
 .subpage {
 	h2 {
-		border-bottom: $border-width-large solid $blue;
-		padding: 0 0 $padding-large;
+		@include alt-heading($blue);
 	}
 }

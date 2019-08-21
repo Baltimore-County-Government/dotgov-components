@@ -4,8 +4,7 @@
 		color: $white;
 
 		h2 {
-			border-bottom: $border-width-large solid $gold;
-			padding: 0 0 $default-padding * 3;
+			@include alt-heading($gold);
 		}
 
 		p {
