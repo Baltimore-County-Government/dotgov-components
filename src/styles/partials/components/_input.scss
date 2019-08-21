@@ -7,3 +7,7 @@ textarea {
 	padding: $default-padding;
 	width: 100%;
 }
+
+textarea {
+	min-height: 8em;
+}
