@@ -19,7 +19,7 @@ const BodyExample = (props) => {
 					<span style={titleStyles}>Normal Paragraph</span>
 					<p>
 						This is normal paragraph text. The font used for normal paragraph text is Crimson Text at a font
-						size of 22 pixels and a line height of 40 pixels. The font color is, #333.{' '}
+						size of 22 pixels and a line height of 40 pixels. The font color is, #292929.{' '}
 						<a href="#">Links are underlined with a color of #002280</a>.
 					</p>
 				</div>
@@ -27,7 +27,7 @@ const BodyExample = (props) => {
 					<span style={titleStyles}>Normal Paragraph - Sidebar (Right column on desktop)</span>
 					<p>
 						This is normal paragraph text. The font used for normal paragraph text is Crimson Text at a font
-						size of 22 pixels and a line height of 40 pixels. The font color is, #333.{' '}
+						size of 22 pixels and a line height of 40 pixels. The font color is, #292929.{' '}
 						<a href="#">Links are underlined with a color of #002280</a>.
 					</p>
 				</div>
