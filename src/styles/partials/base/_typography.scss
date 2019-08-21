@@ -1,27 +1,57 @@
 * {
-  font-family: $default-body-font;
-  font-size: $base-font-size;
+	font-family: $default-body-font;
+	font-size: $base-font-size;
 }
 
 input,
 textarea,
 p {
-  font-family: $default-body-font;
+	font-family: $default-body-font;
 }
 
 h1,
 h2,
 h3,
+h4,
+h5,
+h6,
 .dg_label,
 .dg_icon-button {
-  font-family: $default-heading-font;
+	font-family: $default-heading-font;
+	font-weight: $font-bold;
+	letter-spacing: 0;
+	text-transform: uppercase;
+}
+
+h1 {
+	font-size: $h1-font-size;
+}
+
+h2 {
+	font-size: $h2-font-size;
+}
+
+h3 {
+	font-size: $h3-font-size;
+}
+
+h4,
+h5,
+h6 {
+	font-size: $small-heading-font-size;
+}
+
+.subpage {
+	h2 {
+		border-bottom: $border-width-large solid;
+	}
 }
 
 .dg_label {
-  font-weight: 600; //TODO: move to variable
+	font-weight: 600; //TODO: move to variable
 }
 
 @include placeholder {
-  font-family: $default-body-font;
-  font-style: italic;
+	font-family: $default-body-font;
+	font-style: italic;
 }
