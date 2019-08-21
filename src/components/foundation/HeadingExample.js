@@ -1,5 +1,4 @@
 import React from 'react';
-import Section from '../basic/containers/Section';
 
 const headingExampleStyles = {
 	borderTop: '1px solid lightgray',
