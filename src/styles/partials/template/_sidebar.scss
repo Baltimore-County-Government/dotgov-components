@@ -1,0 +1,25 @@
+.sidebar {
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	a,
+	li,
+	p {
+		font-family: $default-heading-font;
+		font-size: $smallest-heading-font-size;
+		font-weight: $font-medium;
+	}
+
+	h2 {
+		border: none;
+		letter-spacing: 10px;
+		font-weight: $font-bold;
+	}
+
+	p {
+		line-height: 30px;
+	}
+}
