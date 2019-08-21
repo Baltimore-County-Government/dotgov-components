@@ -1,12 +1,36 @@
-* {
+body {
 	font-family: $default-body-font;
 	font-size: $base-font-size;
+	line-height: 1.5;
 }
 
 input,
 textarea,
 p {
+	color: $gray-dark;
+	font-size: $base-font-size;
 	font-family: $default-body-font;
+}
+
+a {
+	color: $blue;
+
+	&:hover,
+	&:focus,
+	&.hovered,
+	&.focused {
+		color: $vibrant-blue;
+	}
+
+	&:active,
+	&.active {
+		color: $pale-blue;
+	}
+
+	&:disabled,
+	&.disabled {
+		color: $pale-blue-lightest;
+	}
 }
 
 h1,
@@ -41,14 +65,8 @@ h6 {
 	font-size: $small-heading-font-size;
 }
 
-.subpage {
-	h2 {
-		border-bottom: $border-width-large solid;
-	}
-}
-
 .dg_label {
-	font-weight: 600; //TODO: move to variable
+	font-weight: $font-medium;
 }
 
 @include placeholder {
