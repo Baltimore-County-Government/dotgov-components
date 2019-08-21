@@ -4,7 +4,7 @@
 		color: $white;
 
 		h2 {
-			@include alt-heading($gold);
+			@include alt-h2-heading($gold);
 		}
 
 		p {
