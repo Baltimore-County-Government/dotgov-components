@@ -11,7 +11,7 @@ If you aren't using react, you'll need to use the following html:
     <label
         for="problem-description"
         class="dg_label">
-        <span class="dg_label-text">Describe your problem/span>
+        <span class="dg_label-text">Describe your problem</span>
     </label>
     <textarea
         id="problem-description"
