@@ -27,8 +27,7 @@ module.exports = {
 		{
 			name: 'Components',
 			content: 'src/docs/Components.md',
-			components: 'src/components/basic/**/*.js',
-			ignore: [ '**/*FormField.js' ]
+			components: 'src/components/basic/**/*.js'
 		},
 		{
 			name: 'Template Elements',
