@@ -2,6 +2,41 @@
 
 ### Basic
 
+```jsx
+import Table from "./Table";
+import TableBody from "./TableBody";
+import TableCell from "./TableCell";
+import TableHead from "./TableHead";
+import TableHeadCell from "./TableHeadCell";
+import TableRow from "./TableRow";
+<Table>
+  <TableHead>
+    <TableRow>
+      <TableHeadCell>Breakfast</TableHeadCell>
+      <TableHeadCell>Lunch</TableHeadCell>
+      <TableHeadCell>Dinner</TableHeadCell>
+    </TableRow>
+  </TableHead>
+  <TableBody>
+    <TableRow>
+      <TableCell>Breakfast Pizza™</TableCell>
+      <TableCell>Lemon Salad</TableCell>
+      <TableCell>Steamed Hams</TableCell>
+    </TableRow>
+    <TableRow>
+      <TableCell>Gummy Worms</TableCell>
+      <TableCell>Lunch Pizza™</TableCell>
+      <TableCell>An Entire Can of Beans</TableCell>
+    </TableRow>
+    <TableRow>
+      <TableCell>Leftover Toast</TableCell>
+      <TableCell>Grilled Cheese</TableCell>
+      <TableCell>Dinner Pizza™</TableCell>
+    </TableRow>
+  </TableBody>
+</Table>;
+```
+
 If you aren't using react, you'll need to use the following html:
 
 ```html
