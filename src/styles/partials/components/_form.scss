@@ -1,11 +1,12 @@
 .dg_form-field {
-  input,
-  label,
-  label > span {
-    display: block;
-  }
+	input,
+	label,
+	label > span {
+		display: block;
+	}
 
-  label {
-    margin-bottom: $default-margin;
-  }
+	label,
+	.dg_label {
+		margin-bottom: $default-margin;
+	}
 }
