@@ -40,7 +40,7 @@ import ListItem from './ListItem'
   	<ListItem>Item Two</ListItem>
   	<ListItem>Item Three</ListItem>
 	<ListItem>Item Four
-	  <List type="ordered">
+		<List>
 			<ListItem>Sub item One</ListItem>
 			<ListItem>Sub item Two</ListItem>
 		</List>
