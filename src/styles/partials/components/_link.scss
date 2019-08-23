@@ -1,0 +1,58 @@
+.dg_link-circle {
+	color: $black;
+	display: inline-block;
+	font-family: $default-heading-font;
+	font-weight: $font-bold;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+
+	i {
+		background: $gold;
+		color: $black;
+		border-radius: 50%;
+		display: inline-block;
+		line-height: 100px;
+		margin-bottom: $default-margin;
+		vertical-align: middle;
+	}
+
+	span {
+		display: block;
+	}
+
+	&:active,
+	&.active {
+		color: $pale-blue;
+
+		i {
+			background: $pale-blue;
+			color: white;
+		}
+	}
+
+	&:hover,
+	&.hovered {
+		color: $vibrant-blue;
+
+		i {
+			background: $vibrant-blue;
+			color: white;
+		}
+	}
+
+	&:focus,
+	&.focused {
+		color: black;
+	}
+
+	&:disabled,
+	&.disabled {
+		color: $gray-light;
+
+		i {
+			background: $gold-lightest;
+			color: $gray-light;
+		}
+	}
+}
