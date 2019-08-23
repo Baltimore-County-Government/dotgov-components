@@ -39,7 +39,6 @@ h3,
 h4,
 h5,
 h6,
-.dg_label,
 .dg_icon-button {
 	font-family: $default-heading-font;
 	font-weight: $font-bold;
@@ -63,10 +62,6 @@ h4,
 h5,
 h6 {
 	font-size: $small-heading-font-size;
-}
-
-.dg_label {
-	font-weight: $font-medium;
 }
 
 @include placeholder {
