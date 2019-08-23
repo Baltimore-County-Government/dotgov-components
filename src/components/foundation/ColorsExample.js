@@ -2,7 +2,7 @@ import React, { useRef, useState, useEffect } from 'react';
 
 const componentToHex = (c) => {
 	var hex = c.toString(16);
-	return hex.length == 1 ? '0' + hex : hex;
+	return hex.length === 1 ? '0' + hex : hex;
 };
 
 /* https://stackoverflow.com/a/51137753/1143670 */
@@ -15,20 +15,16 @@ const rgbaToArray = (rgbStr) => rgbStr.replace('rgb(', '').replace(')', '').spli
 
 const rgbToHex = (rgbStr) => {
 	const [ r, g, b ] = rgbaToArray(rgbStr);
+
+	if (isNaN(r)) {
+		return null;
+	}
+
 	return '#' + componentToHex(r) + componentToHex(g) + componentToHex(b);
 };
 
-const colorItemStyle = {
-	height: '100px',
-	width: '100px',
-	borderRadius: '50%',
-	marginBottom: '7.5px'
-};
-
-const bodyTextStyle = { fontWeight: '900', lineHeight: '1.4' };
-
 const Color = (props) => {
-	const { name, shouldAddBorder } = props;
+	const { name: color, shouldAddBorder } = props;
 	const shades = [ 'lightest', 'light', '', 'dark', 'darkest' ];
 	const shadeReferences = Array.from({ length: shades.length }, () => useRef(null));
 	const [ shadeHexes, setShadeHexes ] = useState({});
@@ -40,6 +36,7 @@ const Color = (props) => {
 		borderBottom: shouldAddBorder ? '1px solid lightgray' : 'none'
 	};
 
+	/** Get Hex Values based on the elements background color */
 	useEffect(() => {
 		const newShadeHexes = { ...shadeHexes };
 		shadeReferences.forEach((shadeRef) => {
@@ -48,27 +45,44 @@ const Color = (props) => {
 			const hex = rgbToHex(rgbaBackground);
 			const shade = ref.getAttribute('data-shade');
 
-			newShadeHexes[shade] = hex.toUpperCase();
+			newShadeHexes[shade] = hex ? hex.toUpperCase() : null;
 		});
 		setShadeHexes(newShadeHexes);
 	}, []);
 
 	return (
 		<div>
-			<h3 style={{ marginBottom: '10px', fontWeight: '900', fontSize: '22px' }}>{props.name}</h3>
+			<h3 style={{ marginBottom: '10px', fontWeight: '900', fontSize: '22px' }}>{color}</h3>
 			<div style={colorStyle}>
 				{shades.map((shadeName, shadeIndex) => {
 					const shade = shadeName || 'brand';
+					const hex = shadeHexes[shade];
+					const bodyTextStyle = {
+						fontWeight: '900',
+						lineHeight: '1.4'
+					};
+					const colorItemStyle = {
+						height: '100px',
+						width: '100px',
+						borderRadius: '50%',
+						marginBottom: '7.5px',
+						border: color.toLowerCase() === 'white' && hex ? '1px solid lightgray' : 'none'
+					};
+
 					return (
-						<div style={{ textAlign: 'center' }}>
+						<div key={`${color}-${shade}`} style={{ textAlign: 'center' }}>
 							<div
-								className={`dg_bg-${name}${shadeName ? `--${shadeName}` : ''}`}
+								className={`dg_bg-${color}${shadeName ? `--${shadeName}` : ''}`}
 								style={colorItemStyle}
 								data-shade={shade}
 								ref={shadeReferences[shadeIndex]}
 							/>
-							<p style={bodyTextStyle}>{shade}</p>
-							<p style={bodyTextStyle}>{shadeHexes[shade]}</p>
+							{hex && (
+								<React.Fragment>
+									<p style={bodyTextStyle}>{shade}</p>
+									<p style={bodyTextStyle}>{hex}</p>
+								</React.Fragment>
+							)}
 						</div>
 					);
 				})}
@@ -78,7 +92,7 @@ const Color = (props) => {
 };
 
 const ColorsExample = (props) => {
-	const colors = [ 'gold', 'red', 'blue', 'pale-blue', 'gray' ];
+	const colors = [ 'gold', 'red', 'blue', 'pale-blue', 'gray', 'vibrant-blue', 'black', 'white' ];
 	return (
 		<React.Fragment>
 			{colors.map((color, colorIndex) => (
