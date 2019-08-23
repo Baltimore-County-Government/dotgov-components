@@ -1,26 +1,88 @@
-table {
-    border: 1px solid #c2c2c2;
-    border-collapse: collapse;
+/* BASIC TABLE STYLES */
+.table {
+  border: 1px solid $gray-light;
+  border-collapse: collapse;
+  color: #4c4c4c;
+  font-family: $default-heading-font;
+  font-size: 16px;
+  text-align: left;
+  width: 100%;
+  td {
+    border-bottom: 1px solid $gray-light;
+    padding: 15px;
+  }
+  thead {
+    th {
+      background-color: $white;
+      border-bottom: 5px solid $blue;
+      border-left: none;
+      color: $black;
+      font-family: $default-heading-font;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 15px;
+    }
+  }
+  th {
+    border-bottom: 1px solid $gray-light;
+    border-left: 5px solid $blue;
     color: $black;
+    padding-left: 20px;
+  }
+  tbody {
+    tr {
+      &:nth-of-type(2n& + 1) {
+        background-color: $gray-lightest;
+      }
+      &:hover {
+        background-color: $gold-lightest;
+      }
+    }
+  }
+}
+
+/* BLUE TABLE STYLES */
+.dg_section.dark {
+  .table {
+    background-color: #243e5c;
+    border: 1px solid $gray-light;
+    border-collapse: collapse;
+    color: $white;
     font-family: $default-heading-font;
     font-size: 16px;
     text-align: left;
     width: 100%;
-
     td {
-        border-bottom: 1px solid #c2c2c2;
-        padding: 10px;
+      border-bottom: 1px solid $gray-light;
+      padding: 15px;
     }
-
     thead {
-
-        th {
-            background-color: $white;
-            border-bottom: 5px solid $old-bay-blue;
-            font-size: 18px;
-            font-weight: $font-bold;
-            padding: 10px;
-        }
-
+      th {
+        background-color: #243e5c;
+        border-bottom: 5px solid $pale-blue-lightest;
+        border-left: none;
+        color: $white;
+        font-family: $default-heading-font;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 15px;
+      }
     }
+    th {
+      border-bottom: 1px solid $gray-light;
+      border-left: 5px solid $pale-blue-lightest;
+      color: $white;
+      padding-left: 20px;
+    }
+    tbody {
+      tr {
+        &:nth-of-type(2n& + 1) {
+          background-color: $pale-blue-light;
+        }
+        &:hover {
+          background-color: $vibrant-blue;
+        }
+      }
+    }
+  }
 }
