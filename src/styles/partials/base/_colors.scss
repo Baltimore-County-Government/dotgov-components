@@ -1,0 +1,3 @@
+.dg_bg {
+	@include color-modifiers($attribute: 'background');
+}

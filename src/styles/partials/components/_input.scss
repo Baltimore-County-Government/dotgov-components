@@ -2,13 +2,12 @@ $input-border-width: 2px;
 
 input,
 textarea {
-  border: $input-border-width solid $black;
-  border-radius: 0; /** needed for safari mobile */
-  padding: $default-padding;
-  width: 100%;
+	border: $input-border-width solid $black;
+	border-radius: 0; /** needed for safari mobile */
+	padding: $default-padding;
+	width: 100%;
+}
 
-  &:focus {
-    outline: $input-border-width solid $gold;
-    outline-offset: 0;
-  }
+textarea {
+	min-height: 8em;
 }

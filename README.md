@@ -7,6 +7,12 @@
 
 UI design system for Baltimore County's primary [website](https://www.baltimorecountymd.gov).
 
+## Getting Started
+
+1. Clone this repo
+2. Run `npm install`
+3. Take a look at our [Getting Started Guide](https://github.com/baltimorecounty/dotgov-components/wiki/Getting-Started-as-a-Developer)
+
 ### `npm run styleguide`
 
 Runs the design system in development mode. Open [http://localhost:6060/](http://localhost:6060/) in your browser to view it. The page will automatically reload if you make changes to the code. You will see the build errors and lint warnings in the console.
