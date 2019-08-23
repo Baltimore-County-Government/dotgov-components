@@ -1,12 +1,12 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
-const List = props => {
-	const { type = "", children } = props;
-	return type.toLowerCase() === "ordered" ? (
-		<ol>{children}</ol>
+const List = (props) => {
+	const { type = '', children } = props;
+	return type.toLowerCase() === 'ordered' ? (
+		<ol className="dg_list">{children}</ol>
 	) : (
-		<ul>{children}</ul>
+		<ul className="dg_list">{children}</ul>
 	);
 };
 
