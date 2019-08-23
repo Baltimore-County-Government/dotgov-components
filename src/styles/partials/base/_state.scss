@@ -7,3 +7,8 @@ a:focus,
 a.focused {
 	outline-offset: 2px;
 }
+
+:disabled,
+.disabled {
+	cursor: not-allowed;
+}

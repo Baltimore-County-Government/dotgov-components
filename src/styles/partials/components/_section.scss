@@ -10,5 +10,28 @@
 		p {
 			color: $white;
 		}
+
+		.dg_button {
+			background: none;
+			color: $white;
+			border-color: $white;
+
+			&:active,
+			&.active {
+				background: none;
+			}
+
+			&:hover,
+			&.hovered {
+				background: $blue-lightest;
+			}
+
+			&:disabled,
+			&.disabled {
+				background: none;
+				color: $gray-light;
+				border-color: $gray-light;
+			}
+		}
 	}
 }
