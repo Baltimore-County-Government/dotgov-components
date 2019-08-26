@@ -1,0 +1,9 @@
+$default-duration: 0.5s;
+$default-timing-function: ease;
+
+@mixin default-transition($property: all) {
+	-webkit-transition: $property $default-duration $default-timing-function;
+	-moz-transition: $property $default-duration $default-timing-function;
+	-o-transition: $property $default-duration $default-timing-function;
+	transition: $property $default-duration $default-timing-function;
+}

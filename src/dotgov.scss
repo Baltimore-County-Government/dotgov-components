@@ -12,6 +12,7 @@ $fa-font-path: "/webfonts";
 @import "./styles/variables/spacing"; /** contains padding and margin variables */
 
 /** Mixins */
+@import "./styles/mixins/animations";
 @import "./styles/mixins/colors";
 @import "./styles/mixins/placeholder";
 @import "./styles/mixins/typography";
