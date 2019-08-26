@@ -13,7 +13,7 @@
 		"prepublishOnly": "echo \"Starting NPM Publish...\" && npm run build-demo && npm run-script generate-css",
 		"start": "styleguidist server",
 		"test": "jest",
-		"test:coverage": "nwb test-react --coverage",
+		"test:coverage": "jest --coverage",
 		"test:watch": "jest --watchAll",
 		"predeploy": "npm run-script build",
 		"deploy": "gh-pages -d styleguide --git git",
