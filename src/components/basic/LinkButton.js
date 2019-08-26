@@ -9,7 +9,7 @@ const LinkButton = (props) => {
 	};
 	const defaultSize = 'large';
 	const { icon, size = defaultSize, text, className, ...rest } = props;
-	const cssClasses = classnames('dg_link-circle', `dg_link-circle--${size}`, className);
+	const cssClasses = classnames('dg_icon-link', `dg_icon-link--${size}`, className);
 	const iconCssClasses = classnames('dg_icon', icon, size.toLowerCase() === defaultSize ? 'fa-2x' : 'fa-1x');
 	const iconSize = size === defaultSize ? size : 'small';
 	const linkIcon = icon ? (
@@ -25,7 +25,7 @@ const LinkButton = (props) => {
 	return (
 		<a className={cssClasses} {...rest}>
 			{linkIcon}
-			<span>{text}</span>
+			{text && <span>{text}</span>}
 		</a>
 	);
 };

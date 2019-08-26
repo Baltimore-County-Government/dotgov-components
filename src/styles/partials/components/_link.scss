@@ -1,4 +1,4 @@
-.dg_link-circle {
+.dg_icon-link {
 	color: $black;
 	display: inline-block;
 	font-family: $default-heading-font;
@@ -13,12 +13,12 @@
 		border-radius: 50%;
 		display: inline-block;
 		line-height: 100px;
-		margin-bottom: $default-margin;
 		vertical-align: middle;
 	}
 
 	span {
 		display: block;
+		margin-top: $default-margin;
 	}
 
 	&:active,
@@ -54,5 +54,9 @@
 			background: $gold-lightest;
 			color: $gray-light;
 		}
+	}
+
+	&.dg_icon-link--small i {
+		line-height: 50px;
 	}
 }

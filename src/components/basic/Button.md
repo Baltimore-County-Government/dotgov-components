@@ -80,10 +80,21 @@
 ```jsx
 import LinkButton from './LinkButton'
 ;<div style={{ display: 'flex', justifyContent: 'space-between', padding: '10px' }}>
-	<LinkButton href="#" text="Default" icon="fas fa-star" />
-	<LinkButton href="#" className="hovered" text="Hovered" icon="fas fa-star" />
-	<LinkButton href="#" className="active" text="Active" icon="fas fa-star" />
-	<LinkButton href="#" className="focused" text="Focused" icon="fas fa-star" />
-	<LinkButton href="#" className="disabled" text="Disabled" icon="fas fa-star" />
+	<LinkButton href="#linkbutton-default" id="linkbutton-default" text="Default" icon="fas fa-star" />
+	<LinkButton href="#linkbutton-hovered" id="#linkbutton-hovered" className="hovered" text="Hovered" icon="fas fa-star" />
+	<LinkButton href="#linkbutton-active" id="#linkbutton-active" className="active" text="Active" icon="fas fa-star" />
+	<LinkButton href="#linkbutton-focuses" id="#linkbutton-focuses" className="focused" text="Focused" icon="fas fa-star" />
+	<LinkButton href="#linkbutton-disabled" id="#linkbutton-disabled" className="disabled" text="Disabled" icon="fas fa-star" />
+</div>
+```
+
+```jsx
+import LinkButton from './LinkButton'
+;<div style={{ display: 'flex', justifyContent: 'space-between', padding: '10px' }}>
+	<LinkButton size="small" href="#linkbutton-default" id="linkbutton-default" icon="fas fa-star" />
+	<LinkButton size="small" href="#linkbutton-hovered" id="#linkbutton-hovered" className="hovered" icon="fas fa-star" />
+	<LinkButton size="small" href="#linkbutton-active" id="#linkbutton-active" className="active" icon="fas fa-star" />
+	<LinkButton size="small" href="#linkbutton-focuses" id="#linkbutton-focuses" className="focused" icon="fas fa-star" />
+	<LinkButton size="small" href="#linkbutton-disabled" id="#linkbutton-disabled" className="disabled" icon="fas fa-star" />
 </div>
 ```
