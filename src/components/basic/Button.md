@@ -12,7 +12,15 @@
 </div>
 ```
 
+If you aren't using react, you'll need to use the following html:
+
+```html
+<button type="button" class="dg_button">Default</button>
+```
+
 #### Primary Button in a Dark Section
+
+By including a button inside of a [dark section](dark-section), it will automatically be styled appropriately.
 
 ```jsx
 <div className="dg_section dark" style={{ display: 'flex', justifyContent: 'space-between', padding: '10px' }}>
@@ -22,6 +30,12 @@
 	<Button text="Focused" className="focused" />
 	<Button text="Disabled" className="disabled" />
 </div>
+```
+
+If you aren't using react, you'll need to use the following html:
+
+```html
+<button type="button" class="dg_button">Default</button>
 ```
 
 #### Primary Button with Icon
@@ -34,36 +48,56 @@
 	<Button text="Icon Button" className="focused" icon="fas fa-star" />
 </div>
 <div style={{ display: 'flex', justifyContent: 'space-between', padding: '10px' }}>
-
 	<Button text="Icon Button" className="disabled" icon="fas fa-star" />
 </div>
+```
+
+If you aren't using react, you'll need to use the following html:
+
+```html
+<button type="button" class="dg_button">
+	<i aria-hidden="true" class="dg_button_icon fas fa-star"></i>Icon Button</button>
 ```
 
 ### Secondary Button
 
 ```jsx
 <div style={{ display: 'flex', justifyContent: 'space-between', padding: '10px' }}>
-	<Button text="Default" className="dg_button dg_button-secondary" />
-	<Button text="Hovered" className="hovered dg_button dg_button-secondary" />
-	<Button text="Active" className="active dg_button dg_button-secondary" />
-	<Button text="Focused" className="focused dg_button dg_button-secondary" />
-	<Button text="Disabled" className="disabled dg_button dg_button-secondary" />
+	<Button text="Default" className="dg_button-secondary" />
+	<Button text="Hovered" className="hovered dg_button-secondary" />
+	<Button text="Active" className="active dg_button-secondary" />
+	<Button text="Focused" className="focused dg_button-secondary" />
+	<Button text="Disabled" className="disabled dg_button-secondary" />
 </div>
+```
+
+If you aren't using react, you'll need to use the following html:
+
+```html
+<button type="button" class="dg_button-secondary">Default</button>
 ```
 
 ### Text Button
 
 ```jsx
 <div style={{ display: 'flex', justifyContent: 'space-between', padding: '10px' }}>
-	<Button text="Default" className="dg_button dg_button-link" />
-	<Button text="Hovered" className="hovered dg_button dg_button-link" />
-	<Button text="Active" className="active dg_button dg_button-link" />
-	<Button text="Focused" className="focused dg_button dg_button-link" />
-	<Button text="Disabled" className="disabled dg_button dg_button-link" />
+	<Button text="Default" className="dg_button-link" />
+	<Button text="Hovered" className="hovered dg_button-link" />
+	<Button text="Active" className="active dg_button-link" />
+	<Button text="Focused" className="focused dg_button-link" />
+	<Button text="Disabled" className="disabled dg_button-link" />
 </div>
 ```
 
+If you aren't using react, you'll need to use the following html:
+
+```html
+<button type="button" class="dg_button-link">Default</button>
+```
+
 ### Text Button in a Dark Section
+
+By including a button inside of a [dark section](dark-section), it will automatically be styled appropriately.
 
 ```jsx
 <div className="dg_section dark" style={{ display: 'flex', justifyContent: 'space-between', padding: '10px' }}>
@@ -73,6 +107,12 @@
 	<Button text="Focused" className="focused dg_button dg_button-link" />
 	<Button text="Disabled" className="disabled dg_button dg_button-link" />
 </div>
+```
+
+If you aren't using react, you'll need to use the following html:
+
+```html
+<button type="button" class="dg_button-link">Default</button>
 ```
 
 ### Decorative Links
@@ -90,6 +130,19 @@ import IconLink from './IconLink'
 </div>
 ```
 
+If you aren't using react, you'll need to use the following html:
+
+```html
+<a
+	class="dg_icon-link dg_icon-link--large"
+	href="#linkbutton-default"
+	id="linkbutton-default"
+	aria-label="View your favorite default items.">
+		<i aria-hidden="true" class="dg_icon fas fa-star fa-2x" style="width: 100px; height: 100px;"></i>
+		<span>Default</span>
+</a>
+```
+
 #### Small
 
 ```jsx
@@ -102,8 +155,20 @@ import IconLink from './IconLink'
 	<IconLink size="small" href="#linkbutton-disabled" id="#linkbutton-disabled" className="disabled" icon="fas fa-star" description="View your favorite default items." />
 </div>
 ```
+If you aren't using react, you'll need to use the following html:
+
+```html
+<a
+	class="dg_icon-link dg_icon-link--small"
+	href="#linkbutton-default"
+	aria-label="View your favorite default items.">
+		<i aria-hidden="true" class="dg_icon fas fa-star fa-1x" style="width: 50px; height: 50px;"></i>
+</a>
+```
 
 #### Large in a Dark Section
+
+By including a button inside of a [dark section](dark-section), it will automatically be styled appropriately.
 
 ```jsx
 import IconLink from './IconLink'
@@ -116,7 +181,22 @@ import IconLink from './IconLink'
 </div>
 ```
 
+If you aren't using react, you'll need to use the following html:
+
+```html
+<a
+	class="dg_icon-link dg_icon-link--large"
+	href="#linkbutton-default"
+	id="linkbutton-default"
+	aria-label="View your favorite default items.">
+		<i aria-hidden="true" class="dg_icon fas fa-star fa-2x" style="width: 100px; height: 100px;"></i>
+		<span>Default</span>
+</a>
+```
+
 #### Small in a Dark Section
+
+By including a button inside of a [dark section](dark-section), it will automatically be styled appropriately.
 
 ```jsx
 import IconLink from './IconLink'
@@ -127,4 +207,15 @@ import IconLink from './IconLink'
 	<IconLink size="small" href="#linkbutton-focuses" id="#linkbutton-focuses" className="focused" icon="fas fa-star" description="View your favorite default items." />
 	<IconLink size="small" href="#linkbutton-disabled" id="#linkbutton-disabled" className="disabled" icon="fas fa-star" description="View your favorite default items." />
 </div>
+```
+
+If you aren't using react, you'll need to use the following html:
+
+```html
+<a
+	class="dg_icon-link dg_icon-link--small"
+	href="#linkbutton-default"
+	aria-label="View your favorite default items.">
+		<i aria-hidden="true" class="dg_icon fas fa-star fa-1x" style="width: 50px; height: 50px;"></i>
+</a>
 ```

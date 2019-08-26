@@ -6,7 +6,7 @@ const Button = (props) => {
 	const { icon, className, type = 'button', text } = props;
 	const buttonCssClasses = classnames('dg_button', className);
 	const iconCssClasses = classnames('dg_button_icon', icon);
-	const buttonIcon = icon ? <i className={iconCssClasses} /> : null;
+	const buttonIcon = icon ? <i aria-hidden="true" className={iconCssClasses} /> : null;
 	return (
 		<button type={type} className={buttonCssClasses}>
 			{buttonIcon}
