@@ -1,3 +1,21 @@
+.dg_button,
+.dg_button-secondary {
+	&:active,
+	&.active {
+		background: $pale-blue;
+	}
+
+	&:hover,
+	&.hovered {
+		background: $vibrant-blue;
+	}
+
+	&:disabled,
+	&.disabled {
+		border-color: $gray-light;
+	}
+}
+
 .dg_button {
 	background: $blue;
 	border: $border-width solid $blue;
@@ -15,13 +33,11 @@
 
 	&:active,
 	&.active {
-		background: $pale-blue;
 		border-color: $pale-blue;
 	}
 
 	&:hover,
 	&.hovered {
-		background: $vibrant-blue;
 		border-color: $vibrant-blue;
 	}
 
@@ -38,23 +54,16 @@
 	border-color: $blue;
 
 	&:active,
-	&.active {
-		color: $white;
-		background: $pale-blue;
-		border-color: $blue;
-	}
-
+	&.active,
 	&:hover,
 	&.hovered {
-		background: $vibrant-blue;
 		border-color: $blue;
-		color: white;
+		color: $white;
 	}
 
 	&:disabled,
 	&.disabled {
 		background: none;
-		border-color: $gray-light;
 		color: $gray-light;
 	}
 }
@@ -70,23 +79,27 @@
 	text-decoration: underline;
 
 	&:active,
-	&.active {
+	&.active,
+	&:hover,
+	&.hovered,
+	&:disabled,
+	&.disabled {
 		background: none;
 		border-color: none;
+	}
+
+	&:active,
+	&.active {
 		color: $pale-blue;
 	}
 
 	&:hover,
 	&.hovered {
-		background: none;
-		border-color: none;
 		color: $vibrant-blue;
 	}
 
 	&:disabled,
 	&.disabled {
-		background: none;
-		border-color: none;
 		color: $gray-light;
 	}
 }
