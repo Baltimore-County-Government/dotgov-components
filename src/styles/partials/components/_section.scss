@@ -10,5 +10,69 @@
 		p {
 			color: $white;
 		}
+
+		.dg_button,
+		.dg_icon-link {
+			&:disabled,
+			&.disabled {
+				color: $gray-light;
+			}
+		}
+
+		.dg_button {
+			background: none;
+			color: $white;
+			border-color: $white;
+
+			&:active,
+			&.active,
+			&:disabled,
+			&.disabled {
+				background: none;
+			}
+
+			&:hover,
+			&.hovered {
+				background: $blue-lightest;
+			}
+
+			&:disabled,
+			&.disabled {
+				border-color: $gray-light;
+			}
+		}
+
+		.dg_button-link {
+			&:hover,
+			&.hovered {
+				background: none;
+				color: $blue-lightest;
+			}
+		}
+
+		.dg_icon-link {
+			background: none;
+			color: $white;
+
+			i {
+				color: $pale-blue;
+			}
+
+			&:active,
+			&.active {
+				color: $white;
+
+				i {
+					background: $white;
+				}
+			}
+
+			&:disabled,
+			&.disabled {
+				i {
+					color: $pale-blue;
+				}
+			}
+		}
 	}
 }

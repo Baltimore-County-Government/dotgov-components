@@ -1,0 +1,80 @@
+$large-icon-link-size: 100px;
+$small-icon-link-size: 50px;
+
+@mixin icon-size($iconSize, $iconLinkSize) {
+	font-size: $iconSize;
+	height: $iconLinkSize;
+	line-height: $iconLinkSize;
+	width: $iconLinkSize;
+}
+
+.dg_icon-link {
+	color: $black;
+	display: inline-block;
+	font-family: $default-heading-font;
+	font-weight: $font-bold;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+
+	i {
+		background: $gold;
+		color: $black;
+		border-radius: 50%;
+		display: inline-block;
+		line-height: 100px;
+		vertical-align: middle;
+	}
+
+	span {
+		display: block;
+		margin-top: $default-margin;
+	}
+
+	&:active,
+	&.active {
+		color: $pale-blue;
+
+		i {
+			background: $pale-blue;
+			color: white;
+		}
+	}
+
+	&:hover,
+	&.hovered {
+		color: $vibrant-blue;
+
+		i {
+			background: $vibrant-blue;
+			color: white;
+		}
+	}
+
+	&:focus,
+	&.focused {
+		color: $black;
+	}
+
+	&:disabled,
+	&.disabled {
+		color: $gray-light;
+
+		i {
+			color: $white;
+			background: $gray-light;
+		}
+	}
+
+	&.dg_icon-link--small {
+		i {
+			@include icon-size($small-icon-size, $small-icon-link-size);
+		}
+	}
+
+	&.dg_icon-link--large {
+		i {
+			@include icon-size($large-icon-size, $large-icon-link-size);
+		}
+	}
+}
