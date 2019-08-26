@@ -5,7 +5,6 @@ import classnames from 'classnames';
 const Button = (props) => {
 	const { icon, className, type = 'button', text } = props;
 	const buttonCssClasses = classnames('dg_button', className);
-	console.log(className);
 	const iconCssClasses = classnames('dg_button_icon', icon);
 	const buttonIcon = icon ? <i aria-hidden="true" className={iconCssClasses} /> : null;
 	return (
