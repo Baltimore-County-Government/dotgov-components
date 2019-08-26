@@ -33,5 +33,32 @@
 				border-color: $gray-light;
 			}
 		}
+
+		.dg_icon-link {
+			background: none;
+			color: white;
+
+			i {
+				color: $pale-blue;
+			}
+
+			&:active,
+			&.active {
+				color: $white;
+
+				i {
+					background: $white;
+				}
+			}
+
+			&:disabled,
+			&.disabled {
+				color: $gray-light;
+
+				i {
+					color: $gray-light;
+				}
+			}
+		}
 	}
 }
