@@ -1,3 +1,6 @@
+$large-icon-link-size: 100px;
+$small-icon-link-size: 50px;
+
 .dg_icon-link {
 	color: $black;
 	display: inline-block;
@@ -56,7 +59,21 @@
 		}
 	}
 
-	&.dg_icon-link--small i {
-		line-height: 50px;
+	&.dg_icon-link--small {
+		i {
+			font-size: $default-icon-size;
+			height: $small-icon-link-size;
+			line-height: $small-icon-link-size;
+			width: $small-icon-link-size;
+		}
+	}
+
+	&.dg_icon-link--large {
+		i {
+			font-size: $large-icon-size;
+			line-height: $large-icon-link-size;
+			height: $large-icon-link-size;
+			width: $large-icon-link-size;
+		}
 	}
 }
