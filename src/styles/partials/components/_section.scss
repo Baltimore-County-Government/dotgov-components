@@ -1,14 +1,14 @@
 .dg_section {
-  &.dark {
-    background: $pale-blue;
-    color: $white;
+	&.dark {
+		background: $pale-blue;
+		color: $white;
 
-    h2 {
-      @include alt-h2-heading($gold);
-    }
+		h2 {
+			@include alt-h2-heading($gold);
+		}
 
-    p {
-      color: $white;
-    }
-  }
+		p {
+			color: $white;
+		}
+	}
 }

@@ -1,42 +1,42 @@
 /* BASIC TABLE STYLES */
 .table {
-  border: $border-width-small solid $gray-light;
-  border-collapse: collapse;
-  color: $gray-dark;
-  font-family: $default-heading-font;
-  font-size: $smallest-heading-font-size;
-  text-align: left;
-  width: 100%;
-  td {
-    border-bottom: $border-width-small solid $gray-light;
-    padding: $padding-large;
-  }
-  thead {
-    th {
-      background-color: $white;
-      border-bottom: $border-width-large solid $blue;
-      border-left: none;
-      color: $black;
-      font-family: $default-heading-font;
-      font-size: $small-heading-font-size;
-      font-weight: bold;
-      padding: $padding-large;
-    }
-  }
-  th {
-    border-bottom: $border-width-small solid $gray-light;
-    border-left: $border-width-large solid $blue;
-    color: $black;
-    padding-left: $padding-large;
-  }
-  tbody {
-    tr {
-      &:nth-of-type(2n + 1) {
-        background-color: $gray-lightest;
-      }
-      &:hover {
-        background-color: $gold-lightest;
-      }
-    }
-  }
+	border: $border-width-small solid $gray-light;
+	border-collapse: collapse;
+	color: $gray-dark;
+	font-family: $default-heading-font;
+	font-size: $smallest-heading-font-size;
+	text-align: left;
+	width: 100%;
+	td {
+		border-bottom: $border-width-small solid $gray-light;
+		padding: $padding-large;
+	}
+	thead {
+		th {
+			background-color: $white;
+			border-bottom: $border-width-large solid $blue;
+			border-left: none;
+			color: $black;
+			font-family: $default-heading-font;
+			font-size: $small-heading-font-size;
+			font-weight: bold;
+			padding: $padding-large;
+		}
+	}
+	th {
+		border-bottom: $border-width-small solid $gray-light;
+		border-left: $border-width-large solid $blue;
+		color: $black;
+		padding-left: $padding-large;
+	}
+	tbody {
+		tr {
+			&:nth-of-type(2n + 1) {
+				background-color: $gray-lightest;
+			}
+			&:hover {
+				background-color: $gold-lightest;
+			}
+		}
+	}
 }
