@@ -82,11 +82,11 @@
 ```jsx
 import IconLink from './IconLink'
 ;<div style={{ display: 'flex', justifyContent: 'space-between', padding: '10px' }}>
-	<IconLink href="#linkbutton-default" id="linkbutton-default" text="Default" icon="fas fa-star" />
-	<IconLink href="#linkbutton-hovered" id="#linkbutton-hovered" className="hovered" text="Hovered" icon="fas fa-star" />
-	<IconLink href="#linkbutton-active" id="#linkbutton-active" className="active" text="Active" icon="fas fa-star" />
-	<IconLink href="#linkbutton-focuses" id="#linkbutton-focuses" className="focused" text="Focused" icon="fas fa-star" />
-	<IconLink href="#linkbutton-disabled" id="#linkbutton-disabled" className="disabled" text="Disabled" icon="fas fa-star" />
+	<IconLink href="#linkbutton-default" id="linkbutton-default" text="Default" icon="fas fa-star" description="View your favorite default items." />
+	<IconLink href="#linkbutton-hovered" id="#linkbutton-hovered" className="hovered" text="Hovered" icon="fas fa-star" description="View your favorite default items." />
+	<IconLink href="#linkbutton-active" id="#linkbutton-active" className="active" text="Active" icon="fas fa-star" description="View your favorite default items." />
+	<IconLink href="#linkbutton-focuses" id="#linkbutton-focuses" className="focused" text="Focused" icon="fas fa-star" description="View your favorite default items." />
+	<IconLink href="#linkbutton-disabled" id="#linkbutton-disabled" className="disabled" text="Disabled" icon="fas fa-star" description="View your favorite default items." />
 </div>
 ```
 
@@ -95,11 +95,11 @@ import IconLink from './IconLink'
 ```jsx
 import IconLink from './IconLink'
 ;<div style={{ display: 'flex', justifyContent: 'space-between', padding: '10px' }}>
-	<IconLink size="small" href="#linkbutton-default" id="linkbutton-default" icon="fas fa-star" />
-	<IconLink size="small" href="#linkbutton-hovered" id="#linkbutton-hovered" className="hovered" icon="fas fa-star" />
-	<IconLink size="small" href="#linkbutton-active" id="#linkbutton-active" className="active" icon="fas fa-star" />
-	<IconLink size="small" href="#linkbutton-focuses" id="#linkbutton-focuses" className="focused" icon="fas fa-star" />
-	<IconLink size="small" href="#linkbutton-disabled" id="#linkbutton-disabled" className="disabled" icon="fas fa-star" />
+	<IconLink size="small" href="#linkbutton-default" id="linkbutton-default" icon="fas fa-star" description="View your favorite default items." />
+	<IconLink size="small" href="#linkbutton-hovered" id="#linkbutton-hovered" className="hovered" icon="fas fa-star" description="View your favorite default items." />
+	<IconLink size="small" href="#linkbutton-active" id="#linkbutton-active" className="active" icon="fas fa-star" description="View your favorite default items." />
+	<IconLink size="small" href="#linkbutton-focuses" id="#linkbutton-focuses" className="focused" icon="fas fa-star" description="View your favorite default items." />
+	<IconLink size="small" href="#linkbutton-disabled" id="#linkbutton-disabled" className="disabled" icon="fas fa-star" description="View your favorite default items." />
 </div>
 ```
 
@@ -108,11 +108,11 @@ import IconLink from './IconLink'
 ```jsx
 import IconLink from './IconLink'
 ;<div style={{ display: 'flex', justifyContent: 'space-between', padding: '20px' }} className="dg_section dark">
-	<IconLink href="#linkbutton-default" id="linkbutton-default" text="Default" icon="fas fa-star" />
-	<IconLink href="#linkbutton-hovered" id="#linkbutton-hovered" className="hovered" text="Hovered" icon="fas fa-star" />
-	<IconLink href="#linkbutton-active" id="#linkbutton-active" className="active" text="Active" icon="fas fa-star" />
-	<IconLink href="#linkbutton-focuses" id="#linkbutton-focuses" className="focused" text="Focused" icon="fas fa-star" />
-	<IconLink href="#linkbutton-disabled" id="#linkbutton-disabled" className="disabled" text="Disabled" icon="fas fa-star" />
+	<IconLink href="#linkbutton-default" id="linkbutton-default" text="Default" icon="fas fa-star" description="View your favorite default items." />
+	<IconLink href="#linkbutton-hovered" id="#linkbutton-hovered" className="hovered" text="Hovered" icon="fas fa-star" description="View your favorite default items." />
+	<IconLink href="#linkbutton-active" id="#linkbutton-active" className="active" text="Active" icon="fas fa-star" description="View your favorite default items." />
+	<IconLink href="#linkbutton-focuses" id="#linkbutton-focuses" className="focused" text="Focused" icon="fas fa-star" description="View your favorite default items." />
+	<IconLink href="#linkbutton-disabled" id="#linkbutton-disabled" className="disabled" text="Disabled" icon="fas fa-star" description="View your favorite default items." />
 </div>
 ```
 
@@ -121,10 +121,10 @@ import IconLink from './IconLink'
 ```jsx
 import IconLink from './IconLink'
 ;<div style={{ display: 'flex', justifyContent: 'space-between', padding: '20px' }} className="dg_section dark">
-	<IconLink size="small" href="#linkbutton-default" id="linkbutton-default" icon="fas fa-star" />
-	<IconLink size="small" href="#linkbutton-hovered" id="#linkbutton-hovered" className="hovered" icon="fas fa-star" />
-	<IconLink size="small" href="#linkbutton-active" id="#linkbutton-active" className="active" icon="fas fa-star" />
-	<IconLink size="small" href="#linkbutton-focuses" id="#linkbutton-focuses" className="focused" icon="fas fa-star" />
-	<IconLink size="small" href="#linkbutton-disabled" id="#linkbutton-disabled" className="disabled" icon="fas fa-star" />
+	<IconLink size="small" href="#linkbutton-default" id="linkbutton-default" icon="fas fa-star" description="View your favorite default items." />
+	<IconLink size="small" href="#linkbutton-hovered" id="#linkbutton-hovered" className="hovered" icon="fas fa-star" description="View your favorite default items." />
+	<IconLink size="small" href="#linkbutton-active" id="#linkbutton-active" className="active" icon="fas fa-star" description="View your favorite default items." />
+	<IconLink size="small" href="#linkbutton-focuses" id="#linkbutton-focuses" className="focused" icon="fas fa-star" description="View your favorite default items." />
+	<IconLink size="small" href="#linkbutton-disabled" id="#linkbutton-disabled" className="disabled" icon="fas fa-star" description="View your favorite default items." />
 </div>
 ```

@@ -8,12 +8,13 @@ const IconLink = (props) => {
 		small: '50px'
 	};
 	const defaultSize = 'large';
-	const { icon, size = defaultSize, text, className, ...rest } = props;
+	const { icon, description, size = defaultSize, text, className, ...rest } = props;
 	const cssClasses = classnames('dg_icon-link', `dg_icon-link--${size}`, className);
 	const iconCssClasses = classnames('dg_icon', icon, size.toLowerCase() === defaultSize ? 'fa-2x' : 'fa-1x');
 	const iconSize = size === defaultSize ? size : 'small';
 	const linkIcon = icon ? (
 		<i
+			aria-hidden="true"
 			className={iconCssClasses}
 			style={{
 				width: sizes[iconSize],
@@ -23,7 +24,7 @@ const IconLink = (props) => {
 	) : null;
 
 	return (
-		<a className={cssClasses} {...rest}>
+		<a className={cssClasses} {...rest} aria-label={description}>
 			{linkIcon}
 			{text && <span>{text}</span>}
 		</a>
@@ -31,6 +32,8 @@ const IconLink = (props) => {
 };
 
 IconLink.propTypes = {
+	/**  A text description of the action the button provides. */
+	description: PropTypes.string.isRequired,
 	/** Html href property */
 	href: PropTypes.string.isRequired,
 	/** Font Awesome icon class */
