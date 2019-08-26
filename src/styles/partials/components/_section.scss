@@ -11,6 +11,14 @@
 			color: $white;
 		}
 
+		.dg_button,
+		.dg_icon-link {
+			&:disabled,
+			&.disabled {
+				color: $gray-light;
+			}
+		}
+
 		.dg_button {
 			background: none;
 			color: $white;
@@ -30,14 +38,13 @@
 
 			&:disabled,
 			&.disabled {
-				color: $gray-light;
 				border-color: $gray-light;
 			}
 		}
 
 		.dg_icon-link {
 			background: none;
-			color: white;
+			color: $white;
 
 			i {
 				color: $pale-blue;
@@ -54,10 +61,8 @@
 
 			&:disabled,
 			&.disabled {
-				color: $gray-light;
-
 				i {
-					color: $gray-light;
+					color: $pale-blue;
 				}
 			}
 		}

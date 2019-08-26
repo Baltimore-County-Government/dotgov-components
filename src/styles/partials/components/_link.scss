@@ -43,7 +43,7 @@
 
 	&:focus,
 	&.focused {
-		color: black;
+		color: $black;
 	}
 
 	&:disabled,
@@ -51,8 +51,8 @@
 		color: $gray-light;
 
 		i {
-			background: $gold-lightest;
-			color: $gray-light;
+			color: $white;
+			background: $gray-light;
 		}
 	}
 
