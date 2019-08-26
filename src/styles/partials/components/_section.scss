@@ -17,7 +17,9 @@
 			border-color: $white;
 
 			&:active,
-			&.active {
+			&.active,
+			&:disabled,
+			&.disabled {
 				background: none;
 			}
 
@@ -28,7 +30,6 @@
 
 			&:disabled,
 			&.disabled {
-				background: none;
 				color: $gray-light;
 				border-color: $gray-light;
 			}
