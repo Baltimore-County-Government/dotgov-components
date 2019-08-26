@@ -1,6 +1,13 @@
 $large-icon-link-size: 100px;
 $small-icon-link-size: 50px;
 
+@mixin icon-size($iconSize, $iconLinkSize) {
+	font-size: $iconSize;
+	height: $iconLinkSize;
+	line-height: $iconLinkSize;
+	width: $iconLinkSize;
+}
+
 .dg_icon-link {
 	color: $black;
 	display: inline-block;
@@ -61,19 +68,13 @@ $small-icon-link-size: 50px;
 
 	&.dg_icon-link--small {
 		i {
-			font-size: $default-icon-size;
-			height: $small-icon-link-size;
-			line-height: $small-icon-link-size;
-			width: $small-icon-link-size;
+			@include icon-size($small-icon-size, $small-icon-link-size);
 		}
 	}
 
 	&.dg_icon-link--large {
 		i {
-			font-size: $large-icon-size;
-			line-height: $large-icon-link-size;
-			height: $large-icon-link-size;
-			width: $large-icon-link-size;
+			@include icon-size($large-icon-size, $large-icon-link-size);
 		}
 	}
 }
