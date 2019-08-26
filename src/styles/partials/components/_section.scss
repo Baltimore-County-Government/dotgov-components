@@ -42,6 +42,14 @@
 			}
 		}
 
+		.dg_button-link {
+			&:hover,
+			&.hovered {
+				background: none;
+				color: $blue-lightest;
+			}
+		}
+
 		.dg_icon-link {
 			background: none;
 			color: $white;

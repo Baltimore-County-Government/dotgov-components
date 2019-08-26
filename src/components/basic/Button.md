@@ -101,11 +101,11 @@ By including a button inside of a [dark section](dark-section), it will automati
 
 ```jsx
 <div className="dg_section dark" style={{ display: 'flex', justifyContent: 'space-between', padding: '10px' }}>
-	<Button text="Default" className="dg_button dg_button-link" />
-	<Button text="Hovered" className="hovered dg_button dg_button-link" />
-	<Button text="Active" className="active dg_button dg_button-link" />
-	<Button text="Focused" className="focused dg_button dg_button-link" />
-	<Button text="Disabled" className="disabled dg_button dg_button-link" />
+	<Button text="Default" className="dg_button-link" />
+	<Button text="Hovered" className="hovered dg_button-link" />
+	<Button text="Active" className="active dg_button-link" />
+	<Button text="Focused" className="focused dg_button-link" />
+	<Button text="Disabled" className="disabled dg_button-link" />
 </div>
 ```
 
