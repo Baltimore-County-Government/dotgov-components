@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
-const LinkButton = (props) => {
+const IconLink = (props) => {
 	const sizes = {
 		large: '100px',
 		small: '50px'
@@ -30,13 +30,13 @@ const LinkButton = (props) => {
 	);
 };
 
-LinkButton.propTypes = {
+IconLink.propTypes = {
 	/** Html href property */
 	href: PropTypes.string.isRequired,
-	/** Font Awesome icon*/
+	/** Font Awesome icon class */
 	icon: PropTypes.string.isRequired,
 	/** Button Text*/
-	text: PropTypes.string.isRequired
+	text: PropTypes.string
 };
 
-export default LinkButton;
+export default IconLink;
