@@ -1,0 +1,46 @@
+.dg_section {
+  &.dark {
+    .table {
+      background-color: $pale-blue;
+      border: $border-width-small solid $gray-light;
+      border-collapse: collapse;
+      color: $white;
+      font-family: $default-heading-font;
+      font-size: $smallest-heading-font-size;
+      text-align: left;
+      width: 100%;
+      td {
+        border-bottom: $border-width-small solid $gray-light;
+        padding: $padding-large;
+      }
+      thead {
+        th {
+          background-color: $pale-blue;
+          border-bottom: $border-width-large solid $pale-blue-lightest;
+          border-left: none;
+          color: $white;
+          font-family: $default-heading-font;
+          font-size: $small-heading-font-size;
+          font-weight: bold;
+          padding: $padding-large;
+        }
+      }
+      th {
+        border-bottom: $border-width-small solid $gray-light;
+        border-left: $border-width-large solid $pale-blue-lightest;
+        color: $white;
+        padding-left: $padding-large;
+      }
+      tbody {
+        tr {
+          &:nth-of-type(2n + 1) {
+            background-color: $pale-blue-light;
+          }
+          &:hover {
+            background-color: $blue-lightest;
+          }
+        }
+      }
+    }
+  }
+}

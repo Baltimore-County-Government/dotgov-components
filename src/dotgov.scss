@@ -26,6 +26,9 @@
 @import "./styles/partials/components/icon-button";
 @import "./styles/partials/components/table";
 
+/** dark themed components - please start your file with .dg_section.dark and nest the styles below it **/
+@import "./styles/partials/components/table-dark";
+
 /** template */
 @import "./styles/partials/template/subpage";
 @import "./styles/partials/template/sidebar";
