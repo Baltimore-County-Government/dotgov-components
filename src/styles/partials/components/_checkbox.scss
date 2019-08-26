@@ -1,7 +1,4 @@
 .dg_checkbox {
-	font-weight: 400;
-	font-size: 16px;
-	font-size: 1rem;
 	line-height: 1.25;
 	display: block;
 	position: relative;
@@ -20,6 +17,23 @@
 		height: 44px;
 		margin: 0;
 		opacity: 0;
+
+		&:focus + .dg_checkbox-label::before {
+			@extend :focus;
+		}
+
+		&:checked + .dg_checkbox-label::after {
+			opacity: 1;
+		}
+
+		&:disabled,
+		&:disabled + .dg_checkbox-label {
+			cursor: default;
+		}
+
+		&:disabled + .dg_checkbox-label {
+			opacity: .5;
+		}
 	}
 
 	input[type="checkbox" i] {
@@ -35,7 +49,7 @@
 	.dg_checkbox-label {
 		display: inline-block;
 		margin-bottom: 0;
-		padding: 8px 15px 5px;
+		padding: $padding-small $default-padding $padding-smallest;
 		cursor: pointer;
 		-ms-touch-action: manipulation;
 		touch-action: manipulation;
@@ -49,33 +63,19 @@
 			left: 0;
 			width: 40px;
 			height: 40px;
-			border: 2px solid currentColor;
+			border: 2px solid $black;
 			background: transparent;
 		}
 
 		&::after {
-			content: "\f00c";
-			font-family: $font-awesome-free;
-			position: relative;
+			position: absolute;
+			top: 10px;
+			left: 9px;
+			content: "\F00C";
+			font-family: $font-awesome-pro;
+			opacity: 0;
 		}
 	}
-}
-
-.dg_checkbox-input:focus + .dg_checkbox-label::before {
-	@extend :focus;
-}
-
-.dg_checkbox-input:checked + .dg_checkbox-label::after {
-	opacity: 1;
-}
-
-.dg_checkbox-input:disabled,
-.dg_checkbox-input:disabled + .dg_checkbox-label {
-	cursor: default;
-}
-
-.dg_checkbox-input:disabled + .dg_checkbox-label {
-	opacity: .5;
 }
 
 .dg_checkbox__conditional {

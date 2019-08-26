@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import FormField from './FormField';
 
 const Checkbox = (props) => {
 	const { id, name, value, label, ...otherProps } = props;
@@ -16,18 +15,14 @@ const Checkbox = (props) => {
 };
 
 Checkbox.propTypes = {
-	/** A unique identifier used to associate the input with the label */
+	/** A unique identifier used to associate the checkbox with the label */
 	id: PropTypes.string.isRequired,
-	/** Only when absolutely necessary, adds text to help the user fill out a field, ex Password Requirements */
-	hint: PropTypes.string,
-	/** A label to describe the associated text input */
+	/** Name of the checkbox, this is important when grouping with other checkboxes */
+	name: PropTypes.string.isRequired,
+	/** A label to describe the associated checkbox */
 	label: PropTypes.string.isRequired,
-	/** Default input placeholder attribute  */
-	placeholder: PropTypes.string,
-	/** The type of text input you want to use, possible values are 'text', 'email', 'url' */
-	type: PropTypes.string,
-	/** Function that will validate the field */
-	validate: PropTypes.func
+	/** String value to be associated with the given checkbox */
+	value: PropTypes.string
 };
 
 export default Checkbox;
