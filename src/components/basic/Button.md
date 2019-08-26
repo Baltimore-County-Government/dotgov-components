@@ -42,13 +42,11 @@ Html Snippet:
 
 ```jsx
 <div style={{ display: 'flex', justifyContent: 'space-between', padding: '10px' }}>
-	<Button text="Icon Button" icon="fas fa-star" />
-	<Button text="Icon Button" className="hovered" icon="fas fa-star" />
-	<Button text="Icon Button" className="active" icon="fas fa-star" />
-	<Button text="Icon Button" className="focused" icon="fas fa-star" />
-</div>
-<div style={{ display: 'flex', justifyContent: 'space-between', padding: '10px' }}>
-	<Button text="Icon Button" className="disabled" icon="fas fa-star" />
+	<Button text="Button" icon="fas fa-star" />
+	<Button text="Button" className="hovered" icon="fas fa-star" />
+	<Button text="Button" className="active" icon="fas fa-star" />
+	<Button text="Button" className="focused" icon="fas fa-star" />
+	<Button text="Button" className="disabled" icon="fas fa-star" />
 </div>
 ```
 
