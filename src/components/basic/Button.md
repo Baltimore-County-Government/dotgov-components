@@ -138,7 +138,7 @@ Html Snippet:
 	href="#linkbutton-default"
 	id="linkbutton-default"
 	aria-label="View your favorite default items.">
-		<i aria-hidden="true" class="dg_icon fas fa-star fa-2x" style="width: 100px; height: 100px;"></i>
+		<i aria-hidden="true" class="dg_icon fas fa-star fa-2x"></i>
 		<span>Default</span>
 </a>
 ```
@@ -189,7 +189,7 @@ Html Snippet:
 	href="#linkbutton-default"
 	id="linkbutton-default"
 	aria-label="View your favorite default items.">
-		<i aria-hidden="true" class="dg_icon fas fa-star fa-2x" style="width: 100px; height: 100px;"></i>
+		<i aria-hidden="true" class="dg_icon fas fa-star fa-2x"></i>
 		<span>Default</span>
 </a>
 ```
