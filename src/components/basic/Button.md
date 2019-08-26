@@ -12,7 +12,7 @@
 </div>
 ```
 
-If you aren't using react, you'll need to use the following html:
+Html Snippet:
 
 ```html
 <button type="button" class="dg_button">Default</button>
@@ -32,7 +32,7 @@ By including a button inside of a [dark section](dark-section), it will automati
 </div>
 ```
 
-If you aren't using react, you'll need to use the following html:
+Html Snippet:
 
 ```html
 <button type="button" class="dg_button">Default</button>
@@ -52,7 +52,7 @@ If you aren't using react, you'll need to use the following html:
 </div>
 ```
 
-If you aren't using react, you'll need to use the following html:
+Html Snippet:
 
 ```html
 <button type="button" class="dg_button">
@@ -71,7 +71,7 @@ If you aren't using react, you'll need to use the following html:
 </div>
 ```
 
-If you aren't using react, you'll need to use the following html:
+Html Snippet:
 
 ```html
 <button type="button" class="dg_button-secondary">Default</button>
@@ -89,7 +89,7 @@ If you aren't using react, you'll need to use the following html:
 </div>
 ```
 
-If you aren't using react, you'll need to use the following html:
+Html Snippet:
 
 ```html
 <button type="button" class="dg_button-link">Default</button>
@@ -109,7 +109,7 @@ By including a button inside of a [dark section](dark-section), it will automati
 </div>
 ```
 
-If you aren't using react, you'll need to use the following html:
+Html Snippet:
 
 ```html
 <button type="button" class="dg_button-link">Default</button>
@@ -130,7 +130,7 @@ import IconLink from './IconLink'
 </div>
 ```
 
-If you aren't using react, you'll need to use the following html:
+Html Snippet:
 
 ```html
 <a
@@ -155,7 +155,7 @@ import IconLink from './IconLink'
 	<IconLink size="small" href="#linkbutton-disabled" id="#linkbutton-disabled" className="disabled" icon="fas fa-star" description="View your favorite default items." />
 </div>
 ```
-If you aren't using react, you'll need to use the following html:
+Html Snippet:
 
 ```html
 <a
@@ -181,7 +181,7 @@ import IconLink from './IconLink'
 </div>
 ```
 
-If you aren't using react, you'll need to use the following html:
+Html Snippet:
 
 ```html
 <a
@@ -209,7 +209,7 @@ import IconLink from './IconLink'
 </div>
 ```
 
-If you aren't using react, you'll need to use the following html:
+Html Snippet:
 
 ```html
 <a
