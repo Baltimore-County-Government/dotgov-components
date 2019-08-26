@@ -138,7 +138,7 @@ Html Snippet:
 	href="#linkbutton-default"
 	id="linkbutton-default"
 	aria-label="View your favorite default items.">
-		<i aria-hidden="true" class="dg_icon fas fa-star fa-2x"></i>
+		<i aria-hidden="true" class="dg_icon fas fa-star"></i>
 		<span>Default</span>
 </a>
 ```
@@ -162,7 +162,7 @@ Html Snippet:
 	class="dg_icon-link dg_icon-link--small"
 	href="#linkbutton-default"
 	aria-label="View your favorite default items.">
-		<i aria-hidden="true" class="dg_icon fas fa-star fa-1x" style="width: 50px; height: 50px;"></i>
+		<i aria-hidden="true" class="dg_icon fas fa-star"></i>
 </a>
 ```
 
@@ -189,7 +189,7 @@ Html Snippet:
 	href="#linkbutton-default"
 	id="linkbutton-default"
 	aria-label="View your favorite default items.">
-		<i aria-hidden="true" class="dg_icon fas fa-star fa-2x"></i>
+		<i aria-hidden="true" class="dg_icon fas fa-star"></i>
 		<span>Default</span>
 </a>
 ```
@@ -216,6 +216,6 @@ Html Snippet:
 	class="dg_icon-link dg_icon-link--small"
 	href="#linkbutton-default"
 	aria-label="View your favorite default items.">
-		<i aria-hidden="true" class="dg_icon fas fa-star fa-1x" style="width: 50px; height: 50px;"></i>
+		<i aria-hidden="true" class="dg_icon fas fa-star"></i>
 </a>
 ```
