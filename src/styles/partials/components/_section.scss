@@ -24,16 +24,16 @@
 			color: $white;
 			border-color: $white;
 
+			&:hover,
+			&.hovered {
+				background: $blue-lightest;
+			}
+
 			&:active,
 			&.active,
 			&:disabled,
 			&.disabled {
 				background: none;
-			}
-
-			&:hover,
-			&.hovered {
-				background: $blue-lightest;
 			}
 
 			&:disabled,

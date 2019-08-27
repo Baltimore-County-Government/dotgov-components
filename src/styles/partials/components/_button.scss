@@ -1,13 +1,13 @@
 .dg_button,
 .dg_button-secondary {
-	&:active,
-	&.active {
-		background: $pale-blue;
-	}
-
 	&:hover,
 	&.hovered {
 		background: $vibrant-blue;
+	}
+
+	&:active,
+	&.active {
+		background: $pale-blue;
 	}
 
 	&:disabled,
@@ -31,14 +31,14 @@
 		margin-right: $margin-small;
 	}
 
-	&:active,
-	&.active {
-		border-color: $pale-blue;
-	}
-
 	&:hover,
 	&.hovered {
 		border-color: $vibrant-blue;
+	}
+
+	&:active,
+	&.active {
+		border-color: $pale-blue;
 	}
 
 	&:disabled,
@@ -88,14 +88,14 @@
 		border-color: none;
 	}
 
-	&:active,
-	&.active {
-		color: $pale-blue;
-	}
-
 	&:hover,
 	&.hovered {
 		color: $vibrant-blue;
+	}
+
+	&:active,
+	&.active {
+		color: $pale-blue;
 	}
 
 	&:disabled,
