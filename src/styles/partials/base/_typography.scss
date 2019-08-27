@@ -1,10 +1,11 @@
+
 body {
 	font-family: $default-body-font;
 	font-size: $base-font-size;
 	line-height: 1.5;
 }
-
 input,
+select,
 textarea,
 p {
 	color: $gray-dark;
