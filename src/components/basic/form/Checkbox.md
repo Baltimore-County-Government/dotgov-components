@@ -1,6 +1,10 @@
 ```jsx
-<Checkbox id="color-blue" name="favorite-color" label="Blue" />
-<Checkbox id="color-red" name="favorite-color" label="Red" />
-<Checkbox id="color-yellow" name="favorite-color" label="Yellow" />
-<Checkbox id="color-black" name="favorite-color" label="Black" disabled checked />
+import CheckboxGroup from './CheckboxGroup'
+;
+<CheckboxGroup hint="Select all that apply." describedBy="favorite-colors-hint" heading="What are your favorite colors?">
+	<Checkbox id="color-blue" name="favorite-color" label="Blue" />
+	<Checkbox id="color-red" name="favorite-color" label="Red" />
+	<Checkbox id="color-yellow" name="favorite-color" label="Yellow" />
+	<Checkbox id="color-black" name="favorite-color" label="Black" disabled checked />
+</CheckboxGroup>
 ```
