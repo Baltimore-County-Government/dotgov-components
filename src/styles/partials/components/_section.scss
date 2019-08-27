@@ -58,19 +58,21 @@
 				color: $pale-blue;
 			}
 
+			&:hover,
+			&.hovered {
+				color: $blue-lightest;
+
+				i {
+					background: $blue-lightest;
+				}
+			}
+
 			&:active,
 			&.active {
 				color: $white;
 
 				i {
 					background: $white;
-				}
-			}
-
-			&:disabled,
-			&.disabled {
-				i {
-					color: $pale-blue;
 				}
 			}
 		}
