@@ -80,6 +80,15 @@
 					background: $white;
 				}
 			}
+
+			&:disabled,
+			&.disabled {
+				color: $gray-light;
+
+				i {
+					background: $gray-light;
+				}
+			}
 		}
 	}
 }
