@@ -6,12 +6,13 @@ const Select = (props) => {
     return (
         <FormField id={id} label={label} hint={hint}>
             <select id={id} {...otherProps} className="dg_form-field-select">
+                <option value="">{`Select ${label}`}</option>
                 {options.map(option => (
                     <option key={option.id} value={option.id}>
                         {option.name}
                     </option>
-                ))} 
-            </select> 
+                ))}
+            </select>
             {/* {error && <div className="">{error}</div>} */}
         </FormField>
     );
