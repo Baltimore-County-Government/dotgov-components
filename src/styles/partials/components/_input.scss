@@ -1,6 +1,6 @@
 $input-border-width: 2px;
 
-input,
+input,select,
 textarea {
 	border: $input-border-width solid $black;
 	border-radius: 0; /** needed for safari mobile */
