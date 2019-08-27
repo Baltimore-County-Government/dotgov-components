@@ -2,7 +2,7 @@ a,
 button,
 a i,
 button i {
-	@include default-transition();
+	@include default-transition(color, background, border);
 }
 
 :focus,
