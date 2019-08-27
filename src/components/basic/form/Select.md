@@ -1,10 +1,10 @@
 ```jsx
 import Select from './Select'
 ;
-const options =[{id:1,name:'published'},{id:2,name:'updated'},{id:3,name:'views'},{id:4,name:'comments'}];
+const options =[{id:1,name:'Blue'},{id:2,name:'Red'},{id:3,name:'Yellow'},{id:4,name:'Gray'}];
 <Select
   id="select-items"
-  label="Select from the list"
+  label="Favorite Colors"
   options={options}
 />
 ```
@@ -14,13 +14,13 @@ If you aren't using react, you'll need to use the following html:
 ```html
 <div class="dg_form-field">
   <label for="select-items" class="dg_label">
-    <span class="dg_label-text">Select from the list</span>
+    <span class="dg_label-text">Favorite Colors</span>
   </label>
   <select id="select-items" className="dg_form-field-select">
-    <option value="1">published</option>
-    <option value="2">updated</option>
-    <option value="3">views</option>
-    <option value="4">comments</option>
+    <option value="1">Blue</option>
+    <option value="2">Red</option>
+    <option value="3">Yellow</option>
+    <option value="4">Gray</option>
   </select>
 </div>
 ```
