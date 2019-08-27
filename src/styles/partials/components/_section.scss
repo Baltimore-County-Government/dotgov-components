@@ -48,6 +48,11 @@
 				background: none;
 				color: $blue-lightest;
 			}
+
+			&:active,
+			&.active {
+				color: $white;
+			}
 		}
 
 		.dg_icon-link {
