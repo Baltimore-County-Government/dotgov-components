@@ -6,8 +6,8 @@ textarea {
 	border: $input-border-width solid $black;
 	border-radius: 0; /** needed for safari mobile */
 	color: $gray-dark;
-	font-size: $base-font-size;
-	font-family: $default-body-font;
+	font-size: $h3-font-size;
+	font-family: $default-heading-font;
 	padding: $padding-smallest;
 	width: 100%;
 }
