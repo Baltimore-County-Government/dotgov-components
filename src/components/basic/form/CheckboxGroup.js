@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
 const CheckboxGroup = (props) => {
@@ -10,7 +10,7 @@ const CheckboxGroup = (props) => {
 				<h1 className="dg_fieldset-heading">{heading}</h1>
 			</legend>
 			{hint && (
-				<span id={describedBy} class="dg_fieldset-hint">
+				<span id={describedBy} className="dg_fieldset-hint">
 					Select all that apply.
 				</span>
 			)}
