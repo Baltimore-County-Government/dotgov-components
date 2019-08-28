@@ -7,7 +7,7 @@ const Checkbox = (props) => {
 	return (
 		<div className="dg_checkbox">
 			<input className="dg_checkbox-input" id={id} name={name} type="checkbox" value={value} {...otherProps} />
-			<label className="dg_label dg_checkbox-label" for={id}>
+			<label className="dg_label dg_checkbox-label" htmlFor={id}>
 				{label}
 			</label>
 		</div>
