@@ -1,11 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import classnames from 'classnames';
 
 const CheckedInput = (props) => {
-	const { cssNamespace = 'dg', cssClass, id, name, type, value, label, ...otherProps } = props;
+	const { cssNamespace = 'dg', className, id, name, type, value, label, ...otherProps } = props;
 	const componentClassName = `${cssNamespace}_${type.toLowerCase()}`;
+	const cssClassNames = classnames(componentClassName, className);
 	return (
-		<div className={componentClassName}>
+		<div className={cssClassNames}>
 			<input
 				className={`${componentClassName}-input`}
 				id={id}
@@ -24,8 +26,6 @@ const CheckedInput = (props) => {
 CheckedInput.propTypes = {
 	/** Prefix for checked component css class  */
 	cssNamespace: PropTypes.string,
-	/** Identified for the input */
-	cssClass: PropTypes.string.isRequired,
 	/** Either radio or checkbox */
 	type: PropTypes.string.isRequired,
 	/** A unique identifier used to associate the checkbox with the label */
