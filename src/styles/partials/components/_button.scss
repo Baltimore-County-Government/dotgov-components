@@ -1,0 +1,108 @@
+.dg_button,
+.dg_button-secondary {
+	&:hover,
+	&.hovered {
+		background: $vibrant-blue;
+	}
+
+	&:active,
+	&.active {
+		background: $pale-blue;
+	}
+
+	&:disabled,
+	&.disabled {
+		border-color: $gray-light;
+	}
+}
+
+.dg_button {
+	background: $blue;
+	border: $border-width solid $blue;
+	color: $white;
+	font-family: $default-heading-font;
+	font-size: $smallest-heading-font-size;
+	font-weight: $font-bold;
+	padding: $default-padding;
+	text-transform: uppercase;
+
+	i {
+		display: inline;
+		margin-right: $margin-small;
+	}
+
+	&:hover,
+	&.hovered {
+		border-color: $vibrant-blue;
+	}
+
+	&:active,
+	&.active {
+		border-color: $pale-blue;
+	}
+
+	&:disabled,
+	&.disabled {
+		background: $gray-light;
+		border-color: $gray-light;
+	}
+}
+
+.dg_button-secondary {
+	background: none;
+	border-color: $blue;
+	color: $blue;
+
+	&:active,
+	&.active,
+	&:hover,
+	&.hovered {
+		border-color: $blue;
+		color: $white;
+	}
+
+	&:disabled,
+	&.disabled {
+		background: none;
+		border-color: $gray-light;
+	}
+}
+
+.dg_button-link {
+	background: none;
+	border: none;
+	color: $blue;
+	font-family: $default-body-font;
+	font-size: $base-font-size;
+	font-style: italic;
+	text-transform: inherit;
+	text-decoration: underline;
+
+	&:active,
+	&.active,
+	&:hover,
+	&.hovered,
+	&:disabled,
+	&.disabled {
+		background: none;
+		border-color: none;
+	}
+
+	&:hover,
+	&.hovered {
+		color: $vibrant-blue;
+	}
+
+	&:active,
+	&.active {
+		color: $pale-blue;
+	}
+}
+
+.dg_button-secondary,
+.dg_button-link {
+	&:disabled,
+	&.disabled {
+		color: $gray-light;
+	}
+}

@@ -8,7 +8,7 @@ A section is container for content.
 </Section>
 ```
 
-If you aren't using react, you'll need to use the following html:
+Html Snippet:
 
 ```html
 <section class="dg_section"><p>Some content goes here</p></section>
@@ -22,7 +22,7 @@ If you aren't using react, you'll need to use the following html:
 </Section>
 ```
 
-If you aren't using react, you'll need to use the following html:
+Html Snippet:
 
 ```html
 <section class="dg_section dark"><p>Some content goes here</p></section>
