@@ -4,13 +4,13 @@ import classnames from 'classnames';
 
 const IconLink = (props) => {
 	const defaultSize = 'large';
-	const { icon, description, size = defaultSize, text, className, ...rest } = props;
+	const { icon, href, description, size = defaultSize, text, className, ...rest } = props;
 	const cssClasses = classnames('dg_icon-link', `dg_icon-link--${size}`, className);
 	const iconCssClasses = classnames('dg_icon', icon);
 	const linkIcon = icon ? <i aria-hidden="true" className={iconCssClasses} /> : null;
-
+	const naviationlink = href ? href:`javascript:void(0);`;
 	return (
-		<a className={cssClasses} {...rest} aria-label={description}>
+		<a href={naviationlink} className={cssClasses} {...rest} aria-label={description}>
 			{linkIcon}
 			{text && <span>{text}</span>}
 		</a>
