@@ -11,14 +11,6 @@
 			color: $white;
 		}
 
-		.dg_button,
-		.dg_icon-link {
-			&:disabled,
-			&.disabled {
-				color: $gray-light;
-			}
-		}
-
 		.dg_button {
 			background: none;
 			color: $white;
@@ -83,11 +75,18 @@
 
 			&:disabled,
 			&.disabled {
-				color: $gray-light;
-
 				i {
 					background: $gray-light;
 				}
+			}
+		}
+
+		.dg_button,
+		.dg_button-link,
+		.dg_icon-link {
+			&:disabled,
+			&.disabled {
+				color: $gray-light;
 			}
 		}
 	}
