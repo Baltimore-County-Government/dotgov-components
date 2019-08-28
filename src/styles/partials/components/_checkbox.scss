@@ -1,0 +1,86 @@
+.dg_checkbox {
+	line-height: 1.25;
+	display: block;
+	position: relative;
+	min-height: 40px;
+	margin-bottom: 10px;
+	padding-left: 40px;
+	clear: left;
+
+	.dg_checkbox-input {
+		cursor: pointer;
+		position: absolute;
+		z-index: 1;
+		top: -2px;
+		left: -2px;
+		width: 44px;
+		height: 44px;
+		margin: 0;
+		opacity: 0;
+
+		&:focus + .dg_checkbox-label::before {
+			@extend :focus;
+		}
+
+		&:checked + .dg_checkbox-label::after {
+			opacity: 1;
+		}
+
+		&:disabled,
+		&:disabled + .dg_checkbox-label {
+			cursor: default;
+		}
+
+		&:disabled + .dg_checkbox-label {
+			opacity: .5;
+		}
+	}
+
+	input[type="checkbox" i] {
+		background-color: initial;
+		cursor: default;
+		-webkit-appearance: checkbox;
+		box-sizing: border-box;
+		margin: 3px 3px 3px 4px;
+		padding: initial;
+		border: initial;
+	}
+
+	.dg_checkbox-label {
+		display: inline-block;
+		margin-bottom: 0;
+		padding: $padding-small $default-padding $padding-smallest;
+		cursor: pointer;
+		-ms-touch-action: manipulation;
+		touch-action: manipulation;
+
+		&::before {
+			content: "";
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 40px;
+			height: 40px;
+			border: 2px solid $black;
+			background: transparent;
+		}
+
+		&::after {
+			position: absolute;
+			top: 8px;
+			left: 11px;
+			content: "\F00C"; /* check - solid - https://fontawesome.com/icons/check?style=solid*/
+			font-family: $font-awesome-pro;
+			opacity: 0;
+		}
+	}
+}
+
+.dg_checkbox__conditional {
+	margin-bottom: 15px;
+	margin-left: 18px;
+	padding-left: 33px;
+	border-left: 4px solid #b1b4b6;
+}
