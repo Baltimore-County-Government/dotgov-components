@@ -8,9 +8,9 @@ const IconLink = (props) => {
 	const cssClasses = classnames('dg_icon-link', `dg_icon-link--${size}`, className);
 	const iconCssClasses = classnames('dg_icon', icon);
 	const linkIcon = icon ? <i aria-hidden="true" className={iconCssClasses} /> : null;
-	const naviationlink = href ? href:`javascript:void(0);`;
+	const navigationLink = href ? href:`javascript:void(0);`;
 	return (
-		<a href={naviationlink} className={cssClasses} {...rest} aria-label={description}>
+		<a href={navigationLink} className={cssClasses} {...rest} aria-label={description}>
 			{linkIcon}
 			{text && <span>{text}</span>}
 		</a>
