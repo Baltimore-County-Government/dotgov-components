@@ -15,7 +15,7 @@ import ListItem from './ListItem'
 </List>
 ```
 
-If you aren't using react, you'll need to use the following html:
+Html Snippet:
 
 ```html
 <ul class="dg_list">
@@ -48,7 +48,7 @@ import ListItem from './ListItem'
 </List>
 ```
 
-If you aren't using react, you'll need to use the following html:
+Html Snippet:
 
 ```html
 <ol class="dg_list">

@@ -5,7 +5,7 @@ select,
 textarea {
 	border: $input-border-width solid $black;
 	border-radius: 0; /** needed for safari mobile */
-	padding: $default-padding;
+	padding: $padding-smallest;
 	width: 100%;
 }
 

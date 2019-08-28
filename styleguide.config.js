@@ -1,5 +1,6 @@
 const path = require('path');
 module.exports = {
+	assetsDir: 'styleguide-assets',
 	ignore: [ '**/components/**/*.test.js', '**/components/**/index.js' ],
 	usageMode: 'expand',
 	require: [ path.join(__dirname, './src/dotgov.scss') ],

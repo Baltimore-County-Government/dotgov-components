@@ -9,7 +9,7 @@
     placeholder="Enter your full name" />
 ```
 
-If you aren't using react, you'll need to use the following html:
+Html Snippet:
 
 ```html
 <div class="dg_form-field">
@@ -38,7 +38,7 @@ If you aren't using react, you'll need to use the following html:
 	required />
 ```
 
-If you aren't using react, you'll need to use the following html:
+Html Snippet:
 
 ```html
 <div class="dg_form-field">
@@ -66,7 +66,7 @@ If you aren't using react, you'll need to use the following html:
     placeholder="Enter your full name" />
 ```
 
-If you aren't using react, you'll need to use the following html:
+Html Snippet:
 
 ```html
 <div class="dg_form-field">
