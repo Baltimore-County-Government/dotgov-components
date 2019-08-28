@@ -2,13 +2,12 @@ button,
 input[type=button],
 input[type=submit],
 input[type=reset] {
+	background: transparent;
 	border: none;
 	margin: 0;
+	overflow: visible;
 	padding: 0;
 	width: auto;
-	overflow: visible;
-
-	background: transparent;
 
 	/* inherit font & color from ancestor */
 	color: inherit;

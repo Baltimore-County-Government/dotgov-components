@@ -11,29 +11,21 @@
 			color: $white;
 		}
 
-		.dg_button,
-		.dg_icon-link {
-			&:disabled,
-			&.disabled {
-				color: $gray-light;
-			}
-		}
-
 		.dg_button {
 			background: none;
 			color: $white;
 			border-color: $white;
+
+			&:hover,
+			&.hovered {
+				background: $blue-lightest;
+			}
 
 			&:active,
 			&.active,
 			&:disabled,
 			&.disabled {
 				background: none;
-			}
-
-			&:hover,
-			&.hovered {
-				background: $blue-lightest;
 			}
 
 			&:disabled,
@@ -48,6 +40,11 @@
 				background: none;
 				color: $blue-lightest;
 			}
+
+			&:active,
+			&.active {
+				color: $white;
+			}
 		}
 
 		.dg_icon-link {
@@ -56,6 +53,15 @@
 
 			i {
 				color: $pale-blue;
+			}
+
+			&:hover,
+			&.hovered {
+				color: $blue-lightest;
+
+				i {
+					background: $blue-lightest;
+				}
 			}
 
 			&:active,
@@ -70,8 +76,17 @@
 			&:disabled,
 			&.disabled {
 				i {
-					color: $pale-blue;
+					background: $gray-light;
 				}
+			}
+		}
+
+		.dg_button,
+		.dg_button-link,
+		.dg_icon-link {
+			&:disabled,
+			&.disabled {
+				color: $gray-light;
 			}
 		}
 	}
