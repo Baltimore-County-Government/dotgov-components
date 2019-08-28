@@ -1,5 +1,5 @@
 
-### Checkbox
+### Single Checkbox
 
 ```jsx
 <Checkbox id="car-color-blue" name="car-color" label="Is your car blue?" />
