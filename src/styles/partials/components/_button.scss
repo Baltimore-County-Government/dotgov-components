@@ -64,7 +64,7 @@
 	&:disabled,
 	&.disabled {
 		background: none;
-		color: $gray-light;
+		border-color: $gray-light;
 	}
 }
 
@@ -97,7 +97,10 @@
 	&.active {
 		color: $pale-blue;
 	}
+}
 
+.dg_button-secondary,
+.dg_button-link {
 	&:disabled,
 	&.disabled {
 		color: $gray-light;
