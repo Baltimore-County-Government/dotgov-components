@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const CheckboxGroup = (props) => {
+const CheckedInputGroup = (props) => {
 	const { heading, hint, describedBy, children } = props;
 
 	return (
@@ -11,7 +11,7 @@ const CheckboxGroup = (props) => {
 			</legend>
 			{hint && (
 				<span id={describedBy} className="dg_fieldset-hint">
-					Select all that apply.
+					{hint}
 				</span>
 			)}
 			{children}
@@ -19,7 +19,7 @@ const CheckboxGroup = (props) => {
 	);
 };
 
-CheckboxGroup.propTypes = {
+CheckedInputGroup.propTypes = {
 	/** Title to describe the purpose of the group */
 	heading: PropTypes.string.isRequired,
 	/** Only when absolutely necessary, adds text to help the user fill out a field, ex Password Requirements */
@@ -28,4 +28,4 @@ CheckboxGroup.propTypes = {
 	describedBy: PropTypes.string
 };
 
-export default CheckboxGroup;
+export default CheckedInputGroup;
