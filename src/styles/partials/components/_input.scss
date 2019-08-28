@@ -5,8 +5,15 @@ select,
 textarea {
 	border: $input-border-width solid $black;
 	border-radius: 0; /** needed for safari mobile */
+	color: $gray-dark;
+	font-size: $base-font-size;
+	font-family: $default-body-font;
 	padding: $padding-smallest;
 	width: 100%;
+}
+
+@include placeholder {
+	font-style: italic;
 }
 
 textarea {
