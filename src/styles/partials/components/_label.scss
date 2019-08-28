@@ -5,10 +5,11 @@
 
 	.dg_label-hint,
 	.dg_label-validation {
-		margin-top: $margin-smallest;
 		font-size: $smallest-font-size;
 		font-weight: $font-light;
+		margin-top: $margin-smallest;
 	}
+
 	.dg_label-validation {
 		color: $red;
 	}

@@ -31,22 +31,22 @@ $small-icon-link-size: 50px;
 		margin-top: $default-margin;
 	}
 
-	&:active,
-	&.active {
-		color: $pale-blue;
-
-		i {
-			background: $pale-blue;
-			color: white;
-		}
-	}
-
 	&:hover,
 	&.hovered {
 		color: $vibrant-blue;
 
 		i {
 			background: $vibrant-blue;
+			color: white;
+		}
+	}
+
+	&:active,
+	&.active {
+		color: $pale-blue;
+
+		i {
+			background: $pale-blue;
 			color: white;
 		}
 	}
