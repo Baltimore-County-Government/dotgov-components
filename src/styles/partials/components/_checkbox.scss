@@ -1,4 +1,5 @@
-.dg_checkbox {
+.dg_checkbox,
+.dg_radio {
 	line-height: 1.25;
 	display: block;
 	position: relative;
@@ -7,6 +8,7 @@
 	padding-left: 40px;
 	clear: left;
 
+	.dg_radio-input,
 	.dg_checkbox-input {
 		cursor: pointer;
 		position: absolute;
@@ -18,20 +20,24 @@
 		margin: 0;
 		opacity: 0;
 
-		&:focus + .dg_checkbox-label::before {
+		&:focus + .dg_checkbox-label::before,
+		&:focus + .dg_radio-label::before {
 			@extend :focus;
 		}
 
-		&:checked + .dg_checkbox-label::after {
+		&:checked + .dg_checkbox-label::after,
+		&:checked + .dg_radio-label::after {
 			opacity: 1;
 		}
 
 		&:disabled,
-		&:disabled + .dg_checkbox-label {
+		&:disabled + .dg_checkbox-label,
+		&:disabled + .dg_radio-label {
 			cursor: default;
 		}
 
-		&:disabled + .dg_checkbox-label {
+		&:disabled + .dg_checkbox-label,
+		&:disabled + .dg_radio-label {
 			opacity: .5;
 		}
 	}
@@ -46,6 +52,7 @@
 		border: initial;
 	}
 
+	.dg_radio-label,
 	.dg_checkbox-label {
 		display: inline-block;
 		margin-bottom: 0;
@@ -53,7 +60,10 @@
 		cursor: pointer;
 		-ms-touch-action: manipulation;
 		touch-action: manipulation;
+	}
 
+	.dg_checkbox-label,
+	.dg_radio-label {
 		&::before {
 			content: "";
 			-webkit-box-sizing: border-box;
@@ -69,6 +79,14 @@
 
 		&::after {
 			position: absolute;
+			font-family: $font-awesome-pro;
+			opacity: 0;
+		}
+	}
+
+	.dg_checkbox-label {
+		&::after {
+			position: absolute;
 			top: 8px;
 			left: 11px;
 			content: "\F00C"; /* check - solid - https://fontawesome.com/icons/check?style=solid*/
@@ -76,11 +94,17 @@
 			opacity: 0;
 		}
 	}
-}
 
-.dg_checkbox__conditional {
-	margin-bottom: 15px;
-	margin-left: 18px;
-	padding-left: 33px;
-	border-left: 4px solid #b1b4b6;
+	.dg_radio-label {
+		&::before {
+			border-radius: 50%;
+		}
+
+		&::after {
+			content: "\f111"; /* check - solid - https://fontawesome.com/icons/check?style=solid*/
+			font-size: 28px;
+			top: 2.5px;
+			left: 6px;
+		}
+	}
 }
