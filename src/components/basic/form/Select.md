@@ -17,7 +17,7 @@ If you aren't using react, you'll need to use the following html:
     <span class="dg_label-text">Favorite Colors</span>
   </label>
   <select id="select-items" className="dg_form-field-select">
-      <option value="">- Select a Favorite Color -</option>
+      <option value=""> - Select a Favorite Color - </option>
     <option value="1">Blue</option>
     <option value="2">Red</option>
     <option value="3">Yellow</option>
