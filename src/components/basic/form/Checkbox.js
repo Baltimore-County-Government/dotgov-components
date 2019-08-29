@@ -1,18 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import CheckedInput from './CheckedInput';
 
-const Checkbox = (props) => {
-	const { id, name, value, label, ...otherProps } = props;
-
-	return (
-		<div className="dg_checkbox">
-			<input className="dg_checkbox-input" id={id} name={name} type="checkbox" value={value} {...otherProps} />
-			<label className="dg_label dg_checkbox-label" htmlFor={id}>
-				{label}
-			</label>
-		</div>
-	);
-};
+const Checkbox = (props) => <CheckedInput type="checkbox" {...props} />;
 
 Checkbox.propTypes = {
 	/** A unique identifier used to associate the checkbox with the label */
