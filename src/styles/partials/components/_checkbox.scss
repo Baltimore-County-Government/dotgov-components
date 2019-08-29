@@ -79,9 +79,7 @@
 
 		&::after {
 			position: absolute;
-			font-family: $font-awesome-pro;
 			opacity: 0;
-			font-size: 28px;
 		}
 	}
 
@@ -93,6 +91,8 @@
 			top: 3px;
 			left: 6px;
 			content: "\F00C"; /* check - solid - https://fontawesome.com/icons/check?style=solid*/
+			font-family: $font-awesome-pro;
+			font-size: 28px;
 		}
 	}
 
@@ -103,7 +103,6 @@
 
 		&::after {
 			content: '';
-			//content: "\f111"; /* check - solid - https://fontawesome.com/icons/check?style=solid*/
 			top: 7px;
 			left: 7px;
 			border: 13px solid $black;
