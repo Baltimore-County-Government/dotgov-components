@@ -1,4 +1,3 @@
-
 ### Single Checkbox
 
 ```jsx
@@ -9,7 +8,7 @@ Html Snippet:
 
 ```html
 <div class="dg_checkbox">
-	<input class="dg_checkbox-input" id="car-color-blue" name="car-color" type="checkbox" value="">
+	<input class="dg_checkbox-input" id="car-color-blue" name="car-color" type="checkbox" value="blue">
 	<label class="dg_label dg_checkbox-label" for="car-color-blue">Is your car blue?</label>
 </div>
 ```
@@ -19,12 +18,12 @@ Html Snippet:
 ```jsx
 import CheckedInputGroup from './CheckedInputGroup'
 ;
-<CheckedInputGroup hint="Select all that apply." describedBy="favorite-colors-hint" heading="What are your favorite colors?">
-	<Checkbox id="color-blue" name="favorite-color" label="Blue" />
-	<Checkbox id="color-red" name="favorite-color" label="Red" />
-	<Checkbox id="color-yellow" name="favorite-color" label="Yellow" />
-	<Checkbox id="color-black" name="favorite-color" label="Black" disabled checked />
-</CheckedInputGroup>
+<CheckboxGroup hint="Select all that apply." describedBy="favorite-colors-hint" heading="What are your favorite colors?">
+	<Checkbox id="color-blue" name="favorite-color" label="Blue" value="blue" />
+	<Checkbox id="color-red" name="favorite-color" label="Red" value="red" />
+	<Checkbox id="color-yellow" name="favorite-color" label="Yellow" value="yellow" />
+	<Checkbox id="color-black" name="favorite-color" label="Black" value="black" disabled checked />
+</CheckboxGroup>
 ```
 
 Html Snippet:
@@ -32,20 +31,23 @@ Html Snippet:
 ```html
 <fieldset class="dg_fieldset" aria-describedby="favorite-colors-hint">
 	<legend class="dg_fieldset-legend">
-	<h1 class="dg_fieldset-heading">What are your favorite colors?</h1></legend>
+		<h1 class="dg_fieldset-heading">What are your favorite colors?</h1>
+	</legend>
 	<span id="favorite-colors-hint" class="dg_fieldset-hint">Select all that apply.</span>
 	<div class="dg_checkbox">
-		<input class="dg_checkbox-input" id="color-blue" name="favorite-color" type="checkbox" value="">
+		<input class="dg_checkbox-input" id="color-blue" name="favorite-color" type="checkbox" value="blue">
 		<label class="dg_label dg_checkbox-label" for="color-blue">Blue</label>
 	</div>
 	<div class="dg_checkbox">
-		<input class="dg_checkbox-input" id="color-red" name="favorite-color" type="checkbox" value="">
+		<input class="dg_checkbox-input" id="color-red" name="favorite-color" type="checkbox" value="red">
 		<label class="dg_label dg_checkbox-label" for="color-red">Red</label>
-	</div><div class="dg_checkbox">
-		<input class="dg_checkbox-input" id="color-yellow" name="favorite-color" type="checkbox" value="">
+	</div>
+	<div class="dg_checkbox">
+		<input class="dg_checkbox-input" id="color-yellow" name="favorite-color" type="checkbox" value="yellow">
 		<label class="dg_label dg_checkbox-label" for="color-yellow">Yellow</label>
-	</div><div class="dg_checkbox">
-		<input class="dg_checkbox-input" id="color-black" name="favorite-color" type="checkbox" disabled="" value="" checked="">
+	</div>
+	<div class="dg_checkbox">
+		<input class="dg_checkbox-input" id="color-black" name="favorite-color" type="checkbox" disabled="" value="black" checked="">
 		<label class="dg_label dg_checkbox-label" for="color-black">Black</label>
 	</div>
 </fieldset>
