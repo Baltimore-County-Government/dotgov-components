@@ -1,5 +1,6 @@
 const path = require('path');
 module.exports = {
+	assetsDir: 'styleguide-assets',
 	ignore: [ '**/components/**/*.test.js', '**/components/**/index.js' ],
 	usageMode: 'expand',
 	require: [ path.join(__dirname, './src/dotgov.scss') ],
@@ -28,7 +29,13 @@ module.exports = {
 			name: 'Components',
 			content: 'src/docs/Components.md',
 			components: 'src/components/basic/**/*.js',
-			ignore: [ '**/*FormField.js' ]
+			ignore: [
+				'src/components/basic/table/TableHead.js',
+				'src/components/basic/table/TableBody.js',
+				'src/components/basic/table/TableCell.js',
+				'src/components/basic/table/TableHeadCell.js',
+				'src/components/basic/table/TableRow.js'
+			]
 		},
 		{
 			name: 'Template Elements',
