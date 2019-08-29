@@ -29,3 +29,65 @@
 		background-color: $vibrant-blue;
 	}
 }
+.dg_icon-buttonDefault {
+	color: $black;
+	display: block;
+	font-family: $default-heading-font;
+	font-weight: $font-bold;
+	text-align:center;
+	text-decoration: none;
+	text-transform: uppercase;
+	border:2px solid $black ;
+	padding: 50px 30px 50px 30px;
+	transition: all 0.3s ease 0s;
+	i,
+	svg {
+		font-size: 60px;
+		color: $gold;
+		display: block;
+		margin: auto;
+		padding: 0 10px 20px;
+	}
+
+	&:hover,
+	&:hover i,
+	&:hover svg {
+		color: $white;
+	}
+
+	&:hover {
+		background-color: $vibrant-blue;
+	}
+ }
+ .dg_icon-buttonAlternative{
+	color: $white;
+	display: block;
+	font-family: $default-heading-font;
+	font-weight: $font-bold;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	border:50px  solid #001140 ;
+	background:$pale-blue;
+	outline: 0px solid #0366d6;
+	transition: all 0.3s ease 0s;
+	i,
+	svg {
+		font-size: 60px;
+		color: $gold;
+		display: block;
+		margin: auto;
+		padding-top: 50px;
+		padding-bottom: 20px;
+	}
+
+	&:hover,
+	&:hover i,
+	&:hover svg {
+		color: $white;
+	}
+
+	&:hover {
+		background-color: $vibrant-blue;
+	}
+}
