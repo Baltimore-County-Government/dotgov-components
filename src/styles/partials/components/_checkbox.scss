@@ -106,10 +106,12 @@
 	}
 }
 
+$circle-focus: 0 0 0 3px $white, 0 0 0 5px $blue-lightest;
+
 input[type="radio"] {
 	&:focus + label:before {
-		-webkit-box-shadow: 0 0 0 3px $white, 0 0 0 5px $blue-lightest;
-		box-shadow: 0 0 0 3px $white, 0 0 0 5px $blue-lightest;
+		-webkit-box-shadow: $circle-focus;
+		box-shadow: $circle-focus;
 	}
 }
 
