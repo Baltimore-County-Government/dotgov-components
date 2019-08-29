@@ -102,9 +102,12 @@
 		}
 
 		&::after {
-			content: "\f111"; /* check - solid - https://fontawesome.com/icons/check?style=solid*/
-			top: 2.5px;
-			left: 6px;
+			content: '';
+			//content: "\f111"; /* check - solid - https://fontawesome.com/icons/check?style=solid*/
+			top: 7px;
+			left: 7px;
+			border: 13px solid $black;
+			border-radius: 50%;
 		}
 	}
 }
