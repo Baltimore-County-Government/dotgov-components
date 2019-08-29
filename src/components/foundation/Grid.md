@@ -7,7 +7,7 @@ import GridExample from './GridExample'
 ;<GridExample />
 ```
 
-If you aren't using react, you'll need to use the following html:
+Html Snippet:
 
 ```html
 <div class="container">

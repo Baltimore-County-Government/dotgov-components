@@ -13,7 +13,7 @@ UI design system for Baltimore County's primary [website](https://www.baltimorec
 2. Run `npm install`
 3. Take a look at our [Getting Started Guide](https://github.com/baltimorecounty/dotgov-components/wiki/Getting-Started-as-a-Developer)
 
-### `npm run styleguide`
+### `npm start`
 
 Runs the design system in development mode. Open [http://localhost:6060/](http://localhost:6060/) in your browser to view it. The page will automatically reload if you make changes to the code. You will see the build errors and lint warnings in the console.
 
@@ -22,7 +22,3 @@ _Note_: When adding a markdown file for a component you will need to restart.
 ### `npm run test` and `npm run-script test:watch`
 
 Runs tests for the project. If you wish to watch the tests, use the watch command.
-
-### `npm start`
-
-Runs the demo app. Currently we aren't using this app in favor of a styleguide
