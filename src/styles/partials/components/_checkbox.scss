@@ -20,11 +20,6 @@
 		margin: 0;
 		opacity: 0;
 
-		&:focus + .dg_checkbox-label::before,
-		&:focus + .dg_radio-label::before {
-			@extend :focus;
-		}
-
 		&:checked + .dg_checkbox-label::after,
 		&:checked + .dg_radio-label::after {
 			opacity: 1;
@@ -108,5 +103,18 @@
 			border: 13px solid $black;
 			border-radius: 50%;
 		}
+	}
+}
+
+input[type="radio"] {
+	&:focus + label:before {
+		-webkit-box-shadow: 0 0 0 3px $white, 0 0 0 5px $blue-lightest;
+		box-shadow: 0 0 0 3px $white, 0 0 0 5px $blue-lightest;
+	}
+}
+
+input[type="checkbox"] {
+	&:focus + label:before {
+		@extend :focus;
 	}
 }
