@@ -8,10 +8,6 @@ button i {
 :focus,
 .focused {
 	outline: 2px solid $blue-lightest;
-}
-
-:focus,
-.focused {
 	outline-offset: 3px;
 }
 
