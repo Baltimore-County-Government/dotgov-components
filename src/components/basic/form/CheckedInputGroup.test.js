@@ -8,8 +8,8 @@ it('renders checkboxes without crashing', () => {
 	const div = document.createElement('div');
 	ReactDOM.render(
 		<CheckedInputGroup heading="What are your favorite color(s)?">
-			<Checkbox id="color-blue" name="favorite-color" label="Blue" />
-			<Checkbox id="color-red" name="favorite-color" label="Red" />
+			<Checkbox id="color-blue" name="favorite-color" label="Blue" value="blue" />
+			<Checkbox id="color-red" name="favorite-color" label="Red" value="red" />
 		</CheckedInputGroup>,
 		div
 	);
