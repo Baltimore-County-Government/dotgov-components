@@ -22,7 +22,7 @@ Checkbox.propTypes = {
 	/** A label to describe the associated checkbox */
 	label: PropTypes.string.isRequired,
 	/** String value to be associated with the given checkbox */
-	value: PropTypes.string
+	value: PropTypes.string.isRequired
 };
 
 export default Checkbox;
