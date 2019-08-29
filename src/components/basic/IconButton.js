@@ -10,10 +10,9 @@ const IconButton = (props) => {
     const cssClasses = classnames(`${classType}`, `${classType}--${size}`, className);
     const iconCssClasses = classnames('dg_icon', icon);
     const linkIcon = icon ? <i aria-hidden="true" className={iconCssClasses} /> : null;
-    const navigationLink = href ? href : `javascript:void(0);`;
     return (
 
-        <a href={navigationLink} className={cssClasses} {...rest} aria-label={description}>
+        <a href={href} className={cssClasses} {...rest} aria-label={description}>
             <div className={focusType}>
                 {linkIcon}
                 {text && <span>{text}</span>}
