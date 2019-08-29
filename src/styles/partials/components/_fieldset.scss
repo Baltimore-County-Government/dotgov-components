@@ -1,0 +1,9 @@
+.dg_fieldset {
+	.dg_fieldset-hint {
+		display: block;
+		font-family: $default-heading-font;
+		margin-top: $margin-smallest;
+		font-weight: $font-light;
+		margin-bottom: $margin-large;
+	}
+}

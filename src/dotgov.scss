@@ -31,12 +31,18 @@ $fa-font-path: "/webfonts";
 /** components */
 @import "./styles/partials/components/section";
 @import "./styles/partials/components/form";
+@import "./styles/partials/components/fieldset";
 @import "./styles/partials/components/label";
 @import "./styles/partials/components/lists";
 @import "./styles/partials/components/input";
+@import "./styles/partials/components/checkbox";
 @import "./styles/partials/components/link";
 @import "./styles/partials/components/button";
 @import "./styles/partials/components/icon-button";
+@import "./styles/partials/components/table";
+
+/** dark themed components - please start your file with .dg_section.dark and nest the styles below it **/
+@import "./styles/partials/components/table-dark";
 
 /** template */
 @import "./styles/partials/template/subpage";
