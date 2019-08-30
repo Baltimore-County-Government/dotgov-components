@@ -1,0 +1,55 @@
+.dg_section.dark {
+	.dg_icon-link {
+		color: $white;
+		border-color: $gray-light;
+
+		&:hover,
+		&.hovered {
+			background: $blue-lightest;
+		}
+
+		&:active,
+		&.active {
+			background: $pale-blue;
+		}
+
+		&:disabled,
+		&.disabled {
+			background: $gray-light;
+		}
+	}
+
+	.dg_icon-link--circle {
+		background: none;
+		color: $white;
+
+		i {
+			color: $pale-blue;
+		}
+
+		&:hover,
+		&.hovered {
+			color: $blue-lightest;
+
+			i {
+				background: $blue-lightest;
+			}
+		}
+
+		&:active,
+		&.active {
+			color: $white;
+
+			i {
+				background: $white;
+			}
+		}
+
+		&:disabled,
+		&.disabled {
+			i {
+				background: $gray-light;
+			}
+		}
+	}
+}

@@ -47,43 +47,8 @@
 			}
 		}
 
-		.dg_icon-link {
-			background: none;
-			color: $white;
-
-			i {
-				color: $pale-blue;
-			}
-
-			&:hover,
-			&.hovered {
-				color: $blue-lightest;
-
-				i {
-					background: $blue-lightest;
-				}
-			}
-
-			&:active,
-			&.active {
-				color: $white;
-
-				i {
-					background: $white;
-				}
-			}
-
-			&:disabled,
-			&.disabled {
-				i {
-					background: $gray-light;
-				}
-			}
-		}
-
 		.dg_button,
-		.dg_button-link,
-		.dg_icon-link {
+		.dg_button-link {
 			&:disabled,
 			&.disabled {
 				color: $gray-light;
