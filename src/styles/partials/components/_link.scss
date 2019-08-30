@@ -9,46 +9,25 @@ $small-icon-link-size: 50px;
 }
 
 .dg_icon-link {
-	color: $black;
+	color: $gray-darkest;
+	border: $border-width-small solid $gray;
 	display: inline-block;
 	font-family: $default-heading-font;
 	font-weight: $font-bold;
+	padding: $default-padding $padding-jumbo;
+	margin: $margin-small;
 	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
 
 	i {
-		background: $gold;
-		color: $black;
-		border-radius: 50%;
+		color: $gold;
 		display: inline-block;
-		line-height: 100px;
 		vertical-align: middle;
 	}
 
 	span {
 		display: block;
-		margin-top: $default-margin;
-	}
-
-	&:hover,
-	&.hovered {
-		color: $vibrant-blue;
-
-		i {
-			background: $vibrant-blue;
-			color: white;
-		}
-	}
-
-	&:active,
-	&.active {
-		color: $pale-blue;
-
-		i {
-			background: $pale-blue;
-			color: white;
-		}
 	}
 
 	&:focus,
@@ -56,14 +35,31 @@ $small-icon-link-size: 50px;
 		color: $black;
 	}
 
+	&:hover,
+	&.hovered,
+	&:active,
+	&.active,
 	&:disabled,
 	&.disabled {
-		color: $gray-light;
-
+		color: $white;
 		i {
 			color: $white;
-			background: $gray-light;
 		}
+	}
+
+	&:hover,
+	&.hovered {
+		background: $vibrant-blue;
+	}
+
+	&:active,
+	&.active {
+		background: $pale-blue;
+	}
+
+	&:disabled,
+	&.disabled {
+		background: $gray-light;
 	}
 
 	&.dg_icon-link--small {
@@ -75,6 +71,62 @@ $small-icon-link-size: 50px;
 	&.dg_icon-link--large {
 		i {
 			@include icon-size($large-icon-size, $large-icon-link-size);
+		}
+	}
+}
+
+.dg_icon-link--circle {
+	border: none;
+	padding: $default-padding;
+
+	i {
+		background: $gold;
+		color: $black;
+		border-radius: 50%;
+		display: inline-block;
+		line-height: 100px;
+		vertical-align: middle;
+	}
+
+	span {
+		margin-top: $default-margin;
+	}
+
+	&:hover,
+	&.hovered {
+		background: none;
+		color: $vibrant-blue;
+
+		i {
+			background: $vibrant-blue;
+			color: white;
+		}
+	}
+
+	&:active,
+	&.active {
+		background: none;
+		color: $pale-blue;
+
+		i {
+			background: $pale-blue;
+			color: $white;
+		}
+	}
+
+	&:focus,
+	&.focused {
+		color: $black;
+	}
+
+	&:disabled,
+	&.disabled {
+		background: none;
+		color: $gray-light;
+
+		i {
+			color: $white;
+			background: $gray-light;
 		}
 	}
 }
