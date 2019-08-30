@@ -16,7 +16,7 @@ const FieldSet = props => {
 	);
 };
 
-CheckedInputGroup.propTypes = {
+FieldSet.propTypes = {
 	/** Title to describe the purpose of the group */
 	heading: PropTypes.string.isRequired,
 	/** Only when absolutely necessary, adds text to help the user fill out a field, ex Password Requirements */
