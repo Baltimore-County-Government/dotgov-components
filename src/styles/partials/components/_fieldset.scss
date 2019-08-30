@@ -1,6 +1,6 @@
 .dg_fieldset {
 	border-top: $border-width-large solid $gray-light;
-	padding-top: 20px;
+	padding-top: $padding-large;
 	width: 100%;
 
 	.dg_fieldset-hint {
@@ -16,7 +16,7 @@
 		border: none;
 		letter-spacing: 10px;
 		font-weight: 700;
-		margin-top: 50px;
-		padding-bottom: 20px;
+		margin-top: $margin-largest;
+		padding-bottom: $padding-large;
 	}
 }
