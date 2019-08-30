@@ -5,7 +5,12 @@ import classnames from 'classnames';
 const IconLink = (props) => {
 	const defaultSize = 'large';
 	const { icon, href, description, size = defaultSize, type = '', text, className, ...rest } = props;
-	const cssClasses = classnames('dg_icon-link', `dg_icon-link--${size}`, `dg_icon-link--${type}`, className);
+	const cssClasses = classnames(
+		'dg_icon-link',
+		`dg_icon-link--${size}`,
+		type ? `dg_icon-link--${type}` : null,
+		className
+	);
 	const iconCssClasses = classnames('dg_icon', icon);
 	const linkIcon = icon ? <i aria-hidden="true" className={iconCssClasses} /> : null;
 	return (
