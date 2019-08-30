@@ -36,30 +36,30 @@ $small-icon-link-size: 50px;
 	}
 
 	&:hover,
-	&.hovered {
-		background: $vibrant-blue;
+	&.hovered,
+	&:active,
+	&.active,
+	&:disabled,
+	&.disabled {
 		color: $white;
 		i {
 			color: $white;
 		}
+	}
+
+	&:hover,
+	&.hovered {
+		background: $vibrant-blue;
 	}
 
 	&:active,
 	&.active {
 		background: $pale-blue;
-		color: $white;
-		i {
-			color: $white;
-		}
 	}
 
 	&:disabled,
 	&.disabled {
 		background: $gray-light;
-		color: $white;
-		i {
-			color: $white;
-		}
 	}
 
 	&.dg_icon-link--small {
