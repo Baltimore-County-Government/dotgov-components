@@ -1,7 +1,7 @@
 input,
 select,
 textarea {
-	border: $border-width solid $black;
+	border: $default-border-width solid $black;
 	border-radius: 0; /** needed for safari mobile */
 	color: $gray-dark;
 	font-size: $h3-font-size;
