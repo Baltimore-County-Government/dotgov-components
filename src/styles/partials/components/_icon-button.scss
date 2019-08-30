@@ -8,10 +8,8 @@
 	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
-	transition: all 0.3s ease 0s;
 
-	i,
-	svg {
+	i {
 		font-size: 60px;
 		color: $gold;
 		display: block;
@@ -20,8 +18,7 @@
 	}
 
 	&:hover,
-	&:hover i,
-	&:hover svg {
+	&:hover i {
 		color: $white;
 	}
 
@@ -39,9 +36,8 @@
 	text-transform: uppercase;
 	border: 2px solid $black;
 	padding: 50px 30px 50px 30px;
-	transition: all 0.3s ease 0s;
-	i,
-	svg {
+
+	i {
 		font-size: 60px;
 		color: $gold;
 		display: block;
@@ -50,8 +46,7 @@
 	}
 
 	&:hover,
-	&:hover i,
-	&:hover svg {
+	&:hover i {
 		color: $white;
 	}
 
@@ -70,9 +65,8 @@
 	border: 50px solid #001140;
 	background: $pale-blue;
 	outline: 0px solid #0366d6;
-	transition: all 0.3s ease 0s;
-	i,
-	svg {
+
+	i {
 		font-size: 60px;
 		color: $gold;
 		display: block;
@@ -82,8 +76,7 @@
 	}
 
 	&:hover,
-	&:hover i,
-	&:hover svg {
+	&:hover i {
 		color: $white;
 	}
 
