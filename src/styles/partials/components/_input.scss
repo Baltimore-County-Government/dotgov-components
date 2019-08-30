@@ -1,9 +1,17 @@
 input,
+select,
 textarea {
 	border: $input-border-width solid $black;
 	border-radius: 0; /** needed for safari mobile */
+	color: $gray-dark;
+	font-size: $h3-font-size;
+	font-family: $default-heading-font;
 	padding: $padding-smallest;
 	width: 100%;
+}
+
+@include placeholder {
+	font-style: italic;
 }
 
 textarea {
