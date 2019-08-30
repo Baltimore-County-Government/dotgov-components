@@ -4,8 +4,8 @@ import classnames from 'classnames';
 
 const IconLink = (props) => {
 	const defaultSize = 'large';
-	const { icon, href, description, size = defaultSize, text, className, ...rest } = props;
-	const cssClasses = classnames('dg_icon-link', `dg_icon-link--${size}`, className);
+	const { icon, href, description, size = defaultSize, type = '', text, className, ...rest } = props;
+	const cssClasses = classnames('dg_icon-link', `dg_icon-link--${size}`, `dg_icon-link--${type}`, className);
 	const iconCssClasses = classnames('dg_icon', icon);
 	const linkIcon = icon ? <i aria-hidden="true" className={iconCssClasses} /> : null;
 	return (
@@ -24,7 +24,9 @@ IconLink.propTypes = {
 	/** Font Awesome icon class */
 	icon: PropTypes.string.isRequired,
 	/** Button Text*/
-	text: PropTypes.string
+	text: PropTypes.string,
+	/** Visual type of the icon link, possible values are `rectangle` and `circle` */
+	type: PropTypes.string
 };
 
 export default IconLink;
