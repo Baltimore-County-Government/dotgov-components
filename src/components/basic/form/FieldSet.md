@@ -20,7 +20,7 @@ If you aren't using react, you'll need to use the following html:
 ```html
 <div class="dg_form-field">
 	<fieldset className="dg_fieldset">
-		<legend class="dg_legend"></legend>
+		<legend class="dg_legend">1 - Contact Information</legend>
 	</fieldset>
 </div>
 ```
