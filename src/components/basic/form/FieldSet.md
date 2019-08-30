@@ -6,14 +6,15 @@
 import FieldSet from "./FieldSet";
 import Legend from "./Legend";
 import TextArea from "./TextArea";
-<FieldSet>
-	<Legend>Legend Text Here</Legend>
-	<TextArea
-		id="problem-description"
-		label="Describe your problem"
-		placeholder="Briefly describe your problem"
-	/>
-</FieldSet>;
+import FormField from "./FormField";
+import Checkbox from "./Checkbox";
+<form>
+	<FieldSet>
+		<Legend>1 - Contact Information</Legend>
+		<Checkbox id="car-color-blue" name="car-color" label="Is your car blue?" />
+		<Checkbox id="car-color-blue" name="car-color" label="Is your car blue?" />
+	</FieldSet>
+</form>;
 ```
 
 If you aren't using react, you'll need to use the following html:
