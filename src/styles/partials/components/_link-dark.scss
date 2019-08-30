@@ -29,6 +29,7 @@
 
 		&:hover,
 		&.hovered {
+			background: none;
 			color: $blue-lightest;
 
 			i {
@@ -47,6 +48,9 @@
 
 		&:disabled,
 		&.disabled {
+			background: none;
+			color: $gray-light;
+
 			i {
 				background: $gray-light;
 			}

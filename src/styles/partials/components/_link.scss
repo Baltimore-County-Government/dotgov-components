@@ -16,7 +16,6 @@ $small-icon-link-size: 50px;
 	font-weight: $font-bold;
 	padding: $default-padding $padding-jumbo;
 	margin: $margin-small;
-	max-width: 248px;
 	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -78,6 +77,7 @@ $small-icon-link-size: 50px;
 
 .dg_icon-link--circle {
 	border: none;
+	padding: $default-padding;
 
 	i {
 		background: $gold;
@@ -105,11 +105,12 @@ $small-icon-link-size: 50px;
 
 	&:active,
 	&.active {
+		background: none;
 		color: $pale-blue;
 
 		i {
 			background: $pale-blue;
-			color: white;
+			color: $white;
 		}
 	}
 
@@ -120,6 +121,7 @@ $small-icon-link-size: 50px;
 
 	&:disabled,
 	&.disabled {
+		background: none;
 		color: $gray-light;
 
 		i {
