@@ -16,14 +16,14 @@ Html Snippet:
 ### Checkbox Group
 
 ```jsx
-import CheckboxGroup from './CheckboxGroup'
+import CheckedInputGroup from './CheckedInputGroup'
 ;
-<CheckboxGroup hint="Select all that apply." describedBy="favorite-colors-hint" heading="What are your favorite colors?">
+<CheckedInputGroup hint="Select all that apply." describedBy="favorite-colors-hint" heading="What are your favorite colors?">
 	<Checkbox id="color-blue" name="favorite-color" label="Blue" value="blue" />
 	<Checkbox id="color-red" name="favorite-color" label="Red" value="red" />
 	<Checkbox id="color-yellow" name="favorite-color" label="Yellow" value="yellow" />
 	<Checkbox id="color-black" name="favorite-color" label="Black" value="black" disabled checked />
-</CheckboxGroup>
+</CheckedInputGroup>
 ```
 
 Html Snippet:
