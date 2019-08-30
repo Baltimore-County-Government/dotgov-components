@@ -7,12 +7,8 @@ button i {
 
 :focus,
 .focused {
-	outline: 2px solid $vibrant-blue;
-}
-
-a:focus,
-a.focused {
-	outline-offset: 2px;
+	outline: 2px solid $blue-lightest;
+	outline-offset: 3px;
 }
 
 :disabled,
