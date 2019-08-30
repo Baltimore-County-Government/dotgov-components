@@ -120,11 +120,11 @@ Html Snippet:
 ```jsx
 import IconLink from './IconLink'
 ;<div style={{ display: 'flex', justifyContent: 'space-between', padding: '10px' }}>
-	<IconLink href="#linkbutton-default" id="linkbutton-default" text="Default" icon="fas fa-star" description="View your favorite default items." />
-	<IconLink href="#linkbutton-hovered" id="#linkbutton-hovered" className="hovered" text="Hovered" icon="fas fa-star" description="View your favorite default items." />
-	<IconLink href="#linkbutton-active" id="#linkbutton-active" className="active" text="Active" icon="fas fa-star" description="View your favorite default items." />
-	<IconLink href="#linkbutton-focuses" id="#linkbutton-focuses" className="focused" text="Focused" icon="fas fa-star" description="View your favorite default items." />
-	<IconLink href="#linkbutton-disabled" id="#linkbutton-disabled" className="disabled" text="Disabled" icon="fas fa-star" description="View your favorite default items." />
+	<IconLink href="#linkbutton-default" id="linkbutton-default" type="circle" text="Default" icon="fas fa-star" description="View your favorite default items." />
+	<IconLink href="#linkbutton-hovered" id="#linkbutton-hovered" type="circle" className="hovered" text="Hovered" icon="fas fa-star" description="View your favorite default items." />
+	<IconLink href="#linkbutton-active" id="#linkbutton-active" type="circle" className="active" text="Active" icon="fas fa-star" description="View your favorite default items." />
+	<IconLink href="#linkbutton-focuses" id="#linkbutton-focuses" type="circle" className="focused" text="Focused" icon="fas fa-star" description="View your favorite default items." />
+	<IconLink href="#linkbutton-disabled" id="#linkbutton-disabled" type="circle" className="disabled" text="Disabled" icon="fas fa-star" description="View your favorite default items." />
 </div>
 ```
 
@@ -132,7 +132,7 @@ Html Snippet:
 
 ```html
 <a
-	class="dg_icon-link dg_icon-link--large"
+	class="dg_icon-link dg_icon-link--large dg_icon-link--circle"
 	href="#linkbutton-default"
 	id="linkbutton-default"
 	aria-label="View your favorite default items.">
@@ -146,18 +146,18 @@ Html Snippet:
 ```jsx
 import IconLink from './IconLink'
 ;<div style={{ display: 'flex', justifyContent: 'space-between', padding: '10px' }}>
-	<IconLink size="small" href="#linkbutton-default" id="linkbutton-default" icon="fas fa-star" description="View your favorite default items." />
-	<IconLink size="small" href="#linkbutton-hovered" id="#linkbutton-hovered" className="hovered" icon="fas fa-star" description="View your favorite default items." />
-	<IconLink size="small" href="#linkbutton-active" id="#linkbutton-active" className="active" icon="fas fa-star" description="View your favorite default items." />
-	<IconLink size="small" href="#linkbutton-focuses" id="#linkbutton-focuses" className="focused" icon="fas fa-star" description="View your favorite default items." />
-	<IconLink size="small" href="#linkbutton-disabled" id="#linkbutton-disabled" className="disabled" icon="fas fa-star" description="View your favorite default items." />
+	<IconLink size="small" href="#linkbutton-default" id="linkbutton-default" type="circle" icon="fas fa-star" description="View your favorite default items." />
+	<IconLink size="small" href="#linkbutton-hovered" id="#linkbutton-hovered" type="circle" className="hovered" icon="fas fa-star" description="View your favorite default items." />
+	<IconLink size="small" href="#linkbutton-active" id="#linkbutton-active" type="circle" className="active" icon="fas fa-star" description="View your favorite default items." />
+	<IconLink size="small" href="#linkbutton-focuses" id="#linkbutton-focuses" type="circle" className="focused" icon="fas fa-star" description="View your favorite default items." />
+	<IconLink size="small" href="#linkbutton-disabled" id="#linkbutton-disabled" type="circle" className="disabled" icon="fas fa-star" description="View your favorite default items." />
 </div>
 ```
 Html Snippet:
 
 ```html
 <a
-	class="dg_icon-link dg_icon-link--small"
+	class="dg_icon-link dg_icon-link--small dg_icon-link--circle"
 	href="#linkbutton-default"
 	aria-label="View your favorite default items.">
 		<i aria-hidden="true" class="dg_icon fas fa-star"></i>
@@ -171,11 +171,11 @@ By including a button inside of a [dark section](dark-section), it will automati
 ```jsx
 import IconLink from './IconLink'
 ;<div style={{ display: 'flex', justifyContent: 'space-between', padding: '20px' }} className="dg_section dark">
-	<IconLink href="#linkbutton-default" id="linkbutton-default" text="Default" icon="fas fa-star" description="View your favorite default items." />
-	<IconLink href="#linkbutton-hovered" id="#linkbutton-hovered" className="hovered" text="Hovered" icon="fas fa-star" description="View your favorite default items." />
-	<IconLink href="#linkbutton-active" id="#linkbutton-active" className="active" text="Active" icon="fas fa-star" description="View your favorite default items." />
-	<IconLink href="#linkbutton-focuses" id="#linkbutton-focuses" className="focused" text="Focused" icon="fas fa-star" description="View your favorite default items." />
-	<IconLink href="#linkbutton-disabled" id="#linkbutton-disabled" className="disabled" text="Disabled" icon="fas fa-star" description="View your favorite default items." />
+	<IconLink href="#linkbutton-default" id="linkbutton-default" type="circle" text="Default" icon="fas fa-star" description="View your favorite default items." />
+	<IconLink href="#linkbutton-hovered" id="#linkbutton-hovered" type="circle" className="hovered" text="Hovered" icon="fas fa-star" description="View your favorite default items." />
+	<IconLink href="#linkbutton-active" id="#linkbutton-active" type="circle" className="active" text="Active" icon="fas fa-star" description="View your favorite default items." />
+	<IconLink href="#linkbutton-focuses" id="#linkbutton-focuses" type="circle" className="focused" text="Focused" icon="fas fa-star" description="View your favorite default items." />
+	<IconLink href="#linkbutton-disabled" id="#linkbutton-disabled" type="circle" className="disabled" text="Disabled" icon="fas fa-star" description="View your favorite default items." />
 </div>
 ```
 
@@ -183,7 +183,7 @@ Html Snippet:
 
 ```html
 <a
-	class="dg_icon-link dg_icon-link--large"
+	class="dg_icon-link dg_icon-link--large dg_icon--circle"
 	href="#linkbutton-default"
 	id="linkbutton-default"
 	aria-label="View your favorite default items.">
@@ -199,11 +199,11 @@ By including a button inside of a [dark section](dark-section), it will automati
 ```jsx
 import IconLink from './IconLink'
 ;<div style={{ display: 'flex', justifyContent: 'space-between', padding: '20px' }} className="dg_section dark">
-	<IconLink size="small" href="#linkbutton-default" id="linkbutton-default" icon="fas fa-star" description="View your favorite default items." />
-	<IconLink size="small" href="#linkbutton-hovered" id="#linkbutton-hovered" className="hovered" icon="fas fa-star" description="View your favorite default items." />
-	<IconLink size="small" href="#linkbutton-active" id="#linkbutton-active" className="active" icon="fas fa-star" description="View your favorite default items." />
-	<IconLink size="small" href="#linkbutton-focuses" id="#linkbutton-focuses" className="focused" icon="fas fa-star" description="View your favorite default items." />
-	<IconLink size="small" href="#linkbutton-disabled" id="#linkbutton-disabled" className="disabled" icon="fas fa-star" description="View your favorite default items." />
+	<IconLink size="small" href="#linkbutton-default" id="linkbutton-default" type="circle" icon="fas fa-star" description="View your favorite default items." />
+	<IconLink size="small" href="#linkbutton-hovered" id="#linkbutton-hovered" type="circle" className="hovered" icon="fas fa-star" description="View your favorite default items." />
+	<IconLink size="small" href="#linkbutton-active" id="#linkbutton-active" type="circle" className="active" icon="fas fa-star" description="View your favorite default items." />
+	<IconLink size="small" href="#linkbutton-focuses" id="#linkbutton-focuses" type="circle" className="focused" icon="fas fa-star" description="View your favorite default items." />
+	<IconLink size="small" href="#linkbutton-disabled" id="#linkbutton-disabled" type="circle" className="disabled" icon="fas fa-star" description="View your favorite default items." />
 </div>
 ```
 
@@ -211,7 +211,7 @@ Html Snippet:
 
 ```html
 <a
-	class="dg_icon-link dg_icon-link--small"
+	class="dg_icon-link dg_icon-link--small dg_icon--circle"
 	href="#linkbutton-default"
 	aria-label="View your favorite default items.">
 		<i aria-hidden="true" class="dg_icon fas fa-star"></i>
