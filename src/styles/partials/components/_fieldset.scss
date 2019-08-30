@@ -1,23 +1,31 @@
 .dg_fieldset {
 	border-top: $border-width-large solid $gray-light;
+	margin-bottom: $margin-largest;
 	padding-top: $padding-large;
 
 	.dg_fieldset-hint {
 		display: block;
 		font-family: $default-heading-font;
-		margin-top: $margin-smallest;
 		font-weight: $font-light;
 		margin-bottom: $margin-large;
+		margin-top: $margin-smallest;
 	}
+
+	.dg_form-field {
+		padding-top: $padding-largest;
+	}
+
 	.dg_legend {
-		font-size: $smallest-heading-font-size;
-		font-family: $default-heading-font;
 		border: none;
-		letter-spacing: 10px;
-		font-weight: $font-bold;
-		margin-top: margin-smallest;
-		padding-bottom: $padding-large;
+		color: $gray-dark;
 		float: left;
+		font-family: $default-heading-font;
+		font-size: $smallest-heading-font-size;
+		font-weight: $font-bold;
+		letter-spacing: 10px;
+		margin-bottom: $margin-large;
+		margin-top: $margin-smallest;
+		padding-bottom: $padding-large;
 		width: 100%;
 	}
 }
