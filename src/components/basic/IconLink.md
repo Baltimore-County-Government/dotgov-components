@@ -40,6 +40,9 @@
 Html Snippet:
 
 ```html
-
+<a href="https://www.w3schools.com" class="dg_icon-link dg_icon-link--large" aria-label="Visit our users dashboard to learn more.">
+	<i aria-hidden="true" class="dg_icon fa fa-users"></i>
+	<span>Default</span>
+</a>
 ```
 
