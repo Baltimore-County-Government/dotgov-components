@@ -1,12 +1,23 @@
-@import url("https://fonts.googleapis.com/css?family=Crimson+Text|Montserrat:300,400,600,700");
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,600,600i|Montserrat:300,400,600,700&display=swap');
 
 $default-heading-font: "Montserrat", sans-serif;
 $default-body-font: "Crimson Text", serif;
+$font-awesome-free: 'Font Awesome 5 Free';
+$font-awesome-pro: 'Font Awesome 5 Pro';
 
 /** Font Sizes */
 $base-font-size: 22px;
 
+$h1-font-size: 36px;
+$h2-font-size: 24px;
+$h3-font-size: 20px;
+$small-heading-font-size: 18px;
+$smallest-heading-font-size: 16px;
+$smallest-font-size: 14px;
+
 /** Font Weights */
-$font-light: 300;
+$font-lightest: 300;
+$font-light: 400;
 $font-normal: 500;
+$font-medium: 600;
 $font-bold: 700;
