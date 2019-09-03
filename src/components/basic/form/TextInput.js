@@ -4,11 +4,11 @@ import FormField from './FormField';
 
 const TextInput = (props) => {
 	const [ error, setError ] = useState('');
-	const { id, hint, label, validate, ...otherProps } = props;
+	const { id, hint, label, validate, type = "text", ...otherProps } = props;
 
 	return (
 		<FormField id={id} hint={hint} label={label} error={error}>
-			<input id={id} className="dg_form-field_input--text" {...otherProps} />
+			<input id={id} className="dg_form-field_input--text" type={type} {...otherProps} />
 		</FormField>
 	);
 };
@@ -26,10 +26,6 @@ TextInput.propTypes = {
 	type: PropTypes.string,
 	/** Function that will validate the field */
 	validate: PropTypes.func
-};
-
-TextInput.defaultProps = {
-	type: 'text'
 };
 
 export default TextInput;

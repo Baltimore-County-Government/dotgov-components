@@ -1,5 +1,75 @@
-$black: #333;
-$gold: #feb30c; /** TODO: need to figure out names for this */
-$old-bay-blue: #002280;
-$white: #fff;
+$default-lightest-ratio: 50%;
+$default-light-ratio: 25%;
+
+$gold: #feb30c;
+$gold-lightest: mix(white, $gold, $default-lightest-ratio);
+$gold-light: mix(white, $gold, $default-light-ratio);
+$gold-dark: mix(black, $gold, $default-light-ratio);
+$gold-darkest: mix(black, $gold, $default-lightest-ratio);
+
 $red: #c51110;
+$red-lightest: mix(white, $red, $default-lightest-ratio);
+$red-light: mix(white, $red, $default-light-ratio);
+$red-dark: mix(black, $red, $default-light-ratio);
+$red-darkest: mix(black, $red, $default-lightest-ratio);
+
+$blue: #002280;
+$blue-lightest: mix(white, $blue, $default-lightest-ratio);
+$blue-light: mix(white, $blue, $default-light-ratio);
+$blue-dark: mix(black, $blue, $default-light-ratio);
+$blue-darkest: mix(black, $blue, $default-lightest-ratio);
+
+$pale-blue: #243e5d;
+$pale-blue-lightest: mix(white, $pale-blue, $default-lightest-ratio);
+$pale-blue-light: mix(white, $pale-blue, $default-light-ratio);
+$pale-blue-dark: mix(black, $pale-blue, $default-light-ratio);
+$pale-blue-darkest: mix(black, $pale-blue, $default-lightest-ratio);
+
+/* Does not contain any shades */
+$vibrant-blue: #1076bc;
+
+$gray-lightest-ratio: 95%;
+$gray-light-ratio: 60%;
+
+$gray: #666;
+$gray-lightest: mix(white, $gray, $gray-lightest-ratio);
+$gray-light: mix(white, $gray, $gray-light-ratio);
+$gray-dark: mix(black, $gray, $gray-light-ratio);
+$gray-darkest: mix(black, $gray, $gray-lightest-ratio);
+$black: black;
+$white: white;
+
+/*
+  Sass Map for use with generating helper classes, this should be consistent with the variables above .
+  Names should match the classes you will export, this should not change.
+*/
+$colors: (
+	"gold": $gold,
+	"gold--lightest": $gold-lightest,
+	"gold--light": $gold-light,
+	"gold--dark": $gold-dark,
+	"gold--darkest": $gold-darkest,
+	"red": $red,
+	"red--lightest": $red-lightest,
+	"red--light": $red-light,
+	"red--dark": $red-dark,
+	"red--darkest": $red-darkest,
+	"blue": $blue,
+	"blue--lightest": $blue-lightest,
+	"blue--light": $blue-light,
+	"blue--dark": $blue-dark,
+	"blue--darkest": $blue-darkest,
+	"pale-blue": $pale-blue,
+	"pale-blue--lightest": $pale-blue-lightest,
+	"pale-blue--light": $pale-blue-light,
+	"pale-blue--dark": $pale-blue-dark,
+	"pale-blue--darkest": $pale-blue-darkest,
+	"vibrant-blue": $vibrant-blue,
+	"gray": $gray,
+	"gray--lightest": $gray-lightest,
+	"gray--light": $gray-light,
+	"gray--dark": $gray-dark,
+	"gray--darkest": $gray-darkest,
+	"black": $black,
+	"white": $white
+);

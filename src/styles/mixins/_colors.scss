@@ -1,0 +1,7 @@
+@mixin color-modifiers($attribute: 'color', $prefix: '-') {
+	@each $name, $hex in $colors {
+		&-#{$name} {
+			#{$attribute}: $hex;
+		}
+	}
+}

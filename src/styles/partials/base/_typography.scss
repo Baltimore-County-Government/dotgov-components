@@ -1,27 +1,65 @@
-* {
-  font-family: $default-body-font;
-  font-size: $base-font-size;
+body {
+	font-family: $default-body-font;
+	font-size: $base-font-size;
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
-input,
-textarea,
 p {
-  font-family: $default-body-font;
+	color: $gray-dark;
+	font-size: $base-font-size;
+	font-family: $default-body-font;
+}
+
+a {
+	color: $blue;
+
+	&:hover,
+	&:focus,
+	&.hovered,
+	&.focused {
+		color: $vibrant-blue;
+	}
+
+	&:active,
+	&.active {
+		color: $pale-blue;
+	}
+
+	&:disabled,
+	&.disabled {
+		color: $pale-blue-lightest;
+	}
 }
 
 h1,
 h2,
 h3,
-.dg_label,
-.dg_icon-button {
-  font-family: $default-heading-font;
+h4,
+h5,
+h6,
+.dg_icon-button  {
+	font-family: $default-heading-font;
+	font-weight: $font-bold;
+	letter-spacing: 0;
+	text-transform: uppercase;
 }
 
-.dg_label {
-  font-weight: 600; //TODO: move to variable
+h1 {
+	font-size: $h1-font-size;
 }
 
-@include placeholder {
-  font-family: $default-body-font;
-  font-style: italic;
+h2 {
+	font-size: $h2-font-size;
+}
+
+h3 {
+	font-size: $h3-font-size;
+}
+
+h4,
+h5,
+h6 {
+	font-size: $small-heading-font-size;
 }
