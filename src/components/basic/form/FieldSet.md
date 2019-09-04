@@ -4,15 +4,19 @@
 
 ```jsx
 import FieldSet from "./FieldSet";
-import Legend from "./Legend";
-import TextArea from "./TextArea";
-import FormField from "./FormField";
-import Checkbox from "./Checkbox";
+import TextInput from "./TextInput";
 <form>
-	<FieldSet>
-		<Legend>1 - Contact Information</Legend>
-		<Checkbox id="car-color-blue" name="car-color" label="Is your car blue?" />
-		<Checkbox id="car-color-blue" name="car-color" label="Is your car blue?" />
+	<FieldSet title="1 - Contact Information">
+		<TextInput
+			id="first-name"
+			label="First Name"
+			placeholder="Enter your first name"
+		/>
+		<TextInput
+			id="last-name"
+			label="Last Name"
+			placeholder="Enter your last name"
+		/>
 	</FieldSet>
 </form>;
 ```
@@ -21,15 +25,32 @@ If you aren't using react, you'll need to use the following html:
 
 ```html
 <div class="dg_form-field">
-	<label for="full-name" class="dg_label">
-		<span class="dg_label-text">Full Name</span>
-	</label>
-	<input
-		id="full-name"
-		class="dg_form-field_input--text"
-		label="Name"
-		placeholder="Enter your full name"
-		type="text"
-	/>
+	<fieldset className="dg_fieldset">
+		<legend class="dg_legend">1 - Contact Information</legend>
+		<div class="dg_form-field">
+			<label for="first-name" class="dg_label">
+				<span class="dg_label-text">First Name</span>
+			</label>
+			<input
+				id="first-name"
+				class="dg_form-field_input--text"
+				label="First Name"
+				placeholder="Enter your first name"
+				type="text"
+			/>
+		</div>
+		<div class="dg_form-field">
+			<label for="last-name" class="dg_label">
+				<span class="dg_label-text">Last Name</span>
+			</label>
+			<input
+				id="last-name"
+				class="dg_form-field_input--text"
+				label="Last Name"
+				placeholder="Enter your last name"
+				type="text"
+			/>
+		</div>
+	</fieldset>
 </div>
 ```

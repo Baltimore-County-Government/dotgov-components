@@ -1,6 +1,6 @@
 {
 	"name": "@baltimorecounty/dotgov-components",
-	"version": "0.0.14",
+	"version": "0.0.15",
 	"description": "UI design system for Baltimore County's primary [website](https://www.baltimorecountymd.gov).",
 	"main": "lib/index.js",
 	"module": "es/index.js",
@@ -22,7 +22,8 @@
 		"test:watch": "jest --watchAll",
 		"predeploy": "npm run-script build",
 		"deploy": "gh-pages -d styleguide --git git",
-		"generate-css": "node-sass --include-path src src/dotgov.scss   lib/styles/dotgov.min.css --output-style compressed"
+		"generate-css": "node-sass --include-path src src/dotgov.scss   lib/styles/dotgov.min.css --output-style compressed",
+		"get-v": "npm -v react-styleguidist"
 	},
 	"dependencies": {
 		"classnames": "^2.2.6",
