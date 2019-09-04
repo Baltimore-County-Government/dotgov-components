@@ -17,8 +17,6 @@ const FieldSet = props => {
 };
 
 FieldSet.propTypes = {
-	/** Title to describe the purpose of the group */
-	heading: PropTypes.string.isRequired,
 	/** Only when absolutely necessary, adds text to help the user fill out a field, ex Password Requirements */
 	hint: PropTypes.string,
 	/** aria-describedby attribute to associated fieldset to the hint */

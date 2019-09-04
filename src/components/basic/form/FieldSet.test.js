@@ -7,7 +7,7 @@ import TextInput from "./TextInput";
 it("renders checkboxes without crashing", () => {
 	const div = document.createElement("div");
 	ReactDOM.render(
-		<FieldSet heading="Heading of Fieldset">
+		<FieldSet>
 			<Legend>1 - Contact Information</Legend>
 			<TextInput
 				id="first-name"
