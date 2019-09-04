@@ -22,3 +22,26 @@ _Note_: When adding a markdown file for a component you will need to restart.
 ### `npm run test` and `npm run-script test:watch`
 
 Runs tests for the project. If you wish to watch the tests, use the watch command.
+
+## Usage
+
+```npm i @baltimorecounty/dotgov-components```
+
+### Including Styles
+
+**Javascript**
+
+```js
+import "@baltimorecounty/dotgov-components/lib/styles/dotgov.min.css";
+```
+
+*Note*: This import should be included your primary js file. Example `App.js` in a create react app.
+
+### Including Components
+
+Available components can be found in our [docs](https://baltimorecounty.github.io/dotgov-components/).
+
+```js
+import { FormField, TextInput, TextArea } from "@baltimorecounty/dotgov-components";
+```
+
