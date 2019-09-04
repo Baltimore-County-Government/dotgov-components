@@ -14,9 +14,8 @@ export { default as TextInput } from "./components/form/TextInput";
 
 /** Lists */
 export { default as List } from "./components/lists/List";
-export { default as List } from "./components/lists/ListItem";
+export { default as ListItem } from "./components/lists/ListItem";
 
 /** Other */
 export { default as Button } from "./components/Button";
 export { default as IconLink } from "./components/IconLink";
-
