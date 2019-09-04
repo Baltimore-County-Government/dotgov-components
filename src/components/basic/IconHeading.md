@@ -6,6 +6,14 @@
 </section>
 ```
 
+### H1 Icon Heading
+
+```jsx
+<section class="dg_section" style={{ padding: '15px' }}>
+    <IconHeading level="1" text="Latest Headlines" icon="fas fa-star" />
+</section>
+```
+
 ### Icon Heading on a Light Background
 
 ```jsx
