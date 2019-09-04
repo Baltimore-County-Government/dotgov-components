@@ -9,7 +9,7 @@ export {
 } from "./components/basic/form/CheckedInputGroup";
 export { default as RadioButton } from "./components/basic/form/RadioButton";
 export { default as Select } from "./components/basic/form/Select";
-export { default as Textarea } from "./components/basic/form/Textarea";
+export { default as Textarea } from "./components/basic/form/TextArea.js";
 export { default as TextInput } from "./components/basic/form/TextInput";
 
 /** Lists */
