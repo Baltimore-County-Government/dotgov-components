@@ -5,8 +5,6 @@
 ```jsx
 import FieldSet from "./FieldSet";
 import Legend from "./Legend";
-import TextArea from "./TextArea";
-import FormField from "./FormField";
 import TextInput from "./TextInput";
 <form>
 	<FieldSet>
