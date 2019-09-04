@@ -7,7 +7,7 @@ import FieldSet from "./FieldSet";
 import Legend from "./Legend";
 import TextInput from "./TextInput";
 <form>
-	<FieldSet>
+	<FieldSet heading="Heading of Fieldset">
 		<Legend>1 - Contact Information</Legend>
 		<TextInput
 			id="first-name"
