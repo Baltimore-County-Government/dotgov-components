@@ -1,16 +1,10 @@
-/** Vendor */
-$fa-font-path: "/webfonts";
-@import "./styles/vendor/font-awesome/scss/fontawesome";
-@import "./styles/vendor/font-awesome/scss/solid";
-@import "./styles/vendor/font-awesome/scss/light";
-@import "./styles/vendor/font-awesome/scss/regular";
-
 /** Variables */
 @import "./styles/variables/border";
 @import "./styles/variables/colors";
 @import "./styles/variables/fonts";
 @import "./styles/variables/icons";
-@import "./styles/variables/spacing"; /** contains padding and margin variables */
+@import "./styles/variables/spacing";
+/** contains padding and margin variables */
 
 /** Mixins */
 @import "./styles/mixins/animations";
@@ -49,5 +43,5 @@ $fa-font-path: "/webfonts";
 @import "./styles/partials/template/sidebar";
 
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
