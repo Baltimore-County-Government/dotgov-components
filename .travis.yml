@@ -19,14 +19,7 @@ branches:
 
 before_deploy:
     - npm install
-
-deploy:
-  # build the style guide
-  - provider: script
-    skip_cleanup: true
-    script: npm run-script build
-    on:
-        branch: master
+    - npm run-script build
 
   # push latest style guide to github pages
   - provider: pages
