@@ -4,11 +4,9 @@
 
 ```jsx
 import FieldSet from "./FieldSet";
-import Legend from "./Legend";
 import TextInput from "./TextInput";
 <form>
-	<FieldSet heading="Heading of Fieldset">
-		<Legend>1 - Contact Information</Legend>
+	<FieldSet title="1 - Contact Information">
 		<TextInput
 			id="first-name"
 			label="First Name"
