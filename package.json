@@ -1,10 +1,15 @@
 {
 	"name": "@baltimorecounty/dotgov-components",
-	"version": "0.0.14",
+	"version": "0.0.15",
 	"description": "UI design system for Baltimore County's primary [website](https://www.baltimorecountymd.gov).",
 	"main": "lib/index.js",
 	"module": "es/index.js",
-	"files": [ "css", "es", "lib", "umd" ],
+	"files": [
+		"css",
+		"es",
+		"lib",
+		"umd"
+	],
 	"scripts": {
 		"build": "styleguidist build",
 		"build-demo": "nwb build-react-component",
@@ -17,7 +22,8 @@
 		"test:watch": "jest --watchAll",
 		"predeploy": "npm run-script build",
 		"deploy": "gh-pages -d styleguide --git git",
-		"generate-css": "node-sass --include-path src src/dotgov.scss   lib/styles/dotgov.min.css --output-style compressed"
+		"generate-css": "node-sass --include-path src src/dotgov.scss   lib/styles/dotgov.min.css --output-style compressed",
+		"get-v": "npm -v react-styleguidist"
 	},
 	"dependencies": {
 		"classnames": "^2.2.6",
@@ -51,8 +57,15 @@
 	"homepage": "https://github.com/baltimorecounty/dotgov-components",
 	"license": "MIT",
 	"repository": "https://github.com/baltimorecounty/dotgov-components.git",
-	"keywords": [ "react-component" ],
-	"browserslist": [ ">1%", "last 1 version", "Firefox ESR", "not dead" ],
+	"keywords": [
+		"react-component"
+	],
+	"browserslist": [
+		">1%",
+		"last 1 version",
+		"Firefox ESR",
+		"not dead"
+	],
 	"publishConfig": {
 		"access": "public"
 	},
@@ -61,6 +74,8 @@
 			"^.+\\.jsx$": "babel-jest",
 			"^.+\\.js$": "babel-jest"
 		},
-		"setupFiles": [ "jest-prop-type-error" ]
+		"setupFiles": [
+			"jest-prop-type-error"
+		]
 	}
 }
