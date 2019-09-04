@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import FieldSet from "./FieldSet";
-import Legend from "./Legend";
 import TextInput from "./TextInput";
 
 it("renders checkboxes without crashing", () => {
