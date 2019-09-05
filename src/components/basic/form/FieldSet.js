@@ -3,15 +3,13 @@ import PropTypes from "prop-types";
 
 const FieldSet = props => {
   const { hint, describedBy, children, title } = props;
+  const ariaDescribedBy = describedBy || title.replace(/\s/g, "");
 
   return (
-    <fieldset
-      className="dg_fieldset"
-      aria-describedby={describedBy || title.replace(/\s/g, "")}
-    >
+    <fieldset className="dg_fieldset" aria-describedby={ariaDescribedBy}>
       <legend className="dg_legend">{title}</legend>
       {hint && (
-        <span id={describedBy} className="dg_fieldset-hint">
+        <span id={ariaDescribedBy} className="dg_fieldset-hint">
           {hint}
         </span>
       )}
