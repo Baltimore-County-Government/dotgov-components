@@ -4,9 +4,9 @@ import LogoType from "./LogoType";
 import SiteStatus from "./SiteStatus";
 
 <SiteHeader>
-    <LogoType LogoHeader="Baltimore County" LogoText="Government">
+    <LogoType header="Baltimore County" description="Government">
     </LogoType>
-    <SiteStatus StatusName="BETA">
+    <SiteStatus status="BETA">
 </SiteStatus>
 </SiteHeader>
 ```

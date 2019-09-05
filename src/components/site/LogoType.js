@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const LogoType = props => 
     <a href="#" className="dg_logotype">

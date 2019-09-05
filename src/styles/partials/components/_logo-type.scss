@@ -1,12 +1,9 @@
 .dg_logotype{
     border-right: 1px solid $gray-light;
-
-    a {
-        display: block;
-        padding: 0 40px;
-        text-decoration: none;
-    }
-
+    display: block;
+    padding: 0 40px;
+    text-decoration: none;
+    
    span{
         font-family: $default-heading-font;
         text-transform: uppercase;

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const SiteStatus = props => <p><span className="dg_status-text">{props.status}</span></p>;
 
