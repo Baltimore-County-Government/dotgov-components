@@ -2,12 +2,9 @@
     border-right: 1px solid $gray-light;
 
     a {
+        display: block;
+        padding: 0 40px;
         text-decoration: none;
-    }
-  
-    h1 {
-        padding-left: $padding-jumbo;
-        padding-right: $padding-jumbo;
     }
 
    span{

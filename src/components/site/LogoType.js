@@ -1,14 +1,10 @@
 import React from 'react';
 
 const LogoType = props => 
-<div className="dg_logotype">
-    <a href="#">
-        <h1>
-            <span>{props.header}</span>
-            <span>{props.description}</span>
-        </h1>
-    </a>
-</div>;
+    <a href="#" className="dg_logotype">
+        <span>{props.header}</span>
+        <span>{props.description}</span>
+    </a>;
 
 LogoType.propTypes = {
 	/** A header for the logo i.e. vender name or Baltimore County */
