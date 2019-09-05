@@ -5,7 +5,10 @@ const FieldSet = props => {
   const { hint, describedBy, children, title } = props;
 
   return (
-    <fieldset className="dg_fieldset" aria-describedby={describedBy}>
+    <fieldset
+      className="dg_fieldset"
+      aria-describedby={describedBy || title.replace(/\s/g, "")}
+    >
       <legend className="dg_legend">{title}</legend>
       {hint && (
         <span id={describedBy} className="dg_fieldset-hint">
