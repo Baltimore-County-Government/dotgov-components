@@ -6,7 +6,7 @@
 import FieldSet from "./FieldSet";
 import TextInput from "./TextInput";
 <form>
-  <FieldSet title="1 - Contact Information">
+  <FieldSet title="Contact Information">
     <TextInput
       id="first-name"
       label="First Name"
@@ -26,7 +26,7 @@ If you aren't using react, you'll need to use the following html:
 ```html
 <div class="dg_form-field">
   <fieldset className="dg_fieldset">
-    <legend class="dg_legend">1 - Contact Information</legend>
+    <legend class="dg_legend">Contact Information</legend>
     <div class="dg_form-field">
       <label for="first-name" class="dg_label">
         <span class="dg_label-text">First Name</span>
