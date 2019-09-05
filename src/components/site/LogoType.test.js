@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import SiteHeader from "./LogoType";
+import LogoType from "./LogoType";
 
 describe("Text Input", () => {
   it("renders without crashing", () => {
