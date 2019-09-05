@@ -1,9 +1,9 @@
-.status-text{
+.dg_status-text{
     color: $gray-light;
     font-size: $h2-font-size;
     text-transform: uppercase;
     font-family: $default-heading-font;
     font-weight: $font-medium;
     letter-spacing: $default-padding;
-    padding-left: 3rem;
+    padding-left: $padding-jumbo;
   }

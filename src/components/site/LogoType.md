@@ -1,6 +1,6 @@
-Logo type component allows a logo header and description of the logo. There is a 10px spacing between letters in the description
+Logo type component allows a logo header and description of the logo.
 
 ```jsx
-<LogoType LogoHeader="Some Logo" LogoText="Text">
+<LogoType header="Some Logo" description="Text">
 </LogoType>
 ```

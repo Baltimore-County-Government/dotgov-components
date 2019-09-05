@@ -1,4 +1,4 @@
-.logotype{
+.dg_logotype{
     border-right: 1px solid $gray-light;
 
     a {
@@ -6,8 +6,8 @@
     }
   
     h1 {
-        padding-left: 2.2rem;
-        padding-right: 2rem;
+        padding-left: $padding-jumbo;
+        padding-right: $padding-jumbo;
     }
 
    span{

@@ -1,7 +1,5 @@
 import React from "react";
 
-const SiteHeader = props => {
-  return <header className="header">{props.children}</header>;
-};
+const SiteHeader = props => <header className="dg_header">{props.children}</header>;
 
 export default SiteHeader;

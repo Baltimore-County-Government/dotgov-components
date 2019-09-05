@@ -1,5 +1,5 @@
-Displays text with a 15px spacing between letters in light gray
+Displays text 
 ```jsx
-<SiteStatus StatusName="Status">
+<SiteStatus status="Status">
 </SiteStatus>
 ```
