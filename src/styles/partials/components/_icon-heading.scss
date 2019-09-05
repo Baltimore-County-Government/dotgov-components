@@ -75,9 +75,9 @@ $icon-image-size: 75px;
             /* this centers the line to the full width specified */
             position: absolute;
             /* positioning must be absolute here, and relative positioning must be applied to the parent */
-            top: 50%;
             left: 0;
             right: 0;
+            top: 50%;
             bottom: 0;
 
             /* Size */
