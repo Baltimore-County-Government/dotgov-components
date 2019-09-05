@@ -1,0 +1,31 @@
+.logotype{
+    border-right: 1px solid $gray-light;
+
+    a {
+        text-decoration: none;
+    }
+  
+    h1 {
+        padding-left: 2.2rem;
+        padding-right: 2rem;
+    }
+
+   span{
+        font-family: $default-heading-font;
+        text-transform: uppercase;
+    }
+  
+   span:first-of-type {
+        font-weight: $font-bold;
+        font-size: $small-heading-font-size;
+        color: $black;
+    }
+  
+   span:last-of-type{
+        font-weight: $font-medium;
+        font-size: $smallest-font-size;
+        letter-spacing: $padding-small;
+        color: $gray;
+        display: block;
+    }
+}

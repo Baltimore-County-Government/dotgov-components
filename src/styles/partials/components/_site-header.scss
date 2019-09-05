@@ -1,0 +1,13 @@
+.header {
+    background-color: $gray-lightest;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+       
+        p {
+            padding: $padding-large;
+            margin: 0;
+        }
+  }
