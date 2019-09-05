@@ -1,9 +1,9 @@
 import React from 'react';
 
 const LogoType = props => 
-<div class="logotype">
+<div className="logotype">
     <a href="#">
-        <h1 class="logotype">
+        <h1>
             <span>{props.LogoHeader}</span>
             <span>{props.LogoText}</span>
         </h1>
