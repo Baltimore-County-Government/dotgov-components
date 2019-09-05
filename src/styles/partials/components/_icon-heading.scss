@@ -18,22 +18,30 @@ $icon-image-size: 75px;
         position: relative;
 
         &:before {
-            content: '';
             background: $white;
+            content: '';
+            margin: auto;
+
+            /* Position */
             position: absolute;
             left: 0;
             right: 0;
-            margin: auto;
-            width: $icon-image-size + $padding-large * 2;
-            height: $icon-image-size;
             z-index: 1;
+
+            /* Size */
+            height: $icon-image-size;
+            width: $icon-image-size + $padding-large * 2;
         }
 
         img {
             margin-bottom: -$border-width-large * 3;
+
+            /* Position */
             position: relative;
-            height: $icon-image-size;
             z-index: 1;
+
+            /* Size */
+            height: $icon-image-size;
         }
     }
 
@@ -60,7 +68,10 @@ $icon-image-size: 75px;
         &:after {
             border-top: $border-width-large solid $gray-light;
             content: "";
+
             margin: 0 auto;
+
+            /* Position */
             /* this centers the line to the full width specified */
             position: absolute;
             /* positioning must be absolute here, and relative positioning must be applied to the parent */
@@ -68,6 +79,8 @@ $icon-image-size: 75px;
             left: 0;
             right: 0;
             bottom: 0;
+
+            /* Size */
             width: 100%;
         }
     }
