@@ -4,6 +4,6 @@
     text-transform: uppercase;
     font-family: $default-heading-font;
     font-weight: $font-medium;
-    letter-spacing: $default-padding;
+    letter-spacing: $base-spacing-unit * 2;
     padding-left: $padding-jumbo;
 }
