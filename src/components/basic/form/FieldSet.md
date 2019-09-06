@@ -4,31 +4,53 @@
 
 ```jsx
 import FieldSet from "./FieldSet";
-import Legend from "./Legend";
-import TextArea from "./TextArea";
-<FieldSet>
-	<Legend>Legend Text Here</Legend>
-	<TextArea
-		id="problem-description"
-		label="Describe your problem"
-		placeholder="Briefly describe your problem"
-	/>
-</FieldSet>;
+import TextInput from "./TextInput";
+<form>
+  <FieldSet title="Contact Information">
+    <TextInput
+      id="first-name"
+      label="First Name"
+      placeholder="Enter your first name"
+    />
+    <TextInput
+      id="last-name"
+      label="Last Name"
+      placeholder="Enter your last name"
+    />
+  </FieldSet>
+</form>;
 ```
 
 If you aren't using react, you'll need to use the following html:
 
 ```html
 <div class="dg_form-field">
-	<label for="full-name" class="dg_label">
-		<span class="dg_label-text">Full Name</span>
-	</label>
-	<input
-		id="full-name"
-		class="dg_form-field_input--text"
-		label="Name"
-		placeholder="Enter your full name"
-		type="text"
-	/>
+  <fieldset className="dg_fieldset">
+    <legend class="dg_legend">Contact Information</legend>
+    <div class="dg_form-field">
+      <label for="first-name" class="dg_label">
+        <span class="dg_label-text">First Name</span>
+      </label>
+      <input
+        id="first-name"
+        class="dg_form-field_input--text"
+        label="First Name"
+        placeholder="Enter your first name"
+        type="text"
+      />
+    </div>
+    <div class="dg_form-field">
+      <label for="last-name" class="dg_label">
+        <span class="dg_label-text">Last Name</span>
+      </label>
+      <input
+        id="last-name"
+        class="dg_form-field_input--text"
+        label="Last Name"
+        placeholder="Enter your last name"
+        type="text"
+      />
+    </div>
+  </fieldset>
 </div>
 ```

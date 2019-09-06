@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import SiteHeader from "./SiteHeader";
+import LogoType from "./LogoType";
 
 it("renders without crashing", () => {
   const div = document.createElement("div");
-  ReactDOM.render(<SiteHeader status="Beta" />, div);
+  ReactDOM.render(<LogoType header="Baltimore" description="County" />, div);
   ReactDOM.unmountComponentAtNode(div);
 });
