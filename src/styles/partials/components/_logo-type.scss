@@ -1,20 +1,20 @@
-.dg_logotype{
+.dg_logotype {
     border-right: 1px solid $gray-light;
     padding: 0 40px;
     text-decoration: none;
 
-   span{
+    span {
         font-family: $default-heading-font;
         text-transform: uppercase;
     }
-  
-   span:first-of-type {
+
+    span:first-of-type {
         font-weight: $font-bold;
         font-size: $small-heading-font-size;
         color: $black;
     }
-  
-   span:last-of-type{
+
+    span:last-of-type {
         font-weight: $font-medium;
         font-size: $smallest-font-size;
         letter-spacing: $padding-small;

@@ -1,17 +1,18 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-const LogoType = props => 
-    <a href="#" className="dg_logotype">
-        <span>{props.header}</span>
-        <span>{props.description}</span>
-    </a>;
+const LogoType = props => (
+  <a href="#" className="dg_logotype">
+    <span>{props.header}</span>
+    <span>{props.description}</span>
+  </a>
+);
 
 LogoType.propTypes = {
-	/** A header for the logo i.e. vender name or Baltimore County */
-	header: PropTypes.string.isRequired,
-	/** Adds a description to the logo i.e. vendor catch phrase or Government */
-	description: PropTypes.string.isRequired,
+  /** A header for the logo i.e. vender name or Baltimore County */
+  header: PropTypes.string.isRequired,
+  /** Adds a description to the logo i.e. vendor catch phrase or Government */
+  description: PropTypes.string.isRequired
 };
 
-export default LogoType
+export default LogoType;
