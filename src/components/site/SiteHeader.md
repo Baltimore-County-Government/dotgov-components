@@ -6,7 +6,7 @@ import SiteStatus from "./SiteStatus";
 <SiteHeader>
     <LogoType header="Baltimore County" description="Government">
     </LogoType>
-    <SiteStatus status="beta">
+    <SiteStatus status="Beta">
 </SiteStatus>
 </SiteHeader>
 ```
