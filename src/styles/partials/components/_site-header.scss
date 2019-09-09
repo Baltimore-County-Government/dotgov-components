@@ -1,14 +1,14 @@
 .dg_header {
-    background-color: $gray-lightest;
-    border-top: $border-width-largest solid $red;
-    width: 100%;
+  background-color: $gray-lightest;
+  border-top: $border-width-largest solid $red;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+
+  p {
+    padding: $padding-large;
     margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-       
-        p {
-            padding: $padding-large;
-            margin: 0;
-        }
   }
+}

@@ -1,20 +1,18 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-const Search = props =>
-	<div style="width: 400px">
-		<div class="input-group">
-			<input class="form-control" type="text" placeholder="Search"></input>
-			<span class="input-group-btn">
-				<button class="btn btn-info btn-search"><i class="icon icon-inverse icon-search"></i></button>
-			</span>
-		</div>
-	</div>;
+const Search = props => (
+  <form className="dg_search-container" id="search-bar">
+    <input
+      className="dg_txt-field-cnty"
+      id="main-search"
+      type="text"
+      placeholder="Search for services and more..."
+    ></input>
+    <button className="dg_cnty-srch-btn" type="submit">
+      <i class="fas fa-search" aria-hidden="true"></i>
+    </button>
+  </form>
+);
 
-Search.propTypes = {
-	/** A description for the sites status i.e. BETA */
-	status: PropTypes.string.isRequired,
-};
-
-export default Search
-
+export default Search;
