@@ -1,3 +1,0 @@
-```jsx
-<Search></Search>
-```
