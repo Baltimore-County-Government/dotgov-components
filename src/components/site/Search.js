@@ -6,7 +6,7 @@ const Search = props => (
       Search:
     </label>
     <input
-      className="dg_search-text-field"
+      className="dg_search-input"
       id="main-search"
       type="text"
       placeholder="Search for services and more..."
