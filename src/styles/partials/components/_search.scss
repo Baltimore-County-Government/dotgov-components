@@ -15,10 +15,9 @@
     background: none;
     border: none;
 
-    // i:hover {
-    //   color: $blue-lightest;
-    //   transition: all 0.3s ease 0s;
-    // }
+    i:hover {
+      color: $blue-lightest;
+    }
   }
 }
 .dg_search-text-field {
@@ -34,5 +33,4 @@
   background-color: $gray-lightest;
   background-clip: padding-box;
   border: $default-border-width solid $black;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
