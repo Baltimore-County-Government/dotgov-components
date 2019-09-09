@@ -1,6 +1,6 @@
 .dg_logotype {
-  border-right: 1px solid $gray-light;
-  padding: 0 20px 0 40px;
+  border-right: $border-width-small solid $gray-light;
+  padding: 0 $padding-large 0 $padding-largest;
   text-decoration: none;
 
   span {

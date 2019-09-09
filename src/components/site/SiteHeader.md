@@ -1,4 +1,4 @@
-Site header is just an empty contanier but we have added some components to display how it will hold certain items
+Site header is just an empty container but we have added some components to display how it will hold certain items
 
 ```jsx
 import LogoType from "./LogoType";
