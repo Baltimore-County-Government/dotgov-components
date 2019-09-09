@@ -6,7 +6,7 @@ import SectionTransparency from "./SectionTransparency";
 <div className="container your-govt">
   <SectionTransparency></SectionTransparency>
 </div>;
-<div style={{ padding: '10px'}}>
+/* <div style={{ padding: '10px'}}>
 	<Transparency
 		icon="fa fa-bullhorn"
         size="large"
@@ -36,7 +36,7 @@ import SectionTransparency from "./SectionTransparency";
 		text="OPEN DATA"
 		href="https://www.w3schools.com" />
 
-</div>
+</div> */
 ```
 Html Snippet:
 
