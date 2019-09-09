@@ -1,53 +1,35 @@
 .dg_section_government {
-  color: #666666;
-  font-family: "Montserrat", sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  letter-spacing: 15px;
   text-align: center;
-  text-transform: uppercase;
+
+  h3 {
+    color: #666666;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 15px;
+    text-align: center;
+    text-transform: uppercase;
+  }
 }
 
-.align-text-center {
-  text-align: center;
-}
-
-.container {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.icon-dark {
-  color: #666666;
-}
-
-.icon-section-header-light {
-  font-size: 35px;
-  background-color: #ffffff;
-  display: block;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: -20px;
-  width: 100px;
-}
-
-.testing-style-drk {
+.dg_icon_container {
   border-top: 5px solid #e6e6e6;
-  position: relative;
-}
-
-.mb-5,
-.my-5 {
-  margin-bottom: 3rem !important;
-}
-.col-md-12 {
   position: relative;
   width: 100%;
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
+  margin-bottom: 3rem;
+
+  i {
+    font-size: 35px;
+    color: #666666;
+    background-color: #ffffff;
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -20px;
+    width: 100px;
+  }
 }
