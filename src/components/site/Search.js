@@ -7,6 +7,7 @@ const Search = props => (
       id="main-search"
       type="text"
       placeholder="Search for services and more..."
+      autocomplete="off"
     ></input>
     <button className="dg_search-btn" type="submit">
       <i className="fas fa-search" aria-hidden="true"></i>
