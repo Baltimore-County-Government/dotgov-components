@@ -2,7 +2,10 @@
 
 ### Transparency
 ```jsx
-import SectionTransparency from "./site/SectionTransparency";
+import SectionTransparency from "./SectionTransparency";
+<div className="container your-govt">
+  <SectionTransparency></SectionTransparency>
+</div>;
 <div style={{ padding: '10px'}}>
 	<Transparency
 		icon="fa fa-bullhorn"
