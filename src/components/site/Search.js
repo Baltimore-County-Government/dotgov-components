@@ -2,7 +2,7 @@ import React from "react";
 
 const Search = props => (
   <form className="dg_search-container" id="search-form">
-    <label for="main-search" className="visuallyhidden">
+    <label htmlFor="main-search" className="visuallyhidden">
       Search:
     </label>
     <input
