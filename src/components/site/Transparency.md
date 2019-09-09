@@ -1,12 +1,6 @@
-
-
 ### Transparency
 ```jsx
-import SectionTransparency from "./SectionTransparency";
-<div className="container your-govt">
-  <SectionTransparency></SectionTransparency>
-</div>;
-/* <div style={{ padding: '10px'}}>
+<div style={{ padding: '10px'}}>
 	<Transparency
 		icon="fa fa-bullhorn"
         size="large"
@@ -23,20 +17,20 @@ import SectionTransparency from "./SectionTransparency";
 		href="https://www.w3schools.com" />
 	<Transparency
         icon="fa fa-clipboard"
-          type="circle"
+        type="circle"
 		size="large"
 		description="Visit our users dashboard to learn more."
 		text="BOARDS AND COMMISSIONS"
 		href="https://www.w3schools.com" />
 	<Transparency
         icon="fa fa-chart-line"
-          type="circle"
+        type="circle"
 		size="large"
 		description="Visit our users dashboard to learn more."
 		text="OPEN DATA"
 		href="https://www.w3schools.com" />
 
-</div> */
+</div> 
 ```
 Html Snippet:
 

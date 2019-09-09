@@ -1,11 +1,5 @@
-.dg_section_government {
-	color: #666666;
-	font-family: "Montserrat", sans-serif;
-	font-size: 20px;
-	font-weight: 600;
-	letter-spacing: 15px;
-	text-align: center;
-	text-transform: uppercase;
+.dg_section_transparency {
+	letter-spacing: $base-spacing-unit * 3;
 }
 
 .align-text-center {
@@ -21,12 +15,12 @@
 }
 
 .icon-dark {
-	color: #666666;
+	color:$black;
 }
 
 .icon-section-header-light {
 	font-size: 35px;
-	background-color: #ffffff;
+	background-color: $white;
 	display: block;
 	position: absolute;
 	left: 50%;
