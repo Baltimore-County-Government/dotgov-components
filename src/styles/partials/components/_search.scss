@@ -4,7 +4,7 @@
   height: $base-spacing-unit * 10;
   color: $black;
 
-  .dg_cnty-srch-btn {
+  .dg_search-btn {
     display: block;
     position: absolute;
     right: $base-spacing-unit * 2;
@@ -21,7 +21,7 @@
     }
   }
 }
-.dg_txt-field-cnty {
+.dg_search-text-field {
   display: block;
   font-family: $default-body-font;
   width: 100%;
