@@ -18,9 +18,10 @@ branches:
     - /(\d+\.)?(\d+\.)?(\*|\d+)/ # for tags
 
 before_deploy:
-    - npm install
-    - npm run-script build
+  - npm install
+  - npm run-script build
 
+deploy:
   # push latest style guide to github pages
   - provider: pages
     skip_cleanup: true
@@ -28,7 +29,7 @@ before_deploy:
     keep_history: true
     local_dir: public
     on:
-        branch: master
+      branch: master
 
   # publish package to npm
   - provider: npm
@@ -36,4 +37,4 @@ before_deploy:
     email: $NPM_EMAIL
     api_key: $NPM_TOKEN
     on:
-        tags: true # will trigger on a github release
+      tags: true # will trigger on a github release
