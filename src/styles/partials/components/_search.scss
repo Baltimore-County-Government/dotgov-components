@@ -14,21 +14,10 @@
     border: none;
 
     i:hover {
-      color: $blue-lightest;
+      color: $vibrant-blue;
     }
   }
 }
 .dg_search-input {
-  display: block;
-  font-family: $default-body-font;
-  width: 100%;
-  height: $base-spacing-unit * 10;
-  padding: $padding-small $padding-small;
-  font-size: $base-font-size;
-  font-style: italic;
-  text-align: left;
-  color: $gray;
-  background-color: $gray-lightest;
-  background-clip: padding-box;
-  border: $default-border-width solid $black;
+  padding: $padding-small;
 }

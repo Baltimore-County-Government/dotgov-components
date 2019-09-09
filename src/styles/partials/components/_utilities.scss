@@ -1,5 +1,4 @@
-.visuallyhidden,
-h2 {
+.visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
   height: 1px;
@@ -11,11 +10,10 @@ h2 {
 }
 
 .visuallyhidden.hasfocus,
-h2.hasfocus,
 .visuallyhidden.focusable:active,
-footer h2.focusable:active,
+footer,
 .visuallyhidden.focusable:focus,
-footer h2.focusable:focus {
+footer {
   clip: auto;
   height: auto;
   margin: 0;
