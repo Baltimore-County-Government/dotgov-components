@@ -1,0 +1,11 @@
+.dg_section.dark {
+    .dg_icon-heading__container {
+        i:before {
+            background: $pale-blue;
+        }
+
+        i:after {
+            border-color: $pale-blue-lightest;
+        }
+    }
+}
