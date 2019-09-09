@@ -1,7 +1,10 @@
 import React from "react";
 
 const Search = props => (
-  <form className="dg_search-container" id="search-bar">
+  <form className="dg_search-container" id="search-form">
+    <label for="main-search" className="visuallyhidden">
+      Search:
+    </label>
     <input
       className="dg_search-text-field"
       id="main-search"

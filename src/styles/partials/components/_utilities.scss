@@ -1,0 +1,25 @@
+.visuallyhidden,
+h2 {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.visuallyhidden.hasfocus,
+h2.hasfocus,
+.visuallyhidden.focusable:active,
+footer h2.focusable:active,
+.visuallyhidden.focusable:focus,
+footer h2.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
