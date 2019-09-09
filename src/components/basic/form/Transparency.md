@@ -1,6 +1,8 @@
-### Transparency
 
+
+### Transparency
 ```jsx
+import SectionTransparency from "./site/SectionTransparency";
 <div style={{ padding: '10px'}}>
 	<Transparency
 		icon="fa fa-bullhorn"
