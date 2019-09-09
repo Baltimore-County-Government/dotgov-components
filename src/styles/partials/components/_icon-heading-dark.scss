@@ -3,5 +3,9 @@
         i:before {
             background: $pale-blue;
         }
+
+        i:after {
+            border-color: $pale-blue-lightest;
+        }
     }
 }
