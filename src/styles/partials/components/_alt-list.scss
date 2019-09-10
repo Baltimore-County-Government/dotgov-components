@@ -32,7 +32,7 @@ ul.dg_alt-list {
     a {
       color: $blue;
       font-family: $default-heading-font;
-      font-size: 16px;
+      font-size: $smallest-heading-font-size;
       font-weight: $font-bold;
       line-height: 30px;
       text-decoration: none;
