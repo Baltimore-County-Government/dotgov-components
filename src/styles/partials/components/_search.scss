@@ -7,11 +7,7 @@
     position: absolute;
     right: $base-spacing-unit * 2;
     top: $padding-small;
-    font-size: $base-font-size;
-    color: $black;
     cursor: pointer;
-    background: none;
-    border: none;
 
     i:hover {
       color: $vibrant-blue;
