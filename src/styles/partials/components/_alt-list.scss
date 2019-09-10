@@ -1,6 +1,6 @@
 ol.dg_alt-list {
   list-style-type: none;
-  margin-bottom: 3rem;
+  margin-bottom: $margin-large;
   margin-left: 0;
   padding-left: 0;
   text-decoration: none;
@@ -8,52 +8,49 @@ ol.dg_alt-list {
 
 ul.dg_alt-list {
   list-style-type: none;
-  margin-bottom: 3rem;
+  margin-bottom: $margin-large;
   margin-left: 0;
   padding-left: 0;
   text-decoration: none;
 }
 
 .dg_i-float-right {
-  color: #cccccc;
+  color: $gray-light;
   float: right;
-  font-size: 25px;
+  font-size: $large-icon-size;
 }
 
 .dg_alt-list {
   li {
-    border-bottom: 1px solid #cccccc;
-    margin-top: 15px;
+    border-bottom: $border-width-small solid $gray-light;
+    margin-top: $default-margin;
     -webkit-transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
     text-decoration: none;
     transition: all 0.3s ease 0s;
     a {
-      color: #002280;
+      color: $blue;
       font-family: $default-heading-font;
       font-size: 16px;
-      font-weight: bold;
+      font-weight: $font-bold;
       line-height: 30px;
       text-decoration: none;
       text-transform: uppercase;
     }
     &:hover {
+      border-bottom: $border-width-small solid $vibrant-blue;
+      cursor: pointer;
+      margin-top: $default-margin;
+      text-decoration: none;
       > a {
-        color: #1076bc;
-        font-weight: bold;
-        line-height: 30px;
+        color: $vibrant-blue;
         text-decoration: none;
-        text-transform: uppercase;
         i {
-          color: #1076bc;
+          color: $vibrant-blue;
           cursor: pointer;
         }
       }
-      border-bottom: solid 1px #1076bc;
-      cursor: pointer;
-      margin-top: 15px;
-      text-decoration: none;
     }
   }
 }
