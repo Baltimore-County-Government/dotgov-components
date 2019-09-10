@@ -1,0 +1,42 @@
+.dg_card-image {
+  background-image: url(//dev.baltimorecountymd.gov/sebin/t/s/homepage-county-executive.jpg);
+  background-color: $white;
+  background-position: right;
+  background-repeat: no-repeat;
+  display: block;
+  position: relative;
+  max-width: 660px;
+  min-height: 285px;
+  border-top: 5px solid $red;
+}
+
+.dg_card-content {
+  display: block;
+  position: absolute;
+  background-color: $white;
+  bottom: -1px;
+  max-width: 410px;
+  width: 100%;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  h1 {
+    color: $black;
+    font-size: 24px;
+    margin-bottom: 0px;
+  }
+  a {
+    color: $black;
+    text-decoration: none;
+  }
+  a:hover {
+    color: $vibrant-blue;
+  }
+  h4 {
+    color: $gray;
+    font-size: 14px;
+    letter-spacing: 10px;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+  }
+}
