@@ -1,0 +1,59 @@
+ol.dg_alt-list {
+  list-style-type: none;
+  margin-bottom: 3rem;
+  margin-left: 0;
+  padding-left: 0;
+  text-decoration: none;
+}
+
+ul.dg_alt-list {
+  list-style-type: none;
+  margin-bottom: 3rem;
+  margin-left: 0;
+  padding-left: 0;
+  text-decoration: none;
+}
+
+.dg_i-float-right {
+  color: #cccccc;
+  float: right;
+  font-size: 25px;
+}
+
+.dg_alt-list {
+  li {
+    border-bottom: 1px solid #cccccc;
+    margin-top: 15px;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+    a {
+      color: #1076bc;
+      font-family: $default-heading-font;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 30px;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    &:hover {
+      > a {
+        color: #1076bc;
+        font-weight: bold;
+        line-height: 30px;
+        text-decoration: none;
+        text-transform: uppercase;
+        i {
+          color: #1076bc;
+          cursor: pointer;
+        }
+      }
+      border-bottom: solid 1px #1076bc;
+      cursor: pointer;
+      margin-top: 15px;
+      text-decoration: none;
+    }
+  }
+}
