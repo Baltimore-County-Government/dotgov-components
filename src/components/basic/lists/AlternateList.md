@@ -1,27 +1,30 @@
-### Alternate List
+### Unordered List
 
 ```jsx
-import ListItem from "./ListItem";
+import AlternateListItem from "./AlternateListItem";
 <AlternateList>
-  <ListItem>Item One</ListItem>
-  <ListItem>Item Two</ListItem>
-  <ListItem>Item Three</ListItem>
+  <AlternateListItem>Item One</AlternateListItem>
+  <AlternateListItem>Item Two</AlternateListItem>
+  <AlternateListItem>Item Three</AlternateListItem>
+  <AlternateListItem>Item Four</AlternateListItem>
 </AlternateList>;
 ```
 
 Html Snippet:
 
 ```html
-<ul class="dg_list">
-  <li>Item One</li>
-  <li>Item Two</li>
-  <li>Item Three</li>
+<ul class="dg_alt-list">
   <li>
-    Item Four
-    <ul>
-      <li>Sub item One</li>
-      <li>Sub item Two</li>
-    </ul>
+    <a href="#">Item One<i class="fa fa-angle-right dg_i-float-right"></i></a>
+  </li>
+  <li>
+    <a href="#">Item Two<i class="fa fa-angle-right dg_i-float-right"></i></a>
+  </li>
+  <li>
+    <a href="#">Item Three<i class="fa fa-angle-right dg_i-float-right"></i></a>
+  </li>
+  <li>
+    <a href="#">Item Four<i class="fa fa-angle-right dg_i-float-right"></i></a>
   </li>
 </ul>
 ```
