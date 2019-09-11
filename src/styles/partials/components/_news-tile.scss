@@ -1,0 +1,39 @@
+
+.dg_news-content {
+    display: block;
+    position: absolute;
+    background-color: $black;
+    bottom: -1px;
+    max-width: 410px;
+    width: 100%;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    
+     .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+
+    h1 {
+      color: $black;
+      font-size: 24px;
+      margin-bottom: 0px;
+    }
+    a {
+      color: $black;
+      text-decoration: none;
+    }
+    a:hover {
+      color: $vibrant-blue;
+    }
+    h4 {
+      color: $gray;
+      font-size: 14px;
+      letter-spacing: 10px;
+      margin-bottom: 1.5rem;
+      margin-top: 1.5rem;
+    }
+}
