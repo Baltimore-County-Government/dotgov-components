@@ -1,0 +1,119 @@
+/* Default Grid Styles, sets baseline which is used on the home page */
+.dg_item-grid {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: $small-heading-font-size;
+
+  > * {
+    padding: ($base-spacing-unit * 3) $padding-small;
+    margin-right: 2%;
+    margin-bottom: 1%;
+    width: 18.4%;
+  }
+
+  > *:nth-child(5n) {
+    margin-right: 0;
+  }
+}
+
+/* 1100px is a breakpoint specific to grid only */
+@media screen and (max-width: 1100px) {
+  .dg_item-grid {
+    > *,
+    > *:nth-child(5n) {
+      margin-right: 2%;
+    }
+
+    > * {
+      margin-bottom: 1%;
+      width: 32%;
+    }
+
+    > *:nth-child(3n),
+    > *:last-child {
+      margin-right: 0;
+    }
+
+    > *:last-child {
+      margin-bottom: 1%;
+      width: 100%;
+    }
+  }
+}
+
+/* End of Default Grid Styles */
+.dg_main-content {
+  .dg_item-grid {
+    > * {
+      width: 32%; /* On Internal Pages the Grid will be a max of 3 items wide*/
+    }
+
+    > *:nth-child(5n) {
+      margin-right: 2%;
+    }
+  }
+}
+
+@media screen and (max-width: $medium-breakpoint) {
+  .dg_item-grid {
+    > *,
+    > *:nth-child(5n) {
+      margin-right: 0;
+    }
+
+    > * {
+      margin-bottom: 1%;
+      width: 100%;
+    }
+  }
+
+  .dg_main-content {
+    .dg_item-grid {
+      > * {
+        min-height: 125px;
+        margin-right: 2%;
+        margin-bottom: 1%;
+        width: 48%;
+      }
+
+      > *:nth-child(3n) {
+        margin-right: 2% !important;
+      }
+
+      .dg_icon-link {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: left;
+        padding: $padding-small;
+      }
+
+      .dg_icon-link.dg_icon-link--large i {
+        padding: $padding-small $default-padding $padding-small $padding-small;
+        line-height: 1;
+        height: auto;
+        min-width: 75px;
+        text-align: center;
+        width: auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $small-breakpoint) {
+  .dg_main-content {
+    .dg_item-grid {
+      > * {
+        min-height: auto;
+        margin-right: 0;
+        margin-bottom: 1%;
+        width: 100%;
+      }
+
+      > *:nth-child(5n),
+      > *:nth-child(3n) {
+        margin-right: 0% !important;
+      }
+    }
+  }
+}
