@@ -5,13 +5,7 @@ const AlternateListItem = props => {
   const { link, title } = props;
   return (
     <li>
-      <a href={link}>
-        {title}
-        <i
-          className="fa fa-angle-right dg_i-float-right"
-          aria-hidden="true"
-        ></i>
-      </a>
+      <a href={link}>{title}</a>
     </li>
   );
 };

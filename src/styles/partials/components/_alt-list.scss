@@ -14,12 +14,6 @@ ul.dg_alt-list {
   text-decoration: none;
 }
 
-.dg_i-float-right {
-  color: $gray-light;
-  float: right;
-  font-size: $large-icon-size;
-}
-
 .dg_alt-list {
   li {
     border-bottom: $border-width-small solid $gray-light;
@@ -34,6 +28,16 @@ ul.dg_alt-list {
     @include default-transition(border, color);
     a {
       text-decoration: none;
+
+      &:after {
+        color: $gray-light;
+        content: "\f105";
+        float: right;
+        font-family: "Font Awesome 5 Pro";
+        font-size: $large-icon-size;
+        position: relative;
+        @include default-transition(color);
+      }
     }
     &:hover {
       border-bottom: $border-width-small solid $vibrant-blue;
@@ -43,6 +47,9 @@ ul.dg_alt-list {
       > a {
         color: $vibrant-blue;
         text-decoration: none;
+        &:after {
+          color: $vibrant-blue;
+        }
         i {
           color: $vibrant-blue;
           cursor: pointer;
