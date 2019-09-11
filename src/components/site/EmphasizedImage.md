@@ -2,7 +2,7 @@ Emphasized Image is a card with an image that accepts a header(upper text) and a
 
 ```jsx
 <EmphasizedImage
-  backgroundImageSrc="//baltimorecountymd.gov/sebin/t/t/homepage-county-executive.jpg"
+  imageSrc="//baltimorecountymd.gov/sebin/t/t/homepage-county-executive.jpg"
   imageHeader="County Executive"
   imageSubHeader="Johnny Olszewski"
   imageLink="https://www.w3schools.com"
