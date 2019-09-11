@@ -95,3 +95,9 @@ $icon-size: 30px;
   font-size: $smallest-heading-font-size;
   letter-spacing: $base-spacing-unit * 3;
 }
+
+@media screen and (max-width: $medium-breakpoint) {
+  .dg_icon-heading__container {
+    margin-bottom: $margin-largest / 2;
+  }
+}

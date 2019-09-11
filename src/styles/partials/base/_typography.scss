@@ -66,3 +66,19 @@ h5,
 h6 {
   font-size: $small-heading-font-size;
 }
+
+@media screen and (max-width: $medium-breakpoint) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .dg_icon-button {
+    margin-bottom: $default-margin / 2;
+  }
+
+  h1 {
+    margin-bottom: $margin-large / 2;
+  }
+}
