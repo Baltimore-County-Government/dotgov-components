@@ -1,4 +1,4 @@
-Emphasized Image is a card with a background image that accepts a description(upper text) and a link(lower text).
+Emphasized Image is a card with an image that accepts a header(upper text) and a sub header(lower text) which links to another page.
 
 ```jsx
 <EmphasizedImage

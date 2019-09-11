@@ -7,9 +7,9 @@ const EmphasizedImage = props => {
   };
 
   return (
-    <div className="dg_card-image" style={cardImageStyles}>
+    <div className="dg_card-image">
       <img
-        className="sr-only"
+        //className="sr-only"
         alt={props.imageHeader}
         src={props.backgroundImageSrc}
       ></img>

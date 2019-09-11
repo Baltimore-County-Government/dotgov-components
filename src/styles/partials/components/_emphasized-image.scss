@@ -5,6 +5,10 @@
   display: block;
   position: relative;
   border-top: $border-width-large solid $red;
+  img {
+    object-fit: fill;
+    width: 100%;
+  }
 }
 
 .dg_card-content {
