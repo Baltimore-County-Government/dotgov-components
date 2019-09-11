@@ -31,7 +31,7 @@ ul.dg_alt-list {
     margin-top: $default-margin;
     text-decoration: none;
     text-transform: uppercase;
-    @include default-transition(color, border);
+    @include default-transition(border, color);
     a {
       text-decoration: none;
     }
