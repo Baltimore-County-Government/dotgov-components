@@ -1,36 +1,37 @@
 body {
-	font-family: $default-body-font;
-	font-size: $base-font-size;
-	line-height: 1.5;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  font-family: $default-body-font;
+  font-size: $base-font-size;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 p {
-	color: $gray-dark;
-	font-size: $base-font-size;
-	font-family: $default-body-font;
+  color: $gray-dark;
+  font-size: $base-font-size;
+  font-family: $default-body-font;
+  margin-bottom: $default-margin;
 }
 
 a {
-	color: $blue;
+  color: $blue;
 
-	&:hover,
-	&:focus,
-	&.hovered,
-	&.focused {
-		color: $vibrant-blue;
-	}
+  &:hover,
+  &:focus,
+  &.hovered,
+  &.focused {
+    color: $vibrant-blue;
+  }
 
-	&:active,
-	&.active {
-		color: $pale-blue;
-	}
+  &:active,
+  &.active {
+    color: $pale-blue;
+  }
 
-	&:disabled,
-	&.disabled {
-		color: $pale-blue-lightest;
-	}
+  &:disabled,
+  &.disabled {
+    color: $pale-blue-lightest;
+  }
 }
 
 h1,
@@ -39,27 +40,29 @@ h3,
 h4,
 h5,
 h6,
-.dg_icon-button  {
-	font-family: $default-heading-font;
-	font-weight: $font-bold;
-	letter-spacing: 0;
-	text-transform: uppercase;
+.dg_icon-button {
+  font-family: $default-heading-font;
+  font-weight: $font-bold;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  margin-bottom: $default-margin;
 }
 
 h1 {
-	font-size: $h1-font-size;
+  font-size: $h1-font-size;
+  margin-bottom: $margin-large;
 }
 
 h2 {
-	font-size: $h2-font-size;
+  font-size: $h2-font-size;
 }
 
 h3 {
-	font-size: $h3-font-size;
+  font-size: $h3-font-size;
 }
 
 h4,
 h5,
 h6 {
-	font-size: $small-heading-font-size;
+  font-size: $small-heading-font-size;
 }
