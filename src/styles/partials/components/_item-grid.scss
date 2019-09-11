@@ -70,6 +70,7 @@
   .dg_main-content {
     .dg_item-grid {
       > * {
+        min-height: 125px;
         margin-right: 2%;
         margin-bottom: 1%;
         width: 48%;
@@ -103,6 +104,7 @@
   .dg_main-content {
     .dg_item-grid {
       > * {
+        min-height: auto;
         margin-right: 0;
         margin-bottom: 1%;
         width: 100%;
