@@ -29,12 +29,9 @@ ul.dg_alt-list {
     font-weight: $font-bold;
     line-height: 30px;
     margin-top: $default-margin;
-    -webkit-transition: all 0.3s ease 0s;
-    -moz-transition: all 0.3s ease 0s;
-    -o-transition: all 0.3s ease 0s;
     text-decoration: none;
     text-transform: uppercase;
-    transition: all 0.3s ease 0s;
+    @include default-transition(color, border);
     a {
       text-decoration: none;
     }
