@@ -3,10 +3,10 @@
 ```jsx
 import AlternateListItem from "./AlternateListItem";
 <AlternateList>
-  <AlternateListItem>Item One</AlternateListItem>
-  <AlternateListItem>Item Two</AlternateListItem>
-  <AlternateListItem>Item Three</AlternateListItem>
-  <AlternateListItem>Item Four</AlternateListItem>
+  <AlternateListItem link="#" title="Item One" />
+  <AlternateListItem link="#" title="Item Two" />
+  <AlternateListItem link="#" title="Item Three" />
+  <AlternateListItem link="#" title="Item Four" />
 </AlternateList>;
 ```
 

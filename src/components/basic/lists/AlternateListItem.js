@@ -1,12 +1,26 @@
 import React from "react";
+import PropTypes from "prop-types";
 
-const AlternateListItem = props => (
-  <li>
-    <a href="#">
-      {props.children}
-      <i className="fa fa-angle-right dg_i-float-right" aria-hidden="true"></i>
-    </a>
-  </li>
-);
+const AlternateListItem = props => {
+  const { link, title } = props;
+  return (
+    <li>
+      <a href={link}>
+        {title}
+        <i
+          className="fa fa-angle-right dg_i-float-right"
+          aria-hidden="true"
+        ></i>
+      </a>
+    </li>
+  );
+};
+
+AlternateListItem.propTypes = {
+  /** The link or href for the a tag */
+  link: PropTypes.string.isRequired,
+  /** The link or href for the a tag */
+  title: PropTypes.string.isRequired
+};
 
 export default AlternateListItem;
