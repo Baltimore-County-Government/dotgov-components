@@ -1,13 +1,25 @@
+### Default Date News Card
 
-### Date News Card
+```jsx
+<div style={{ padding: '10px'}} className="section">
+    <DateNewsCard
+        date="07/29/2019"
+        headline="Baltimore County Marks Progress in Rehabilitation of Winters lane Homes"
+        snippet="Today Baltimore County officials joined with community and..."
+        link="//www.baltimorecountymd.gov/News/BaltimoreCountyNow"
+    />
+</div>
+```
+
+### Date News Card on Dark Background
 
 ```jsx
 <div style={{ padding: '10px'}} className="section dark">
-	<DateNewCard
-        month="Jul"
-        day="19"
+    <DateNewsCard
+        date="07/29/2019"
         headline="Baltimore County Marks Progress in Rehabilitation of Winters lane Homes"
-        news="Today Baltimore County officials joined with community and..."
+        snippet="Today Baltimore County officials joined with community and..."
+        link="//www.baltimorecountymd.gov/News/BaltimoreCountyNow"
     />
 </div>
 ```

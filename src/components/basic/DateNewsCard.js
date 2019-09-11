@@ -2,32 +2,48 @@ import React from "react";
 import PropTypes from "prop-types";
 import classnames from "classnames";
 
+const getDatePart = (date, part = "") => {
+  const dateParts = date.split("/");
+  const datePart = part.trim().toLowerCase();
+  if (datePart === "month") {
+    return dateParts && dateParts.length ? dateParts[0] : "";
+  }
+  if (datePart === "year") {
+    return dateParts && dateParts.length ? dateParts[2] : "";
+  }
+  if (datePart == "date") {
+    return dateParts && dateParts.length ? dateParts[1] : "";
+  }
+  console.error(`Something went wrong getting the date part ${datePart}`);
+  return "";
+};
+
 const DateNewsCard = props => {
+  const { date, headline, snippet, link } = props;
+  const newsMonth = getDatePart(date, "month");
+  const newsDate = getDatePart(date, "date");
+
   return (
-    <React.Fragment>
-      <div className="dg_news-content dg_section dark">
-        <div className="pb-3 col-md-6 col-lg-6 col-xl-3 lat-new-tile">
-          <div className="row">
-            <div className="col-md-4 align-text-center">
-              <p>
-                <span className="lat-new-month">{props.month}</span>
-                <span className="lat-new-day">{props.day}</span>
-              </p>
-            </div>
-            <div className="col-md-8">
-              <h3 className="headline-light">{props.headline}</h3>
-            </div>
-          </div>
-          <hr />
-          <div className="row">
-            <div className="col-md-12">
-              <p>{props.news}</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </React.Fragment>
+    <a href={link} className="dg_date-news-card">
+      <p>
+        <span className="lat-new-month">{newsMonth}</span>
+        <span className="lat-new-day">{newsDate}</span>
+      </p>
+      <h3 className="headline-light">{headline}</h3>
+      <p>{snippet}</p>
+    </a>
   );
+};
+
+DateNewsCard.propTypes = {
+  /** Url to the news story */
+  link: PropTypes.string.isRequired,
+  /** Date string for the news story, format is "MM/DD/YYYY". Example "07/29/2019"  */
+  date: PropTypes.string.isRequired,
+  /** News Headline */
+  headline: PropTypes.string.isRequired,
+  /** A brief snippet to describe teh news story */
+  snippet: PropTypes.string.isRequired
 };
 
 export default DateNewsCard;
