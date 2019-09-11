@@ -5,8 +5,12 @@ import EmphasizedImage from "./EmphasizedImage";
 
 <SectionGovernment>
   <EmphasizedImage
-    linkheader="County Executive"
-    linktext="Johnny Olszewski"
+    backgroundimage={{
+      backgroundImage:
+        "url(//dev.baltimorecountymd.gov/sebin/t/s/homepage-county-executive.jpg)"
+    }}
+    imageheader="County Executive"
+    imagelink="Johnny Olszewski"
   ></EmphasizedImage>
 </SectionGovernment>;
 ```
