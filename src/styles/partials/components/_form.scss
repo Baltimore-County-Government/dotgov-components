@@ -1,12 +1,17 @@
 .dg_form-field {
-	input,
-	label,
-	label > span {
-		display: block;
-	}
+  input,
+  label,
+  label > span {
+    display: block;
+  }
 
-	label,
-	.dg_label {
-		margin-bottom: $margin-smallest;
-	}
+  label,
+  .dg_label {
+    margin-bottom: $margin-smallest;
+  }
+}
+
+::placeholder {
+  font-family: $default-body-font;
+  font-style: italic;
 }
