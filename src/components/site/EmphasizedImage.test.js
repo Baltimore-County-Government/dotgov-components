@@ -10,7 +10,8 @@ it("renders without crashing", () => {
       imageHeader="County Executive"
       imageSubHeader="Johnny Olszewski"
       imageLink="https://www.w3schools.com"
-    />
+    />,
+    div
   );
   ReactDOM.unmountComponentAtNode(div);
 });
