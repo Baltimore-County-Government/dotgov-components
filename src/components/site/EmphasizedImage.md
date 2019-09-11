@@ -2,11 +2,9 @@ Emphasized Image is a card with a background image that accepts a description(up
 
 ```jsx
 <EmphasizedImage
-  backgroundimageSrc={{
-    backgroundImage:
-      "url(//dev.baltimorecountymd.gov/sebin/t/s/homepage-county-executive.jpg)"
-  }}
+  backgroundImageSrc="//baltimorecountymd.gov/sebin/t/t/homepage-county-executive.jpg"
   imageHeader="County Executive"
-  imageLink="Johnny Olszewski"
+  imageSubHeader="Johnny Olszewski"
+  imageLink="#"
 ></EmphasizedImage>
 ```
