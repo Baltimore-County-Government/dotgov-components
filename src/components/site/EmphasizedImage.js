@@ -2,11 +2,11 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const EmphasizedImage = props => (
-  <div className="dg_card-image" style={props.backgroundimage}>
+  <div className="dg_card-image" style={props.backgroundImageSrc}>
     <div className="dg_card-content">
-      <h4>{props.imageheader}</h4>
+      <h4>{props.imageHeader}</h4>
       <h1>
-        <a href="#">{props.imagelink}</a>
+        <a href="#">{props.imageLink}</a>
       </h1>
     </div>
   </div>
@@ -14,11 +14,11 @@ const EmphasizedImage = props => (
 
 EmphasizedImage.propTypes = {
   /** The image to be displayed */
-  backgroundimage: PropTypes.string.isRequired,
+  backgroundImageSrc: PropTypes.string.isRequired,
   /** Adds a description to the image */
-  imageheader: PropTypes.string.isRequired,
+  imageHeader: PropTypes.string.isRequired,
   /** Adds a link to the image */
-  imagelink: PropTypes.string.isRequired
+  imageLink: PropTypes.string.isRequired
 };
 
 export default EmphasizedImage;
