@@ -5,6 +5,6 @@ Emphasized Image is a card with a background image that accepts a description(up
   backgroundImageSrc="//baltimorecountymd.gov/sebin/t/t/homepage-county-executive.jpg"
   imageHeader="County Executive"
   imageSubHeader="Johnny Olszewski"
-  imageLink="#"
+  imageLink="https://www.w3schools.com"
 ></EmphasizedImage>
 ```
