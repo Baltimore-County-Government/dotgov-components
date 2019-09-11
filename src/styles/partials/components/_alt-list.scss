@@ -25,7 +25,7 @@ ul.dg_alt-list {
     margin-top: $default-margin;
     text-decoration: none;
     text-transform: uppercase;
-    @include default-transition(border, color);
+    @include default-transition(color);
     a {
       text-decoration: none;
 
@@ -40,10 +40,7 @@ ul.dg_alt-list {
       }
     }
     &:hover {
-      border-bottom: $border-width-small solid $vibrant-blue;
       cursor: pointer;
-      margin-top: $default-margin;
-      text-decoration: none;
       > a {
         color: $vibrant-blue;
         text-decoration: none;
