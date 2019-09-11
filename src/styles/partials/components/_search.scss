@@ -1,0 +1,19 @@
+.dg_search-container {
+  position: relative;
+  width: 100%;
+
+  .dg_search-btn {
+    display: block;
+    position: absolute;
+    right: $base-spacing-unit * 2;
+    top: $padding-small;
+    cursor: pointer;
+
+    i:hover {
+      color: $vibrant-blue;
+    }
+  }
+}
+.dg_search-input {
+  padding: $padding-small;
+}
