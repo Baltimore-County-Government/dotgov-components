@@ -23,20 +23,20 @@ ul.dg_alt-list {
 .dg_alt-list {
   li {
     border-bottom: $border-width-small solid $gray-light;
+    color: $blue;
+    font-family: $default-heading-font;
+    font-size: $smallest-heading-font-size;
+    font-weight: $font-bold;
+    line-height: 30px;
     margin-top: $default-margin;
     -webkit-transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
     text-decoration: none;
+    text-transform: uppercase;
     transition: all 0.3s ease 0s;
     a {
-      color: $blue;
-      font-family: $default-heading-font;
-      font-size: $smallest-heading-font-size;
-      font-weight: $font-bold;
-      line-height: 30px;
       text-decoration: none;
-      text-transform: uppercase;
     }
     &:hover {
       border-bottom: $border-width-small solid $vibrant-blue;
