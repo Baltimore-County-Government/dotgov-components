@@ -6,13 +6,11 @@ it("renders without crashing", () => {
   const div = document.createElement("div");
   ReactDOM.render(
     <EmphasizedImage
-      backgroundImageSrc={{
-        backgroundImage:
-          "url(//dev.baltimorecountymd.gov/sebin/t/s/homepage-county-executive.jpg)"
-      }}
-    />,
-    (imageHeader = "County Executive"),
-    (imageLink = "Johnny Olszewski")
+      imageSrc="//baltimorecountymd.gov/sebin/t/t/homepage-county-executive.jpg"
+      imageHeader="County Executive"
+      imageSubHeader="Johnny Olszewski"
+      imageLink="https://www.w3schools.com"
+    />
   );
   ReactDOM.unmountComponentAtNode(div);
 });
