@@ -36,7 +36,6 @@ ul.dg_alt-list {
         font-family: "Font Awesome 5 Pro";
         font-size: $large-icon-size;
         position: relative;
-        @include default-transition(color);
       }
     }
     &:hover {
@@ -44,9 +43,7 @@ ul.dg_alt-list {
       > a {
         color: $vibrant-blue;
         text-decoration: none;
-        &:after {
-          color: $vibrant-blue;
-        }
+
         i {
           color: $vibrant-blue;
           cursor: pointer;
