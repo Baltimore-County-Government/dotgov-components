@@ -12,6 +12,7 @@
   position: absolute;
   background-color: $white;
   bottom: 0;
+  padding: 0 $padding-largest;
   max-width: 65%;
   font-weight: $font-bold;
   text-transform: uppercase;
@@ -43,7 +44,8 @@
   .dg_card-content {
     position: static;
     display: block;
-    width: 100%;
+    max-width: 100%;
+    padding: 0;
   }
   p:first-of-type,
   p:last-of-type {
