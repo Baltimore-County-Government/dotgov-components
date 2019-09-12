@@ -1,36 +1,43 @@
 .dg_date-news-card {
+  border: $border-width-small solid $gray;
   display: block;
-  position: relative;
-  width: 100%;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding: $padding-largest;
+  text-decoration: none;
 
-  .lat-new-month {
-    display: block;
-    font-family: "Montserrat", sans-serif;
-    font-size: 30px;
-    font-style: normal;
-    color: #feb30c;
-    font-weight: bold;
+  .dg_date-news-card__header {
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: $padding-large;
+    border-bottom: $default-border-width solid $gray-light;
   }
-  .lat-new-day {
+
+  .dg_date-news-card__date {
+    padding: 0 $default-padding;
+  }
+
+  .dg_date-news-card__month,
+  .dg_date-news-card__day {
     display: block;
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    color: #feb30c;
+    font-family: $default-heading-font;
+    color: $blue;
+    font-weight: $font-bold;
+  }
+
+  .dg_date-news-card__month {
+    font-size: 32px; /* specific to this component only */
+  }
+
+  .dg_date-news-card__day {
     font-size: 45px;
-    font-weight: bold;
     line-height: 35px;
   }
-  .lat-new-tile {
-    display: block;
-    color: #ffffff;
-    font-family: "Montserrat", sans-serif;
-    border: 1px solid #50658a;
-    //background-color: none;
-    padding: 20px;
-    min-height: 270px;
-    height: 100%;
+
+  .dg_date-news-card__headline {
+    @extend h3;
+  }
+
+  .dg_date-news-card__snippet {
+    font-style: italic;
+    padding-top: $padding-large;
   }
 }

@@ -24,16 +24,16 @@ const DateNewsCard = props => {
   const newsMonth = format(newsDate, "LLL");
   const newsDay = format(newsDate, "d");
 
-  console.log();
-
   return (
     <a href={link} className="dg_date-news-card">
-      <p>
-        <span className="lat-new-month">{newsMonth}</span>
-        <span className="lat-new-day">{newsDay}</span>
-      </p>
-      <h3 className="headline-light">{headline}</h3>
-      <p>{snippet}</p>
+      <header class="dg_date-news-card__header">
+        <p class="dg_date-news-card__date">
+          <span className="dg_date-news-card__month">{newsMonth}</span>
+          <span className="dg_date-news-card__day">{newsDay}</span>
+        </p>
+        <p className="dg_date-news-card__headline">{headline}</p>
+      </header>
+      <p className="dg_date-news-card__snippet">{snippet}</p>
     </a>
   );
 };
