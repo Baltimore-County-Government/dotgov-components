@@ -1,0 +1,5 @@
+@mixin right-arrow-icon {
+  /** Adds the icon for fa-angle-right. This will appear as a right-facing arrow **/
+  content: "\f105";
+  font-family: $font-awesome-pro;
+}
