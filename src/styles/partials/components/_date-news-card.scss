@@ -5,10 +5,11 @@
   text-decoration: none;
 
   .dg_date-news-card__header {
-    display: flex;
     align-items: flex-start;
-    padding-bottom: $padding-large;
     border-bottom: $default-border-width solid $gray-light;
+    display: flex;
+    margin-top: -4px; /* specific to this component only */
+    padding-bottom: $padding-large;
   }
 
   .dg_date-news-card__date {
