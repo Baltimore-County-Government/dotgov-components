@@ -25,17 +25,10 @@
         font-size: $large-icon-size;
         position: relative;
       }
-    }
-    &:hover {
-      cursor: pointer;
-      > a {
+      &:hover {
         color: $vibrant-blue;
+        cursor: pointer;
         text-decoration: none;
-
-        i {
-          color: $vibrant-blue;
-          cursor: pointer;
-        }
       }
     }
   }
