@@ -3,9 +3,33 @@ import PropTypes from "prop-types";
 import { parse, format } from "date-fns";
 import classnames from "classnames";
 
+/**
+ *  Check to determine if a date is Invalid or not.
+ * @param {*} date - Date Object
+ */
+const isValidDate = date => date instanceof Date && !isNaN(date);
+
+/**
+ * Try to get the date based on the MM/dd/yyyy format.
+ * If the format is invalid return an error to the console.
+ * @param {*} dateStr - should be in the format MM/dd/yyyy see https://date-fns.org/v1.9.0/docs/format
+ */
+const tryGetDate = dateStr => {
+  const parsedDate = parse(dateStr, "MM/dd/yyyy", new Date());
+
+  return isValidDate(parsedDate)
+    ? parsedDate
+    : console.error(
+        "The date should be in the following format 'MM/DD/YYYY'. Example 07/29/1929."
+      ) || null;
+};
+
 const DateNewsCard = props => {
   const { date, headline, snippet, link, className, ...rest } = props;
-  const newsDate = parse(date, "MM/dd/yyyy", new Date());
+  const newsDate = tryGetDate(date);
+  if (!newsDate) {
+    return "";
+  }
   const newsMonth = format(newsDate, "LLL");
   const newsDay = format(newsDate, "d");
   const cardCssClasses = classnames("dg_date-news-card", className);
