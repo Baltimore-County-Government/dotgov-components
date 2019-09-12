@@ -2,95 +2,102 @@ $icon-image-size: 75px;
 $icon-size: 30px;
 
 .dg_icon-heading__container {
-    text-align: center;
+  margin-bottom: $margin-largest;
+  text-align: center;
 
-    /* icon specific */
-    i {
-        display: block;
-        font-size: $icon-size;
-        z-index: 1;
+  /* icon specific */
+  i {
+    display: block;
+    font-size: $icon-size;
+    z-index: 1;
 
-        &:after {
-            z-index: -1;
-        }
+    &:after {
+      z-index: -1;
+    }
+  }
+
+  /* image specific */
+  .dg_icon-heading__image-container {
+    position: relative;
+
+    &:before {
+      background: $white;
+      content: "";
+      margin: auto;
+
+      /* Position */
+      position: absolute;
+      left: 0;
+      right: 0;
+      z-index: 1;
+
+      /* Size */
+      height: $icon-image-size;
+      width: $icon-image-size + $padding-large * 2;
     }
 
-    /* image specific */
-    .dg_icon-heading__image-container {
-        position: relative;
+    img {
+      margin-bottom: -$border-width-large * 3;
 
-        &:before {
-            background: $white;
-            content: '';
-            margin: auto;
+      /* Position */
+      position: relative;
+      z-index: 1;
 
-            /* Position */
-            position: absolute;
-            left: 0;
-            right: 0;
-            z-index: 1;
-
-            /* Size */
-            height: $icon-image-size;
-            width: $icon-image-size + $padding-large * 2;
-        }
-
-        img {
-            margin-bottom: -$border-width-large * 3;
-
-            /* Position */
-            position: relative;
-            z-index: 1;
-
-            /* Size */
-            height: $icon-image-size;
-        }
+      /* Size */
+      height: $icon-image-size;
     }
+  }
 
-    /* shared */
-    i:before,
-    .dg_icon-heading__image-container {
-        background: $white;
-        padding: 0 $padding-large;
+  /* shared */
+  i:before,
+  .dg_icon-heading__image-container {
+    background: $white;
+    padding: 0 $padding-large;
+  }
+
+  i:before,
+  .dg_icon-heading__image-container img {
+    &:before {
+      position: relative;
+      z-index: 1;
     }
+  }
 
-    i:before,
-    .dg_icon-heading__image-container img {
-        &:before {
-            position: relative;
-            z-index: 1;
-        }
+  i,
+  .dg_icon-heading__image-container {
+    margin-bottom: $default-margin;
+    position: relative;
+
+    &:after {
+      border-top: $border-width-large solid $gray-light;
+      content: "";
+
+      margin: 0 auto;
+
+      /* Position */
+      /* this centers the line to the full width specified */
+      position: absolute;
+      /* positioning must be absolute here, and relative positioning must be applied to the parent */
+      left: 0;
+      right: 0;
+      top: 50%;
+      bottom: 0;
+
+      /* Size */
+      width: 100%;
     }
-
-    i,
-    .dg_icon-heading__image-container {
-        margin-bottom: $default-margin;
-        position: relative;
-
-        &:after {
-            border-top: $border-width-large solid $gray-light;
-            content: "";
-
-            margin: 0 auto;
-
-            /* Position */
-            /* this centers the line to the full width specified */
-            position: absolute;
-            /* positioning must be absolute here, and relative positioning must be applied to the parent */
-            left: 0;
-            right: 0;
-            top: 50%;
-            bottom: 0;
-
-            /* Size */
-            width: 100%;
-        }
-    }
+  }
 }
 
 .dg_icon-heading {
-    border: none !important;
-    font-family: $default-heading-font;
-    font-size: $smallest-heading-font-size;
-    letter-spacing: $base-spacing-unit * 3;
+  border: none !important;
+  font-family: $default-heading-font;
+  font-size: $smallest-heading-font-size;
+  letter-spacing: $base-spacing-unit * 3;
+}
+
+@media screen and (max-width: $medium-breakpoint) {
+  .dg_icon-heading__container {
+    margin-bottom: $margin-largest / 2;
+  }
 }
