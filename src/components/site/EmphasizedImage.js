@@ -10,10 +10,10 @@ const EmphasizedImage = props => {
         src={props.imageSrc}
       ></img>
       <div className="dg_card-content">
-        <h4>{props.imageHeader}</h4>
-        <h1>
+        <p>{props.imageHeader}</p>
+        <p>
           <a href={props.imageLink}>{props.imageSubHeader}</a>
-        </h1>
+        </p>
       </div>
     </div>
   );
