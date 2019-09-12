@@ -3,10 +3,10 @@
 ```jsx
 import AlternateListItem from "./AlternateListItem";
 <AlternateList>
-  <AlternateListItem link="#" title="Item One" />
-  <AlternateListItem link="#" title="Item Two" />
-  <AlternateListItem link="#" title="Item Three" />
-  <AlternateListItem link="#" title="Item Four" />
+  <AlternateListItem link="#" linkText="Item One" title="Link title" />
+  <AlternateListItem link="#" linkText="Item Two" title="Link title" />
+  <AlternateListItem link="#" linkText="Item Three" title="Link title" />
+  <AlternateListItem link="#" linkText="Item Four" title="Link title" />
 </AlternateList>;
 ```
 
@@ -15,16 +15,16 @@ Html Snippet:
 ```html
 <ul class="dg_alt-list">
   <li>
-    <a href="#">Item One</a>
+    <a href="#" title="Link title">Item One</a>
   </li>
   <li>
-    <a href="#">Item Two</a>
+    <a href="#" title="Link title">Item Two</a>
   </li>
   <li>
-    <a href="#">Item Three</a>
+    <a href="#" title="Link title">Item Three</a>
   </li>
   <li>
-    <a href="#">Item Four</a>
+    <a href="#" title="Link title">Item Four</a>
   </li>
 </ul>
 ```

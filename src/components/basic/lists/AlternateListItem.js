@@ -2,10 +2,12 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const AlternateListItem = props => {
-  const { link, title } = props;
+  const { link, linkText, title } = props;
   return (
     <li>
-      <a href={link}>{title}</a>
+      <a title={title} href={link}>
+        {linkText}
+      </a>
     </li>
   );
 };
@@ -13,7 +15,9 @@ const AlternateListItem = props => {
 AlternateListItem.propTypes = {
   /** The link or href for the a tag */
   link: PropTypes.string.isRequired,
-  /** The link or href for the a tag */
+  /** The copy that exists inside the a tag */
+  linkText: PropTypes.string.isRequired,
+  /** The copy that exists inside the a tag */
   title: PropTypes.string.isRequired
 };
 
