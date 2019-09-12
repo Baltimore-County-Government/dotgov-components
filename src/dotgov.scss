@@ -9,6 +9,7 @@
 /** Mixins */
 @import "./styles/mixins/animations";
 @import "./styles/mixins/colors";
+@import "./styles/mixins/icon-content";
 @import "./styles/mixins/placeholder";
 @import "./styles/mixins/typography";
 
@@ -28,6 +29,7 @@
 @import "./styles/partials/components/fieldset";
 @import "./styles/partials/components/label";
 @import "./styles/partials/components/lists";
+@import "./styles/partials/components/alt-list";
 @import "./styles/partials/components/input";
 @import "./styles/partials/components/icon-heading";
 @import "./styles/partials/components/icon-heading-light";

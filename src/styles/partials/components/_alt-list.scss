@@ -1,0 +1,35 @@
+.dg_alt-list {
+  list-style-type: none;
+  margin-bottom: $margin-large;
+  margin-left: 0;
+  padding-left: 0;
+  text-decoration: none;
+  li {
+    border-bottom: $border-width-small solid $gray-light;
+    color: $blue;
+    font-family: $default-heading-font;
+    font-size: $smallest-heading-font-size;
+    font-weight: $font-bold;
+    line-height: 44px;
+    margin-top: $default-margin;
+    text-decoration: none;
+    text-transform: uppercase;
+    @include default-transition(color);
+    a {
+      text-decoration: none;
+
+      &:after {
+        color: $gray-light;
+        @include icon-content("\f105");
+        float: right;
+        font-size: $large-icon-size;
+        position: relative;
+      }
+      &:hover {
+        color: $vibrant-blue;
+        cursor: pointer;
+        text-decoration: none;
+      }
+    }
+  }
+}
