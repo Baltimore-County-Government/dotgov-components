@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import classnames from "classnames";
+import { parse, format } from "date-fns";
 
 const getDatePart = (date, part = "") => {
   const dateParts = date.split("/");
@@ -20,14 +20,17 @@ const getDatePart = (date, part = "") => {
 
 const DateNewsCard = props => {
   const { date, headline, snippet, link } = props;
-  const newsMonth = getDatePart(date, "month");
-  const newsDate = getDatePart(date, "date");
+  const newsDate = parse(date, "MM/dd/yyyy", new Date());
+  const newsMonth = format(newsDate, "LLL");
+  const newsDay = format(newsDate, "d");
+
+  console.log();
 
   return (
     <a href={link} className="dg_date-news-card">
       <p>
         <span className="lat-new-month">{newsMonth}</span>
-        <span className="lat-new-day">{newsDate}</span>
+        <span className="lat-new-day">{newsDay}</span>
       </p>
       <h3 className="headline-light">{headline}</h3>
       <p>{snippet}</p>
