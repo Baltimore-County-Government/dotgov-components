@@ -20,7 +20,7 @@
 
       &:after {
         color: $gray-light;
-        @include right-arrow-icon;
+        @include icon-content("\f105");
         float: right;
         font-size: $large-icon-size;
         position: relative;
