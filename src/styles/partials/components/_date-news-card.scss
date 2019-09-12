@@ -10,7 +10,7 @@
 
   .dg_date-news-card__header {
     align-items: flex-start;
-    border-bottom: $default-border-width solid $gray-light;
+    border-bottom: $border-width-small solid $gray-light;
     display: flex;
     padding-bottom: $padding-large;
   }
@@ -30,6 +30,7 @@
 
   .dg_date-news-card__month {
     font-size: 32px; /* specific to this component only */
+    text-transform: uppercase;
   }
 
   .dg_date-news-card__day {
