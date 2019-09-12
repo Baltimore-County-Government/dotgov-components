@@ -20,6 +20,7 @@
 
       &:after {
         color: $gray-light;
+        /** Adds the icon for fa-angle-right. This will appear as a right-facing arrow **/
         content: "\f105";
         float: right;
         font-family: "Font Awesome 5 Pro";
