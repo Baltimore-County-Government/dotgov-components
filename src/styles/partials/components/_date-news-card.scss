@@ -4,16 +4,20 @@
   padding: $padding-largest;
   text-decoration: none;
 
+  p {
+    margin-bottom: 0;
+  }
+
   .dg_date-news-card__header {
     align-items: flex-start;
     border-bottom: $default-border-width solid $gray-light;
     display: flex;
-    margin-top: -4px; /* specific to this component only */
     padding-bottom: $padding-large;
   }
 
   .dg_date-news-card__date {
-    padding: 0 $default-padding;
+    margin-top: -4px; /* specific to this component only */
+    padding: 0 $padding-large 0 0;
   }
 
   .dg_date-news-card__month,
@@ -35,6 +39,7 @@
 
   .dg_date-news-card__headline {
     @extend h3;
+    text-transform: initial;
   }
 
   .dg_date-news-card__snippet {

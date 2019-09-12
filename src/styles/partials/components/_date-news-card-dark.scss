@@ -30,5 +30,16 @@
         color: $gold;
       }
     }
+
+    &:disabled,
+    &.disabled {
+      background: $gray-light;
+      border-color: $gray-light;
+
+      .dg_date-news-card__month,
+      .dg_date-news-card__day {
+        color: $white;
+      }
+    }
   }
 }
