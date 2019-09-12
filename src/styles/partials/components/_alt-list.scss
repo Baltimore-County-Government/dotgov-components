@@ -1,20 +1,9 @@
-ol.dg_alt-list {
-  list-style-type: none;
-  margin-bottom: $margin-large;
-  margin-left: 0;
-  padding-left: 0;
-  text-decoration: none;
-}
-
-ul.dg_alt-list {
-  list-style-type: none;
-  margin-bottom: $margin-large;
-  margin-left: 0;
-  padding-left: 0;
-  text-decoration: none;
-}
-
 .dg_alt-list {
+  list-style-type: none;
+  margin-bottom: $margin-large;
+  margin-left: 0;
+  padding-left: 0;
+  text-decoration: none;
   li {
     border-bottom: $border-width-small solid $gray-light;
     color: $blue;
