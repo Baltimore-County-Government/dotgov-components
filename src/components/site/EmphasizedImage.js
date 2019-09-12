@@ -4,11 +4,7 @@ import PropTypes from "prop-types";
 const EmphasizedImage = props => {
   return (
     <div className="dg_card-image">
-      <img
-        //className="sr-only"
-        alt={props.imageHeader}
-        src={props.imageSrc}
-      ></img>
+      <img alt={props.imageHeader} src={props.imageSrc}></img>
       <div className="dg_card-content">
         <p>{props.imageHeader}</p>
         <p>
