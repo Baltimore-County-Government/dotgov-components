@@ -7,6 +7,10 @@
       color: $gold;
     }
 
+    .dg_date-news-card__header {
+      border-color: $white;
+    }
+
     &:hover,
     &.hovered {
       .dg_date-news-card__month,
