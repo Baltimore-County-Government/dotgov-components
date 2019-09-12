@@ -40,4 +40,31 @@
     font-style: italic;
     padding-top: $padding-large;
   }
+
+  &:hover,
+  &.hovered,
+  &:active,
+  &.active,
+  &:disabled,
+  &.disabled {
+    * {
+      color: $white;
+    }
+  }
+
+  &:hover,
+  &.hovered {
+    background: $vibrant-blue;
+  }
+
+  &:active,
+  &.active {
+    background: $pale-blue;
+  }
+
+  &:disabled,
+  &.disabled {
+    background: $gray-light;
+    border-color: $gray-light;
+  }
 }
