@@ -12,8 +12,8 @@ const DateNewsCard = props => {
 
   return (
     <a href={link} className={cardCssClasses} {...rest}>
-      <header class="dg_date-news-card__header">
-        <p class="dg_date-news-card__date">
+      <header className="dg_date-news-card__header">
+        <p className="dg_date-news-card__date">
           <span className="dg_date-news-card__month">{newsMonth}</span>
           <span className="dg_date-news-card__day">{newsDay}</span>
         </p>
