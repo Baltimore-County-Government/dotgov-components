@@ -29,6 +29,9 @@
 @import "./styles/partials/components/label";
 @import "./styles/partials/components/lists";
 @import "./styles/partials/components/input";
+@import "./styles/partials/components/icon-heading";
+@import "./styles/partials/components/icon-heading-light";
+@import "./styles/partials/components/icon-heading-dark";
 @import "./styles/partials/components/checkbox";
 @import "./styles/partials/components/link";
 @import "./styles/partials/components/link-dark";
@@ -38,6 +41,9 @@
 @import "./styles/partials/components/logo-type";
 @import "./styles/partials/components/site-status";
 @import "./styles/partials/components/section-transparency";
+@import "./styles/partials/components/search";
+@import "./styles/partials/components/utilities";
+
 /** dark themed components - please start your file with .dg_section.dark and nest the styles below it **/
 @import "./styles/partials/components/table-dark";
 
@@ -46,5 +52,5 @@
 @import "./styles/partials/template/sidebar";
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
