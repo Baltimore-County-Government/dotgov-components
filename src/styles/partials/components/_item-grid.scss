@@ -45,7 +45,7 @@
 .dg_main-content {
   .dg_item-grid {
     > * {
-      width: 32%; /* On Internal Pages the Grid will be a max of 3 items wide*/
+      width: 31%; /* On Internal Pages the Grid will be a max of 3 items wide*/
     }
 
     > *:nth-child(5n) {
