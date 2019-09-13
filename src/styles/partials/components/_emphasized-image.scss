@@ -47,16 +47,19 @@
     display: block;
     max-width: 100%;
     padding: 0;
-  }
-  p:first-of-type,
-  p:last-of-type {
-    text-align: left;
+
+    p:first-of-type,
+    p:last-of-type {
+      text-align: left;
+    }
   }
 }
 
 @media screen and (max-width: $small-breakpoint) {
-  p:first-of-type,
-  p:last-of-type {
-    text-align: center;
+  .dg_card-content {
+    p:first-of-type,
+    p:last-of-type {
+      text-align: center;
+    }
   }
 }
