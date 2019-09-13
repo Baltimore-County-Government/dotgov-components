@@ -32,7 +32,7 @@
   padding: 0 !important;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: $header-breakpoint) {
   .dg_site-header {
     background: $white;
     position: relative;

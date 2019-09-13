@@ -19,7 +19,7 @@
   padding: $padding-small;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: $header-breakpoint) {
   .dg_search-input {
     width: 15%;
     visibility: hidden;

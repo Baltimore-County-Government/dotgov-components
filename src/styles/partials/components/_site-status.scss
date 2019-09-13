@@ -8,7 +8,7 @@
   padding-left: $padding-jumbo;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: $header-breakpoint) {
   .dg_status-text {
     position: absolute;
     bottom: -65px;
