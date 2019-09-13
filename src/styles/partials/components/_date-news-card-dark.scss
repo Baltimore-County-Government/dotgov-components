@@ -1,0 +1,45 @@
+.dg_section.dark {
+  .dg_date-news-card {
+    background: none;
+
+    .dg_date-news-card__month,
+    .dg_date-news-card__day {
+      color: $gold;
+    }
+
+    .dg_date-news-card__header {
+      border-color: $white;
+    }
+
+    &:hover,
+    &.hovered {
+      .dg_date-news-card__month,
+      .dg_date-news-card__day {
+        color: $white;
+      }
+
+      background: $blue-lightest;
+    }
+
+    &.active,
+    &:active {
+      background: none;
+
+      .dg_date-news-card__month,
+      .dg_date-news-card__day {
+        color: $gold;
+      }
+    }
+
+    &:disabled,
+    &.disabled {
+      background: $gray-light;
+      border-color: $gray-light;
+
+      .dg_date-news-card__month,
+      .dg_date-news-card__day {
+        color: $white;
+      }
+    }
+  }
+}
