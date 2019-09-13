@@ -32,7 +32,7 @@ Html Snippet:
 </div>
 ```
 
-### Date News Card on Dark Background
+### News Room on Dark Background
 
 ```jsx
 import NewsRoom from "./NewsRoom";
