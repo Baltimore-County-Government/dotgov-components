@@ -9,6 +9,7 @@
 /** Mixins */
 @import "./styles/mixins/animations";
 @import "./styles/mixins/colors";
+@import "./styles/mixins/icon-content";
 @import "./styles/mixins/placeholder";
 @import "./styles/mixins/typography";
 
@@ -28,6 +29,7 @@
 @import "./styles/partials/components/fieldset";
 @import "./styles/partials/components/label";
 @import "./styles/partials/components/lists";
+@import "./styles/partials/components/alt-list";
 @import "./styles/partials/components/input";
 @import "./styles/partials/components/icon-heading";
 @import "./styles/partials/components/icon-heading-light";
@@ -40,8 +42,12 @@
 @import "./styles/partials/components/site-header";
 @import "./styles/partials/components/logo-type";
 @import "./styles/partials/components/site-status";
+@import "./styles/partials/components/emphasized-image";
 @import "./styles/partials/components/search";
 @import "./styles/partials/components/utilities";
+@import "./styles/partials/components/date-news-card";
+@import "./styles/partials/components/date-news-card-dark";
+@import "./styles/partials/components/item-grid";
 
 /** dark themed components - please start your file with .dg_section.dark and nest the styles below it **/
 @import "./styles/partials/components/table-dark";

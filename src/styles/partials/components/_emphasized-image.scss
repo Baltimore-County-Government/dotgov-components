@@ -1,0 +1,62 @@
+.dg_card-image {
+  display: block;
+  position: relative;
+  border-top: $border-width-large solid $red;
+  img {
+    object-fit: fill;
+    width: 100%;
+  }
+}
+
+.dg_card-content {
+  position: absolute;
+  background-color: $white;
+  bottom: 0;
+  padding: 0 $padding-largest 0 0;
+  max-width: 65%;
+  width: 100%;
+  font-weight: $font-bold;
+  text-transform: uppercase;
+  font-family: $default-heading-font;
+  a {
+    color: $black;
+    text-decoration: none;
+    &:hover {
+      color: $vibrant-blue;
+    }
+  }
+
+  p:first-of-type {
+    @extend h4;
+    color: $gray;
+    font-size: $smallest-font-size;
+    letter-spacing: 10px;
+    margin: $margin-large auto;
+  }
+  p:last-of-type {
+    @extend h1;
+    color: $black;
+    font-size: $h2-font-size;
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: $medium-breakpoint) {
+  .dg_card-content {
+    position: static;
+    display: block;
+    max-width: 100%;
+    padding: 0;
+  }
+  p:first-of-type,
+  p:last-of-type {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: $small-breakpoint) {
+  p:first-of-type,
+  p:last-of-type {
+    text-align: center;
+  }
+}
