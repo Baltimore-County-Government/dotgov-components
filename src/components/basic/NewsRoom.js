@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import IconHeading from '../basic/IconHeading';
 
 const NewsRoom = (props) => (
