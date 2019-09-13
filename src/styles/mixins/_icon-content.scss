@@ -1,0 +1,5 @@
+/** Adds an icon from FontAwesome. Formatting and unicode references can be found at fontawesome.com. Formatting will roughly appear as \f### **/
+@mixin icon-content($font-awesome-unicode) {
+  content: $font-awesome-unicode;
+  font-family: $font-awesome-pro;
+}
