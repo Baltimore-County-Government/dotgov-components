@@ -22,3 +22,9 @@
     display: block;
   }
 }
+
+@media screen and (max-width: 900px) {
+  .dg_logotype {
+    border-right: none;
+  }
+}

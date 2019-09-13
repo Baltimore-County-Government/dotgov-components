@@ -7,3 +7,20 @@
   letter-spacing: $base-spacing-unit * 2;
   padding-left: $padding-jumbo;
 }
+
+@media screen and (max-width: 900px) {
+  .dg_status-text {
+    position: absolute;
+    bottom: -65px;
+    background: $gray-lightest;
+    color: $gray;
+    font-size: $smallest-heading-font-size;
+    left: 0;
+    right: 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    text-align: center;
+  }
+}

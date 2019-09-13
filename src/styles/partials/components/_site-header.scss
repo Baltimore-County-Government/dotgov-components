@@ -11,3 +11,30 @@
     margin: 0;
   }
 }
+
+.dg_site-header {
+  display: flex;
+  flex-wrap: none;
+  justify-content: space-between;
+  align-items: center;
+
+  .dg_brand {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.rsg--content-3 {
+  max-width: 100% !important;
+  padding: 0 !important;
+}
+.rsg--preview-33 {
+  padding: 0 !important;
+}
+
+@media screen and (max-width: 900px) {
+  .dg_site-header {
+    background: $white;
+    position: relative;
+  }
+}
