@@ -56,19 +56,15 @@
 }
 
 @media screen and (max-width: $small-breakpoint) {
-<<<<<<< HEAD
-  p:first-of-type {
-    margin: $base-spacing-unit * 3 auto;
-  }
-  p:last-of-type {
-    margin-bottom: $base-spacing-unit * 9, auto;
-    text-align: center;
-=======
   .dg_card-content {
     p:first-of-type,
     p:last-of-type {
+      margin: $base-spacing-unit * 3 auto;
       text-align: center;
     }
->>>>>>> origin/integration
+
+    p:last-of-type {
+      margin-bottom: $margin-large;
+    }
   }
 }
