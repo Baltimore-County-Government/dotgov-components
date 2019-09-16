@@ -1,17 +1,11 @@
 $max-container-width: 1400px;
+$extra-large-breakpoint: 1200px;
+$large-break-point: 992px;
 $medium-breakpoint: 768px;
 $small-breakpoint: 576px;
 
-/* OVERRIDES */
-$grid-breakpoints: (
-  xs: 0,
-  sm: $small-breakpoint,
-  md: $medium-breakpoint
-);
-
 $container-max-widths: (
-  sm: $small-breakpoint,
-  md: $max-container-width
+  xl: $max-container-width
 );
 
 @import "node_modules/bootstrap/scss/bootstrap-grid";
