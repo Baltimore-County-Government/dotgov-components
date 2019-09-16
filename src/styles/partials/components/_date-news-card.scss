@@ -80,3 +80,9 @@
     border-color: $gray-light;
   }
 }
+
+@media screen and (max-width: $medium-breakpoint) {
+  .dg_date-news-card {
+    margin-bottom: $default-margin;
+  }
+}
