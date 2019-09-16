@@ -1,0 +1,71 @@
+/* Add css to test in this file. It should be cleaned up every pr, as the css should make into the components project.*/
+@media (max-width: 767px) {
+  .about-footer {
+    li {
+      width: 100% !important;
+    }
+  }
+}
+.dg_county-footer {
+  border-top: $border-width-largest solid $red;
+}
+.dg_secondary-footer {
+  background-color: $gray-dark;
+  padding: $padding-large;
+}
+.dg_copyright {
+  color: $white;
+  font-family: $default-heading-font;
+  font-size: $small-heading-font-size;
+  text-transform: uppercase;
+}
+.download-blurb {
+  font-style: italic;
+}
+.logo-sm-txt {
+  color: $gray;
+  display: block;
+  font-family: $default-heading-font;
+  font-size: $smallest-font-size;
+  font-weight: $font-bold;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+.logo-h1 {
+  color: $black;
+  font-family: $default-heading-font;
+  font-size: $small-heading-font-size;
+  font-weight: $font-bold;
+  text-transform: uppercase;
+}
+.about-footer {
+  a {
+    text-decoration: none;
+  }
+  .dg_alt-list {
+    &:before {
+      content: "";
+      text-decoration: none;
+    }
+    li {
+      width: 40%;
+      float: left;
+      margin-right: 5%;
+    }
+  }
+  .dg_seal {
+    max-width: 100px;
+  }
+}
+.dg_social-icon_wrapper {
+  margin-bottom: $margin-largest;
+  .dg_icon-link.dg_icon-link--small {
+    i {
+      font-size: $default-icon-size;
+    }
+  }
+}
+.lg_gray {
+  color: $gray;
+  font-size: $large-icon-size;
+}
