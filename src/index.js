@@ -1,3 +1,6 @@
+/** Brand */
+export { default as CountySeal } from "./components/foundation/CountySeal";
+
 /** Containers */
 export { default as Section } from "./components/basic/containers/Section";
 
