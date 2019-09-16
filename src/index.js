@@ -25,9 +25,6 @@ export {
 /** Site */
 export { default as EmphasizedImage } from "./components/site/EmphasizedImage";
 export { default as SiteHeader } from "./components/site/SiteHeader";
-export { default as LogoType } from "./components/site/LogoType";
-export { default as Search } from "./components/site/Search";
-export { default as SiteStatus } from "./components/site/SiteStatus";
 
 /** Other */
 export { default as Button } from "./components/basic/Button";

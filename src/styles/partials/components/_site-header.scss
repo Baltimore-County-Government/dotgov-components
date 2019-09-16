@@ -11,3 +11,22 @@
     margin: 0;
   }
 }
+
+.dg_site-header {
+  display: flex;
+  flex-wrap: none;
+  justify-content: space-between;
+  align-items: center;
+
+  .dg_brand {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: $header-breakpoint) {
+  .dg_site-header {
+    background: $white;
+    position: relative;
+  }
+}
