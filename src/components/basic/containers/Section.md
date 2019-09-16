@@ -4,28 +4,56 @@ A section is container for content.
 
 ```jsx
 <Section>
-  <p>Some content goes here</p>
+    <div className="container">
+        <div className="row">
+            <div className="col">
+                <p>Some content goes here</p>
+            </div>
+        </div>
+    </div>
 </Section>
 ```
 
 Html Snippet:
 
 ```html
-<section class="dg_section"><p>Some content goes here</p></section>
+<section class="dg_section">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <p>Some content goes here</p>
+      </div>
+    </div>
+  </div>
+</section>
 ```
 
 ## Dark Section
 
 ```jsx
 <Section className="dark">
-  <p>Some content goes here</p>
+    <div className="container">
+        <div className="row">
+            <div className="col">
+                <p>Some content goes here</p>
+            </div>
+        </div>
+    </div>
 </Section>
 ```
 
 Html Snippet:
 
 ```html
-<section class="dg_section dark"><p>Some content goes here</p></section>
+<section class="dg_section dark">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <p>Some content goes here</p>
+      </div>
+    </div>
+  </div>
+</section>
 ```
 
 ## Dark Section with Call to Action
