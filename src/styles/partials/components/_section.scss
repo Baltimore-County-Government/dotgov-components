@@ -1,6 +1,11 @@
 .dg_section {
   padding: $default-padding 0;
 
+  .dg_section-cta {
+    padding: $padding-large 0;
+    text-align: center;
+  }
+
   &.light {
     background: $gray-lightest;
   }
@@ -15,50 +20,6 @@
 
     p {
       color: $white;
-    }
-
-    .dg_button {
-      background: none;
-      border-color: $white;
-      color: $white;
-
-      &:hover,
-      &.hovered {
-        background: $blue-lightest;
-      }
-
-      &:active,
-      &.active,
-      &:disabled,
-      &.disabled {
-        background: none;
-      }
-
-      &:disabled,
-      &.disabled {
-        border-color: $gray-light;
-      }
-    }
-
-    .dg_button-link {
-      &:hover,
-      &.hovered {
-        background: none;
-        color: $blue-lightest;
-      }
-
-      &:active,
-      &.active {
-        color: $white;
-      }
-    }
-
-    .dg_button,
-    .dg_button-link {
-      &:disabled,
-      &.disabled {
-        color: $gray-light;
-      }
     }
   }
 }
