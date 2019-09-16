@@ -43,7 +43,7 @@ Html Snippet:
 
 ```jsx
 <section  style={{ padding: '15px' }}>
-    <IconHeading text="Latest Headlines" image="http://staging.baltimorecountymd.gov/sebin/h/i/seal-color-74.png" />
+    <IconHeading text="Latest Headlines" image="//baltimorecountymd.gov/sebin/p/u/county-seal.svg" />
 </section>
 ```
 
