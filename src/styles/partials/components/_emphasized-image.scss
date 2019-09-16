@@ -59,7 +59,12 @@
   .dg_card-content {
     p:first-of-type,
     p:last-of-type {
+      margin: $base-spacing-unit * 3 auto;
       text-align: center;
+    }
+
+    p:last-of-type {
+      margin-bottom: $margin-large;
     }
   }
 }
