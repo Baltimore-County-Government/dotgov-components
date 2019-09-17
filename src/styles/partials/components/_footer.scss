@@ -61,7 +61,7 @@
     max-width: 100px;
   }
 }
-.dg_social-icon_wrapper {
+.dg_social-icon_container {
   margin-bottom: $margin-largest;
   .dg_icon-link.dg_icon-link--small {
     i {
@@ -70,12 +70,7 @@
   }
 }
 
-.dg_navigation-footer {
-  margin-bottom: $default-margin;
-  margin-top: $margin-largest;
-}
-
-.dg_social-footer {
+.dg_footer-list-column {
   margin-bottom: $default-margin;
   margin-top: $margin-largest;
 }
@@ -85,7 +80,7 @@
   font-size: $large-icon-size;
 }
 
-@media (max-width: 767px) {
+@media (max-width: $medium-breakpoint) {
   .dg_brand-footer {
     li {
       width: 100% !important;
