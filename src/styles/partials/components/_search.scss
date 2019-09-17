@@ -20,6 +20,14 @@
 }
 
 @media screen and (max-width: $header-breakpoint) {
+  .dg_search-container {
+    min-width: auto;
+
+    .dg_search-btn {
+      right: 0;
+    }
+  }
+
   .dg_search-input {
     width: 75px;
     visibility: hidden;
