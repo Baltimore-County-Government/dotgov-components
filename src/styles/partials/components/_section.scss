@@ -1,5 +1,10 @@
 .dg_section {
-  padding: $default-padding 0;
+  padding: $padding-jumbo 0;
+
+  .dg_section-cta {
+    padding: $padding-jumbo 0 0;
+    text-align: center;
+  }
 
   &.light {
     background: $gray-lightest;
@@ -16,49 +21,11 @@
     p {
       color: $white;
     }
+  }
+}
 
-    .dg_button {
-      background: none;
-      border-color: $white;
-      color: $white;
-
-      &:hover,
-      &.hovered {
-        background: $blue-lightest;
-      }
-
-      &:active,
-      &.active,
-      &:disabled,
-      &.disabled {
-        background: none;
-      }
-
-      &:disabled,
-      &.disabled {
-        border-color: $gray-light;
-      }
-    }
-
-    .dg_button-link {
-      &:hover,
-      &.hovered {
-        background: none;
-        color: $blue-lightest;
-      }
-
-      &:active,
-      &.active {
-        color: $white;
-      }
-    }
-
-    .dg_button,
-    .dg_button-link {
-      &:disabled,
-      &.disabled {
-        color: $gray-light;
-      }
-    }
+@media screen and (max-width: $medium-breakpoint) {
+  .dg_section {
+    padding: ($padding-jumbo / 2) 0;
   }
 }

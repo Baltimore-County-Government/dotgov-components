@@ -1,10 +1,21 @@
-import React from 'react';
-import classnames from 'classnames';
+import React from "react";
+import PropTypes from "prop-types";
+import classnames from "classnames";
 
-const Section = (props) => {
-	const { className = '' } = props;
-	const cssClasses = classnames('dg_section', className);
-	return <section className={cssClasses}>{props.children}</section>;
+const Section = props => {
+  const { className = "", children, ctaButton } = props;
+  const cssClasses = classnames("dg_section", className);
+  return (
+    <section className={cssClasses}>
+      {children}
+      {ctaButton && <div className="dg_section-cta">{ctaButton}</div>}
+    </section>
+  );
+};
+
+Section.propTypes = {
+  /** Call to action button located at the end of the section */
+  ctaButton: PropTypes.element
 };
 
 export default Section;
