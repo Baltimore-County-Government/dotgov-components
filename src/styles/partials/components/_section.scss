@@ -1,5 +1,5 @@
 .dg_section {
-  padding: $default-padding 0;
+  padding: $padding-jumbo 0;
 
   .dg_section-cta {
     padding: $padding-large 0;
@@ -21,5 +21,11 @@
     p {
       color: $white;
     }
+  }
+}
+
+@media screen and (max-width: $medium-breakpoint) {
+  .dg_section {
+    padding: ($padding-jumbo / 2) 0;
   }
 }
