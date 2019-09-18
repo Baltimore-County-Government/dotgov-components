@@ -2,10 +2,10 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const LogoType = props => (
-  <a href="#" className="dg_logotype">
+  <div className="dg_brand-text">
     <span>{props.header}</span>
     <span>{props.description}</span>
-  </a>
+  </div>
 );
 
 LogoType.propTypes = {
