@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import LogoType from "./LogoType";
+import BrandText from "./BrandText";
 import SiteStatus from "./SiteStatus";
 import Search from "./Search";
 
@@ -11,7 +11,7 @@ const SiteHeader = props => {
       {/* Hamburger Menu Will Go Here */}
       <div className="dg_brand">
         <a href="/" title="View the Baltimore County Government homepage.">
-          <LogoType header={heading} description={subHeading} />
+          <BrandText header={heading} description={subHeading} />
         </a>
         <SiteStatus status={status} />
       </div>
