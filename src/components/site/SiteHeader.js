@@ -10,7 +10,9 @@ const SiteHeader = props => {
     <header className="dg_header dg_site-header">
       {/* Hamburger Menu Will Go Here */}
       <div className="dg_brand">
-        <LogoType header={heading} description={subHeading} />
+        <a href="/" title="View the Baltimore County Government homepage.">
+          <LogoType header={heading} description={subHeading} />
+        </a>
         <SiteStatus status={status} />
       </div>
       <Search />
