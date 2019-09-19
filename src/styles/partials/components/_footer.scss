@@ -2,10 +2,12 @@
 .dg_county-footer {
   border-top: $border-width-largest solid $red;
 }
+
 .dg_secondary-footer {
   background-color: $gray-dark;
   padding: $padding-large;
 }
+
 .dg_copyright {
   color: $white;
   font-family: $default-heading-font;
@@ -38,21 +40,12 @@
   a {
     text-decoration: none;
   }
-  .dg_alt-list {
-    &:before {
-      content: "";
-      text-decoration: none;
-    }
-    li {
-      float: left;
-      margin-right: 5%;
-      width: 40%;
-    }
-  }
+
   .dg_seal {
     max-width: 100px;
   }
 }
+
 .dg_social-icon_container {
   margin-bottom: $margin-largest;
   .dg_icon-link.dg_icon-link--small {
@@ -74,12 +67,4 @@
 
 .dg_footer-section {
   margin-bottom: $margin-large;
-}
-
-@media (max-width: $medium-breakpoint) {
-  .dg_brand-footer {
-    li {
-      width: 100% !important;
-    }
-  }
 }
