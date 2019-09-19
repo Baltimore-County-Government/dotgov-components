@@ -22,7 +22,8 @@
     "test:watch": "jest --watchAll",
     "predeploy": "npm run-script build",
     "deploy": "gh-pages -d styleguide --git git",
-    "generate-css": "node-sass --include-path src src/dotgov.scss   lib/styles/dotgov.min.css --output-style compressed",
+    "generate-css": "node-sass --include-path src src/dotgov.scss lib/styles/dotgov.min.css --output-style compressed",
+    "watch-css": "node-sass --include-path src src/dotgov.scss lib/styles/dotgov.min.css --output-style compressed --watch",
     "get-v": "npm -v react-styleguidist"
   },
   "dependencies": {
