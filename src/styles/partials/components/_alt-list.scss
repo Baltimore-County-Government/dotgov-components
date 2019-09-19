@@ -4,6 +4,7 @@
   margin-left: 0;
   padding-left: 0;
   text-decoration: none;
+
   li {
     border-bottom: $border-width-small solid $gray-light;
     color: $blue;
@@ -15,6 +16,7 @@
     text-decoration: none;
     text-transform: uppercase;
     @include default-transition(color);
+
     a {
       text-decoration: none;
 
@@ -25,10 +27,15 @@
         font-size: $large-icon-size;
         position: relative;
       }
+
       &:hover {
         color: $vibrant-blue;
         cursor: pointer;
         text-decoration: none;
+      }
+
+      i {
+        margin-right: $margin-small;
       }
     }
   }

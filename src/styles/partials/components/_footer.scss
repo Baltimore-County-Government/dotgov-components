@@ -35,14 +35,6 @@
   margin-bottom: $default-margin;
   margin-top: $margin-largest;
 
-  .img-fluid {
-    margin-bottom: $margin-small;
-  }
-
-  p {
-    padding-bottom: $padding-largest;
-  }
-
   a {
     text-decoration: none;
   }
@@ -78,6 +70,10 @@
 .dg_lg_gray {
   color: $gray;
   font-size: $large-icon-size;
+}
+
+.dg_footer-section {
+  margin-bottom: $margin-large;
 }
 
 @media (max-width: $medium-breakpoint) {
