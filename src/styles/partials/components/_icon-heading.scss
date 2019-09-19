@@ -108,3 +108,9 @@ $image-border-adjustment-margin: -$border-width-large * 3;
     margin-bottom: $margin-largest / 2 - 5; /* split the largest margin in half and subtract the line height difference */
   }
 }
+
+@media screen and (max-width: $small-breakpoint) {
+  .dg_icon-heading {
+    letter-spacing: 10px;
+  }
+}
