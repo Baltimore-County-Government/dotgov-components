@@ -18,10 +18,17 @@
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
+  padding-left: $default-padding;
+  padding-right: $default-padding;
 
   .dg_brand {
     display: flex;
     align-items: center;
+
+    .dg_brand-text {
+      border-right: $border-width-small solid $gray-light;
+      padding: 0 $padding-large 0 0;
+    }
 
     a {
       text-decoration: none;
