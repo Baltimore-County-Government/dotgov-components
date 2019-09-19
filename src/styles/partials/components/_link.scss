@@ -132,7 +132,9 @@ $small-icon-link-size: 50px;
 }
 
 .dg_inline-icon-link {
+  text-decoration: none;
+
   i {
-    margin-right: $margin-small;
+    @include list-icon;
   }
 }

@@ -14,32 +14,14 @@
   font-size: $small-heading-font-size;
   text-transform: uppercase;
 }
+
 .dg_download-blurb {
   font-style: italic;
 }
-.dg_logo-sm-txt {
-  color: $gray;
-  display: block;
-  font-family: $default-heading-font;
-  font-size: $smallest-font-size;
-  font-weight: $font-bold;
-  letter-spacing: 10px;
-  text-transform: uppercase;
-}
-.dg_logo-h1 {
-  color: $black;
-  font-family: $default-heading-font;
-  font-size: $small-heading-font-size;
-  font-weight: $font-bold;
-  text-transform: uppercase;
-}
+
 .dg_brand-footer {
   margin-bottom: $default-margin;
   margin-top: $margin-largest;
-
-  a {
-    text-decoration: none;
-  }
 
   .dg_seal {
     max-width: 100px;
@@ -48,21 +30,12 @@
 
 .dg_social-icon_container {
   margin-bottom: $margin-largest;
+
   .dg_icon-link.dg_icon-link--small {
     i {
       font-size: $default-icon-size;
     }
   }
-}
-
-.dg_footer-list-column {
-  margin-bottom: $default-margin;
-  margin-top: $margin-largest;
-}
-
-.dg_lg_gray {
-  color: $gray;
-  font-size: $large-icon-size;
 }
 
 .dg_footer-section {
