@@ -9,7 +9,7 @@
 	p {
 		color: $white;
 		font-family: 'Crimson Text', serif;
-		font-size: 25px;
+		font-size: $h2-font-size;
 		font-style: italic;
 		padding-top: 25px;
 	}
@@ -20,7 +20,7 @@
 		flex-wrap: wrap;
 	}
 
-	.dg_page-header__PreTitle {
+	.dg_page-header__pre-title {
 		display: block;
 		font-family: 'Montserrat', sans-serif;
 		font-size: 14px;
@@ -29,7 +29,7 @@
 		text-transform: uppercase;
 	}
 
-	.dg_page-header__Title {
+	.dg_page-header__title {
 		display: block;
 		font-family: 'Montserrat', sans-serif;
 		font-size: 36px;

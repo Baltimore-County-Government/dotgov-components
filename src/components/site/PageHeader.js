@@ -6,8 +6,8 @@ const PageHeader = (props) => (
 	<div className="dg_page-header">
 		<div className="dg_page-header__box ">
 			<div className="col-12 col-lg-5 col-xl-6">
-				<span className="dg_page-header__PreTitle">{props.preTitle !== undefined ? props.preTitle : null}</span>
-				<span className="dg_page-header__Title">{props.title} </span>
+				<span className="dg_page-header__pre-title">{props.preTitle !== undefined ? props.preTitle : null}</span>
+				<span className="dg_page-header__title">{props.title} </span>
 			</div>
 			<div className="col-12 col-lg-7 col-xl-6">
 				<p>{props.deck !== undefined ? props.deck : null}</p>
