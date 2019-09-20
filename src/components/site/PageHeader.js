@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import classnames from 'classnames';
+
 
 const PageHeader = (props) => (
 	<div className="dg_page-header">
@@ -18,7 +18,7 @@ const PageHeader = (props) => (
 
 PageHeader.propTypes = {
 	/** PreTitle to be displayed */
-	PreTile: PropTypes.string,
+	preTitle: PropTypes.string,
 	/** Title to be displayed */
 	Title: PropTypes.string.isRequired,
 	/** Deck to be displayed */
