@@ -1,0 +1,46 @@
+.dg_page-header {
+	//background-image: url(/sebin/r/t/prototype-subpage-landing-header-bkg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background: $pale-blue;
+	color: $white;
+	padding: $padding-largest;
+	text-decoration: none;
+	p {
+		color: $white;
+		font-family: 'Crimson Text', serif;
+		font-size: 25px;
+		font-style: italic;
+		padding-top: 25px;
+	}
+
+	.dg_page-header__box {
+		border-width: 10px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.dg_page-header__PreTitle {
+		display: block;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 14px;
+		font-weight: bold;
+		letter-spacing: 10px;
+		text-transform: uppercase;
+	}
+
+	.dg_page-header__Title {
+		display: block;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 36px;
+		font-weight: bold;
+		letter-spacing: 3px;
+		text-transform: uppercase;
+	}
+}
+
+@media screen and (max-width: $extra-large-breakpoint) {
+	.dg_page-header {
+		margin-bottom: $margin-large;
+	}
+}
