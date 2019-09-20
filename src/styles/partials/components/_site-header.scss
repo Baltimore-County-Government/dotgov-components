@@ -14,19 +14,26 @@
 }
 
 .dg_site-header {
-	display: flex;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-	align-items: center;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: $default-padding;
+  padding-right: $default-padding;
 
 	.dg_brand {
 		display: flex;
 		align-items: center;
 
-		a {
-			text-decoration: none;
-		}
-	}
+    .dg_brand-text {
+      border-right: $border-width-small solid $gray-light;
+      padding: 0 $padding-large 0 0;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
 }
 
 @media screen and (max-width: $header-breakpoint) {
