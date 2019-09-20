@@ -10,7 +10,7 @@ const PageHeader = (props) => (
 				<span className="dg_page-header__Title">{props.title} </span>
 			</div>
 			<div className="col-12 col-lg-7 col-xl-6">
-				<p>{props.Deck !== undefined ? props.deck : null}</p>
+				<p>{props.deck !== undefined ? props.deck : null}</p>
 			</div>
 		</div>
 	</div>
