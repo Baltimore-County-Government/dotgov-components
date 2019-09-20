@@ -5,8 +5,8 @@
 import PageHeader from "./PageHeader";
 <PageHeader
 preTitle="department of "
-Title="public works"
-Deck="The Department of Public Works oversees and maintains the County’s public infrastructure, including highways, utilities, and trash and recycling."
+title="public works"
+deck="The Department of Public Works oversees and maintains the County’s public infrastructure, including highways, utilities, and trash and recycling."
 />
 ```
 Html Snippet:
