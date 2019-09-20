@@ -1,16 +1,16 @@
 .dg_header {
-	background-color: $gray-lightest;
-	border-top: $border-width-largest solid $red;
-	width: 100%;
-	margin: 0;
-	padding: 0;
-	display: flex;
-	align-items: center;
+  background-color: $gray-lightest;
+  border-top: $border-width-largest solid $red;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
 
-	p {
-		padding: $padding-large;
-		margin: 0;
-	}
+  p {
+    padding: $padding-large;
+    margin: 0;
+  }
 }
 
 .dg_site-header {
@@ -18,17 +18,10 @@
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  padding-left: $default-padding;
-  padding-right: $default-padding;
 
-	.dg_brand {
-		display: flex;
-		align-items: center;
-
-    .dg_brand-text {
-      border-right: $border-width-small solid $gray-light;
-      padding: 0 $padding-large 0 0;
-    }
+  .dg_brand {
+    display: flex;
+    align-items: center;
 
     a {
       text-decoration: none;
@@ -37,10 +30,10 @@
 }
 
 @media screen and (max-width: $header-breakpoint) {
-	.dg_site-header {
-		background: $white;
-		position: relative;
-		z-index: 99;
-		margin-bottom: 64px; /* Manually calculated via the browser */
-	}
+  .dg_site-header {
+    background: $white;
+    position: relative;
+    z-index: 99;
+    margin-bottom: 64px; /* Manually calculated via the browser */
+  }
 }
