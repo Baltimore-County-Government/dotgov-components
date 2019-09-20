@@ -22,7 +22,7 @@
 
 	.dg_page-header__pre-title {
 		display: block;
-		font-family: 'Montserrat', sans-serif;
+		font-family: $default-heading-font;
 		font-size: 14px;
 		font-weight: bold;
 		letter-spacing: 10px;
@@ -31,7 +31,7 @@
 
 	.dg_page-header__title {
 		display: block;
-		font-family: 'Montserrat', sans-serif;
+		font-family: $default-heading-font;
 		font-size: 36px;
 		font-weight: bold;
 		letter-spacing: 3px;
