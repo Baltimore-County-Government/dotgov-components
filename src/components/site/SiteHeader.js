@@ -13,9 +13,9 @@ const SiteHeader = props => {
         <a href="/" title="View the Baltimore County Government homepage.">
           <BrandText header={heading} description={subHeading} />
         </a>
-         <SiteStatus status={status} /> 
+        <SiteStatus status={status} />
       </div>
-      <Search /> 
+      <Search />
     </header>
   );
 };
