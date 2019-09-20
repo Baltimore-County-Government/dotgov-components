@@ -2,7 +2,6 @@
 ### PageHeader
 
 ```jsx
-import PageHeader from "./PageHeader";
 <PageHeader
 preTitle="department of "
 title="public works"
