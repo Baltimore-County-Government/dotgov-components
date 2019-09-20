@@ -8,7 +8,7 @@
 	text-decoration: none;
 	p {
 		color: $white;
-		font-family: 'Crimson Text', serif;
+		font-family: $default-body-font;
 		font-size: $h2-font-size;
 		font-style: italic;
 		padding-top: 25px;
@@ -24,7 +24,7 @@
 		display: block;
 		font-family: $default-heading-font;
 		font-size: 14px;
-		font-weight: bold;
+		font-weight: $font-bold;
 		letter-spacing: 10px;
 		text-transform: uppercase;
 	}
@@ -33,7 +33,7 @@
 		display: block;
 		font-family: $default-heading-font;
 		font-size: 36px;
-		font-weight: bold;
+		font-weight: $font-bold;
 		letter-spacing: 3px;
 		text-transform: uppercase;
 	}
