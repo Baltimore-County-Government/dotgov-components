@@ -23,11 +23,11 @@ const PageHeader = props => (
 PageHeader.propTypes = {
   /**backgroundImage: Agency specific background image to be displayed  */
   backGroundImage: PropTypes.string,
-  /** PreTitle: Type of agency, e,g., "Department of" or "Office of" to be displayed */
+  /** PreTitle: Supplemental heading, e,g., "Department of" or "Office of" to be displayed */
   preTitle: PropTypes.string,
-  /** title: Agency name, e.g., "Budeget and Finance" to be displayed */
+  /** title: Main page heading, e.g., "Budeget and Finance" to be displayed */
   title: PropTypes.string.isRequired,
-  /** deck: Brief description of the agency's function. */
+  /** deck: Brief description of the landing page or app. */
   deck: PropTypes.string
 };
 
