@@ -16,6 +16,12 @@
       margin-right: 5%;
       width: 40%;
     }
+
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
   }
 
   li {
