@@ -2,7 +2,7 @@
 
 ```jsx
 <PageHeader
-    preTitle="department of "
+    preTitle="department of"
     title="public works"
     deck="The Department of Public Works oversees and maintains the County’s public infrastructure, including highways, utilities, and trash and recycling."
 />

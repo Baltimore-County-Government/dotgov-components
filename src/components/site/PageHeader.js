@@ -18,11 +18,11 @@ const PageHeader = props => (
 );
 
 PageHeader.propTypes = {
-  /** PreTitle to be displayed */
+  /** PreTitle: Type of agency, e,g., "Department of" or "Office of" to be displayed */
   preTitle: PropTypes.string,
-  /** Title to be displayed */
+  /** title: Agency name, e.g., "Budeget and Finance" to be displayed */
   title: PropTypes.string.isRequired,
-  /** A brief summary the describes the page the header is included on. */
+  /** deck: Brief description of the agency's function. */
   deck: PropTypes.string
 };
 
