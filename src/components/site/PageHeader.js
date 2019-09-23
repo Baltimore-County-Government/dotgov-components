@@ -1,12 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-
 const PageHeader = (props) => (
 	<div className="dg_page-header">
-		<div className="dg_page-header__box ">
+		<div className="row">
 			<div className="col-12 col-lg-5 col-xl-6">
-				<span className="dg_page-header__pre-title">{props.preTitle !== undefined ? props.preTitle : null}</span>
+				<span className="dg_page-header__pre-title">
+					{props.preTitle !== undefined ? props.preTitle : null}
+				</span>
 				<span className="dg_page-header__title">{props.title} </span>
 			</div>
 			<div className="col-12 col-lg-7 col-xl-6">
@@ -21,7 +22,7 @@ PageHeader.propTypes = {
 	preTitle: PropTypes.string,
 	/** Title to be displayed */
 	title: PropTypes.string.isRequired,
-	/** Deck to be displayed */
+	/** A brief summary the describes the page the header is included on. */
 	deck: PropTypes.string
 };
 
