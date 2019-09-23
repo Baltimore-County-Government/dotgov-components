@@ -2,10 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const PageHeader = props => (
-  <div
-    className="dg_page-header"
-    style={{ backgroundImage: `url(${props.backGroundImage})` }}
-  >
+  <div className="dg_page-header">
     <div className="row">
       <div className="col-12 col-lg-5 col-xl-6">
         <span className="dg_page-header__pre-title">
@@ -21,8 +18,6 @@ const PageHeader = props => (
 );
 
 PageHeader.propTypes = {
-  /**backgroundImage: Agency specific background image to be displayed  */
-  backGroundImage: PropTypes.string,
   /** PreTitle: Supplemental heading, e,g., "Department of" or "Office of" to be displayed */
   preTitle: PropTypes.string,
   /** title: Main page heading, e.g., "Budeget and Finance" to be displayed */

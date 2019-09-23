@@ -2,7 +2,6 @@
 
 ```jsx
 <PageHeader
-  backGroundImage="https://www.baltimorecountymd.gov/sebin/r/t/prototype-subpage-landing-header-bkg.jpg"
   preTitle="department of"
   title="public works"
   deck="The Department of Public Works oversees and maintains the County’s public infrastructure, including highways, utilities, and trash and recycling."
@@ -12,10 +11,7 @@
 Html Snippet:
 
 ```html
-<div
-  class="dg_page-header"
-  style='background-image: url("https://www.baltimorecountymd.gov/sebin/r/t/prototype-subpage-landing-header-bkg.jpg");'
->
+<div class="dg_page-header">
   <div class="row">
     <div class="col-12 col-lg-5 col-xl-6">
       <span class="dg_page-header__pre-title">department of </span>
