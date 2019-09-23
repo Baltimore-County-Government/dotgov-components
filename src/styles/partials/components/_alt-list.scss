@@ -44,6 +44,7 @@
         @include icon-content("\f105");
         float: right;
         font-size: $large-icon-size;
+        margin-left: $default-margin;
         position: relative;
       }
 
