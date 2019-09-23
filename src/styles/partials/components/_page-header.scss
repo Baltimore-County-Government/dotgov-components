@@ -1,10 +1,18 @@
 .dg_page-header {
-  background-image: url(https://www.baltimorecountymd.gov/sebin/r/t/prototype-subpage-landing-header-bkg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  color: $white;
-  padding: $padding-largest;
+  color:$white;
   text-decoration: none;
+  position: relative;
+
+  .dg_page-header-top-left {
+    position: absolute;
+    top: $padding-large;
+    left: $default-padding;
+  }
+  img {
+    width: 100%;
+  }
   p {
     color: $white;
     font-family: $default-body-font;
@@ -21,7 +29,6 @@
     letter-spacing: $padding-small;
     text-transform: uppercase;
   }
-
   .dg_page-header__title {
     display: block;
     font-family: $default-heading-font;
@@ -29,6 +36,26 @@
     font-weight: $font-bold;
     letter-spacing: $base-spacing-unit;
     text-transform: uppercase;
+  }
+   &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    color: $white;
+    display: block;
+    background: transparent;
+  }
+  
+  &.blue:after {
+    background: rgba($blue, .7);
+  }
+  
+  &.red:after {
+    background: rgba($red, .7);
   }
 }
 
