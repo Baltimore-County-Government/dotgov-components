@@ -1,0 +1,16 @@
+.dg_summary-list {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: $pale-blue;
+  color: $white;
+  padding: $padding-largest;
+  text-decoration: none;
+
+  .px-4 {
+    padding-left: 1.5rem;
+  }
+
+  .py-4 {
+    padding-right: 1.5rem;
+  }
+}
