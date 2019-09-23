@@ -1,40 +1,40 @@
 .dg_page-header {
-	//background-image: url(/sebin/r/t/prototype-subpage-landing-header-bkg.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background: $pale-blue;
-	color: $white;
-	padding: $padding-largest;
-	text-decoration: none;
-	p {
-		color: $white;
-		font-family: $default-body-font;
-		font-size: $h2-font-size;
-		font-style: italic;
-		padding-top: 25px;
-	}
+  //background-image: url(/sebin/r/t/prototype-subpage-landing-header-bkg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: $pale-blue;
+  color: $white;
+  padding: $padding-largest;
+  text-decoration: none;
+  p {
+    color: $white;
+    font-family: $default-body-font;
+    font-size: $h2-font-size;
+    font-style: italic;
+    padding-top: 25px;
+  }
 
-	.dg_page-header__pre-title {
-		display: block;
-		font-family: $default-heading-font;
-		font-size: $smallest-font-size;
-		font-weight: $font-bold;
-		letter-spacing: $padding-small;
-		text-transform: uppercase;
-	}
+  .dg_page-header__pre-title {
+    display: block;
+    font-family: $default-heading-font;
+    font-size: $smallest-font-size;
+    font-weight: $font-bold;
+    letter-spacing: $padding-small;
+    text-transform: uppercase;
+  }
 
-	.dg_page-header__title {
-		display: block;
-		font-family: $default-heading-font;
-		font-size: $h1-font-size;
-		font-weight: $font-bold;
-		letter-spacing: $base-spacing-unit;
-		text-transform: uppercase;
-	}
+  .dg_page-header__title {
+    display: block;
+    font-family: $default-heading-font;
+    font-size: $h1-font-size;
+    font-weight: $font-bold;
+    letter-spacing: $base-spacing-unit;
+    text-transform: uppercase;
+  }
 }
 
 @media screen and (max-width: $extra-large-breakpoint) {
-	.dg_page-header {
-		margin-bottom: $margin-large;
-	}
+  .dg_page-header {
+    margin-bottom: $margin-large;
+  }
 }
