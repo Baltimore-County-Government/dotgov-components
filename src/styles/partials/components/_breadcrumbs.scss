@@ -1,4 +1,3 @@
-/* BREADCRUMBS */
 .dg_breadcrumbs {
   color: $black;
   display: inline-block;
@@ -12,50 +11,61 @@
   padding-left: 0px;
   padding-top: 0px;
   text-transform: uppercase;
+
+  i {
+    font-size: $h3-font-size;
+  }
+
+  ul {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+
+  li {
+    display: inline;
+
+    a {
+      color: $blue;
+      font-size: $smallest-font-size;
+      font-weight: $font-normal;
+      padding: 0px 30px 0px 0px;
+      text-decoration: none;
+
+      &:hover {
+        color: $vibrant-blue;
+      }
+
+      &:after {
+        color: $gray-light;
+        font-size: $h1-font-size;
+        content: "\f105";
+        font-family: $font-awesome-pro;
+        font-weight: $font-bold;
+        padding-left: 30px;
+        vertical-align: top;
+      }
+    }
+  }
 }
 
-.dg_breadcrumbs i {
-  font-size: $h3-font-size;
+.dg_section.dark {
+  .dg_breadcrumbs {
+    color: $gold;
+
+    li {
+      a {
+        color: $white;
+
+        &:hover {
+          color: $blue-lightest;
+        }
+      }
+    }
+  }
 }
 
-.dg_breadcrumbs ul {
-  margin-bottom: 0px;
-  padding-bottom: 0px;
-}
-
-.dg_breadcrumbs li {
-  display: inline;
-}
-.dg_breadcrumbs li a {
-  color: $blue;
-  font-size: $smallest-font-size;
-  font-weight: $font-normal;
-  padding: 0px 30px 0px 0px;
-  text-decoration: none;
-}
-
-.dg_breadcrumbs li a:hover {
-  color: $vibrant-blue;
-}
-
-.dg_breadcrumbs li a:after {
-  color: $gray-light;
-  font-size: $h1-font-size;
-  content: "\f105";
-  font-family: "Font Awesome 5 Pro";
-  font-weight: $font-bold;
-  padding-left: 30px;
-  vertical-align: top;
-}
-
-.dg_section.dark .dg_breadcrumbs {
-  color: $gold;
-}
-
-.dg_section.dark .dg_breadcrumbs li a {
-  color: $white;
-}
-
-.dg_section.dark .dg_breadcrumbs li a:hover {
-  color: $blue-lightest;
+@media screen and (max-width: $small-breakpoint) {
+  .dg_breadcrumbs {
+    display: none;
+  }
 }
