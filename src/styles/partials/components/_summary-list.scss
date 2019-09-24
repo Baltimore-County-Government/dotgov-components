@@ -6,10 +6,20 @@
   text-decoration: none;
   p {
     color: #666666;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 16px;
     line-height: 30px;
-}
+  }
+  a {
+    color: #005796;
+    text-decoration: none;
+    background-color: transparent;
+  }
+  .fa,
+  .fas {
+    //font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+  }
   .px-4 {
     padding-left: 1.5rem;
   }
@@ -48,7 +58,7 @@
   }
   .side-list-ico {
     font-size: 30px;
-    // color: #666666;
+    color: #666666;
     text-align: center;
     width: 30px;
   }
