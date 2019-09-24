@@ -3,22 +3,22 @@
 ```jsx
 import Breadcrumbs from "./Breadcrumbs";
 import BreadcrumbItem from "./Breadcrumbitem";
+import BreadcrumbLinkItem from "./BreadcrumbLinkitem";
+
 
 <Breadcrumbs>
-  <BreadcrumbItem
+  <BreadcrumbLinkItem
     breadcrumbText="Departments"
     title="This is a title"
     link="#"
   />
-  <BreadcrumbItem
+  <BreadcrumbLinkItem
     breadcrumbText="Department of Health"
     title="This is a title"
     link="#"
   />
   <BreadcrumbItem
     breadcrumbText="Adoptable Pets"
-    title="This is a title"
-    link="#"
   />
 </Breadcrumbs>;
 ```
