@@ -54,10 +54,6 @@
   &.blue:after {
     background: rgba($blue, 0.7);
   }
-
-  &.red:after {
-    background: rgba($red, 0.7);
-  }
 }
 
 @media screen and (max-width: $extra-large-breakpoint) {

@@ -12,12 +12,12 @@ const PageHeader = props => {
         <div className="row">
           <div className="col-12 col-lg-5 col-xl-6">
             <span className="dg_page-header__pre-title">
-              {preTitle !== undefined ? preTitle : null}
+              {preTitle || ''}
             </span>
             <span className="dg_page-header__title">{title} </span>
           </div>
           <div className="col-12 col-lg-7 col-xl-6">
-            <p>{deck !== undefined ? deck : null}</p>
+            <p>{deck ||''}</p>
           </div>
         </div>
       </div>
@@ -26,8 +26,7 @@ const PageHeader = props => {
 };
 
 PageHeader.propTypes = {
-  /** className: Displays transparent color on the top of the image */
-  className: PropTypes.string,
+
   /** PreTitle: Supplemental heading, e,g., "Department of" or "Office of" to be displayed */
   preTitle: PropTypes.string,
   /** title: Main page heading, e.g., "Budeget and Finance" to be displayed */
