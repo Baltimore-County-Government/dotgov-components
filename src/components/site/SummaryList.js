@@ -28,7 +28,7 @@ const SummaryList = props => {
               </p>
             </div>
           </div>
-
+{/* 
           <div className="row mb-3">
             <div className="col-2">
               <i className={iconCssClasses1}></i>
@@ -40,9 +40,9 @@ const SummaryList = props => {
                 <br />8 a.m. to 4:30 p.m.
               </p>
             </div>
-          </div>
+          </div> */}
 
-          <div className="row mb-3">
+          {/* <div className="row mb-3">
             <div className="col-2">
               <i className={iconCssClasses2}></i>
             </div>
@@ -52,9 +52,9 @@ const SummaryList = props => {
                 <a href="#">publicworks@​baltimorecountymd.gov</a>
               </p>
             </div>
-          </div>
+          </div> */}
 
-          <div className="row mb-3">
+          {/* <div className="row mb-3">
             <div className="col-2">
               <i className={iconCssClasses3}></i>
             </div>
@@ -64,8 +64,8 @@ const SummaryList = props => {
               <h3>Emergency Dispatch:</h3>
               <p>410-887-6789</p>
             </div>
-          </div>
-          <div className="row mb-3">
+          </div> */}
+          {/* <div className="row mb-3">
             <div className="col-2">
               <i className={iconCssClasses4}></i>
             </div>
@@ -76,8 +76,8 @@ const SummaryList = props => {
                 <a href="#">Report a problem</a> online.
               </p>
             </div>
-          </div>
-          <div className="row mb-3">
+          </div> */}
+          {/* <div className="row mb-3">
             <div className="col-2">
               <i className={iconCssClasses5}></i>
             </div>
@@ -86,7 +86,7 @@ const SummaryList = props => {
               <h3>Director:</h3>
               <p>Steve Walsh, P.E.</p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </React.Fragment>
