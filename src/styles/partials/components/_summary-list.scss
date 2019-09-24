@@ -1,8 +1,7 @@
 .dg_summary-list {
   background-repeat: no-repeat;
   background-size: cover;
-  background: $pale-blue;
-  color: $white;
+  //color: $white;
   padding: $padding-largest;
   text-decoration: none;
 
@@ -17,12 +16,34 @@
     margin-bottom: 1rem;
   }
   .bg-light {
-    background-color: #f8f9fa;
+    background-color: $gray-lightest;
   }
-
+  .col-2 {
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+}
+  h3 {
+    color: #666666;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    //display: block;
+    //margin-block-start: 1em;
+   // margin-block-end: 1em;
+    //margin-inline-start: 0px;
+    //margin-inline-end: 0px;
+  }
+  .col-10 {
+    position: relative;
+    width: 100%;
+    //min-height: 1px;
+    //padding-right: 15px;
+    // padding-left: 15px;
+  }
   .side-list-ico {
     font-size: 30px;
-    color: #666666;
+    // color: #666666;
     text-align: center;
     width: 30px;
   }
