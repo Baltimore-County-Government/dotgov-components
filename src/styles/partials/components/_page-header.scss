@@ -1,19 +1,29 @@
 .dg_page-header {
-  background-repeat: no-repeat;
-  background-size: cover;
   color: $white;
   text-decoration: none;
   position: relative;
-  
+  margin-bottom: $margin-largest;
+
   .dg_page-header-top-left {
-    position: absolute;
+    padding-top: $padding-jumbo;
+    padding-bottom: $padding-jumbo;
+    position: relative;
     z-index: 9;
-    top: $padding-large;
-    left: $default-padding;
   }
+
   img {
+    // max-height: 300px; /* debuggin for now, maybe design can provide the proper sized image*/
     width: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 100%;
+    object-fit: cover;
   }
+
   p {
     color: $white;
     font-family: $default-body-font;
@@ -38,17 +48,16 @@
     letter-spacing: $base-spacing-unit;
     text-transform: uppercase;
   }
+
   &:after {
     content: "";
     position: absolute;
     top: 0;
+    bottom: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    display: none;
     color: $white;
     display: block;
-    background: transparent;
   }
 
   &.blue:after {
