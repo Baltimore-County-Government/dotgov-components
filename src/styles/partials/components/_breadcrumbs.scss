@@ -38,9 +38,8 @@
       &:after {
         color: $gray-light;
         font-size: $h1-font-size;
-        content: "\f105";
-        font-family: $font-awesome-pro;
         font-weight: $font-bold;
+        @include icon-content("\f105");
         padding-left: 30px;
         vertical-align: top;
       }
