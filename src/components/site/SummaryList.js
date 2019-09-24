@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import classnames from "classnames";
 const SummaryList = props => {
-  const { icon, icon1, icon2, icon3, icon4, icon5 } = props;
+  const { icon, icon1, icon2, icon3, icon4, icon5, sampleText } = props;
   const iconCssClasses = classnames("side-list-ico", icon);
   const iconCssClasses1 = classnames("side-list-ico", icon1);
   const iconCssClasses2 = classnames("side-list-ico", icon2);
@@ -19,16 +19,10 @@ const SummaryList = props => {
             </div>
             <div className="col-10">
               <h3>Main Office:</h3>
-              <p>
-                111 West Chesapeake Avenue
-                <br />
-                Suite 307
-                <br />
-                Townson, Maryland 21204
-              </p>
+              <p>{sampleText}</p>
             </div>
           </div>
- 
+
           <div className="row mb-3">
             <div className="col-2">
               <i className={iconCssClasses1}></i>
@@ -40,9 +34,9 @@ const SummaryList = props => {
                 <br />8 a.m. to 4:30 p.m.
               </p>
             </div>
-          </div> 
+          </div>
 
-           <div className="row mb-3">
+          <div className="row mb-3">
             <div className="col-2">
               <i className={iconCssClasses2}></i>
             </div>
@@ -52,7 +46,7 @@ const SummaryList = props => {
                 <a href="#">publicworks@​baltimorecountymd.gov</a>
               </p>
             </div>
-          </div> 
+          </div>
 
           <div className="row mb-3">
             <div className="col-2">
@@ -64,7 +58,7 @@ const SummaryList = props => {
               <h3>Emergency Dispatch:</h3>
               <p>410-887-6789</p>
             </div>
-          </div> 
+          </div>
           <div className="row mb-3">
             <div className="col-2">
               <i className={iconCssClasses4}></i>
@@ -86,7 +80,7 @@ const SummaryList = props => {
               <h3>Director:</h3>
               <p>Steve Walsh, P.E.</p>
             </div>
-          </div> 
+          </div>
         </div>
       </div>
     </React.Fragment>

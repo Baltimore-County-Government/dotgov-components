@@ -6,5 +6,6 @@
   icon3="fas fa-mobile-alt"
   icon4="fas fa-exclamation-circle"
   icon5="fas fa-user"
+  sampleText="111 West Chesapeake Avenue<br/>"
 ></SummaryList>
 ```
