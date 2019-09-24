@@ -1,12 +1,13 @@
 .dg_page-header {
   background-repeat: no-repeat;
   background-size: cover;
-  color:$white;
+  color: $white;
   text-decoration: none;
   position: relative;
-
+  
   .dg_page-header-top-left {
     position: absolute;
+    z-index: 9;
     top: $padding-large;
     left: $default-padding;
   }
@@ -37,8 +38,8 @@
     letter-spacing: $base-spacing-unit;
     text-transform: uppercase;
   }
-   &:after {
-    content: '';
+  &:after {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -49,13 +50,13 @@
     display: block;
     background: transparent;
   }
-  
+
   &.blue:after {
-    background: rgba($blue, .7);
+    background: rgba($blue, 0.7);
   }
-  
+
   &.red:after {
-    background: rgba($red, .7);
+    background: rgba($red, 0.7);
   }
 }
 
