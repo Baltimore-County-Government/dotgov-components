@@ -2,7 +2,7 @@
 
 ```jsx
 <PageHeader
-  transparent="blue"
+  className="blue"
   backGroundImage="http://baltimorecountymd.gov/sebin/j/x/public-works-header.jpg"
   preTitle="department of"
   title="public works"
