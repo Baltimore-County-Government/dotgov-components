@@ -12,7 +12,7 @@ const BreadcrumbLinkItem = props => {
   );
 };
 
-BreadcrumbItem.propTypes = {
+BreadcrumbLinkItem.propTypes = {
   /** The link or href for the a tag */
   link: PropTypes.string,
   /** The copy that exists inside the a tag */

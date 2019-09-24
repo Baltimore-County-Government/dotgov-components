@@ -5,7 +5,7 @@ const Breadcrumbs = props => {
     <ul className="dg_breadcrumbs">
       <li>
         <a href="#">
-          <i class="fas fa-home fa-1x"></i>
+          <i className="fas fa-home fa-1x"></i>
         </a>
       </li>
       {props.children}

@@ -1,43 +1,84 @@
-### Unordered List
+### Breadcrumbs Light
+
+```jsx
+import Breadcrumbs from "./Breadcrumbs";
+import BreadcrumbItem from "./Breadcrumbitem";
+import BreadcrumbLinkItem from "./BreadcrumbLinkitem";
+<div class="dg_section">
+  <div class="container">
+    <Breadcrumbs>
+      <BreadcrumbLinkItem
+        breadcrumbText="Departments"
+        title="This is a title"
+        link="#"
+      />
+      <BreadcrumbLinkItem
+        breadcrumbText="Department of Health"
+        title="This is a title"
+        link="#"
+      />
+      <BreadcrumbItem breadcrumbText="Adoptable Pets" />
+    </Breadcrumbs>
+  </div>
+</div>;
+```
+
+Html Snippet:
+
+```html
+<div class="dg_section">
+  <div class="container">
+    <ul class="dg_breadcrumbs">
+      <li>
+        <a href="#"><i class="fas fa-home fa-1x" aria-hidden="true"></i></a>
+      </li>
+      <li><a title="This is a title" href="#">Departments</a></li>
+      <li><a title="This is a title" href="#">Department of Health</a></li>
+      <li>Adoptable Pets</li>
+    </ul>
+  </div>
+</div>
+```
+
+### Breadcrumbs Dark
 
 ```jsx
 import Breadcrumbs from "./Breadcrumbs";
 import BreadcrumbItem from "./Breadcrumbitem";
 import BreadcrumbLinkItem from "./BreadcrumbLinkitem";
 
-
-<Breadcrumbs>
-  <BreadcrumbLinkItem
-    breadcrumbText="Departments"
-    title="This is a title"
-    link="#"
-  />
-  <BreadcrumbLinkItem
-    breadcrumbText="Department of Health"
-    title="This is a title"
-    link="#"
-  />
-  <BreadcrumbItem
-    breadcrumbText="Adoptable Pets"
-  />
-</Breadcrumbs>;
+<div class="dg_section dark">
+  <div class="container">
+    <Breadcrumbs>
+      <BreadcrumbLinkItem
+        breadcrumbText="Departments"
+        title="This is a title"
+        link="#"
+      />
+      <BreadcrumbLinkItem
+        breadcrumbText="Department of Health"
+        title="This is a title"
+        link="#"
+      />
+      <BreadcrumbItem breadcrumbText="Adoptable Pets" />
+    </Breadcrumbs>
+  </div>
+</div>;
 ```
 
 Html Snippet:
 
 ```html
-<ul class="dg_alt-list">
-  <li>
-    <a href="#" title="Link title">Item One</a>
-  </li>
-  <li>
-    <a href="#" title="Link title">Item Two</a>
-  </li>
-  <li>
-    <a href="#" title="Link title">Item Three</a>
-  </li>
-  <li>
-    <a href="#" title="Link title">Item Four</a>
-  </li>
-</ul>
+<div class="dg_section dark">
+  <div class="container">
+    <ul class="dg_breadcrumbs">
+      <li>
+        <a href="#"><i class="fas fa-home fa-1x" aria-hidden="true"></i></a>
+      </li>
+      <li><a title="This is a title" href="#">Departments</a></li>
+      <li><a title="This is a title" href="#">Department of Health</a></li>
+      <li>Adoptable Pets</li>
+    </ul>
+  </div>
+</div>
 ```
