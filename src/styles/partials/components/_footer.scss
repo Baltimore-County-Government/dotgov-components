@@ -1,0 +1,76 @@
+.dg_county-footer {
+  border-top: $border-width-largest solid $red;
+}
+
+.dg_primary-footer {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+
+  & > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.dg_brand-footer {
+  width: 50%;
+}
+
+.dg_secondary-footer {
+  background-color: $gray-dark;
+  padding: $padding-large 0;
+}
+
+.dg_copyright {
+  color: $white;
+  font-family: $default-heading-font;
+  font-size: $small-heading-font-size;
+  text-transform: uppercase;
+}
+
+.dg_download-blurb {
+  font-style: italic;
+}
+
+.dg_brand-footer {
+  .dg_seal {
+    max-width: 100px;
+  }
+}
+
+.dg_social-icon_container {
+  .dg_icon-link.dg_icon-link--small {
+    i {
+      font-size: $default-icon-size;
+    }
+  }
+}
+
+.dg_footer-section {
+  margin-bottom: $margin-large;
+}
+
+@media screen and (max-width: $extra-large-breakpoint) {
+  .dg_primary-footer {
+    flex-wrap: wrap;
+  }
+  .dg_brand-footer {
+    margin-bottom: $margin-large;
+    width: 100%;
+  }
+  .dg_footer-list-column {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: $medium-breakpoint) {
+  .dg_footer-list-column {
+    width: 100%;
+
+    .dg_alt-list {
+      margin-bottom: $margin-largest;
+    }
+  }
+}
