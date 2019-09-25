@@ -1,64 +1,29 @@
 .dg_summary-list {
   background-repeat: no-repeat;
   background-size: cover;
-  //color: $white;
   padding: $padding-largest;
   text-decoration: none;
   p {
-    color: #666666;
-    font-family: "Montserrat", sans-serif;
-    font-size: 16px;
+    color: $gray;
+    font-family: $default-heading-font;
+    font-size: $smallest-heading-font-size;
     line-height: 30px;
   }
   a {
-    color: #005796;
     text-decoration: none;
     background-color: transparent;
   }
-  .fa,
-  .fas {
-    //font-family: "Font Awesome 5 Pro";
-    font-weight: 900;
-  }
-  .px-4 {
-    padding-left: 1.5rem;
-  }
-
-  .py-4 {
-    padding-right: 1.5rem;
-  }
-  // .mb-3 {
-  //   margin-bottom: 1rem;
-  // }
   .bg-light {
     background-color: $gray-lightest;
   }
-  // .col-2 {
-  //   flex: 0 0 16.666667%;
-  //   max-width: 16.666667%;
-  //}
+
   h3 {
-    color: #666666;
-    font-family: "Montserrat", sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-    //display: block;
-    //margin-block-start: 1em;
-    // margin-block-end: 1em;
-    //margin-inline-start: 0px;
-    //margin-inline-end: 0px;
+    color: $gray;
   }
-  .col-10 {
-    position: relative;
-    width: 100%;
-    //min-height: 1px;
-    //padding-right: 15px;
-    // padding-left: 15px;
-  }
+
   .side-list-ico {
     font-size: 30px;
-    color: #666666;
+    color: $gray;
     text-align: center;
     width: 30px;
   }

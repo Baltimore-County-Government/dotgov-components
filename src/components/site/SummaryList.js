@@ -2,30 +2,41 @@ import React from "react";
 import PropTypes from "prop-types";
 import classnames from "classnames";
 const SummaryList = props => {
-  const { icon, icon1, icon2, icon3, icon4, icon5, sampleText } = props;
-  const iconCssClasses = classnames("side-list-ico", icon);
-  const iconCssClasses1 = classnames("side-list-ico", icon1);
-  const iconCssClasses2 = classnames("side-list-ico", icon2);
-  const iconCssClasses3 = classnames("side-list-ico", icon3);
-  const iconCssClasses4 = classnames("side-list-ico", icon4);
-  const iconCssClasses5 = classnames("side-list-ico", icon5);
+  const {
+    iconMarker,
+    iconClock,
+    iconEnvelop,
+    iconMobile,
+    iconCircle,
+    iconUser
+  } = props;
+  const iconCssClassesMain = classnames("side-list-ico", iconMarker);
+  const iconCssClassesHours = classnames("side-list-ico", iconClock);
+  const iconCssClassesEmail = classnames("side-list-ico", iconEnvelop);
+  const iconCssClassesPhone = classnames("side-list-ico", iconMobile);
+  const iconCssClassesBaltcogo = classnames("side-list-ico", iconCircle);
+  const iconCssClassesDirector = classnames("side-list-ico", iconUser);
   return (
     <React.Fragment>
       <div className="dg_summary-list">
         <div className="col-md-12 bg-light px-4 py-4">
           <div className="row mb-3">
             <div className="col-2">
-              <i className={iconCssClasses}></i>
+              <i className={iconCssClassesMain}></i>
             </div>
             <div className="col-10">
               <h3>Main Office:</h3>
-              <p>{sampleText}</p>
+              <p>
+                111 West Chesapeake Avenue
+                <br /> Suite 307
+                <br /> Towson, Maryland 21204
+              </p>
             </div>
           </div>
 
           <div className="row mb-3">
             <div className="col-2">
-              <i className={iconCssClasses1}></i>
+              <i className={iconCssClassesHours}></i>
             </div>
             <div className="col-10">
               <h3>Hours:</h3>
@@ -38,7 +49,7 @@ const SummaryList = props => {
 
           <div className="row mb-3">
             <div className="col-2">
-              <i className={iconCssClasses2}></i>
+              <i className={iconCssClassesEmail}></i>
             </div>
             <div class="col-10">
               <h3>Email:</h3>
@@ -50,7 +61,7 @@ const SummaryList = props => {
 
           <div className="row mb-3">
             <div className="col-2">
-              <i className={iconCssClasses3}></i>
+              <i className={iconCssClassesPhone}></i>
             </div>
             <div className="col-10">
               <h3>Phone:</h3>
@@ -61,7 +72,7 @@ const SummaryList = props => {
           </div>
           <div className="row mb-3">
             <div className="col-2">
-              <i className={iconCssClasses4}></i>
+              <i className={iconCssClassesBaltcogo}></i>
             </div>
 
             <div className="col-10">
@@ -73,7 +84,7 @@ const SummaryList = props => {
           </div>
           <div className="row mb-3">
             <div className="col-2">
-              <i className={iconCssClasses5}></i>
+              <i className={iconCssClassesDirector}></i>
             </div>
 
             <div className="col-10">
@@ -87,8 +98,17 @@ const SummaryList = props => {
   );
 };
 
-// LogoType.propTypes = {
-//   /** A header for the logo i.e. vender name or Baltimore County */
+// SummaryList.propTypes = {
+
+  /** Font Awesome icon class */
+  //icon: PropTypes.string,
+  /** label for that row */
+  //lable: PropTypes.string,
+  /** Level of heading you wish to display, "1" for h1, "2" for h2 ... */
+  //level: PropTypes.string,
+  /** Heading text */
+  //text: PropTypes.string.isRequired
+//   /** A Icon for given label  */
 //   header: PropTypes.string.isRequired,
 //   /** Adds a description to the logo i.e. vendor catch phrase or Government */
 //   description: PropTypes.string.isRequired
