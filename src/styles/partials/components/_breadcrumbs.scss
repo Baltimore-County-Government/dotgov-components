@@ -1,15 +1,9 @@
 .dg_breadcrumbs {
   color: $black;
-  display: inline-block;
   font-family: $default-heading-font;
   font-size: $smallest-font-size;
   font-weight: $font-bold;
-  list-style: none;
-  margin-bottom: 0px;
-  margin-top: $margin-small;
-  padding-bottom: $padding-smallest;
   padding-left: 0px;
-  padding-top: 0px;
   text-transform: uppercase;
 
   i {
