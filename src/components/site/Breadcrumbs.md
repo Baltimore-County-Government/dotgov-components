@@ -7,17 +7,13 @@ import BreadcrumbLinkItem from "./BreadcrumbLinkitem";
 <div class="dg_section">
   <div class="container">
     <Breadcrumbs>
+      <BreadcrumbLinkItem text="Departments" title="This is a title" link="#" />
       <BreadcrumbLinkItem
-        breadcrumbText="Departments"
+        text="Department of Health"
         title="This is a title"
         link="#"
       />
-      <BreadcrumbLinkItem
-        breadcrumbText="Department of Health"
-        title="This is a title"
-        link="#"
-      />
-      <BreadcrumbItem breadcrumbText="Adoptable Pets" />
+      <BreadcrumbItem text="Adoptable Pets" />
     </Breadcrumbs>
   </div>
 </div>;
@@ -50,17 +46,13 @@ import BreadcrumbLinkItem from "./BreadcrumbLinkitem";
 <div class="dg_section dark">
   <div class="container">
     <Breadcrumbs>
+      <BreadcrumbLinkItem text="Departments" title="This is a title" link="#" />
       <BreadcrumbLinkItem
-        breadcrumbText="Departments"
+        text="Department of Health"
         title="This is a title"
         link="#"
       />
-      <BreadcrumbLinkItem
-        breadcrumbText="Department of Health"
-        title="This is a title"
-        link="#"
-      />
-      <BreadcrumbItem breadcrumbText="Adoptable Pets" />
+      <BreadcrumbItem text="Adoptable Pets" />
     </Breadcrumbs>
   </div>
 </div>;
