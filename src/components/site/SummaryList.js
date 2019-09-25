@@ -98,20 +98,14 @@ const SummaryList = props => {
   );
 };
 
-// SummaryList.propTypes = {
+ SummaryList.propTypes = {
 
   /** Font Awesome icon class */
-  //icon: PropTypes.string,
+  icon: PropTypes.string.isRequired,
   /** label for that row */
-  //lable: PropTypes.string,
-  /** Level of heading you wish to display, "1" for h1, "2" for h2 ... */
-  //level: PropTypes.string,
-  /** Heading text */
-  //text: PropTypes.string.isRequired
-//   /** A Icon for given label  */
-//   header: PropTypes.string.isRequired,
-//   /** Adds a description to the logo i.e. vendor catch phrase or Government */
-//   description: PropTypes.string.isRequired
-// };
+  label: PropTypes.string,
+  /** value of that level you wish to display */
+  value: PropTypes.string,
+ };
 
 export default SummaryList;
