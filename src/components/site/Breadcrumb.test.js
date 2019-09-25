@@ -8,17 +8,13 @@ it("renders without crashing", () => {
   const div = document.createElement("div");
   ReactDOM.render(
     <Breadcrumbs>
+      <BreadcrumbLinkItem text="Departments" title="This is a title" link="#" />
       <BreadcrumbLinkItem
-        breadcrumbText="Departments"
+        text="Department of Health"
         title="This is a title"
         link="#"
       />
-      <BreadcrumbLinkItem
-        breadcrumbText="Department of Health"
-        title="This is a title"
-        link="#"
-      />
-      <BreadcrumbItem breadcrumbText="Adoptable Pets" />
+      <BreadcrumbItem text="Adoptable Pets" />
     </Breadcrumbs>,
     div
   );

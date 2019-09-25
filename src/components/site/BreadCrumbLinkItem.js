@@ -2,11 +2,11 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const BreadcrumbLinkItem = props => {
-  const { link, breadcrumbText, title } = props;
+  const { link, text, title } = props;
   return (
     <li>
       <a title={title} href={link}>
-        {breadcrumbText}
+        {text}
       </a>
     </li>
   );
@@ -16,7 +16,7 @@ BreadcrumbLinkItem.propTypes = {
   /** The link or href for the a tag */
   link: PropTypes.string,
   /** The copy that exists inside the a tag */
-  breadcrumbText: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
   /** The copy that exists inside the a tag */
   title: PropTypes.string
 };
