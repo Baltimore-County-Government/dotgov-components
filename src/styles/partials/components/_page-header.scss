@@ -14,7 +14,7 @@
   img {
     width: 100%;
     position: absolute;
-    z-index: -1;
+    z-index: 0;
     top: 0;
     left: 0;
     right: 0;
@@ -39,6 +39,7 @@
     letter-spacing: $padding-small;
     text-transform: uppercase;
   }
+
   .dg_page-header__title {
     display: block;
     font-family: $default-heading-font;
@@ -60,7 +61,7 @@
   }
 
   &.blue:after {
-    background: rgba($blue, 0.7);
+    background: rgba($pale-blue, 0.8);
   }
 }
 
