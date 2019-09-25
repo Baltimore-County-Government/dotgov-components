@@ -130,3 +130,11 @@ $small-icon-link-size: 50px;
     }
   }
 }
+
+.dg_inline-icon-link {
+  text-decoration: none;
+
+  i {
+    @include list-icon;
+  }
+}
