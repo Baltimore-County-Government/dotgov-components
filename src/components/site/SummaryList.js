@@ -19,7 +19,7 @@ const SummaryList = props => {
   return (
     <React.Fragment>
       <div className="dg_summary-list">
-        <div className="col-md-12 bg-light px-4 py-4">
+        <div className="col-md-12 px-4 py-4">
           <div className="row mb-3">
             <div className="col-2">
               <i className={iconCssClassesMain}></i>

@@ -3,6 +3,7 @@
   background-size: cover;
   padding: $padding-largest;
   text-decoration: none;
+  background-color: $gray-lightest;
   p {
     color: $gray;
     font-family: $default-heading-font;
@@ -16,9 +17,6 @@
       text-decoration: underline;
     }
   }
-  .bg-light {
-      background-color: $gray-lightest;
- }
 
   h3 {
     color: $gray;
