@@ -39,25 +39,6 @@
   }
 }
 
-.dg_section.dark {
-  .dg_breadcrumbs {
-    color: $gold;
-
-    li {
-      a {
-        color: $white;
-
-        &:hover {
-          color: $blue-lightest;
-        }
-        &:after {
-          color: $white;
-        }
-      }
-    }
-  }
-}
-
 @media screen and (max-width: $small-breakpoint) {
   .dg_breadcrumbs {
     display: none;
