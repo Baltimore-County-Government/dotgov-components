@@ -4,7 +4,7 @@ const Breadcrumbs = props => {
   return (
     <ul className="dg_breadcrumbs">
       <li>
-        <a href="#">
+        <a title="Home" href="/">
           <i className="fas fa-home fa-1x"></i>
         </a>
       </li>
