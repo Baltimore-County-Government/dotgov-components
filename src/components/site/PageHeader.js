@@ -7,8 +7,12 @@ const PageHeader = props => {
   const headerCssClasses = classnames("dg_page-header", className);
   return (
     <div className={headerCssClasses}>
-      <img src={backGroundImage} />
-      <div className="dg_page-header-top-left">
+      <img
+        className="dg_page-header__backgroundImage"
+        src={backGroundImage}
+        aria-hidden="true"
+      />
+      <div className="dg_page-header__container">
         <div className="container">
           <div className="row">
             <div className="col-12 col-lg-5 col-xl-6">
@@ -18,7 +22,7 @@ const PageHeader = props => {
               <span className="dg_page-header__title">{title} </span>
             </div>
             <div className="col-12 col-lg-7 col-xl-6">
-              <p>{deck || ""}</p>
+              <p className="dg_page-header__deck">{deck || ""}</p>
             </div>
           </div>
         </div>
