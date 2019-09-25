@@ -51,7 +51,7 @@ const SummaryList = props => {
             <div className="col-2">
               <i className={iconCssClassesEmail}></i>
             </div>
-            <div class="col-10">
+            <div className="col-10">
               <h3>Email:</h3>
               <p>
                 <a href="#">publicworks@​baltimorecountymd.gov</a>
@@ -100,12 +100,12 @@ const SummaryList = props => {
 
  SummaryList.propTypes = {
 
-  /** Font Awesome icon class */
-  icon: PropTypes.string.isRequired,
+  /** Font Awesome icon class (eg: iconMarker, iconClock, iconEnvelop, iconMobile, iconCircle, iconUser*/
+  iconMarker: PropTypes.string.isRequired,
   /** label for that row */
-  label: PropTypes.string,
+  //label: PropTypes.string,
   /** value of that level you wish to display */
-  value: PropTypes.string,
+  //value: PropTypes.string,
  };
 
 export default SummaryList;
