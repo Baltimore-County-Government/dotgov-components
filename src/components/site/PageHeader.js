@@ -16,13 +16,13 @@ const PageHeader = props => {
         <div className="container">
           <div className="row">
             <div className="col-12 col-lg-5 col-xl-6">
-              <span className="dg_page-header__pre-title">
-                {preTitle || ""}
-              </span>
+              {preTitle && (
+                <span className="dg_page-header__pre-title">{preTitle}</span>
+              )}
               <span className="dg_page-header__title">{title} </span>
             </div>
             <div className="col-12 col-lg-7 col-xl-6">
-              <p className="dg_page-header__deck">{deck || ""}</p>
+              {deck && <p className="dg_page-header__deck">{deck}</p>}
             </div>
           </div>
         </div>
