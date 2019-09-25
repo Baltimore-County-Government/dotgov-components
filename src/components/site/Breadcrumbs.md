@@ -39,7 +39,10 @@ import Breadcrumbs from "./Breadcrumbs";
 import BreadcrumbItem from "./Breadcrumbitem";
 import BreadcrumbLinkItem from "./BreadcrumbLinkitem";
 
-<div class="dg_section dark">
+<div
+  class="dg_section dark"
+  style={{ paddingLeft: "20px", paddingRight: "20px" }}
+>
   <Breadcrumbs>
     <BreadcrumbLinkItem text="Departments" title="This is a title" link="#" />
     <BreadcrumbLinkItem
