@@ -34,7 +34,7 @@ const PageHeader = props => {
 PageHeader.propTypes = {
   /** PreTitle: Supplemental heading, e,g., "Department of" or "Office of" to be displayed */
   preTitle: PropTypes.string,
-  /** title: Main page heading, e.g., "Budeget and Finance" to be displayed */
+  /** title: Main page heading, e.g., "Budget and Finance" to be displayed */
   title: PropTypes.string.isRequired,
   /** deck: Brief description of the landing page or app. */
   deck: PropTypes.string
