@@ -17,7 +17,9 @@
 
   li {
     display: inline-block;
+  }
 
+  li.dg_breadcrumb {
     a {
       font-weight: $font-medium;
       padding: 0px 30px 0px 0px;

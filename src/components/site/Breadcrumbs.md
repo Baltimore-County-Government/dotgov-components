@@ -25,11 +25,13 @@ Html Snippet:
 ```html
 <div class="dg_section">
   <ul class="dg_breadcrumbs">
-    <li>
+    <li class="dg_breadcrumb">
       <a href="#"><i class="fas fa-home fa-1x" aria-hidden="true"></i></a>
     </li>
-    <li><a title="This is a title" href="/departments">Departments</a></li>
-    <li>
+    <li class="dg_breadcrumb">
+      <a title="This is a title" href="/departments">Departments</a>
+    </li>
+    <li class="dg_breadcrumb">
       <a title="This is a title" href="/departments/health"
         >Department of Health</a
       >
@@ -70,10 +72,12 @@ Html Snippet:
 ```html
 <div class="dg_section dark">
   <ul class="dg_breadcrumbs">
-    <li>
+    <li class="dg_breadcrumb">
       <a href="#"><i class="fas fa-home fa-1x" aria-hidden="true"></i></a>
     </li>
-    <li><a title="This is a title" href="/departments">Departments</a></li>
+    <li class="dg_breadcrumb">
+      <a title="This is a title" href="/departments">Departments</a>
+    </li>
     <li>
       <a title="This is a title" href="/departments/health"
         >Department of Health</a
