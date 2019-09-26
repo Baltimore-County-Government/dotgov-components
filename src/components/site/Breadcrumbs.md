@@ -1,7 +1,6 @@
 ### Breadcrumbs Light
 
 ```jsx
-import Breadcrumbs from "./Breadcrumbs";
 import BreadcrumbItem from "./Breadcrumbitem";
 import BreadcrumbLinkItem from "./BreadcrumbLinkitem";
 <div class="dg_section">
@@ -14,7 +13,7 @@ import BreadcrumbLinkItem from "./BreadcrumbLinkitem";
     <BreadcrumbLinkItem
       text="Department of Health"
       title="This is a title"
-      link="/health"
+      link="/departments/health"
     />
     <BreadcrumbItem text="Adoptable Pets" />
   </Breadcrumbs>
@@ -30,7 +29,11 @@ Html Snippet:
       <a href="#"><i class="fas fa-home fa-1x" aria-hidden="true"></i></a>
     </li>
     <li><a title="This is a title" href="/departments">Departments</a></li>
-    <li><a title="This is a title" href="/health">Department of Health</a></li>
+    <li>
+      <a title="This is a title" href="/departments/health"
+        >Department of Health</a
+      >
+    </li>
     <li>Adoptable Pets</li>
   </ul>
 </div>
@@ -39,7 +42,6 @@ Html Snippet:
 ### Breadcrumbs Dark
 
 ```jsx
-import Breadcrumbs from "./Breadcrumbs";
 import BreadcrumbItem from "./Breadcrumbitem";
 import BreadcrumbLinkItem from "./BreadcrumbLinkitem";
 
@@ -56,7 +58,7 @@ import BreadcrumbLinkItem from "./BreadcrumbLinkitem";
     <BreadcrumbLinkItem
       text="Department of Health"
       title="This is a title"
-      link="/health"
+      link="/departments/health"
     />
     <BreadcrumbItem text="Adoptable Pets" />
   </Breadcrumbs>
@@ -72,7 +74,11 @@ Html Snippet:
       <a href="#"><i class="fas fa-home fa-1x" aria-hidden="true"></i></a>
     </li>
     <li><a title="This is a title" href="/departments">Departments</a></li>
-    <li><a title="This is a title" href="/health">Department of Health</a></li>
+    <li>
+      <a title="This is a title" href="/departments/health"
+        >Department of Health</a
+      >
+    </li>
     <li>Adoptable Pets</li>
   </ul>
 </div>
