@@ -1,72 +1,41 @@
-.dg_images {
-  color: $white;
-  text-decoration: none;
+.dg_image {
+  display: block;
   position: relative;
-  margin-bottom: $margin-largest;
-
-  .dg_images__container {
-    padding-top: $padding-jumbo;
-    padding-bottom: $padding-jumbo;
-    position: relative;
-    z-index: 9;
-  }
-
-  .dg_images__backgroundImage {
+  img {
+    object-fit: fill;
     width: 100%;
-    position: absolute;
-    z-index: 0;
-    top: 0;
-   left: 0;
-    right: 0;
-    margin: auto;
-   // height: 100%;
-    object-fit: cover;
-  }
-
-  .dg_images__deck {
-    color: $white;
-    font-family: $default-body-font;
-    font-size: $h2-font-size;
-    font-style: italic;
-    margin-bottom: 0;
-  }
-
-  .dg_images__pre-title {
-    display: block;
-    font-family: $default-heading-font;
-    font-size: $smallest-font-size;
-    font-weight: $font-bold;
-    letter-spacing: $padding-small;
-    text-transform: uppercase;
-  }
-
-  .dg_images__title {
-    display: block;
-    font-family: $default-heading-font;
-    font-size: $h1-font-size;
-    font-weight: $font-bold;
-    letter-spacing: $base-spacing-unit;
-    text-transform: uppercase;
-  }
-
-  &:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    color: $white;
-    display: block;
-  }
-
-  &.blue:after {
-    background: rgba($pale-blue, 0.9);
   }
 }
 
-@media screen and (max-width: $extra-large-breakpoint) {
-  .dg_images {
-    margin-bottom: $margin-large;
+.left {
+  float: left;
+  margin-top: 10px;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  max-width: 40%;
+}
+
+.right {
+  float: right;
+  margin-top: 10px;
+  margin-left: 40px;
+  margin-bottom: 40px;
+  max-width: 40%;
+}
+
+@media screen and (min-width: $large-breakpoint) {
+  .dg_image {
+    position: relative;
+    display: block;
+  }
+}
+
+@media screen and (max-width: $medium-breakpoint) {
+  .dg_image {
+    max-width: 100%;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
