@@ -24,7 +24,7 @@ const publicWorksSummaryItems = [
     id: 4,
     icon: "fas fa-mobile-alt",
     heading: "Phone:",
-    content: "<p>410-887-6789</p><p>Emergency Dispatch:</p><p>410-887-6789</p>"
+    content: "<p><a href=`tel:410-887-6789`>410-887-6789</a></p><p>Emergency Dispatch:</p><p><a href=`tel:410-887-6789`>410-887-6789</a></p>"
   },
   {
     id: 5,
