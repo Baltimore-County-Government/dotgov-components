@@ -24,7 +24,8 @@ const publicWorksSummaryItems = [
     id: 4,
     icon: "fas fa-mobile-alt",
     heading: "Phone:",
-    content: "<p><a href=`tel:410-887-6789`>410-887-6789</a></p><p>Emergency Dispatch:</p><p><a href=`tel:410-887-6789`>410-887-6789</a></p>"
+    content:
+      "<p><a href=`tel:410-887-6789`>410-887-6789</a></p><p><h3>Emergency Dispatch:</h3></p><p><a href=`tel:410-887-6789`>410-887-6789</a></p>"
   },
   {
     id: 5,
@@ -46,88 +47,58 @@ const publicWorksSummaryItems = [
 Html Snippet:
 
 ```html
+
 <div>
-  <div class="dg_summary-list">
-    <div class="dg_summary-list-items">
-      <aside class="icon icon-1">
-        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-      </aside>
-      <div class="heading"><h3>Main Office</h3></div>
+  <div>
+    <div class="dg_summary-list__item">
+    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+    <div class="dg_summary-list__item-content">
+      <h3>Main Office </h3>
+      <p><div><p> 111 West Chesapeake Avenue<br> Suite 307<br> Towson, Maryland 21204</p></div></p>
     </div>
-    <div class="dg_summary-list-items">
-      <div class="push">
-        <p>
-          111 West Chesapeake Avenue<br />
-          Suite 307<br />
-          Towson, Maryland 21204
-        </p>
+    </div>
+</div>
+<div>
+    <div class="dg_summary-list__item">
+    <i class="far fa-clock" aria-hidden="true"></i>
+    <div class="dg_summary-list__item-content">
+      <h3>Hours: </h3>
+      <p><div><p>Monday through Friday<br>8 a.m. to 4:30 p.m.</p></div></p>
+    </div>
+    </div>
+</div>
+<div>
+      <div class="dg_summary-list__item">
+      <i class="far fa-envelope" aria-hidden="true"></i>
+      <div class="dg_summary-list__item-content">
+        <h3>Email: </h3>
+        <p><div><p><a href="`#`">publicworks@​baltimorecountymd.gov</a></p></div></p>
       </div>
-    </div>
-  </div>
-  <div class="dg_summary-list">
-    <div class="dg_summary-list-items">
-      <aside class="icon icon-1">
-        <i class="far fa-clock" aria-hidden="true"></i>
-      </aside>
-      <div class="heading"><h3>Hours:</h3></div>
-    </div>
-    <div class="dg_summary-list-items">
-      <div class="push">
-        <p>Monday through Friday<br />8 a.m. to 4:30 p.m.</p>
       </div>
+</div>
+<div>
+    <div class="dg_summary-list__item">
+    <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+    <div class="dg_summary-list__item-content">
+      <h3>Phone: </h3><p><div><p><a href="`tel:410-887-6789`">410-887-6789</a></p><p></p>
+      <h3>Emergency Dispatch:</h3><p></p><p>
+          <a href="`tel:410-887-6789`">410-887-6789</a></p></div></p>
     </div>
-  </div>
-  <div class="dg_summary-list">
-    <div class="dg_summary-list-items">
-      <aside class="icon icon-1">
-        <i class="far fa-envelope" aria-hidden="true"></i>
-      </aside>
-      <div class="heading"><h3>Email:</h3></div>
     </div>
-    <div class="dg_summary-list-items">
-      <div class="push">
-        <p><a href="`#`">publicworks@​baltimorecountymd.gov</a></p>
+</div>
+<div>
+    <div class="dg_summary-list__item">
+    <i class="fas fa-exclamation-circle" aria-hidden="true"></i>
+    <div class="dg_summary-list__item-content">
+      <h3>BALTCOGO311 </h3><p><div> <p><a href="`#`">Report a problem</a> online.</p>
+    </div></p></div>
+    </div>
+</div>
+<div>
+    <div class="dg_summary-list__item">
+    <i class="fas fa-user" aria-hidden="true"></i>
+    <div class="dg_summary-list__item-content">
+      <h3>Director: </h3><p><div><p>Steve Walsh, P.E.</p></div></p></div></div>
       </div>
-    </div>
-  </div>
-  <div class="dg_summary-list">
-    <div class="dg_summary-list-items">
-      <aside class="icon icon-1">
-        <i class="fas fa-mobile-alt" aria-hidden="true"></i>
-      </aside>
-      <div class="heading"><h3>Phone:</h3></div>
-    </div>
-    <div class="dg_summary-list-items">
-      <div class="push">
-        <p>410-887-6789</p>
-        <p>Emergency Dispatch:</p>
-        <p>410-887-6789</p>
-      </div>
-    </div>
-  </div>
-  <div class="dg_summary-list">
-    <div class="dg_summary-list-items">
-      <aside class="icon icon-1">
-        <i class="fas fa-exclamation-circle" aria-hidden="true"></i>
-      </aside>
-      <div class="heading"><h3>BALTCOGO311</h3></div>
-    </div>
-    <div class="dg_summary-list-items">
-      <div class="push">
-        <p><a href="`#`">Report a problem</a> online.</p>
-      </div>
-    </div>
-  </div>
-  <div class="dg_summary-list">
-    <div class="dg_summary-list-items">
-      <aside class="icon icon-1">
-        <i class="fas fa-user" aria-hidden="true"></i>
-      </aside>
-      <div class="heading"><h3>Director:</h3></div>
-    </div>
-    <div class="dg_summary-list-items">
-      <div class="push"><p>Steve Walsh, P.E.</p></div>
-    </div>
-  </div>
 </div>
 ```
