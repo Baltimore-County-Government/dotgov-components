@@ -5,7 +5,7 @@ const SummaryList = props => {
   return (
     <React.Fragment>
       {items.map(item => (
-        <div className="dg_summary-list">
+        <div key={item.key} className="dg_summary-list">
           <div className="dg_summary-list-items">
             <aside className="icon icon-1">
               <i className={item.icon}></i>
@@ -15,14 +15,16 @@ const SummaryList = props => {
             </div>
           </div>
           <div className="dg_summary-list-items">
-          <aside className="icon push"></aside>
-              <div className="content" dangerouslySetInnerHTML={{ __html: item.content }} />
+            <aside className="icon push"></aside>
+            <div
+              className="content"
+              dangerouslySetInnerHTML={{ __html: item.content }}
+            />
           </div>
         </div>
       ))}
     </React.Fragment>
   );
 };
-
 
 export default SummaryList;
