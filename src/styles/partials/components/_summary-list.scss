@@ -1,14 +1,17 @@
 .dg_summary-list {
-  background-repeat: no-repeat;
+  color: $gray;
   background-size: cover;
-  padding: $padding-largest;
-  text-decoration: none;
   background-color: $gray-lightest;
+}
+  .dg_summary-list-items {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
   p {
-    color: $gray;
-    font-family: $default-heading-font;
-    font-size: $smallest-heading-font-size;
-    line-height: 30px;
+    margin-bottom: 0px;
+  }
+  .hide {
+    visibility: collapse;
   }
   a {
     text-decoration: none;
@@ -17,15 +20,48 @@
       text-decoration: underline;
     }
   }
+}
+.dg_summary-list-items > * {
+  flex: 1 100%;
+  padding: $padding-small;
+}
 
-  h3 {
-    color: $gray;
-  }
+.heading {
+  margin-top:$padding-small;
+}
+.icon-1 {
+  font-size: $h1-font-size;
+  color:$gray ;
+}
+.push{
+   visibility: collapse;
+ }
 
-  .side-list-ico {
-    font-size: 30px;
-    color: $gray;
-    text-align: center;
-    width: 30px;
+@media all and (min-width: 600px) {
+  .icon {
+    flex: 1 0 0;
   }
 }
+
+@media all and (min-width: 800px) {
+  .heading {
+    flex: 15 10px;
+    height:50px;
+  }
+  .icon-1 {
+    order: 1;
+  }
+  .heading {
+    order: 2;
+  }
+  .push{
+    order:3 ;
+  }
+    .content{
+      flex: 15 10px;
+       order: 4; 
+    }
+
+
+}
+
