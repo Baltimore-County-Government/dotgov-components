@@ -6,8 +6,8 @@ const SummaryList = props => {
     <React.Fragment>
     <div className="dg_summary-list">
       {items.map(item => (
-        <div>
-          <div key={item.key}  className="dg_summary-list__item">
+        <div  key={item.key} >
+          <div className="dg_summary-list__item">
             <aside className="icon icon-1">
               <i className={item.icon}></i>
             </aside>
