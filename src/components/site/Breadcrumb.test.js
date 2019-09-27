@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Breadcrumbs from "./Breadcrumbs";
-import BreadcrumbItem from "./Breadcrumbitem";
+import BreadcrumbItem from "./BreadcrumbItem";
 import BreadcrumbLinkItem from "./BreadcrumbLinkItem";
 
 it("renders without crashing", () => {
