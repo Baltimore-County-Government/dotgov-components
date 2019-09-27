@@ -31,6 +31,7 @@ export { default as EmphasizedImage } from "./components/site/EmphasizedImage";
 export { default as SiteHeader } from "./components/site/SiteHeader";
 export { default as BrandText } from "./components/site/BrandText";
 export { default as PageHeader } from "./components/site/PageHeader";
+export { default as Breadcrumbs } from "./components/site/Breadcrumbs";
 
 /** Other */
 export { default as Button } from "./components/basic/Button";
