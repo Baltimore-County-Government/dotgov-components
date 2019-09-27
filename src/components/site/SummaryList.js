@@ -8,15 +8,15 @@ const SummaryList = props => {
       {items.map(item => (
         <div  key={item.key} >
           <div className="dg_summary-list__item">
-            <aside className="icon icon-1">
+            <div className="icon icon-1">
               <i className={item.icon}></i>
-            </aside>
+            </div>
             <div className="heading">
               <h3>{item.heading} </h3>
             </div>
           </div>
           <div className="dg_summary-list__item">
-            <aside className="icon push"></aside>
+            <div className="icon push"></div>
             <div
               className="content"
               dangerouslySetInnerHTML={{ __html: item.content }}
