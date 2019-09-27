@@ -2,6 +2,7 @@
   display: block;
   position: relative;
   img {
+    display: block;
     object-fit: fill;
     width: 100%;
   }
@@ -9,17 +10,17 @@
 
 .left {
   float: left;
-  margin-top: 10px;
-  margin-right: 40px;
-  margin-bottom: 40px;
+  margin-top: $margin-small;
+  margin-right: $padding-largest;
+  margin-bottom: $padding-largest;
   max-width: 40%;
 }
 
 .right {
   float: right;
-  margin-top: 10px;
-  margin-left: 40px;
-  margin-bottom: 40px;
+  margin-top: $margin-small;
+  margin-left: $padding-largest;
+  margin-bottom: $padding-largest;
   max-width: 40%;
 }
 
