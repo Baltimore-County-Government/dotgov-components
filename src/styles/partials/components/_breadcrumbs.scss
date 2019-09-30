@@ -1,0 +1,44 @@
+.dg_breadcrumbs {
+  color: $black;
+  font-family: $default-heading-font;
+  font-size: $smallest-font-size;
+  font-weight: $font-bold;
+  padding-left: 0px;
+  text-transform: uppercase;
+
+  i {
+    font-size: $h3-font-size;
+  }
+
+  ul {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  li.dg_breadcrumb {
+    a {
+      font-weight: $font-medium;
+      padding: 0px 30px 0px 0px;
+      text-decoration: none;
+
+      &:after {
+        color: $gray-light;
+        font-size: $h1-font-size;
+        font-weight: $font-bold;
+        @include icon-content("\f105");
+        padding-left: 30px;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $small-breakpoint) {
+  .dg_breadcrumbs {
+    display: none;
+  }
+}

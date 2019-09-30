@@ -23,6 +23,11 @@
     display: flex;
     align-items: center;
 
+    .dg_brand-text {
+      border-right: $border-width-small solid $gray-light;
+      padding: 0 $padding-large;
+    }
+
     a {
       text-decoration: none;
     }

@@ -7,18 +7,22 @@ const PageHeader = props => {
   const headerCssClasses = classnames("dg_page-header", className);
   return (
     <div className={headerCssClasses}>
-      <img src={backGroundImage} />
-      <div className="dg_page-header-top-left">
+      <img
+        className="dg_page-header__backgroundImage"
+        src={backGroundImage}
+        aria-hidden="true"
+      />
+      <div className="dg_page-header__container">
         <div className="container">
           <div className="row">
             <div className="col-12 col-lg-5 col-xl-6">
-              <span className="dg_page-header__pre-title">
-                {preTitle || ""}
-              </span>
+              {preTitle && (
+                <span className="dg_page-header__pre-title">{preTitle}</span>
+              )}
               <span className="dg_page-header__title">{title} </span>
             </div>
             <div className="col-12 col-lg-7 col-xl-6">
-              <p>{deck || ""}</p>
+              {deck && <p className="dg_page-header__deck">{deck}</p>}
             </div>
           </div>
         </div>
@@ -30,7 +34,7 @@ const PageHeader = props => {
 PageHeader.propTypes = {
   /** PreTitle: Supplemental heading, e,g., "Department of" or "Office of" to be displayed */
   preTitle: PropTypes.string,
-  /** title: Main page heading, e.g., "Budeget and Finance" to be displayed */
+  /** title: Main page heading, e.g., "Budget and Finance" to be displayed */
   title: PropTypes.string.isRequired,
   /** deck: Brief description of the landing page or app. */
   deck: PropTypes.string

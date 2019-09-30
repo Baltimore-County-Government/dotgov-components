@@ -31,7 +31,7 @@
     font-size: $smallest-heading-font-size;
     font-weight: $font-bold;
     line-height: 44px;
-    margin-top: $default-margin;
+    margin-top: $margin-smallest;
     text-decoration: none;
     text-transform: uppercase;
     @include default-transition(color);
