@@ -1,12 +1,13 @@
 .dg_summary-list {
-  display: flex;
-  flex-wrap: nowrap;
-  color: $gray;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding: $margin-large;
-  margin-bottom: $default-margin;
+
   .dg_summary-list__item {
+    display: flex;
+    flex-wrap: nowrap;
+    color: $gray;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: $margin-large;
+    margin-bottom: $default-margin;
     p {
       color: $gray;
     }
