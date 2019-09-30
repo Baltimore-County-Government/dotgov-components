@@ -3,7 +3,6 @@ import React from "react";
 const SummaryList = props => {
   const { items = [] } = props;
   return (
-    <React.Fragment>
     <div className="dg_summary-list">
       {items.map(item => (
         <div key={item.key} className="dg_summary-list__item">
@@ -17,7 +16,6 @@ const SummaryList = props => {
         </div>
       ))}
     </div>
-    </React.Fragment>
   );
 };
 
