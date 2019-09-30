@@ -1,6 +1,7 @@
 .dg_search-container {
   position: relative;
-  width: 100%;
+  min-width: 40%;
+  margin-right: $padding-large;
 
   .dg_search-btn {
     display: block;
@@ -16,4 +17,15 @@
 }
 .dg_search-input {
   padding: $padding-small;
+}
+
+@media screen and (max-width: $header-breakpoint) {
+  .dg_search-container {
+    min-width: auto;
+  }
+
+  .dg_search-input {
+    width: 75px;
+    visibility: hidden;
+  }
 }

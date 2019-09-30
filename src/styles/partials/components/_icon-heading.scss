@@ -1,5 +1,6 @@
 $icon-image-size: 75px;
 $icon-size: 30px;
+$image-border-adjustment-margin: -$border-width-large * 3;
 
 .dg_icon-heading__container {
   margin-bottom: $margin-largest;
@@ -9,6 +10,7 @@ $icon-size: 30px;
   i {
     display: block;
     font-size: $icon-size;
+    margin-bottom: $default-margin;
     z-index: 1;
 
     &:after {
@@ -37,7 +39,7 @@ $icon-size: 30px;
     }
 
     img {
-      margin-bottom: -$border-width-large * 3;
+      margin-bottom: $image-border-adjustment-margin; /* TODO: not sure whats going on here */
 
       /* Position */
       position: relative;
@@ -65,7 +67,6 @@ $icon-size: 30px;
 
   i,
   .dg_icon-heading__image-container {
-    margin-bottom: $default-margin;
     position: relative;
 
     &:after {
@@ -87,17 +88,29 @@ $icon-size: 30px;
       width: 100%;
     }
   }
+
+  .dg_icon-heading__image-container {
+    margin-bottom: $default-margin - $image-border-adjustment-margin; /* account for border adjustment */
+  }
 }
 
 .dg_icon-heading {
-  border: none !important;
+  border: none !important; /* overrides default h2 in a dark section */
   font-family: $default-heading-font;
   font-size: $smallest-heading-font-size;
   letter-spacing: $base-spacing-unit * 3;
+  line-height: 29px; /* Manually calculated for this element in the browser */
+  padding: 0 !important; /* overrides default h2 in a dark section */
 }
 
 @media screen and (max-width: $medium-breakpoint) {
   .dg_icon-heading__container {
-    margin-bottom: $margin-largest / 2;
+    margin-bottom: $margin-largest / 2 - 5; /* split the largest margin in half and subtract the line height difference */
+  }
+}
+
+@media screen and (max-width: $small-breakpoint) {
+  .dg_icon-heading {
+    letter-spacing: 10px;
   }
 }
