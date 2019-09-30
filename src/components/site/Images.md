@@ -2,12 +2,12 @@
 <div className="dg_image-content">
   <img
     src="//baltimorecountymd.gov/sebin/t/t/homepage-county-executive.jpg"
-    alt="description of the image"
+    alt="County Executive Olzsewski delivers a speech."
   />
   <img
     className="dg_image left"
     src="//baltimorecountymd.gov/sebin/t/t/homepage-county-executive.jpg"
-    alt="description of the image"
+    alt="County Executive Olzsewski delivers a speech."
   />
   <p>
     Lorem Ipsum is simply dummy text of the printing and typesetting of Lorem
@@ -18,7 +18,7 @@
   <img
     className="dg_image right"
     src="//baltimorecountymd.gov/sebin/t/t/homepage-county-executive.jpg"
-    alt="description of the image"
+    alt="County Executive Olzsewski delivers a speech."
   />
   <p>
     Lorem Ipsum is simply dummy text of the printing and typesetting of Lorem
@@ -35,12 +35,12 @@ Html Snippet:
 <div class="dg_image-content">
   <img
     src="//baltimorecountymd.gov/sebin/t/t/homepage-county-executive.jpg"
-    alt="description of the image"
+    alt="County Executive Olzsewski delivers a speech."
   />
   <img
     class="dg_image left"
     src="//baltimorecountymd.gov/sebin/t/t/homepage-county-executive.jpg"
-    alt="description of the image"
+    alt="County Executive Olzsewski delivers a speech."
   />
   <p>
     Lorem Ipsum is simply dummy text of the printing and typesetting of Lorem
@@ -51,7 +51,7 @@ Html Snippet:
   <img
     class="dg_image right"
     src="//baltimorecountymd.gov/sebin/t/t/homepage-county-executive.jpg"
-    alt="description of the image"
+    alt="County Executive Olzsewski delivers a speech."
   />
   <p>
     Lorem Ipsum is simply dummy text of the printing and typesetting of Lorem
