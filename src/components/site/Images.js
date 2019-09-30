@@ -6,16 +6,10 @@ const Images = props => {
 
   return (
     <React.Fragment>
-      <div className="dg_image">
-        <img src={imageSrc} aria-hidden="true" />
-      </div>
-      <div className="dg_image left">
-        <img src={props.imageSrc} aria-hidden="true" />
-      </div>
+      <img className="dg_image" src={imageSrc} alt="" />
+      <img className="dg_image left" src={props.imageSrc} alt="" />
       <p>{content}</p>
-      <div className="dg_image right">
-        <img src={props.imageSrc} aria-hidden="true" />
-      </div>
+      <img className="dg_image right" src={props.imageSrc} alt="" />
       <p>{content}</p>
     </React.Fragment>
   );
@@ -25,8 +19,7 @@ Images.propTypes = {
   /** imageSrc: Image that needs to be diplayed */
   imageSrc: PropTypes.string.isRequired,
   /** content: text that needs to be displayed */
-  content: PropTypes.string.isRequired,
-
+  content: PropTypes.string.isRequired
 };
 
 export default Images;

@@ -1,5 +1,4 @@
 /** Brand */
-import SummaryList from "./components/site/SummaryList";
 export { default as CountySeal } from "./components/foundation/CountySeal";
 
 /** Containers */
