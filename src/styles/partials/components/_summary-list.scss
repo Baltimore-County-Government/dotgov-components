@@ -21,4 +21,11 @@
     align-content: center;
     font-size: $h1-font-size;
   }
+  a {
+    text-decoration: none;
+    background-color: transparent;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
