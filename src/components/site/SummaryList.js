@@ -3,7 +3,7 @@ import React from "react";
 const SummaryList = props => {
   const { items = [] } = props;
   return (
-    <React.Fragment>
+    <div>
       {items.map(item => (
         <div key={item.key} className="dg_summary-list">
           <i className={item.icon}></i>
@@ -15,7 +15,7 @@ const SummaryList = props => {
           </div>
         </div>
       ))}
-    </React.Fragment>
+    </div>
   );
 };
 

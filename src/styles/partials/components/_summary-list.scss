@@ -10,14 +10,15 @@
     p {
       color: $gray;
     }
-   
   }
   h3 {
     color: $black;
   }
   i {
     display: block;
-    padding: 0 20px 0 0;
+    padding: 0 60px 0 0;
+    width: $default-padding;
+    align-content: center;
     font-size: $h1-font-size;
   }
 }
