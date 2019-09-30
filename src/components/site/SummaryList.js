@@ -5,15 +5,15 @@ const SummaryList = props => {
   return (
     <React.Fragment>
       {items.map(item => (
-        <div  key={item.key} >
-          <div className="dg_summary-list__item">
-              <i className={item.icon}></i>
-            <div className="dg_summary-list__item-content">
-              <h3>{item.heading} </h3>
-               <p><div dangerouslySetInnerHTML={{ __html: item.content }}/></p>
-            </div>
-            </div>
-            </div>
+        <div key={item.key} className="dg_summary-list">
+          <i className={item.icon}></i>
+          <div className="dg_summary-list__item-content">
+            <h3>{item.heading} </h3>
+            <p>
+              <div dangerouslySetInnerHTML={{ __html: item.content }} />
+            </p>
+          </div>
+        </div>
       ))}
     </React.Fragment>
   );

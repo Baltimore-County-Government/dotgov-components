@@ -1,17 +1,20 @@
-
-.dg_summary-list__item {
+.dg_summary-list {
   display: flex;
-  flex-wrap: no-wrap;
+  flex-wrap: nowrap;
+  color: $gray;
   justify-content: flex-start;
   align-items: flex-start;
-  background-color: $gray-lightest;
-  color: $gray;
   padding: $margin-large;
-  h3 {
-    margin-top: 0;
-    color: $gray;
+  margin-bottom: $default-margin;
+  .dg_summary-list__item {
+    p {
+      color: $gray;
+    }
+   
   }
-  
+  h3 {
+    color: $black;
+  }
   i {
     display: block;
     padding: 0 20px 0 0;
