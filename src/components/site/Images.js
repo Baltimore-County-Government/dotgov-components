@@ -6,11 +6,13 @@ const Images = props => {
 
   return (
     <React.Fragment>
-      <img className="dg_image" src={imageSrc} alt="" />
-      <img className="dg_image left" src={props.imageSrc} alt="" />
+      <div className="dg_image-content">
+      <img  src={imageSrc} alt="description of the image" />
+      <img className="dg_image left" src={props.imageSrc} alt="description of the image" />
       <p>{content}</p>
-      <img className="dg_image right" src={props.imageSrc} alt="" />
+      <img className="dg_image right" src={props.imageSrc} alt="description of the image" />
       <p>{content}</p>
+      </div>
     </React.Fragment>
   );
 };

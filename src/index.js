@@ -7,7 +7,7 @@ export { default as Section } from "./components/basic/containers/Section";
 /** Form Components */
 export { default as Checkbox } from "./components/basic/form/Checkbox";
 export { default as CheckedInput } from "./components/basic/form/CheckedInput";
-export {default as  Images} from "./components/site/Images";
+
 export {
   default as CheckedInputGroup
 } from "./components/basic/form/CheckedInputGroup";
