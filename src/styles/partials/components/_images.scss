@@ -6,11 +6,10 @@
     object-fit: fill;
     width: 100%;
   }
-}
-
-.dg_image {
- display: block;
-  position: relative;
+  .dg_image {
+    display: block;
+    position: relative;
+  }
 }
 .left {
   float: left;
@@ -28,16 +27,15 @@
   max-width: 40%;
 }
 
-
 @media screen and (min-width: $large-breakpoint) {
-  .dg_image,.dg_image-content  {
+  .dg_image {
     position: relative;
     display: block;
   }
 }
 
 @media screen and (max-width: $medium-breakpoint) {
-  .dg_image, .dg_image-content  {
+  .dg_image {
     max-width: 100%;
     position: relative;
     display: block;
