@@ -1,8 +1,10 @@
 .dg_image-content {
   display: block;
   position: relative;
+  
   img {
     display: block;
+    margin-bottom: $padding-largest; 
     object-fit: fill;
     width: 100%;
   }
@@ -11,20 +13,19 @@
     position: relative;
   }
 }
-.left {
-  float: left;
+.left , .right{
   margin-top: $margin-small;
-  margin-right: $padding-largest;
   margin-bottom: $padding-largest;
   max-width: 40%;
+}
+.left{
+  float: left;
+  margin-right: $padding-largest;
 }
 
 .right {
   float: right;
-  margin-top: $margin-small;
   margin-left: $padding-largest;
-  margin-bottom: $padding-largest;
-  max-width: 40%;
 }
 
 @media screen and (min-width: $large-breakpoint) {
@@ -37,8 +38,8 @@
 @media screen and (max-width: $medium-breakpoint) {
   .dg_image {
     max-width: 100%;
-    position: relative;
-    display: block;
+    //position: relative;
+    //display: block;
     margin-left: auto;
     margin-right: auto;
   }
