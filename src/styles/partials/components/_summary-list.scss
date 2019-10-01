@@ -1,3 +1,22 @@
+@mixin stacked-icon-layout {
+  .dg_summary-list {
+    .dg_summary-list__item {
+      display: block;
+      margin-bottom: $margin-larger;
+
+      i,
+      & > div {
+        width: 100%;
+      }
+
+      i {
+        margin-bottom: $default-margin;
+        text-align: left;
+      }
+    }
+  }
+}
+
 .dg_summary-list {
   background: $gray-lightest;
   padding: ($base-spacing-unit * 10) $padding-large; /* this spacing unit is only used in the summary list */
@@ -38,4 +57,30 @@
       text-decoration: underline;
     }
   }
+}
+
+@media screen and (max-width: $large-breakpoint) {
+  @include stacked-icon-layout;
+}
+
+@media screen and (max-width: $medium-breakpoint) {
+  .dg_summary-list {
+    .dg_summary-list__item {
+      display: flex;
+      margin-bottom: $default-margin;
+
+      & > div {
+        width: 75%;
+      }
+
+      i {
+        text-align: center;
+        width: 25%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $small-breakpoint) {
+  @include stacked-icon-layout;
 }
