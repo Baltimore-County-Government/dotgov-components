@@ -1,31 +1,30 @@
 .dg_image-content {
-  display: block;
-  position: relative;
-  
   img {
     display: block;
-    margin-bottom: $padding-largest; 
     object-fit: fill;
     width: 100%;
+    margin-bottom: $padding-largest;
   }
+
   .dg_image {
     display: block;
     position: relative;
-  }
-}
-.left , .right{
-  margin-top: $margin-small;
-  margin-bottom: $padding-largest;
-  max-width: 40%;
-}
-.left{
-  float: left;
-  margin-right: $padding-largest;
-}
+    &.left,
+    &.right {
+      margin-top: $margin-small;
+      margin-bottom: $padding-largest;
+      max-width: 40%;
+    }
+    &.left {
+      float: left;
+      margin-right: $padding-largest;
+    }
 
-.right {
-  float: right;
-  margin-left: $padding-largest;
+    &.right {
+      float: right;
+      margin-left: $padding-largest;
+    }
+  }
 }
 
 @media screen and (min-width: $large-breakpoint) {
