@@ -6,19 +6,19 @@ import BreadcrumbItem from "./Breadcrumbitem";
 import BreadcrumbLinkItem from "./BreadcrumbLinkitem";
 
 const breadCrumbs = () => (
-<Breadcrumbs>
-    <BreadcrumbLinkItem
-      text="Departments"
-      title="This is a title"
-      link="/departments"
-    />
-    <BreadcrumbLinkItem
-      text="Department of Health"
-      title="This is a title"
-      link="/departments/health"
-    />
-    <BreadcrumbItem text="Adoptable Pets" />
-  </Breadcrumbs>
+    <Breadcrumbs>
+        <BreadcrumbLinkItem
+            text="Departments"
+            title="This is a title"
+            link="/departments"
+        />
+        <BreadcrumbLinkItem
+            text="Department of Health"
+            title="This is a title"
+            link="/departments/health"
+        />
+        <BreadcrumbItem text="Adoptable Pets" />
+    </Breadcrumbs>
 );
 
 <PageHeader
