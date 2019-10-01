@@ -6,21 +6,24 @@
     justify-content: flex-start;
     align-items: flex-start;
     margin-bottom: $default-margin;
+
     p {
       color: $gray;
     }
   }
+
   h3 {
     color: $black;
   }
+
   i {
     display: block;
-    width: $default-padding;
     text-align: center;
     font-size: $h1-font-size;
-    width:15%;
-
+    width: 15%;
+    margin-left: -5%;
   }
+
   a {
     text-decoration: none;
     background-color: transparent;
