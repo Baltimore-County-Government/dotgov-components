@@ -6,9 +6,15 @@
 
   .dg_page-header__container {
     padding-top: $padding-large;
-    padding-bottom: $padding-jumbo;
+    padding-bottom: $padding-large;
     position: relative;
     z-index: 9;
+  }
+
+  &.themed {
+    .dg_page-header__container {
+      padding-bottom: $padding-jumbo;
+    }
   }
 
   .dg_page-header__backgroundImage {
@@ -24,7 +30,7 @@
   }
 
   .dg_page-header__deck {
-    color: $white;
+    color: $black;
     font-family: $default-body-font;
     font-size: $deck-font-size;
     font-style: italic;
