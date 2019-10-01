@@ -70,3 +70,10 @@
     margin-bottom: $margin-large;
   }
 }
+
+@media screen and (max-width: $small-breakpoint) {
+  .dg_page-header .dg_page-header__container {
+    padding-top: $padding-large;
+    padding-bottom: $padding-large;
+  }
+}
