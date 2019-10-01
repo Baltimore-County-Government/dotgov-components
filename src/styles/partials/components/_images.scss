@@ -1,4 +1,4 @@
-.dg_image {
+.dg_image-content {
   display: block;
   position: relative;
   img {
@@ -6,8 +6,11 @@
     object-fit: fill;
     width: 100%;
   }
+  .dg_image {
+    display: block;
+    position: relative;
+  }
 }
-
 .left {
   float: left;
   margin-top: $margin-small;
