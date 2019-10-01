@@ -71,9 +71,15 @@
   }
 }
 
-@media screen and (max-width: $small-breakpoint) {
+@media screen and (max-width: $large-breakpoint) {
+  .dg_page-header__title {
+    margin-bottom: $default-margin;
+  }
+}
+
+@media screen and (max-width: $medium-breakpoint) {
   .dg_page-header .dg_page-header__container {
-    padding-top: $padding-large;
-    padding-bottom: $padding-large;
+    padding-top: $padding-largest;
+    padding-bottom: $padding-largest;
   }
 }
