@@ -1,4 +1,7 @@
 .dg_summary-list {
+  background: $gray-lightest;
+  padding: ($base-spacing-unit * 10) $padding-small; /* this spacing unit is only used in the summary list */
+
   .dg_summary-list__item {
     display: flex;
     flex-wrap: nowrap;
@@ -20,8 +23,7 @@
     display: block;
     text-align: center;
     font-size: $h1-font-size;
-    width: 15%;
-    margin-left: -5%;
+    width: 25%;
   }
 
   a {
