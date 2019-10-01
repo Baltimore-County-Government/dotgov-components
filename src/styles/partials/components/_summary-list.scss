@@ -1,0 +1,35 @@
+.dg_summary-list {
+  .dg_summary-list__item {
+    display: flex;
+    flex-wrap: nowrap;
+    color: $gray;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: $default-margin;
+
+    p {
+      color: $gray;
+    }
+  }
+
+  h3 {
+    color: $black;
+  }
+
+  i {
+    display: block;
+    text-align: center;
+    font-size: $h1-font-size;
+    width: 15%;
+    margin-left: -5%;
+  }
+
+  a {
+    text-decoration: none;
+    background-color: transparent;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
