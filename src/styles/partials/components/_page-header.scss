@@ -2,7 +2,7 @@
   color: $black;
   text-decoration: none;
   position: relative;
-  margin-bottom: $margin-largest;
+  margin-bottom: $margin-large;
 
   .dg_page-header__container {
     padding-top: $padding-large;
@@ -86,6 +86,10 @@
 @media screen and (max-width: $medium-breakpoint) {
   .dg_page-header .dg_page-header__container {
     padding-top: $padding-largest;
+    padding-bottom: 0;
+  }
+
+  .dg_page-header.themed .dg_page-header__container {
     padding-bottom: $padding-largest;
   }
 }
