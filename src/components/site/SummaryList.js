@@ -9,9 +9,7 @@ const SummaryList = props => {
           <i className={item.icon}></i>
           <div>
             <h3>{item.heading} </h3>
-            <p>
-              <div dangerouslySetInnerHTML={{ __html: item.content }} />
-            </p>
+            <div dangerouslySetInnerHTML={{ __html: item.content }} />
           </div>
         </div>
       ))}
