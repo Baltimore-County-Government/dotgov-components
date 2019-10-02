@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+.dg_accordian__collpasible {
+  color: $blue;
+  font-family: $default-heading-font;
+  font-size: $h2-font-size;
+  font-weight: $font-bold;
+  //padding: $padding-large 0 0 0;
+  width: 100%;
+  border-bottom: 1px $black solid;
+  &:hover {
+    color: $vibrant-blue;
+  }
+}
+
+.dg_accordion__subheader {
+  font-family: $default-heading-font;
+  font-size: $smallest-heading-font-size;
+  font-weight: $font-medium;
+  color: #4c4c4c;
+  bottom: $base-spacing-unit * 2;
+}
+
+.dg_accordian-item-body {
+  text-align: left;
+  font-family: $default-heading-font;
+  font-size: $smallest-heading-font-size;
+  font-weight: $font-medium;
+  padding-left: $padding-larger;
+  padding-top: $padding-larger;
+  letter-spacing: 0;
+  color: #4c4c4c;
+  text-transform: none;
+}
+
+.collapse {
+  display: none;
+}
+.show {
+  display: block;
+}
+
+button:focus {
+  color: $blue;
+}
+
+.dg_accordian-btn {
+  position: relative;
+  padding: 18px 0 18px 0;
+  width: 100%;
+  text-align: left;
+  text-transform: uppercase;
+  height: auto;
+  font-family: $default-heading-font;
+  font-size: $small-heading-font-size;
+  font-weight: $font-bold;
+  &:after {
+    position: absolute;
+    padding: 10px 0 10px 0;
+    font-size: $h1-font-size;
+    cursor: pointer;
+    @include icon-content("\f107"); /*Font awesome right arrow*/
+    top: 0;
+    right: 0;
+  }
+}
+
+.collapsed .dg_accordian-btn::after {
+  position: absolute;
+  cursor: pointer;
+  @include icon-content("\f105"); /*Font awesome down arrow*/
+}
+
+.dg_allitems {
+  text-align: right;
+  text-decoration: underline;
+  font-family: $default-body-font;
+  font-size: $base-font-size;
+  font-weight: $font-bold;
+  font-style: italic;
+  letter-spacing: 0;
+  color: $blue-light;
+  border-bottom: 1px $black solid;
+  width: 100%;
+  padding-bottom: 10px;
+  color: $blue;
+  &:hover {
+    color: $vibrant-blue;
+  }
+}
