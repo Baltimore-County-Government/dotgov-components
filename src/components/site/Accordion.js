@@ -19,8 +19,8 @@ const Accordion = props => {
             aria-controls="collapseOne"
           >
             {item.header}
+            <div className="dg_accordion__subheader">{item.subheader}</div>
           </button>
-          <div className="dg_accordion__subheader">{item.subheader}</div>
           <div
             id={`collapseOne${item.id}`}
             className="multi-collapse collapse"
