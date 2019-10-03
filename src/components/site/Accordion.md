@@ -89,13 +89,14 @@ const collapseItems = [
 Html Snippet:
 
 ```html
+<!--Remove/Add class dg_allowmutlipleopen to toggle all can be opened together or one at a time open-->
 <div class="dg_accordion dg_allowmutlipleopen" id="accordionExample1">
-  <button class="dg_allitems" id="menuActionButton1">
+  <button class="dg_allitems dg_button-link" id="menuActionButton1">
     Open All
   </button>
   <div class="collapsed dg_accordion__collapsible">
     <button
-      class="fa dg_accordion-btn btn-link"
+      class="dg_accordion-btn"
       type="button"
       data-toggle="collapse"
       data-target="#collapseOne1"
@@ -118,7 +119,7 @@ Html Snippet:
   </div>
   <div class="collapsed dg_accordion__collapsible">
     <button
-      class="fa dg_accordion-btn btn-link"
+      class="dg_accordion-btn"
       type="button"
       data-toggle="collapse"
       data-target="#collapseTwo2"
@@ -143,7 +144,7 @@ Html Snippet:
   </div>
   <div class="collapsed dg_accordion__collapsible">
     <button
-      class="fa dg_accordion-btn btn-link"
+      class="dg_accordion-btn"
       type="button"
       data-toggle="collapse"
       data-target="#collapseThree3"

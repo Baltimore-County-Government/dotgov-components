@@ -26,11 +26,8 @@ const Accordion = props => {
           <button
             key={`collapseAccordionButton${item.id}`}
             id={`collapseAccordionButton${item.id}`}
-            className="fa dg_accordion-btn btn-link"
+            className="dg_accordion-btn"
             type="button"
-            data-toggle="collapse"
-            data-target={`#collapseOne${item.id}`}
-            aria-expanded="true"
             aria-controls="collapseOne"
           >
             {item.header}
