@@ -1,5 +1,5 @@
 ```jsx
-const collpaseItems = [
+const collapseItems = [
   {
     id: 1,
     header: "Accordion Item #1",
@@ -38,7 +38,7 @@ const collpaseItems = [
 
 <Accordion
   className="dg_section"
-  collpaseItems={collpaseItems}
+  collapseItems={collapseItems}
   toggleMultiOpen="dg_allowmultipleopen"
 />;
 ```
@@ -46,7 +46,7 @@ const collpaseItems = [
 ### Accordion Dark
 
 ```jsx
-const collpaseItems = [
+const collapseItems = [
   {
     id: 1,
     header: "Accordion Item #1",
@@ -83,7 +83,7 @@ const collpaseItems = [
   }
 ];
 
-<Accordion className="dg_section dark" collpaseItems={collpaseItems} />;
+<Accordion className="dg_section dark" collapseItems={collapseItems} />;
 ```
 
 Html Snippet:
@@ -93,9 +93,9 @@ Html Snippet:
   <button class="dg_allitems" id="menuActionButton1">
     Open All
   </button>
-  <div class="collapsed dg_accordian__collpasible">
+  <div class="collapsed dg_accordion__collapsible">
     <button
-      class="fa dg_accordian-btn btn-link"
+      class="fa dg_accordion-btn btn-link"
       type="button"
       data-toggle="collapse"
       data-target="#collapseOne1"
@@ -110,15 +110,15 @@ Html Snippet:
       class="multi-collapse collapse"
       data-parent="#accordionExample1"
     >
-      <div class="dg_accordian-item-body">
+      <div class="dg_accordion-item-body">
         occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
         you probably haven't heard of them accusamus labore sustainable VHS.
       </div>
     </div>
   </div>
-  <div class="collapsed dg_accordian__collpasible">
+  <div class="collapsed dg_accordion__collapsible">
     <button
-      class="fa dg_accordian-btn btn-link"
+      class="fa dg_accordion-btn btn-link"
       type="button"
       data-toggle="collapse"
       data-target="#collapseTwo2"
@@ -136,14 +136,14 @@ Html Snippet:
       class="multi-collapse collapse"
       data-parent="#accordionExample1"
     >
-      <div class="dg_accordian-item-body">
+      <div class="dg_accordion-item-body">
         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
       </div>
     </div>
   </div>
-  <div class="collapsed dg_accordian__collpasible">
+  <div class="collapsed dg_accordion__collapsible">
     <button
-      class="fa dg_accordian-btn btn-link"
+      class="fa dg_accordion-btn btn-link"
       type="button"
       data-toggle="collapse"
       data-target="#collapseThree3"
@@ -158,7 +158,7 @@ Html Snippet:
       class="multi-collapse collapse"
       data-parent="#accordionExample1"
     >
-      <div class="dg_accordian-item-body">
+      <div class="dg_accordion-item-body">
         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
         terry richardson ad squid. 3 wolf moon officia aute, non cupidatat you
         probably haven't heard of them accusamus labore sustainable VHS.

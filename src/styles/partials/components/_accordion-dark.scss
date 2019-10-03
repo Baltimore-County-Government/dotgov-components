@@ -1,5 +1,5 @@
 .dg_accordion.dg_section.dark {
-  .dg_accordian-btn:focus {
+  .dg_accordion-btn:focus {
     color: $white;
   }
   .dg_allitems {
@@ -8,7 +8,7 @@
       color: $blue-lightest;
     }
   }
-  .dg_accordian__collpasible {
+  .dg_accordion__collapsible {
     color: $white;
     &:hover {
       color: $blue-lightest;
@@ -16,7 +16,7 @@
     .dg_accordion__subheader {
       color: $white;
     }
-    .dg_accordian-item-body {
+    .dg_accordion-item-body {
       color: $white;
       a {
         color: $white;

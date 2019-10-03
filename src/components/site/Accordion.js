@@ -1,7 +1,8 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const Accordion = props => {
-  const { collpaseItems = [] } = props;
+  const { collapseItems = [] } = props;
   return (
     <div
       className={`dg_accordion ${props.toggleMultiOpen} ${props.className}`}
@@ -11,10 +12,10 @@ const Accordion = props => {
         Open All
       </button>
 
-      {collpaseItems.map(item => (
-        <div className="collapsed dg_accordian__collpasible">
+      {collapseItems.map(item => (
+        <div className="collapsed dg_accordion__collapsible">
           <button
-            className="fa dg_accordian-btn btn-link"
+            className="fa dg_accordion-btn btn-link"
             type="button"
             data-toggle="collapse"
             data-target={`#collapseOne${item.id}`}
@@ -29,12 +30,21 @@ const Accordion = props => {
             className="multi-collapse collapse"
             data-parent="#accordionExample1"
           >
-            <div className="dg_accordian-item-body">{item.text}</div>
+            <div className="dg_accordion-item-body">{item.text}</div>
           </div>
         </div>
       ))}
     </div>
   );
 };
+
+// SiteHeader.propTypes = {
+//   /** Status to describe the site, Ex. Beta*/
+//   status: PropTypes.string,
+//   /** Primary header text for the site, Ex. Baltimore County  */
+//   heading: PropTypes.string.isRequired,
+//   /** Secondary header text for the site, Ex. Government  */
+//   subHeading: PropTypes.string.isRequired
+// };
 
 export default Accordion;
