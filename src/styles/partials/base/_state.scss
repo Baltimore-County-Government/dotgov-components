@@ -2,16 +2,69 @@ a,
 button,
 a i,
 button i {
-	@include default-transition(color, background, border);
+  @include default-transition(color, background, border);
 }
 
-:focus,
-.focused {
-	outline: 2px solid $blue-lightest;
-	outline-offset: 3px;
+a {
+  &:focus {
+    outline: 2px solid $blue-lightest;
+    outline-offset: 3px;
+  }
+
+  &.focused {
+    outline: 2px solid $blue-lightest;
+    outline-offset: 3px;
+  }
+
+  i {
+    &:focus {
+      outline: 2px solid $blue-lightest;
+      outline-offset: 3px;
+    }
+
+    &.focused {
+      outline: 2px solid $blue-lightest;
+      outline-offset: 3px;
+    }
+  }
+}
+
+button {
+  &:focus {
+    outline: 2px solid $blue-lightest;
+    outline-offset: 3px;
+  }
+
+  &.focused {
+    outline: 2px solid $blue-lightest;
+    outline-offset: 3px;
+  }
+
+  i {
+    &:focus {
+      outline: 2px solid $blue-lightest;
+      outline-offset: 3px;
+    }
+
+    &.focused {
+      outline: 2px solid $blue-lightest;
+      outline-offset: 3px;
+    }
+  }
+}
+
+input {
+  &:focus {
+    outline: 2px solid $blue-lightest;
+    outline-offset: 3px;
+  }
+  &.focused {
+    outline: 2px solid $blue-lightest;
+    outline-offset: 3px;
+  }
 }
 
 :disabled,
 .disabled {
-	cursor: not-allowed;
+  cursor: not-allowed;
 }
