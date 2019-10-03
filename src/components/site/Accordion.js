@@ -3,7 +3,10 @@ import React from "react";
 const Accordion = props => {
   const { collpaseItems = [] } = props;
   return (
-    <div className="dg_accordion dg_allowmultipleopen" id="accordionExample1">
+    <div
+      className={`dg_accordion ${props.toggleMultiOpen} ${props.className}`}
+      id="accordionExample1"
+    >
       <button className="dg_allitems" id="menuActionButton1">
         Open All
       </button>
