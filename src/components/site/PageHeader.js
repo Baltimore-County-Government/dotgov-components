@@ -11,14 +11,19 @@ const PageHeader = props => {
     className,
     Breadcrumbs
   } = props;
-  const headerCssClasses = classnames("dg_page-header", className);
+  const headerCssClasses = classnames(
+    "dg_page-header",
+    className ? `themed ${className}` : null
+  );
   return (
     <div className={headerCssClasses}>
-      <img
-        className="dg_page-header__backgroundImage"
-        src={backGroundImage}
-        aria-hidden="true"
-      />
+      {backGroundImage && (
+        <img
+          className="dg_page-header__backgroundImage"
+          src={backGroundImage}
+          aria-hidden="true"
+        />
+      )}
       <div className="dg_page-header__container">
         <div className="container">
           {Breadcrumbs && (
