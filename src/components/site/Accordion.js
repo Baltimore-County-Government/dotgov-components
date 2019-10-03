@@ -17,10 +17,12 @@ const Accordion = props => {
       {collapseItems.map(item => (
         <div
           key={`collpaseAccordionHeader${item.id}`}
+          id={`collpaseAccordionHeader${item.id}`}
           className="collapsed dg_accordion__collapsible"
         >
           <button
             key={`collapseAccordionButton${item.id}`}
+            id={`collapseAccordionButton${item.id}`}
             className="fa dg_accordion-btn btn-link"
             type="button"
             data-toggle="collapse"
@@ -31,6 +33,7 @@ const Accordion = props => {
             {item.header}
             <div
               key={`collpaseAccordionSubHeader${item.id}`}
+              id={`collpaseAccordionSubHeader${item.id}`}
               className="dg_accordion__subheader"
             >
               {item.subheader}
@@ -38,11 +41,13 @@ const Accordion = props => {
           </button>
           <div
             key={`collapseOne${item.id}`}
+            id={`collapseOne${item.id}`}
             className="multi-collapse collapse"
             data-parent="#accordionExample1"
           >
             <div
               key={`collpaseAccordionMainText${item.id}`}
+              id={`collpaseAccordionMainText${item.id}`}
               className="dg_accordion-item-body"
             >
               {item.text}
