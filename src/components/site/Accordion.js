@@ -10,7 +10,10 @@ const Accordion = props => {
       className={`dg_accordion ${toggleMultiOpen} ${className}`}
       key="accordion1"
     >
-      <button className="dg_allitems" key="collpaseAllActionButton1">
+      <button
+        className="dg_allitems dg_button-link"
+        key="collpaseAllActionButton1"
+      >
         Open All
       </button>
 

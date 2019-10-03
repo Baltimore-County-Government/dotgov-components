@@ -52,20 +52,11 @@
   }
 }
 
-.dg_allitems {
+.dg_button-link.dg_allitems {
+  padding-bottom: $base-spacing-unit * 2;
   text-align: right;
-  text-decoration: underline;
-  font-family: $default-body-font;
-  font-size: $base-font-size;
-  font-weight: $font-bold;
-  font-style: italic;
   border-bottom: 1px $black solid;
-  padding-bottom: $padding-small;
   width: 100%;
-  color: $blue;
-  &:hover {
-    color: $vibrant-blue;
-  }
 }
 
 .collapse {
