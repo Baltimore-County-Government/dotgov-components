@@ -48,19 +48,19 @@ const collapseItems = [
 ```jsx
 const collapseItems = [
   {
-    id: 1,
+    id: 11,
     header: "Accordion Item #1",
     subheader: "This is a subheader",
     text: "Text goes here"
   },
   {
-    id: 2,
+    id: 12,
     header: "Accordion Item #2",
     subheader: "",
     text: "Text goes here"
   },
   {
-    id: 3,
+    id: 13,
     header: "Accordion Item #3",
     subheader: "",
     text: (
@@ -76,7 +76,7 @@ const collapseItems = [
     )
   },
   {
-    id: 4,
+    id: 14,
     header: "Accordion Item #4",
     subheader: "",
     text: <a href="https://www.w3schools.com">This is a link </a>

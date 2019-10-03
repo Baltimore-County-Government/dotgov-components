@@ -2,19 +2,25 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const Accordion = props => {
+  const { toggleMultiOpen, className } = props;
   const { collapseItems = [] } = props;
+
   return (
     <div
-      className={`dg_accordion ${props.toggleMultiOpen} ${props.className}`}
-      id="accordionExample1"
+      className={`dg_accordion ${toggleMultiOpen} ${className}`}
+      key="accordion1"
     >
-      <button className="dg_allitems" id="menuActionButton1">
+      <button className="dg_allitems" key="collpaseAllActionButton1">
         Open All
       </button>
 
       {collapseItems.map(item => (
-        <div className="collapsed dg_accordion__collapsible">
+        <div
+          key={`collpaseAccordionHeader${item.id}`}
+          className="collapsed dg_accordion__collapsible"
+        >
           <button
+            key={`collapseAccordionButton${item.id}`}
             className="fa dg_accordion-btn btn-link"
             type="button"
             data-toggle="collapse"
@@ -23,14 +29,24 @@ const Accordion = props => {
             aria-controls="collapseOne"
           >
             {item.header}
-            <div className="dg_accordion__subheader">{item.subheader}</div>
+            <div
+              key={`collpaseAccordionSubHeader${item.id}`}
+              className="dg_accordion__subheader"
+            >
+              {item.subheader}
+            </div>
           </button>
           <div
-            id={`collapseOne${item.id}`}
+            key={`collapseOne${item.id}`}
             className="multi-collapse collapse"
             data-parent="#accordionExample1"
           >
-            <div className="dg_accordion-item-body">{item.text}</div>
+            <div
+              key={`collpaseAccordionMainText${item.id}`}
+              className="dg_accordion-item-body"
+            >
+              {item.text}
+            </div>
           </div>
         </div>
       ))}
@@ -38,13 +54,13 @@ const Accordion = props => {
   );
 };
 
-// SiteHeader.propTypes = {
-//   /** Status to describe the site, Ex. Beta*/
-//   status: PropTypes.string,
-//   /** Primary header text for the site, Ex. Baltimore County  */
-//   heading: PropTypes.string.isRequired,
-//   /** Secondary header text for the site, Ex. Government  */
-//   subHeading: PropTypes.string.isRequired
-// };
+Accordion.propTypes = {
+  /** Populates the selectable items in the accordion */
+  collapseItems: PropTypes.array.isRequired,
+  /** Content of the selected item */
+  toggleMultiOpen: PropTypes.string,
+  /** Can add extra cssclass to the element EX. Dark */
+  className: PropTypes.string
+};
 
 export default Accordion;
