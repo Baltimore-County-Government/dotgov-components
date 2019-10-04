@@ -17,12 +17,12 @@ const IconHeading = props => {
   const { icon, image } = props;
   return (
     <div className="dg_icon-heading__container">
-      {icon && <i className={`${icon}`} aria-hidden="true"></i>}
-      {image && (
+       {icon && <i className={`${icon}`} aria-hidden="true"></i>} 
+       {image && (
         <div className="dg_icon-heading__image-container">
           <img src={image} />
         </div>
-      )}
+      )} 
       <Heading {...props} />
     </div>
   );
