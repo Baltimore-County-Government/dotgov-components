@@ -3,7 +3,7 @@
     color: $white;
   }
   .dg_allitems {
-    border-bottom: 1px $white solid;
+    border-bottom: $border-width-small $white solid;
     color: $white;
     &:hover {
       color: $blue-lightest;
@@ -11,7 +11,7 @@
   }
   .dg_accordion__collapsible {
     color: $white;
-    border-bottom: 1px $white solid;
+    border-bottom: $border-width-small $white solid;
     &:hover {
       color: $blue-lightest;
     }

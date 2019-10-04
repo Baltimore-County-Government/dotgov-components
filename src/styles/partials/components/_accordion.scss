@@ -4,7 +4,7 @@
   font-size: $h2-font-size;
   font-weight: $font-bold;
   width: 100%;
-  border-bottom: 1px $black solid;
+  border-bottom: $border-width-small $black solid;
   &:hover {
     color: $vibrant-blue;
   }
@@ -56,7 +56,7 @@
   padding-bottom: $padding-small;
   padding-right: $base-spacing-unit;
   text-align: right;
-  border-bottom: 1px $black solid;
+  border-bottom: $border-width-small $black solid;
   width: 100%;
 }
 
