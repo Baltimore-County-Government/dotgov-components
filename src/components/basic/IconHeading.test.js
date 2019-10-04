@@ -24,6 +24,7 @@ it("renders heading with image without crashing", () => {
       text="My Favorites"
       level="1"
       image="http://staging.baltimorecountymd.gov/sebin/h/i/seal-color-74.png"
+      alt="Baltimore County Government"
     />,
     div
   );
