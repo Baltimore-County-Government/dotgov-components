@@ -46,11 +46,15 @@
     opacity: 1;
 
     .dg_model__context {
-      text-align: center;
-      font: Italic 28px/44px $default-body-font;
+     
       letter-spacing: 0;
       color:$white;
       opacity: 1;
+    }
+    p{
+      text-align: center;
+      font: Italic 28px/44px $default-body-font;
+      margin-bottom: 60px;
     }
     .dg_model_footer {
       display: flex;
