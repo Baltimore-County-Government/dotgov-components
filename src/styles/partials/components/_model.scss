@@ -1,52 +1,83 @@
 .dg_model {
-  //top: 304px;
-  //left: 77px;
   width: auto;
   height: auto;
-  background: $black 0% 0% no-repeat padding-box;
+  background: $black;
   opacity: 0.95;
+
+  .dg_section {
+    border: 1px solid $blue-lightest;
+    padding: 0px;
+    .dg_model_flex {
+      display: flex;
+      justify-content: flex-end;
+      .dg_model_flex__button {
+        border: none;
+        padding: 0px;
+        font-size: 30px;
+        margin-top: 0px;
+
+        &:hover,
+        &.hovered {
+          background: $blue-lightest;
+        }
+
+        &:active,
+        &.active,
+        &:disabled,
+        &.disabled {
+          background: none;
+        }
+
+        &:disabled,
+        &.disabled {
+          border-color: $gray-light;
+        }
+      }
+    }
+  }
 
   .dg_model__inner {
     position: relative;
-    padding: 35px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    //margin-left: 130px;
+    padding: $padding-largest;
+    margin-top: 10px;
+    margin-bottom: 10px;
     width: auto;
     height: auto;
-    border: 1px solid #8091c0;
     opacity: 1;
- 
-  .dg_model__context {
-    text-align: center;
-    font: Italic 28px/44px Crimson Text;
-    letter-spacing: 0;
-    color: #ffffff;
-    opacity: 1;
+
+    .dg_model__context {
+      text-align: center;
+      font: Italic 28px/44px $default-body-font;
+      letter-spacing: 0;
+      color:$white;
+      opacity: 1;
+    }
+    .dg_model_footer {
+      display: flex;
+      justify-content: space-between;
+      .dg_button {
+        background: none;
+        color: $white;
+        width: 150px;
+        height: 50px;
+
+        &:hover,
+        &.hovered {
+          background: $blue-lightest;
+        }
+
+        &:active,
+        &.active,
+        &:disabled,
+        &.disabled {
+          background: none;
+        }
+
+        &:disabled,
+        &.disabled {
+          border-color: $gray-light;
+        }
+      }
+    }
   }
-  .dg_button {
-    background: none;
-    border-color: $white;
-    color: $white;
-    width:150px;
-    height:50px;
-
-    &:hover,
-    &.hovered {
-      background: $blue-lightest;
-    }
-
-    &:active,
-    &.active,
-    &:disabled,
-    &.disabled {
-      background: none;
-    }
-
-    &:disabled,
-    &.disabled {
-      border-color: $gray-light;
-    }
-  }
-}
 }
