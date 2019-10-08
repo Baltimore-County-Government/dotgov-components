@@ -14,17 +14,24 @@ A section is container for content.
 </Section>
 ```
 
+Html Snippet:
+
+```html
+<section class="dg_section">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <p>Some content goes here</p>
+      </div>
+    </div>
+  </div>
+</section>
+```
+
 ## With Background Image
 
 ```jsx
 import IconHeading from "../IconHeading";
-
-const backGroundImage =
-  "//baltimorecountymd.gov/sebin/b/v/homepage-most-popular-background.jpg";
-
-var sectionStyle = {
-  backgroundImage: `url(${backGroundImage})`
-};
 
 <Section className="dark dg_section__background-image">
   <div className="container">
@@ -35,6 +42,7 @@ var sectionStyle = {
           image="//baltimorecountymd.gov/sebin/p/u/county-seal.svg"
           classes="dg_icon-heading__container dg_icon-heading__background-image"
         />
+        <p>Some content goes here</p>
       </div>
     </div>
   </div>
@@ -44,10 +52,18 @@ var sectionStyle = {
 Html Snippet:
 
 ```html
-<section class="dg_section">
+<section class="dg_section dg_section__background-image">
   <div class="container">
     <div class="row">
       <div class="col">
+        <div class="dg_icon-heading__container">
+          <div class="dg_icon-heading__image-container">
+            <img
+              src="http://staging.baltimorecountymd.gov/sebin/h/i/seal-color-74.png"
+            />
+          </div>
+          <h2 class="dg_icon-heading">Most Popular Services</h2>
+        </div>
         <p>Some content goes here</p>
       </div>
     </div>
