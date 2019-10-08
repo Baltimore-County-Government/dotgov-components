@@ -14,9 +14,10 @@ const Heading = props => {
 };
 
 const IconHeading = props => {
-  const { icon, image } = props;
+  const { icon, image, classes = "dg_icon-heading__container" } = props;
+
   return (
-    <div className="dg_icon-heading__container">
+    <div className={classes}>
       {icon && <i className={`${icon}`} aria-hidden="true"></i>}
       {image && (
         <div className="dg_icon-heading__image-container">
