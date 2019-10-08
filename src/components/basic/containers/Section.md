@@ -26,7 +26,7 @@ var sectionStyle = {
   backgroundImage: `url(${backGroundImage})`
 };
 
-<Section className="dark" styles={sectionStyle}>
+<Section className="dark dg_section__background-image">
   <div className="container">
     <div className="row">
       <div className="col">

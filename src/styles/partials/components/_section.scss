@@ -21,11 +21,22 @@
     p {
       color: $white;
     }
+    &.dg_section__background-image {
+      background: none;
+      background-image: url(//baltimorecountymd.gov/sebin/b/v/homepage-most-popular-background.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
   }
 }
 
 @media screen and (max-width: $medium-breakpoint) {
   .dg_section {
     padding: ($padding-jumbo / 2) 0;
+    &.dark.dg_section__background-image {
+      background-image: none;
+      background: $pale-blue;
+      color: $white;
+    }
   }
 }
