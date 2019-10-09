@@ -1,4 +1,4 @@
-.dg_model {
+.dg_modal {
   width: auto;
   height: auto;
   background: $black;
@@ -7,10 +7,10 @@
   .dg_section {
     border: $border-width-small solid $blue-lightest;
     padding: 0px;
-    .dg_model_flex {
+    .dg_modal_flex {
       display: flex;
       justify-content: flex-end;
-      .dg_model_flex__button {
+      .dg_modal_flex__button {
         border: none;
         padding: 0px;
         font-size: 30px;
@@ -36,7 +36,7 @@
     }
   }
 
-  .dg_model__inner {
+  .dg_modal__inner {
     position: relative;
     padding: $padding-largest;
     margin-top: $margin-small;
@@ -45,7 +45,7 @@
     height: auto;
     opacity: 1;
 
-    .dg_model__context {
+    .dg_modal__context {
       letter-spacing: 0;
       color: $white;
       opacity: 1;
@@ -55,7 +55,7 @@
       font: italic 28px/44px $default-body-font;
       margin-bottom: 60px;
     }
-    .dg_model_footer {
+    .dg_modal_footer {
       display: flex;
       justify-content: space-between;
       .dg_button {
