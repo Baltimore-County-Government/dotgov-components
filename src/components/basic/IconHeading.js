@@ -37,7 +37,9 @@ IconHeading.propTypes = {
   /** Level of heading you wish to display, "1" for h1, "2" for h2 ... */
   level: PropTypes.string,
   /** Heading text */
-  text: PropTypes.string.isRequired
+  text: PropTypes.string.isRequired,
+  /**Custom css classes */
+  classes: PropTypes.string
 };
 
 export default IconHeading;

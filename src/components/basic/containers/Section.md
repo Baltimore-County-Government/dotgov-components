@@ -32,6 +32,7 @@ Html Snippet:
 
 ```jsx
 import IconHeading from "../IconHeading";
+import IconLink from "../IconLink";
 
 <Section className="dark dg_section__background-image">
   <div className="container">
@@ -42,7 +43,13 @@ import IconHeading from "../IconHeading";
           image="//baltimorecountymd.gov/sebin/p/u/county-seal.svg"
           classes="dg_icon-heading__container dg_icon-heading__background-image"
         />
-        <p>Some content goes here</p>
+        <IconLink
+          icon="fa fa-users"
+          size="large"
+          description="Visit our users dashboard to learn more."
+          text="Default"
+          href="https://www.w3schools.com"
+        />
       </div>
     </div>
   </div>
