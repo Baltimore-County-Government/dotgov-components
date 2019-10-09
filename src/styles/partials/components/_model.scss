@@ -5,7 +5,7 @@
   opacity: 0.95;
 
   .dg_section {
-    border: 1px solid $blue-lightest;
+    border: $border-width-small solid $blue-lightest;
     padding: 0px;
     .dg_model_flex {
       display: flex;
@@ -39,20 +39,20 @@
   .dg_model__inner {
     position: relative;
     padding: $padding-largest;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: $margin-small;
+    margin-bottom: $margin-small;
     width: auto;
     height: auto;
     opacity: 1;
 
     .dg_model__context {
       letter-spacing: 0;
-      color:$white;
+      color: $white;
       opacity: 1;
     }
-    p{
+    p {
       text-align: center;
-      font: Italic 28px/44px $default-body-font;
+      font: italic 28px/44px $default-body-font;
       margin-bottom: 60px;
     }
     .dg_model_footer {
