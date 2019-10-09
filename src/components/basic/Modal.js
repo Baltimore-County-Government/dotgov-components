@@ -1,3 +1,3 @@
-const Model = props => {};
+const Modal = props => {};
 
 export default Modal;
