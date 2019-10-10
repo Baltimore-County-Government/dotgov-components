@@ -15,7 +15,7 @@
     "build-components": "nwb build-react-component && npm run-script generate-css",
     "clean-components": "nwb clean-module && nwb clean-components",
     "start-components": "nwb serve-react-dem",
-    "prepublishOnly": "echo \"Starting NPM Publish...\" && npm run build-demo && npm run-script generate-css",
+    "prepublishOnly": "echo \"Starting NPM Publish...\" && npm run build-components && npm run-script generate-css",
     "start": "styleguidist server",
     "test": "jest",
     "test:coverage": "jest --coverage",
