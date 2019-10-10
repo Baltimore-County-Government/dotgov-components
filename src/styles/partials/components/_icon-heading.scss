@@ -29,16 +29,18 @@ $image-border-adjustment-margin: -$border-width-large * 3;
     width: 100%;
     background-color: $gray-light;
     display: inline-block;
+    margin-top: $margin-small;
+    margin-bottom: $margin-small;
   }
 
   $icon-spacing: $default-margin;
 
   &:before {
-    margin: $margin-small $icon-spacing $margin-small 0;
+    margin-right: $icon-spacing;
   }
 
   &:after {
-    margin: $margin-small 0 $margin-small $icon-spacing;
+    margin-left: $icon-spacing;
   }
 }
 
