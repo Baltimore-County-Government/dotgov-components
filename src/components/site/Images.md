@@ -1,5 +1,5 @@
 ```jsx
-<div className="dg_image-content">
+<div className="dg_main-content">
   <img
     src="//baltimorecountymd.gov/sebin/t/t/homepage-county-executive.jpg"
     alt="County Executive Olzsewski delivers a speech."
@@ -32,7 +32,7 @@
 Html Snippet:
 
 ```html
-<div class="dg_image-content">
+<div class="dg_main-content">
   <img
     src="//baltimorecountymd.gov/sebin/t/t/homepage-county-executive.jpg"
     alt="County Executive Olzsewski delivers a speech."
