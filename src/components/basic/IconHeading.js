@@ -19,7 +19,7 @@ const IconHeading = props => {
     <div className="dg_icon-heading__container">
       <span className="dg_icon-heading__icon">
         {image ? (
-          <img src={image} />
+          <img src={image} alt="" />
         ) : (
           <i className={`${icon}`} aria-hidden="true"></i>
         )}

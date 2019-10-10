@@ -57,7 +57,7 @@ Html Snippet:
 ```html
 <div class="dg_icon-heading__container">
     <span class="dg_icon-heading__icon">
-        <img src="//baltimorecountymd.gov/sebin/p/u/county-seal.svg">
+        <img src="//baltimorecountymd.gov/sebin/p/u/county-seal.svg" alt="">
     </span>
     <h2 class="dg_icon-heading">Latest Headlines</h2>
 </div>
