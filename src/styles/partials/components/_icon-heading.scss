@@ -18,8 +18,8 @@ $image-border-adjustment-margin: -$border-width-large * 3;
   margin-bottom: $default-margin;
 
   img {
-    max-width: 75px;
-    width: 100%;
+    height: 75px;
+    width: 75px;
   }
 
   &:before,
