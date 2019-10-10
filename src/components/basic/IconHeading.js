@@ -20,7 +20,7 @@ const IconHeading = props => {
       {icon && <i className={`${icon}`} aria-hidden="true"></i>}
       {image && (
         <div className="dg_icon-heading__image-container">
-          <img src={image} />
+          <img src={image} alt="" />
         </div>
       )}
       <Heading {...props} />
