@@ -31,14 +31,14 @@ $image-border-adjustment-margin: -$border-width-large * 3;
     display: inline-block;
   }
 
-  $icon-spacing: 20px;
+  $icon-spacing: $default-margin;
 
   &:before {
-    margin: 10px $icon-spacing 10px 0;
+    margin: $margin-small $icon-spacing $margin-small 0;
   }
 
   &:after {
-    margin: 10px 0 10px $icon-spacing;
+    margin: $margin-small 0 $margin-small $icon-spacing;
   }
 }
 
