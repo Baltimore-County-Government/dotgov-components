@@ -34,6 +34,10 @@ export { default as BrandText } from "./components/site/BrandText";
 export { default as PageHeader } from "./components/site/PageHeader";
 export { default as SummaryList } from "./components/site/SummaryList";
 export { default as Breadcrumbs } from "./components/site/Breadcrumbs";
+export { default as BreadcrumbItem } from "./components/site/BreadcrumbItem";
+export {
+  default as BreadcrumbLinkItem
+} from "./components/site/BreadCrumbLinkItem";
 
 /** Other */
 export { default as Button } from "./components/basic/Button";
