@@ -46,7 +46,6 @@ Html Snippet:
   <IconHeading
     text="Latest Headlines"
     image="//baltimorecountymd.gov/sebin/p/u/county-seal.svg"
-    alt="Baltimore County Government"
   />
 </section>
 ```

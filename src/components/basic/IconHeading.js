@@ -20,7 +20,7 @@ const IconHeading = props => {
       {icon && <i className={`${icon}`} aria-hidden="true"></i>}
       {image && (
         <div className="dg_icon-heading__image-container">
-          <img src={image} alt={alt} />
+          <img src={image} alt="" />
         </div>
       )}
       <Heading {...props} />
@@ -35,8 +35,6 @@ IconHeading.propTypes = {
   image: PropTypes.string,
   /** Level of heading you wish to display, "1" for h1, "2" for h2 ... */
   level: PropTypes.string,
-  /* Alternate Text for image accessibility*/
-  alt: PropTypes.string,
   /** Heading text */
   text: PropTypes.string.isRequired
 };
