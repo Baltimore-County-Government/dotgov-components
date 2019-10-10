@@ -3,17 +3,36 @@ import PropTypes from "prop-types";
 import classnames from "classnames";
 
 const PageHeader = props => {
-  const { title, preTitle, deck, backGroundImage, className } = props;
-  const headerCssClasses = classnames("dg_page-header", className);
+  const {
+    title,
+    preTitle,
+    deck,
+    backGroundImage,
+    className,
+    Breadcrumbs
+  } = props;
+  const headerCssClasses = classnames(
+    "dg_page-header",
+    className ? `themed ${className}` : null
+  );
   return (
     <div className={headerCssClasses}>
-      <img
-        className="dg_page-header__backgroundImage"
-        src={backGroundImage}
-        aria-hidden="true"
-      />
+      {backGroundImage && (
+        <img
+          className="dg_page-header__backgroundImage"
+          src={backGroundImage}
+          aria-hidden="true"
+        />
+      )}
       <div className="dg_page-header__container">
         <div className="container">
+          {Breadcrumbs && (
+            <div className="row">
+              <div className="col">
+                <Breadcrumbs />
+              </div>
+            </div>
+          )}
           <div className="row">
             <div className="col-12 col-lg-5 col-xl-6">
               {preTitle && (
@@ -37,7 +56,9 @@ PageHeader.propTypes = {
   /** title: Main page heading, e.g., "Budget and Finance" to be displayed */
   title: PropTypes.string.isRequired,
   /** deck: Brief description of the landing page or app. */
-  deck: PropTypes.string
+  deck: PropTypes.string,
+  /** Implementation of the breadcrumbs component */
+  Breadcrumbs: PropTypes.func
 };
 
 export default PageHeader;
