@@ -34,8 +34,10 @@ Html Snippet:
 
 ```html
 <div class="dg_icon-heading__container">
-  <i class="fas fa-star" aria-hidden="true"></i>
-  <h2 class="dg_icon-heading">Latest Headlines</h2>
+    <span class="dg_icon-heading__icon">
+        <i class="fas fa-star" aria-hidden="true"></i>
+    </span>
+    <h2 class="dg_icon-heading">Latest Headlines</h2>
 </div>
 ```
 
@@ -54,12 +56,9 @@ Html Snippet:
 
 ```html
 <div class="dg_icon-heading__container">
-  <div class="dg_icon-heading__image-container">
-    <img
-      src="http://staging.baltimorecountymd.gov/sebin/h/i/seal-color-74.png"
-      alt="Baltimore County Government"
-    />
-  </div>
-  <h2 class="dg_icon-heading">Latest Headlines</h2>
+    <span class="dg_icon-heading__icon">
+        <img src="//baltimorecountymd.gov/sebin/p/u/county-seal.svg">
+    </span>
+    <h2 class="dg_icon-heading">Latest Headlines</h2>
 </div>
 ```
