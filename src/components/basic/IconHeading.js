@@ -14,7 +14,7 @@ const Heading = props => {
 };
 
 const IconHeading = props => {
-  const { icon, image, alt } = props;
+  const { icon, image } = props;
   return (
     <div className="dg_icon-heading__container">
       {icon && <i className={`${icon}`} aria-hidden="true"></i>}
