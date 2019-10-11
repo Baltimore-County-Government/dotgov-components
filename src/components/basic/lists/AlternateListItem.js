@@ -5,9 +5,7 @@ const AlternateListItem = props => {
   const { link, linkText } = props;
   return (
     <li>
-      <a title={title} href={link}>
-        {linkText}
-      </a>
+      <a href={link}>{linkText}</a>
     </li>
   );
 };
