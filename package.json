@@ -1,6 +1,6 @@
 {
   "name": "@baltimorecounty/dotgov-components",
-  "version": "0.1.31",
+  "version": "0.1.34",
   "description": "UI design system for Baltimore County's primary [website](https://www.baltimorecountymd.gov).",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -12,10 +12,10 @@
   ],
   "scripts": {
     "build": "styleguidist build",
-    "build-demo": "nwb build-react-component && npm run-script generate-css",
-    "clean-demo": "nwb clean-module && nwb clean-demo",
-    "start-demo": "nwb serve-react-dem",
-    "prepublishOnly": "echo \"Starting NPM Publish...\" && npm run build-demo && npm run-script generate-css",
+    "build-components": "nwb build-react-component && npm run-script generate-css",
+    "clean-components": "nwb clean-module && nwb clean-components",
+    "start-components": "nwb serve-react-dem",
+    "prepublishOnly": "echo \"Starting NPM Publish...\" && npm run build-components && npm run-script generate-css",
     "start": "styleguidist server",
     "test": "jest",
     "test:coverage": "jest --coverage",
