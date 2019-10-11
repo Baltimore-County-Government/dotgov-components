@@ -1,0 +1,33 @@
+.dg_card-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 100%;
+}
+
+.dg_card {
+  border: 1px solid #666666;
+  flex: 0 1 32%;
+  flex-wrap: wrap;
+  max-width: 32%;
+  min-width: 0;
+  position: relative;
+  width: 32%;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.dg_card-content-center {
+  text-align: center;
+  display: block;
+  padding: 20px;
+}
+
+.dg_card-content-left {
+  text-align: left;
+  display: block;
+  padding: 20px;
+}
