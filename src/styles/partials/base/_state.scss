@@ -2,16 +2,30 @@ a,
 button,
 a i,
 button i {
-	@include default-transition(color, background, border);
+  @include default-transition(color, background, border);
 }
 
 :focus,
 .focused {
-	outline: 2px solid $blue-lightest;
-	outline-offset: 3px;
+  outline: 2px solid $blue-lightest;
+  outline-offset: 3px;
+}
+
+div:focus,
+div.focused,
+section:focus,
+section.focused,
+footer:focus,
+footer.focused,
+header:focus,
+header.focused,
+p:focus,
+p.focused {
+  outline: none;
+  outline-offset: 0;
 }
 
 :disabled,
 .disabled {
-	cursor: not-allowed;
+  cursor: not-allowed;
 }
