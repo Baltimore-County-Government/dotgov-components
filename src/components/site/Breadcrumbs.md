@@ -7,12 +7,10 @@ import BreadcrumbLinkItem from "./BreadcrumbLinkitem";
   <Breadcrumbs>
     <BreadcrumbLinkItem
       text="Departments"
-      title="This is a title"
       link="/departments"
     />
     <BreadcrumbLinkItem
       text="Department of Health"
-      title="This is a title"
       link="/departments/health"
     />
     <BreadcrumbItem text="Adoptable Pets" />
@@ -29,10 +27,10 @@ Html Snippet:
       <a href="#"><i class="fas fa-home fa-1x" aria-hidden="true"></i></a>
     </li>
     <li class="dg_breadcrumb">
-      <a title="This is a title" href="/departments">Departments</a>
+      <a href="/departments">Departments</a>
     </li>
     <li class="dg_breadcrumb">
-      <a title="This is a title" href="/departments/health"
+      <a href="/departments/health"
         >Department of Health</a
       >
     </li>
@@ -54,12 +52,10 @@ import BreadcrumbLinkItem from "./BreadcrumbLinkitem";
   <Breadcrumbs>
     <BreadcrumbLinkItem
       text="Departments"
-      title="This is a title"
       link="/departments"
     />
     <BreadcrumbLinkItem
       text="Department of Health"
-      title="This is a title"
       link="/departments/health"
     />
     <BreadcrumbItem text="Adoptable Pets" />
@@ -76,10 +72,10 @@ Html Snippet:
       <a href="#"><i class="fas fa-home fa-1x" aria-hidden="true"></i></a>
     </li>
     <li class="dg_breadcrumb">
-      <a title="This is a title" href="/departments">Departments</a>
+      <a href="/departments">Departments</a>
     </li>
     <li>
-      <a title="This is a title" href="/departments/health"
+      <a href="/departments/health"
         >Department of Health</a
       >
     </li>
