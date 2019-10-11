@@ -24,7 +24,7 @@ Html Snippet:
 <div class="dg_section">
   <ul class="dg_breadcrumbs">
     <li class="dg_breadcrumb">
-      <a href="#"><i class="fas fa-home fa-1x" aria-hidden="true"></i></a>
+      <a href="/"><i class="fas fa-home fa-1x" aria-hidden="true"></i></a>
     </li>
     <li class="dg_breadcrumb">
       <a href="/departments">Departments</a>
@@ -69,7 +69,7 @@ Html Snippet:
 <div class="dg_section dark">
   <ul class="dg_breadcrumbs">
     <li class="dg_breadcrumb">
-      <a href="#"><i class="fas fa-home fa-1x" aria-hidden="true"></i></a>
+      <a href="/"><i class="fas fa-home fa-1x" aria-hidden="true"></i></a>
     </li>
     <li class="dg_breadcrumb">
       <a href="/departments">Departments</a>
