@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const BreadcrumbLinkItem = props => {
-  const { link, text, title } = props;
+  const { link, text } = props;
   return (
     <li className="dg_breadcrumb">
       <a href={link}>{text}</a>

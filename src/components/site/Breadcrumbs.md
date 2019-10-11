@@ -4,7 +4,7 @@
 import BreadcrumbItem from "./Breadcrumbitem";
 import BreadcrumbLinkItem from "./BreadcrumbLinkitem";
 <div class="dg_section">
-  <Breadcrumbs>
+  <Breadcrumbs></Breadcrumbs>
     <BreadcrumbLinkItem
       text="Departments"
       link="/departments"
