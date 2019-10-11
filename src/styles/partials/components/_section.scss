@@ -24,15 +24,15 @@
   }
 }
 
-@media screen and (max-width: $large-breakpoint) {
+@media screen and (max-width: $extra-large-breakpoint) {
   .dg_section .dg_section-cta {
-    padding: $padding-largest 0 0;
+    padding: $padding-larger 0 0;
   }
 }
 
 @media screen and (max-width: $medium-breakpoint) {
   .dg_section {
-    padding: ($padding-jumbo / 2) 0;
+    padding: $padding-larger 0;
 
     .dg_section-cta {
       padding: 0;
