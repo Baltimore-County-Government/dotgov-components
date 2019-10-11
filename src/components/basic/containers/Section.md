@@ -34,7 +34,10 @@ Html Snippet:
 import IconHeading from "../IconHeading";
 import IconLink from "../IconLink";
 
-<Section className="dark dg_section__background-image">
+<Section
+  className="dark"
+  backGroundImage="http://baltimorecountymd.gov/sebin/b/v/homepage-most-popular-background.jpg"
+>
   <div className="container">
     <div className="row">
       <div className="col">
@@ -59,7 +62,10 @@ import IconLink from "../IconLink";
 Html Snippet:
 
 ```html
-<section class="dg_section dg_section__background-image">
+<section
+  class="dg_section dark dg_section__background-image"
+  style="background-image: url(/baltimorecountymd.gov/sebin/b/v/homepage-most-popular-background.jpg);"
+>
   <div class="container">
     <div class="row">
       <div class="col">

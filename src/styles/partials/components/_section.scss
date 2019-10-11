@@ -1,5 +1,6 @@
 .dg_section {
   padding: $padding-jumbo 0;
+  position: relative;
 
   .dg_section-cta {
     padding: $padding-jumbo 0 0;
@@ -21,14 +22,19 @@
     p {
       color: $white;
     }
-
-    &.dg_section__background-image {
-      background: none;
-      background-image: url(//baltimorecountymd.gov/sebin/b/v/homepage-most-popular-background.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
   }
+}
+
+.dg_section__background-image {
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 100%;
+  object-fit: cover;
 }
 
 @media screen and (max-width: $medium-breakpoint) {
