@@ -14,7 +14,9 @@ import CardContentLeft from "./CardContentLeft";
       <h3>Carver Community Center</h3>
       <p>.8 acres</p>
       <p>
-        <a href="#">300 Lennox Avenue Room 202 Towson, Maryland 21286</a>
+        <a href="https://www.google.com/maps/place/300+Lennox+Ave+%23202,+Towson,+MD+21286/@39.3989731,-76.6011164,17z/data=!3m1!4b1!4m5!3m4!1s0x89c80fa890fcc983:0xa03c19562e575aea!8m2!3d39.398969!4d-76.5989277">
+          300 Lennox Avenue Room 202 Towson, Maryland 21286
+        </a>
       </p>
       <button type="button" class="dg_button">
         Learn More
@@ -40,7 +42,9 @@ import CardContentLeft from "./CardContentLeft";
       <h3>Carver Community Center</h3>
       <p>.8 acres</p>
       <p>
-        <a href="#">300 Lennox Avenue Room 202 Towson, Maryland 21286</a>
+        <a href="https://www.google.com/maps/place/300+Lennox+Ave+%23202,+Towson,+MD+21286/@39.3989731,-76.6011164,17z/data=!3m1!4b1!4m5!3m4!1s0x89c80fa890fcc983:0xa03c19562e575aea!8m2!3d39.398969!4d-76.5989277">
+          300 Lennox Avenue Room 202 Towson, Maryland 21286
+        </a>
       </p>
       <button type="button" class="dg_button">
         Learn More
@@ -65,7 +69,9 @@ import CardContentLeft from "./CardContentLeft";
       <h3>Carver Community Center</h3>
       <p>.8 acres</p>
       <p>
-        <a href="#">300 Lennox Avenue Room 202 Towson, Maryland 21286</a>
+        <a href="https://www.google.com/maps/place/300+Lennox+Ave+%23202,+Towson,+MD+21286/@39.3989731,-76.6011164,17z/data=!3m1!4b1!4m5!3m4!1s0x89c80fa890fcc983:0xa03c19562e575aea!8m2!3d39.398969!4d-76.5989277">
+          300 Lennox Avenue Room 202 Towson, Maryland 21286
+        </a>
       </p>
       <button type="button" class="dg_button">
         Learn More
@@ -90,7 +96,9 @@ import CardContentLeft from "./CardContentLeft";
       <h3>Carver Community Center</h3>
       <p>.8 acres</p>
       <p>
-        <a href="#">300 Lennox Avenue Room 202 Towson, Maryland 21286</a>
+        <a href="https://www.google.com/maps/place/300+Lennox+Ave+%23202,+Towson,+MD+21286/@39.3989731,-76.6011164,17z/data=!3m1!4b1!4m5!3m4!1s0x89c80fa890fcc983:0xa03c19562e575aea!8m2!3d39.398969!4d-76.5989277">
+          300 Lennox Avenue Room 202 Towson, Maryland 21286
+        </a>
       </p>
       <button type="button" class="dg_button">
         Learn More
@@ -115,7 +123,9 @@ import CardContentLeft from "./CardContentLeft";
       <h3>Carver Community Center</h3>
       <p>.8 acres</p>
       <p>
-        <a href="#">300 Lennox Avenue Room 202 Towson, Maryland 21286</a>
+        <a href="https://www.google.com/maps/place/300+Lennox+Ave+%23202,+Towson,+MD+21286/@39.3989731,-76.6011164,17z/data=!3m1!4b1!4m5!3m4!1s0x89c80fa890fcc983:0xa03c19562e575aea!8m2!3d39.398969!4d-76.5989277">
+          300 Lennox Avenue Room 202 Towson, Maryland 21286
+        </a>
       </p>
       <button type="button" class="dg_button">
         Learn More
@@ -136,7 +146,12 @@ Html Snippet:
       </div>
       <h3>Carver Community Center</h3>
       <p>.8 acres</p>
-      <p><a href="#">300 Lennox Avenue Room 202 Towson, Maryland 21286</a></p>
+      <p>
+        <a
+          href="https://www.google.com/maps/place/300+Lennox+Ave+%23202,+Towson,+MD+21286/@39.3989731,-76.6011164,17z/data=!3m1!4b1!4m5!3m4!1s0x89c80fa890fcc983:0xa03c19562e575aea!8m2!3d39.398969!4d-76.5989277"
+          >300 Lennox Avenue Room 202 Towson, Maryland 21286</a
+        >
+      </p>
       <button type="button" class="dg_button">Learn More</button>
     </div>
   </div>
@@ -157,7 +172,12 @@ Html Snippet:
       </svg>
       <h3>Carver Community Center</h3>
       <p>.8 acres</p>
-      <p><a href="#">300 Lennox Avenue Room 202 Towson, Maryland 21286</a></p>
+      <p>
+        <a
+          href="https://www.google.com/maps/place/300+Lennox+Ave+%23202,+Towson,+MD+21286/@39.3989731,-76.6011164,17z/data=!3m1!4b1!4m5!3m4!1s0x89c80fa890fcc983:0xa03c19562e575aea!8m2!3d39.398969!4d-76.5989277"
+          >300 Lennox Avenue Room 202 Towson, Maryland 21286</a
+        >
+      </p>
       <button type="button" class="dg_button">Learn More</button>
     </div>
   </div>
@@ -178,7 +198,12 @@ Html Snippet:
       </svg>
       <h3>Carver Community Center</h3>
       <p>.8 acres</p>
-      <p><a href="#">300 Lennox Avenue Room 202 Towson, Maryland 21286</a></p>
+      <p>
+        <a
+          href="https://www.google.com/maps/place/300+Lennox+Ave+%23202,+Towson,+MD+21286/@39.3989731,-76.6011164,17z/data=!3m1!4b1!4m5!3m4!1s0x89c80fa890fcc983:0xa03c19562e575aea!8m2!3d39.398969!4d-76.5989277"
+          >300 Lennox Avenue Room 202 Towson, Maryland 21286</a
+        >
+      </p>
       <button type="button" class="dg_button">Learn More</button>
     </div>
   </div>
@@ -199,7 +224,12 @@ Html Snippet:
       </svg>
       <h3>Carver Community Center</h3>
       <p>.8 acres</p>
-      <p><a href="#">300 Lennox Avenue Room 202 Towson, Maryland 21286</a></p>
+      <p>
+        <a
+          href="https://www.google.com/maps/place/300+Lennox+Ave+%23202,+Towson,+MD+21286/@39.3989731,-76.6011164,17z/data=!3m1!4b1!4m5!3m4!1s0x89c80fa890fcc983:0xa03c19562e575aea!8m2!3d39.398969!4d-76.5989277"
+          >300 Lennox Avenue Room 202 Towson, Maryland 21286</a
+        >
+      </p>
       <button type="button" class="dg_button">Learn More</button>
     </div>
   </div>
@@ -220,7 +250,12 @@ Html Snippet:
       </svg>
       <h3>Carver Community Center</h3>
       <p>.8 acres</p>
-      <p><a href="#">300 Lennox Avenue Room 202 Towson, Maryland 21286</a></p>
+      <p>
+        <a
+          href="https://www.google.com/maps/place/300+Lennox+Ave+%23202,+Towson,+MD+21286/@39.3989731,-76.6011164,17z/data=!3m1!4b1!4m5!3m4!1s0x89c80fa890fcc983:0xa03c19562e575aea!8m2!3d39.398969!4d-76.5989277"
+          >300 Lennox Avenue Room 202 Towson, Maryland 21286</a
+        >
+      </p>
       <button type="button" class="dg_button">Learn More</button>
     </div>
   </div>
@@ -243,7 +278,9 @@ import CardContentLeft from "./CardContentLeft";
         <h3>Carver Community Center</h3>
         <p>.8 acres</p>
         <p>
-          <a href="#">300 Lennox Avenue Room 202 Towson, Maryland 21286</a>
+          <a href="https://www.google.com/maps/place/300+Lennox+Ave+%23202,+Towson,+MD+21286/@39.3989731,-76.6011164,17z/data=!3m1!4b1!4m5!3m4!1s0x89c80fa890fcc983:0xa03c19562e575aea!8m2!3d39.398969!4d-76.5989277">
+            300 Lennox Avenue Room 202 Towson, Maryland 21286
+          </a>
         </p>
         <button type="button" class="dg_button">
           Learn More
@@ -269,7 +306,9 @@ import CardContentLeft from "./CardContentLeft";
         <h3>Carver Community Center</h3>
         <p>.8 acres</p>
         <p>
-          <a href="#">300 Lennox Avenue Room 202 Towson, Maryland 21286</a>
+          <a href="https://www.google.com/maps/place/300+Lennox+Ave+%23202,+Towson,+MD+21286/@39.3989731,-76.6011164,17z/data=!3m1!4b1!4m5!3m4!1s0x89c80fa890fcc983:0xa03c19562e575aea!8m2!3d39.398969!4d-76.5989277">
+            300 Lennox Avenue Room 202 Towson, Maryland 21286
+          </a>
         </p>
         <button type="button" class="dg_button">
           Learn More
@@ -294,7 +333,9 @@ import CardContentLeft from "./CardContentLeft";
         <h3>Carver Community Center</h3>
         <p>.8 acres</p>
         <p>
-          <a href="#">300 Lennox Avenue Room 202 Towson, Maryland 21286</a>
+          <a href="https://www.google.com/maps/place/300+Lennox+Ave+%23202,+Towson,+MD+21286/@39.3989731,-76.6011164,17z/data=!3m1!4b1!4m5!3m4!1s0x89c80fa890fcc983:0xa03c19562e575aea!8m2!3d39.398969!4d-76.5989277">
+            300 Lennox Avenue Room 202 Towson, Maryland 21286
+          </a>
         </p>
         <button type="button" class="dg_button">
           Learn More
@@ -319,7 +360,9 @@ import CardContentLeft from "./CardContentLeft";
         <h3>Carver Community Center</h3>
         <p>.8 acres</p>
         <p>
-          <a href="#">300 Lennox Avenue Room 202 Towson, Maryland 21286</a>
+          <a href="https://www.google.com/maps/place/300+Lennox+Ave+%23202,+Towson,+MD+21286/@39.3989731,-76.6011164,17z/data=!3m1!4b1!4m5!3m4!1s0x89c80fa890fcc983:0xa03c19562e575aea!8m2!3d39.398969!4d-76.5989277">
+            300 Lennox Avenue Room 202 Towson, Maryland 21286
+          </a>
         </p>
         <button type="button" class="dg_button">
           Learn More
@@ -344,7 +387,9 @@ import CardContentLeft from "./CardContentLeft";
         <h3>Carver Community Center</h3>
         <p>.8 acres</p>
         <p>
-          <a href="#">300 Lennox Avenue Room 202 Towson, Maryland 21286</a>
+          <a href="https://www.google.com/maps/place/300+Lennox+Ave+%23202,+Towson,+MD+21286/@39.3989731,-76.6011164,17z/data=!3m1!4b1!4m5!3m4!1s0x89c80fa890fcc983:0xa03c19562e575aea!8m2!3d39.398969!4d-76.5989277">
+            300 Lennox Avenue Room 202 Towson, Maryland 21286
+          </a>
         </p>
         <button type="button" class="dg_button">
           Learn More
@@ -366,7 +411,12 @@ Html Snippet:
       </div>
       <h3>Carver Community Center</h3>
       <p>.8 acres</p>
-      <p><a href="#">300 Lennox Avenue Room 202 Towson, Maryland 21286</a></p>
+      <p>
+        <a
+          href="https://www.google.com/maps/place/300+Lennox+Ave+%23202,+Towson,+MD+21286/@39.3989731,-76.6011164,17z/data=!3m1!4b1!4m5!3m4!1s0x89c80fa890fcc983:0xa03c19562e575aea!8m2!3d39.398969!4d-76.5989277"
+          >300 Lennox Avenue Room 202 Towson, Maryland 21286</a
+        >
+      </p>
       <button type="button" class="dg_button">Learn More</button>
     </div>
   </div>
@@ -387,7 +437,12 @@ Html Snippet:
       </svg>
       <h3>Carver Community Center</h3>
       <p>.8 acres</p>
-      <p><a href="#">300 Lennox Avenue Room 202 Towson, Maryland 21286</a></p>
+      <p>
+        <a
+          href="https://www.google.com/maps/place/300+Lennox+Ave+%23202,+Towson,+MD+21286/@39.3989731,-76.6011164,17z/data=!3m1!4b1!4m5!3m4!1s0x89c80fa890fcc983:0xa03c19562e575aea!8m2!3d39.398969!4d-76.5989277"
+          >300 Lennox Avenue Room 202 Towson, Maryland 21286</a
+        >
+      </p>
       <button type="button" class="dg_button">Learn More</button>
     </div>
   </div>
@@ -408,7 +463,12 @@ Html Snippet:
       </svg>
       <h3>Carver Community Center</h3>
       <p>.8 acres</p>
-      <p><a href="#">300 Lennox Avenue Room 202 Towson, Maryland 21286</a></p>
+      <p>
+        <a
+          href="https://www.google.com/maps/place/300+Lennox+Ave+%23202,+Towson,+MD+21286/@39.3989731,-76.6011164,17z/data=!3m1!4b1!4m5!3m4!1s0x89c80fa890fcc983:0xa03c19562e575aea!8m2!3d39.398969!4d-76.5989277"
+          >300 Lennox Avenue Room 202 Towson, Maryland 21286</a
+        >
+      </p>
       <button type="button" class="dg_button">Learn More</button>
     </div>
   </div>
@@ -429,7 +489,12 @@ Html Snippet:
       </svg>
       <h3>Carver Community Center</h3>
       <p>.8 acres</p>
-      <p><a href="#">300 Lennox Avenue Room 202 Towson, Maryland 21286</a></p>
+      <p>
+        <a
+          href="https://www.google.com/maps/place/300+Lennox+Ave+%23202,+Towson,+MD+21286/@39.3989731,-76.6011164,17z/data=!3m1!4b1!4m5!3m4!1s0x89c80fa890fcc983:0xa03c19562e575aea!8m2!3d39.398969!4d-76.5989277"
+          >300 Lennox Avenue Room 202 Towson, Maryland 21286</a
+        >
+      </p>
       <button type="button" class="dg_button">Learn More</button>
     </div>
   </div>
@@ -450,7 +515,12 @@ Html Snippet:
       </svg>
       <h3>Carver Community Center</h3>
       <p>.8 acres</p>
-      <p><a href="#">300 Lennox Avenue Room 202 Towson, Maryland 21286</a></p>
+      <p>
+        <a
+          href="https://www.google.com/maps/place/300+Lennox+Ave+%23202,+Towson,+MD+21286/@39.3989731,-76.6011164,17z/data=!3m1!4b1!4m5!3m4!1s0x89c80fa890fcc983:0xa03c19562e575aea!8m2!3d39.398969!4d-76.5989277"
+          >300 Lennox Avenue Room 202 Towson, Maryland 21286</a
+        >
+      </p>
       <button type="button" class="dg_button">Learn More</button>
     </div>
   </div>
