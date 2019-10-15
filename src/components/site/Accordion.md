@@ -4,19 +4,19 @@ const collapseItems = [
     id: 1,
     header: "Accordion Item #1",
     subheader: "This is a subheader",
-    text: "Text goes here"
+    content: "Text goes here"
   },
   {
     id: 2,
     header: "Accordion Item #2",
     subheader: "",
-    text: "Text goes here"
+    content: "Text goes here"
   },
   {
     id: 3,
     header: "Accordion Item #3",
     subheader: "",
-    text: (
+    content: (
       <img
         width="300"
         height="200"
@@ -32,7 +32,7 @@ const collapseItems = [
     id: 4,
     header: "Accordion Item #4",
     subheader: "",
-    text: <a href="https://www.w3schools.com">This is a link </a>
+    content: <a href="https://www.w3schools.com">This is a link </a>
   }
 ];
 
@@ -50,19 +50,19 @@ const collapseItems = [
     id: 11,
     header: "Accordion Item #1",
     subheader: "This is a subheader",
-    text: "Text goes here"
+    content: "Text goes here"
   },
   {
     id: 12,
     header: "Accordion Item #2",
     subheader: "",
-    text: "Text goes here"
+    content: "Text goes here"
   },
   {
     id: 13,
     header: "Accordion Item #3",
     subheader: "",
-    text: (
+    content: (
       <img
         width="300"
         height="200"
@@ -78,13 +78,13 @@ const collapseItems = [
     id: 14,
     header: "Accordion Item #4",
     subheader: "",
-    text: <a href="https://www.w3schools.com">This is a link </a>
+    content: <a href="https://www.w3schools.com">This is a link </a>
   }
 ];
 
 import Section from "../basic/containers/Section";
 <Section className="dark">
-  <Accordion collapseItems={collapseItems} toggleMultiOpen={true} />
+  <Accordion collapseItems={collapseItems} />
 </Section>;
 ```
 

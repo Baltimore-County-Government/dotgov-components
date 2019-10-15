@@ -12,56 +12,54 @@ const Accordion = props => {
       } ${className}`}
       key="accordion1"
     >
-      {/* <div className="dg_accordion_buttonall-container "> */}
       <button
         className="dg_allitems dg_button-link"
         key="collpaseAllActionButton1"
       >
         Open All
       </button>
-      {/* </div> */}
-
-      {collapseItems.map(item => (
-        <div
-          key={`collpaseAccordionHeader${item.id}`}
-          id={`collpaseAccordionHeader${item.id}`}
-          className="collapsed dg_accordion__collapsible"
-        >
-          <button
-            key={`collapseAccordionButton${item.id}`}
-            id={`collapseAccordionButton${item.id}`}
-            className="dg_accordion-btn"
-            type="button"
-            aria-controls="collapseOne"
-          >
-            <span className="dg_accordion_buttontext-holder">
-              {item.header}
-            </span>
-
-            <div
-              key={`collpaseAccordionSubHeader${item.id}`}
-              id={`collpaseAccordionSubHeader${item.id}`}
-              className="dg_accordion__subheader"
-            >
-              {item.subheader}
-            </div>
-          </button>
+      {collapseItems.map(item => {
+        const { id, header, subheader, content } = item;
+        return (
           <div
-            key={`collapseOne${item.id}`}
-            id={`collapseOne${item.id}`}
-            className="multi-collapse collapse"
-            data-parent="#accordionExample1"
+            key={`collpaseAccordionHeader${id}`}
+            id={`collpaseAccordionHeader${id}`}
+            className="collapsed dg_accordion__collapsible"
           >
-            <div
-              key={`collpaseAccordionMainText${item.id}`}
-              id={`collpaseAccordionMainText${item.id}`}
-              className="dg_accordion-item-body"
+            <button
+              key={`collapseAccordionButton${id}`}
+              id={`collapseAccordionButton${id}`}
+              className="dg_accordion-btn"
+              type="button"
+              aria-controls="collapseOne"
             >
-              {item.text}
+              <span className="dg_accordion_buttontext-holder">{header}</span>
+
+              <div
+                key={`collpaseAccordionSubHeader${id}`}
+                id={`collpaseAccordionSubHeader${id}`}
+                className="dg_accordion__subheader"
+              >
+                {subheader}
+              </div>
+            </button>
+            <div
+              key={`collapseOne${id}`}
+              id={`collapseOne${id}`}
+              className="multi-collapse collapse"
+              data-parent="#accordionExample1"
+            >
+              <div
+                key={`collpaseAccordionMainText${id}`}
+                id={`collpaseAccordionMainText${id}`}
+                className="dg_accordion-item-body"
+              >
+                {content}
+              </div>
             </div>
           </div>
-        </div>
-      ))}
+        );
+      })}
     </div>
   );
 };
