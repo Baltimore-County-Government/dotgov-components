@@ -12,12 +12,14 @@ const Accordion = props => {
       } ${className}`}
       key="accordion1"
     >
+      {/* <div className="dg_accordion_buttonall-container "> */}
       <button
         className="dg_allitems dg_button-link"
         key="collpaseAllActionButton1"
       >
         Open All
       </button>
+      {/* </div> */}
 
       {collapseItems.map(item => (
         <div

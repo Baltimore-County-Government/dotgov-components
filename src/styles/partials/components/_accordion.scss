@@ -1,3 +1,18 @@
+.dg_accordion {
+  text-align: right;
+}
+
+.dg_accordion_buttonall-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.dg_button-link.dg_allitems {
+  padding-bottom: $padding-small;
+  padding-right: $base-spacing-unit;
+  //justify-content: flex-end;
+}
+
 .dg_accordion__collapsible {
   color: $blue;
   font-family: $default-heading-font;
@@ -5,6 +20,10 @@
   font-weight: $font-bold;
   width: 100%;
   border-bottom: $border-width-small $black solid;
+
+  &:first-of-type {
+    border-top: $border-width-small $black solid;
+  }
 
   &:hover {
     color: $vibrant-blue;
@@ -56,19 +75,11 @@
       padding-top: $padding-small;
       padding-bottom: $padding-small;
       font-size: $h1-font-size;
-      @include icon-content($icon-arrow-down); /*Font awesome right arrow*/
+      @include icon-content($icon-arrow-down);
       top: 0;
       right: 0;
     }
   }
-}
-
-.dg_button-link.dg_allitems {
-  padding-bottom: $padding-small;
-  padding-right: $base-spacing-unit;
-  text-align: right;
-  border-bottom: $border-width-small $black solid;
-  width: 100%;
 }
 
 .collapse {
@@ -82,5 +93,5 @@
 .collapsed .dg_accordion-btn::after {
   position: absolute;
   cursor: pointer;
-  @include icon-content($icon-arrow-right); /*Font awesome down arrow*/
+  @include icon-content($icon-arrow-right);
 }
