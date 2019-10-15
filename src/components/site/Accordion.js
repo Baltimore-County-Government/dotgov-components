@@ -2,13 +2,13 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const Accordion = props => {
-  const { toggleMultiOpen, className } = props;
+  const { canHaveMultiplePanelsOpen, className } = props;
   const { collapseItems = [] } = props;
 
   return (
     <div
       className={`dg_accordion ${
-        toggleMultiOpen === true ? "canHaveMultiplePanelsOpen" : ""
+        canHaveMultiplePanelsOpen === true ? "canHaveMultiplePanelsOpen" : ""
       } ${className}`}
       key="accordion1"
     >
@@ -68,7 +68,7 @@ Accordion.propTypes = {
   /** Populates the selectable items in the accordion. Header - the text describing the panel. SubHeader - Any text below the header. Content - any text or html element */
   collapseItems: PropTypes.array.isRequired,
   /** Content of the selected item */
-  toggleMultiOpen: PropTypes.bool
+  canHaveMultiplePanelsOpen: PropTypes.bool
 };
 
 export default Accordion;
