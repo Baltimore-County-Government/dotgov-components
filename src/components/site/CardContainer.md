@@ -23,7 +23,6 @@ import CardContentLeft from "./CardContentLeft";
       </button>
     </CardContentCenter>
   </CardItem>
-
   <CardItem>
     <CardContentCenter>
       <svg
@@ -282,7 +281,6 @@ import CardContentLeft from "./CardContentLeft";
         </button>
       </CardContentCenter>
     </CardItem>
-
     <CardItem>
       <CardContentCenter>
         <svg
