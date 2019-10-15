@@ -1,27 +1,30 @@
+/* Handle images inside the main content section */
 #dg_main-content {
   img {
     width: 100%;
     margin-bottom: $padding-largest;
   }
+}
 
-  .dg_image {
-    display: block;
-    position: relative;
-    &.left,
-    &.right {
-      margin-top: $margin-small;
-      margin-bottom: $padding-largest;
-      max-width: 40%;
-    }
-    &.left {
-      float: left;
-      margin-right: $padding-largest;
-    }
+.dg_image {
+  display: block;
+  position: relative;
 
-    &.right {
-      float: right;
-      margin-left: $padding-largest;
-    }
+  &.left,
+  &.right {
+    margin-top: $margin-small;
+    margin-bottom: $padding-largest;
+    max-width: 40%;
+  }
+
+  &.left {
+    float: left;
+    margin-right: $padding-largest;
+  }
+
+  &.right {
+    float: right;
+    margin-left: $padding-largest;
   }
 }
 
