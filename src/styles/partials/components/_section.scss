@@ -37,9 +37,9 @@
   object-fit: cover;
 }
 
-@media screen and (max-width: $large-breakpoint) {
+@media screen and (max-width: $extra-large-breakpoint) {
   .dg_section .dg_section-cta {
-    padding: $padding-largest 0 0;
+    padding: $padding-larger 0 0;
   }
 }
 
@@ -51,6 +51,8 @@
       background: $pale-blue-dark;
       color: $white;
     }
+    padding: $padding-larger 0;
+
     .dg_section-cta {
       padding: 0;
     }
