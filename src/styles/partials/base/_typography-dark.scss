@@ -1,0 +1,22 @@
+.dg_section.dark {
+  a {
+    color: $blue;
+
+    &:hover,
+    &:focus,
+    &.hovered,
+    &.focused {
+      color: $vibrant-blue;
+    }
+
+    &:active,
+    &.active {
+      color: $pale-blue;
+    }
+
+    &:disabled,
+    &.disabled {
+      color: $pale-blue-lightest;
+    }
+  }
+}
