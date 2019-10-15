@@ -1,3 +1,5 @@
+$breadcrumb-arrow-size: 20px;
+
 .dg_breadcrumbs {
   color: $black;
   font-family: $default-heading-font;
@@ -18,22 +20,34 @@
 
   li {
     display: inline-block;
+
+    &:last-child {
+      margin: 0 $default-padding;
+    }
   }
 
   li.dg_breadcrumb {
+    a,
+    :after {
+      display: inline-block;
+    }
+
     a {
       font-weight: $font-medium;
-      padding: 0px 30px 0px 0px;
+      margin: 0 $default-margin;
       text-decoration: none;
+    }
 
-      &:after {
-        color: $gray-light;
-        font-size: $h1-font-size;
-        font-weight: $font-bold;
-        @include icon-content("\f105");
-        padding-left: 30px;
-        vertical-align: middle;
-      }
+    &:first-child a {
+      margin-left: 0;
+    }
+
+    &:after {
+      color: $gray-light;
+      font-size: $breadcrumb-arrow-size;
+      font-weight: $font-bold;
+      @include icon-content($icon-arrow-right);
+      vertical-align: middle;
     }
   }
 }
