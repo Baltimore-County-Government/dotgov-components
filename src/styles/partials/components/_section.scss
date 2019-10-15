@@ -2,6 +2,18 @@
   padding: $padding-jumbo 0;
   position: relative;
 
+  .dg_section__background-image {
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 100%;
+    object-fit: cover;
+  }
+
   .dg_section-cta {
     padding: $padding-jumbo 0 0;
     text-align: center;
@@ -45,12 +57,6 @@
 
 @media screen and (max-width: $medium-breakpoint) {
   .dg_section {
-    padding: ($padding-jumbo / 2) 0;
-    &.dark.dg_section__background-image {
-      background-image: none;
-      background: $pale-blue-dark;
-      color: $white;
-    }
     padding: $padding-larger 0;
 
     .dg_section-cta {

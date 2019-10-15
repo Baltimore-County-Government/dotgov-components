@@ -36,23 +36,12 @@ import IconLink from "../IconLink";
 
 <Section
   className="dark"
-  backGroundImage="http://baltimorecountymd.gov/sebin/b/v/homepage-most-popular-background.jpg"
+  backgroundImage="http://baltimorecountymd.gov/sebin/b/v/homepage-most-popular-background.jpg"
 >
   <div className="container">
     <div className="row">
       <div className="col">
-        <IconHeading
-          text="Most Popular Services"
-          image="//baltimorecountymd.gov/sebin/p/u/county-seal.svg"
-          classes="dg_icon-heading__container dg_icon-heading__background-image"
-        />
-        <IconLink
-          icon="fa fa-users"
-          size="large"
-          description="Visit our users dashboard to learn more."
-          text="Default"
-          href="https://www.w3schools.com"
-        />
+        <p>Content Goes here</p>
       </div>
     </div>
   </div>
@@ -62,22 +51,16 @@ import IconLink from "../IconLink";
 Html Snippet:
 
 ```html
-<section
-  class="dg_section dark dg_section__background-image"
-  style="background-image: url(//baltimorecountymd.gov/sebin/b/v/homepage-most-popular-background.jpg);"
->
+<section class="dg_section dark">
+  <img
+    class="dg_section__background-image"
+    src="http://baltimorecountymd.gov/sebin/b/v/homepage-most-popular-background.jpg"
+    aria-hidden="true"
+  />
   <div class="container">
     <div class="row">
       <div class="col">
-        <div class="dg_icon-heading__container">
-          <div class="dg_icon-heading__image-container">
-            <img
-              src="http://staging.baltimorecountymd.gov/sebin/h/i/seal-color-74.png"
-            />
-          </div>
-          <h2 class="dg_icon-heading">Most Popular Services</h2>
-        </div>
-        <p>Some content goes here</p>
+        <p>Content Goes here</p>
       </div>
     </div>
   </div>
