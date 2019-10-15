@@ -10,7 +10,6 @@
 .dg_button-link.dg_allitems {
   padding-bottom: $padding-small;
   padding-right: $base-spacing-unit;
-  //justify-content: flex-end;
 }
 
 .dg_accordion__collapsible {
@@ -74,12 +73,18 @@
       position: absolute;
       padding-top: $padding-small;
       padding-bottom: $padding-small;
-      font-size: $h1-font-size;
+      font-size: $icon-arrow-default-size;
       @include icon-content($icon-arrow-down);
-      top: 0;
+      top: $padding-small;
       right: 0;
     }
   }
+}
+
+.collapsed .dg_accordion-btn::after {
+  position: absolute;
+  cursor: pointer;
+  @include icon-content($icon-arrow-right);
 }
 
 .collapse {
@@ -88,10 +93,4 @@
 
 .show {
   display: block;
-}
-
-.collapsed .dg_accordion-btn::after {
-  position: absolute;
-  cursor: pointer;
-  @include icon-content($icon-arrow-right);
 }

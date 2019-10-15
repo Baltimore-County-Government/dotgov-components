@@ -1,31 +1,29 @@
 .dg_section.dark {
-  .dg_accordion {
-    .dg_accordion__collapsible:first-of-type {
-      border-top: $border-width-small $white solid;
+  .dg_accordion__collapsible:first-of-type {
+    border-top: $border-width-small $white solid;
+  }
+  .dg_accordion-btn:focus {
+    color: $white;
+  }
+  .dg_allitems {
+    color: $white;
+    &:hover {
+      color: $blue-lightest;
     }
-    .dg_accordion-btn:focus {
+  }
+  .dg_accordion__collapsible {
+    color: $white;
+    border-bottom: $border-width-small $white solid;
+    &:hover {
+      color: $blue-lightest;
+    }
+    .dg_accordion__subheader {
       color: $white;
     }
-    .dg_allitems {
+    .dg_accordion-item-body {
       color: $white;
-      &:hover {
-        color: $blue-lightest;
-      }
-    }
-    .dg_accordion__collapsible {
-      color: $white;
-      border-bottom: $border-width-small $white solid;
-      &:hover {
-        color: $blue-lightest;
-      }
-      .dg_accordion__subheader {
+      a {
         color: $white;
-      }
-      .dg_accordion-item-body {
-        color: $white;
-        a {
-          color: $white;
-        }
       }
     }
   }
