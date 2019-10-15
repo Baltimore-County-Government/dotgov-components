@@ -26,7 +26,6 @@ import CardContentLeft from "./CardContentLeft";
   <CardItem>
     <CardContentCenter>
       <svg
-        class="bd-placeholder-img card-img-top"
         width="100%"
         height="170px"
         xmlns="http://www.w3.org/2000/svg"
@@ -53,7 +52,6 @@ import CardContentLeft from "./CardContentLeft";
   <CardItem>
     <CardContentCenter>
       <svg
-        class="bd-placeholder-img card-img-top"
         width="100%"
         height="170px"
         xmlns="http://www.w3.org/2000/svg"
@@ -80,7 +78,6 @@ import CardContentLeft from "./CardContentLeft";
   <CardItem>
     <CardContentLeft>
       <svg
-        class="bd-placeholder-img card-img-top"
         width="100%"
         height="170px"
         xmlns="http://www.w3.org/2000/svg"
@@ -107,7 +104,6 @@ import CardContentLeft from "./CardContentLeft";
   <CardItem>
     <CardContentLeft>
       <svg
-        class="bd-placeholder-img card-img-top"
         width="100%"
         height="170px"
         xmlns="http://www.w3.org/2000/svg"
@@ -156,7 +152,6 @@ Html Snippet:
   <div class="dg_card">
     <div class="dg_card-content-center">
       <svg
-        class="bd-placeholder-img card-img-top"
         width="100%"
         height="170px"
         xmlns="http://www.w3.org/2000/svg"
@@ -181,7 +176,6 @@ Html Snippet:
   <div class="dg_card">
     <div class="dg_card-content-center">
       <svg
-        class="bd-placeholder-img card-img-top"
         width="100%"
         height="170px"
         xmlns="http://www.w3.org/2000/svg"
@@ -206,7 +200,6 @@ Html Snippet:
   <div class="dg_card">
     <div class="dg_card-content-left">
       <svg
-        class="bd-placeholder-img card-img-top"
         width="100%"
         height="170px"
         xmlns="http://www.w3.org/2000/svg"
@@ -231,7 +224,6 @@ Html Snippet:
   <div class="dg_card">
     <div class="dg_card-content-left">
       <svg
-        class="bd-placeholder-img card-img-top"
         width="100%"
         height="170px"
         xmlns="http://www.w3.org/2000/svg"
@@ -284,7 +276,6 @@ import CardContentLeft from "./CardContentLeft";
     <CardItem>
       <CardContentCenter>
         <svg
-          class="bd-placeholder-img card-img-top"
           width="100%"
           height="170px"
           xmlns="http://www.w3.org/2000/svg"
@@ -311,7 +302,6 @@ import CardContentLeft from "./CardContentLeft";
     <CardItem>
       <CardContentCenter>
         <svg
-          class="bd-placeholder-img card-img-top"
           width="100%"
           height="170px"
           xmlns="http://www.w3.org/2000/svg"
@@ -338,7 +328,6 @@ import CardContentLeft from "./CardContentLeft";
     <CardItem>
       <CardContentLeft>
         <svg
-          class="bd-placeholder-img card-img-top"
           width="100%"
           height="170px"
           xmlns="http://www.w3.org/2000/svg"
@@ -365,7 +354,6 @@ import CardContentLeft from "./CardContentLeft";
     <CardItem>
       <CardContentLeft>
         <svg
-          class="bd-placeholder-img card-img-top"
           width="100%"
           height="170px"
           xmlns="http://www.w3.org/2000/svg"
@@ -415,7 +403,6 @@ Html Snippet:
   <div class="dg_card">
     <div class="dg_card-content-center">
       <svg
-        class="bd-placeholder-img card-img-top"
         width="100%"
         height="170px"
         xmlns="http://www.w3.org/2000/svg"
@@ -440,7 +427,6 @@ Html Snippet:
   <div class="dg_card">
     <div class="dg_card-content-center">
       <svg
-        class="bd-placeholder-img card-img-top"
         width="100%"
         height="170px"
         xmlns="http://www.w3.org/2000/svg"
@@ -465,7 +451,6 @@ Html Snippet:
   <div class="dg_card">
     <div class="dg_card-content-left">
       <svg
-        class="bd-placeholder-img card-img-top"
         width="100%"
         height="170px"
         xmlns="http://www.w3.org/2000/svg"
@@ -490,7 +475,6 @@ Html Snippet:
   <div class="dg_card">
     <div class="dg_card-content-left">
       <svg
-        class="bd-placeholder-img card-img-top"
         width="100%"
         height="170px"
         xmlns="http://www.w3.org/2000/svg"
