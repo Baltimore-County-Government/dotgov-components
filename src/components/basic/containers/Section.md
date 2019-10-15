@@ -64,7 +64,7 @@ Html Snippet:
 ```html
 <section
   class="dg_section dark dg_section__background-image"
-  style="background-image: url(/baltimorecountymd.gov/sebin/b/v/homepage-most-popular-background.jpg);"
+  style="background-image: url(//baltimorecountymd.gov/sebin/b/v/homepage-most-popular-background.jpg);"
 >
   <div class="container">
     <div class="row">
