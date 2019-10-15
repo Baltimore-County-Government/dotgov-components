@@ -45,7 +45,13 @@ module.exports = {
     {
       name: "Site Elements",
       content: "src/docs/SiteElements.md",
-      components: "src/components/site/**/*.js"
+      components: "src/components/site/**/*.js",
+      sections: [
+        {
+          name: "Images",
+          content: "src/components/site/Images.md"
+        }
+      ]
     }
   ],
   template: {
