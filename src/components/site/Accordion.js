@@ -9,7 +9,7 @@ const Accordion = props => {
     <div
       className={`dg_accordion ${
         canHaveMultiplePanelsOpen === true ? "canHaveMultiplePanelsOpen" : ""
-      } ${className}`}
+      }`}
       key="accordion1"
     >
       <button
