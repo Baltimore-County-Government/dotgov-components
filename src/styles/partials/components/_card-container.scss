@@ -1,47 +1,60 @@
 .dg_card-container {
+  display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-flow: row wrap;
   width: 100%;
   max-width: 100%;
 
   .dg_card {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
     flex: 0 1 33.3333%;
     flex-wrap: wrap;
     max-width: 33.3333%;
     min-width: 0;
     position: relative;
     width: 100%;
-    display: flex;
-    display: -ms-flexbox;
 
     .dg_card-content-center {
-      border: 1px solid #666666;
+      border: $border-width-small solid $gray;
       text-align: center;
       display: block;
-      padding: 20px;
-      margin: 10px;
+      padding: $padding-large;
+      margin: $margin-small;
 
       .dg_icon-container {
-        color: #feb30c;
+        color: $gold;
         font-size: 60px;
         margin-bottom: 15px;
       }
     }
 
     .dg_card-content-left {
-      border: 1px solid #666666;
+      border: $border-width-small solid $gray;
       text-align: left;
       display: block;
-      padding: 20px;
-      margin: 10px;
+      padding: $padding-large;
+      margin: $margin-small;
 
       .dg_icon-container {
-        color: #feb30c;
+        color: $gold;
         font-size: 60px;
         margin-bottom: 15px;
       }
+    }
+  }
+}
+
+@media screen and (max-width: $medium-breakpoint) {
+  .dg_card-container {
+    .dg_card {
+      max-width: 100%;
+      flex: 0 1 100%;
+      width: 100%;
     }
   }
 }

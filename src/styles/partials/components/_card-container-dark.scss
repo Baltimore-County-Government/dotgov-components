@@ -1,0 +1,14 @@
+.dg_section.dark {
+  .dg_card-container {
+    .dg_card {
+      .dg_card-content-center {
+        background-color: $pale-blue;
+        border: $border-width-small solid $gray-light;
+      }
+
+      .dg_card-content-left {
+        border: $border-width-small solid $gray-light;
+      }
+    }
+  }
+}
