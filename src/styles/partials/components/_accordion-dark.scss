@@ -1,27 +1,29 @@
-.dg_accordion.dg_section.dark {
-  .dg_accordion-btn:focus {
-    color: $white;
-  }
-  .dg_allitems {
-    border-bottom: $border-width-small $white solid;
-    color: $white;
-    &:hover {
-      color: $blue-lightest;
-    }
-  }
-  .dg_accordion__collapsible {
-    color: $white;
-    border-bottom: $border-width-small $white solid;
-    &:hover {
-      color: $blue-lightest;
-    }
-    .dg_accordion__subheader {
+.dg_section.dark {
+  .dg_accordion {
+    .dg_accordion-btn:focus {
       color: $white;
     }
-    .dg_accordion-item-body {
+    .dg_allitems {
+      border-bottom: $border-width-small $white solid;
       color: $white;
-      a {
+      &:hover {
+        color: $blue-lightest;
+      }
+    }
+    .dg_accordion__collapsible {
+      color: $white;
+      border-bottom: $border-width-small $white solid;
+      &:hover {
+        color: $blue-lightest;
+      }
+      .dg_accordion__subheader {
         color: $white;
+      }
+      .dg_accordion-item-body {
+        color: $white;
+        a {
+          color: $white;
+        }
       }
     }
   }

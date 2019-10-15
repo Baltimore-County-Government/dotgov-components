@@ -36,11 +36,10 @@ const collapseItems = [
   }
 ];
 
-<Accordion
-  className="dg_section"
-  collapseItems={collapseItems}
-  toggleMultiOpen={true}
-/>;
+import Section from "../basic/containers/Section";
+<Section>
+  <Accordion collapseItems={collapseItems} toggleMultiOpen={true} />
+</Section>;
 ```
 
 ### Accordion Dark
@@ -83,7 +82,10 @@ const collapseItems = [
   }
 ];
 
-<Accordion className="dg_section dark" collapseItems={collapseItems} />;
+import Section from "../basic/containers/Section";
+<Section className="dark">
+  <Accordion collapseItems={collapseItems} toggleMultiOpen={true} />
+</Section>;
 ```
 
 Html Snippet:

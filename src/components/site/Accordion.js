@@ -68,9 +68,7 @@ Accordion.propTypes = {
   /** Populates the selectable items in the accordion */
   collapseItems: PropTypes.array.isRequired,
   /** Content of the selected item */
-  toggleMultiOpen: PropTypes.bool,
-  /** Can add extra cssclass to the element EX. Dark */
-  className: PropTypes.string
+  toggleMultiOpen: PropTypes.bool
 };
 
 export default Accordion;
