@@ -41,15 +41,14 @@
     font-weight: $font-bold;
     cursor: pointer;
 
-    .dg_accordion_buttontext-holder {
-      &:focus {
-        outline: 1px solid red;
-      }
+    &:focus {
+      outline: none;
     }
 
-    &:focus {
-      color: $blue;
-      outline: none;
+    &:focus-within {
+      .dg_accordion_buttontext-holder {
+        @include default-focus-state;
+      }
     }
 
     &:after {
