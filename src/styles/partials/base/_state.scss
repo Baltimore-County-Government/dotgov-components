@@ -1,3 +1,8 @@
+@mixin default-focus-state {
+  outline: 2px solid $blue-lightest;
+  outline-offset: 3px;
+}
+
 a,
 button,
 a i,
@@ -15,8 +20,7 @@ button:focus,
 button.focused,
 a:focus,
 a.focused {
-  outline: 2px solid $blue-lightest;
-  outline-offset: 3px;
+  @include default-focus-state;
 }
 
 :disabled,

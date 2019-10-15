@@ -5,9 +5,11 @@
   font-weight: $font-bold;
   width: 100%;
   border-bottom: $border-width-small $black solid;
+
   &:hover {
     color: $vibrant-blue;
   }
+
   .dg_accordion__subheader {
     font-size: $smallest-heading-font-size;
     font-weight: $font-medium;
@@ -15,6 +17,7 @@
     padding-top: $padding-small;
     text-transform: none;
   }
+
   .dg_accordion-item-body {
     text-align: left;
     font-size: $smallest-heading-font-size;
@@ -24,6 +27,7 @@
     color: $gray;
     text-transform: none;
   }
+
   .dg_accordion-btn {
     position: relative;
     padding-top: $padding-large;
@@ -36,15 +40,17 @@
     font-size: $small-heading-font-size;
     font-weight: $font-bold;
     cursor: pointer;
-    .dg_accordion_buttontext-holder {
-      &:focus {
-        outline: 1px solid red;
-      }
-    }
+
     &:focus {
-      color: $blue;
       outline: none;
     }
+
+    &:focus-within {
+      .dg_accordion_buttontext-holder {
+        @include default-focus-state;
+      }
+    }
+
     &:after {
       position: absolute;
       padding-top: $padding-small;
@@ -56,6 +62,7 @@
     }
   }
 }
+
 .dg_button-link.dg_allitems {
   padding-bottom: $padding-small;
   padding-right: $base-spacing-unit;
@@ -63,12 +70,15 @@
   border-bottom: $border-width-small $black solid;
   width: 100%;
 }
+
 .collapse {
   display: none;
 }
+
 .show {
   display: block;
 }
+
 .collapsed .dg_accordion-btn::after {
   position: absolute;
   cursor: pointer;
