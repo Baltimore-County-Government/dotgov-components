@@ -1,5 +1,5 @@
 ```jsx
-<div className="dg_main-content">
+<div id="dg_main-content">
   <img
     src="//baltimorecountymd.gov/sebin/t/t/homepage-county-executive.jpg"
     alt="County Executive Olzsewski delivers a speech."
