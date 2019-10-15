@@ -106,7 +106,9 @@ Html Snippet:
       aria-controls="collapseOne"
       style="text-align: left; width:100%;"
     >
-      Collapsible Group Item #1
+      <span class="dg_accordion_buttontext-holder">
+        Collapsible Group Item #1
+      </span>
     </button>
     <div
       id="collapseOne1"
@@ -129,7 +131,9 @@ Html Snippet:
       aria-controls="collapseTwo"
       style="text-align: left; width: 100%;"
     >
-      Collapsible Group Item #2
+      <span class="dg_accordion_buttontext-holder">
+        Collapsible Group Item #2
+      </span>
     </button>
     <div>
       This is a sub header
@@ -154,7 +158,9 @@ Html Snippet:
       aria-controls="collapseThree"
       style="text-align: left; width:100%;"
     >
-      Collapsible Group Item #3
+      <span class="dg_accordion_buttontext-holder">
+        Collapsible Group Item #3
+      </span>
     </button>
     <div
       id="collapseThree3"
