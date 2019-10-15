@@ -19,7 +19,7 @@
     text-align: left;
     font-size: $smallest-heading-font-size;
     font-weight: $font-medium;
-    padding-left: $padding-larger;
+    padding-left: $default-padding;
     padding-top: $padding-larger;
     letter-spacing: 0;
     color: $gray;
@@ -36,6 +36,7 @@
     font-family: $default-heading-font;
     font-size: $small-heading-font-size;
     font-weight: $font-bold;
+    cursor: pointer;
     &:focus {
       color: $blue;
     }
@@ -44,7 +45,6 @@
       padding-top: $padding-small;
       padding-bottom: $padding-small;
       font-size: $h1-font-size;
-      cursor: pointer;
       @include icon-content("\f107"); /*Font awesome right arrow*/
       top: 0;
       right: 0;
