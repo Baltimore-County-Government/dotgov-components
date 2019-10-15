@@ -40,7 +40,6 @@
 @import "./styles/partials/components/alt-list";
 @import "./styles/partials/components/input";
 @import "./styles/partials/components/icon-heading";
-@import "./styles/partials/components/icon-heading-light";
 @import "./styles/partials/components/icon-heading-dark";
 @import "./styles/partials/components/checkbox";
 @import "./styles/partials/components/link";
@@ -60,6 +59,7 @@
 @import "./styles/partials/components/summary-list";
 @import "./styles/partials/components/page-header";
 @import "./styles/partials/components/page-header-dark";
+@import "./styles/partials/components/images";
 
 /** dark themed components - please start your file with .dg_section.dark and nest the styles below it **/
 @import "./styles/partials/components/table-dark";

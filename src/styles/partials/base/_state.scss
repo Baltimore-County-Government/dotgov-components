@@ -2,10 +2,24 @@ a,
 button,
 a i,
 button i {
-	@include default-transition(color, background, border);
+  @include default-transition(color, background, border);
+}
+
+select:focus,
+select.focused,
+input:focus,
+input.focused,
+textarea:focus,
+textarea.focused,
+button:focus,
+button.focused,
+a:focus,
+a.focused {
+  outline: 2px solid $blue-lightest;
+  outline-offset: 3px;
 }
 
 :disabled,
 .disabled {
-	cursor: not-allowed;
+  cursor: not-allowed;
 }
