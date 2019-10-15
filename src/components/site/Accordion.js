@@ -8,7 +8,7 @@ const Accordion = props => {
   return (
     <div
       className={`dg_accordion ${
-        toggleMultiOpen === true ? "dg_allowmultipleopen" : ""
+        toggleMultiOpen === true ? "canHaveMultiplePanelsOpen" : ""
       } ${className}`}
       key="accordion1"
     >

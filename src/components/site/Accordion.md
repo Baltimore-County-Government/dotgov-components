@@ -91,8 +91,8 @@ import Section from "../basic/containers/Section";
 Html Snippet:
 
 ```html
-<!--Remove/Add class dg_allowmutlipleopen to toggle all can be opened together or one at a time open-->
-<div class="dg_accordion dg_allowmutlipleopen" id="accordionExample1">
+<!--Remove/Add class canHaveMultiplePanelsOpen to toggle all can be opened together or one at a time open-->
+<div class="dg_accordion canHaveMultiplePanelsOpen" id="accordionExample1">
   <button class="dg_allitems dg_button-link" id="menuActionButton1">
     Open All
   </button>
