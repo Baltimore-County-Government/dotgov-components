@@ -41,9 +41,9 @@
 
       &:after {
         color: $gray-light;
-        @include icon-content("\f105");
+        @include icon-content($icon-arrow-right);
         float: right;
-        font-size: $large-icon-size;
+        font-size: $icon-arrow-default-size;
         margin-left: $default-margin;
         position: relative;
       }
