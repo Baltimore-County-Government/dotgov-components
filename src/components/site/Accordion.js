@@ -65,7 +65,7 @@ const Accordion = props => {
 };
 
 Accordion.propTypes = {
-  /** Populates the selectable items in the accordion */
+  /** Populates the selectable items in the accordion. Header - the text describing the panel. SubHeader - Any text below the header. Content - any text or html element */
   collapseItems: PropTypes.array.isRequired,
   /** Content of the selected item */
   toggleMultiOpen: PropTypes.bool
