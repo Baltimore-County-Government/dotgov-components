@@ -36,7 +36,7 @@ import IconLink from "../IconLink";
 
 <Section
   className="dark"
-  backGroundImage="http://baltimorecountymd.gov/sebin/b/v/homepage-most-popular-background.jpg"
+  backgroundImage="http://baltimorecountymd.gov/sebin/b/v/homepage-most-popular-background.jpg"
 >
   <div className="container">
     <div className="row">
