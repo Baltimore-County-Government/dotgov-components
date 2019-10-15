@@ -39,7 +39,7 @@ const collapseItems = [
 <Accordion
   className="dg_section"
   collapseItems={collapseItems}
-  toggleMultiOpen="dg_allowmultipleopen"
+  toggleMultiOpen={true}
 />;
 ```
 

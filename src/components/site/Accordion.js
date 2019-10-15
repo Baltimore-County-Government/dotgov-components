@@ -7,7 +7,9 @@ const Accordion = props => {
 
   return (
     <div
-      className={`dg_accordion ${toggleMultiOpen} ${className}`}
+      className={`dg_accordion ${
+        toggleMultiOpen === true ? "dg_allowmultipleopen" : ""
+      } ${className}`}
       key="accordion1"
     >
       <button
@@ -30,7 +32,10 @@ const Accordion = props => {
             type="button"
             aria-controls="collapseOne"
           >
-            {item.header}
+            <span className="dg_accordion_buttontext-holder">
+              {item.header}
+            </span>
+
             <div
               key={`collpaseAccordionSubHeader${item.id}`}
               id={`collpaseAccordionSubHeader${item.id}`}
@@ -63,7 +68,7 @@ Accordion.propTypes = {
   /** Populates the selectable items in the accordion */
   collapseItems: PropTypes.array.isRequired,
   /** Content of the selected item */
-  toggleMultiOpen: PropTypes.string,
+  toggleMultiOpen: PropTypes.bool,
   /** Can add extra cssclass to the element EX. Dark */
   className: PropTypes.string
 };

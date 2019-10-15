@@ -36,6 +36,11 @@
     font-size: $small-heading-font-size;
     font-weight: $font-bold;
     cursor: pointer;
+    .dg_accordion_buttontext-holder {
+      &:focus {
+        outline: 1px solid red;
+      }
+    }
     &:focus {
       color: $blue;
       outline: none;
@@ -45,13 +50,12 @@
       padding-top: $padding-small;
       padding-bottom: $padding-small;
       font-size: $h1-font-size;
-      @include icon-content("\f107"); /*Font awesome right arrow*/
+      @include icon-content($icon-arrow-down); /*Font awesome right arrow*/
       top: 0;
       right: 0;
     }
   }
 }
-
 .dg_button-link.dg_allitems {
   padding-bottom: $padding-small;
   padding-right: $base-spacing-unit;
@@ -59,16 +63,14 @@
   border-bottom: $border-width-small $black solid;
   width: 100%;
 }
-
 .collapse {
   display: none;
 }
 .show {
   display: block;
 }
-
 .collapsed .dg_accordion-btn::after {
   position: absolute;
   cursor: pointer;
-  @include icon-content("\f105"); /*Font awesome down arrow*/
+  @include icon-content($icon-arrow-right); /*Font awesome down arrow*/
 }
