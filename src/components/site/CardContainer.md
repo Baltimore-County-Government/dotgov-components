@@ -2,10 +2,12 @@
 
 ```jsx
 import CardItem from "./CardItem";
+import CardContentCenter from "./CardContentCenter";
+import CardContentLeft from "./CardContentLeft";
 
 <CardContainer>
   <CardItem>
-    <div className="dg_card-content-center">
+    <CardContentCenter>
       <div className="dg_icon-container">
         <i className="fas fa-star" aria-hidden="true"></i>
       </div>
@@ -17,11 +19,11 @@ import CardItem from "./CardItem";
       <button type="button" class="dg_button">
         Learn More
       </button>
-    </div>
+    </CardContentCenter>
   </CardItem>
 
   <CardItem>
-    <div className="dg_card-content-center">
+    <CardContentCenter>
       <svg
         class="bd-placeholder-img card-img-top"
         width="100%"
@@ -43,10 +45,10 @@ import CardItem from "./CardItem";
       <button type="button" class="dg_button">
         Learn More
       </button>
-    </div>
+    </CardContentCenter>
   </CardItem>
   <CardItem>
-    <div className="dg_card-content-center">
+    <CardContentCenter>
       <svg
         class="bd-placeholder-img card-img-top"
         width="100%"
@@ -68,10 +70,10 @@ import CardItem from "./CardItem";
       <button type="button" class="dg_button">
         Learn More
       </button>
-    </div>
+    </CardContentCenter>
   </CardItem>
   <CardItem>
-    <div className="dg_card-content-left">
+    <CardContentLeft>
       <svg
         class="bd-placeholder-img card-img-top"
         width="100%"
@@ -93,10 +95,10 @@ import CardItem from "./CardItem";
       <button type="button" class="dg_button">
         Learn More
       </button>
-    </div>
+    </CardContentLeft>
   </CardItem>
   <CardItem>
-    <div className="dg_card-content-left">
+    <CardContentLeft>
       <svg
         class="bd-placeholder-img card-img-top"
         width="100%"
@@ -118,7 +120,7 @@ import CardItem from "./CardItem";
       <button type="button" class="dg_button">
         Learn More
       </button>
-    </div>
+    </CardContentLeft>
   </CardItem>
 </CardContainer>;
 ```
@@ -229,10 +231,12 @@ Html Snippet:
 
 ```jsx
 import CardItem from "./CardItem";
+import CardContentCenter from "./CardContentCenter";
+import CardContentLeft from "./CardContentLeft";
 <div class="dg_section dark">
   <CardContainer>
     <CardItem>
-      <div className="dg_card-content-center">
+      <CardContentCenter>
         <div className="dg_icon-container">
           <i className="fas fa-star" aria-hidden="true"></i>
         </div>
@@ -244,11 +248,11 @@ import CardItem from "./CardItem";
         <button type="button" class="dg_button">
           Learn More
         </button>
-      </div>
+      </CardContentCenter>
     </CardItem>
 
     <CardItem>
-      <div className="dg_card-content-center">
+      <CardContentCenter>
         <svg
           class="bd-placeholder-img card-img-top"
           width="100%"
@@ -270,10 +274,10 @@ import CardItem from "./CardItem";
         <button type="button" class="dg_button">
           Learn More
         </button>
-      </div>
+      </CardContentCenter>
     </CardItem>
     <CardItem>
-      <div className="dg_card-content-center">
+      <CardContentCenter>
         <svg
           class="bd-placeholder-img card-img-top"
           width="100%"
@@ -295,10 +299,10 @@ import CardItem from "./CardItem";
         <button type="button" class="dg_button">
           Learn More
         </button>
-      </div>
+      </CardContentCenter>
     </CardItem>
     <CardItem>
-      <div className="dg_card-content-left">
+      <CardContentLeft>
         <svg
           class="bd-placeholder-img card-img-top"
           width="100%"
@@ -320,10 +324,10 @@ import CardItem from "./CardItem";
         <button type="button" class="dg_button">
           Learn More
         </button>
-      </div>
+      </CardContentLeft>
     </CardItem>
     <CardItem>
-      <div className="dg_card-content-left">
+      <CardContentLeft>
         <svg
           class="bd-placeholder-img card-img-top"
           width="100%"
@@ -345,7 +349,7 @@ import CardItem from "./CardItem";
         <button type="button" class="dg_button">
           Learn More
         </button>
-      </div>
+      </CardContentLeft>
     </CardItem>
   </CardContainer>
 </div>;
