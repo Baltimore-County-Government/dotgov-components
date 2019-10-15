@@ -7,7 +7,7 @@ it("renders an `ul` without crashing", () => {
   const div = document.createElement("div");
   ReactDOM.render(
     <AlternateList>
-      <AlternateListItem linkText="Item 1" link="#" title="Item 1" />
+      <AlternateListItem linkText="Item 1" link="#" />
     </AlternateList>,
     div
   );
@@ -18,7 +18,7 @@ it("renders an `ol` without crashing", () => {
   const div = document.createElement("div");
   ReactDOM.render(
     <AlternateList type="ordered">
-      <AlternateListItem linkText="Item 1" link="#" title="Item 1" />
+      <AlternateListItem linkText="Item 1" link="#" />
     </AlternateList>,
     div
   );
