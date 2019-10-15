@@ -4,8 +4,8 @@
   display: -ms-flexbox;
   display: flex;
   flex-flow: row wrap;
-  width: 100%;
   max-width: 100%;
+  width: 100%;
 
   .dg_card {
     display: -webkit-box;
@@ -21,10 +21,10 @@
 
     .dg_card-content-center {
       border: $border-width-small solid $gray;
-      text-align: center;
       display: block;
-      padding: $padding-large;
       margin: $margin-small;
+      padding: $padding-large;
+      text-align: center;
 
       .dg_icon-container {
         color: $gold;
@@ -35,10 +35,10 @@
 
     .dg_card-content-left {
       border: $border-width-small solid $gray;
-      text-align: left;
       display: block;
-      padding: $padding-large;
       margin: $margin-small;
+      padding: $padding-large;
+      text-align: left;
 
       .dg_icon-container {
         color: $gold;
@@ -52,9 +52,8 @@
 @media screen and (max-width: $medium-breakpoint) {
   .dg_card-container {
     .dg_card {
-      max-width: 100%;
       flex: 0 1 100%;
-      width: 100%;
+      max-width: 100%;
     }
   }
 }
