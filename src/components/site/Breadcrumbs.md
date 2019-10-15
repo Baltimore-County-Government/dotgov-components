@@ -5,7 +5,10 @@ import BreadcrumbItem from "./Breadcrumbitem";
 import BreadcrumbLinkItem from "./BreadcrumbLinkitem";
 <div class="dg_section">
   <Breadcrumbs>
-    <BreadcrumbLinkItem text="Departments" link="/departments" />
+    <BreadcrumbLinkItem
+      text="Departments"
+      link="/departments"
+    />
     <BreadcrumbLinkItem
       text="Department of Health"
       link="/departments/health"
