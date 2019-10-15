@@ -84,6 +84,7 @@
 
 .collapsed .dg_accordion-btn::after {
   position: absolute;
+  font-size: $icon-arrow-default-size;
   cursor: pointer;
   @include icon-content($icon-arrow-right);
 }
