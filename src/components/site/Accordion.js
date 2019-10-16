@@ -2,16 +2,10 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const Accordion = props => {
-  const { canHaveMultiplePanelsOpen, className } = props;
   const { collapseItems = [] } = props;
 
   return (
-    <div
-      className={`dg_accordion ${
-        canHaveMultiplePanelsOpen === true ? "canHaveMultiplePanelsOpen" : ""
-      }`}
-      key="accordion1"
-    >
+    <div className="dg_accordion" key="accordion1">
       <button
         className="dg_allitems dg_button-link"
         key="collpaseAllActionButton1"
@@ -66,9 +60,7 @@ const Accordion = props => {
 
 Accordion.propTypes = {
   /** Populates the selectable items in the accordion. Header - the text describing the panel. SubHeader - Any text below the header. Content - any text or html element */
-  collapseItems: PropTypes.array.isRequired,
-  /** Content of the selected item */
-  canHaveMultiplePanelsOpen: PropTypes.bool
+  collapseItems: PropTypes.array.isRequired
 };
 
 export default Accordion;

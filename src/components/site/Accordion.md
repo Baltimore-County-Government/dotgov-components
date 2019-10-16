@@ -38,7 +38,7 @@ const collapseItems = [
 
 import Section from "../basic/containers/Section";
 <Section>
-  <Accordion collapseItems={collapseItems} canHaveMultiplePanelsOpen={true} />
+  <Accordion collapseItems={collapseItems} />
 </Section>;
 ```
 
