@@ -15,6 +15,7 @@ const Heading = props => {
 
 const IconHeading = props => {
   const { icon, image } = props;
+
   return (
     <div className="dg_icon-heading__container">
       <span className="dg_icon-heading__icon">
