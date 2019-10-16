@@ -57,7 +57,9 @@
 
 @media screen and (max-width: $extra-large-breakpoint) {
   .dg_primary-footer {
-    flex-wrap: wrap;
+    .dg_section__content {
+      flex-wrap: wrap;
+    }
   }
   .dg_brand-footer {
     margin-bottom: $margin-large;
