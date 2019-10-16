@@ -35,18 +35,21 @@
     text-decoration: none;
     text-transform: uppercase;
     @include default-transition(color);
+    position: relative;
+
+    &:after {
+      color: $gray-light;
+      @include icon-content($icon-arrow-right);
+      font-size: $icon-arrow-default-size;
+      margin-left: $default-margin;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
 
     a {
+      display: block;
       text-decoration: none;
-
-      &:after {
-        color: $gray-light;
-        @include icon-content($icon-arrow-right);
-        float: right;
-        font-size: $icon-arrow-default-size;
-        margin-left: $default-margin;
-        position: relative;
-      }
 
       &:hover {
         color: $vibrant-blue;
