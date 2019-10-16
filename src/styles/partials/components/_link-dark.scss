@@ -1,59 +1,60 @@
 .dg_section.dark {
-	.dg_icon-link {
-		color: $white;
-		border-color: $gray-light;
+  .dg_icon-link {
+    color: $white;
+    border-color: $gray-light;
+    background: $pale-blue;
 
-		&:hover,
-		&.hovered {
-			background: $blue-lightest;
-		}
+    &:hover,
+    &.hovered {
+      background: $blue-lightest;
+    }
 
-		&:active,
-		&.active {
-			background: $pale-blue;
-		}
+    &:active,
+    &.active {
+      background: $pale-blue;
+    }
 
-		&:disabled,
-		&.disabled {
-			background: $gray-light;
-		}
-	}
+    &:disabled,
+    &.disabled {
+      background: $gray-light;
+    }
+  }
 
-	.dg_icon-link--circle {
-		background: none;
-		color: $white;
+  .dg_icon-link--circle {
+    background: none;
+    color: $white;
 
-		i {
-			color: $pale-blue;
-		}
+    i {
+      color: $pale-blue;
+    }
 
-		&:hover,
-		&.hovered {
-			background: none;
-			color: $blue-lightest;
+    &:hover,
+    &.hovered {
+      background: none;
+      color: $blue-lightest;
 
-			i {
-				background: $blue-lightest;
-			}
-		}
+      i {
+        background: $blue-lightest;
+      }
+    }
 
-		&:active,
-		&.active {
-			color: $white;
+    &:active,
+    &.active {
+      color: $white;
 
-			i {
-				background: $white;
-			}
-		}
+      i {
+        background: $white;
+      }
+    }
 
-		&:disabled,
-		&.disabled {
-			background: none;
-			color: $gray-light;
+    &:disabled,
+    &.disabled {
+      background: none;
+      color: $gray-light;
 
-			i {
-				background: $gray-light;
-			}
-		}
-	}
+      i {
+        background: $gray-light;
+      }
+    }
+  }
 }
