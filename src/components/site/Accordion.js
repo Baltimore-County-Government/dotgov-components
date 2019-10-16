@@ -2,10 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const Accordion = props => {
-<<<<<<< HEAD
-=======
-  const { canHaveMultiplePanelsOpen } = props;
->>>>>>> ede04d090585011527bd6ef180ab0b62ac5deebe
   const { collapseItems = [] } = props;
 
   return (
