@@ -76,11 +76,22 @@
 }
 
 @media screen and (max-width: $medium-breakpoint) {
+}
+
+@media screen and (max-width: $medium-breakpoint) {
   .dg_section {
     padding: $padding-larger 0;
 
+    .dg_section__background-image {
+      display: none;
+    }
+
     .dg_section-cta {
       padding: 0;
+    }
+
+    &.dark {
+      background: $pale-blue;
     }
   }
 }
