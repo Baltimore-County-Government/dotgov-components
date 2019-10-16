@@ -4,17 +4,38 @@ const collapseItems = [
     id: 1,
     header: "Accordion Item #1",
     subheader: "This is a subheader",
-    content: "Text goes here"
+    content: <h2>Test Heading Level 2</h2>
   },
   {
     id: 2,
     header: "Accordion Item #2",
     subheader: "",
-    content: "Text goes here"
+    content: (
+      <p>
+        Lorem ipsum dolor amet live-edge laborum ullamco hot chicken do,{" "}
+        <a href="#">tilde sint dolore anim enamel</a> pin tumeric try-hard yr
+        echo park thundercats. Enim next level keffiyeh ramps.
+      </p>
+    )
   },
   {
     id: 3,
     header: "Accordion Item #3",
+    subHeader: "",
+    content: (
+      <ul>
+        <li>Vexillologist</li>
+        <li>Etsy four dollar toast</li>
+        <li>
+          Gochujang minim pitchfork cliche sriracha distillery taiyaki et hoodie
+          copper mug ethical normcore labore ennui
+        </li>
+      </ul>
+    )
+  },
+  {
+    id: 4,
+    header: "Accordion Item #4",
     subheader: "",
     content: (
       <img
@@ -29,10 +50,57 @@ const collapseItems = [
     )
   },
   {
-    id: 4,
-    header: "Accordion Item #4",
+    id: 5,
+    header: "Accordion Item #5",
     subheader: "",
-    content: <a href="https://www.w3schools.com">This is a link </a>
+    content: <h3>90's prism seitan</h3>
+  },
+  {
+    id: 6,
+    header: "Accordion Item #6",
+    subheader: "",
+    content: (
+      <p>
+        <strong>Gluten-free, green juice four dollar toast</strong> hashtag
+        quinoa occupy tofu chia officia banh mi.
+      </p>
+    )
+  },
+  {
+    id: 7,
+    header: "Accordion Item #7",
+    subheader: "",
+    content: <h3>Plaid knausgaard slow-carb</h3>
+  },
+  {
+    id: 8,
+    header: "Accordion Item #8",
+    subheader: "",
+    content: (
+      <p>
+        Pour-over sartorial fashion axe, qui normcore biodiesel post-ironic.
+        Taxidermy paleo thundercats air plant brunch whatever. Hell of
+        vexillologist semiotics, portland hella tattooed beard celiac eu craft
+        beer. Gentrify farm-to-table humblebrag anim knausgaard. Sint organic
+        voluptate, craft beer.
+      </p>
+    )
+  },
+  {
+    id: 9,
+    header: "Accordion Item #9",
+    subheader: "",
+    content: <p>Jean shorts plaid food truck austin leggings fashion axe.</p>
+  },
+  {
+    id: 10,
+    header: "Accordion Item #10",
+    subheader: "",
+    content: (
+      <button type="button" class="dg_button">
+        Click Me
+      </button>
+    )
   }
 ];
 
@@ -47,20 +115,41 @@ import Section from "../basic/containers/Section";
 ```jsx
 const collapseItems = [
   {
-    id: 11,
+    id: 1,
     header: "Accordion Item #1",
     subheader: "This is a subheader",
-    content: "Text goes here"
+    content: <h2>Test Heading Level 2</h2>
   },
   {
-    id: 12,
+    id: 2,
     header: "Accordion Item #2",
     subheader: "",
-    content: "Text goes here"
+    content: (
+      <p>
+        Lorem ipsum dolor amet live-edge laborum ullamco hot chicken do,{" "}
+        <a href="#">tilde sint dolore anim enamel</a> pin tumeric try-hard yr
+        echo park thundercats. Enim next level keffiyeh ramps.
+      </p>
+    )
   },
   {
-    id: 13,
+    id: 3,
     header: "Accordion Item #3",
+    subHeader: "",
+    content: (
+      <ul>
+        <li>Vexillologist</li>
+        <li>Etsy four dollar toast</li>
+        <li>
+          Gochujang minim pitchfork cliche sriracha distillery taiyaki et hoodie
+          copper mug ethical normcore labore ennui
+        </li>
+      </ul>
+    )
+  },
+  {
+    id: 4,
+    header: "Accordion Item #4",
     subheader: "",
     content: (
       <img
@@ -75,10 +164,57 @@ const collapseItems = [
     )
   },
   {
-    id: 14,
-    header: "Accordion Item #4",
+    id: 5,
+    header: "Accordion Item #5",
     subheader: "",
-    content: <a href="https://www.w3schools.com">This is a link </a>
+    content: <h3>90's prism seitan</h3>
+  },
+  {
+    id: 6,
+    header: "Accordion Item #6",
+    subheader: "",
+    content: (
+      <p>
+        <strong>Gluten-free, green juice four dollar toast</strong> hashtag
+        quinoa occupy tofu chia officia banh mi.
+      </p>
+    )
+  },
+  {
+    id: 7,
+    header: "Accordion Item #7",
+    subheader: "",
+    content: <h3>Plaid knausgaard slow-carb</h3>
+  },
+  {
+    id: 8,
+    header: "Accordion Item #8",
+    subheader: "",
+    content: (
+      <p>
+        Pour-over sartorial fashion axe, qui normcore biodiesel post-ironic.
+        Taxidermy paleo thundercats air plant brunch whatever. Hell of
+        vexillologist semiotics, portland hella tattooed beard celiac eu craft
+        beer. Gentrify farm-to-table humblebrag anim knausgaard. Sint organic
+        voluptate, craft beer.
+      </p>
+    )
+  },
+  {
+    id: 9,
+    header: "Accordion Item #9",
+    subheader: "",
+    content: <p>Jean shorts plaid food truck austin leggings fashion axe.</p>
+  },
+  {
+    id: 10,
+    header: "Accordion Item #10",
+    subheader: "",
+    content: (
+      <button type="button" class="dg_button">
+        Click Me
+      </button>
+    )
   }
 ];
 
