@@ -85,6 +85,7 @@
 
 @media screen and (max-width: $extra-large-breakpoint) {
   .dg_date-news-card {
+    min-height: auto;
     margin-bottom: $margin-large;
   }
 }
