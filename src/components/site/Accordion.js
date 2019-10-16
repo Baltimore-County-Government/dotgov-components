@@ -2,6 +2,10 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const Accordion = props => {
+<<<<<<< HEAD
+=======
+  const { canHaveMultiplePanelsOpen } = props;
+>>>>>>> ede04d090585011527bd6ef180ab0b62ac5deebe
   const { collapseItems = [] } = props;
 
   return (
@@ -16,8 +20,8 @@ const Accordion = props => {
         const { id, header, subheader, content } = item;
         return (
           <div
-            key={`collpaseAccordionHeader${id}`}
-            id={`collpaseAccordionHeader${id}`}
+            key={`collapseAccordionHeader${id}`}
+            id={`collapseAccordionHeader${id}`}
             className="collapsed dg_accordion__collapsible"
           >
             <button
@@ -30,8 +34,8 @@ const Accordion = props => {
               <span className="dg_accordion_buttontext-holder">{header}</span>
 
               <div
-                key={`collpaseAccordionSubHeader${id}`}
-                id={`collpaseAccordionSubHeader${id}`}
+                key={`collapseAccordionSubHeader${id}`}
+                id={`collapseAccordionSubHeader${id}`}
                 className="dg_accordion__subheader"
               >
                 {subheader}
@@ -44,8 +48,8 @@ const Accordion = props => {
               data-parent="#accordionExample1"
             >
               <div
-                key={`collpaseAccordionMainText${id}`}
-                id={`collpaseAccordionMainText${id}`}
+                key={`collapseAccordionMainText${id}`}
+                id={`collapseAccordionMainText${id}`}
                 className="dg_accordion-item-body"
               >
                 {content}
