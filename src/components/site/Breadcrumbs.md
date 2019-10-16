@@ -30,9 +30,7 @@ Html Snippet:
       <a href="/departments">Departments</a>
     </li>
     <li class="dg_breadcrumb">
-      <a href="/departments/health"
-        >Department of Health</a
-      >
+      <a href="/departments/health">Department of Health</a>
     </li>
     <li>Adoptable Pets</li>
   </ul>
@@ -50,10 +48,7 @@ import BreadcrumbLinkItem from "./BreadcrumbLinkitem";
   style={{ paddingLeft: "20px", paddingRight: "20px" }}
 >
   <Breadcrumbs>
-    <BreadcrumbLinkItem
-      text="Departments"
-      link="/departments"
-    />
+    <BreadcrumbLinkItem text="Departments" link="/departments" />
     <BreadcrumbLinkItem
       text="Department of Health"
       link="/departments/health"
@@ -75,9 +70,7 @@ Html Snippet:
       <a href="/departments">Departments</a>
     </li>
     <li>
-      <a href="/departments/health"
-        >Department of Health</a
-      >
+      <a href="/departments/health">Department of Health</a>
     </li>
     <li>Adoptable Pets</li>
   </ul>
