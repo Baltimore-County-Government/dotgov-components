@@ -28,17 +28,12 @@
   }
 }
 
-@media screen and (min-width: $large-breakpoint) {
-  .dg_image {
-    position: relative;
-    display: block;
-  }
-}
-
 @media screen and (max-width: $medium-breakpoint) {
   .dg_image {
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    &.left,
+    &.right {
+      max-width: 100%;
+      margin: auto;
+    }
   }
 }
