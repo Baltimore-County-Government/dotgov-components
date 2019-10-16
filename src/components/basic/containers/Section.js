@@ -14,8 +14,10 @@ const Section = props => {
           aria-hidden="true"
         />
       )}
-      {children}
-      {ctaButton && <div className="dg_section-cta">{ctaButton}</div>}
+      <div className="dg_section__content">
+        {children}
+        {ctaButton && <div className="dg_section-cta">{ctaButton}</div>}
+      </div>
     </section>
   );
 };

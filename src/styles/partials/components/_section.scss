@@ -19,6 +19,22 @@
     text-align: center;
   }
 
+  .dg_section__content {
+    position: relative;
+    z-index: 999;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: $white;
+    display: block;
+  }
+
   &.light {
     background: $gray-lightest;
   }
@@ -33,6 +49,10 @@
 
     p {
       color: $white;
+    }
+
+    &:after {
+      background: rgba($pale-blue, 0.9);
     }
   }
 }
