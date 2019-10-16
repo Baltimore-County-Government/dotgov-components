@@ -36,8 +36,8 @@ const Accordion = props => {
               <span className="dg_accordion_buttontext-holder">{header}</span>
 
               <div
-                key={`collpaseAccordionSubHeader${id}`}
-                id={`collpaseAccordionSubHeader${id}`}
+                key={`collapseAccordionSubHeader${id}`}
+                id={`collapseAccordionSubHeader${id}`}
                 className="dg_accordion__subheader"
               >
                 {subheader}
@@ -50,8 +50,8 @@ const Accordion = props => {
               data-parent="#accordionExample1"
             >
               <div
-                key={`collpaseAccordionMainText${id}`}
-                id={`collpaseAccordionMainText${id}`}
+                key={`collapseAccordionMainText${id}`}
+                id={`collapseAccordionMainText${id}`}
                 className="dg_accordion-item-body"
               >
                 {content}
