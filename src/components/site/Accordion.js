@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const Accordion = props => {
-  const { canHaveMultiplePanelsOpen, className } = props;
+  const { canHaveMultiplePanelsOpen } = props;
   const { collapseItems = [] } = props;
 
   return (
@@ -22,8 +22,8 @@ const Accordion = props => {
         const { id, header, subheader, content } = item;
         return (
           <div
-            key={`collpaseAccordionHeader${id}`}
-            id={`collpaseAccordionHeader${id}`}
+            key={`collapseAccordionHeader${id}`}
+            id={`collapseAccordionHeader${id}`}
             className="collapsed dg_accordion__collapsible"
           >
             <button
