@@ -1,7 +1,7 @@
 import React from "react";
 
-const CardItem = props => {
+const Card = props => {
   return <div className="dg_card">{props.children}</div>;
 };
 
-export default CardItem;
+export default Card;

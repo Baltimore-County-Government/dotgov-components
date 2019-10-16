@@ -1,19 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import CardContainer from "./CardContainer";
+import Card from "./Card";
 import CardContentCenter from "./CardContentCenter";
 import CardContentLeft from "./CardContentLeft";
-import CardItem from "./CardItem";
+import CardFooterCenter from "./CardFooterCenter";
+import CardFooterLeft from "./CardFooterLeft";
 
 it("renders without crashing", () => {
   const div = document.createElement("div");
   ReactDOM.render(
-    <CardContainer>
-      <CardItem>
-        <CardContentCenter />
-        <CardContentLeft />
-      </CardItem>
-    </CardContainer>,
+    <Card>
+      <CardContentCenter />
+      <CardContentLeft />
+      <CardFooterCenter />
+      <CardFooterLeft />
+    </Card>,
     div
   );
   ReactDOM.unmountComponentAtNode(div);

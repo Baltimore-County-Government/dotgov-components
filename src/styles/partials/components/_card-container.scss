@@ -1,59 +1,42 @@
-.dg_card-container {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
+.dg_card {
+  border: $border-width-small solid $gray;
   display: flex;
-  flex-flow: row wrap;
-  max-width: 100%;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: $margin-large;
+  padding: $padding-large;
   width: 100%;
 
-  .dg_card {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    flex: 0 1 33.3333%;
-    flex-wrap: wrap;
-    max-width: 33.3333%;
-    min-width: 0;
-    position: relative;
-    width: 100%;
+  .dg_card-content-center {
+    display: block;
+    text-align: center;
 
-    .dg_card-content-center {
-      border: $border-width-small solid $gray;
-      display: block;
-      margin: $margin-small;
-      padding: $padding-large;
-      text-align: center;
-
-      .dg_icon-container {
-        color: $gold;
-        font-size: 60px;
-        margin-bottom: 15px;
-      }
-    }
-
-    .dg_card-content-left {
-      border: $border-width-small solid $gray;
-      display: block;
-      margin: $margin-small;
-      padding: $padding-large;
-      text-align: left;
-
-      .dg_icon-container {
-        color: $gold;
-        font-size: 60px;
-        margin-bottom: 15px;
-      }
+    .dg_icon-container {
+      color: $gold;
+      font-size: 60px;
+      margin-bottom: 20px;
     }
   }
-}
+  .dg_card-footer-center {
+    display: block;
+    text-align: center;
+  }
 
-@media screen and (max-width: $medium-breakpoint) {
-  .dg_card-container {
-    .dg_card {
-      flex: 0 1 100%;
-      max-width: 100%;
+  .dg_card-footer-left {
+    display: block;
+    text-align: left;
+  }
+
+  .dg_card-content-left {
+    display: block;
+    text-align: left;
+
+    .dg_icon-container {
+      color: $gold;
+      font-size: 60px;
+      margin-bottom: 20px;
     }
   }
 }
