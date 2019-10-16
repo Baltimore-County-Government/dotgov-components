@@ -23,13 +23,16 @@ Html Snippet:
 By including a button inside of a [dark section](dark-section), it will automatically be styled appropriately.
 
 ```jsx
-<div className="dg_section dark" style={{ display: 'flex', justifyContent: 'space-between', padding: '10px' }}>
-	<Button text="Default" />
-	<Button text="Hovered" className="hovered" />
-	<Button text="Active" className="active" />
-	<Button text="Focused" className="focused" />
-	<Button text="Disabled" className="disabled" />
-</div>
+import Section from './containers/Section'
+;<Section className="dark">
+    <div style={{ display: 'flex', justifyContent: 'space-between', padding: '10px' }}>
+        <Button text="Default" />
+        <Button text="Hovered" className="hovered" />
+        <Button text="Active" className="active" />
+        <Button text="Focused" className="focused" />
+        <Button text="Disabled" className="disabled" />
+    </div>
+</Section>
 ```
 
 Html Snippet:
