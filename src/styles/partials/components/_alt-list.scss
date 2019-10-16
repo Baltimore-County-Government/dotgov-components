@@ -39,6 +39,7 @@
 
     &:after {
       color: $gray-light;
+      @include default-transition;
       @include icon-content($icon-arrow-right);
       font-size: $icon-arrow-default-size;
       margin-left: $default-margin;
@@ -47,15 +48,13 @@
       top: 0;
     }
 
+    &:hover:after {
+      color: $vibrant-blue;
+    }
+
     a {
       display: block;
       text-decoration: none;
-
-      &:hover {
-        color: $vibrant-blue;
-        cursor: pointer;
-        text-decoration: none;
-      }
 
       i {
         @include list-icon;
