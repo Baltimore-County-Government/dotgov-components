@@ -40,6 +40,9 @@ export {
 } from "./components/site/BreadCrumbLinkItem";
 
 /** Other */
+export {
+  default as Accordion
+} from "./components/site/Accordion"; /** This should to the default components part of the project */
 export { default as Button } from "./components/basic/Button";
 export { default as IconHeading } from "./components/basic/IconHeading";
 export { default as IconLink } from "./components/basic/IconLink";
