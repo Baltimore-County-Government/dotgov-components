@@ -1,3 +1,5 @@
+$icon-arrow-width: 32px;
+
 .dg_alt-list {
   list-style-type: none;
   margin-bottom: $margin-large;
@@ -35,29 +37,32 @@
     text-decoration: none;
     text-transform: uppercase;
     @include default-transition(color);
+    position: relative;
+    padding-right: $icon-arrow-width; /* leave space for the absolutely position icon */
+
+    &:after {
+      color: $gray-light;
+      @include default-transition;
+      @include icon-content($icon-arrow-right);
+      font-size: $icon-arrow-default-size;
+      margin-left: $default-margin;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    &:hover:after {
+      color: $vibrant-blue;
+    }
 
     a {
+      display: block;
       text-decoration: none;
-
-      &:after {
-        color: $gray-light;
-        @include icon-content($icon-arrow-right);
-        float: right;
-        font-size: $icon-arrow-default-size;
-        margin-left: $default-margin;
-        position: relative;
-      }
-
-      &:hover {
-        color: $vibrant-blue;
-        cursor: pointer;
-        text-decoration: none;
-      }
 
       i {
         @include list-icon;
         text-align: left;
-        min-width: 32px;
+        min-width: $icon-arrow-width;
       }
     }
   }
