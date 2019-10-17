@@ -1,4 +1,4 @@
- @keyframes fade-in {
+@keyframes fade-in {
   from {
     opacity: 0;
   }
@@ -47,7 +47,7 @@ dialog {
   background-color: rgb(255, 255, 255);
   z-index: 3;
   position: fixed;
-  top: 10%;
+  top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -124,4 +124,3 @@ a {
     right: 1em;
   }
 }
- 
