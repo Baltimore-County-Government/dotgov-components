@@ -3,14 +3,16 @@
 }
 
 .dg_primary-footer {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-
-  & > div {
+  .dg_section__content {
     display: flex;
-    flex-direction: column;
+    flex-wrap: nowrap;
     justify-content: space-between;
+
+    & > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
   }
 }
 
@@ -24,7 +26,7 @@
 }
 
 .dg_copyright {
-  color: $gray-lightest;
+  color: $white;
   font-family: $default-heading-font;
   font-size: $smallest-font-size;
   text-transform: uppercase;
@@ -37,6 +39,7 @@
 .dg_brand-footer {
   .dg_seal {
     max-width: 100px;
+    width: 100%;
   }
 }
 
@@ -54,7 +57,9 @@
 
 @media screen and (max-width: $extra-large-breakpoint) {
   .dg_primary-footer {
-    flex-wrap: wrap;
+    .dg_section__content {
+      flex-wrap: wrap;
+    }
   }
   .dg_brand-footer {
     margin-bottom: $margin-large;

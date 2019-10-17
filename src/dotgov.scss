@@ -26,6 +26,8 @@
 /** partials */
 
 /** components */
+@import "./styles/partials/components/accordion";
+@import "./styles/partials/components/accordion-dark";
 @import "./styles/partials/components/breadcrumbs-dark";
 @import "./styles/partials/components/breadcrumbs";
 @import "./styles/partials/components/section";
@@ -56,7 +58,7 @@
 @import "./styles/partials/components/summary-list";
 @import "./styles/partials/components/page-header";
 @import "./styles/partials/components/page-header-dark";
-@import "./styles/partials/components/modal";
+@import "./styles/partials/components/images";
 
 /** dark themed components - please start your file with .dg_section.dark and nest the styles below it **/
 @import "./styles/partials/components/table-dark";

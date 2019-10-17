@@ -45,7 +45,13 @@ module.exports = {
     {
       name: "Site Elements",
       content: "src/docs/SiteElements.md",
-      components: "src/components/site/**/*.js"
+      components: "src/components/site/**/*.js",
+      sections: [
+        {
+          name: "Images",
+          content: "src/components/site/Images.md"
+        }
+      ]
     }
   ],
   template: {
@@ -53,6 +59,9 @@ module.exports = {
       scripts: [
         {
           src: "https://kit.fontawesome.com/2475edd293.js"
+        },
+        {
+          src: "http://baltimorecountymd.gov/sebin/t/i/dotgov-accordion.min.js"
         }
       ]
     }

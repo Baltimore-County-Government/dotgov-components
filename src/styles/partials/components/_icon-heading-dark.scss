@@ -4,5 +4,12 @@
     &:after {
       background-color: $pale-blue-lightest;
     }
+
+    &.dg_icon-heading__background-image {
+      :before,
+      i:before {
+        background: transparent;
+      }
+    }
   }
 }

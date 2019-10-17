@@ -1,9 +1,38 @@
 .dg_section {
   padding: $padding-jumbo 0;
-  background: $white;
+  position: relative;
+
+  .dg_section__background-image {
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 100%;
+    object-fit: cover;
+  }
+
   .dg_section-cta {
     padding: $padding-jumbo 0 0;
     text-align: center;
+  }
+
+  .dg_section__content {
+    position: relative;
+    z-index: 999;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: $white;
+    display: block;
   }
 
   &.light {
@@ -15,27 +44,51 @@
     color: $white;
 
     h2 {
-       @include alt-h2-heading($gold);
-     }
+      @include alt-h2-heading($gold);
+    }
 
     p {
       color: $white;
     }
+
+    &:after {
+      background: rgba($pale-blue, 0.9);
+    }
   }
 }
 
-@media screen and (max-width: $large-breakpoint) {
+.dg_section__background-image {
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: $extra-large-breakpoint) {
   .dg_section .dg_section-cta {
-    padding: $padding-largest 0 0;
+    padding: $padding-larger 0 0;
   }
 }
 
 @media screen and (max-width: $medium-breakpoint) {
   .dg_section {
-    padding: ($padding-jumbo / 2) 0;
+    padding: $padding-larger 0;
+
+    .dg_section__background-image {
+      display: none;
+    }
 
     .dg_section-cta {
       padding: 0;
+    }
+
+    &.dark {
+      background: $pale-blue;
     }
   }
 }
