@@ -84,9 +84,10 @@
 }
 
 @media screen and (max-width: $medium-breakpoint) {
-  .dg_page-header {
+  .dg_page-header.blue:after {
     background: $pale-blue;
   }
+
   .dg_page-header__backgroundImage {
     display: none;
   }
