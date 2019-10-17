@@ -7,9 +7,11 @@ const StepList = props => {
   const cssClasses = classnames("dg_step-list", type);
   return (
     <div class={cssClasses}>
-      <button class="dg_button-link dg_step-list__show-all-btn">
-        Show All
-      </button>
+      <div className="text-right">
+        <button class="dg_button-link dg_step-list__show-all-btn">
+          Show All
+        </button>
+      </div>
       <ol class="dg_step-list__list">{children}</ol>
     </div>
   );
