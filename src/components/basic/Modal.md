@@ -6,52 +6,39 @@ import IconHeading from "./IconHeading";
 import section from "../basic/containers/Section";
 
 <section style={{ padding: "150px" }} className="dg_modal">
-  <section className="dg_section dark">
-    <div className="dg_modal_flex">
-      <Button className="dg_modal_flex__button" text="X" />
-    </div>
-    <div className="dg_modal__inner">
-      <IconHeading text="Heading" icon="fas fa-star" />
-      <div class="dg_modal__context">
-        <p>
-          Do you have the ability to repeat the following statement?:How much
-          wood would a woodchuck chuck if a woodchuck could chcuk wood?
-        </p>
-      </div>
-
-      <div className="dg_modal_footer">
-        <Button text="NO" />
-        <Button text="YES" />
-      </div>
-    </div>
-  </section>
+  <button type="button" data-a11y-dialog-show="my-accessible-dialog">
+  Open Modal
+</button>
 </section>;
 ```
 
 Html Snippet:
 
+
+Html Snippet: Markup for Dialog Box
+Name of the class of a modal should be `dg_modal`
 ```html
-<section class="dg_modal" style="padding: 150px;">
-  <section class="dg_section dark">
-    <div class="dg_modal_flex">
-      <button type="button" class="dg_button dg_modal_flex__button">X</button>
-    </div>
-    <div class="dg_modal__inner">
-      <div class="dg_icon-heading__container">
-        <i class="fas fa-star" aria-hidden="true"></i>
-        <h2 class="dg_icon-heading">Heading</h2>
-      </div>
-      <div class="dg_modal__context">
-        <p>
-          Do you have the ability to repeat the following statement?:How much
-          wood would a woodchuck chuck if a woodchuck could chcuk wood?
-        </p>
-      </div>
-      <div class="dg_modal_footer">
-        <button type="button" class="dg_button">NO</button
-        ><button type="button" class="dg_button">YES</button>
-      </div>
-    </div>
+<div class="dg_modal dialog" id="my-accessible-dialog">
+  <div class="dialog-overlay" tabindex="-1" data-a11y-dialog-hide></div>
+  <dialog class="dialog-content" aria-labelledby="dialog-title">
+    <button type="button" class="dialog-close" data-a11y-dialog-hide aria-label="Close this dialog window">
+      &times;
+    </button>
+    <h1 id="dialog-title">Dialog Title</h1>
+    <p>This is content that lives inside of a dialog box. It's fully accessible which makes our users happy. And because it's inside of a dialog that pops up, it makes our designers and UX people happy as well.</p>
+
+    <p>The focus is already on the close button. This way users do not need to tab again after reading the content in this box. Pushing ESC will also close this dialog.</p>
+  </dialog>
   </section>
-</section>
+</div>
+
+```
+
+How to associate button to Dialog Box
+  The `id` of the modal dialog must match the `data-a11y-dialog-show` attribute on the button that will trigger the modal.
+```html
+<button type="button" data-a11y-dialog-show="my-accessible-dialog">
+  Open Modal
+</button>
+
 ```

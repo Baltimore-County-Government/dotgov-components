@@ -1,16 +1,8 @@
 .dg_section.dark {
-  .dg_icon-heading__container,
-  .dg_icon-heading__image-container {
-    background: none;
-
-     :before,
-     i:before {
-       background: $pale-blue;
-     }
-
-    :after,
-    i:after {
-      border-top-color: $pale-blue-lightest;
+  .dg_icon-heading__icon {
+    &:before,
+    &:after {
+      background-color: $pale-blue-lightest;
     }
   }
 }
