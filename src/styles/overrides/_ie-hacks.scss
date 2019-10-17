@@ -16,7 +16,6 @@
     IE11 does not support object fill, which makes this background image very distorted.
     It was a design decision to remove from IE in order to make the display more appealing.
   */
-
   .dg_section__background-image,
   .dg_page-header__backgroundImage {
     display: none;
