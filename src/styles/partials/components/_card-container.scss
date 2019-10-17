@@ -7,20 +7,12 @@
   position: relative;
   margin-bottom: $margin-large;
   padding: $padding-large;
+  text-align: center;
   width: 100%;
 
   .dg_icon-container {
     color: $gold;
     font-size: $largest-icon-size;
     margin-bottom: 20px;
-  }
-
-  .dg_card__content {
-    display: block;
-    text-align: center;
-  }
-  .dg_card__footer {
-    display: block;
-    text-align: center;
   }
 }
