@@ -31,34 +31,6 @@
         tab again after reading the content in this box. Pushing ESC will also
         close this dialog.
       </p>
-
-      <p>
-        The focus is already on the close button. This way users do not need to
-        tab again after reading the content in this box. Pushing ESC will also
-        close this dialog.
-      </p>
-      <p>
-        This is content that lives inside of a dialog box. It's fully accessible
-        which makes our users happy. And because it's inside of a dialog that
-        pops up, it makes our designers and UX people happy as well.
-      </p>
-
-      <p>
-        The focus is already on the close button. This way users do not need to
-        tab again after reading the content in this box. Pushing ESC will also
-        close this dialog.
-      </p>
-      <p>
-        This is content that lives inside of a dialog box. It's fully accessible
-        which makes our users happy. And because it's inside of a dialog that
-        pops up, it makes our designers and UX people happy as well.
-      </p>
-
-      <p>
-        The focus is already on the close button. This way users do not need to
-        tab again after reading the content in this box. Pushing ESC will also
-        close this dialog.
-      </p>
     </dialog>
   </div>
   <div class="dg_modal dialog" id="my-accessible-dialog1">
