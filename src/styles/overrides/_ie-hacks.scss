@@ -1,0 +1,28 @@
+/*
+    Target IE10 && IE11 based on  https://stackoverflow.com/a/22788131/1143670.
+    All Styles for these browsers must be included in the following media query.
+*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  /*
+    This class enables us to flex items at equal heights, but does not work with IE11.
+    In this case, we set the display to static which will cause the elements to not show equal height,
+    but will otherwise display as expected.
+  */
+  .d-lg-flex {
+    display: block !important;
+  }
+
+  /*
+    IE11 does not support object fill, which makes this background image very distorted.
+    It was a design decision to remove from IE in order to make the display more appealing.
+  */
+  .dg_section__background-image,
+  .dg_page-header__backgroundImage {
+    display: none;
+  }
+
+  .dg_page-header.blue:after,
+  .dg_section.dark {
+    background: $pale-blue;
+  }
+}
