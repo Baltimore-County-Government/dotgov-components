@@ -6,7 +6,7 @@ const StepListItem = props => {
   return (
     <li class="dg_step-list__list-section" id={`step-${id}`}>
       <button
-        class="dg_step-list__toggle-btn"
+        class="dg_button-link dg_step-list__toggle-btn"
         aria-expanded="false"
         aria-controls={`panel-${id}`}
         type="button"
