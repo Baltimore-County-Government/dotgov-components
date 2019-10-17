@@ -9,15 +9,15 @@
   padding: $padding-large;
   width: 100%;
 
+  .dg_icon-container {
+    color: $gold;
+    font-size: 60px;
+    margin-bottom: 20px;
+  }
+
   .dg_card-content-center {
     display: block;
     text-align: center;
-
-    .dg_icon-container {
-      color: $gold;
-      font-size: 60px;
-      margin-bottom: 20px;
-    }
   }
   .dg_card-footer-center {
     display: block;
@@ -32,11 +32,5 @@
   .dg_card-content-left {
     display: block;
     text-align: left;
-
-    .dg_icon-container {
-      color: $gold;
-      font-size: 60px;
-      margin-bottom: 20px;
-    }
   }
 }
