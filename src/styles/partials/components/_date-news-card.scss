@@ -3,7 +3,6 @@
   display: block;
   padding: $padding-larger;
   text-decoration: none;
-  min-height: 100%;
 
   p {
     margin-bottom: 0;
@@ -85,7 +84,6 @@
 
 @media screen and (max-width: $extra-large-breakpoint) {
   .dg_date-news-card {
-    min-height: auto;
     margin-bottom: $margin-large;
   }
 }
