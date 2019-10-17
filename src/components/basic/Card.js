@@ -1,7 +1,10 @@
 import React from "react";
+import classnames from "classnames";
 
 const Card = props => {
-  return <div className="dg_card">{props.children}</div>;
+  const { className } = props;
+  const cssClasses = classnames("dg_card", className);
+  return <div className={cssClasses}>{props.children}</div>;
 };
 
 export default Card;
