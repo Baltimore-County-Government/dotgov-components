@@ -1,3 +1,5 @@
+Content alignment will be achieved with Bootstrap 4's alignment utilities. View their documentation for [usage](https://getbootstrap.com/docs/4.3/utilities/text/#text-alignment).
+
 ### Card Container Default
 
 ```jsx
