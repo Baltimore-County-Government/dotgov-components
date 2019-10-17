@@ -15,22 +15,12 @@
     margin-bottom: 20px;
   }
 
-  .dg_card-content-center {
+  .dg_card__content {
     display: block;
     text-align: center;
   }
-  .dg_card-footer-center {
+  .dg_card__footer {
     display: block;
     text-align: center;
-  }
-
-  .dg_card-footer-left {
-    display: block;
-    text-align: left;
-  }
-
-  .dg_card-content-left {
-    display: block;
-    text-align: left;
   }
 }
