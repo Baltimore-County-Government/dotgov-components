@@ -67,6 +67,9 @@
 @import "./styles/partials/template/subpage";
 @import "./styles/partials/template/sidebar";
 
+/** overrides */
+@import "./styles/overrides/ie-hacks";
+
 * {
   box-sizing: border-box;
 }

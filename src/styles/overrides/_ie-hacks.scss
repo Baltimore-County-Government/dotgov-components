@@ -1,0 +1,6 @@
+/*
+    Target IE10 && IE11 based on  https://stackoverflow.com/a/22788131/1143670.
+    All Styles for these browsers must be included in the following media query.
+*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+}
