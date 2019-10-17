@@ -1,135 +1,4 @@
-.dg_modal {
-  width: auto;
-  height: auto;
-  background: $black;
-  opacity: 0.95;
-
-  .dg_section {
-    border: $border-width-small solid $blue-lightest;
-    padding: 0px;
-    .dg_modal_flex {
-      display: flex;
-      justify-content: flex-end;
-      .dg_modal_flex__button {
-        border: none;
-        padding: 0px;
-        font-size: 30px;
-        margin-top: 0px;
-
-        &:hover,
-        &.hovered {
-          background: $blue-lightest;
-        }
-
-        &:active,
-        &.active,
-        &:disabled,
-        &.disabled {
-          background: none;
-        }
-
-        &:disabled,
-        &.disabled {
-          border-color: $gray-light;
-        }
-      }
-    }
-  }
-
-  .dg_modal__inner {
-    position: relative;
-    padding: $padding-largest;
-    margin-top: $margin-small;
-    margin-bottom: $margin-small;
-    width: auto;
-    height: auto;
-    opacity: 1;
-
-    .dg_modal__context {
-      letter-spacing: 0;
-      color: $white;
-      opacity: 1;
-    }
-    p {
-      text-align: center;
-      font: italic 28px/44px $default-body-font;
-      margin-bottom: 60px;
-    }
-    .dg_modal_footer {
-      display: flex;
-      justify-content: space-between;
-      .dg_button {
-        background: none;
-        color: $white;
-        width: 150px;
-        height: 50px;
-
-        &:hover,
-        &.hovered {
-          background: $blue-lightest;
-        }
-
-        &:active,
-        &.active,
-        &:disabled,
-        &.disabled {
-          background: none;
-        }
-
-        &:disabled,
-        &.disabled {
-          border-color: $gray-light;
-        }
-      }
-    }
-  }
-}
-
-
-
- [data-a11y-dialog-native] .dialog-overlay {
-  display: none;
-}
-
-
-dialog[open] {
-  display: block;
-}
-
-.dialog[aria-hidden="true"] {
-  display: none;
-}
-
-
-.dialog-overlay {
-  z-index: 2;
-  background-color: rgba(0, 0, 0, 0.66);
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-}
-
-dialog::backdrop {
-  background-color: rgba(0, 0, 0, 0.66);
-}
-
-.dialog-content {
-  background-color: rgb(255, 255, 255);
-  z-index: 3;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  margin: 0;
-}
-
-
-
-@keyframes fade-in {
+ @keyframes fade-in {
   from {
     opacity: 0;
   }
@@ -137,7 +6,6 @@ dialog::backdrop {
     opacity: 1;
   }
 }
-
 @keyframes appear {
   from {
     transform: translate(-50%, -40%);
@@ -148,39 +16,64 @@ dialog::backdrop {
     opacity: 1;
   }
 }
-
-.dialog:not([aria-hidden="true"]) > .dialog-overlay {
-  animation: fade-in 200ms 1 both;
+[data-a11y-dialog-native] {
+  .dialog-overlay {
+    display: none;
+  }
 }
-
-.dialog:not([aria-hidden="true"]) > .dialog-content {
-  animation: appear 400ms 150ms 1 both;
+dialog[open] {
+  display: block;
+  margin-top: 150px;
 }
-
+.dialog[aria-hidden="true"] {
+  display: none;
+}
+.dialog-overlay {
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.66);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(43, 46, 56, 0.9);
+}
+dialog {
+  &::backdrop {
+    background-color: rgba(0, 0, 0, 0.66);
+  }
+}
 .dialog-content {
+  background-color: rgb(255, 255, 255);
+  z-index: 3;
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: 0;
   padding: 1em;
   max-width: 90%;
   width: 600px;
   border-radius: 2px;
 }
-
-@media screen and (min-width: 700px) {
-  .dialog-content {
-    padding: 2em;
+.dialog {
+  &:not([aria-hidden="true"]) {
+    > .dialog-overlay {
+      animation: fade-in 200ms 1 both;
+    }
+    > .dialog-content {
+      animation: appear 400ms 150ms 1 both;
+    }
+  }
+  h1 {
+    margin: 0 0 10px 0;
+    font-size: 1.25em;
+    text-align: left;
+    color: black;
   }
 }
-
-.dialog-overlay {
-  background-color: rgba(43, 46, 56, 0.9);
-}
-
-.dialog h1 {
-  margin: 0 0 10px 0;
-  font-size: 1.25em;
-  text-align: left;
-  color: black;
-}
-
 .dialog-close {
   position: absolute;
   top: 0.5em;
@@ -197,14 +90,6 @@ dialog::backdrop {
   transition: 0.15s;
   color: black;
 }
-
-@media screen and (min-width: 700px) {
-  .dialog-close {
-    top: 1em;
-    right: 1em;
-  }
-}
-
 .link-like {
   background-color: transparent;
   text-decoration: underline;
@@ -213,17 +98,30 @@ dialog::backdrop {
   padding: 0;
   font: inherit;
   cursor: pointer;
+  color: red;
+  &:hover {
+    color: green;
+  }
+  &:active {
+    color: green;
+  }
 }
-
-.link-like,
 a {
   color: red;
+  &:hover {
+    color: green;
+  }
+  &:active {
+    color: green;
+  }
 }
-
-.link-like:hover,
-.link-like:active,
-a:hover,
-a:active {
-  color: green;
+@media screen and (min-width: 700px) {
+  .dialog-content {
+    padding: 2em;
+  }
+  .dialog-close {
+    top: 1em;
+    right: 1em;
+  }
 }
-
+ 
