@@ -93,7 +93,7 @@ import Section from "./containers/Section";
 </Section>;
 ```
 
-### HTML Snippet
+HTML Snippet:
 
 ```html
 <div class="dg_card">
@@ -208,7 +208,7 @@ import Section from "./containers/Section";
 </Section>;
 ```
 
-### HTML Snippet
+HTML Snippet:
 
 ```html
 <div class="dg_card">
