@@ -3,4 +3,12 @@
     All Styles for these browsers must be included in the following media query.
 */
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  /*
+        This class enables us to flex items at equal heights, but does not work with IE11.
+        In this case, we set the display to static which will cause the elements to not show equal height,
+        but will otherwise display as expected.
+    */
+  .d-lg-flex {
+    display: block !important;
+  }
 }
