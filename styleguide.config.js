@@ -58,10 +58,13 @@ module.exports = {
     head: {
       scripts: [
         {
-          src: "https://kit.fontawesome.com/2475edd293.js"
+          src: "//kit.fontawesome.com/2475edd293.js"
         },
         {
-          src: "http://baltimorecountymd.gov/sebin/t/i/dotgov-accordion.min.js"
+          src: "//baltimorecountymd.gov/sebin/t/i/dotgov-accordion.min.js"
+        },
+        {
+          src: "//baltimorecountymd.gov/sebin/d/m/dotgov-modal.min.js"
         }
       ]
     }
