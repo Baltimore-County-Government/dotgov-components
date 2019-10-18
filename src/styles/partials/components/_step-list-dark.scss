@@ -5,14 +5,14 @@
 
   .dg_step-list__show-all-btn,
   .dg_step-list__toggle-btn,
-  .dg_step-list__toggle-btn__title {
+  .dg_step-list__toggle-btn__title,
+  .dg_step-list__list > li.is-hovered:before {
     color: $white;
   }
 
   .dg_step-list__list > li.is-hovered:before {
     background: $blue-lightest;
     border-color: $blue-lightest;
-    color: $white;
   }
 
   /* Static Step List */
