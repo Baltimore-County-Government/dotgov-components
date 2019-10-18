@@ -22,58 +22,58 @@
     padding-bottom: $default-padding;
     counter-increment: my-awesome-counter;
     position: relative;
-  }
 
-  li:first-child {
-    border-top: $border-width-small solid $gray-light;
-    padding-top: $default-padding;
-  }
+    &:first-child {
+      border-top: $border-width-small solid $gray-light;
+      padding-top: $default-padding;
+    }
 
-  /** The circle that comes before the step */
-  & > li::before {
-    background: $gold;
-    border: $default-border-width solid $gold;
-    content: counter(my-awesome-counter);
-    font-weight: $font-bold;
-    font-size: $h3-font-size;
-    font-family: $default-heading-font;
-    position: absolute;
-    top: -5px;
-    bottom: 0;
-    left: -60px;
-    height: 40px;
-    width: 40px;
-    line-height: 34px; /* Offset by the border width */
-    border-radius: 50%;
-    text-align: center;
-    z-index: 4;
-  }
+    /** The circle that comes before the step */
+    &:before {
+      background: $gold;
+      border: $default-border-width solid $gold;
+      content: counter(my-awesome-counter);
+      font-weight: $font-bold;
+      font-size: $h3-font-size;
+      font-family: $default-heading-font;
+      position: absolute;
+      top: -5px;
+      bottom: 0;
+      left: -60px;
+      height: 40px;
+      width: 40px;
+      line-height: 34px; /* Offset by the border width */
+      border-radius: 50%;
+      text-align: center;
+      z-index: 4;
+    }
 
-  /** The vertical line that connects each step circle */
-  & > li::after {
-    content: "";
-    position: absolute;
-    z-index: 0;
-    width: 0;
-    height: 100%;
-    border-left: $default-border-width solid $gray-light;
-    background: $white;
-    left: -41px; /* I think this offset is being caused by the border width */
-    top: 30px;
-  }
+    /** The vertical line that connects each step circle */
+    &:after {
+      content: "";
+      position: absolute;
+      z-index: 0;
+      width: 0;
+      height: 100%;
+      border-left: $default-border-width solid $gray-light;
+      background: $white;
+      left: -41px; /* I think this offset is being caused by the border width */
+      top: 30px;
+    }
 
-  & > li:last-child::after {
-    border: none;
-  }
+    &:last-child:after {
+      border: none;
+    }
 
-  & > li:first-child::before {
-    top: 15px; /* manual configuration that was discovered through testing in the browser */
-  }
+    &:first-child::before {
+      top: 15px; /* manual configuration that was discovered through testing in the browser */
+    }
 
-  & > li:hover:before {
-    background: $vibrant-blue;
-    border-color: $vibrant-blue;
-    color: $white;
+    &:hover:before {
+      background: $vibrant-blue;
+      border-color: $vibrant-blue;
+      color: $white;
+    }
   }
 }
 
