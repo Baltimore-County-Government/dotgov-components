@@ -42,9 +42,6 @@ import section from "../basic/containers/Section";
 </section>;
 ```
 
-<!--      <h1 id="dialog-title">Dialog Title</h1>
- /*        <IconLink size="small" icon="far fa-times" /> */
-      &times;  -->
 
 Html Snippet:
 
