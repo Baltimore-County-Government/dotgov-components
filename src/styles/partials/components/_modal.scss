@@ -1,30 +1,8 @@
 .dg_modal {
-  .dg_modal_flex {
-    display: flex;
-    justify-content: flex-end;
-    .dg_modal_flex__button {
-      border: none;
-      padding: 0px;
-      font-size: 30px;
-      margin-top: 0px;
-
-      &:hover,
-      &.hovered {
-        background: $blue-lightest;
-      }
-
-      &:active,
-      &.active,
-      &:disabled,
-      &.disabled {
-        background: none;
-      }
-
-      &:disabled,
-      &.disabled {
-        border-color: $gray-light;
-      }
-    }
+  .dg_icon-link {
+    padding: 0;
+    margin: 0;
+    border: 0;
   }
 
   .dg_modal__inner {
@@ -133,8 +111,6 @@ dialog {
   background-color: transparent;
   font-weight: bold;
   font-size: 1.25em;
-  width: 1.2em;
-  height: 1.2em;
   text-align: center;
   cursor: pointer;
   transition: 0.15s;
@@ -170,7 +146,6 @@ a {
     padding: 2em;
   }
   .dialog-close {
-    top: 1em;
     right: 1em;
   }
 }
