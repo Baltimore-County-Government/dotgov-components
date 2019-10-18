@@ -62,6 +62,9 @@ module.exports = {
         },
         {
           src: "http://baltimorecountymd.gov/sebin/t/i/dotgov-accordion.min.js"
+        },
+        {
+          src: "//baltimorecountymd.gov/sebin/r/z/dotgov-steplist.min.js"
         }
       ]
     }
