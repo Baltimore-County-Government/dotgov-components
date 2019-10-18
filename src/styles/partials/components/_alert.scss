@@ -1,0 +1,20 @@
+.dg_alert {
+  background: $vibrant-blue;
+  padding: $default-padding;
+
+  a {
+    color: $white;
+    text-decoration: underline;
+  }
+
+  p {
+    color: $white;
+    font-family: $default-heading-font;
+    font-size: $smallest-heading-font-size;
+    margin-bottom: 0;
+  }
+
+  &.emergency {
+    background: $red-dark;
+  }
+}
