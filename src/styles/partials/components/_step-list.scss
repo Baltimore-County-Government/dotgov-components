@@ -46,6 +46,7 @@
       border-radius: 50%;
       text-align: center;
       z-index: 4;
+      @include default-transition;
     }
 
     /** The vertical line that connects each step circle */
@@ -69,7 +70,7 @@
       top: 15px; /* manual configuration that was discovered through testing in the browser */
     }
 
-    &:hover:before {
+    &.is-hovered:before {
       background: $vibrant-blue;
       border-color: $vibrant-blue;
       color: $white;
