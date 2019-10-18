@@ -1,0 +1,18 @@
+.dg_card {
+  border: $border-width-small solid $gray;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: $margin-large;
+  padding: $padding-large;
+  text-align: center;
+  width: 100%;
+
+  .dg_icon-container {
+    color: $gold;
+    font-size: $largest-icon-size;
+    margin-bottom: 20px;
+  }
+}
