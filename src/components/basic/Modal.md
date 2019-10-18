@@ -73,7 +73,6 @@ Name of the class of a modal should be `dg_modal`
       </div>
     </dialog>
   </div>
-  </section>
 </div>
 
 ```
