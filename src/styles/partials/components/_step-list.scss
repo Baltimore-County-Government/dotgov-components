@@ -1,11 +1,13 @@
-.dg_step-list.static {
-  .dg_step-list__toggle-btn {
-    cursor: default;
-  }
-  .dg_step-list__toggle-btn__btn-text,
-  .dg_step-list__show-all-btn {
-    display: none;
-  }
+.dg_step-list__toggle-btn__btn-text {
+  display: block;
+}
+
+.dg_step-list__show-all-btn {
+  margin-bottom: $default-margin;
+}
+
+.dg_step-list__details {
+  margin-top: $default-margin;
 }
 
 .dg_step-list__list {
@@ -13,61 +15,68 @@
   list-style: none;
   padding-left: 60px;
   margin-top: 0;
+
+  & > li {
+    border-bottom: $border-width-small solid $gray-light;
+    margin-bottom: $default-margin;
+    padding-bottom: $default-padding;
+    counter-increment: my-awesome-counter;
+    position: relative;
+  }
+
+  li:first-child {
+    border-top: $border-width-small solid $gray-light;
+    padding-top: $default-padding;
+  }
+
+  /** The circle that comes before the step */
+  & > li::before {
+    background: $gold;
+    border: $default-border-width solid $gold;
+    content: counter(my-awesome-counter);
+    font-weight: $font-bold;
+    font-size: $h3-font-size;
+    font-family: $default-heading-font;
+    position: absolute;
+    top: -5px;
+    bottom: 0;
+    left: -60px;
+    height: 40px;
+    width: 40px;
+    line-height: 34px; /* Offset by the border width */
+    border-radius: 50%;
+    text-align: center;
+    z-index: 4;
+  }
+
+  /** The vertical line that connects each step circle */
+  & > li::after {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    width: 0;
+    height: 100%;
+    border-left: $default-border-width solid $gray-light;
+    background: $white;
+    left: -41px; /* I think this offset is being caused by the border width */
+    top: 30px;
+  }
+
+  & > li:last-child::after {
+    border: none;
+  }
+
+  & > li:first-child::before {
+    top: 15px; /* manual configuration that was discovered through testing in the browser */
+  }
+
+  & > li:hover:before {
+    background: $vibrant-blue;
+    border-color: $vibrant-blue;
+    color: $white;
+  }
 }
 
-.dg_step-list__list > li {
-  border-bottom: $border-width-small solid $gray-light;
-  margin-bottom: $default-margin;
-  padding-bottom: $default-padding;
-  counter-increment: my-awesome-counter;
-  position: relative;
-}
-
-.dg_step-list__list > li:first-child {
-  border-top: $border-width-small solid $gray-light;
-  padding-top: $default-padding;
-}
-
-.dg_step-list__list > li::before {
-  background: $white;
-  border: 3px solid $gray;
-  content: counter(my-awesome-counter);
-  font-weight: $font-bold;
-  font-size: $h3-font-size;
-  font-family: $default-heading-font;
-  position: absolute;
-  top: -5px;
-  bottom: 0;
-  left: -60px;
-  height: 40px;
-  width: 40px;
-  line-height: 34px; /* Offset by the border width */
-  border-radius: 50%;
-  text-align: center;
-  z-index: 4;
-}
-
-.dg_step-list__list > li::after {
-  content: "";
-  position: absolute;
-  z-index: 0;
-  width: 0;
-  height: 100%;
-  border-left: $default-border-width solid $gray-light;
-  background: $white;
-  left: -41px; /* I think this offset is being caused by the border width */
-  top: 30px;
-}
-
-.dg_step-list__list > li:last-child::after {
-  border: none;
-}
-
-.dg_step-list__list > li:first-child::before {
-  top: 15px;
-}
-
-.dg_step-list__toggle-btn,
 .dg_step-list__toggle-btn__title {
   display: inline-block;
 }
@@ -84,18 +93,27 @@
   font-size: $base-font-size;
   font-family: $default-heading-font;
   font-weight: $font-bold;
-  color: $black;
   font-style: normal;
 }
 
-.dg_step-list__toggle-btn__btn-text {
-  display: block;
-}
+/* Static Step List */
+.dg_step-list.static {
+  .dg_step-list__toggle-btn {
+    cursor: default;
+  }
 
-.dg_step-list__show-all-btn {
-  margin-bottom: $default-margin;
-}
+  .dg_step-list__toggle-btn__title {
+    color: $black;
+  }
 
-.dg_step-list__details {
-  margin-top: $default-margin;
+  .dg_step-list__toggle-btn__btn-text,
+  .dg_step-list__show-all-btn {
+    display: none;
+  }
+
+  .dg_step-list__list > li::before {
+    background: $white;
+    border-color: $gray;
+    color: $black;
+  }
 }
