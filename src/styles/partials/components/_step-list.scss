@@ -71,7 +71,7 @@
     }
 
     &.is-hovered:before {
-      background: $vibrant-blue;
+      background: $blue-light;
       border-color: $vibrant-blue;
       color: $white;
     }
@@ -82,10 +82,14 @@
   display: inline-block;
 }
 
+.dg_step-list__show-all-btn,
+.dg_step-list__toggle-btn {
+  cursor: pointer;
+}
+
 .dg_step-list__toggle-btn {
   background: none;
   border: none;
-  cursor: pointer;
   padding: 0;
   text-align: left;
 }

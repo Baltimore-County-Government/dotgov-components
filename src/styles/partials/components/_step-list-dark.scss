@@ -1,0 +1,35 @@
+.dg_section.dark {
+  .dg_step-list__list > li::before {
+    color: $pale-blue;
+  }
+
+  .dg_step-list__show-all-btn,
+  .dg_step-list__toggle-btn,
+  .dg_step-list__toggle-btn__title {
+    color: $white;
+  }
+
+  .dg_step-list__list > li.is-hovered:before {
+    background: $blue-lightest;
+    border-color: $blue-lightest;
+    color: $white;
+  }
+
+  /* Static Step List */
+  .dg_step-list.static {
+    .dg_step-list__toggle-btn {
+      cursor: default;
+    }
+
+    .dg_step-list__toggle-btn__btn-text,
+    .dg_step-list__show-all-btn {
+      display: none;
+    }
+
+    .dg_step-list__list > li::before {
+      background: $pale-blue;
+      border-color: $white;
+      color: $white;
+    }
+  }
+}
