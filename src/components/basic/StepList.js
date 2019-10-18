@@ -18,7 +18,7 @@ const StepList = props => {
 };
 
 StepList.propTypes = {
-  /** Type of  step list you want to display, possible values are 'static', 'collapsed', 'expanded' */
+  /** Type of step list you want to display, possible values are 'static', 'collapsed', 'expanded' */
   type: PropTypes.string
 };
 
