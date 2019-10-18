@@ -61,7 +61,7 @@ module.exports = {
           src: "https://kit.fontawesome.com/2475edd293.js"
         },
         {
-          src: "http://baltimorecountymd.gov/sebin/t/i/dotgov-accordion.min.js"
+          src: "//baltimorecountymd.gov/sebin/t/i/dotgov-accordion.min.js"
         },
         {
           src: "//baltimorecountymd.gov/sebin/r/z/dotgov-steplist.min.js"
