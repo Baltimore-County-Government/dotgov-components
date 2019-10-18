@@ -4,19 +4,19 @@ import PropTypes from "prop-types";
 const StepListItem = props => {
   const { id, buttonText, children } = props;
   return (
-    <li class="dg_step-list__list-section" id={`step-${id}`}>
+    <li className="dg_step-list__list-section" id={`step-${id}`}>
       <button
-        class="dg_button-link dg_step-list__toggle-btn"
+        className="dg_button-link dg_step-list__toggle-btn"
         aria-expanded="false"
         aria-controls={`panel-${id}`}
         type="button"
       >
-        <span class="dg_step-list__toggle-btn__title">{buttonText}</span>
-        <span class="dg_step-list__toggle-btn__btn-text">Show</span>
+        <span className="dg_step-list__toggle-btn__title">{buttonText}</span>
+        <span className="dg_step-list__toggle-btn__btn-text">Show</span>
       </button>
       <div
         id={`panel-${id}`}
-        class="dg_step-list__details"
+        className="dg_step-list__details"
         aria-labelledby={`step-${id}`}
       >
         {children}

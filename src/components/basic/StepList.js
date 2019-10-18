@@ -6,13 +6,13 @@ const StepList = props => {
   const { children, type = "collapsed" } = props;
   const cssClasses = classnames("dg_step-list", type);
   return (
-    <div class={cssClasses}>
+    <div className={cssClasses}>
       <div className="text-right">
-        <button class="dg_button-link dg_step-list__show-all-btn">
+        <button className="dg_button-link dg_step-list__show-all-btn">
           Show All
         </button>
       </div>
-      <ol class="dg_step-list__list">{children}</ol>
+      <ol className="dg_step-list__list">{children}</ol>
     </div>
   );
 };
