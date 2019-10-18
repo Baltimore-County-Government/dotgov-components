@@ -46,6 +46,9 @@ export {
 export { default as StepList } from "./components/basic/StepList";
 export { default as StepListItem } from "./components/basic/StepListItem";
 export { default as Button } from "./components/basic/Button";
+export { default as Card } from "./components/basic/Card";
+export { default as CardContent } from "./components/basic/CardContent";
+export { default as CardFooter } from "./components/basic/CardFooter";
 export { default as IconHeading } from "./components/basic/IconHeading";
 export { default as IconLink } from "./components/basic/IconLink";
 export { default as DateNewsCard } from "./components/basic/DateNewsCard";
