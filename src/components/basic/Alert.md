@@ -1,0 +1,5 @@
+## Default Alert
+
+```jsx
+<Alert />
+```
