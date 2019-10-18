@@ -1,3 +1,52 @@
+.dg_modal {
+  .dg_modal_flex {
+    display: flex;
+    justify-content: flex-end;
+    .dg_modal_flex__button {
+      border: none;
+      padding: 0px;
+      font-size: 30px;
+      margin-top: 0px;
+
+      &:hover,
+      &.hovered {
+        background: $blue-lightest;
+      }
+
+      &:active,
+      &.active,
+      &:disabled,
+      &.disabled {
+        background: none;
+      }
+
+      &:disabled,
+      &.disabled {
+        border-color: $gray-light;
+      }
+    }
+  }
+
+  .dg_modal__inner {
+    position: relative;
+    padding: $padding-largest;
+    margin-top: $margin-small;
+    margin-bottom: $margin-small;
+    width: auto;
+    height: auto;
+    opacity: 1;
+    color: $white;
+
+    p {
+      letter-spacing: 0;
+      color: $white;
+      opacity: 1;
+      text-align: center;
+      font: italic 28px/44px $default-body-font;
+      margin-bottom: 60px;
+    }
+  }
+}
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -23,6 +72,7 @@
 }
 dialog[open] {
   display: block;
+  background: $pale-blue;
 }
 .dialog[aria-hidden="true"] {
   display: none;
@@ -30,7 +80,7 @@ dialog[open] {
 .dialog-overlay {
   z-index: 2;
   background-color: rgba(0, 0, 0, 0.66);
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
@@ -56,6 +106,7 @@ dialog {
   max-width: 90%;
   width: 600px;
   border-radius: 2px;
+  border: $border-width-small solid $blue-lightest;
 }
 .dialog {
   &:not([aria-hidden="true"]) {
@@ -87,7 +138,7 @@ dialog {
   text-align: center;
   cursor: pointer;
   transition: 0.15s;
-  color: black;
+  color: $black;
 }
 .link-like {
   background-color: transparent;
