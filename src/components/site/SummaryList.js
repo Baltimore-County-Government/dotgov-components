@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const SummaryList = props => {
   const { id, items = [] } = props;
@@ -31,6 +32,13 @@ const SummaryList = props => {
       ))}
     </div>
   );
+};
+
+SummaryList.propTypes = {
+  /** Populates the summary list item. id - makes elements unique. icon - icon to display. heading - text to display. content- any text or html element to display */
+  items: PropTypes.array.isRequired,
+  /** id for main div*/
+  id: PropTypes.string.isRequired
 };
 
 export default SummaryList;
