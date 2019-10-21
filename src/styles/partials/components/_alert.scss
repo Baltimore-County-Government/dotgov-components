@@ -5,6 +5,8 @@
   flex-wrap: nowrap;
   align-items: center;
 
+  margin: $default-margin auto;
+
   padding: $default-padding;
 
   * {
@@ -31,11 +33,12 @@
   }
 
   .dg_alert__icon {
+    font-size: $large-icon-size;
     padding: 0 ($default-padding * 2) 0 $default-padding;
   }
 
   &.emergency {
-    background: $red-dark;
+    background: $error-color;
   }
 
   &.status {
@@ -48,13 +51,23 @@
 
     &.success {
       background: $success-color;
+      border-color: $black;
       outline-color: $success-color;
+
+      * {
+        color: $black;
+      }
     }
 
     &.info {
       background: $info-color;
-      border-color: $black;
       outline-color: $info-color;
+    }
+
+    &.warning {
+      background: $warning;
+      border-color: $black;
+      outline-color: $warning;
 
       * {
         color: $black;
