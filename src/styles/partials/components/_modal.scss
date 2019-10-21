@@ -6,9 +6,13 @@ body {
   overflow: hidden;
   .dg_modal {
     .dg_icon-link {
-      padding: 0;
+       padding: 0;
       margin: 0;
       border: 0;
+    
+    }
+    .dg_iconHeading-margin{
+      margin-top:$margin-small;
     }
   }
   
@@ -24,8 +28,6 @@ body {
     -webkit-backface-visibility: hidden;
     background: rgba(43, 46, 56, 0.9)
   }
-
-  // no need for an extra background element
   .dialog-overlay {
      display: none;
   }
@@ -38,9 +40,6 @@ body {
        text-align: center;
        opacity: 1;
        color: $white;
-     
-
-
       // pseudo for vertical alignment of content
       &:before {
         display: inline-block;
@@ -73,8 +72,6 @@ body {
      text-align: left;
   }
 }
-
-
 
 /* -------------------------------------------------------------------------- *\
 * Necessary styling for the dialog to work
@@ -151,86 +148,6 @@ body {
 }
 
 @media screen and (min-width: 700px) {
- .dialog-close {
-   top: 1em;
-   right: 1em;
- }
-}
-
-/* -------------------------------------------------------------------------- *\
-* Base stuff
-* -------------------------------------------------------------------------- */
-
-* {
- box-sizing: border-box;
-}
-
-body {
- font: 125% / 1.5 'ESPI', serif;
- padding: 2em 0;
-}
-
-h1 {
- font-size: 1.6em;
- line-height: 1.1;
-}
-
-h1 span {
- color: #E50050;
-}
-
-h1, h2 {
- font-family: 'ESPI Slab', sans-serif;
- margin-bottom: 0;
-}
-
-.link-like,
-a {
- color: #00b4f1;
-}
-
-.link-like:hover,
-.link-like:active,
-a:hover,
-a:active {
- color: #E50050;
-}
-
-/* -------------------------------------------------------------------------- *\
-* Helpers
-* -------------------------------------------------------------------------- */
-
-.link-like {
- background-color: transparent;
- text-decoration: underline;
- border: 0;
- margin: 0;
- padding: 0;
- font: inherit;
- cursor: pointer;
-}
-
-/* -------------------------------------------------------------------------- *\
-* Layout
-* -------------------------------------------------------------------------- */
-
-.main {
- max-width: 700px;
- margin: 0 auto;
- padding: 0 1em;
-}
-
-footer {
- border-top: 1px solid silver;
- padding: 20px 0;
-}
-
-/* -------------------------------------------------------------------------- *\
-* Form styling
-* -------------------------------------------------------------------------- */
-
-
-@media screen and (min-width: 700px) {
   .dialog-content {
     padding: 2em;
   }
@@ -238,3 +155,4 @@ footer {
     right: 1em;
   }
 }
+
