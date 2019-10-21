@@ -6,10 +6,9 @@ body {
   overflow: hidden;
   .dg_modal {
     .dg_icon-link {
-       padding: 0;
+      padding: 0;
       margin: 0;
       border: 0;
-    
     }
     .dg_iconHeading-margin{
       margin-top:$margin-small;
@@ -25,7 +24,7 @@ body {
     height: 100%;
     overflow-x: hidden;
     overflow-y: auto;
-    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     background: rgba(43, 46, 56, 0.9)
   }
   .dialog-overlay {
@@ -82,31 +81,6 @@ body {
 }
 
 /* -------------------------------------------------------------------------- *\
-* Styling to make the dialog look like a dialog
-* -------------------------------------------------------------------------- */
-
-.dialog-overlay {
- z-index: 2;
- background-color: rgba(0, 0, 0, 0.66);
- position: fixed;
- top: 0;
- left: 0;
- bottom: 0;
- right: 0;
-}
-
-.dialog-content {
- background-color: rgb(255, 255, 255);
- z-index: 3;
- position: fixed;
- top: 50%;
- left: 50%;
- -webkit-transform: translate(-50%, -50%);
- -ms-transform: translate(-50%, -50%);
- transform: translate(-50%, -50%);
-}
-
-/* -------------------------------------------------------------------------- *\
 * Extra dialog styling to make it shiny
 * -------------------------------------------------------------------------- */
 
@@ -125,11 +99,6 @@ body {
 
 .dialog-overlay {
  background-color: rgba(43, 46, 56, 0.9);
-}
-
-.dialog h1 {
- margin: 0;
- font-size: 1.25em;
 }
 
 .dialog-close {
