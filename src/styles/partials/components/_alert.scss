@@ -1,13 +1,16 @@
 .dg_alert {
   background: $vibrant-blue;
-
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-
-  margin: $default-margin auto;
-
   padding: $default-padding;
+
+  .dg_alert__container {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    margin: auto;
+    max-width: 1400px;
+    width: 100%;
+  }
 
   * {
     color: $white;
@@ -15,6 +18,11 @@
 
   a {
     text-decoration: underline;
+
+    &:hover {
+      background: $white;
+      color: $vibrant-blue;
+    }
   }
 
   p {
@@ -39,6 +47,11 @@
 
   &.emergency {
     background: $error-color;
+
+    a:hover {
+      background: $white;
+      color: $error-color;
+    }
   }
 
   &.status {
@@ -57,11 +70,21 @@
       * {
         color: $black;
       }
+
+      a:hover {
+        background: $black;
+        color: $success-color;
+      }
     }
 
     &.info {
       background: $info-color;
       outline-color: $info-color;
+
+      a:hover {
+        background: $white;
+        color: $info-color;
+      }
     }
 
     &.warning {
@@ -72,11 +95,21 @@
       * {
         color: $black;
       }
+
+      a:hover {
+        background: $black;
+        color: $warning-color;
+      }
     }
 
     &.error {
       background: $error-color;
       outline-color: $error-color;
+
+      a:hover {
+        background: $white;
+        color: $error-color;
+      }
     }
   }
 }

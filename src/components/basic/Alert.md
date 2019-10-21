@@ -30,7 +30,7 @@
 ```jsx
 <Alert className="status success" icon="far fa-check">
     <span className="dg_alert__status">Success</span>
-    <p>You can do something now.</p>
+    <p>You can do something now visit our <a href="">Closings Page</a></p>
 </Alert>
 ```
 
@@ -48,7 +48,7 @@
 ```jsx
 <Alert className="status info" icon="far fa-info-circle">
     <span className="dg_alert__status">Information</span>
-    <p>You can do something now.</p>
+    <p>You can do something now  visit our <a href="">Closings Page</a></p>
 </Alert>
 ```
 
@@ -66,7 +66,7 @@
 ```jsx
 <Alert className="status warning" icon="far fa-exclamation-triangle">
     <span className="dg_alert__status">Information</span>
-    <p>You can do something now.</p>
+    <p>You can do something now visit our <a href="">Closings Page</a></p>
 </Alert>
 ```
 
@@ -84,6 +84,6 @@
 ```jsx
 <Alert className="status error" icon="fas fa-exclamation-circle">
     <span className="dg_alert__status">Error</span>
-    <p>Something went wrong.</p>
+    <p>Something went wrong visit our <a href="">Closings Page</a></p>
 </Alert>
 ```

@@ -9,8 +9,10 @@ const Alert = props => {
 
   return (
     <div className={cssClasses}>
-      {icon && <i className={iconCssClasses}></i>}
-      <div className="dg_alert__content">{children}</div>
+      <div className="dg_alert__container">
+        {icon && <i className={iconCssClasses}></i>}
+        <div className="dg_alert__content">{children}</div>
+      </div>
     </div>
   );
 };
