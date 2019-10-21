@@ -43,10 +43,28 @@
 </Alert>
 ```
 
-### Info Status Alert with Icon
+### Information Status Alert with Icon
 
 ```jsx
 <Alert className="status info" icon="far fa-info-circle">
+    <span className="dg_alert__status">Information</span>
+    <p>You can do something now.</p>
+</Alert>
+```
+
+### Warning Status Alert
+
+```jsx
+<Alert className="status warning">
+    <span className="dg_alert__status">Information</span>
+    <p>This is information you need to know.</p>
+</Alert>
+```
+
+### Warning Status Alert with Icon
+
+```jsx
+<Alert className="status warning" icon="far fa-exclamation-triangle">
     <span className="dg_alert__status">Information</span>
     <p>You can do something now.</p>
 </Alert>
@@ -64,7 +82,7 @@
 ### Error Status Alert with Icon
 
 ```jsx
-<Alert className="status error" icon="far fa-exclamation-triangle">
+<Alert className="status error" icon="fas fa-exclamation-circle">
     <span className="dg_alert__status">Error</span>
     <p>Something went wrong.</p>
 </Alert>
