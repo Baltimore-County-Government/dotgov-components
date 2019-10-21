@@ -36,7 +36,6 @@ import section from "../basic/containers/Section";
           dialog that pops up, it makes our designers and UX people happy as
           well.
         </p>
-        /*{" "}
         <p>
           This is content that lives inside of a dialog box. It's fully
           accessible which makes our users happy. And because it's inside of a
