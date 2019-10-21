@@ -8,12 +8,6 @@
     font-size: $smallest-heading-font-size;
     font-weight: $font-normal;
   }
-
-  h1,
-  h2,
-  h3 {
-    color: $black;
-  }
 }
 
 .dg_accordion_buttonall-container {
@@ -55,7 +49,7 @@
     font-weight: $font-medium;
     padding: $default-padding;
     letter-spacing: 0;
-    color: $gray;
+    color: $gray-dark;
     text-transform: none;
   }
 
