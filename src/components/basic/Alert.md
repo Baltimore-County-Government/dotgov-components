@@ -4,7 +4,7 @@
 
 ```jsx
 <Alert>
-    <p>This is a default alert.</p>
+    <p>The watercooler outside of the Budget and Finance Office has been moved to the Historic Courthouse Mezzanine. For more information please visit our <a href="">Closings Page</a></p>
 </Alert>
 ```
 
@@ -13,5 +13,59 @@
 ```jsx
 <Alert className="emergency">
     <p>This is a emergency alert. View our <a href="#">Emergencies Page</a></p>
+</Alert>
+```
+
+### Success Status Alert
+
+```jsx
+<Alert className="status success">
+    <span className="dg_alert__status">Success</span>
+    <p>You can do something now.</p>
+</Alert>
+```
+
+### Success Status Alert with Icon
+
+```jsx
+<Alert className="status success" icon="far fa-check">
+    <span className="dg_alert__status">Success</span>
+    <p>You can do something now.</p>
+</Alert>
+```
+
+### Information Status Alert
+
+```jsx
+<Alert className="status info">
+    <span className="dg_alert__status">Information</span>
+    <p>This is information you need to know.</p>
+</Alert>
+```
+
+### Info Status Alert with Icon
+
+```jsx
+<Alert className="status info" icon="far fa-info-circle">
+    <span className="dg_alert__status">Information</span>
+    <p>You can do something now.</p>
+</Alert>
+```
+
+### Error Status Alert
+
+```jsx
+<Alert className="status error">
+    <span className="dg_alert__status">Error</span>
+    <p>Something went wrong.</p>
+</Alert>
+```
+
+### Error Status Alert with Icon
+
+```jsx
+<Alert className="status error" icon="far fa-exclamation-triangle">
+    <span className="dg_alert__status">Error</span>
+    <p>Something went wrong.</p>
 </Alert>
 ```
