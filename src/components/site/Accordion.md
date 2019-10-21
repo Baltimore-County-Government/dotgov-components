@@ -38,15 +38,13 @@ const collapseItems = [
     header: "Accordion Item #4",
     subheader: "",
     content: (
-      <img
-        width="300"
-        height="200"
-        alt="Stuff goes here"
-        src="//baltimorecountymd.gov/sebin/t/t/homepage-county-executive.jpg"
-        border="0"
-        vspace="0"
-        hspace="0"
-      />
+      <div id="dg_main-content">
+        <img
+          class="dg_image"
+          alt="Stuff goes here"
+          src="//baltimorecountymd.gov/sebin/t/t/homepage-county-executive.jpg"
+        />
+      </div>
     )
   },
   {
@@ -152,15 +150,13 @@ const collapseItems = [
     header: "Accordion Item #4",
     subheader: "",
     content: (
-      <img
-        width="300"
-        height="200"
-        alt="Stuff goes here"
-        src="//baltimorecountymd.gov/sebin/t/t/homepage-county-executive.jpg"
-        border="0"
-        vspace="0"
-        hspace="0"
-      />
+      <div id="dg_main-content">
+        <img
+          class="dg_image"
+          alt="Stuff goes here"
+          src="//baltimorecountymd.gov/sebin/t/t/homepage-county-executive.jpg"
+        />
+      </div>
     )
   },
   {
