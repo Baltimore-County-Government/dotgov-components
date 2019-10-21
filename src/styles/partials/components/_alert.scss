@@ -31,7 +31,7 @@
   }
 
   .dg_alert__icon {
-    padding: 0 $default-padding 0 0;
+    padding: 0 ($default-padding * 2) 0 $default-padding;
   }
 
   &.emergency {
