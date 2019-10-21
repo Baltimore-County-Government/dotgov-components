@@ -54,21 +54,28 @@ Markup for Dialog Box
 Name of the class of a modal should be `dg_modal`
 
 ```html
- <div class="dg_modal dialog" id="my-accessible-dialog">
+   <div class="dg_modal dialog" aria-hidden="true" id="my-accessible-dialog">
     <div class="dialog-overlay" tabindex="-1" data-a11y-dialog-hide></div>
-    <dialog class="dialog-content" aria-labelledby="dialog-title">
-      <div className="dg_icon-link">
-        <button
-          type="button"
-          class="dialog-close"
-          data-a11y-dialog-hide
-          aria-label="Close this dialog window"
-        >
-          <IconLink size="small" icon="far fa-times" />
-        </button>
-      </div>
-      <div className="dg_modal__inner">
-        <IconHeading text="Heading" icon="fas fa-star" />
+    <div class="dialog-content-wrapper">
+      <div
+        class="dialog-content"
+        aria-labelledby="dialogTitle"
+        aria-describedby="dialogDescription"
+        role="dialog"
+      >
+        <div className="dg_icon-link">
+          <button
+            type="button"
+            class="dialog-close"
+            data-a11y-dialog-hide
+            aria-label="Close this dialog window"
+          >
+            <IconLink size="small" icon="far fa-times" />
+          </button>
+        </div>
+        <div className="dg_iconHeading-margin">
+          <IconHeading text="Heading" icon="fas fa-star" />
+        </div>
         <p>
           This is content that lives inside of a dialog box. It's fully
           accessible which makes our users happy. And because it's inside of a
@@ -76,9 +83,8 @@ Name of the class of a modal should be `dg_modal`
           well.
         </p>
       </div>
-    </dialog>
+    </div>
   </div>
-</div>
 
 ```
 
