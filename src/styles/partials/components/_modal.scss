@@ -1,109 +1,140 @@
-.dg_modal {
-  .dg_icon-link {
-    padding: 0;
-    margin: 0;
-    border: 0;
-  }
+// add a wrapper around content
+// IMPORTANT: there should be no space between content-wrapper and content div
+// You maybe want to hide scrollbars of body/html element if modal is active
 
-  .dg_modal__inner {
-    overflow: auto;
-    position: relative;
-    padding: $padding-largest;
-    margin-top: $margin-small;
-    margin-bottom: $margin-small;
-    width: auto;
-    height: 500px;
-    opacity: 1;
-    color: $white;
-
-    p {
-      letter-spacing: 0;
-      color: $white;
-      opacity: 1;
-      text-align: center;
-      font: italic 28px/44px $default-body-font;
-      margin-bottom: 60px;
+body {
+  overflow: hidden;
+  .dg_modal {
+    .dg_icon-link {
+      padding: 0;
+      margin: 0;
+      border: 0;
     }
   }
-}
-@keyframes fade-in {
-  from {
-    opacity: 0;
+  
+  .dialog {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-backface-visibility: hidden;
+    background: rgba(43, 46, 56, 0.9)
   }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes appear {
-  from {
-    transform: translate(-50%, -40%);
-    opacity: 0;
-  }
-  to {
-    transform: translate(-50%, -50%);
-    opacity: 1;
-  }
-}
-[data-a11y-dialog-native] {
+
+  // no need for an extra background element
   .dialog-overlay {
-    display: none;
+     display: none;
+  }
+
+  .dialog-content-wrapper {
+    margin-bottom: 150px;
+       position: absolute;
+       width: 100%;
+       height: 100%;
+       text-align: center;
+       opacity: 1;
+       color: $white;
+     
+
+
+      // pseudo for vertical alignment of content
+      &:before {
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+        content: '';
+      }
+      
+      p {
+        letter-spacing: 0;
+        color: $white;
+        opacity: 1;
+        text-align: center;
+        font: italic 28px/44px $default-body-font;
+        margin-bottom: 60px;
+      }
+  }
+
+  .dialog-content {
+    background: $pale-blue;
+     // reset modal style
+     position: relative;
+     top: auto;
+     left: auto;
+     transform: none;
+
+     display: inline-block;
+     margin: 0 auto;
+     vertical-align: middle;
+     text-align: left;
   }
 }
-dialog[open] {
-  display: block;
-  background: $pale-blue;
-}
+
+
+
+/* -------------------------------------------------------------------------- *\
+* Necessary styling for the dialog to work
+* -------------------------------------------------------------------------- */
 
 .dialog[aria-hidden="true"] {
-  display: none;
+ display: none;
 }
+
+/* -------------------------------------------------------------------------- *\
+* Styling to make the dialog look like a dialog
+* -------------------------------------------------------------------------- */
+
 .dialog-overlay {
-  z-index: 900;
-  background-color: rgba(0, 0, 0, 0.66);
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-color: rgba(43, 46, 56, 0.9);
+ z-index: 2;
+ background-color: rgba(0, 0, 0, 0.66);
+ position: fixed;
+ top: 0;
+ left: 0;
+ bottom: 0;
+ right: 0;
 }
-dialog {
-  &::backdrop {
-    background-color: rgba(0, 0, 0, 0.66);
-  }
-}
+
 .dialog-content {
-  background-color: rgb(255, 255, 255);
-  z-index: -1;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  margin: 0;
-  padding: 1em;
-  max-width: 90%;
-  width: 600px;
-  border-radius: 2px;
-  border: $border-width-small solid $blue-lightest;
+ background-color: rgb(255, 255, 255);
+ z-index: 3;
+ position: fixed;
+ top: 50%;
+ left: 50%;
+ -webkit-transform: translate(-50%, -50%);
+ -ms-transform: translate(-50%, -50%);
+ transform: translate(-50%, -50%);
 }
-.dialog {
-  &:not([aria-hidden="true"]) {
-    > .dialog-overlay {
-      animation: fade-in 200ms 1 both;
-    }
-    > .dialog-content {
-      animation: appear 400ms 150ms 1 both;
-    }
-  }
-  h1 {
-    margin: 0 0 10px 0;
-    font-size: 1.25em;
-    text-align: left;
-    color: black;
-  }
+
+/* -------------------------------------------------------------------------- *\
+* Extra dialog styling to make it shiny
+* -------------------------------------------------------------------------- */
+
+.dialog-content {
+ padding: 1em;
+ max-width: 90%;
+ width: 600px;
+ border-radius: 2px;
 }
+
+@media screen and (min-width: 700px) {
+ .dialog-content {
+   padding: 2em;
+ }
+}
+
+.dialog-overlay {
+ background-color: rgba(43, 46, 56, 0.9);
+}
+
+.dialog h1 {
+ margin: 0;
+ font-size: 1.25em;
+}
+
 .dialog-close {
   position: absolute;
   top: 0.5em;
@@ -118,31 +149,87 @@ dialog {
   transition: 0.15s;
   color: $black;
 }
-.link-like {
-  background-color: transparent;
-  text-decoration: underline;
-  border: 0;
-  margin: 0;
-  padding: 0;
-  font: inherit;
-  cursor: pointer;
-  color: red;
-  &:hover {
-    color: green;
-  }
-  &:active {
-    color: green;
-  }
+
+@media screen and (min-width: 700px) {
+ .dialog-close {
+   top: 1em;
+   right: 1em;
+ }
 }
+
+/* -------------------------------------------------------------------------- *\
+* Base stuff
+* -------------------------------------------------------------------------- */
+
+* {
+ box-sizing: border-box;
+}
+
+body {
+ font: 125% / 1.5 'ESPI', serif;
+ padding: 2em 0;
+}
+
+h1 {
+ font-size: 1.6em;
+ line-height: 1.1;
+}
+
+h1 span {
+ color: #E50050;
+}
+
+h1, h2 {
+ font-family: 'ESPI Slab', sans-serif;
+ margin-bottom: 0;
+}
+
+.link-like,
 a {
-  color: red;
-  &:hover {
-    color: green;
-  }
-  &:active {
-    color: green;
-  }
+ color: #00b4f1;
 }
+
+.link-like:hover,
+.link-like:active,
+a:hover,
+a:active {
+ color: #E50050;
+}
+
+/* -------------------------------------------------------------------------- *\
+* Helpers
+* -------------------------------------------------------------------------- */
+
+.link-like {
+ background-color: transparent;
+ text-decoration: underline;
+ border: 0;
+ margin: 0;
+ padding: 0;
+ font: inherit;
+ cursor: pointer;
+}
+
+/* -------------------------------------------------------------------------- *\
+* Layout
+* -------------------------------------------------------------------------- */
+
+.main {
+ max-width: 700px;
+ margin: 0 auto;
+ padding: 0 1em;
+}
+
+footer {
+ border-top: 1px solid silver;
+ padding: 20px 0;
+}
+
+/* -------------------------------------------------------------------------- *\
+* Form styling
+* -------------------------------------------------------------------------- */
+
+
 @media screen and (min-width: 700px) {
   .dialog-content {
     padding: 2em;

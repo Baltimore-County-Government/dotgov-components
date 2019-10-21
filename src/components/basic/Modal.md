@@ -14,11 +14,10 @@ import section from "../basic/containers/Section";
   >
     Open Modal
   </button>
-
-  <div class="dg_modal dialog" id="my-accessible-dialog">
-    <div class="dialog-overlay" tabindex="-1" data-a11y-dialog-hide></div>
-    <dialog class="dialog-content" aria-labelledby="dialog-title">
-      <div className="dg_icon-link">
+    <div class="dg_modal dialog" aria-hidden="true" id="my-accessible-dialog">
+      <div class="dialog-overlay" tabindex="-1" data-a11y-dialog-hide></div>
+      <div class="dialog-content-wrapper"><div class="dialog-content" aria-labelledby="dialogTitle" aria-describedby="dialogDescription" role="dialog">
+         <div className="dg_icon-link">
         <button
           type="button"
           class="dialog-close"
@@ -28,9 +27,8 @@ import section from "../basic/containers/Section";
           <IconLink size="small" icon="far fa-times" />
         </button>
       </div>
-      <div className="dg_modal__inner">
-        <IconHeading text="Heading" icon="fas fa-star" />
-        <p>
+            <IconHeading text="Heading" icon="fas fa-star" />
+ <p>
           This is content that lives inside of a dialog box. It's fully
           accessible which makes our users happy. And because it's inside of a
           dialog that pops up, it makes our designers and UX people happy as
@@ -42,46 +40,10 @@ import section from "../basic/containers/Section";
           dialog that pops up, it makes our designers and UX people happy as
           well.
         </p>
-        <p>
-          This is content that lives inside of a dialog box. It's fully
-          accessible which makes our users happy. And because it's inside of a
-          dialog that pops up, it makes our designers and UX people happy as
-          well.
-        </p>
-        <p>
-          This is content that lives inside of a dialog box. It's fully
-          accessible which makes our users happy. And because it's inside of a
-          dialog that pops up, it makes our designers and UX people happy as
-          well.
-        </p>
-        <p>
-          This is content that lives inside of a dialog box. It's fully
-          accessible which makes our users happy. And because it's inside of a
-          dialog that pops up, it makes our designers and UX people happy as
-          well.
-        </p>
-        <p>
-          This is content that lives inside of a dialog box. It's fully
-          accessible which makes our users happy. And because it's inside of a
-          dialog that pops up, it makes our designers and UX people happy as
-          well.
-        </p>
-        <p>
-          This is content that lives inside of a dialog box. It's fully
-          accessible which makes our users happy. And because it's inside of a
-          dialog that pops up, it makes our designers and UX people happy as
-          well.
-        </p>
-        <p>
-          This is content that lives inside of a dialog box. It's fully
-          accessible which makes our users happy. And because it's inside of a
-          dialog that pops up, it makes our designers and UX people happy as
-          well.
-        </p>
-      </div>
-    </dialog>
-  </div>
+         </div></div>
+    </div>
 </section>;
+
 ```
 
 Html Snippet:
