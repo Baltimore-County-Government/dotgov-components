@@ -1,3 +1,5 @@
+$default-modal-width: 640px;
+
 [role="alertdialog"],
 [role="dialog"] {
   background-color: $pale-blue;
@@ -20,9 +22,11 @@
     transform: translateX(
       -50%
     ); /* move backwards 50% of this element's width */
-    min-width: calc(640px - (15px * 2)); /* == breakpoint - left+right margin */
+    min-width: calc(
+      $default-modal-width - (15px * 2)
+    ); /* == breakpoint - left+right margin */
     min-height: auto;
-    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.12), 0 15px 12px rgba(0, 0, 0, 0.22);
+    box-shadow: $modal-box-shadow;
   }
 }
 
