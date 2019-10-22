@@ -23,7 +23,7 @@ Html Snippet:
 ### Emergency Alert
 
 ```jsx
-<Alert className="emergency">
+<Alert type="emergency">
     <p>This is a emergency alert. View our <a href="#">Emergencies Page</a></p>
 </Alert>
 ```
@@ -43,8 +43,7 @@ Html Snippet:
 ### Success Status Alert
 
 ```jsx
-<Alert className="status success">
-    <span className="dg_alert__status">Success</span>
+<Alert className="status" type="success">
     <p>You can do something now.</p>
 </Alert>
 ```
@@ -52,7 +51,7 @@ Html Snippet:
 Html Snippet:
 
 ```html
-<div class="dg_alert status success">
+<div class="dg_alert status" type="success">
     <div class="dg_alert__container">
         <div class="dg_alert__content">
             <span class="dg_alert__status">Success</span>
@@ -65,8 +64,7 @@ Html Snippet:
 ### Success Status Alert with Icon
 
 ```jsx
-<Alert className="status success" icon="far fa-check">
-    <span className="dg_alert__status">Success</span>
+<Alert className="status" type="success" icon="far fa-check">
     <p>You can do something now visit our <a href="">Closings Page</a></p>
 </Alert>
 ```
@@ -88,8 +86,7 @@ Html Snippet:
 ### Information Status Alert
 
 ```jsx
-<Alert className="status info">
-    <span className="dg_alert__status">Information</span>
+<Alert className="status" type="information">
     <p>This is information you need to know.</p>
 </Alert>
 ```
@@ -110,8 +107,7 @@ Html Snippet:
 ### Information Status Alert with Icon
 
 ```jsx
-<Alert className="status info" icon="far fa-info-circle">
-    <span className="dg_alert__status">Information</span>
+<Alert className="status" type="information" icon="far fa-info-circle">
     <p>You can do something now  visit our <a href="">Closings Page</a></p>
 </Alert>
 ```
@@ -133,8 +129,7 @@ Html Snippet:
 ### Warning Status Alert
 
 ```jsx
-<Alert className="status warning">
-    <span className="dg_alert__status">Warning</span>
+<Alert className="status" type="warning">
     <p>This is a warning you need to know.</p>
 </Alert>
 ```
@@ -155,8 +150,7 @@ Html Snippet:
 ### Warning Status Alert with Icon
 
 ```jsx
-<Alert className="status warning" icon="far fa-exclamation-triangle">
-    <span className="dg_alert__status">Information</span>
+<Alert className="status" type="warning" icon="far fa-exclamation-triangle">
     <p>You can do something now visit our <a href="">Closings Page</a></p>
 </Alert>
 ```
@@ -178,8 +172,7 @@ Html Snippet:
 ### Error Status Alert
 
 ```jsx
-<Alert className="status error">
-    <span className="dg_alert__status">Error</span>
+<Alert className="status" type="error">
     <p>Something went wrong.</p>
 </Alert>
 ```
@@ -200,8 +193,7 @@ Html Snippet:
 ### Error Status Alert with Icon
 
 ```jsx
-<Alert className="status error" icon="fas fa-exclamation-circle">
-    <span className="dg_alert__status">Error</span>
+<Alert className="status" type="error" icon="fas fa-exclamation-circle">
     <p>Something went wrong visit our <a href="">Closings Page</a></p>
 </Alert>
 ```

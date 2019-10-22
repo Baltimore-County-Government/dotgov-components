@@ -9,7 +9,7 @@
     align-items: center;
     justify-content: center;
     margin: auto;
-    max-width: 1400px;
+    max-width: $max-container-width;
     padding: 0 $default-padding;
     width: 100%;
   }
@@ -46,7 +46,7 @@
 
   .dg_alert__icon {
     font-size: $large-icon-size;
-    padding: 0 ($default-padding * 2) 0 $default-padding;
+    padding: 0 $padding-large 0 0;
   }
 
   &.emergency {
@@ -61,11 +61,8 @@
   &.status {
     border: $border-width-small solid $white;
     outline: $border-width-large solid transparent;
+    margin-bottom: $default-margin;
     text-align: left;
-
-    p {
-      font-style: italic;
-    }
 
     .dg_alert__container {
       justify-content: flex-start;
@@ -90,7 +87,7 @@
       }
     }
 
-    &.info {
+    &.information {
       background: $info-color;
       outline-color: $info-color;
 
