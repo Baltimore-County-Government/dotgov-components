@@ -29,7 +29,7 @@ import Section from "./containers/Section";
           </p>
         </CardContent>
         <CardFooter>
-          <button type="button" class="dg_button">
+          <button type="button" className="dg_button">
             Learn More
           </button>
         </CardFooter>
@@ -58,7 +58,7 @@ import Section from "./containers/Section";
           </p>
         </CardContent>
         <CardFooter>
-          <button type="button" class="dg_button">
+          <button type="button" className="dg_button">
             Learn More
           </button>
         </CardFooter>
@@ -87,7 +87,7 @@ import Section from "./containers/Section";
           </p>
         </CardContent>
         <CardFooter className="text-left">
-          <button type="button" class="dg_button">
+          <button type="button" className="dg_button">
             Learn More
           </button>
         </CardFooter>
@@ -149,7 +149,7 @@ import Section from "./containers/Section";
             </p>
           </CardContent>
           <CardFooter>
-            <button type="button" class="dg_button">
+            <button type="button" className="dg_button">
               Learn More
             </button>
           </CardFooter>
@@ -178,7 +178,7 @@ import Section from "./containers/Section";
             </p>
           </CardContent>
           <CardFooter>
-            <button type="button" class="dg_button">
+            <button type="button" className="dg_button">
               Learn More
             </button>
           </CardFooter>
@@ -207,7 +207,7 @@ import Section from "./containers/Section";
             </p>
           </CardContent>
           <CardFooter className="text-left">
-            <button type="button" class="dg_button">
+            <button type="button" className="dg_button">
               Learn More
             </button>
           </CardFooter>

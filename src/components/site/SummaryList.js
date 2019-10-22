@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 const SummaryList = props => {
   const { id, items = [] } = props;
   return (
-    <div id={id} key={id} className="dg_summary-list">
+    <div className="dg_summary-list">
       {items.map(item => (
         <div id={item.id} key={item.id} className="dg_summary-list__item">
           <i
