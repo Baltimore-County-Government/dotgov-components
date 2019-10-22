@@ -1,7 +1,9 @@
 .hidden {
   display: none;
 }
-
+.dg_icon-link:focus{
+  outline:0;
+  }
 [role="alertdialog"],
 [role="dialog"] {
   box-sizing: border-box;
