@@ -20,15 +20,18 @@
 
   a {
     text-decoration: underline;
+    padding: 0 1.5px;
 
     &:hover {
       background: $white;
       color: $vibrant-blue;
+      text-decoration: none;
     }
   }
 
   p {
     font-size: $smallest-heading-font-size;
+    font-style: italic;
     margin-bottom: 0;
   }
 
