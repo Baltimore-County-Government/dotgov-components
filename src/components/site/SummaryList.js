@@ -6,7 +6,7 @@ const SummaryList = props => {
   return (
     <div className="dg_summary-list">
       {items.map(item => (
-        <div id={item.id} key={item.id} className="dg_summary-list__item">
+        <div key={item.id} className="dg_summary-list__item">
           <i key={`summaryListItemIcon${item.id}`} className={item.icon}></i>
           <div key={`summaryListItem${item.id}`}>
             <h3 key={`summaryListItemHeader${item.id}`}>{item.heading} </h3>
