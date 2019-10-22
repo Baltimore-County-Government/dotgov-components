@@ -18,6 +18,15 @@
     &.disabled {
       background: $gray-light;
     }
+
+    &:hover,
+    &.hovered,
+    &:disabled,
+    &.disabled,
+    &:focus,
+    &.focused {
+      color: $white;
+    }
   }
 
   .dg_icon-link--circle {
