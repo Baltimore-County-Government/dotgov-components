@@ -3,7 +3,7 @@
 ```jsx
 import Section from "./containers/Section";
 <Section>
-  <div style={{ padding: "10px" }} className="dg_section">
+  <div style={{ padding: "10px" }}>
     <DateNewsCard
       date="07/29/2019"
       headline="Baltimore County Marks Progress in Rehabilitation of Winters lane Homes"
@@ -41,7 +41,7 @@ Html Snippet:
 ```jsx
 import Section from "./containers/Section";
 <Section className="dark">
-  <div style={{ padding: "10px" }} className="dg_section">
+  <div style={{ padding: "10px" }}>
     <DateNewsCard
       date="07/29/2019"
       headline="Baltimore County Marks Progress in Rehabilitation of Winters lane Homes"
