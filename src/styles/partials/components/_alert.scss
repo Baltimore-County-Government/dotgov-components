@@ -1,6 +1,6 @@
 .dg_alert {
   background: $vibrant-blue;
-  padding: $default-padding;
+  padding: $padding-large $default-padding;
   text-align: center;
 
   .dg_alert__container {
@@ -10,6 +10,7 @@
     justify-content: center;
     margin: auto;
     max-width: 1400px;
+    padding: 0 $default-padding;
     width: 100%;
   }
 
