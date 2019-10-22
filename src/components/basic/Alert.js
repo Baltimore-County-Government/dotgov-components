@@ -25,7 +25,9 @@ const Alert = props => {
 
 Alert.propTypes = {
   /** Font Awesome icon class */
-  icon: PropTypes.string
+  icon: PropTypes.string,
+  /** Type of alert you wish to display, possible values are 'emergency', 'success', 'information', 'warning', 'error' */
+  type: PropTypes.string
 };
 
 export default Alert;
