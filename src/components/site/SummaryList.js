@@ -7,13 +7,10 @@ const SummaryList = props => {
     <div className="dg_summary-list">
       {items.map(item => (
         <div key={item.id} className="dg_summary-list__item">
-          <i key={`summaryListItemIcon${item.id}`} className={item.icon}></i>
-          <div key={`summaryListItem${item.id}`}>
-            <h3 key={`summaryListItemHeader${item.id}`}>{item.heading} </h3>
-            <div
-              key={`summaryListHidden${item.id}`}
-              dangerouslySetInnerHTML={{ __html: item.content }}
-            />
+          <i className={item.icon}></i>
+          <div>
+            <h3>{item.heading} </h3>
+            <div dangerouslySetInnerHTML={{ __html: item.content }} />
           </div>
         </div>
       ))}
