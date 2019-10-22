@@ -1,9 +1,8 @@
 [role="alertdialog"],
 [role="dialog"] {
-  box-sizing: border-box;
-  padding: 15px;
-  color: $white;
   background-color: $pale-blue;
+  box-sizing: border-box;
+  color: $white;
   min-height: 100vh;
   padding: $padding-large $padding-jumbo;
 
