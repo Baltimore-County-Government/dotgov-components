@@ -48,33 +48,41 @@ Html Snippet:
 
 ```html
 <div class="dg_summary-list">
-  <div class="dg_summary-list__item"><i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+  <div class="dg_summary-list__item">
+    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
     <div>
-      <h3>Main Office </h3>
+      <h3>Main Office</h3>
       <div>
-        <p> 111 West Chesapeake Avenue<br> Suite 307<br> Towson, Maryland 21204</p>
+        <p>
+          111 West Chesapeake Avenue<br />
+          Suite 307<br />
+          Towson, Maryland 21204
+        </p>
       </div>
     </div>
   </div>
-  <div class="dg_summary-list__item"><i class="far fa-clock" aria-hidden="true"></i>
+  <div class="dg_summary-list__item">
+    <i class="far fa-clock" aria-hidden="true"></i>
     <div>
-      <h3>Hours: </h3>
+      <h3>Hours:</h3>
       <div>
-        <p>Monday through Friday<br>8 a.m. to 4:30 p.m.</p>
+        <p>Monday through Friday<br />8 a.m. to 4:30 p.m.</p>
       </div>
     </div>
   </div>
-  <div class="dg_summary-list__item"><i class="far fa-envelope" aria-hidden="true"></i>
+  <div class="dg_summary-list__item">
+    <i class="far fa-envelope" aria-hidden="true"></i>
     <div>
-      <h3>Email: </h3>
+      <h3>Email:</h3>
       <div>
         <p><a href="`#`">publicworks@​baltimorecountymd.gov</a></p>
       </div>
     </div>
   </div>
-  <div class="dg_summary-list__item"><i class="fas fa-mobile-alt" aria-hidden="true"></i>
+  <div class="dg_summary-list__item">
+    <i class="fas fa-mobile-alt" aria-hidden="true"></i>
     <div>
-      <h3>Phone: </h3>
+      <h3>Phone:</h3>
       <div>
         <p><a href="`tel:410-887-6789`">410-887-6789</a></p>
         <p></p>
@@ -84,17 +92,19 @@ Html Snippet:
       </div>
     </div>
   </div>
-  <div class="dg_summary-list__item"><i class="fas fa-exclamation-circle" aria-hidden="true"></i>
+  <div class="dg_summary-list__item">
+    <i class="fas fa-exclamation-circle" aria-hidden="true"></i>
     <div>
-      <h3>BALTCOGO311 </h3>
+      <h3>BALTCOGO311</h3>
       <div>
         <p><a href="`#`">Report a problem</a> online.</p>
       </div>
     </div>
   </div>
-  <div class="dg_summary-list__item"><i class="fas fa-user" aria-hidden="true"></i>
+  <div class="dg_summary-list__item">
+    <i class="fas fa-user" aria-hidden="true"></i>
     <div>
-      <h3>Director: </h3>
+      <h3>Director:</h3>
       <div>
         <p>Steve Walsh, P.E.</p>
       </div>
