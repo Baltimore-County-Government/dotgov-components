@@ -1,4 +1,5 @@
 .dg_step-list__toggle-btn__btn-text {
+  //padding-top: $padding-larger;
   display: block;
 }
 
@@ -79,6 +80,7 @@
 }
 
 .dg_step-list__toggle-btn__title {
+  margin-bottom: $margin-large;
   display: inline-block;
 }
 
