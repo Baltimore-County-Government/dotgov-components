@@ -46,7 +46,7 @@
 
   .dg_alert__icon {
     font-size: $large-icon-size;
-    padding: 0 ($default-padding * 2) 0 0;
+    padding: 0 $padding-large 0 0;
   }
 
   &.emergency {
