@@ -1,5 +1,4 @@
 .dg_step-list__toggle-btn__btn-text {
-  //padding-top: $padding-larger;
   display: block;
 }
 
@@ -38,7 +37,7 @@
       font-size: $h3-font-size;
       font-family: $default-heading-font;
       position: absolute;
-      top: -1px;
+      top: -2px;
       bottom: 0;
       left: -60px;
       height: 40px;
@@ -80,7 +79,7 @@
 }
 
 .dg_step-list__toggle-btn__title {
-  margin-bottom: $margin-large;
+  margin-bottom: $margin-small;
   display: inline-block;
 }
 
