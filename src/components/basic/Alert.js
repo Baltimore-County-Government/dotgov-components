@@ -24,7 +24,7 @@ const Alert = props => {
         {icon && <i className={iconCssClasses}></i>}
         <div className="dg_alert__content">
           {type && isStatusAlert && (
-            <span class="dg_alert__status">{type}</span>
+            <span className="dg_alert__status">{type}</span>
           )}
           {children}
         </div>
