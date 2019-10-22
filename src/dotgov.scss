@@ -6,6 +6,7 @@
 @import "./styles/variables/icons";
 /** spacing - contains padding and margin variables */
 @import "./styles/variables/spacing";
+@import "./styles/variables/status";
 
 /** Mixins */
 @import "./styles/mixins/animations";
@@ -30,6 +31,7 @@
 /** components */
 @import "./styles/partials/components/accordion";
 @import "./styles/partials/components/accordion-dark";
+@import "./styles/partials/components/alert";
 @import "./styles/partials/components/breadcrumbs-dark";
 @import "./styles/partials/components/breadcrumbs";
 @import "./styles/partials/components/card-container";

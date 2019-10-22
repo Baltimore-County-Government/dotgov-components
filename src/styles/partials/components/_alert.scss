@@ -1,0 +1,125 @@
+.dg_alert {
+  background: $vibrant-blue;
+  padding: $padding-large $default-padding;
+  text-align: center;
+
+  .dg_alert__container {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    max-width: $max-container-width;
+    padding: 0 $default-padding;
+    width: 100%;
+  }
+
+  * {
+    color: $white;
+  }
+
+  a {
+    text-decoration: underline;
+    padding: 0 1.5px;
+
+    &:hover {
+      background: $white;
+      color: $vibrant-blue;
+      text-decoration: none;
+    }
+  }
+
+  p {
+    font-size: $smallest-heading-font-size;
+    margin-bottom: 0;
+  }
+
+  p,
+  .dg_alert__status {
+    font-family: $default-heading-font;
+  }
+
+  .dg_alert__status {
+    font-weight: $font-bold;
+    text-transform: uppercase;
+  }
+
+  .dg_alert__icon {
+    font-size: $large-icon-size;
+    padding: 0 $padding-large 0 0;
+  }
+
+  &.emergency {
+    background: $error-color;
+
+    a:hover {
+      background: $white;
+      color: $error-color;
+    }
+  }
+
+  &.status {
+    border: $border-width-small solid $white;
+    outline: $border-width-large solid transparent;
+    margin-bottom: $default-margin;
+    text-align: left;
+
+    .dg_alert__container {
+      justify-content: flex-start;
+    }
+
+    * {
+      color: $white;
+    }
+
+    &.success {
+      background: $success-color;
+      border-color: $black;
+      outline-color: $success-color;
+
+      * {
+        color: $black;
+      }
+
+      a:hover {
+        background: $black;
+        color: $success-color;
+      }
+    }
+
+    &.information {
+      background: $info-color;
+      outline-color: $info-color;
+
+      a:hover {
+        background: $white;
+        color: $info-color;
+      }
+    }
+
+    &.warning {
+      background: $warning;
+      border-color: $black;
+      outline-color: $warning;
+
+      * {
+        color: $black;
+      }
+
+      a:hover {
+        background: $black;
+        color: $warning-color;
+      }
+    }
+
+    &.error {
+      background: $error-color;
+      outline-color: $error-color;
+
+      a:hover {
+        background: $white;
+        color: $error-color;
+      }
+    }
+  }
+}
