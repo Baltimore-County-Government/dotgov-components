@@ -4,7 +4,7 @@ const collapseItems = [
     id: 1,
     header: "Accordion Item #1",
     subheader: "This is a subheader",
-    content: <h2>Test Heading Level 2</h2>
+    content: <h3>Test Heading Level 3</h3>
   },
   {
     id: 2,
@@ -38,15 +38,11 @@ const collapseItems = [
     header: "Accordion Item #4",
     subheader: "",
     content: (
-      <img
-        width="300"
-        height="200"
-        alt="Stuff goes here"
-        src="//baltimorecountymd.gov/sebin/t/t/homepage-county-executive.jpg"
-        border="0"
-        vspace="0"
-        hspace="0"
-      />
+        <img
+          class="dg_image"
+          alt="Stuff goes here"
+          src="//baltimorecountymd.gov/sebin/t/t/homepage-county-executive.jpg"
+        />
     )
   },
   {
@@ -105,9 +101,11 @@ const collapseItems = [
 ];
 
 import Section from "../basic/containers/Section";
-<Section>
-  <Accordion collapseItems={collapseItems} />
-</Section>;
+<div id="dg_main-content">
+    <Section>
+        <Accordion collapseItems={collapseItems} />
+    </Section>;
+</div>
 ```
 
 ### Accordion Dark
@@ -118,7 +116,7 @@ const collapseItems = [
     id: 1,
     header: "Accordion Item #1",
     subheader: "This is a subheader",
-    content: <h2>Test Heading Level 2</h2>
+    content: <h3>Test Heading Level 3</h3>
   },
   {
     id: 2,
@@ -152,15 +150,11 @@ const collapseItems = [
     header: "Accordion Item #4",
     subheader: "",
     content: (
-      <img
-        width="300"
-        height="200"
-        alt="Stuff goes here"
-        src="//baltimorecountymd.gov/sebin/t/t/homepage-county-executive.jpg"
-        border="0"
-        vspace="0"
-        hspace="0"
-      />
+        <img
+          class="dg_image"
+          alt="Stuff goes here"
+          src="//baltimorecountymd.gov/sebin/t/t/homepage-county-executive.jpg"
+        />
     )
   },
   {
@@ -219,9 +213,11 @@ const collapseItems = [
 ];
 
 import Section from "../basic/containers/Section";
-<Section className="dark">
-  <Accordion collapseItems={collapseItems} />
-</Section>;
+<div id="dg_main-content">
+    <Section className="dark">
+        <Accordion collapseItems={collapseItems} />
+    </Section>;
+</div>
 ```
 
 Html Snippet:
