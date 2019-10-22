@@ -41,7 +41,7 @@ const publicWorksSummaryItems = [
   }
 ];
 
-<SummaryList id="summaryList-PublicWorks" items={publicWorksSummaryItems} />;
+<SummaryList items={publicWorksSummaryItems} />;
 ```
 
 Html Snippet:
