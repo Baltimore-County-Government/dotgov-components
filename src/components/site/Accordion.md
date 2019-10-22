@@ -38,11 +38,11 @@ const collapseItems = [
     header: "Accordion Item #4",
     subheader: "",
     content: (
-        <img
-          class="dg_image"
-          alt="Stuff goes here"
-          src="//baltimorecountymd.gov/sebin/t/t/homepage-county-executive.jpg"
-        />
+      <img
+        className="dg_image"
+        alt="Stuff goes here"
+        src="//baltimorecountymd.gov/sebin/t/t/homepage-county-executive.jpg"
+      />
     )
   },
   {
@@ -93,7 +93,7 @@ const collapseItems = [
     header: "Accordion Item #10",
     subheader: "",
     content: (
-      <button type="button" class="dg_button">
+      <button type="button" className="dg_button">
         Click Me
       </button>
     )
@@ -102,10 +102,11 @@ const collapseItems = [
 
 import Section from "../basic/containers/Section";
 <div id="dg_main-content">
-    <Section>
-        <Accordion collapseItems={collapseItems} />
-    </Section>;
-</div>
+  <Section>
+    <Accordion collapseItems={collapseItems} />
+  </Section>
+  ;
+</div>;
 ```
 
 ### Accordion Dark
@@ -150,11 +151,11 @@ const collapseItems = [
     header: "Accordion Item #4",
     subheader: "",
     content: (
-        <img
-          class="dg_image"
-          alt="Stuff goes here"
-          src="//baltimorecountymd.gov/sebin/t/t/homepage-county-executive.jpg"
-        />
+      <img
+        className="dg_image"
+        alt="Stuff goes here"
+        src="//baltimorecountymd.gov/sebin/t/t/homepage-county-executive.jpg"
+      />
     )
   },
   {
@@ -205,7 +206,7 @@ const collapseItems = [
     header: "Accordion Item #10",
     subheader: "",
     content: (
-      <button type="button" class="dg_button">
+      <button type="button" className="dg_button">
         Click Me
       </button>
     )
@@ -214,17 +215,17 @@ const collapseItems = [
 
 import Section from "../basic/containers/Section";
 <div id="dg_main-content">
-    <Section className="dark">
-        <Accordion collapseItems={collapseItems} />
-    </Section>;
-</div>
+  <Section className="dark">
+    <Accordion collapseItems={collapseItems} />
+  </Section>
+  ;
+</div>;
 ```
 
 Html Snippet:
 
 ```html
-<!--Remove/Add class canHaveMultiplePanelsOpen to toggle all can be opened together or one at a time open-->
-<div class="dg_accordion canHaveMultiplePanelsOpen" id="accordionExample1">
+<div class="dg_accordion" id="accordionExample1">
   <button class="dg_allitems dg_button-link" id="menuActionButton1">
     Open All
   </button>
