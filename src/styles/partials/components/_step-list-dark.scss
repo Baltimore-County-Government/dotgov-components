@@ -21,6 +21,10 @@
       cursor: default;
     }
 
+    .dg_step-list__toggle-btn__title {
+        color: $white;
+    }
+
     .dg_step-list__toggle-btn__btn-text,
     .dg_step-list__show-all-btn {
       display: none;
