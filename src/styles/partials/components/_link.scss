@@ -1,5 +1,6 @@
 $large-icon-link-size: 100px;
 $small-icon-link-size: 50px;
+$tiny-icon-link-size: 25px;
 
 @mixin icon-size($iconSize, $iconLinkSize) {
   font-size: $iconSize;
@@ -60,6 +61,14 @@ $small-icon-link-size: 50px;
   &:disabled,
   &.disabled {
     background: $gray-light;
+  }
+
+  &.dg_icon-link--tiny {
+    padding: $padding-smallest $padding-small;
+    i {
+      @include icon-size(18px, 25px);
+      line-height: 27.5px;
+    }
   }
 
   &.dg_icon-link--small {
