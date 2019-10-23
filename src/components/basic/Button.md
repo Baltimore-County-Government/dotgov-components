@@ -276,6 +276,36 @@ Html Snippet:
 </a>
 ```
 
+#### Tiny
+
+```jsx
+import IconLink from "./IconLink";
+<div
+  style={{ display: "flex", justifyContent: "space-between", padding: "10px" }}
+>
+  <IconLink
+    size="tiny"
+    href="#linkbutton-default"
+    id="linkbutton-default"
+    type="circle"
+    icon="far fa-times"
+    description="View your favorite default items."
+  />
+</div>;
+```
+
+Html Snippet:
+
+```html
+<a
+  class="dg_icon-link dg_icon-link--tiny dg_icon-link--circle"
+  href="#linkbutton-default"
+  aria-label="View your favorite default items."
+>
+  <i aria-hidden="true" class="dg_icon fas fa-star"></i>
+</a>
+```
+
 #### Large in a Dark Section
 
 By including a button inside of a [dark section](dark-section), it will automatically be styled appropriately.
