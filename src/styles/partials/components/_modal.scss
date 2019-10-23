@@ -45,7 +45,7 @@ $default-modal-width: 640px;
 
 @media screen and (min-width: 640px) {
   .dialog-backdrop {
-    background: rgba(0, 0, 0, 0.3);
+    background: $default-overlay-background;
   }
 }
 
