@@ -24,7 +24,7 @@ import section from "../basic/containers/Section";
   >
     <div className="text-right">
       <IconLink
-        size="small"
+        size="tiny"
         href="#my-accessible-dialog-close"
         id="my-accessible-dialog-close"
         type="circle"
