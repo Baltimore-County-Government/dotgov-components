@@ -9,7 +9,7 @@ $default-modal-width: 640px;
   padding: $padding-large $padding-largest;
 
   * {
-    color: white;
+    color: $white;
   }
 }
 
@@ -28,18 +28,6 @@ $default-modal-width: 640px;
     min-height: auto;
     box-shadow: $modal-box-shadow;
   }
-}
-
-.dialog_close_button {
-  float: right;
-  position: absolute;
-  top: 10px;
-  left: 92%;
-  height: 25px;
-}
-
-.dialog_close_button img {
-  border: 0;
 }
 
 /* native <dialog> element uses the ::backdrop pseudo-element */
