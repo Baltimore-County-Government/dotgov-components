@@ -25,10 +25,10 @@
   font-size: $h2-font-size;
   font-weight: $font-bold;
   width: 100%;
-  border-bottom: $border-width-small $black solid;
+  border-bottom: $border-width-small $gray solid;
 
   &:first-of-type {
-    border-top: $border-width-small $black solid;
+    border-top: $border-width-small $gray solid;
   }
 
   &:hover {
@@ -38,7 +38,7 @@
   .dg_accordion__subheader {
     font-size: $smallest-heading-font-size;
     font-weight: $font-medium;
-    color: $gray;
+    color: $gray-dark;
     padding-top: $padding-small;
     text-transform: none;
   }
