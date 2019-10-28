@@ -102,7 +102,7 @@ HTML Snippet:
 ```html
 <div className="row">
   <div className="d-flex col-md-4">
-    <div class="dg_card">
+    <div class="dg_card  dg_card-margin">
       <div class="dg_card__content">
         <div class="dg_icon-container">
           <i class="fas fa-star" aria-hidden="true"></i>
