@@ -105,7 +105,6 @@ import Section from "../basic/containers/Section";
   <Section>
     <Accordion collapseItems={collapseItems} />
   </Section>
-  ;
 </div>;
 ```
 
@@ -218,7 +217,6 @@ import Section from "../basic/containers/Section";
   <Section className="dark">
     <Accordion collapseItems={collapseItems} />
   </Section>
-  ;
 </div>;
 ```
 

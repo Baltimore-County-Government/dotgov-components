@@ -26,3 +26,8 @@
     background: $pale-blue;
   }
 }
+
+/* This wont work in Edge unless its outside of this query*/
+.ms-focus-within {
+  @include default-focus-state;
+}
