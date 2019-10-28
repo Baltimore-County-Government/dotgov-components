@@ -45,7 +45,7 @@ Html Snippet:
 </button>
 ```
 
-### Decorative Icon Button
+### Decorative Icon Buttons
 
 ```jsx
 import IconButton from "./IconButton";
@@ -75,6 +75,12 @@ import Section from "./containers/Section";
 Html Snippet:
 
 ```html
+<button class="dg_icon-link dg_icon-link--large dg_icon-link--circle" type="button" aria-label="View your favorite default items.">
+    <i aria-hidden="true" class="dg_icon far fa-times"></i>
+</button>
+<button class="dg_icon-link dg_icon-link--small dg_icon-link--circle" type="button" aria-label="View your favorite default items.">
+    <i aria-hidden="true" class="dg_icon far fa-times"></i>
+</button>
 <button class="dg_icon-link dg_icon-link--tiny dg_icon-link--circle" type="button" aria-label="View your favorite default items.">
     <i aria-hidden="true" class="dg_icon far fa-times"></i>
 </button>
