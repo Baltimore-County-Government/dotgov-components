@@ -1,0 +1,118 @@
+$desktop-menu-width: 490px;
+
+#bc_site-nav {
+  position: relative;
+  top: 0;
+  left: 0;
+
+  .bc_site-nav__toggle-button {
+    position: absolute;
+    top: 10px; /* mimic the top border of the site */
+    left: 0;
+    z-index: $max-z-index;
+    @include default-transition(left);
+  }
+
+  .bc_site-nav__seal {
+    max-width: 75px;
+    width: 100%;
+  }
+
+  .bc_site-nav__list-container {
+    background: $pale-blue-dark;
+    border-top: $border-width-largest solid $red;
+    color: $white;
+    padding: $default-padding;
+    position: fixed;
+    left: 0;
+    overflow-y: auto;
+    top: 0;
+    bottom: 0;
+    width: $desktop-menu-width;
+    @include default-transition;
+
+    ul {
+      list-style-type: none;
+      margin: $margin-largest 0 0;
+      padding: 0;
+
+      a {
+        border: $border-width-small solid $white;
+        color: $white;
+        display: block;
+        font-family: $default-heading-font;
+        font-weight: $font-bold;
+        font-size: $h3-font-size;
+        margin: $default-margin auto;
+        padding: $default-padding;
+        position: relative;
+        text-decoration: none;
+        text-transform: uppercase;
+        @include default-transition;
+
+        i {
+          text-align: center;
+          margin-right: $margin-small;
+          width: 40px;
+        }
+
+        &:after {
+          @include icon-content($icon-arrow-right);
+          position: absolute;
+          right: $default-padding; /* mimic padding with absolutely positioned element */
+        }
+
+        &:hover {
+          background: $blue-lightest;
+          color: $white;
+        }
+      }
+    }
+
+    &.invisible {
+      left: -$desktop-menu-width;
+    }
+  }
+}
+
+.is-active {
+  .bc_site-nav__toggle-button {
+    left: $desktop-menu-width !important;
+  }
+}
+
+#bc_page {
+  position: relative;
+  margin: auto;
+  left: 0;
+  @include default-transition(left);
+
+  &:after {
+    content: "";
+    opacity: 0;
+    background: #000000;
+    @include default-transition(opacity);
+    // transition:  0.2s;
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    visibility: hidden;
+    width: 100%;
+    z-index: 999;
+  }
+
+  &.is-disabled {
+    cursor: pointer;
+    overflow: hidden;
+    left: $desktop-menu-width;
+
+    &:after {
+      opacity: 0.8;
+      visibility: visible;
+    }
+  }
+}
+body.is-disabled {
+  overflow: hidden;
+}
