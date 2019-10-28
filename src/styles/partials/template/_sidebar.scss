@@ -26,8 +26,7 @@
 @media screen and (max-width: $medium-breakpoint) {
   .sidebar {
     h2 {
-      margin-top: $margin-large;
-      margin-bottom: $margin-large;
+      margin: $margin-large 0 $margin-large 0;
     }
   }
 }
