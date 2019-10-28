@@ -3,17 +3,6 @@
   padding: $padding-large $default-padding;
   text-align: center;
 
-  .dg_alert__container {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    max-width: $max-container-width;
-    padding: 0 $default-padding;
-    width: 100%;
-  }
-
   * {
     color: $white;
   }
@@ -63,10 +52,6 @@
     outline: $border-width-large solid transparent;
     margin-bottom: $default-margin;
     text-align: left;
-
-    .dg_alert__container {
-      justify-content: flex-start;
-    }
 
     * {
       color: $white;
