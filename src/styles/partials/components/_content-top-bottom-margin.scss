@@ -1,0 +1,11 @@
+
+$properties: (margin);
+@mixin set-value($side, $value) {
+    @each $prop in $properties {
+        #{$prop}-#{$side}: $value;
+    }
+}
+.dg_card-margin {
+    @include set-value(top, $margin-larger);
+    @include set-value(bottom, $margin-larger);
+}
