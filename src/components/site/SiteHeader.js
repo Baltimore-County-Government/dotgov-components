@@ -3,12 +3,13 @@ import PropTypes from "prop-types";
 import BrandText from "./BrandText";
 import SiteStatus from "./SiteStatus";
 import Search from "./Search";
+import SiteNavButton from "./SiteNavButton";
 
 const SiteHeader = props => {
   const { status, heading, subHeading } = props;
   return (
     <header className="dg_header dg_site-header">
-      {/* Hamburger Menu Will Go Here */}
+      <div id="fake-site-nav-button"></div>
       <div className="dg_brand">
         <a href="/" title="View the Baltimore County Government homepage.">
           <BrandText header={heading} description={subHeading} />
