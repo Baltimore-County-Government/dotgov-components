@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import BrandText from "./BrandText";
 import SiteStatus from "./SiteStatus";
 import Search from "./Search";
-import SiteNavButton from "./SiteNavButton";
 
 const SiteHeader = props => {
   const { status, heading, subHeading } = props;
