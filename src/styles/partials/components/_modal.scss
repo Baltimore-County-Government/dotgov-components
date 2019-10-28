@@ -1,0 +1,59 @@
+$default-modal-width: 640px;
+
+[role="alertdialog"],
+[role="dialog"] {
+  background-color: $pale-blue;
+  box-sizing: border-box;
+  color: $white;
+  min-height: 100vh;
+  padding: $padding-large $padding-largest;
+
+  * {
+    color: $white;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  [role="alertdialog"],
+  [role="dialog"] {
+    position: absolute;
+    top: 2rem;
+    left: 50vw; /* move to the middle of the screen (assumes relative parent is the body/viewport) */
+    transform: translateX(
+      -50%
+    ); /* move backwards 50% of this element's width */
+    min-width: calc(
+      $default-modal-width - (15px * 2)
+    ); /* == breakpoint - left+right margin */
+    min-height: auto;
+    box-shadow: $modal-box-shadow;
+  }
+}
+
+/* native <dialog> element uses the ::backdrop pseudo-element */
+
+/* dialog::backdrop, */
+.dialog-backdrop {
+  display: none;
+  position: fixed;
+  overflow-y: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+@media screen and (min-width: 640px) {
+  .dialog-backdrop {
+    background: $default-overlay-background;
+  }
+}
+
+.dialog-backdrop.active {
+  display: block;
+}
+
+/* this is added to the body when a dialog is open */
+.has-dialog {
+  overflow: hidden;
+}

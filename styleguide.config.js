@@ -29,6 +29,12 @@ module.exports = {
       name: "Components",
       content: "src/docs/Components.md",
       components: "src/components/basic/**/*.js",
+      sections: [
+        {
+          name: "Modal",
+          content: "src/components/basic/Modal.md"
+        }
+      ],
       ignore: [
         "src/components/basic/table/TableHead.js",
         "src/components/basic/table/TableBody.js",
@@ -65,6 +71,9 @@ module.exports = {
         },
         {
           src: "//baltimorecountymd.gov/sebin/r/z/dotgov-steplist.min.js"
+        },
+        {
+          src: "http://baltimorecountymd.gov/sebin/d/n/dotgov-modal.min.js"
         }
       ]
     }

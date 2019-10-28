@@ -1,8 +1,10 @@
 /** Variables */
 @import "./styles/variables/border";
+@import "./styles/variables/box-shadow";
 @import "./styles/variables/colors";
 @import "./styles/variables/fonts";
 @import "./styles/variables/icons";
+@import "./styles/variables/overlay";
 /** spacing - contains padding and margin variables */
 @import "./styles/variables/spacing";
 @import "./styles/variables/status";
@@ -66,8 +68,9 @@
 @import "./styles/partials/components/images";
 @import "./styles/partials/components/step-list";
 @import "./styles/partials/components/step-list-dark";
+@import "./styles/partials/components/modal";
 
-/** dark themed components - please start your file with .dg_section.dark and nest the styles below it **/
+/** dark themed components - please start your file with .dark and nest the styles below it **/
 @import "./styles/partials/components/table-dark";
 
 /** template */

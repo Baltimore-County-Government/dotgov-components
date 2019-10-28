@@ -1,4 +1,4 @@
-.dg_section.dark {
+.dark {
   .dg_icon-link {
     color: $white;
     border-color: $gray-light;
@@ -17,6 +17,15 @@
     &:disabled,
     &.disabled {
       background: $gray-light;
+    }
+
+    &:hover,
+    &.hovered,
+    &:disabled,
+    &.disabled,
+    &:focus,
+    &.focused {
+      color: $white;
     }
   }
 
