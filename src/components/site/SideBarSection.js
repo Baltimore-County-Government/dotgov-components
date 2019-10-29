@@ -5,7 +5,7 @@ const SidebarSection = props => {
   const { title, children } = props;
   return (
     <div className="dg_sidebar">
-      <h2 className="dg_sidebar__title">{title}</h2>
+      <h2>{title}</h2>
       <div>{children}</div>
     </div>
   );

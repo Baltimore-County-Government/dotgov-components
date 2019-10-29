@@ -44,7 +44,32 @@ const publicWorksSummaryItems = [
     content: "<p>Steve Walsh, P.E.</p>"
   }
 ];
-const sideBar = () => <SummaryList items={publicWorksSummaryItems} />;
 
-<SidebarSection title="Contact Us">{sideBar}</SidebarSection>;
+const followUsSummaryItems = [
+  {
+    id: 1,
+    icon: "dg_icon fab fa-facebook-square",
+    heading: "Clean Green Baltimore County"
+  },
+
+  {
+    id: 2,
+    icon: "dg_icon fab fa-twitter",
+    heading: "Severe Weather:",
+    content:
+      "<p>follow <a href=https://www.w3schools.com/>@baltcoemergency</a></p>"
+  },
+  {
+    id: 3,
+    icon: "dg_icon fab fa-youtube",
+    heading: "Youtube"
+  }
+];
+const sideBar = <SummaryList items={publicWorksSummaryItems} />;
+const followUsSideBar = <SummaryList items={followUsSummaryItems} />;
+
+<div>
+  <SidebarSection title="Contact Us">{sideBar}</SidebarSection>
+  <SidebarSection title="Follow Us">{followUsSideBar}</SidebarSection>
+</div>;
 ```

@@ -1,6 +1,6 @@
 .dg_sidebar {
   border-top: $border-width-large $gray-light solid;
-  margin-top: $default-margin;
+  margin-bottom: $margin-larger;
   h1,
   h2,
   h3,
@@ -12,6 +12,7 @@
   p {
     font-family: $default-heading-font;
     font-size: $smallest-heading-font-size;
+    margin: $default-margin 0 $default-margin 0;
   }
 
   h2 {
@@ -27,7 +28,7 @@
 }
 
 @media screen and (max-width: $medium-breakpoint) {
-  .dg_sidebar__title {
-    margin: $margin-large 0 $margin-large 0;
+  .dg_sidebar:first-of-type {
+    margin-top: $margin-larger;
   }
 }
