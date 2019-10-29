@@ -1,4 +1,5 @@
-.sidebar {
+.dg_sidebar {
+  border-top: $border-width-large $gray-light solid;
   margin-top: $default-margin;
   h1,
   h2,
@@ -26,10 +27,7 @@
 }
 
 @media screen and (max-width: $medium-breakpoint) {
-  .sidebar {
-    border-top: $border-width-large $gray-light solid;
-    h2 {
-      margin: $margin-large 0 $margin-large 0;
-    }
+  h2 {
+    margin: $margin-large 0 $margin-large 0;
   }
 }
