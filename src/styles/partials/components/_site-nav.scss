@@ -1,4 +1,25 @@
-$desktop-menu-width: 490px;
+$desktop-menu-width: 400px;
+$mobile-menu-width: 300px;
+
+@mixin nav-menu-width($width) {
+  #bc_site-nav .bc_site-nav__list-container {
+    width: $width;
+
+    &.invisible {
+      left: -$width;
+    }
+  }
+
+  .is-active {
+    .bc_site-nav__toggle-button {
+      left: $width !important;
+    }
+  }
+
+  #bc_page.is-disabled {
+    left: $width;
+  }
+}
 
 #bc_site-nav {
   position: relative;
@@ -22,13 +43,12 @@ $desktop-menu-width: 490px;
     background: $pale-blue-dark;
     border-top: $border-width-largest solid $red;
     color: $white;
-    padding: $default-padding;
+    padding: $default-padding $padding-large;
     position: fixed;
     left: 0;
     overflow-y: auto;
     top: 0;
     bottom: 0;
-    width: $desktop-menu-width;
     @include default-transition(left);
 
     ul {
@@ -42,9 +62,9 @@ $desktop-menu-width: 490px;
         display: block;
         font-family: $default-heading-font;
         font-weight: $font-bold;
-        font-size: $h3-font-size;
+        font-size: $small-heading-font-size;
         margin: $default-margin auto;
-        padding: $default-padding;
+        padding: $padding-large $default-padding;
         position: relative;
         text-decoration: none;
         text-transform: uppercase;
@@ -67,18 +87,10 @@ $desktop-menu-width: 490px;
         }
       }
     }
-
-    &.invisible {
-      left: -$desktop-menu-width;
-    }
   }
 }
 
 .is-active {
-  .bc_site-nav__toggle-button {
-    left: $desktop-menu-width !important;
-  }
-
   &:after {
     position: absolute;
     content: "";
@@ -112,9 +124,7 @@ $desktop-menu-width: 490px;
   }
 
   &.is-disabled {
-    cursor: pointer;
     overflow: hidden;
-    left: $desktop-menu-width;
 
     &:after {
       opacity: $default-overlay-opacity;
@@ -124,4 +134,15 @@ $desktop-menu-width: 490px;
 }
 body.is-disabled {
   overflow: hidden;
+}
+
+@include nav-menu-width($desktop-menu-width);
+
+/* breakpoint is specific to the site navigation only */
+@media screen and (max-width: $small-breakpoint) {
+  @include nav-menu-width($mobile-menu-width);
+
+  #bc_site-nav .bc_site-nav__list-container ul a i {
+    display: none;
+  }
 }
