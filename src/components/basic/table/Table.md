@@ -37,7 +37,7 @@ import TableRow from "./TableRow";
 </Table>;
 ```
 
-If you aren't using react, you'll need to use the following html:
+Html Snippet:
 
 ```html
 <table class="table">
@@ -110,7 +110,7 @@ import TableRow from "./TableRow";
 </Section>;
 ```
 
-If you aren't using react, you'll need to use the following html:
+Html Snippet:
 
 ```html
 <div class="dg_section dark">
@@ -141,4 +141,99 @@ If you aren't using react, you'll need to use the following html:
     </tbody>
   </table>
 </div>
+```
+
+### Vertical Table Headings
+
+```jsx
+import Table from "./Table";
+import TableBody from "./TableBody";
+import TableCell from "./TableCell";
+import TableHead from "./TableHead";
+import TableHeadCell from "./TableHeadCell";
+import TableRow from "./TableRow";
+<Table>
+    <TableRow>
+        <TableHeadCell>Breakfast</TableHeadCell>
+        <TableCell>Breakfast Pizza™</TableCell>
+    </TableRow>
+    <TableRow>
+        <TableHeadCell>Lunch</TableHeadCell>
+        <TableCell>Gummy Worms</TableCell>
+    </TableRow>
+    <TableRow>
+        <TableHeadCell>Dinner</TableHeadCell>
+        <TableCell>Dinner Pizza™</TableCell>
+    </TableRow>
+</Table>
+```
+
+Html Snippet:
+
+```html
+<table class="table">
+    <tr>
+        <th>Breakfast</th>
+            <td>Breakfast Pizza™</td>
+    </tr>
+    <tr>
+        <th>Lunch</th>
+        <td>Gummy Worms</td>
+    </tr>
+    <tr>
+        <th>Dinner</th>
+        <td>Dinner Pizza™</td>
+    </tr>
+</table>
+```
+
+### Vertical Table Headings in a Dark Section
+
+```jsx
+import Table from "./Table";
+import TableBody from "./TableBody";
+import TableCell from "./TableCell";
+import TableHead from "./TableHead";
+import TableHeadCell from "./TableHeadCell";
+import TableRow from "./TableRow";
+import Section from '../containers/Section';
+<Section className="dark">
+    <div style={{paddingLeft: "15px", paddingRight: "15px"}}>
+        <Table>
+            <TableBody>
+                <TableRow>
+                    <TableHeadCell>Breakfast</TableHeadCell>
+                    <TableCell>Breakfast Pizza™</TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableHeadCell>Lunch</TableHeadCell>
+                    <TableCell>Gummy Worms</TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableHeadCell>Dinner</TableHeadCell>
+                    <TableCell>Dinner Pizza™</TableCell>
+                </TableRow>
+            </TableBody>
+        </Table>
+    </div>
+</Section>
+```
+
+Html Snippet:
+
+```html
+<table class="table">
+    <tr>
+        <th>Breakfast</th>
+            <td>Breakfast Pizza™</td>
+    </tr>
+    <tr>
+        <th>Lunch</th>
+        <td>Gummy Worms</td>
+    </tr>
+    <tr>
+        <th>Dinner</th>
+        <td>Dinner Pizza™</td>
+    </tr>
+</table>
 ```
