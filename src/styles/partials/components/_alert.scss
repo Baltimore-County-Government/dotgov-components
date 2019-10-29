@@ -3,17 +3,6 @@
   padding: $padding-large $default-padding;
   text-align: center;
 
-  .dg_alert__container {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    max-width: $max-container-width;
-    padding: 0 $default-padding;
-    width: 100%;
-  }
-
   * {
     color: $white;
   }
@@ -45,8 +34,7 @@
   }
 
   .dg_alert__icon {
-    font-size: $large-icon-size;
-    padding: 0 $padding-large 0 0;
+    padding: 0 $padding-small 0 0;
   }
 
   &.emergency {
@@ -63,10 +51,6 @@
     outline: $border-width-large solid transparent;
     margin-bottom: $default-margin;
     text-align: left;
-
-    .dg_alert__container {
-      justify-content: flex-start;
-    }
 
     * {
       color: $white;
@@ -121,5 +105,11 @@
         color: $error-color;
       }
     }
+  }
+}
+@media screen and (max-width: $small-breakpoint) {
+  .dg_alert {
+    padding-top:$padding-small;
+    padding-bottom: $padding-small;
   }
 }
