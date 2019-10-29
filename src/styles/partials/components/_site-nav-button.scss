@@ -24,27 +24,6 @@
     font-size: 40px;
     padding: 0 $default-padding;
   }
-
-  &:hover,
-  &.hovered,
-  &:active,
-  &.active {
-    i {
-      color: white;
-    }
-  }
-
-  &:hover,
-  &.hovered {
-    background: $vibrant-blue;
-    color: $white;
-  }
-
-  &:active,
-  &.active {
-    background: $pale-blue;
-    color: $white;
-  }
 }
 
 /* Mimics the site nav button that is placed outside of the header */
