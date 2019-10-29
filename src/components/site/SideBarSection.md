@@ -46,5 +46,5 @@ const publicWorksSummaryItems = [
 ];
 const sideBar = () => <SummaryList items={publicWorksSummaryItems} />;
 
-<SidebarSection sideBarTitle="Contact Us">{sideBar}</SidebarSection>;
+<SidebarSection title="Contact Us">{sideBar}</SidebarSection>;
 ```
