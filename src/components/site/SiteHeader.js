@@ -8,8 +8,8 @@ const SiteHeader = props => {
   const { status, heading, subHeading } = props;
   return (
     <header className="dg_header dg_site-header">
-      <div id="fake-site-nav-button"></div>
       <div className="dg_brand">
+        <div id="fake-site-nav-button"></div>
         <a href="/" title="View the Baltimore County Government homepage.">
           <BrandText header={heading} description={subHeading} />
         </a>
