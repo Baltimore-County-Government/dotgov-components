@@ -11,6 +11,7 @@ $tiny-icon-link-size: 25px;
 
 .dg_icon-link {
   color: $gray-darkest;
+  cursor: pointer;
   border: $border-width-small solid $gray;
   display: inline-block;
   font-family: $default-heading-font;
