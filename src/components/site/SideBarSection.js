@@ -13,7 +13,7 @@ const SidebarSection = props => {
 
 SidebarSection.propTypes = {
   /** The title to display */
-  sideBarTitle: PropTypes.string.isRequired
+  title: PropTypes.string.isRequired
 };
 
 export default SidebarSection;
