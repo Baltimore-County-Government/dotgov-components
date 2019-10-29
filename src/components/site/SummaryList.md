@@ -40,6 +40,7 @@ const publicWorksSummaryItems = [
     content: "<p>Steve Walsh, P.E.</p>"
   }
 ];
+
 <SummaryList items={publicWorksSummaryItems} />;
 ```
 
