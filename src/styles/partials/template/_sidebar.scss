@@ -27,7 +27,7 @@
 }
 
 @media screen and (max-width: $medium-breakpoint) {
-  h2 {
+  .dg_sidebar__title {
     margin: $margin-large 0 $margin-large 0;
   }
 }
