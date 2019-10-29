@@ -1,1 +1,2 @@
-$default-overlay-background: rgba(0, 0, 0, 0.3);
+$default-overlay-opacity: 0.3;
+$default-overlay-background: rgba(0, 0, 0, $default-overlay-opacity);
