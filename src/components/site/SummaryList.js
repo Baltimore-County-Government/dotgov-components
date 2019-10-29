@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 
 const SummaryList = props => {
   const { items = [] } = props;
-
   return (
     <div className="dg_summary-list">
       {items.map(item => (
