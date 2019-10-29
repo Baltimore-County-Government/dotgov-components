@@ -34,8 +34,7 @@
   }
 
   .dg_alert__icon {
-    font-size: $large-icon-size;
-    padding: 0 $padding-large 0 0;
+    padding: 0 $padding-small 0 0;
   }
 
   &.emergency {
@@ -106,5 +105,11 @@
         color: $error-color;
       }
     }
+  }
+}
+@media screen and (max-width: $small-breakpoint) {
+  .dg_alert {
+    padding-top:$padding-small;
+    padding-bottom: $padding-small;
   }
 }
