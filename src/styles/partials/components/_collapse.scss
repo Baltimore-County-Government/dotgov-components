@@ -1,0 +1,10 @@
+.dg_collapse {
+  border-top: $border-width-large solid $gray-light;
+  button {
+    color: $black;
+  }
+
+  .dg_accordion-item-body {
+    background: $gray-lightest;
+  }
+}
