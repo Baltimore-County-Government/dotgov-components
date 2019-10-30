@@ -1,7 +1,6 @@
 ```jsx
-const Content = props => ;
 <Collapse id="sample-collapse" header="Categories">
-    <p>Test Content</p>
+    <p>Some really compelling content goes here.</p>
 </Collapse>
 ```
 
@@ -9,13 +8,12 @@ Html Snippet:
 
 ```html
 <div class="dg_accordion__collapsible dg_collapse">
-    <button class="dg_accordion-btn" type="button" aria-controls="collapse-sample-collapse">
+    <button class="dg_accordion-btn" type="button" id="accordion-btn-sample-collapse" aria-expanded="true">
         <span class="dg_accordion_buttontext-holder">Categories</span>
-        <div class="dg_accordion__subheader"></div>
     </button>
-    <div class="multi-collapse collapse show" aria-expanded="true">
+    <div class="multi-collapse collapse show" aria-labeledby="accordion-btn-sample-collapse" aria-expanded="true">
         <div class="dg_accordion-item-body">
-            <p>Test Content</p>
+            <p>Some really compelling content goes here.</p>
         </div>
     </div>
 </div>
