@@ -41,10 +41,8 @@ export {
 
 /** Other */
 export { default as Alert } from "./components/basic/Alert";
-export { default as Collapse } from "./components/site/Collapse";
-export {
-  default as Accordion
-} from "./components/basic/Accordion"; /** This should to the default components part of the project */
+export { default as Collapse } from "./components/basic/Collapse";
+export { default as Accordion } from "./components/basic/Accordion";
 export { default as StepList } from "./components/basic/StepList";
 export { default as StepListItem } from "./components/basic/StepListItem";
 export { default as Button } from "./components/basic/Button";
