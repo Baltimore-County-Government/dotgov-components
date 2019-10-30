@@ -16,7 +16,7 @@ Html Snippet:
 
 ```html
 <div class="dg_alert">
-  <div class="dg_alert__content">
+  <div>
     <p>
       The watercooler outside of the Budget and Finance Office has been moved to
       the Historic Courthouse Mezzanine. For more information please visit our
@@ -40,7 +40,7 @@ Html Snippet:
 
 ```html
 <div class="dg_alert emergency">
-  <div class="dg_alert__content">
+  <div>
     <p>This is a emergency alert. View our <a href="#">Emergencies Page</a></p>
   </div>
 </div>
@@ -58,7 +58,7 @@ Html Snippet:
 
 ```html
 <div class="dg_alert status" type="success">
-  <div class="dg_alert__content">
+  <div>
     <span class="dg_alert__status">Success</span>
     <p>You can do something now.</p>
   </div>
@@ -79,7 +79,7 @@ Html Snippet:
 
 ```html
 <div class="dg_alert status success">
-  <div class="dg_alert__content">
+  <div>
     <span class="dg_alert__status"
       ><i class="dg_alert__icon far fa-check" aria-hidden="true"></i
       >Success</span
@@ -101,7 +101,7 @@ Html Snippet:
 
 ```html
 <div class="dg_alert status info">
-  <div class="dg_alert__content">
+  <div>
     <span class="dg_alert__status">Information</span>
     <p>This is information you need to know.</p>
   </div>
@@ -122,7 +122,7 @@ Html Snippet:
 
 ```html
 <div class="dg_alert status info">
-  <div class="dg_alert__content">
+  <div>
     <span class="dg_alert__status"
       ><i class="dg_alert__icon far fa-info-circle" aria-hidden="true"></i
       >Information</span
@@ -144,7 +144,7 @@ Html Snippet:
 
 ```html
 <div class="dg_alert status warning">
-  <div class="dg_alert__content">
+  <div>
     <span class="dg_alert__status">Warning</span>
     <p>This is a warning you need to know.</p>
   </div>
@@ -165,7 +165,7 @@ Html Snippet:
 
 ```html
 <div class="dg_alert status warning">
-  <div class="dg_alert__content">
+  <div>
     <span class="dg_alert__status"
       ><i
         class="dg_alert__icon far fa-exclamation-triangle"
@@ -190,7 +190,7 @@ Html Snippet:
 
 ```html
 <div class="dg_alert status error">
-  <div class="dg_alert__content">
+  <div>
     <span class="dg_alert__status">Error</span>
     <p>Something went wrong.</p>
   </div>
@@ -211,7 +211,7 @@ Html Snippet:
 
 ```html
 <div class="dg_alert status error">
-  <div class="dg_alert__content">
+  <div>
     <span class="dg_alert__status"
       ><i
         class="dg_alert__icon fas fa-exclamation-circle"
