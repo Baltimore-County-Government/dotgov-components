@@ -16,7 +16,12 @@ const Accordion = props => {
       {collapseItems.map(item => {
         const { id, header, subheader, content } = item;
         return (
-          <AccordionPanel id={id} header={header} subHeader={subheader}>
+          <AccordionPanel
+            key={id}
+            id={id}
+            header={header}
+            subHeader={subheader}
+          >
             {content}
           </AccordionPanel>
         );

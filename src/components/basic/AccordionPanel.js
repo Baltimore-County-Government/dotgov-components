@@ -32,7 +32,7 @@ const AccordionPanel = props => {
       </button>
       <div
         className="multi-collapse collapse"
-        aria-labeledby={buttonId}
+        aria-labelledby={buttonId}
         aria-expanded={isExpanded}
       >
         <div className="dg_accordion-item-body">{children}</div>
