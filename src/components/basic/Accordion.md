@@ -1,3 +1,9 @@
+**Note**: At this time, an external script reference is required in order to use accordions
+
+## Examples
+
+### Default Example
+
 ```jsx
 const collapseItems = [
   {
