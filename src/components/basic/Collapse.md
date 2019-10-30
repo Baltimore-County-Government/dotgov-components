@@ -1,10 +1,8 @@
 ```jsx
-const Content = props => <p>Test Content</p>;
-<Collapse
-    id="sample-collapse"
-    header="Categories"
-    content={<Content />}
-/>
+const Content = props => ;
+<Collapse id="sample-collapse" header="Categories">
+    <p>Test Content</p>
+</Collapse>
 ```
 
 Html Snippet:
