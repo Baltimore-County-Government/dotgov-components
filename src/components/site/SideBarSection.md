@@ -73,3 +73,16 @@ const followUsSideBar = <SummaryList items={followUsSummaryItems} />;
   <SidebarSection title="Follow Us">{followUsSideBar}</SidebarSection>
 </div>;
 ```
+
+Html Snippet:
+
+All side bar content needs to be wrapped inside of a div with dg_sidebar class and have some sort of descriptive element such as an h2 or p
+
+```html
+<div class="dg_sidebar">
+  <h2>Contact Us</h2>
+</div>
+<div class="dg_sidebar">
+  <p>Follow Us</p>
+</div>
+```
