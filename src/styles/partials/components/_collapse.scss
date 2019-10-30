@@ -1,10 +1,33 @@
 .dg_collapse {
   border-top: $border-width-large solid $gray-light;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
   button {
     color: $black;
   }
 
   .dg_accordion-item-body {
     background: $gray-lightest;
+    font-weight: $font-normal;
+
+    * {
+      font-family: $default-heading-font;
+      font-size: $small-heading-font-size;
+    }
+  }
+
+  .dg_accordion-btn {
+    &:after {
+      color: $blue;
+      display: inline-block;
+      left: 0;
+      padding: 7.5px 0;
+    }
+  }
+  .dg_accordion_buttontext-holder {
+    margin-left: $margin-large;
   }
 }
