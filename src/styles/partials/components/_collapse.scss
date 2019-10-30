@@ -5,8 +5,9 @@
     border-bottom: none;
   }
 
-  button {
+  .dg_accordion-btn {
     color: $black;
+    margin-bottom: $margin-small;
   }
 
   .dg_accordion-item-body {
