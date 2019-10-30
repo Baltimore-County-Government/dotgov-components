@@ -13,7 +13,7 @@ $default-modal-width: 640px;
   }
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: $default-modal-width) {
   [role="alertdialog"],
   [role="dialog"] {
     position: absolute;
@@ -23,10 +23,12 @@ $default-modal-width: 640px;
       -50%
     ); /* move backwards 50% of this element's width */
     min-width: calc(
-      $default-modal-width - (15px * 2)
-    ); /* == breakpoint - left+right margin */
+      #{$default-modal-width} - (#{$default-padding} * 2)
+    ); /* https://stackoverflow.com/a/20236515/1143670 */
+    /* == breakpoint - left+right margin */
     min-height: auto;
     box-shadow: $modal-box-shadow;
+    z-index: $max-z-index;
   }
 }
 
@@ -41,6 +43,7 @@ $default-modal-width: 640px;
   right: 0;
   bottom: 0;
   left: 0;
+  z-index: $max-z-index-minus-1;
 }
 
 @media screen and (min-width: 640px) {
