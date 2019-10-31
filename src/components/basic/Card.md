@@ -17,12 +17,12 @@ import Section from "./containers/Section";
     <div className="d-flex col-md-4">
       <Card>
         <CardContent>
-          <div className="dg_icon-container">
-            <i className="fas fa-star" aria-hidden="true"></i>
-          </div>
-          <h3>Centered With Icon</h3>
-          <p>.8 acres</p>
-          <div className="dg_card__content">
+          <div class="dg_card__content">
+            <div className="dg_icon-container">
+              <i className="fas fa-star" aria-hidden="true"></i>
+            </div>
+            <h3>Centered With Icon</h3>
+            <p>.8 acres</p>
             <p>
               <a href="https://www.google.com/maps">
                 300 Lennox Avenue Room 202 Towson, Maryland 21286
@@ -53,13 +53,12 @@ import Section from "./containers/Section";
           </svg>
           <h3>Centered With Image</h3>
           <p>.8 acres</p>
-          <div className="dg_card__content">
-            <p>
-              <a href="https://www.google.com/maps">
-                300 Lennox Avenue Room 202 Towson, Maryland 21286
-              </a>
-            </p>
-          </div>
+
+          <p>
+            <a href="https://www.google.com/maps">
+              300 Lennox Avenue Room 202 Towson, Maryland 21286
+            </a>
+          </p>
         </CardContent>
         <CardFooter>
           <button type="button" className="dg_button">
@@ -84,13 +83,12 @@ import Section from "./containers/Section";
           </svg>
           <h3>Align Left With Image</h3>
           <p>.8 acres</p>
-          <div className="dg_card__content">
-            <p>
-              <a href="https://www.google.com/maps">
-                300 Lennox Avenue Room 202 Towson, Maryland 21286
-              </a>
-            </p>
-          </div>
+
+          <p>
+            <a href="https://www.google.com/maps">
+              300 Lennox Avenue Room 202 Towson, Maryland 21286
+            </a>
+          </p>
         </CardContent>
         <CardFooter className="text-left">
           <button type="button" className="dg_button">
@@ -115,13 +113,12 @@ HTML Snippet:
         </div>
         <h3>Centered With Icon</h3>
         <p>.8 acres</p>
-        <div className="dg_card__content">
-          <p>
-            <a href="https://www.google.com/maps"
-              >300 Lennox Avenue Room 202 Towson, Maryland 21286</a
-            >
-          </p>
-        </div>
+
+        <p>
+          <a href="https://www.google.com/maps"
+            >300 Lennox Avenue Room 202 Towson, Maryland 21286</a
+          >
+        </p>
       </div>
       <div class="dg_card__footer">
         <button type="button" class="dg_button">Learn More</button>
@@ -150,13 +147,11 @@ import Section from "./containers/Section";
             </div>
             <h3>Centered With Icon</h3>
             <p>.8 acres</p>
-            <div className="dg_card__content">
-              <p>
-                <a href="https://www.google.com/maps">
-                  300 Lennox Avenue Room 202 Towson, Maryland 21286
-                </a>
-              </p>
-            </div>
+            <p>
+              <a href="https://www.google.com/maps">
+                300 Lennox Avenue Room 202 Towson, Maryland 21286
+              </a>
+            </p>
           </CardContent>
           <CardFooter>
             <button type="button" className="dg_button">
@@ -181,13 +176,11 @@ import Section from "./containers/Section";
             </svg>
             <h3>Centered With Image</h3>
             <p>.8 acres</p>
-            <div className="dg_card__content">
-              <p>
-                <a href="https://www.google.com/maps">
-                  300 Lennox Avenue Room 202 Towson, Maryland 21286
-                </a>
-              </p>
-            </div>
+            <p>
+              <a href="https://www.google.com/maps">
+                300 Lennox Avenue Room 202 Towson, Maryland 21286
+              </a>
+            </p>
           </CardContent>
           <CardFooter>
             <button type="button" className="dg_button">
@@ -212,13 +205,11 @@ import Section from "./containers/Section";
             </svg>
             <h3>Align Left With Image</h3>
             <p>.8 acres</p>
-            <div className="dg_card__content">
-              <p>
-                <a href="https://www.google.com/maps">
-                  300 Lennox Avenue Room 202 Towson, Maryland 21286
-                </a>
-              </p>
-            </div>
+            <p>
+              <a href="https://www.google.com/maps">
+                300 Lennox Avenue Room 202 Towson, Maryland 21286
+              </a>
+            </p>
           </CardContent>
           <CardFooter className="text-left">
             <button type="button" className="dg_button">

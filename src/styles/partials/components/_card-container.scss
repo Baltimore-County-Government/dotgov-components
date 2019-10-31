@@ -17,6 +17,8 @@
 }
 .dg_card__content {
   p {
-    font-size: $small-heading-font-size;
+    a {
+      font-size: $small-heading-font-size;
+    }
   }
 }
