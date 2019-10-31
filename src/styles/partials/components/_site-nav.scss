@@ -1,5 +1,5 @@
 $desktop-menu-width: 400px;
-$mobile-menu-width: 300px;
+$mobile-menu-width: 245px;
 
 @mixin nav-menu-width($width) {
   #bc_site-nav .bc_site-nav__list-container {
@@ -53,7 +53,7 @@ $mobile-menu-width: 300px;
 
     ul {
       list-style-type: none;
-      margin: $margin-largest 0 0;
+      margin: $margin-large 0 0;
       padding: 0;
 
       a {
@@ -98,7 +98,7 @@ $mobile-menu-width: 300px;
     right: 0;
     height: 10px;
     background: $red;
-    z-index: $max-z-index;
+    z-index: $site-nav-z-index;
   }
 }
 
@@ -139,10 +139,80 @@ body.is-disabled {
 @include nav-menu-width($desktop-menu-width);
 
 /* breakpoint is specific to the site navigation only */
-@media screen and (max-width: $small-breakpoint) {
+@media screen and (max-width: $medium-breakpoint) {
   @include nav-menu-width($mobile-menu-width);
 
   #bc_site-nav .bc_site-nav__list-container ul a i {
     display: none;
   }
 }
+
+/*TODO: this needs to be full screen, with the close button absolutely position in the top right */
+// @media screen and (max-width: $small-breakpoint) {
+//   body.is-disabled {
+//     position: relative;
+//   }
+
+//   #bc_site-nav {
+//     top: 0;
+//     bottom: 0;
+//     left: 0;
+//     right: 0;
+
+//     &.is-active {
+//       position: absolute;
+//       z-index: $max-z-index-minus-1;
+//     }
+
+//     .bc_site-nav__list-container {
+//       position: absolute;
+//       left: 0;
+//       right: 0;
+//       top: 0;
+//       bottom: 0;
+//       width: 100%;
+//       transition: none;
+//       z-index: -1;
+//     }
+
+//     &.is-active {
+//       .bc_site-nav__toggle-button {
+//         background: transparent;
+//         color: $white;
+//         top: 10px;
+//         position: absolute;
+//         left: auto !important;
+//         right: 0;
+//         z-index: $max-z-index;
+//         transition: none;
+
+//         i {
+//           color: white;
+//         }
+//       }
+//     }
+//   }
+
+//   #bc_page {
+//     position: static;
+//     transition: none;
+//   }
+
+//   #bc_site-nav .bc_site-nav__list-container {
+//     width: 100%;
+
+//     &.invisible {
+//       left: 0;
+//     }
+//   }
+
+//   .is-active {
+//     .bc_site-nav__toggle-button {
+//       left: 0 !important;
+//     }
+//   }
+
+//   #bc_page.is-disabled {
+//     left: 0;
+//   }
+// }
