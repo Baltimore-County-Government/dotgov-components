@@ -49,7 +49,7 @@ import Section from "./containers/Section";
             role="img"
             aria-label="Placeholder: Thumbnail"
           >
-            <rect width="100%" height="200px" fill="#C2C2C2"></rect>
+            <rect width="100%" height="150px" fill="#C2C2C2"></rect>
           </svg>
           <h3>Centered With Image</h3>
           <p>.8 acres</p>
@@ -80,7 +80,7 @@ import Section from "./containers/Section";
             role="img"
             aria-label="Placeholder: Thumbnail"
           >
-            <rect width="100%" height="200px" fill="#C2C2C2"></rect>
+            <rect width="100%" height="150px" fill="#C2C2C2"></rect>
           </svg>
           <h3>Align Left With Image</h3>
           <p>.8 acres</p>
@@ -177,7 +177,7 @@ import Section from "./containers/Section";
               role="img"
               aria-label="Placeholder: Thumbnail"
             >
-              <rect width="100%" height="200px" fill="#C2C2C2"></rect>
+              <rect width="100%" height="150px" fill="#C2C2C2"></rect>
             </svg>
             <h3>Centered With Image</h3>
             <p>.8 acres</p>
@@ -208,7 +208,7 @@ import Section from "./containers/Section";
               role="img"
               aria-label="Placeholder: Thumbnail"
             >
-              <rect width="100%" height="200px" fill="#C2C2C2"></rect>
+              <rect width="100%" height="150px" fill="#C2C2C2"></rect>
             </svg>
             <h3>Align Left With Image</h3>
             <p>.8 acres</p>
