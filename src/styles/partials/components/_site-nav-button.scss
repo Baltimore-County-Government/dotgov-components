@@ -24,6 +24,11 @@
     font-size: 40px;
     padding: 0 $default-padding;
   }
+
+  &:hover,
+  &.hovered {
+    background: $gold-light;
+  }
 }
 
 /* Mimics the site nav button that is placed outside of the header */
