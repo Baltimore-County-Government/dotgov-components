@@ -9,10 +9,14 @@
   padding: $padding-large;
   text-align: center;
   width: 100%;
-
-  .dg_icon-container {
-    color: $gold;
-    font-size: $largest-icon-size;
-    margin-bottom: 20px;
+}
+.dg_icon-container {
+  color: $gold;
+  font-size: $largest-icon-size;
+  margin-bottom: 20px;
+}
+.dg_card__content {
+  p {
+    font-size: $small-heading-font-size;
   }
 }
