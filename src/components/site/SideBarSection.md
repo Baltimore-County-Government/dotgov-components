@@ -68,7 +68,7 @@ const followUsSummaryItems = [
 const sideBar = <SummaryList items={publicWorksSummaryItems} />;
 const followUsSideBar = <SummaryList items={followUsSummaryItems} />;
 
-<div>
+<div className="dg_sidebar">
   <SidebarSection title="Contact Us">{sideBar}</SidebarSection>
   <SidebarSection title="Follow Us">{followUsSideBar}</SidebarSection>
 </div>;
@@ -80,9 +80,11 @@ All side bar content needs to be wrapped inside of a div with dg_sidebar class a
 
 ```html
 <div class="dg_sidebar">
-  <h2>Contact Us</h2>
-</div>
-<div class="dg_sidebar">
-  <p>Follow Us</p>
+  <div class="dg_sidebar__section">
+    <h2>Contact Us</h2>
+  </div>
+  <div class="dg_sidebar__section">
+    <h2>Follow Us</h2>
+  </div>
 </div>
 ```

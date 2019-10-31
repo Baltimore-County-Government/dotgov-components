@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 const SidebarSection = props => {
   const { title, children } = props;
   return (
-    <div className="dg_sidebar">
+    <div className="dg_sidebar__section">
       <h2>{title}</h2>
       <div>{children}</div>
     </div>
