@@ -153,37 +153,41 @@ import TableHead from "./TableHead";
 import TableHeadCell from "./TableHeadCell";
 import TableRow from "./TableRow";
 <Table>
+  <TableBody>
     <TableRow>
-        <TableHeadCell>Breakfast</TableHeadCell>
-        <TableCell>Breakfast Pizza™</TableCell>
+      <TableHeadCell>Breakfast</TableHeadCell>
+      <TableCell>Breakfast Pizza™</TableCell>
     </TableRow>
     <TableRow>
-        <TableHeadCell>Lunch</TableHeadCell>
-        <TableCell>Gummy Worms</TableCell>
+      <TableHeadCell>Lunch</TableHeadCell>
+      <TableCell>Gummy Worms</TableCell>
     </TableRow>
     <TableRow>
-        <TableHeadCell>Dinner</TableHeadCell>
-        <TableCell>Dinner Pizza™</TableCell>
+      <TableHeadCell>Dinner</TableHeadCell>
+      <TableCell>Dinner Pizza™</TableCell>
     </TableRow>
-</Table>
+  </TableBody>
+</Table>;
 ```
 
 Html Snippet:
 
 ```html
 <table class="table">
+  <tbody>
     <tr>
-        <th>Breakfast</th>
-            <td>Breakfast Pizza™</td>
+      <th>Breakfast</th>
+      <td>Breakfast Pizza™</td>
     </tr>
     <tr>
-        <th>Lunch</th>
-        <td>Gummy Worms</td>
+      <th>Lunch</th>
+      <td>Gummy Worms</td>
     </tr>
     <tr>
-        <th>Dinner</th>
-        <td>Dinner Pizza™</td>
+      <th>Dinner</th>
+      <td>Dinner Pizza™</td>
     </tr>
+  </tbody>
 </table>
 ```
 
@@ -196,44 +200,46 @@ import TableCell from "./TableCell";
 import TableHead from "./TableHead";
 import TableHeadCell from "./TableHeadCell";
 import TableRow from "./TableRow";
-import Section from '../containers/Section';
+import Section from "../containers/Section";
 <Section className="dark">
-    <div style={{paddingLeft: "15px", paddingRight: "15px"}}>
-        <Table>
-            <TableBody>
-                <TableRow>
-                    <TableHeadCell>Breakfast</TableHeadCell>
-                    <TableCell>Breakfast Pizza™</TableCell>
-                </TableRow>
-                <TableRow>
-                    <TableHeadCell>Lunch</TableHeadCell>
-                    <TableCell>Gummy Worms</TableCell>
-                </TableRow>
-                <TableRow>
-                    <TableHeadCell>Dinner</TableHeadCell>
-                    <TableCell>Dinner Pizza™</TableCell>
-                </TableRow>
-            </TableBody>
-        </Table>
-    </div>
-</Section>
+  <div style={{ paddingLeft: "15px", paddingRight: "15px" }}>
+    <Table>
+      <TableBody>
+        <TableRow>
+          <TableHeadCell>Breakfast</TableHeadCell>
+          <TableCell>Breakfast Pizza™</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableHeadCell>Lunch</TableHeadCell>
+          <TableCell>Gummy Worms</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableHeadCell>Dinner</TableHeadCell>
+          <TableCell>Dinner Pizza™</TableCell>
+        </TableRow>
+      </TableBody>
+    </Table>
+  </div>
+</Section>;
 ```
 
 Html Snippet:
 
 ```html
 <table class="table">
+  <tbody>
     <tr>
-        <th>Breakfast</th>
-            <td>Breakfast Pizza™</td>
+      <th>Breakfast</th>
+      <td>Breakfast Pizza™</td>
     </tr>
     <tr>
-        <th>Lunch</th>
-        <td>Gummy Worms</td>
+      <th>Lunch</th>
+      <td>Gummy Worms</td>
     </tr>
     <tr>
-        <th>Dinner</th>
-        <td>Dinner Pizza™</td>
+      <th>Dinner</th>
+      <td>Dinner Pizza™</td>
     </tr>
+  </tbody>
 </table>
 ```
