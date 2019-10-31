@@ -106,6 +106,9 @@
 .dg_step-list.static {
   .dg_step-list__toggle-btn {
     cursor: default;
+    &:focus {
+      outline: none;
+    }
   }
 
   .dg_step-list__toggle-btn__title {

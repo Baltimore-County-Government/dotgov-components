@@ -23,10 +23,13 @@
   .dg_step-list.static {
     .dg_step-list__toggle-btn {
       cursor: default;
+      &:focus {
+        outline: none;
+      }
     }
 
     .dg_step-list__toggle-btn__title {
-        color: $white;
+      color: $white;
     }
 
     .dg_step-list__toggle-btn__btn-text,
