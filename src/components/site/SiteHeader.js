@@ -15,6 +15,9 @@ const SiteHeader = props => {
         </a>
         <SiteStatus status={status} />
       </div>
+      <button className="dg_mobile-search-button">
+        <i className="fas fa-search" aria-hidden="true"></i>
+      </button>
       <Search />
     </header>
   );

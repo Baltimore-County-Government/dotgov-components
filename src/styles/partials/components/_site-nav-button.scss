@@ -31,6 +31,14 @@
   }
 }
 
+@media screen and (max-width: $small-breakpoint) {
+  .bc_site-nav__toggle-button {
+    height: 65px;
+    width: 75px;
+    padding: 0;
+  }
+}
+
 /* Mimics the site nav button that is placed outside of the header */
 #fake-site-nav-button {
   @extend .bc_site-nav__toggle-button;

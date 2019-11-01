@@ -147,72 +147,15 @@ body.is-disabled {
   }
 }
 
-/*TODO: this needs to be full screen, with the close button absolutely position in the top right */
-// @media screen and (max-width: $small-breakpoint) {
-//   body.is-disabled {
-//     position: relative;
-//   }
+@media screen and (max-width: $small-breakpoint) {
+  #bc_site-nav {
+    .bc_site-nav__list-container {
+      padding: $padding-small;
 
-//   #bc_site-nav {
-//     top: 0;
-//     bottom: 0;
-//     left: 0;
-//     right: 0;
-
-//     &.is-active {
-//       position: absolute;
-//       z-index: $max-z-index-minus-1;
-//     }
-
-//     .bc_site-nav__list-container {
-//       position: absolute;
-//       left: 0;
-//       right: 0;
-//       top: 0;
-//       bottom: 0;
-//       width: 100%;
-//       transition: none;
-//       z-index: -1;
-//     }
-
-//     &.is-active {
-//       .bc_site-nav__toggle-button {
-//         background: transparent;
-//         color: $white;
-//         top: 10px;
-//         position: absolute;
-//         left: auto !important;
-//         right: 0;
-//         z-index: $max-z-index;
-//         transition: none;
-
-//         i {
-//           color: white;
-//         }
-//       }
-//     }
-//   }
-
-//   #bc_page {
-//     position: static;
-//     transition: none;
-//   }
-
-//   #bc_site-nav .bc_site-nav__list-container {
-//     width: 100%;
-
-//     &.invisible {
-//       left: 0;
-//     }
-//   }
-
-//   .is-active {
-//     .bc_site-nav__toggle-button {
-//       left: 0 !important;
-//     }
-//   }
-
-//   #bc_page.is-disabled {
-//     left: 0;
-//   }
-// }
+      ul a {
+        margin: $margin-small auto;
+        padding: $default-padding;
+      }
+    }
+  }
+}
