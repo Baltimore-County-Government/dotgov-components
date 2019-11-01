@@ -11,93 +11,74 @@ import Card from "./Card";
 import CardContent from "./CardContent";
 import CardFooter from "./CardFooter";
 import Section from "./containers/Section";
+import ImagePlaceholder from "./ImagePlaceholder";
 
 <Section>
-  <div className="row">
-    <div className="d-flex col-md-4">
-      <Card>
-        <CardContent>
-          <div className="dg_icon-container">
-            <i className="fas fa-star" aria-hidden="true"></i>
-          </div>
-          <h3>Centered With Icon</h3>
-          <p>.8 acres</p>
-          <div className="dg_card__content">
-            <p>
-              <a href="https://www.google.com/maps">
-                300 Lennox Avenue Room 202 Towson, Maryland 21286
-              </a>
-            </p>
-          </div>
-        </CardContent>
-        <CardFooter>
-          <button type="button" className="dg_button">
-            Learn More
-          </button>
-        </CardFooter>
-      </Card>
-    </div>
-    <div className="d-flex col-md-4">
-      <Card>
-        <CardContent>
-          <svg
-            width="100%"
-            height="150px"
-            xmlns="http://www.w3.org/2000/svg"
-            preserveAspectRatio="xMidYMid slice"
-            focusable="false"
-            role="img"
-            aria-label="Placeholder: Thumbnail"
-          >
-            <rect width="100%" height="150px" fill="#C2C2C2"></rect>
-          </svg>
-          <h3>Centered With Image</h3>
-          <p>.8 acres</p>
-          <div className="dg_card__content">
-            <p>
-              <a href="https://www.google.com/maps">
-                300 Lennox Avenue Room 202 Towson, Maryland 21286
-              </a>
-            </p>
-          </div>
-        </CardContent>
-        <CardFooter>
-          <button type="button" className="dg_button">
-            Learn More
-          </button>
-        </CardFooter>
-      </Card>
-    </div>
-    <div className="d-flex col-md-4">
-      <Card>
-        <CardContent className="text-left">
-          <svg
-            width="100%"
-            height="150px"
-            xmlns="http://www.w3.org/2000/svg"
-            preserveAspectRatio="xMidYMid slice"
-            focusable="false"
-            role="img"
-            aria-label="Placeholder: Thumbnail"
-          >
-            <rect width="100%" height="150px" fill="#C2C2C2"></rect>
-          </svg>
-          <h3>Align Left With Image</h3>
-          <p>.8 acres</p>
-          <div className="dg_card__content">
-            <p>
-              <a href="https://www.google.com/maps">
-                300 Lennox Avenue Room 202 Towson, Maryland 21286
-              </a>
-            </p>
-          </div>
-        </CardContent>
-        <CardFooter className="text-left">
-          <button type="button" className="dg_button">
-            Learn More
-          </button>
-        </CardFooter>
-      </Card>
+  <div className="container">
+    <div className="row">
+      <div className="d-flex col-md-4">
+        <Card>
+          <CardContent>
+            <div className="dg_icon-container">
+              <i className="fas fa-star" aria-hidden="true"></i>
+            </div>
+            <h3>Centered With Icon</h3>
+            <p>.8 acres</p>
+            <a href="https://www.google.com/maps">
+              300 Lennox Avenue Room 202 Towson, Maryland 21286
+            </a>
+          </CardContent>
+          <CardFooter>
+            <button type="button" className="dg_button">
+              Learn More
+            </button>
+          </CardFooter>
+        </Card>
+      </div>
+      <div className="d-flex col-md-4">
+        <Card>
+          <CardContent>
+            <ImagePlaceholder/>
+            <h3>Centered With Image</h3>
+            <p>.8 acres</p>
+            <a href="https://www.google.com/maps">
+              300 Lennox Avenue Room 202 Towson, Maryland 21286
+            </a>
+          </CardContent>
+          <CardFooter>
+            <button type="button" className="dg_button">
+              Learn More
+            </button>
+          </CardFooter>
+        </Card>
+      </div>
+      <div className="d-flex col-md-4">
+        <Card>
+          <CardContent className="text-left">
+            <svg
+              width="100%"
+              height="150px"
+              xmlns="http://www.w3.org/2000/svg"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+              role="img"
+              aria-label="Placeholder: Thumbnail"
+            >
+              <rect width="100%" height="150px" fill="#C2C2C2"></rect>
+            </svg>
+            <h3>Align Left With Image</h3>
+            <p>.8 acres</p>
+            <a href="https://www.google.com/maps">
+              300 Lennox Avenue Room 202 Towson, Maryland 21286
+            </a>
+          </CardContent>
+          <CardFooter className="text-left">
+            <button type="button" className="dg_button">
+              Learn More
+            </button>
+          </CardFooter>
+        </Card>
+      </div>
     </div>
   </div>
 </Section>;
@@ -115,13 +96,9 @@ HTML Snippet:
         </div>
         <h3>Centered With Icon</h3>
         <p>.8 acres</p>
-        <div className="dg_card__content">
-          <p>
-            <a href="https://www.google.com/maps"
-              >300 Lennox Avenue Room 202 Towson, Maryland 21286</a
-            >
-          </p>
-        </div>
+        <a href="https://www.google.com/maps"
+          >300 Lennox Avenue Room 202 Towson, Maryland 21286</a
+        >
       </div>
       <div class="dg_card__footer">
         <button type="button" class="dg_button">Learn More</button>
@@ -150,13 +127,10 @@ import Section from "./containers/Section";
             </div>
             <h3>Centered With Icon</h3>
             <p>.8 acres</p>
-            <div className="dg_card__content">
-              <p>
-                <a href="https://www.google.com/maps">
-                  300 Lennox Avenue Room 202 Towson, Maryland 21286
-                </a>
-              </p>
-            </div>
+
+            <a href="https://www.google.com/maps">
+              300 Lennox Avenue Room 202 Towson, Maryland 21286
+            </a>
           </CardContent>
           <CardFooter>
             <button type="button" className="dg_button">
@@ -177,17 +151,13 @@ import Section from "./containers/Section";
               role="img"
               aria-label="Placeholder: Thumbnail"
             >
-              <rect width="100%" height="150px" fill="#C2C2C2"></rect>
+              <rect width="100%" height="200px" fill="#C2C2C2"></rect>
             </svg>
             <h3>Centered With Image</h3>
             <p>.8 acres</p>
-            <div className="dg_card__content">
-              <p>
-                <a href="https://www.google.com/maps">
-                  300 Lennox Avenue Room 202 Towson, Maryland 21286
-                </a>
-              </p>
-            </div>
+            <a href="https://www.google.com/maps">
+              300 Lennox Avenue Room 202 Towson, Maryland 21286
+            </a>
           </CardContent>
           <CardFooter>
             <button type="button" className="dg_button">
@@ -208,17 +178,14 @@ import Section from "./containers/Section";
               role="img"
               aria-label="Placeholder: Thumbnail"
             >
-              <rect width="100%" height="150px" fill="#C2C2C2"></rect>
+              <rect width="100%" height="200px" fill="#C2C2C2"></rect>
             </svg>
             <h3>Align Left With Image</h3>
             <p>.8 acres</p>
-            <div className="dg_card__content">
-              <p>
-                <a href="https://www.google.com/maps">
-                  300 Lennox Avenue Room 202 Towson, Maryland 21286
-                </a>
-              </p>
-            </div>
+
+            <a href="https://www.google.com/maps">
+              300 Lennox Avenue Room 202 Towson, Maryland 21286
+            </a>
           </CardContent>
           <CardFooter className="text-left">
             <button type="button" className="dg_button">
@@ -230,26 +197,4 @@ import Section from "./containers/Section";
     </div>
   </div>
 </Section>;
-```
-
-HTML Snippet:
-
-```html
-<div class="dg_card">
-  <div class="dg_icon-container">
-    <i class="fas fa-star" aria-hidden="true"></i>
-  </div>
-  <h3>Centered With Icon</h3>
-  <p>.8 acres</p>
-  <div className="dg_card__content">
-    <p>
-      <a href="https://www.google.com/maps"
-        >300 Lennox Avenue Room 202 Towson, Maryland 21286</a
-      >
-    </p>
-  </div>
-  <div class="dg_card__footer">
-    <button type="button" class="dg_button">Learn More</button>
-  </div>
-</div>
 ```
