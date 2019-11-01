@@ -213,12 +213,14 @@ HTML Snippet:
 ```html
 <div class="dg_card">
   <div class="dg_card__content">
+  <div className="dg_card__content">
     <div class="dg_icon-container">
       <i class="fas fa-star" aria-hidden="true"></i>
     </div>
     <h3>Centered With Icon</h3>
     <p>.8 acres</p>
     <div className="dg_card__content">
+    <p>
       <a href="https://www.google.com/maps"
         >300 Lennox Avenue Room 202 Towson, Maryland 21286</a
       >
