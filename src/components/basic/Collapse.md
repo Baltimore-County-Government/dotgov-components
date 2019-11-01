@@ -1,9 +1,6 @@
 ```jsx
-import Checkbox from './form/Checkbox';
-<Collapse id="sample-collapse" header="Colors">
-  <Checkbox id="color-blue" name="favorite-color" label="Blue" value="blue" />
-  <Checkbox id="color-red" name="favorite-color" label="Red" value="red" />
-  <Checkbox id="color-green" name="favorite-color" label="Green" value="green" />
+<Collapse id="sample-collapse" header="Categories">
+    <p>Some really compelling content goes here.</p>
 </Collapse>
 ```
 
