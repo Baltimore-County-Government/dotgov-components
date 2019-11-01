@@ -1,10 +1,5 @@
 Content alignment will be achieved with Bootstrap 4's alignment utilities. View their documentation for [usage](https://getbootstrap.com/docs/4.3/utilities/text/#text-alignment). For example, when there is a need to align content to the left, the utility class to use would be "text-left". Cards will align content to the center by default. An example demonstrating how this would look in the markkup has been provided below.
 
-```html
-<div class="dg_card__footer text-left"></div>
-```
-
-### Card Container Default
 
 ```jsx
 import Card from "./Card";
