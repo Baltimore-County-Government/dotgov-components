@@ -1,0 +1,37 @@
+.dg_collapse {
+  border-top: $border-width-large solid $gray-light;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  .dg_accordion-item-body {
+    background: $gray-lightest;
+    font-weight: $font-normal;
+
+    * {
+      font-family: $default-heading-font;
+      font-size: $small-heading-font-size;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .dg_accordion-btn {
+    color: $black;
+    margin-bottom: $margin-small;
+
+    &:after {
+      color: $blue;
+      display: inline-block;
+      left: 0;
+      padding: 7.5px 0;
+    }
+  }
+
+  .dg_accordion_buttontext-holder {
+    margin-left: $margin-large;
+  }
+}

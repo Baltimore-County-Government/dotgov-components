@@ -25,10 +25,10 @@
   font-size: $h2-font-size;
   font-weight: $font-bold;
   width: 100%;
-  border-bottom: $border-width-small $gray solid;
+  border-top: $border-width-small $gray solid;
 
-  &:first-of-type {
-    border-top: $border-width-small $gray solid;
+  &:last-child {
+    border-bottom: $border-width-small $gray solid;
   }
 
   &:hover {

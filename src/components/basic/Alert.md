@@ -4,7 +4,11 @@
 
 ```jsx
 <Alert>
-    <p>The watercooler outside of the Budget and Finance Office has been moved to the Historic Courthouse Mezzanine. For more information please visit our <a href="">Closings Page</a></p>
+  <p>
+    The watercooler outside of the Budget and Finance Office has been moved to
+    the Historic Courthouse Mezzanine. For more information please visit our{" "}
+    <a href="">Closings Page</a>
+  </p>
 </Alert>
 ```
 
@@ -12,11 +16,11 @@ Html Snippet:
 
 ```html
 <div class="dg_alert">
-    <div class="dg_alert__container">
-        <div class="dg_alert__content">
-            <p>The watercooler outside of the Budget and Finance Office has been moved to the Historic Courthouse Mezzanine. For more information please visit our <a href="">Closings Page</a></p>
-        </div>
-    </div>
+  <p>
+    The watercooler outside of the Budget and Finance Office has been moved to
+    the Historic Courthouse Mezzanine. For more information please visit our
+    <a href="">Closings Page</a>
+  </p>
 </div>
 ```
 
@@ -24,7 +28,9 @@ Html Snippet:
 
 ```jsx
 <Alert type="emergency">
-    <p>This is a emergency alert. View our <a href="#">Emergencies Page</a></p>
+  <p>
+    This is a emergency alert. View our <a href="#">Emergencies Page</a>
+  </p>
 </Alert>
 ```
 
@@ -32,11 +38,7 @@ Html Snippet:
 
 ```html
 <div class="dg_alert emergency">
-    <div class="dg_alert__container">
-        <div class="dg_alert__content">
-            <p>This is a emergency alert. View our <a href="#">Emergencies Page</a></p>
-        </div>
-    </div>
+  <p>This is a emergency alert. View our <a href="#">Emergencies Page</a></p>
 </div>
 ```
 
@@ -44,7 +46,7 @@ Html Snippet:
 
 ```jsx
 <Alert className="status" type="success">
-    <p>You can do something now.</p>
+  <p>You can do something now.</p>
 </Alert>
 ```
 
@@ -52,12 +54,8 @@ Html Snippet:
 
 ```html
 <div class="dg_alert status" type="success">
-    <div class="dg_alert__container">
-        <div class="dg_alert__content">
-            <span class="dg_alert__status">Success</span>
-            <p>You can do something now.</p>
-        </div>
-    </div>
+    <span class="dg_alert__status">Success</span>
+    <p>You can do something now.</p>
 </div>
 ```
 
@@ -65,7 +63,9 @@ Html Snippet:
 
 ```jsx
 <Alert className="status" type="success" icon="far fa-check">
-    <p>You can do something now visit our <a href="">Closings Page</a></p>
+  <p>
+    You can do something now visit our <a href="">Closings Page</a>
+  </p>
 </Alert>
 ```
 
@@ -73,13 +73,11 @@ Html Snippet:
 
 ```html
 <div class="dg_alert status success">
-    <div class="dg_alert__container">
-        <i class="dg_alert__icon far fa-check" aria-hidden="true"></i>
-        <div class="dg_alert__content">
-            <span class="dg_alert__status">Success</span>
-            <p>You can do something now.</p>
-        </div>
-    </div>
+    <span class="dg_alert__status"
+      ><i class="dg_alert__icon far fa-check" aria-hidden="true"></i
+      >Success</span
+    >
+    <p>You can do something now.</p>
 </div>
 ```
 
@@ -87,7 +85,7 @@ Html Snippet:
 
 ```jsx
 <Alert className="status" type="information">
-    <p>This is information you need to know.</p>
+  <p>This is information you need to know.</p>
 </Alert>
 ```
 
@@ -95,12 +93,8 @@ Html Snippet:
 
 ```html
 <div class="dg_alert status info">
-    <div class="dg_alert__container">
-        <div class="dg_alert__content">
-            <span class="dg_alert__status">Information</span>
-            <p>This is information you need to know.</p>
-        </div>
-    </div>
+    <span class="dg_alert__status">Information</span>
+    <p>This is information you need to know.</p>
 </div>
 ```
 
@@ -108,7 +102,9 @@ Html Snippet:
 
 ```jsx
 <Alert className="status" type="information" icon="far fa-info-circle">
-    <p>You can do something now  visit our <a href="">Closings Page</a></p>
+  <p>
+    You can do something now visit our <a href="">Closings Page</a>
+  </p>
 </Alert>
 ```
 
@@ -116,13 +112,11 @@ Html Snippet:
 
 ```html
 <div class="dg_alert status info">
-    <div class="dg_alert__container">
-        <i class="dg_alert__icon far fa-info-circle" aria-hidden="true"></i>
-        <div class="dg_alert__content">
-            <span class="dg_alert__status">Information</span>
-            <p>This is information you need to know.</p>
-        </div>
-    </div>
+    <span class="dg_alert__status"
+      ><i class="dg_alert__icon far fa-info-circle" aria-hidden="true"></i
+      >Information</span
+    >
+    <p>This is information you need to know.</p>
 </div>
 ```
 
@@ -130,7 +124,7 @@ Html Snippet:
 
 ```jsx
 <Alert className="status" type="warning">
-    <p>This is a warning you need to know.</p>
+  <p>This is a warning you need to know.</p>
 </Alert>
 ```
 
@@ -138,12 +132,8 @@ Html Snippet:
 
 ```html
 <div class="dg_alert status warning">
-    <div class="dg_alert__container">
-        <div class="dg_alert__content">
-            <span class="dg_alert__status">Warning</span>
-            <p>This is a warning you need to know.</p>
-        </div>
-    </div>
+    <span class="dg_alert__status">Warning</span>
+    <p>This is a warning you need to know.</p>
 </div>
 ```
 
@@ -151,7 +141,9 @@ Html Snippet:
 
 ```jsx
 <Alert className="status" type="warning" icon="far fa-exclamation-triangle">
-    <p>You can do something now visit our <a href="">Closings Page</a></p>
+  <p>
+    You can do something now visit our <a href="">Closings Page</a>
+  </p>
 </Alert>
 ```
 
@@ -159,13 +151,14 @@ Html Snippet:
 
 ```html
 <div class="dg_alert status warning">
-    <div class="dg_alert__container">
-        <i class="dg_alert__icon far fa-exclamation-triangle" aria-hidden="true"></i>
-        <div class="dg_alert__content">
-            <span class="dg_alert__status">Warning</span>
-            <p>This is a warning you need to know.</p>
-        </div>
-    </div>
+    <span class="dg_alert__status"
+      ><i
+        class="dg_alert__icon far fa-exclamation-triangle"
+        aria-hidden="true"
+      ></i
+      >Warning</span
+    >
+    <p>This is a warning you need to know.</p>
 </div>
 ```
 
@@ -173,7 +166,7 @@ Html Snippet:
 
 ```jsx
 <Alert className="status" type="error">
-    <p>Something went wrong.</p>
+  <p>Something went wrong.</p>
 </Alert>
 ```
 
@@ -181,12 +174,8 @@ Html Snippet:
 
 ```html
 <div class="dg_alert status error">
-    <div class="dg_alert__container">
-        <div class="dg_alert__content">
-            <span class="dg_alert__status">Error</span>
-            <p>Something went wrong.</p>
-        </div>
-    </div>
+    <span class="dg_alert__status">Error</span>
+    <p>Something went wrong.</p>
 </div>
 ```
 
@@ -194,7 +183,9 @@ Html Snippet:
 
 ```jsx
 <Alert className="status" type="error" icon="fas fa-exclamation-circle">
-    <p>Something went wrong visit our <a href="">Closings Page</a></p>
+  <p>
+    Something went wrong visit our <a href="">Closings Page</a>
+  </p>
 </Alert>
 ```
 
@@ -202,12 +193,13 @@ Html Snippet:
 
 ```html
 <div class="dg_alert status error">
-    <div class="dg_alert__container">
-        <i class="dg_alert__icon fas fa-exclamation-circle" aria-hidden="true"></i>
-        <div class="dg_alert__content">
-            <span class="dg_alert__status">Error</span>
-            <p>Something went wrong.</p>
-        </div>
-    </div>
+    <span class="dg_alert__status"
+      ><i
+        class="dg_alert__icon fas fa-exclamation-circle"
+        aria-hidden="true"
+      ></i
+      >Error</span
+    >
+    <p>Something went wrong.</p>
 </div>
 ```
