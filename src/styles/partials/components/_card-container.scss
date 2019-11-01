@@ -9,16 +9,18 @@
   padding: $padding-large;
   text-align: center;
   width: 100%;
+
+  .dg_card__content {
+    p,
+    a {
+      display: block;
+      font-size: $small-heading-font-size;
+      margin-bottom: $default-margin;
+    }
+  }
 }
 .dg_icon-container {
   color: $gold;
   font-size: $largest-icon-size;
-  margin-bottom: 20px;
-}
-.dg_card__content {
-  p {
-    a {
-      font-size: $small-heading-font-size;
-    }
-  }
+  margin-bottom: $default-margin;
 }
