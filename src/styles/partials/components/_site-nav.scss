@@ -6,32 +6,31 @@ $mobile-menu-width: 245px;
     width: $width;
 
     &.invisible {
-      left: -$width;
+      transform: translateX(-$width);
     }
   }
 
   .is-active {
     .bc_site-nav__toggle-button {
-      left: $width !important;
+      transform: translateX($width) !important;
     }
   }
 
   #bc_page.is-disabled {
-    left: $width;
+    transform: translateX($width);
   }
 }
 
 #bc_site-nav {
   position: relative;
   top: 0;
-  left: 0;
 
   .bc_site-nav__toggle-button {
     position: absolute;
     top: 10px; /* mimic the top border of the site */
-    left: 0;
+    transform: translateX(0);
     z-index: $max-z-index;
-    @include default-transition(left);
+    @include default-transition(transform);
   }
 
   .bc_site-nav__seal {
@@ -45,11 +44,11 @@ $mobile-menu-width: 245px;
     color: $white;
     padding: $default-padding $padding-large;
     position: fixed;
-    left: 0;
+    transform: translateX(0);
     overflow-y: auto;
     top: 0;
     bottom: 0;
-    @include default-transition(left);
+    @include default-transition(transform);
     z-index: $max-z-index-minus-1;
 
     ul {
@@ -107,8 +106,8 @@ $mobile-menu-width: 245px;
 #bc_page {
   position: relative;
   margin: auto;
-  left: 0;
-  @include default-transition(left);
+  transform: translateX(0);
+  @include default-transition(transform);
 
   &:after {
     content: "";
