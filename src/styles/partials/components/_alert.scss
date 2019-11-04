@@ -11,6 +11,10 @@
     text-decoration: underline;
     padding: 0 1.5px;
 
+    &:focus {
+      color: $white;
+    }
+
     &:hover {
       background: $white;
       color: $vibrant-blue;
@@ -109,7 +113,7 @@
 }
 @media screen and (max-width: $small-breakpoint) {
   .dg_alert {
-    padding-top:$padding-small;
+    padding-top: $padding-small;
     padding-bottom: $padding-small;
   }
 }

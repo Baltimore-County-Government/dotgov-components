@@ -6,5 +6,4 @@ const CardContent = props => {
   const cssClasses = classnames("dg_card__content", className);
   return <div className={cssClasses}>{props.children}</div>;
 };
-
 export default CardContent;
