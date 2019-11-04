@@ -16,6 +16,12 @@
       color: $vibrant-blue;
       text-decoration: none;
     }
+    
+    &:focus {
+      background: $white;
+      color: $vibrant-blue;
+      text-decoration: none;
+    }
   }
 
   p {
