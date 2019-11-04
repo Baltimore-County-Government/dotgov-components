@@ -56,16 +56,25 @@
   }
 }
 
-@media screen and (max-width: $small-breakpoint) {
+@media screen and (max-width: $header-breakpoint) {
   .dg_site-header .dg_brand {
     .dg_brand-text {
       border-right: none;
       text-align: center;
 
       position: absolute;
-      top: 0;
+      top: 12.5px;
+      bottom: 0;
       left: 0;
       right: 0;
+    }
+  }
+}
+
+@media screen and (max-width: $small-breakpoint) {
+  .dg_site-header .dg_brand {
+    .dg_brand-text {
+      top: 3px; /* visually calculated in the browser. */
 
       span:first-of-type {
         font-size: $smallest-font-size;
