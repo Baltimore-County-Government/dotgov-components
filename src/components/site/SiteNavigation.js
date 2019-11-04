@@ -5,6 +5,7 @@ import CountySeal from "../foundation/CountySeal";
 
 const SiteNavLink = props => {
   const { href, icon, text } = props;
+
   return (
     <li key={href}>
       <a href={href}>
