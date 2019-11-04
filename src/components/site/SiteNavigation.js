@@ -3,6 +3,18 @@ import PropsTypes from "prop-types";
 import SiteNavButton from "./SiteNavButton";
 import CountySeal from "../foundation/CountySeal";
 
+const SiteNavLink = props => {
+  const { href, icon, text } = props;
+  return (
+    <li key={href}>
+      <a href={href}>
+        {icon && <i className={icon} aria-hidden="true"></i>}
+        {text}
+      </a>
+    </li>
+  );
+};
+
 const SiteNavigation = props => {
   const { links = [] } = props;
 
@@ -16,17 +28,9 @@ const SiteNavigation = props => {
           </a>
         </div>
         <ul id="bc_site-nav__links" className="bc_site-nav__list">
-          {links.map(link => {
-            const { href, icon, text } = link;
-            return (
-              <li key={href}>
-                <a href={href}>
-                  {icon && <i className={icon} aria-hidden="true"></i>}
-                  {text}
-                </a>
-              </li>
-            );
-          })}
+          {links.map(link => (
+            <SiteNavLink {...link} />
+          ))}
         </ul>
       </div>
     </nav>
