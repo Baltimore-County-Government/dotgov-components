@@ -18,17 +18,26 @@ import StepListItem from "./StepListItem";
 ### Static Step List
 
 ```jsx
-import StepListItem from "./StepListItem";
+import StepListItemStatic from "./StepListItemStatic";
 <StepList type="static">
-  <StepListItem id="step-1" buttonText="Step 1: Know the Registration Fees">
+  <StepListItemStatic
+    id="step-1"
+    buttonText="Step 1: Know the Registration Fees"
+  >
     <p>Some really helpful content for step 1 will go here.</p>
-  </StepListItem>
-  <StepListItem id="step-2" buttonText="Step 2: Have Your Property Inspected">
+  </StepListItemStatic>
+  <StepListItemStatic
+    id="step-2"
+    buttonText="Step 2: Have Your Property Inspected"
+  >
     <p>Some really helpful content for step 2 will go here.</p>
-  </StepListItem>
-  <StepListItem id="step-3" buttonText="Step 3: Gather Required Documentation">
+  </StepListItemStatic>
+  <StepListItemStatic
+    id="step-3"
+    buttonText="Step 3: Gather Required Documentation"
+  >
     <p>Some really helpful content for step 3 will go here.</p>
-  </StepListItem>
+  </StepListItemStatic>
 </StepList>;
 ```
 
@@ -71,30 +80,30 @@ import StepListItem from "./StepListItem";
 
 ```jsx
 import Section from "./containers/Section";
-import StepListItem from "./StepListItem";
+import StepListItemStatic from "./StepListItemStatic";
 <Section className="dark">
   <div className="container">
     <div className="row">
       <div className="col">
         <StepList type="static">
-          <StepListItem
+          <StepListItemStatic
             id="step-1"
             buttonText="Step 1: Know the Registration Fees"
           >
             <p>Some really helpful content for step 1 will go here.</p>
-          </StepListItem>
-          <StepListItem
+          </StepListItemStatic>
+          <StepListItemStatic
             id="step-2"
             buttonText="Step 2: Have Your Property Inspected"
           >
             <p>Some really helpful content for step 2 will go here.</p>
-          </StepListItem>
-          <StepListItem
+          </StepListItemStatic>
+          <StepListItemStatic
             id="step-3"
             buttonText="Step 3: Gather Required Documentation"
           >
             <p>Some really helpful content for step 3 will go here.</p>
-          </StepListItem>
+          </StepListItemStatic>
         </StepList>
       </div>
     </div>
