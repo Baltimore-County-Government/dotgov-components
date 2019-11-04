@@ -16,11 +16,9 @@
       color: $vibrant-blue;
       text-decoration: none;
     }
-    
+
     &:focus {
-      background: $white;
-      color: $vibrant-blue;
-      text-decoration: none;
+      color: $white;
     }
   }
 
@@ -115,7 +113,7 @@
 }
 @media screen and (max-width: $small-breakpoint) {
   .dg_alert {
-    padding-top:$padding-small;
+    padding-top: $padding-small;
     padding-bottom: $padding-small;
   }
 }
