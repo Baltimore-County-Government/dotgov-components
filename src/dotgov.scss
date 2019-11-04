@@ -31,6 +31,18 @@
 /** partials */
 
 /** components */
+
+/*** header ***/
+@import "./styles/partials/components/brand-text";
+@import "./styles/partials/components/site-status";
+@import "./styles/partials/components/site-nav";
+@import "./styles/partials/components/site-nav-button";
+@import "./styles/partials/components/search";
+@import "./styles/partials/components/site-header";
+
+@import "./styles/partials/components/page-header";
+@import "./styles/partials/components/page-header-dark";
+
 @import "./styles/partials/components/accordion";
 @import "./styles/partials/components/accordion-dark";
 @import "./styles/partials/components/collapse";
@@ -55,24 +67,16 @@
 @import "./styles/partials/components/button";
 @import "./styles/partials/components/button-dark";
 @import "./styles/partials/components/table";
-@import "./styles/partials/components/site-header";
-@import "./styles/partials/components/brand-text";
-@import "./styles/partials/components/site-status";
 @import "./styles/partials/components/emphasized-image";
-@import "./styles/partials/components/search";
 @import "./styles/partials/components/utilities";
 @import "./styles/partials/components/date-news-card";
 @import "./styles/partials/components/date-news-card-dark";
 @import "./styles/partials/components/item-grid";
 @import "./styles/partials/components/summary-list";
-@import "./styles/partials/components/page-header";
-@import "./styles/partials/components/page-header-dark";
 @import "./styles/partials/components/images";
 @import "./styles/partials/components/step-list";
 @import "./styles/partials/components/step-list-dark";
 @import "./styles/partials/components/modal";
-@import "./styles/partials/components/site-nav";
-@import "./styles/partials/components/site-nav-button";
 @import "./styles/partials/components/content";
 
 /** dark themed components - please start your file with .dark and nest the styles below it **/
