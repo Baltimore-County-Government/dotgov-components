@@ -53,6 +53,7 @@ $icon-size: 30px;
 }
 
 @media screen and (max-width: $small-breakpoint) {
+  /* Decrease letter spacing so there isn't horizontal scroll on small screens */
   .dg_icon-heading {
     letter-spacing: $base-spacing-unit * 2;
   }
