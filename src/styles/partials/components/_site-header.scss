@@ -74,6 +74,7 @@
 
 $small-mobile-button-size: 65px;
 
+/* On small screens we need to shrink the hamburger menu button in order to fit all of the header content. */
 @media screen and (max-width: $small-breakpoint) {
   .bc_site-nav__toggle-button,
   .dg_mobile-search-button,
