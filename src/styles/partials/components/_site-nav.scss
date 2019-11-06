@@ -52,7 +52,7 @@ $mobile-menu-width: 245px;
     @include default-transition(transform);
     z-index: $max-z-index-minus-1;
 
-    ul {
+    .bc_site-nav__list {
       list-style-type: none;
       margin: $margin-large 0 0;
       padding: 0;
