@@ -86,7 +86,7 @@ $small-mobile-button-size: 65px;
 
   .bc_site-nav__toggle-button {
     .bc_site-nav__toggle-button__text {
-      font-size: 10px; /* specific to this component only */
+      font-size: $tiny-font-size;
     }
 
     i {
