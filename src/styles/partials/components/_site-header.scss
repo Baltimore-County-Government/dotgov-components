@@ -43,7 +43,7 @@
     background: $white;
     position: relative;
     z-index: 99;
-    margin-bottom: 64px; /* Manually calculated via the browser */
+    margin-bottom: 64px; /* Visually calculated for this component only */
   }
 
   .dg_search-container {
@@ -63,7 +63,7 @@
       text-align: center;
 
       position: absolute;
-      top: 12.5px;
+      top: 12.5px; /* Visually calculated for this component only*/
       bottom: 0;
       left: 0;
       right: 0;
