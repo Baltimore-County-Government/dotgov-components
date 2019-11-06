@@ -3,7 +3,6 @@
   color: $black;
   cursor: pointer;
   padding: $default-padding;
-  @include default-transition;
   /* Height, Width, Allows us to properly fake the menu button */
   height: 85px;
   width: 95px;
