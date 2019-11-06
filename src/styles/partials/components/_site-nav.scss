@@ -1,7 +1,5 @@
-$desktop-menu-width: 400px;
-$mobile-menu-width: 245px;
-
-@mixin nav-menu-width($width) {
+/* Handles the widths and horizontal positioning for the slide-out menu and hamburger menu for desktop */
+@mixin set-navigation-width($width) {
   #bc_site-nav .bc_site-nav__list-container {
     width: $width;
 
@@ -20,6 +18,9 @@ $mobile-menu-width: 245px;
     transform: translateX($width);
   }
 }
+
+$desktop-menu-width: 400px;
+$mobile-menu-width: 245px;
 
 #bc_site-nav {
   position: relative;
@@ -136,11 +137,10 @@ body.is-disabled {
   overflow: hidden;
 }
 
-@include nav-menu-width($desktop-menu-width);
+@include set-navigation-width($desktop-menu-width);
 
-/* breakpoint is specific to the site navigation only */
 @media screen and (max-width: $medium-breakpoint) {
-  @include nav-menu-width($mobile-menu-width);
+  @include set-navigation-width($mobile-menu-width);
 
   #bc_site-nav .bc_site-nav__list-container ul a i {
     display: none;
