@@ -27,7 +27,7 @@ $mobile-menu-width: 245px;
 
   .bc_site-nav__toggle-button {
     position: absolute;
-    top: 10px; /* mimic the top border of the site */
+    top: $site-border-width; /* account for the top border of the site */
     transform: translateX(0);
     z-index: $max-z-index;
     @include default-transition(transform);
@@ -97,7 +97,7 @@ $mobile-menu-width: 245px;
     content: "";
     left: 0;
     right: 0;
-    height: 10px;
+    height: $site-border-width;
     background: $red;
     z-index: $site-nav-z-index;
   }
