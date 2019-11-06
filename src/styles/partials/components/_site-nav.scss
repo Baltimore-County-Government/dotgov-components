@@ -112,9 +112,8 @@ $mobile-menu-width: 245px;
   &:after {
     content: "";
     opacity: 0;
-    background: #000000;
+    background: $black;
     @include default-transition(opacity);
-    // transition:  0.2s;
     pointer-events: none;
     position: fixed;
     top: 0;
