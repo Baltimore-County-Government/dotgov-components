@@ -86,11 +86,11 @@ $small-mobile-button-size: 65px;
 
   .bc_site-nav__toggle-button {
     .bc_site-nav__toggle-button__text {
-      font-size: 10px;
+      font-size: 10px; /* specific to this component only */
     }
 
     i {
-      font-size: 30px;
+      font-size: 30px; /* specific to this component only */
     }
   }
 
@@ -99,11 +99,12 @@ $small-mobile-button-size: 65px;
       .dg_brand-text {
         top: 3px; /* visually calculated in the browser. */
 
-        span:first-of-type {
+        span:first-of-type,
+        span:last-of-type {
           font-size: $smallest-font-size;
         }
+
         span:last-of-type {
-          font-size: 14px;
           letter-spacing: $base-spacing-unit;
         }
       }
