@@ -21,9 +21,7 @@ const StepListItemStatic = props => {
 
 StepListItemStatic.propTypes = {
   /** Unique id to identify each step, must be unique on the page */
-  id: PropTypes.string.isRequired,
-  /** Button Text to be displayed for the step, should identify which step it is. Example Step 1 - Do something really cool. */
-  buttonText: PropTypes.string.isRequired
+  id: PropTypes.string.isRequired
 };
 
 export default StepListItemStatic;
