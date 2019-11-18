@@ -1,20 +1,20 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const BreadcrumbLinkItem = props => {
+const BreadcrumbLastItem = props => {
   const { link, text } = props;
   return (
-    <a className="breadcrumb" href={link}>
+    <a className="breadcrumb breadcrumb-last" href={link}>
       {text}
     </a>
   );
 };
 
-BreadcrumbLinkItem.propTypes = {
+BreadcrumbLastItem.propTypes = {
   /** The link or href for the a tag */
   link: PropTypes.string,
   /** The copy that exists inside the a tag */
   text: PropTypes.string.isRequired
 };
 
-export default BreadcrumbLinkItem;
+export default BreadcrumbLastItem;
