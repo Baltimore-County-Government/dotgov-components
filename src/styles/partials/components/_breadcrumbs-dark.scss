@@ -1,18 +1,23 @@
 .dark,
 .dg_page-header.blue {
   .dg_breadcrumbs {
-    color: $gold;
+    .breadcrumb {
+      color: $white;
 
-    li.dg_breadcrumb {
-      a {
+      &:hover {
+        color: $blue-lightest;
+      }
+
+      &:after {
         color: $white;
+      }
+
+      &.breadcrumb-last {
+        color: $gold;
 
         &:hover {
           color: $blue-lightest;
         }
-      }
-      &:after {
-        color: $white;
       }
     }
   }
