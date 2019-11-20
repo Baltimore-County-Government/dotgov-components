@@ -44,23 +44,23 @@ Html Snippet:
     <div class="container">
       <div class="row">
         <div class="col">
-          <ul class="dg_breadcrumbs">
-            <li class="dg_breadcrumb">
-              <a title="Home" href="/">
-                <i class="fas fa-home fa-1x" aria-hidden="true"></i
-                ><span class="sr-only">Home</span>
-              </a>
-            </li>
-            <li class="dg_breadcrumb">
-              <a title="This is a title" href="/departments">Departments</a>
-            </li>
-            <li class="dg_breadcrumb">
-              <a title="This is a title" href="/departments/health"
-                >Department of Health</a
-              >
-            </li>
-            <li>Adoptable Pets</li>
-          </ul>
+          <div class="dg_breadcrumbs">
+            <a
+              class="breadcrumb breadcrumb-first"
+              href="https://beta.baltimorecountymd.gov/prototyping/"
+              >Home</a
+            >
+            <a
+              class="breadcrumb"
+              href="https://beta.baltimorecountymd.gov/prototyping/"
+              >prototyping</a
+            >
+            <a
+              class="breadcrumb breadcrumb-last"
+              href="https://beta.baltimorecountymd.gov/prototyping/index.html"
+              >Prototyping Homepage</a
+            >
+          </div>
         </div>
       </div>
       <div class="row">
