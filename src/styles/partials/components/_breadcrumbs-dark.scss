@@ -12,7 +12,7 @@
         color: $white;
       }
 
-      &.breadcrumb-last {
+      &:last-child {
         color: $gold;
 
         &:hover {
