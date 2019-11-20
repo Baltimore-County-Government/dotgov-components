@@ -2,7 +2,6 @@
 
 ```jsx
 import Breadcrumbs from "./Breadcrumbs";
-import BreadcrumbLastItem from "./BreadcrumbLastItem";
 import BreadcrumbLinkItem from "./BreadcrumbLinkitem";
 
 const breadCrumbs = () => (
@@ -17,7 +16,11 @@ const breadCrumbs = () => (
       title="This is a title"
       link="/departments/health"
     />
-    <BreadcrumbLastItem text="Adoptable Pets" />
+    <BreadcrumbLinkItem
+      className="breadcrumb-last"
+      text="Adoptable Pets"
+      link="/departments/health"
+    />
   </Breadcrumbs>
 );
 

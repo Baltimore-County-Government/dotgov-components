@@ -3,7 +3,6 @@
 ```jsx
 import Section from "../basic/containers/Section";
 import BreadcrumbLinkItem from "./BreadcrumbLinkitem";
-import BreadcrumbLastItem from "./BreadcrumbLastItem";
 
 <Section>
   <Breadcrumbs>
@@ -12,7 +11,11 @@ import BreadcrumbLastItem from "./BreadcrumbLastItem";
       text="Department of Health"
       link="/departments/health"
     />
-    <BreadcrumbLastItem text="Adoptable Pets" link="/departments/health" />
+    <BreadcrumbLinkItem
+      className="breadcrumb-last"
+      text="Adoptable Pets"
+      link="/departments/health"
+    />
   </Breadcrumbs>
 </Section>;
 ```
@@ -43,7 +46,6 @@ Html Snippet:
 
 ```jsx
 import Section from "../basic/containers/Section";
-import BreadcrumbLastItem from "./BreadcrumbLastItem";
 import BreadcrumbLinkItem from "./BreadcrumbLinkitem";
 
 <Section className="dark">
@@ -54,7 +56,11 @@ import BreadcrumbLinkItem from "./BreadcrumbLinkitem";
         text="Department of Health"
         link="/departments/health"
       />
-      <BreadcrumbLastItem text="Adoptable Pets" link="/departments/health" />
+      <BreadcrumbLinkItem
+        className="breadcrumb-last"
+        text="Adoptable Pets"
+        link="/departments/health"
+      />
     </Breadcrumbs>
   </div>
 </Section>;

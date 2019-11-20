@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Breadcrumbs from "./Breadcrumbs";
-import BreadcrumbLastItem from "./BreadcrumbLastItem";
 import BreadcrumbLinkItem from "./BreadCrumbLinkItem";
 
 it("renders without crashing", () => {
@@ -9,7 +8,7 @@ it("renders without crashing", () => {
   ReactDOM.render(
     <Breadcrumbs>
       <BreadcrumbLinkItem text="Departments" link="#" />
-      <BreadcrumbLastItem text="Adoptable Pets" link="#" />
+      <BreadcrumbLinkItem text="Adoptable Pets" link="#" />
     </Breadcrumbs>,
     div
   );
