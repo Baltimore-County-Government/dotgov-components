@@ -35,9 +35,7 @@ $breadcrumb-icon-size: 20px;
     &:last-child {
       color: $black;
       margin: 0 $default-padding;
-    }
 
-    &.breadcrumb-last {
       &:hover {
         color: $vibrant-blue;
       }
@@ -46,6 +44,7 @@ $breadcrumb-icon-size: 20px;
         content: none;
       }
     }
+
     &.breadcrumb-first {
       margin-left: $margin-small;
 
