@@ -68,8 +68,10 @@ Html Snippet:
       </div>
       <div class="row">
         <div class="col-12 col-lg-5 col-xl-6">
-          <span class="dg_page-header__pre-title">Department Of</span>
-          <span class="dg_page-header__title">Public Works </span>
+          <h1>
+            <span class="dg_page-header__pre-title">Department Of</span>
+            <span class="dg_page-header__title">Public Works </span>
+          </h1>
         </div>
         <div class="col-12 col-lg-7 col-xl-6">
           <p class="dg_page-header__deck">
