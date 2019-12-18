@@ -1,29 +1,20 @@
 import React from "react";
+import PropTypes from "prop-types";
 
-const SubPageTabs = props => {
-  const { text, id, isExpanded = true } = props;
+const SubPageTabItem = props => {
+  const { text, link } = props;
   return (
-    <div className="dg_breadcrumbs">
-      <button
-        class="dg_accordion-btn"
-        type="button"
-        id={id}
-        aria-expanded={isExpanded}
-      >
-        <h2 class="dg_accordion_buttontext-holder">{text}</h2>
-      </button>
-      <ul>{props.children}</ul>
-    </div>
+    <li>
+      <a href={link}>{text}</a>
+    </li>
   );
 };
 
-SubPageTabs.propTypes = {
+SubPageTabItem.propTypes = {
   /** The copy that exists inside the a tag */
   text: PropTypes.string.isRequired,
-  /** Unique identifier for your collapse */
-  id: PropTypes.string.isRequired,
-  /** Expand or Collapse panel */
-  isExpanded: PropTypes.bool
+  /** The link or href for the a tag */
+  link: PropTypes.string
 };
 
-export default SubPageTabs;
+export default SubPageTabItem;

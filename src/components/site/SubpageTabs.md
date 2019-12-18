@@ -1,22 +1,16 @@
 ### Subpage Tabs
 
 ```jsx
+import SubPageTabs from "./SubPageTabs";
+import SubPageTabItem from "./SubPageTabItem";
 import Section from "../basic/containers/Section";
-import BreadcrumbLinkItem from "./BreadcrumbLinkitem";
 
 <Section>
-  <Breadcrumbs>
-    <BreadcrumbLinkItem text="Departments" link="/departments/health" />
-    <BreadcrumbLinkItem
-      text="Department of Health"
-      link="/departments/health"
-    />
-    <BreadcrumbLinkItem
-      className="breadcrumb-last"
-      text="Adoptable Pets"
-      link="/departments/health"
-    />
-  </Breadcrumbs>
+  <SubPageTabs text="In This Section" id="testing">
+    <SubPageTabItem text="Newsroom" link="/home" />
+    <SubPageTabItem text="Social Media Gallery" link="/home" />
+    <SubPageTabItem text="Media Contact Information" link="/home" />
+  </SubPageTabs>
 </Section>;
 ```
 
