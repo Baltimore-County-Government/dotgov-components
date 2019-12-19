@@ -1,10 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
+import classnames from "classnames";
 
 const SubPageTabItem = props => {
-  const { text, link } = props;
+  const { text, link, className } = props;
+  const TabItemClasses = classnames(className);
   return (
-    <li>
+    <li className={TabItemClasses}>
       <a href={link}>{text}</a>
     </li>
   );

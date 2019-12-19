@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 const SubPageTabs = props => {
   const { text, id, isExpanded = true } = props;
   return (
-    <div className="dg_breadcrumbs">
+    <div className="dg_subpage-tabs">
       <button
         className="dg_accordion-btn"
         type="button"

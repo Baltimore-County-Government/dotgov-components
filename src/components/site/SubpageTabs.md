@@ -7,7 +7,7 @@ import Section from "../basic/containers/Section";
 
 <Section>
   <SubPageTabs text="In This Section" id="testing">
-    <SubPageTabItem text="Newsroom" link="/home" />
+    <SubPageTabItem className="active" text="Newsroom" link="/home" />
     <SubPageTabItem text="Social Media Gallery" link="/home" />
     <SubPageTabItem text="Media Contact Information" link="/home" />
   </SubPageTabs>
