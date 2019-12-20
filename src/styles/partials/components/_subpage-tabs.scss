@@ -1,7 +1,11 @@
-.dg_subpage-tabs {
+.dg_subpage-tabs-container {
   background-color: $pale-blue-dark;
+  display: flex;
+}
+
+.dg_subpage-tabs {
   color: $white;
-  display: inline-block;
+  display: block;
   font-family: $default-heading-font;
   font-size: $smallest-heading-font-size;
   font-weight: $font-bold;
@@ -12,6 +16,7 @@
     display: none;
     h2 {
       color: $white;
+      font-size: 18px;
     }
   }
 
@@ -27,7 +32,7 @@
         display: block;
         color: $white;
         text-align: center;
-        padding: 14px 16px;
+        padding: 20px 16px;
         margin-right: 30px;
         text-decoration: none;
 
@@ -48,10 +53,30 @@
 
 @media screen and (max-width: $medium-breakpoint) {
   .dg_subpage-tabs {
+    border-top: 1px #666 solid;
+    border-bottom: 1px #666 solid;
+    font-weight: normal;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+
     ul {
+      margin-top: 10px;
+      margin-bottom: 0px;
+
       li {
         float: none;
+
+        &.active {
+          a {
+            color: $gold-light;
+            background-color: inherit;
+          }
+        }
+
         a {
+          padding: 10px 0px;
           text-align: left;
         }
       }
