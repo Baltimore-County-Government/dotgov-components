@@ -12,7 +12,7 @@
   text-transform: uppercase;
   width: 100%;
 
-  .dg_accordion-btn {
+  .dg_subpage-tabs-btn {
     display: none;
     h2 {
       color: $white;
@@ -58,12 +58,50 @@
     font-weight: normal;
     margin-bottom: 20px;
     margin-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     padding-top: 10px;
+
+    &.open {
+      h2 {
+        &:after {
+          content: "\F078";
+          font-family: $font-awesome-pro;
+        }
+      }
+
+      ul {
+        &.items {
+          display: block;
+        }
+      }
+    }
+
+    .dg_subpage-tabs-btn {
+      text-align: left;
+      width: 100%;
+
+      h2 {
+        margin-top: 10px;
+        position: relative;
+
+        &:after {
+          position: relative;
+          float: right;
+          font-size: 24px;
+          cursor: pointer;
+          content: "\F054";
+          font-family: $font-awesome-pro;
+        }
+      }
+    }
 
     ul {
       margin-top: 10px;
       margin-bottom: 0px;
+
+      &.items {
+        display: none;
+      }
 
       li {
         float: none;
@@ -78,10 +116,14 @@
         a {
           padding: 10px 0px;
           text-align: left;
+
+          &:hover {
+            background-color: #8091c0;
+          }
         }
       }
     }
-    .dg_accordion-btn {
+    .dg_subpage-tabs-btn {
       display: inherit;
     }
   }

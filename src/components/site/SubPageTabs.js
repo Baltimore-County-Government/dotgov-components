@@ -6,16 +6,16 @@ const SubPageTabs = props => {
   return (
     <div className="dg_subpage-tabs-container">
       <div className="container">
-        <div className="dg_subpage-tabs">
+        <div className="dg_subpage-tabs" id="tabs">
           <button
-            className="dg_accordion-btn"
+            className="dg_subpage-tabs-btn"
             type="button"
             id={id}
             aria-expanded={isExpanded}
           >
             <h2 className="dg_accordion_buttontext-holder">{text}</h2>
           </button>
-          <ul>{props.children}</ul>
+          <ul className="items">{props.children}</ul>
         </div>
       </div>
     </div>
