@@ -6,7 +6,7 @@ const SubPageTabs = props => {
   return (
     <div className="dg_subpage-tabs-container">
       <div className="container">
-        <div className="dg_subpage-tabs" id="tabs">
+        <div className="dg_subpage-tabs" id="dg_tabs">
           <button
             className="dg_subpage-tabs-btn"
             type="button"
@@ -15,7 +15,7 @@ const SubPageTabs = props => {
           >
             <h2 className="dg_accordion_buttontext-holder">{text}</h2>
           </button>
-          <ul className="items">{props.children}</ul>
+          <ul className="dg_tab-items">{props.children}</ul>
         </div>
       </div>
     </div>
