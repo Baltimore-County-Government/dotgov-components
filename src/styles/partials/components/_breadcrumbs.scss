@@ -14,10 +14,6 @@ $breadcrumb-icon-size: 20px;
     margin: 0 $default-margin;
     text-decoration: none;
 
-    :after {
-      display: inline-block;
-    }
-
     &:first-child {
       margin-left: 0;
     }
@@ -30,6 +26,10 @@ $breadcrumb-icon-size: 20px;
       @include icon-content($icon-arrow-right);
       vertical-align: middle;
       right: -20px;
+    }
+
+    &:focus {
+      display: inline-block;
     }
 
     &:last-child {
