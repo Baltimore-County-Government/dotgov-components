@@ -30,8 +30,8 @@ Html Snippet:
       </button>
       <ul class="dg_tab-items">
         <li class="active"><a href="/home">Newsroom</a></li>
-        <li class=""><a href="/home">Social Media Gallery</a></li>
-        <li class=""><a href="/home">Media Contact Information</a></li>
+        <li><a href="/home">Social Media Gallery</a></li>
+        <li><a href="/home">Media Contact Information</a></li>
       </ul>
     </div>
   </div>
