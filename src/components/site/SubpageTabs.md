@@ -17,7 +17,23 @@ import Section from "../basic/containers/Section";
 Html Snippet:
 
 ```html
-<div class="dark">
-  <ul></ul>
+<div class="dg_subpage-tabs-container">
+  <div class="container">
+    <div class="dg_subpage-tabs" id="dg_tabs">
+      <button
+        class="dg_subpage-tabs-btn"
+        type="button"
+        id="dg_menu-trigger-btn"
+        aria-expanded="true"
+      >
+        <h2 class="dg_accordion_buttontext-holder">In This Section</h2>
+      </button>
+      <ul class="dg_tab-items">
+        <li class="active"><a href="/home">Newsroom</a></li>
+        <li class=""><a href="/home">Social Media Gallery</a></li>
+        <li class=""><a href="/home">Media Contact Information</a></li>
+      </ul>
+    </div>
+  </div>
 </div>
 ```
