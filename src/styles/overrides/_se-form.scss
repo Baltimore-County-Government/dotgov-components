@@ -1,13 +1,45 @@
 .seform {
-  form .seText label {
-    @extend .dg_label;
-  }
+  form {
+    .seText label {
+      @extend .dg_label;
+    }
 
-  form fieldset {
-    @extend .dg_fieldset;
+    fieldset {
+      @extend .dg_fieldset;
 
-    legend {
-      @extend .dg_legend;
+      legend {
+        @extend .dg_legend;
+      }
+
+      .seRadioLabel {
+        @extend .dg_label;
+        @extend .dg_radio-label;
+      }
+
+      .seCheckboxLabel {
+        @extend .dg_label;
+        @extend .dg_checkbox-label;
+      }
+
+      .seRadio {
+        @extend .dg_radio-input;
+      }
+
+      .seCheckbox {
+        @extend .dg_checkbox-input;
+      }
+
+      input[type="submit"] {
+        @extend .dg_button;
+      }
+
+      input[type="reset"] {
+        @extend .dg_button-link;
+      }
+    }
+
+    .seLabelCell {
+      @extend .dg_fieldset-hint;
     }
   }
 }
