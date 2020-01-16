@@ -8,13 +8,18 @@ const SiteHeader = props => {
   const { status, heading, subHeading } = props;
   return (
     <header className="dg_header dg_site-header">
-      {/* Hamburger Menu Will Go Here */}
       <div className="dg_brand">
+        {/* #fake-site-nav-button maintains the space for the actual hamburger
+            button which must live outside of the site header for accessability reasons */}
+        <div id="fake-site-nav-button"></div>
         <a href="/" title="View the Baltimore County Government homepage.">
           <BrandText header={heading} description={subHeading} />
         </a>
         <SiteStatus status={status} />
       </div>
+      <button className="dg_mobile-search-button">
+        <i className="fas fa-search" aria-hidden="true"></i>
+      </button>
       <Search />
     </header>
   );

@@ -1,0 +1,45 @@
+.bc_site-nav__toggle-button {
+  background: $gold;
+  color: $black;
+  cursor: pointer;
+  padding: $default-padding;
+  /* Height, Width, Allows us to properly fake the menu button */
+  height: 85px;
+  width: 95px;
+
+  i,
+  .bc_site-nav__toggle-button__text {
+    display: block;
+  }
+
+  .bc_site-nav__toggle-button__text {
+    font-family: $default-heading-font;
+    font-size: $smallest-font-size;
+    text-transform: uppercase;
+  }
+
+  i {
+    color: $black;
+    font-size: 40px;
+    padding: 0 $default-padding;
+  }
+
+  &:hover,
+  &.hovered {
+    background: $gold-light;
+  }
+}
+
+@media screen and (max-width: $small-breakpoint) {
+  .bc_site-nav__toggle-button {
+    height: 65px;
+    width: 75px;
+    padding: 0;
+  }
+}
+
+/* Mimics the site nav button that is placed outside of the header */
+#fake-site-nav-button {
+  @extend .bc_site-nav__toggle-button;
+  background: transparent;
+}
