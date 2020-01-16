@@ -1,12 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
+import classnames from "classnames";
 
 const BreadcrumbLinkItem = props => {
-  const { link, text } = props;
+  const { link, text, className } = props;
+  const BreadcrumbClasses = classnames("breadcrumb", className);
   return (
-    <li className="dg_breadcrumb">
-      <a href={link}>{text}</a>
-    </li>
+    <a className={BreadcrumbClasses} href={link}>
+      {text}
+    </a>
   );
 };
 

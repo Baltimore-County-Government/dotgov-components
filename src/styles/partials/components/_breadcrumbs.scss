@@ -1,4 +1,4 @@
-$breadcrumb-arrow-size: 20px;
+$breadcrumb-icon-size: 20px;
 
 .dg_breadcrumbs {
   color: $black;
@@ -9,45 +9,54 @@ $breadcrumb-arrow-size: 20px;
   text-transform: uppercase;
   margin: 0 0 $padding-large 0;
 
-  i {
-    font-size: $h3-font-size;
-  }
+  .breadcrumb {
+    font-weight: $font-medium;
+    margin: 0 $default-margin;
+    text-decoration: none;
 
-  ul {
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-  }
-
-  li {
-    display: inline-block;
-
-    &:last-child {
-      margin: 0 $default-padding;
-    }
-  }
-
-  li.dg_breadcrumb {
-    a,
-    :after {
-      display: inline-block;
-    }
-
-    a {
-      font-weight: $font-medium;
-      margin: 0 $default-margin;
-      text-decoration: none;
-    }
-
-    &:first-child a {
+    &:first-child {
       margin-left: 0;
     }
 
     &:after {
       color: $gray-light;
-      font-size: $breadcrumb-arrow-size;
+      position: relative;
+      font-size: $breadcrumb-icon-size;
       font-weight: $font-bold;
       @include icon-content($icon-arrow-right);
       vertical-align: middle;
+      right: -20px;
+    }
+
+    &:focus {
+      display: inline-block;
+    }
+
+    &:last-child {
+      color: $black;
+      margin: 0 $default-padding;
+
+      &:hover {
+        color: $vibrant-blue;
+      }
+
+      &:after {
+        content: none;
+      }
+    }
+
+    &.breadcrumb-first {
+      margin-left: $margin-small;
+
+      &:before {
+        position: relative;
+        font-size: $breadcrumb-icon-size;
+        font-weight: $font-bold;
+        content: $icon-home;
+        font-family: $font-awesome-pro;
+        vertical-align: baseline;
+        right: 10px;
+      }
     }
   }
 }
