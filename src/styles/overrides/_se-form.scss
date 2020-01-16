@@ -1,3 +1,13 @@
-form .seText label {
-  @extend .dg_label;
+.seform {
+  form .seText label {
+    @extend .dg_label;
+  }
+
+  form fieldset {
+    @extend .dg_fieldset;
+
+    legend {
+      @extend .dg_legend;
+    }
+  }
 }
