@@ -29,17 +29,64 @@
         @extend .dg_checkbox-input;
       }
 
-      input[type="submit"] {
-        @extend .dg_button;
+      .seLabelCell {
+        @extend .dg_label;
+        margin-top: 0;
+        margin-bottom: 5px;
+
+        .seRequiredMarker {
+          margin-left: 5px;
+        }
       }
 
-      input[type="reset"] {
-        @extend .dg_button-link;
+      .SEAFGroupHorizontal,
+      .SEAFLabelHorizontal,
+      .SEAFGroupVertical,
+      .SEAFLabelVertical {
+        margin-bottom: $default-margin;
       }
     }
 
-    .seLabelCell {
-      @extend .dg_fieldset-hint;
+    .seRequiredMarker {
+      color: $red;
+      font-size: 0;
+      font-weight: 600;
+      position: relative;
+      visibility: hidden;
+
+      &:after {
+        @include icon-content($icon-asterisk);
+        font-size: $smallest-heading-font-size;
+        visibility: visible;
+      }
     }
   }
+
+  .SEAFGroupHorizontal,
+  .seFieldCellHorizontal,
+  .seLabelCellHorizontal,
+  .SEAFLabelHorizontal {
+    display: block;
+    vertical-align: auto;
+  }
+
+  .SEAFGroupVertical,
+  .seFieldCellVertical,
+  .seLabelCellVertical,
+  .SEAFLabelVertical {
+    display: block;
+  }
+
+  input[type="submit"] {
+    @extend .dg_button;
+  }
+
+  input[type="reset"] {
+    @extend .dg_button-link;
+  }
+}
+
+.SEAFWrapper > .seText > div > span {
+  display: block;
+  margin-bottom: $default-margin;
 }
