@@ -15,17 +15,22 @@
     }
   }
 }
+
 .dg_search-input {
   padding: $padding-small;
 }
 
 @media screen and (max-width: $header-breakpoint) {
   .dg_search-container {
-    min-width: auto;
+    position: static;
+    min-width: 0;
+    margin-right: 0;
   }
 
   .dg_search-input {
-    width: 75px;
+    border: none;
+    width: 0;
+    padding: 0;
     visibility: hidden;
   }
 }
