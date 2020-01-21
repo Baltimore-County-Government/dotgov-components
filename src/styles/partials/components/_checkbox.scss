@@ -1,122 +1,121 @@
 .dg_checkbox,
 .dg_radio {
-	line-height: 1.25;
-	display: block;
-	position: relative;
-	min-height: 40px;
-	margin-bottom: 10px;
-	padding-left: 40px;
-	clear: left;
+  line-height: 1.25;
+  display: block;
+  position: relative;
+  min-height: 40px;
+  margin-bottom: 10px;
+  padding-left: 40px;
+  clear: left;
 
-	.dg_radio-input,
-	.dg_checkbox-input {
-		cursor: pointer;
-		position: absolute;
-		z-index: 1;
-		top: -2px;
-		left: -2px;
-		width: 44px;
-		height: 44px;
-		margin: 0;
-		opacity: 0;
+  .dg_radio-input,
+  .dg_checkbox-input {
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    top: -2px;
+    left: -2px;
+    width: 44px;
+    height: 44px;
+    margin: 0;
+    opacity: 0;
 
-		&:checked + .dg_checkbox-label::after,
-		&:checked + .dg_radio-label::after {
-			opacity: 1;
-		}
+    &:checked + .dg_checkbox-label::after,
+    &:checked + .dg_radio-label::after {
+      opacity: 1;
+    }
 
-		&:disabled,
-		&:disabled + .dg_checkbox-label,
-		&:disabled + .dg_radio-label {
-			cursor: default;
-		}
+    &:disabled,
+    &:disabled + .dg_checkbox-label,
+    &:disabled + .dg_radio-label {
+      cursor: default;
+    }
 
-		&:disabled + .dg_checkbox-label,
-		&:disabled + .dg_radio-label {
-			opacity: .5;
-		}
-	}
+    &:disabled + .dg_checkbox-label,
+    &:disabled + .dg_radio-label {
+      opacity: 0.5;
+    }
+  }
 
-	input[type="checkbox" i] {
-		background-color: initial;
-		cursor: default;
-		-webkit-appearance: checkbox;
-		box-sizing: border-box;
-		margin: 3px 3px 3px 4px;
-		padding: initial;
-		border: initial;
-	}
+  input[type="checkbox" i] {
+    background-color: initial;
+    cursor: default;
+    -webkit-appearance: checkbox;
+    box-sizing: border-box;
+    margin: 3px 3px 3px 4px;
+    padding: initial;
+    border: initial;
+  }
 
-	.dg_radio-label,
-	.dg_checkbox-label {
-		display: inline-block;
-		margin-bottom: 0;
-		padding: $padding-small $default-padding $padding-smallest;
-		cursor: pointer;
-		-ms-touch-action: manipulation;
-		touch-action: manipulation;
-	}
+  .dg_radio-label,
+  .dg_checkbox-label {
+    display: block;
+    font-family: $default-heading-font;
+    font-weight: $font-light;
+    display: block;
+    padding: $padding-small $default-padding $padding-smallest;
+  }
 
-	.dg_checkbox-label,
-	.dg_radio-label {
-		&::before {
-			content: "";
-			-webkit-box-sizing: border-box;
-			box-sizing: border-box;
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 40px;
-			height: 40px;
-			border: 2px solid $black;
-			background: transparent;
-		}
+  .dg_checkbox-label,
+  .dg_radio-label {
+    &::before {
+      content: "";
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 40px;
+      height: 40px;
+      border: 2px solid $black;
+      background: transparent;
+    }
 
-		&::after {
-			position: absolute;
-			opacity: 0;
-		}
-	}
+    &::after {
+      position: absolute;
+      opacity: 0;
+    }
+  }
 
-	.dg_checkbox-label {
-		&::after {
-			position: absolute;
-			top: 8px;
-			left: 11px;
-			top: 3px;
-			left: 6px;
-			content: "\F00C"; /* check - solid - https://fontawesome.com/icons/check?style=solid*/
-			font-family: $font-awesome-pro;
-			font-size: 28px;
-		}
-	}
+  .dg_checkbox-label {
+    &::after {
+      position: absolute;
+      top: 8px;
+      left: 11px;
+      top: 3px;
+      left: 6px;
+      content: "\F00C"; /* check - solid - https://fontawesome.com/icons/check?style=solid*/
+      font-family: $font-awesome-pro;
+      font-size: 28px;
+    }
+  }
 
-	.dg_radio-label {
-		&::before {
-			border-radius: 50%;
-		}
+  .dg_radio-label {
+    &::before {
+      border-radius: 50%;
+    }
 
-		&::after {
-			content: '';
-			top: 7px;
-			left: 7px;
-			border: 13px solid $black;
-			border-radius: 50%;
-		}
-	}
+    &::after {
+      content: "";
+      top: 7px;
+      left: 7px;
+      border: 13px solid $black;
+      border-radius: 50%;
+    }
+  }
 }
 
 $circle-focus: 0 0 0 3px $white, 0 0 0 5px $blue-lightest;
 
 input[type="radio"] {
-	&:focus + label:before {
-		-webkit-box-shadow: $circle-focus;
-		box-shadow: $circle-focus;
-	}
+  &:focus + label:before {
+    -webkit-box-shadow: $circle-focus;
+    box-shadow: $circle-focus;
+  }
 }
 
 input[type="checkbox"] {
-	&:focus + label:before {
-		@extend :focus;
-	}
+  &:focus + label:before {
+    @extend :focus;
+  }
 }
