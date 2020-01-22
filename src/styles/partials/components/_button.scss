@@ -18,6 +18,10 @@
 
 a.dg_button-secondary {
   text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .dg_button {
