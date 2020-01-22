@@ -43,7 +43,7 @@
 
       &.active {
         a {
-          color: black;
+          color: $black;
           background-color: $white;
         }
       }
@@ -53,8 +53,8 @@
 
 @media screen and (max-width: $medium-breakpoint) {
   .dg_subpage-tabs {
-    border-top: 1px #666 solid;
-    border-bottom: 1px #666 solid;
+    border-top: 1px $gray solid;
+    border-bottom: 1px $gray solid;
     font-weight: normal;
     margin-bottom: $default-margin;
     margin-top: $default-margin;
@@ -64,7 +64,7 @@
     &.open {
       h2 {
         &:after {
-          content: "\F078";
+          content: $icon-arrow-down;
           font-family: $font-awesome-pro;
         }
       }
@@ -89,7 +89,7 @@
           float: right;
           font-size: $h2-font-size;
           cursor: pointer;
-          content: "\F054";
+          content: $icon-arrow-right;
           font-family: $font-awesome-pro;
         }
       }
@@ -118,7 +118,7 @@
           text-align: left;
 
           &:hover {
-            background-color: #8091c0;
+            background-color: $blue-lightest;
           }
         }
       }
