@@ -110,3 +110,8 @@ a.dg_button-secondary {
     color: $gray-light;
   }
 }
+
+.dg_button-list .dg_button {
+  display: inline-block;
+  margin: 0 $margin-small $margin-small 0;
+}
