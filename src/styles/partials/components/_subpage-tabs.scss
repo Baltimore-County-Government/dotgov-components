@@ -16,14 +16,14 @@
     display: none;
     h2 {
       color: $white;
-      font-size: 18px;
+      font-size: $small-heading-font-size;
     }
   }
 
   ul {
     list-style-type: none;
     margin-top: $default-margin;
-    padding-left: 20px;
+    padding-left: $padding-large;
 
     li {
       float: left;
@@ -32,8 +32,8 @@
         display: block;
         color: $white;
         text-align: center;
-        padding: 20px 16px;
-        margin-right: 30px;
+        padding: $padding-large 16px;
+        margin-right: $margin-large;
         text-decoration: none;
 
         &:hover {
@@ -87,7 +87,7 @@
         &:after {
           position: relative;
           float: right;
-          font-size: 24px;
+          font-size: $h2-font-size;
           cursor: pointer;
           content: "\F054";
           font-family: $font-awesome-pro;
