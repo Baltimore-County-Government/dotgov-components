@@ -1,0 +1,127 @@
+/* Main Search Container */
+.gsc-control-cse {
+  padding: 0 !important;
+}
+
+/* Individual search result */
+.gsc-webResult.gsc-result {
+  border: $border-width-small solid $gray-light !important;
+  padding: $default-padding !important;
+  margin-bottom: $default-margin !important;
+
+  /* Search result title (it is a link) */
+  .gs-title {
+    @extend h3;
+
+    text-transform: uppercase;
+    font-size: $h2-font-size !important;
+    font-weight: 400;
+    text-decoration: none;
+    @include default-transition();
+    margin-bottom: $default-margin;
+
+    /* highlighted search term*/
+    b {
+      font-size: $h2-font-size !important;
+      text-decoration: none;
+      font-weight: 900;
+
+      &:hover {
+        color: $vibrant-blue !important;
+      }
+    }
+
+    /* grabbed from typography - a rules*/
+    &:hover,
+    &:focus,
+    &.hovered,
+    &.focused {
+      color: $vibrant-blue !important;
+
+      b {
+        color: $vibrant-blue !important;
+      }
+    }
+
+    &:active,
+    &.active {
+      color: $pale-blue !important;
+    }
+
+    &:disabled,
+    &.disabled {
+      color: $pale-blue-lightest !important;
+    }
+  }
+
+  /* Link as text (not clickable) */
+  .gs-visibleUrl-long {
+    font-family: $default-body-font !important;
+    font-size: $base-font-size !important;
+    margin-bottom: $margin-small;
+  }
+
+  /* Description Text */
+  .gs-snippet {
+    font-family: $default-body-font !important;
+    font-size: $base-font-size;
+    /* Search Term*/
+    b {
+      font-weight: 600;
+    }
+  }
+}
+
+/* Info text above the search results */
+.gsc-result-info-container {
+  font-family: $default-body-font !important;
+  font-size: $base-font-size;
+
+  .gsc-result-info {
+    font-family: $default-body-font !important;
+    font-size: $base-font-size;
+  }
+}
+
+/* Paging */
+.gsc-cursor-box.gs-bidi-start-align {
+  margin: $default-margin auto !important;
+  text-align: center;
+}
+
+/*Paging Numbers */
+.gsc-results .gsc-cursor-box .gsc-cursor-page {
+  background: none !important;
+  color: $blue !important;
+  font-family: $default-body-font !important;
+  font-size: $base-font-size;
+  margin: auto $default-margin;
+  padding: $padding-small;
+  text-decoration: underline;
+  @include default-transition();
+
+  /* grabbed from typography - a rules*/
+  &:hover,
+  &:focus,
+  &.hovered,
+  &.focused {
+    color: $vibrant-blue !important;
+  }
+
+  &:active,
+  &.active {
+    color: $pale-blue !important;
+  }
+
+  &:disabled,
+  &.disabled {
+    color: $pale-blue-lightest !important;
+  }
+
+  /* current page of results link */
+  &.gsc-cursor-current-page {
+    color: $black;
+    font-weight: 900;
+    text-decoration: none;
+  }
+}
