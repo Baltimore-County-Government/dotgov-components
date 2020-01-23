@@ -13,6 +13,7 @@ const AccordionPanel = props => {
   const cssClasses = classNames(
     "dg_accordion__collapsible",
     "collapsed",
+    isExpanded ? "show" : null,
     className
   );
   const buttonId = `accordion-btn-${id}`;
