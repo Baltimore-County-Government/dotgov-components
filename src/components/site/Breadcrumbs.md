@@ -2,16 +2,16 @@
 
 ```jsx
 import Section from "../basic/containers/Section";
-import BreadcrumbLinkItem from "./BreadcrumbLinkitem";
+import BreadCrumbLinkItem from "./BreadCrumbLinkItem";
 
 <Section>
   <Breadcrumbs>
-    <BreadcrumbLinkItem text="Departments" link="/departments/health" />
-    <BreadcrumbLinkItem
+    <BreadCrumbLinkItem text="Departments" link="/departments/health" />
+    <BreadCrumbLinkItem
       text="Department of Health"
       link="/departments/health"
     />
-    <BreadcrumbLinkItem
+    <BreadCrumbLinkItem
       className="breadcrumb-last"
       text="Adoptable Pets"
       link="/departments/health"
@@ -46,17 +46,17 @@ Html Snippet:
 
 ```jsx
 import Section from "../basic/containers/Section";
-import BreadcrumbLinkItem from "./BreadcrumbLinkitem";
+import BreadCrumbLinkItem from "./BreadCrumbLinkItem";
 
 <Section className="dark">
   <div style={{ padding: "15px" }}>
     <Breadcrumbs>
-      <BreadcrumbLinkItem text="Departments" link="/departments" />
-      <BreadcrumbLinkItem
+      <BreadCrumbLinkItem text="Departments" link="/departments" />
+      <BreadCrumbLinkItem
         text="Department of Health"
         link="/departments/health"
       />
-      <BreadcrumbLinkItem
+      <BreadCrumbLinkItem
         className="breadcrumb-last"
         text="Adoptable Pets"
         link="/departments/health"

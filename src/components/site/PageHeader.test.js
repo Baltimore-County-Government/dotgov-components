@@ -1,8 +1,8 @@
+import BreadCrumbLinkItem from "./BreadCrumbLinkItem";
+import Breadcrumbs from "./Breadcrumbs";
+import PageHeader from "./PageHeader";
 import React from "react";
 import ReactDOM from "react-dom";
-import PageHeader from "./PageHeader";
-import Breadcrumbs from "./Breadcrumbs";
-import BreadcrumbLinkItem from "./BreadCrumbLinkItem";
 
 it("renders without crashing", () => {
   const div = document.createElement("div");
@@ -20,17 +20,17 @@ it("renders without crashing", () => {
 it("renders with breadcrumbs without crashing", () => {
   const breadCrumbs = () => (
     <Breadcrumbs>
-      <BreadcrumbLinkItem
+      <BreadCrumbLinkItem
         text="Departments"
         title="This is a title"
         link="/departments"
       />
-      <BreadcrumbLinkItem
+      <BreadCrumbLinkItem
         text="Department of Health"
         title="This is a title"
         link="/departments/health"
       />
-      <BreadcrumbLinkItem
+      <BreadCrumbLinkItem
         className="breadcrumb-last"
         text="Adoptable Pets"
         link="/departments/health"
