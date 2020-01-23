@@ -64,7 +64,7 @@
     &.open {
       h2 {
         &:after {
-          content: $icon-arrow-down;
+          content: $icon-arrow-down !important;
           font-family: $font-awesome-pro;
         }
       }
