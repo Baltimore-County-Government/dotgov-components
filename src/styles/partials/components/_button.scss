@@ -16,14 +16,6 @@
   }
 }
 
-a.dg_button-secondary {
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: none;
-  }
-}
-
 .dg_button {
   background: $blue;
   border: $default-border-width solid $blue;
@@ -60,6 +52,7 @@ a.dg_button-secondary {
   background: none;
   border-color: $blue;
   color: $blue;
+  text-decoration: none;
 
   &:active,
   &.active,
@@ -67,12 +60,14 @@ a.dg_button-secondary {
   &.hovered {
     border-color: $blue;
     color: $white;
+    text-decoration: none;
   }
 
   &:disabled,
   &.disabled {
     background: none;
     border-color: $gray-light;
+    text-decoration: none;
   }
 }
 
