@@ -30,7 +30,7 @@ export { default as PageHeader } from "./components/site/PageHeader";
 export { default as SummaryList } from "./components/site/SummaryList";
 export { default as Breadcrumbs } from "./components/site/Breadcrumbs";
 export { default as SideBarSection } from "./components/site/SideBarSection";
-export { default as BreadcrumbLinkItem } from "./components/site/BreadCrumbLinkItem";
+export { default as BreadCrumbLinkItem } from "./components/site/BreadCrumbLinkItem";
 
 /** Other */
 export { default as Alert } from "./components/basic/Alert";
