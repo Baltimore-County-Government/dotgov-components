@@ -88,7 +88,47 @@ Html Snippet:
 Html Snippet:
 
 ```html
-<button type="button" class="dg_button-secondary">Default</button>
+<button type="button" class="dg_button dg_button-secondary">Default</button>
+```
+
+### Secondary Button (as Link)
+
+```jsx
+<div
+  style={{ display: "flex", justifyContent: "space-between", padding: "10px" }}
+>
+  <Button as="a" href="#" text="Default" className="dg_button-secondary" />
+  <Button
+    as="a"
+    href="#"
+    text="Hovered"
+    className="hovered dg_button-secondary"
+  />
+  <Button
+    as="a"
+    href="#"
+    text="Active"
+    className="active dg_button-secondary"
+  />
+  <Button
+    as="a"
+    href="#"
+    text="Focused"
+    className="focused dg_button-secondary"
+  />
+  <Button
+    as="a"
+    href="#"
+    text="Disabled"
+    className="disabled dg_button-secondary"
+  />
+</div>
+```
+
+Html Snippet:
+
+```html
+<a class="dg_button dg_button-secondary" href="#">Default</a>
 ```
 
 ### Text Button
