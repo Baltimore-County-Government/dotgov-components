@@ -2,21 +2,21 @@
 
 ```jsx
 import Breadcrumbs from "./Breadcrumbs";
-import BreadcrumbLinkItem from "./BreadcrumbLinkitem";
+import BreadCrumbLinkItem from "./BreadCrumbLinkItem";
 
 const breadCrumbs = () => (
   <Breadcrumbs>
-    <BreadcrumbLinkItem
+    <BreadCrumbLinkItem
       text="Departments"
       title="This is a title"
       link="/departments"
     />
-    <BreadcrumbLinkItem
+    <BreadCrumbLinkItem
       text="Department of Health"
       title="This is a title"
       link="/departments/health"
     />
-    <BreadcrumbLinkItem
+    <BreadCrumbLinkItem
       className="breadcrumb-last"
       text="Adoptable Pets"
       link="/departments/health"
