@@ -15,7 +15,7 @@
 
     text-transform: uppercase;
     font-size: $h2-font-size !important;
-    font-weight: 400;
+    font-weight: 900;
     text-decoration: none;
     @include default-transition();
     margin-bottom: $default-margin;
@@ -24,7 +24,6 @@
     b {
       font-size: $h2-font-size !important;
       text-decoration: none;
-      font-weight: 900;
 
       &:hover {
         color: $vibrant-blue !important;
@@ -120,7 +119,7 @@
 
   /* current page of results link */
   &.gsc-cursor-current-page {
-    color: $black;
+    color: $black !important;
     font-weight: 900;
     text-decoration: none;
   }
