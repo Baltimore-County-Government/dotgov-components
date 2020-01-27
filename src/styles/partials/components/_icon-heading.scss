@@ -51,3 +51,10 @@ $icon-size: 30px;
   line-height: 29px; /* Manually calculated for this element in the browser */
   padding: 0 !important; /* overrides default h2 in a dark section */
 }
+
+@media screen and (max-width: $small-breakpoint) {
+  /* Decrease letter spacing so there isn't horizontal scroll on small screens */
+  .dg_icon-heading {
+    letter-spacing: $base-spacing-unit * 2;
+  }
+}

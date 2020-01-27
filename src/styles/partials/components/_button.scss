@@ -1,108 +1,116 @@
 .dg_button,
 .dg_button-secondary {
-	&:hover,
-	&.hovered {
-		background: $vibrant-blue;
-	}
+  &:hover,
+  &.hovered {
+    background: $vibrant-blue;
+  }
 
-	&:active,
-	&.active {
-		background: $pale-blue;
-	}
+  &:active,
+  &.active {
+    background: $pale-blue;
+  }
 
-	&:disabled,
-	&.disabled {
-		border-color: $gray-light;
-	}
+  &:disabled,
+  &.disabled {
+    border-color: $gray-light;
+  }
 }
 
 .dg_button {
-	background: $blue;
-	border: $default-border-width solid $blue;
-	color: $white;
-	font-family: $default-heading-font;
-	font-size: $smallest-heading-font-size;
-	font-weight: $font-bold;
-	padding: $default-padding;
-	text-transform: uppercase;
+  background: $blue;
+  border: $default-border-width solid $blue;
+  color: $white;
+  font-family: $default-heading-font;
+  font-size: $smallest-heading-font-size;
+  font-weight: $font-bold;
+  padding: $default-padding;
+  text-transform: uppercase;
 
-	i {
-		display: inline;
-		margin-right: $margin-small;
-	}
+  i {
+    display: inline;
+    margin-right: $margin-small;
+  }
 
-	&:hover,
-	&.hovered {
-		border-color: $vibrant-blue;
-	}
+  &:hover,
+  &.hovered {
+    border-color: $vibrant-blue;
+  }
 
-	&:active,
-	&.active {
-		border-color: $pale-blue;
-	}
+  &:active,
+  &.active {
+    border-color: $pale-blue;
+  }
 
-	&:disabled,
-	&.disabled {
-		background: $gray-light;
-		border-color: $gray-light;
-	}
+  &:disabled,
+  &.disabled {
+    background: $gray-light;
+    border-color: $gray-light;
+  }
 }
 
 .dg_button-secondary {
-	background: none;
-	border-color: $blue;
-	color: $blue;
+  background: none;
+  border-color: $blue;
+  color: $blue;
+  text-decoration: none;
 
-	&:active,
-	&.active,
-	&:hover,
-	&.hovered {
-		border-color: $blue;
-		color: $white;
-	}
+  &:active,
+  &.active,
+  &:hover,
+  &.hovered {
+    border-color: $blue;
+    color: $white;
+    text-decoration: none;
+  }
 
-	&:disabled,
-	&.disabled {
-		background: none;
-		border-color: $gray-light;
-	}
+  &:disabled,
+  &.disabled {
+    background: none;
+    border-color: $gray-light;
+    text-decoration: none;
+  }
 }
 
 .dg_button-link {
-	background: none;
-	border: none;
-	color: $blue;
-	font-family: $default-body-font;
-	font-size: $base-font-size;
-	font-style: italic;
-	text-transform: inherit;
-	text-decoration: underline;
+  background: none;
+  border: none;
+  color: $blue;
+  font-family: $default-body-font;
+  font-size: $base-font-size;
+  font-style: italic;
+  text-transform: inherit;
+  text-decoration: underline;
 
-	&:active,
-	&.active,
-	&:hover,
-	&.hovered,
-	&:disabled,
-	&.disabled {
-		background: none;
-		border-color: none;
-	}
+  &:active,
+  &.active,
+  &:hover,
+  &.hovered,
+  &:disabled,
+  &.disabled {
+    background: none;
+    border-color: none;
+  }
 
-	&:hover,
-	&.hovered {
-		color: $vibrant-blue;
-	}
+  &:hover,
+  &.hovered {
+    color: $vibrant-blue;
+  }
 
-	&:active,
-	&.active {
-		color: $pale-blue;
-	}
+  &:active,
+  &.active {
+    color: $pale-blue;
+  }
 }
 
 .dg_button-secondary,
 .dg_button-link {
-	&:disabled,
-	&.disabled {
-		color: $gray-light;
-	}
+  &:disabled,
+  &.disabled {
+    color: $gray-light;
+  }
+}
+
+.dg_button-list .dg_button {
+  display: inline-block;
+  margin: 0 $margin-small $margin-small 0;
 }
