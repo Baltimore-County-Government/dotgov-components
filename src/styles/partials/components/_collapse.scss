@@ -1,5 +1,6 @@
 .dg_collapse {
   border-top: $border-width-large solid $gray-light;
+  margin-bottom: $margin-larger;
 
   &:last-child {
     border-bottom: none;
@@ -33,9 +34,10 @@
 
   .dg_accordion_buttontext-holder {
     margin-left: $margin-large;
+    margin-top: $margin-large;
   }
 
-  @media screen and (max-width: $medium-breakpoint) {
-    margin-bottom: $margin-large;
-  }
+  // @media screen and (max-width: $medium-breakpoint) {
+  //   margin-bottom: $margin-large;
+  // }
 }
