@@ -34,4 +34,8 @@
   .dg_accordion_buttontext-holder {
     margin-left: $margin-large;
   }
+
+  @media screen and (max-width: $medium-breakpoint) {
+    margin-bottom: 30px;
+  }
 }
