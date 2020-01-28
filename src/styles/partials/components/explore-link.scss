@@ -1,0 +1,53 @@
+.dg_explore-link {
+  background: $gray-lightest;
+  display: block;
+  font-family: $default-heading-font;
+  font-weight: 600;
+  font-size: $smallest-heading-font-size;
+  min-height: 130px;
+  margin-bottom: $default-margin;
+  padding: $padding-larger;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus,
+  &.hovered,
+  &.focused {
+    background: $vibrant-blue;
+    color: $white;
+  }
+
+  &:active,
+  &.active {
+    background: $pale-blue;
+    color: $white;
+  }
+}
+
+.dg_explore {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  .dg_explore-link {
+    margin-right: $default-margin;
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: $medium-breakpoint) {
+  .dg_explore-link {
+    min-height: auto;
+    padding: $default-padding;
+  }
+
+  .dg_explore {
+    display: block;
+
+    .dg_explore-link {
+      margin: 0 0 $default-margin;
+      width: 100%;
+    }
+  }
+}
