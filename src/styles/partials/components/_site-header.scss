@@ -41,7 +41,7 @@
 @media screen and (max-width: $header-breakpoint) {
   #search-form {
     display: none;
-    padding: 15px;
+    padding: $default-padding;
     position: absolute;
     top: 85px;
     height: 65px;
