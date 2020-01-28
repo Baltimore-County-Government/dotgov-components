@@ -10,10 +10,13 @@
   text-decoration: none;
   text-transform: uppercase;
 
+  &.focused,
+  &:focus {
+    color: $blue;
+  }
+
   &:hover,
-  &:focus,
-  &.hovered,
-  &.focused {
+  &.hovered {
     background: $vibrant-blue;
     color: $white;
   }
