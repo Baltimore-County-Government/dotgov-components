@@ -70,6 +70,8 @@
       }
 
       ul {
+        padding-left: 0px;
+
         &.dg_tab-items {
           display: block;
           text-transform: none;
@@ -99,6 +101,7 @@
     ul {
       margin-top: $margin-small;
       margin-bottom: 0px;
+      padding-left: 0px;
 
       &.dg_tab-items {
         display: none;
