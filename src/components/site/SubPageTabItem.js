@@ -4,9 +4,9 @@ import classnames from "classnames";
 
 const SubPageTabItem = props => {
   const { text, link, className } = props;
-  const TabItemClasses = classnames(className);
+  const itemClasses = classnames(className);
   return (
-    <li className={TabItemClasses}>
+    <li className={itemClasses}>
       <a href={link}>{text}</a>
     </li>
   );
