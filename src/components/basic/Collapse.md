@@ -1,9 +1,28 @@
 ### Default (Expanded)
 
 ```jsx
+import Checkbox from "./form/Checkbox";
+
 <Collapse id="sample-collapse" header="Default Example">
-  <p>Some really compelling content goes here.</p>
-</Collapse>
+  <Checkbox
+    id="Checkbox1"
+    name="Checkbox1"
+    label="Show all popular services"
+    value="true"
+  />
+  <Checkbox
+    id="Checkbox2"
+    name="Checkbox2"
+    label="Show popular services for Rec and Park"
+    value="true"
+  />
+  <Checkbox
+    id="Checkbox3"
+    name="Checkbox3"
+    label="Show popular services for Corrections"
+    value="true"
+  />
+</Collapse>;
 ```
 
 Html Snippet:
