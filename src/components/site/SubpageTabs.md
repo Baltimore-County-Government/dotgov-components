@@ -21,22 +21,20 @@ Html Snippet:
 
 ```html
 <div class="dg_subpage-tabs-container">
-  <div class="container">
-    <div class="dg_subpage-tabs" id="dg_tabs">
-      <button
-        class="dg_subpage-tabs-btn"
-        type="button"
-        id="dg_menu-trigger-btn"
-        aria-expanded="true"
-      >
-        <h2 class="dg_accordion_buttontext-holder">In This Section</h2>
-      </button>
-      <ul class="dg_tab-items">
-        <li class="active"><a href="/newsroom">Newsroom</a></li>
-        <li><a href="/social-media-gallery">Social Media Gallery</a></li>
-        <li><a href="/media-contact-gallery">Media Contact Information</a></li>
-      </ul>
-    </div>
+  <div class="dg_subpage-tabs" id="dg_tabs">
+    <button
+      class="dg_subpage-tabs-btn"
+      type="button"
+      id="dg_menu-trigger-btn"
+      aria-expanded="true"
+    >
+      <h2 class="dg_accordion_buttontext-holder">In This Section</h2>
+    </button>
+    <ul class="dg_tab-items">
+      <li class="active"><a href="/newsroom">Newsroom</a></li>
+      <li><a href="/social-media-gallery">Social Media Gallery</a></li>
+      <li><a href="/media-contact-gallery">Media Contact Information</a></li>
+    </ul>
   </div>
 </div>
 ```

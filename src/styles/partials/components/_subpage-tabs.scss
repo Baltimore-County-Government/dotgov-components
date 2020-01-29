@@ -9,6 +9,10 @@
   font-family: $default-heading-font;
   font-size: $smallest-heading-font-size;
   font-weight: $font-bold;
+  padding-left: $default-padding;
+  padding-right: $default-padding;
+  margin-right: auto;
+  margin-left: auto;
   text-transform: uppercase;
   width: 100%;
 
@@ -48,6 +52,12 @@
         }
       }
     }
+  }
+}
+
+@media screen and (min-width: $extra-large-breakpoint) {
+  .dg_subpage-tabs {
+    max-width: $max-container-width;
   }
 }
 
