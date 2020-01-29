@@ -7,9 +7,12 @@ import Section from "../basic/containers/Section";
 
 <Section>
   <SubPageTabs text="In This Section" id="dg_menu-trigger-btn">
-    <SubPageTabItem className="active" text="Newsroom" link="/home" />
-    <SubPageTabItem text="Social Media Gallery" link="/home" />
-    <SubPageTabItem text="Media Contact Information" link="/home" />
+    <SubPageTabItem className="active" text="Newsroom" link="/newsroom" />
+    <SubPageTabItem text="Social Media Gallery" link="/social-media-gallery" />
+    <SubPageTabItem
+      text="Media Contact Information"
+      link="/media-contact-gallery"
+    />
   </SubPageTabs>
 </Section>;
 ```
@@ -29,9 +32,9 @@ Html Snippet:
         <h2 class="dg_accordion_buttontext-holder">In This Section</h2>
       </button>
       <ul class="dg_tab-items">
-        <li class="active"><a href="/home">Newsroom</a></li>
-        <li><a href="/home">Social Media Gallery</a></li>
-        <li><a href="/home">Media Contact Information</a></li>
+        <li class="active"><a href="/newsroom">Newsroom</a></li>
+        <li><a href="/social-media-gallery">Social Media Gallery</a></li>
+        <li><a href="/media-contact-gallery">Media Contact Information</a></li>
       </ul>
     </div>
   </div>
