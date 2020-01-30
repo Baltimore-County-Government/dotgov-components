@@ -1,3 +1,5 @@
+$header-height: 65px;
+
 .dg_header {
   background-color: $gray-lightest;
   border-top: $site-border-width solid $red;
@@ -41,13 +43,13 @@
 @media screen and (max-width: $header-breakpoint) {
   #search-form {
     display: none;
-    padding: 15px;
+    padding: $default-padding;
     position: absolute;
     top: 85px;
-    height: 65px;
+    height: $header-height;
     width: 100%;
     background: white;
-    z-index: 999999999;
+    z-index: $medium-z-index;
     flex-direction: column;
     justify-content: center;
   }
@@ -93,15 +95,13 @@
   }
 }
 
-$small-mobile-button-size: 65px;
-
 /* On small screens we need to shrink the hamburger menu button in order to fit all of the header content. */
 @media screen and (max-width: $small-breakpoint) {
   .bc_site-nav__toggle-button,
   .dg_mobile-search-button,
   #fake-site-nav-button {
-    height: $small-mobile-button-size;
-    width: $small-mobile-button-size;
+    height: $header-height;
+    width: $header-height;
     padding: 0;
   }
 
@@ -133,6 +133,6 @@ $small-mobile-button-size: 65px;
   }
 
   #search-form {
-    top: 65px;
+    top: $header-height;
   }
 }
