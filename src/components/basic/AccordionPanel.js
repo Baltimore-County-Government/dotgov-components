@@ -2,23 +2,20 @@ import React from "react";
 import classNames from "classnames";
 
 const AccordionPanel = props => {
-  const {
-    id,
-    header,
-    children,
-    subHeader,
-    className,
-    isExpanded = false
-  } = props;
-  const cssClasses = classNames(
+  const { id, header, children, subHeader, className, isExpanded } = props;
+  const panelCssClasses = classNames(
     "dg_accordion__collapsible",
-    "collapsed",
+    isExpanded ? null : "collapsed",
     className
+  );
+  const contentCssClasses = classNames(
+    "multi-collapse collapse",
+    isExpanded ? "show" : null
   );
   const buttonId = `accordion-btn-${id}`;
 
   return (
-    <div className={cssClasses}>
+    <div className={panelCssClasses}>
       <button
         className="dg_accordion-btn"
         type="button"
@@ -31,7 +28,7 @@ const AccordionPanel = props => {
         )}
       </button>
       <div
-        className="multi-collapse collapse"
+        className={contentCssClasses}
         aria-labelledby={buttonId}
         aria-expanded={isExpanded}
       >
