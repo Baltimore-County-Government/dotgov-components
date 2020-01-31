@@ -67,7 +67,8 @@
     border-top: $border-width-small $gray solid;
     border-bottom: $border-width-small $gray solid;
     font-weight: normal;
-    margin: $default-margin 15px $default-margin 15px;
+    margin: $default-margin $grid-gutter-width / 2 $default-margin
+      $grid-gutter-width / 2;
     padding-bottom: $padding-small;
     padding-left: 0px;
     padding-top: $padding-small;
