@@ -64,8 +64,8 @@
 
 @media screen and (max-width: $large-breakpoint) {
   .dg_subpage-tabs {
-    border-top: 1px $gray solid;
-    border-bottom: 1px $gray solid;
+    border-top: $border-width-small $gray solid;
+    border-bottom: $border-width-small $gray solid;
     font-weight: normal;
     margin: $default-margin 15px $default-margin 15px;
     padding-bottom: $padding-small;
