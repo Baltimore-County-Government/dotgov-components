@@ -1,3 +1,5 @@
+$header-height: 65px;
+
 .dg_header {
   background-color: $gray-lightest;
   border-top: $site-border-width solid $red;
@@ -39,6 +41,19 @@
 }
 
 @media screen and (max-width: $header-breakpoint) {
+  #search-form {
+    display: none;
+    padding: $default-padding;
+    position: absolute;
+    top: 85px;
+    height: $header-height;
+    width: 100%;
+    background: white;
+    z-index: $medium-z-index;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   .dg_site-header {
     background: $white;
     position: relative;
@@ -46,13 +61,14 @@
     margin-bottom: 64px; /* Visually calculated for this component only */
   }
 
-  .dg_search-container {
-    display: none;
+  #search-form.is-visible {
+    display: flex;
   }
 
   .dg_mobile-search-button {
     display: block;
     padding: $default-padding;
+    z-index: $max-z-index-minus-1;
   }
 }
 
@@ -70,17 +86,22 @@
       padding: 0;
     }
   }
-}
 
-$small-mobile-button-size: 65px;
+  #search-form {
+    .dg_search-btn {
+      right: 30px;
+      top: 20px;
+    }
+  }
+}
 
 /* On small screens we need to shrink the hamburger menu button in order to fit all of the header content. */
 @media screen and (max-width: $small-breakpoint) {
   .bc_site-nav__toggle-button,
   .dg_mobile-search-button,
   #fake-site-nav-button {
-    height: $small-mobile-button-size;
-    width: $small-mobile-button-size;
+    height: $header-height;
+    width: $header-height;
     padding: 0;
   }
 
@@ -109,5 +130,9 @@ $small-mobile-button-size: 65px;
         }
       }
     }
+  }
+
+  #search-form {
+    top: $header-height;
   }
 }

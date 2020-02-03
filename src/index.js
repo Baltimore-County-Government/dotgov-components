@@ -31,6 +31,7 @@ export { default as SummaryList } from "./components/site/SummaryList";
 export { default as Breadcrumbs } from "./components/site/Breadcrumbs";
 export { default as SideBarSection } from "./components/site/SideBarSection";
 export { default as BreadCrumbLinkItem } from "./components/site/BreadCrumbLinkItem";
+export { default as ExploreLink } from "./components/site/ExploreLink";
 
 /** Other */
 export { default as Alert } from "./components/basic/Alert";
