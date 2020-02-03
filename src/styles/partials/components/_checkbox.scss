@@ -86,7 +86,7 @@ $checkbox-size: 40px;
       left: 11px;
       top: 3px;
       left: 6px;
-      content: "\F00C"; /* check - solid - https://fontawesome.com/icons/check?style=solid*/
+      content: $icon-check;
       font-family: $font-awesome-pro;
       font-size: $deck-font-size;
     }
