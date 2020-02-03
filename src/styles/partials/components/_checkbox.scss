@@ -1,11 +1,13 @@
+$checkbox-size: 40px;
+
 .dg_checkbox,
 .dg_radio {
   line-height: 1.25;
   display: block;
   position: relative;
-  min-height: 40px;
-  margin-bottom: 10px;
-  padding-left: 40px;
+  min-height: $checkbox-size;
+  margin-bottom: $margin-small;
+  padding-left: $padding-largest;
   clear: left;
 
   .dg_radio-input,
@@ -65,9 +67,9 @@
       position: absolute;
       top: 0;
       left: 0;
-      width: 40px;
-      height: 40px;
-      border: 2px solid $black;
+      width: $checkbox-size;
+      height: $checkbox-size;
+      border: $default-border-width solid $black;
       background: transparent;
     }
 
@@ -86,7 +88,7 @@
       left: 6px;
       content: "\F00C"; /* check - solid - https://fontawesome.com/icons/check?style=solid*/
       font-family: $font-awesome-pro;
-      font-size: 28px;
+      font-size: $deck-font-size;
     }
   }
 
