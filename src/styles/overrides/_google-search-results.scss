@@ -124,3 +124,14 @@
     text-decoration: none;
   }
 }
+
+.gsc-above-wrapper-area {
+  border-bottom: none !important;
+}
+
+/** No Results Message */
+.gs-no-results-result .gs-snippet,
+.gs-error-result .gs-snippet {
+  background: none !important;
+  border: none !important;
+}
