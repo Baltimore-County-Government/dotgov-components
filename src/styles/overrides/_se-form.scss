@@ -1,0 +1,92 @@
+.seform {
+  form {
+    .seText label {
+      @extend .dg_label;
+    }
+
+    fieldset {
+      @extend .dg_fieldset;
+
+      legend {
+        @extend .dg_legend;
+      }
+
+      .seRadioLabel {
+        @extend .dg_label;
+        @extend .dg_radio-label;
+      }
+
+      .seCheckboxLabel {
+        @extend .dg_label;
+        @extend .dg_checkbox-label;
+      }
+
+      .seRadio {
+        @extend .dg_radio-input;
+      }
+
+      .seCheckbox {
+        @extend .dg_checkbox-input;
+      }
+
+      .seLabelCell {
+        @extend .dg_label;
+        margin-top: 0;
+        margin-bottom: $margin-smallest;
+
+        .seRequiredMarker {
+          margin-left: $margin-smallest;
+        }
+      }
+
+      .SEAFGroupHorizontal,
+      .SEAFLabelHorizontal,
+      .SEAFGroupVertical,
+      .SEAFLabelVertical {
+        margin-bottom: $default-margin;
+      }
+    }
+
+    .seRequiredMarker {
+      color: $red;
+      font-size: 0;
+      font-weight: $font-medium;
+      position: relative;
+      visibility: hidden;
+
+      &:after {
+        @include icon-content($icon-asterisk);
+        font-size: $smallest-heading-font-size;
+        visibility: visible;
+      }
+    }
+  }
+
+  .SEAFGroupHorizontal,
+  .seFieldCellHorizontal,
+  .seLabelCellHorizontal,
+  .SEAFLabelHorizontal {
+    display: block;
+    vertical-align: auto;
+  }
+
+  .SEAFGroupVertical,
+  .seFieldCellVertical,
+  .seLabelCellVertical,
+  .SEAFLabelVertical {
+    display: block;
+  }
+
+  input[type="submit"] {
+    @extend .dg_button;
+  }
+
+  input[type="reset"] {
+    @extend .dg_button-link;
+  }
+}
+
+.SEAFWrapper > .seText > div > span {
+  display: block;
+  margin-bottom: $default-margin;
+}
