@@ -9,12 +9,13 @@
 .dg_image {
   display: block;
   position: relative;
+  height: auto !important;
+  width: auto !important;
 
   &.left,
   &.right {
     margin-top: $margin-small;
     margin-bottom: $padding-largest;
-    max-width: 40%;
   }
 
   &.left {
