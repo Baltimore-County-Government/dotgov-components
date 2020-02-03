@@ -32,10 +32,10 @@
       .seLabelCell {
         @extend .dg_label;
         margin-top: 0;
-        margin-bottom: 5px;
+        margin-bottom: $margin-smallest;
 
         .seRequiredMarker {
-          margin-left: 5px;
+          margin-left: $margin-smallest;
         }
       }
 
@@ -50,7 +50,7 @@
     .seRequiredMarker {
       color: $red;
       font-size: 0;
-      font-weight: 600;
+      font-weight: $font-medium;
       position: relative;
       visibility: hidden;
 
