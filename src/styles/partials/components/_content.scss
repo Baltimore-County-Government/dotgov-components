@@ -1,3 +1,9 @@
 #dg_main-content {
   margin-bottom: $margin-larger;
 }
+
+.dg_content-summary {
+  font-family: $default-body-font;
+  font-size: $deck-font-size;
+  font-style: italic;
+}
