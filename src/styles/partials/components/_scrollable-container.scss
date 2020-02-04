@@ -1,0 +1,9 @@
+$min-scroll-height: 400px;
+
+.dg_scrollable-container {
+  border: $border-width-small solid $black;
+  height: $min-scroll-height;
+  overflow-y: scroll;
+  margin-bottom: $default-margin;
+  padding: $padding-largest;
+}

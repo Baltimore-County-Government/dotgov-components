@@ -3,6 +3,7 @@ export { default as CountySeal } from "./components/foundation/CountySeal";
 
 /** Containers */
 export { default as Section } from "./components/basic/containers/Section";
+export { default as ScrollableContainer } from "./components/basic/containers/ScrollableContainer";
 
 /** Form Components */
 export { default as Checkbox } from "./components/basic/form/Checkbox";
