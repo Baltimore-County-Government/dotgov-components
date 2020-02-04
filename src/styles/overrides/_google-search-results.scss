@@ -15,7 +15,7 @@
 
     text-transform: uppercase;
     font-size: $h2-font-size !important;
-    font-weight: 900;
+    font-weight: $font-boldest;
     text-decoration: none;
     @include default-transition();
     margin-bottom: $default-margin;
@@ -66,7 +66,7 @@
     font-size: $base-font-size;
     /* Search Term*/
     b {
-      font-weight: 600;
+      font-weight: $font-medium;
     }
   }
 }
@@ -120,7 +120,7 @@
   /* current page of results link */
   &.gsc-cursor-current-page {
     color: $black !important;
-    font-weight: 900;
+    font-weight: $font-boldest;
     text-decoration: none;
   }
 }
