@@ -1,5 +1,5 @@
 ```jsx
-<Scrollable>
+<ScrollableContainer>
   <h3>User Terms and Conditions</h3>
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -33,5 +33,5 @@
     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
     non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   </p>
-</Scrollable>
+</ScrollableContainer>
 ```

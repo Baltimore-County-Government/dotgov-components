@@ -1,9 +1,9 @@
 import React from "react";
 import classnames from "classnames";
 
-const Scrollable = props => {
+const ScrollableContainer = props => {
   const { children, className, ...rest } = props;
-  const cssClasses = classnames("dg_scrollable", className);
+  const cssClasses = classnames("dg_scrollable-container", className);
   return (
     <div className={cssClasses} {...rest}>
       {children}
@@ -11,4 +11,4 @@ const Scrollable = props => {
   );
 };
 
-export default Scrollable;
+export default ScrollableContainer;
