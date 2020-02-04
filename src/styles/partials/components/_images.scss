@@ -1,49 +1,49 @@
 /* Handle images inside the main content section */
 #dg_main-content {
-  img {
-    width: 100%;
-    margin-bottom: $padding-largest;
-  }
-}
-
-.dg_image {
-  display: block;
-  position: relative;
-  height: auto !important;
-  width: auto !important;
-  max-width: 50%;
-
-  &.left,
-  &.right {
-    margin-top: $margin-small;
+  img,
+  .dg_image {
+    max-width: 100%;
     margin-bottom: $padding-largest;
   }
 
-  &.left {
-    float: left;
-    margin-right: $padding-largest;
-  }
+  .dg_image {
+    display: block;
+    position: relative;
+    height: auto !important;
+    width: auto !important;
 
-  &.right {
-    float: right;
-    margin-left: $padding-largest;
+    &.left,
+    &.right {
+      max-width: 50% !important;
+      margin-top: $margin-small;
+      margin-bottom: $padding-largest;
+    }
+
+    &.left {
+      float: left;
+      margin-right: $padding-largest;
+    }
+
+    &.right {
+      float: right;
+      margin-left: $padding-largest;
+    }
   }
 }
 
 @media screen and (max-width: $medium-breakpoint) {
-  .dg_image {
+  #dg_main-content .dg_image {
     &.left,
     &.right {
       float: none;
-      max-width: 100%;
+      max-width: 100% !important;
       margin: auto;
     }
   }
 }
 
 @media screen and (max-width: $small-breakpoint) {
-  .dg_image {
-    max-width: 100%;
-    width: 100%;
+  #dg_main-content .dg_image {
+    width: 100% !important;
   }
 }
