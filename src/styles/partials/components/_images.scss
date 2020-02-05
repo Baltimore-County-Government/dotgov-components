@@ -1,4 +1,8 @@
-/* Handle images inside the main content section */
+/*
+    Handle images inside the main content section.
+    !important is used throughout the file to override the site executive feature of setting images width and height.
+    We want images to display to their natural size, and respond as screens become smaller.
+*/
 #dg_main-content {
   img,
   .dg_image {
@@ -9,6 +13,7 @@
   .dg_image {
     display: block;
     position: relative;
+
     height: auto !important;
     width: auto !important;
 
