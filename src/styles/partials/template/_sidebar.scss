@@ -16,7 +16,7 @@
   p {
     font-family: $default-heading-font;
     font-size: $smallest-heading-font-size;
-    margin: $default-margin 0;
+    margin: 0 0 $default-margin 0;
   }
 
   h2 {
@@ -24,6 +24,7 @@
     letter-spacing: 10px;
     font-weight: $font-bold;
     font-size: $small-heading-font-size;
+    padding-top: $padding-large;
   }
 
   p {
