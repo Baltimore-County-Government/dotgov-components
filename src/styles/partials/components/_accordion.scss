@@ -1,6 +1,6 @@
 .dg_accordion {
   text-align: right;
-  margin: $default-margin;
+  margin: $default-margin 0px;
 
   p,
   ul {
@@ -47,7 +47,7 @@
     text-align: left;
     font-size: $smallest-heading-font-size;
     font-weight: $font-medium;
-    padding: $default-padding 0px;
+    padding: $default-padding;
     letter-spacing: 0;
     color: $gray-dark;
     text-transform: none;
