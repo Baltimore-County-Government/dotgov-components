@@ -108,7 +108,8 @@ $checkbox-size: 40px;
 
 $circle-focus: 0 0 0 3px $white, 0 0 0 5px $blue-lightest;
 
-input[type="radio"] {
+input[type="radio"],
+input[type="checkbox"] {
   &:focus + label:before {
     -webkit-box-shadow: $circle-focus;
     box-shadow: $circle-focus;
