@@ -25,6 +25,7 @@
   font-weight: $font-bold;
   padding: $default-padding;
   text-transform: uppercase;
+  text-decoration: none;
 
   i {
     display: inline;
@@ -34,6 +35,7 @@
   &:hover,
   &.hovered {
     border-color: $vibrant-blue;
+    color: $white;
   }
 
   &:active,
