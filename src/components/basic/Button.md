@@ -1,3 +1,12 @@
+### Testing
+
+```jsx
+<Button text="Default" />
+<Button text="Default" as="a" href="#" />
+<Button text="Default" className="dg_button-secondary" />
+<Button text="Default" className="dg_button-secondary" as="a" href="#" />
+```
+
 ### Primary
 
 #### Default
