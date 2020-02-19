@@ -7,7 +7,6 @@
     &:hover,
     &.hovered {
       background: $blue-lightest;
-      color: $white;
     }
 
     &:active,
@@ -28,6 +27,7 @@
     &.hovered {
       background: none;
       color: $blue-lightest;
+      color: $white;
     }
 
     &:active,
