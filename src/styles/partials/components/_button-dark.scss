@@ -7,6 +7,7 @@
     &:hover,
     &.hovered {
       background: $blue-lightest;
+      color: $white;
     }
 
     &:active,
@@ -14,6 +15,11 @@
     &:disabled,
     &.disabled {
       background: none;
+    }
+
+    &.focus,
+    &:focus {
+      color: $white;
     }
 
     &:disabled,
