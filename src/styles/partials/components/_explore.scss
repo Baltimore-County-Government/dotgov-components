@@ -2,7 +2,7 @@
   background: $gray-lightest;
   display: block;
   font-family: $default-heading-font;
-  font-weight: 600;
+  font-weight: $font-bold;
   font-size: $smallest-heading-font-size;
   min-height: 130px; /* manual height specified by the design team */
   margin-bottom: $default-margin;
