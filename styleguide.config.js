@@ -56,6 +56,10 @@ module.exports = {
         {
           name: "Images",
           content: "src/components/site/Images.md"
+        },
+        {
+          name: "Page Content",
+          content: "src/components/site/PageContent.md"
         }
       ]
     }

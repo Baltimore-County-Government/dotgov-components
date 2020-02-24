@@ -17,7 +17,7 @@ const Button = props => {
     <i aria-hidden="true" className={iconCssClasses} />
   ) : null;
   return As === "button" ? (
-    <As type={type} className={buttonCssClasses}>
+    <As type={type} className={buttonCssClasses} {...rest}>
       {buttonIcon}
       {text}
     </As>

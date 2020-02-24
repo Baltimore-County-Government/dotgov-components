@@ -1,5 +1,6 @@
 .dg_collapse {
   border-top: $border-width-large solid $gray-light;
+  margin-bottom: $margin-larger;
 
   &:last-child {
     border-bottom: none;

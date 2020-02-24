@@ -1,39 +1,54 @@
-/* Handle images inside the main content section */
+/*
+    Handle images inside the main content section.
+    !important is used throughout the file to override the site executive feature of setting images width and height.
+    We want images to display to their natural size, and respond as screens become smaller.
+*/
 #dg_main-content {
-  img {
-    width: 100%;
+  img,
+  .dg_image {
+    max-width: 100%;
     margin-bottom: $padding-largest;
   }
-}
 
-.dg_image {
-  display: block;
-  position: relative;
+  .dg_image {
+    display: block;
+    position: relative;
 
-  &.left,
-  &.right {
-    margin-top: $margin-small;
-    margin-bottom: $padding-largest;
-    max-width: 40%;
-  }
+    height: auto !important;
+    width: auto !important;
 
-  &.left {
-    float: left;
-    margin-right: $padding-largest;
-  }
+    &.left,
+    &.right {
+      max-width: 50% !important;
+      margin-top: $margin-small;
+      margin-bottom: $padding-largest;
+    }
 
-  &.right {
-    float: right;
-    margin-left: $padding-largest;
+    &.left {
+      float: left;
+      margin-right: $padding-largest;
+    }
+
+    &.right {
+      float: right;
+      margin-left: $padding-largest;
+    }
   }
 }
 
 @media screen and (max-width: $medium-breakpoint) {
-  .dg_image {
+  #dg_main-content .dg_image {
     &.left,
     &.right {
-      max-width: 100%;
+      float: none;
+      max-width: 100% !important;
       margin: auto;
     }
+  }
+}
+
+@media screen and (max-width: $small-breakpoint) {
+  #dg_main-content .dg_image {
+    width: 100% !important;
   }
 }
