@@ -2,26 +2,22 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const StepListItemStatic = props => {
-  const { id, buttonText, children } = props;
+  const { staticStepTitle, children } = props;
   return (
-    <li className="dg_step-list__list-section" id={`step-${id}`}>
+    <li className="dg_step-list__list-section">
       <span className="dg_button-link dg_step-list__toggle-btn">
-        <span className="dg_step-list__toggle-btn__title">{buttonText}</span>
+        <span className="dg_step-list__toggle-btn__title">
+          {staticStepTitle}
+        </span>
       </span>
-      <div
-        id={`panel-${id}`}
-        className="dg_step-list__details"
-        aria-labelledby={`step-${id}`}
-      >
-        {children}
-      </div>
+      <div className="dg_step-list__details">{children}</div>
     </li>
   );
 };
 
 StepListItemStatic.propTypes = {
-  /** Unique id to identify each step, must be unique on the page */
-  id: PropTypes.string.isRequired
+  /** Sets the headline title for each item of the list */
+  staticStepTitle: PropTypes.string.isRequired
 };
 
 export default StepListItemStatic;

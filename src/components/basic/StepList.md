@@ -20,22 +20,13 @@ import StepListItem from "./StepListItem";
 ```jsx
 import StepListItemStatic from "./StepListItemStatic";
 <StepList type="static">
-  <StepListItemStatic
-    id="step-1"
-    buttonText="Step 1: Know the Registration Fees"
-  >
+  <StepListItemStatic staticStepTitle="Step 1: Know the Registration Fees">
     <p>Some really helpful content for step 1 will go here.</p>
   </StepListItemStatic>
-  <StepListItemStatic
-    id="step-2"
-    buttonText="Step 2: Have Your Property Inspected"
-  >
+  <StepListItemStatic staticStepTitle="Step 2: Have Your Property Inspected">
     <p>Some really helpful content for step 2 will go here.</p>
   </StepListItemStatic>
-  <StepListItemStatic
-    id="step-3"
-    buttonText="Step 3: Gather Required Documentation"
-  >
+  <StepListItemStatic staticStepTitle="Step 3: Gather Required Documentation">
     <p>Some really helpful content for step 3 will go here.</p>
   </StepListItemStatic>
 </StepList>;
