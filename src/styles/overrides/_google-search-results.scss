@@ -136,3 +136,16 @@
   background: none !important;
   border: none !important;
 }
+
+@media screen and (max-width: $medium-breakpoint) {
+  .gsc-results {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    .gsc-cursor-box .gsc-cursor-page {
+      margin: 0px;
+      padding: $base-spacing-unit;
+    }
+  }
+}
