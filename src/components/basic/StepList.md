@@ -177,36 +177,38 @@ import StepListItemStatic from "./StepListItemStatic";
 ### Static Step List
 
 ```html
-<ol class="dg_step-list__list">
-  <li class="dg_step-list__list-section">
-    <span class="dg_button-link dg_step-list__toggle-btn"
-      ><span class="dg_step-list__toggle-btn__title"
-        >Step 1: Know the Registration Fees</span
-      ></span
-    >
-    <div class="dg_step-list__details">
-      <p>Some really helpful content for step 1 will go here.</p>
-    </div>
-  </li>
-  <li class="dg_step-list__list-section">
-    <span class="dg_button-link dg_step-list__toggle-btn"
-      ><span class="dg_step-list__toggle-btn__title"
-        >Step 2: Have Your Property Inspected</span
-      ></span
-    >
-    <div class="dg_step-list__details">
-      <p>Some really helpful content for step 2 will go here.</p>
-    </div>
-  </li>
-  <li class="dg_step-list__list-section">
-    <span class="dg_button-link dg_step-list__toggle-btn"
-      ><span class="dg_step-list__toggle-btn__title"
-        >Step 3: Gather Required Documentation</span
-      ></span
-    >
-    <div class="dg_step-list__details">
-      <p>Some really helpful content for step 3 will go here.</p>
-    </div>
-  </li>
-</ol>
+<div class="dg_step-list static">
+  <ol class="dg_step-list__list">
+    <li class="dg_step-list__list-section">
+      <span class="dg_button-link dg_step-list__toggle-btn"
+        ><span class="dg_step-list__toggle-btn__title"
+          >Step 1: Know the Registration Fees</span
+        ></span
+      >
+      <div class="dg_step-list__details">
+        <p>Some really helpful content for step 1 will go here.</p>
+      </div>
+    </li>
+    <li class="dg_step-list__list-section">
+      <span class="dg_button-link dg_step-list__toggle-btn"
+        ><span class="dg_step-list__toggle-btn__title"
+          >Step 2: Have Your Property Inspected</span
+        ></span
+      >
+      <div class="dg_step-list__details">
+        <p>Some really helpful content for step 2 will go here.</p>
+      </div>
+    </li>
+    <li class="dg_step-list__list-section">
+      <span class="dg_button-link dg_step-list__toggle-btn"
+        ><span class="dg_step-list__toggle-btn__title"
+          >Step 3: Gather Required Documentation</span
+        ></span
+      >
+      <div class="dg_step-list__details">
+        <p>Some really helpful content for step 3 will go here.</p>
+      </div>
+    </li>
+  </ol>
+</div>
 ```
