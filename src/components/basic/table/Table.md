@@ -3,11 +3,15 @@ Responsive utility with table elements will be achieved with the class "table-re
 ```html
 <!-- This is an example of how to use table-responsive-->
 <div class="table-responsive">
-  <table class="table"></table>
+  <table class="table">
+    "..."
+  </table>
 </div>
 
 <!-- This is an example of thow to use table-fixed -->
-<table class="table table-fixed"></table>
+<table class="table table-fixed">
+  "..."
+</table>
 ```
 
 ## Examples
