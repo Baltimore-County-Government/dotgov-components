@@ -1,5 +1,4 @@
-Responsive utility with table elements will be achieved with the class "table-responsive". For use in cards and several other instances, the class table-fixed may also be used.
-table-fixed will help the table scale more evenly in some scenarios. Each of these classes should be assigned to a div element when wrapping the table.
+Responsive utility with table elements will be achieved with the class "table-responsive". The class "table-fixed" is another utility that may be used with tables within card elements. "table-fixed" ensures the table will scaled evenly within the element. Each utility should be applied as a class, to a div element that wraps the table.
 
 ## Examples
 
