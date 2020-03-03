@@ -1,3 +1,6 @@
+Responsive utility with table elements will be achieved with the class "table-responsive". For use in cards and several other instances, the class table-fixed may also be used.
+table-fixed will help the table scale more evenly in some scenarios. Each of these classes should be assigned to a div element when wrapping the table.
+
 ## Examples
 
 ### Basic
@@ -40,32 +43,34 @@ import TableRow from "./TableRow";
 Html Snippet:
 
 ```html
-<table class="table">
-  <thead>
-    <tr>
-      <th>Breakfast</th>
-      <th>Lunch</th>
-      <th>Dinner</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Breakfast Pizza™</td>
-      <td>Lemon Salad</td>
-      <td>Steamed Hams</td>
-    </tr>
-    <tr>
-      <td>Gummy Worms</td>
-      <td>Lunch Pizza™</td>
-      <td>An Entire Can of Beans</td>
-    </tr>
-    <tr>
-      <td>Leftover Toast</td>
-      <td>Grilled Cheese</td>
-      <td>Dinner Pizza™</td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-responsive">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Breakfast</th>
+        <th>Lunch</th>
+        <th>Dinner</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Breakfast Pizza™</td>
+        <td>Lemon Salad</td>
+        <td>Steamed Hams</td>
+      </tr>
+      <tr>
+        <td>Gummy Worms</td>
+        <td>Lunch Pizza™</td>
+        <td>An Entire Can of Beans</td>
+      </tr>
+      <tr>
+        <td>Leftover Toast</td>
+        <td>Grilled Cheese</td>
+        <td>Dinner Pizza™</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 ```
 
 ### Table Dark
@@ -114,32 +119,34 @@ Html Snippet:
 
 ```html
 <div class="dg_section dark">
-  <table class="table">
-    <thead>
-      <tr>
-        <th>Breakfast</th>
-        <th>Lunch</th>
-        <th>Dinner</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Breakfast Pizza™</td>
-        <td>Lemon Salad</td>
-        <td>Steamed Hams</td>
-      </tr>
-      <tr>
-        <td>Gummy Worms</td>
-        <td>Lunch Pizza™</td>
-        <td>An Entire Can of Beans</td>
-      </tr>
-      <tr>
-        <td>Leftover Toast</td>
-        <td>Grilled Cheese</td>
-        <td>Dinner Pizza™</td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="table-responsive">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Breakfast</th>
+          <th>Lunch</th>
+          <th>Dinner</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Breakfast Pizza™</td>
+          <td>Lemon Salad</td>
+          <td>Steamed Hams</td>
+        </tr>
+        <tr>
+          <td>Gummy Worms</td>
+          <td>Lunch Pizza™</td>
+          <td>An Entire Can of Beans</td>
+        </tr>
+        <tr>
+          <td>Leftover Toast</td>
+          <td>Grilled Cheese</td>
+          <td>Dinner Pizza™</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
 ```
 
@@ -173,22 +180,24 @@ import TableRow from "./TableRow";
 Html Snippet:
 
 ```html
-<table class="table">
-  <tbody>
-    <tr>
-      <th>Breakfast</th>
-      <td>Breakfast Pizza™</td>
-    </tr>
-    <tr>
-      <th>Lunch</th>
-      <td>Gummy Worms</td>
-    </tr>
-    <tr>
-      <th>Dinner</th>
-      <td>Dinner Pizza™</td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-responsive">
+  <table class="table">
+    <tbody>
+      <tr>
+        <th>Breakfast</th>
+        <td>Breakfast Pizza™</td>
+      </tr>
+      <tr>
+        <th>Lunch</th>
+        <td>Gummy Worms</td>
+      </tr>
+      <tr>
+        <th>Dinner</th>
+        <td>Dinner Pizza™</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 ```
 
 ### Vertical Table Headings in a Dark Section
@@ -226,20 +235,22 @@ import Section from "../containers/Section";
 Html Snippet:
 
 ```html
-<table class="table">
-  <tbody>
-    <tr>
-      <th>Breakfast</th>
-      <td>Breakfast Pizza™</td>
-    </tr>
-    <tr>
-      <th>Lunch</th>
-      <td>Gummy Worms</td>
-    </tr>
-    <tr>
-      <th>Dinner</th>
-      <td>Dinner Pizza™</td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-responsive">
+  <table class="table">
+    <tbody>
+      <tr>
+        <th>Breakfast</th>
+        <td>Breakfast Pizza™</td>
+      </tr>
+      <tr>
+        <th>Lunch</th>
+        <td>Gummy Worms</td>
+      </tr>
+      <tr>
+        <th>Dinner</th>
+        <td>Dinner Pizza™</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 ```
