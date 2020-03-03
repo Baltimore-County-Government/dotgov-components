@@ -1,3 +1,19 @@
+Responsive utility with table elements will be achieved with the class "table-responsive". "table-responsive" will be applied to a div element, wrapping the table. The class "table-fixed" is another utility that may be used with tables within card elements. "table-fixed" will be applied directly to the table element.
+
+```html
+<!-- This is an example of how to use table-responsive-->
+<div class="table-responsive">
+  <table class="table">
+    ...
+  </table>
+</div>
+
+<!-- This is an example of thow to use table-fixed -->
+<table class="table table-fixed">
+  ...
+</table>
+```
+
 ## Examples
 
 ### Basic
@@ -40,32 +56,34 @@ import TableRow from "./TableRow";
 Html Snippet:
 
 ```html
-<table class="table">
-  <thead>
-    <tr>
-      <th>Breakfast</th>
-      <th>Lunch</th>
-      <th>Dinner</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Breakfast Pizza™</td>
-      <td>Lemon Salad</td>
-      <td>Steamed Hams</td>
-    </tr>
-    <tr>
-      <td>Gummy Worms</td>
-      <td>Lunch Pizza™</td>
-      <td>An Entire Can of Beans</td>
-    </tr>
-    <tr>
-      <td>Leftover Toast</td>
-      <td>Grilled Cheese</td>
-      <td>Dinner Pizza™</td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-responsive">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Breakfast</th>
+        <th>Lunch</th>
+        <th>Dinner</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Breakfast Pizza™</td>
+        <td>Lemon Salad</td>
+        <td>Steamed Hams</td>
+      </tr>
+      <tr>
+        <td>Gummy Worms</td>
+        <td>Lunch Pizza™</td>
+        <td>An Entire Can of Beans</td>
+      </tr>
+      <tr>
+        <td>Leftover Toast</td>
+        <td>Grilled Cheese</td>
+        <td>Dinner Pizza™</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 ```
 
 ### Table Dark
@@ -114,32 +132,34 @@ Html Snippet:
 
 ```html
 <div class="dg_section dark">
-  <table class="table">
-    <thead>
-      <tr>
-        <th>Breakfast</th>
-        <th>Lunch</th>
-        <th>Dinner</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Breakfast Pizza™</td>
-        <td>Lemon Salad</td>
-        <td>Steamed Hams</td>
-      </tr>
-      <tr>
-        <td>Gummy Worms</td>
-        <td>Lunch Pizza™</td>
-        <td>An Entire Can of Beans</td>
-      </tr>
-      <tr>
-        <td>Leftover Toast</td>
-        <td>Grilled Cheese</td>
-        <td>Dinner Pizza™</td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="table-responsive">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Breakfast</th>
+          <th>Lunch</th>
+          <th>Dinner</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Breakfast Pizza™</td>
+          <td>Lemon Salad</td>
+          <td>Steamed Hams</td>
+        </tr>
+        <tr>
+          <td>Gummy Worms</td>
+          <td>Lunch Pizza™</td>
+          <td>An Entire Can of Beans</td>
+        </tr>
+        <tr>
+          <td>Leftover Toast</td>
+          <td>Grilled Cheese</td>
+          <td>Dinner Pizza™</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
 ```
 
@@ -173,22 +193,24 @@ import TableRow from "./TableRow";
 Html Snippet:
 
 ```html
-<table class="table">
-  <tbody>
-    <tr>
-      <th>Breakfast</th>
-      <td>Breakfast Pizza™</td>
-    </tr>
-    <tr>
-      <th>Lunch</th>
-      <td>Gummy Worms</td>
-    </tr>
-    <tr>
-      <th>Dinner</th>
-      <td>Dinner Pizza™</td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-responsive">
+  <table class="table">
+    <tbody>
+      <tr>
+        <th>Breakfast</th>
+        <td>Breakfast Pizza™</td>
+      </tr>
+      <tr>
+        <th>Lunch</th>
+        <td>Gummy Worms</td>
+      </tr>
+      <tr>
+        <th>Dinner</th>
+        <td>Dinner Pizza™</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 ```
 
 ### Vertical Table Headings in a Dark Section
@@ -226,20 +248,22 @@ import Section from "../containers/Section";
 Html Snippet:
 
 ```html
-<table class="table">
-  <tbody>
-    <tr>
-      <th>Breakfast</th>
-      <td>Breakfast Pizza™</td>
-    </tr>
-    <tr>
-      <th>Lunch</th>
-      <td>Gummy Worms</td>
-    </tr>
-    <tr>
-      <th>Dinner</th>
-      <td>Dinner Pizza™</td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-responsive">
+  <table class="table">
+    <tbody>
+      <tr>
+        <th>Breakfast</th>
+        <td>Breakfast Pizza™</td>
+      </tr>
+      <tr>
+        <th>Lunch</th>
+        <td>Gummy Worms</td>
+      </tr>
+      <tr>
+        <th>Dinner</th>
+        <td>Dinner Pizza™</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 ```
