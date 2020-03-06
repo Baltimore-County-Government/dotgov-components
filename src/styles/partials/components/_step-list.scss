@@ -27,7 +27,11 @@
       border-top: $border-width-small solid $gray-light;
       padding-top: $default-padding;
     }
-
+    &:hover {
+      &:before {
+        cursor: pointer;
+      }
+    }
     /** The circle that comes before the step */
     &:before {
       background: $gold;
