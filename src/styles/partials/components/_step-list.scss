@@ -16,6 +16,20 @@
   padding-left: 60px;
   margin-top: 0;
 
+  li {
+    &:hover:before {
+      cursor: pointer;
+      background: $vibrant-blue;
+      border-color: $vibrant-blue;
+      color: $white;
+    }
+    &:hover {
+      & > .dg_button-link.dg_step-list__toggle-btn {
+        color: $vibrant-blue;
+      }
+    }
+  }
+
   & > li {
     border-bottom: $border-width-small solid $gray-light;
     margin-bottom: $default-margin;
@@ -27,14 +41,7 @@
       border-top: $border-width-small solid $gray-light;
       padding-top: $default-padding;
     }
-    &:hover {
-      &:before {
-        cursor: pointer;
-        background: $vibrant-blue;
-        border-color: $vibrant-blue;
-        color: $white;
-      }
-    }
+
     /** The circle that comes before the step */
     &:before {
       background: $gold;
@@ -75,12 +82,6 @@
 
     &:first-child::before {
       top: 15px; /* manual configuration that was discovered through testing in the browser */
-    }
-
-    &.is-hovered:before {
-      background: $vibrant-blue;
-      border-color: $vibrant-blue;
-      color: $white;
     }
   }
 }
