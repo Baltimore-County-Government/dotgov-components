@@ -22,8 +22,7 @@ const publicWorksSummaryItems = [
     id: 3,
     icon: "far fa-envelope",
     heading: "Email:",
-    content:
-      "<p><a href=`#`>publicworks@​baltimorecountymd.govpublicworks@​baltimorecountymd.govpublicworks@​baltimorecountymd.gov</a></p>"
+    content: "<p><a href=`#`>publicworks@​baltimorecountymd.gov</a></p>"
   },
   {
     id: 4,
