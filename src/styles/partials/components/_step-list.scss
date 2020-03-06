@@ -30,6 +30,9 @@
     &:hover {
       &:before {
         cursor: pointer;
+        background: $vibrant-blue;
+        border-color: $vibrant-blue;
+        color: $white;
       }
     }
     /** The circle that comes before the step */
