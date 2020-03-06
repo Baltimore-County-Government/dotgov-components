@@ -5,6 +5,8 @@
 .dg_sidebar__section {
   border-top: $border-width-large $gray-light solid;
   margin-bottom: $margin-larger;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
   h1,
   h2,
   h3,
