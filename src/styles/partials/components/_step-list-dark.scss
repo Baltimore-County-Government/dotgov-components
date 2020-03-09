@@ -3,6 +3,20 @@
     color: $pale-blue;
   }
 
+  .dg_step-list__list {
+    li {
+      &:hover:before {
+        background: $blue-lightest;
+        border-color: $blue-lightest;
+        color: $white;
+      }
+      &:hover {
+        & > .dg_button-link.dg_step-list__toggle-btn {
+          color: $blue-lightest;
+        }
+      }
+    }
+  }
   .dg_step-list__show-all-btn,
   .dg_step-list__toggle-btn,
   .dg_step-list__toggle-btn__title,
@@ -22,6 +36,7 @@
   /* Static Step List */
   .dg_step-list.static {
     .dg_step-list__toggle-btn {
+      color: $white;
       cursor: default;
     }
 
