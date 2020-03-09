@@ -119,6 +119,12 @@
     }
   }
 
+  li {
+    &:hover:before {
+      cursor: default;
+    }
+  }
+
   .dg_step-list__toggle-btn__title {
     margin-bottom: 0;
     color: $black;
