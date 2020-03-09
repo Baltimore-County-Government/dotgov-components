@@ -11,11 +11,11 @@
         color: $white;
       }
       &:hover {
-        &
-          > .dg_button-link.dg_step-list__toggle-btn
-          .dg_step-list__toggle-btn__title,
-        .dg_step-list__toggle-btn__btn-text {
+        & > .dg_button-link.dg_step-list__toggle-btn,
+        .dg_button-link.dg_step-list__toggle-btn
+          .dg_step-list__toggle-btn__title {
           color: $blue-lightest;
+          @include default-transition;
         }
       }
     }
