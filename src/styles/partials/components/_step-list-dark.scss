@@ -38,6 +38,25 @@
 
   /* Static Step List */
   .dg_step-list.static {
+    /* Resets Hover States on Static */
+    .dg_step-list__list {
+      li {
+        &:hover:before {
+          background: $pale-blue;
+          border-color: $white;
+          color: $white;
+        }
+        &:hover {
+          &
+            > .dg_button-link.dg_step-list__toggle-btn
+            .dg_step-list__toggle-btn__title,
+          .dg_step-list__toggle-btn__btn-text {
+            color: $white;
+          }
+        }
+      }
+    }
+
     .dg_step-list__toggle-btn {
       color: $white;
       cursor: default;
