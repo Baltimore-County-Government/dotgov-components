@@ -10,8 +10,8 @@
         border-color: $blue-lightest;
         color: $white;
       }
-      &:hover {
-        > .dg_button-link.dg_step-list__toggle-btn,
+      &:hover > {
+        .dg_button-link.dg_step-list__toggle-btn,
         .dg_button-link.dg_step-list__toggle-btn
           .dg_step-list__toggle-btn__title {
           color: $blue-lightest;
@@ -53,9 +53,8 @@
           border-color: $white;
           color: $white;
         }
-        &:hover {
-          &
-            > .dg_button-link.dg_step-list__toggle-btn
+        &:hover > {
+          .dg_button-link.dg_step-list__toggle-btn
             .dg_step-list__toggle-btn__title,
           .dg_step-list__toggle-btn__btn-text {
             color: $white;
