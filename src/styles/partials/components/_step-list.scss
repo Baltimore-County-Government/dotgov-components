@@ -24,13 +24,13 @@
       color: $white;
     }
     &:hover {
-      & > .dg_button-link.dg_step-list__toggle-btn {
+      > .dg_button-link.dg_step-list__toggle-btn {
         color: $vibrant-blue;
       }
     }
   }
 
-  & > li {
+  > li {
     border-bottom: $border-width-small solid $gray-light;
     margin-bottom: $default-margin;
     padding-bottom: $default-padding;
