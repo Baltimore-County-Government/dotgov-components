@@ -3,11 +3,35 @@
     color: $pale-blue;
   }
 
+  .dg_step-list__list {
+    li {
+      &:hover:before {
+        background: $blue-lightest;
+        border-color: $blue-lightest;
+        color: $white;
+      }
+      &:hover > {
+        .dg_button-link.dg_step-list__toggle-btn,
+        .dg_button-link.dg_step-list__toggle-btn
+          .dg_step-list__toggle-btn__title {
+          color: $blue-lightest;
+          @include default-transition;
+        }
+      }
+    }
+  }
   .dg_step-list__show-all-btn,
   .dg_step-list__toggle-btn,
   .dg_step-list__toggle-btn__title,
   .dg_step-list__list > li.is-hovered:before {
     color: $white;
+    @include default-transition;
+  }
+
+  .dg_step-list__show-all-btn {
+    &:hover {
+      color: $blue-lightest;
+    }
   }
 
   .dg_step-list__list > li.is-hovered:before {
@@ -21,7 +45,26 @@
 
   /* Static Step List */
   .dg_step-list.static {
+    /* Resets Hover States on Static */
+    .dg_step-list__list {
+      li {
+        &:hover:before {
+          background: $pale-blue;
+          border-color: $white;
+          color: $white;
+        }
+        &:hover > {
+          .dg_button-link.dg_step-list__toggle-btn
+            .dg_step-list__toggle-btn__title,
+          .dg_step-list__toggle-btn__btn-text {
+            color: $white;
+          }
+        }
+      }
+    }
+
     .dg_step-list__toggle-btn {
+      color: $white;
       cursor: default;
     }
 
