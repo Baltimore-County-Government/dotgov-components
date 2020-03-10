@@ -28,6 +28,12 @@
     @include default-transition;
   }
 
+  .dg_step-list__show-all-btn {
+    &:hover {
+      color: $blue-lightest;
+    }
+  }
+
   .dg_step-list__list > li.is-hovered:before {
     background: $blue-lightest;
     border-color: $blue-lightest;
