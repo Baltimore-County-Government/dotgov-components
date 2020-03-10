@@ -40,8 +40,9 @@
   }
 
   .dg_date-news-card__headline {
-    @extend h3;
-    font-size: $small-heading-font-size;
+    font-family: $default-heading-font;
+    font-size: $h3-font-size;
+    font-weight: $font-bold;
     margin-bottom: 0;
     text-transform: initial;
   }
