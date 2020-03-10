@@ -11,7 +11,7 @@
         color: $white;
       }
       &:hover {
-        & > .dg_button-link.dg_step-list__toggle-btn,
+        > .dg_button-link.dg_step-list__toggle-btn,
         .dg_button-link.dg_step-list__toggle-btn
           .dg_step-list__toggle-btn__title {
           color: $blue-lightest;
