@@ -18,6 +18,11 @@
       margin-bottom: $default-margin;
     }
   }
+  .dg_card__footer {
+    .dg_button {
+      display: inline-block;
+    }
+  }
 }
 .dg_icon-container {
   color: $gold;
