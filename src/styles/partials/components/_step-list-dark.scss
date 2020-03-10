@@ -25,6 +25,7 @@
   .dg_step-list__toggle-btn__title,
   .dg_step-list__list > li.is-hovered:before {
     color: $white;
+    @include default-transition;
   }
 
   .dg_step-list__list > li.is-hovered:before {
