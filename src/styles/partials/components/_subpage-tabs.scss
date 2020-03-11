@@ -64,8 +64,8 @@
 
 @media screen and (max-width: $large-breakpoint) {
   .dg_subpage-tabs {
-    border-top: $border-width-small $gray solid;
-    border-bottom: $border-width-small $gray solid;
+    border-top: $border-width-small $white solid;
+    border-bottom: $border-width-small $white solid;
     font-weight: normal;
     margin: $default-margin ($grid-gutter-width / 2);
     padding-bottom: $padding-small;
@@ -140,6 +140,7 @@
 
         a {
           padding: $padding-small 0px;
+          font-weight: $font-normal;
           text-align: left;
 
           &:hover {
