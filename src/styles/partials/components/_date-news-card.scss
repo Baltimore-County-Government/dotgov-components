@@ -1,6 +1,8 @@
 .dg_date-news-card {
   border: $border-width-small solid $gray-light;
   display: block;
+  height: 100%;
+  min-height: 300px;
   padding: $padding-larger;
   text-decoration: none;
   width: 100%;
