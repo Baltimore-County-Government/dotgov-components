@@ -30,6 +30,7 @@
   .dg_date-news-card__date {
     margin-top: -4px; /* specific to this component only */
     padding: 0 $padding-large 0 0;
+    text-align: center;
   }
 
   .dg_date-news-card__month,
@@ -46,7 +47,7 @@
   }
 
   .dg_date-news-card__day {
-    font-size: 45px;
+    font-size: 48px;
     line-height: 35px;
   }
 
