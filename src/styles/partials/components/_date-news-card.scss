@@ -14,6 +14,17 @@
     border-bottom: $border-width-small solid $gray-light;
     display: flex;
     padding-bottom: $padding-large;
+
+    p {
+      &.dg_date-news-card__headline {
+        font-family: $default-heading-font;
+        font-size: $h3-font-size;
+        font-weight: $font-bold;
+        margin-bottom: 0;
+        text-transform: initial;
+        -webkit-text-size-adjust: none;
+      }
+    }
   }
 
   .dg_date-news-card__date {
@@ -38,13 +49,6 @@
   .dg_date-news-card__day {
     font-size: 48px;
     line-height: 35px;
-  }
-
-  .dg_date-news-card__headline {
-    @extend h3;
-    font-size: $small-heading-font-size;
-    margin-bottom: 0;
-    text-transform: initial;
   }
 
   .dg_date-news-card__snippet {
