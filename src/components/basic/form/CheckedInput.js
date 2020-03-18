@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import PropTypes from "prop-types";
 import classnames from "classnames";
@@ -18,11 +18,16 @@ const CheckedInput = props => {
   } = props;
   const componentClassName = `${cssNamespace}_${type.toLowerCase()}`;
   const cssClassNames = classnames(componentClassName, className);
-  const [isChecked, setIsChecked] = useState(defaultCheckedState);
+  const [state, setState] = useState({
+    checked: !!defaultCheckedState,
+    name,
+    value
+  });
 
   const handleChange = changeEvent => {
-    setIsChecked(changeEvent.target.checked);
-    onChange(changeEvent);
+    const { checked, name, value } = changeEvent.target;
+    setState({ checked, name, value });
+    onChange(state);
   };
 
   return (
@@ -33,7 +38,7 @@ const CheckedInput = props => {
         name={name}
         type={type}
         value={value}
-        checked={isChecked}
+        checked={state.checked}
         onChange={handleChange}
         {...otherProps}
       />
