@@ -27,7 +27,7 @@ const CheckedInput = props => {
   const handleChange = changeEvent => {
     const { checked, name, value } = changeEvent.target;
     setState({ checked, name, value });
-    onChange(state);
+    onChange({ checked, name, value });
   };
 
   return (
