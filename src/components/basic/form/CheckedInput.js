@@ -13,14 +13,12 @@ const CheckedInput = props => {
     value,
     label,
     onChange = () => {},
-    checked: defaultCheckedState = "",
+    checked: defaultCheckedState,
     ...otherProps
   } = props;
   const componentClassName = `${cssNamespace}_${type.toLowerCase()}`;
   const cssClassNames = classnames(componentClassName, className);
-  const [isChecked, setIsChecked] = useState(
-    defaultCheckedState || defaultCheckedState.toLowerCase() === "true"
-  );
+  const [isChecked, setIsChecked] = useState(defaultCheckedState);
 
   const handleChange = changeEvent => {
     setIsChecked(changeEvent.target.checked);
@@ -60,7 +58,9 @@ CheckedInput.propTypes = {
   /** String value to be associated with the given checkbox */
   value: PropTypes.string,
   /** Handle change event accordingly */
-  onChange: PropTypes.func
+  onChange: PropTypes.func,
+  /** Sets input to checked if set to true */
+  checked: PropTypes.bool
 };
 
 export default CheckedInput;
