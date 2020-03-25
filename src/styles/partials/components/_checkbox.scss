@@ -52,9 +52,11 @@ $checkbox-size: 40px;
   .dg_checkbox-label {
     display: block;
     font-family: $default-heading-font;
-    font-weight: $font-light;
+    font-size: $h3-font-size;
+    font-weight: $font-medium;
     display: block;
     padding: $padding-small $default-padding $padding-smallest;
+    color: $black;
   }
 
   .dg_checkbox-label,
