@@ -5,6 +5,30 @@
 @import "node_modules/bootstrap/scss/mixins/text-hide";
 @import "node_modules/bootstrap/scss/utilities/text";
 
+.mb--smallest {
+  margin-bottom: $margin-smallest;
+  }
+
+.mb--small {
+margin-bottom: $margin-small;
+}
+
+.mb--default {
+  margin-bottom: $default-margin;
+}
+
+.mb--large {
+  margin-bottom: $margin-large;
+}
+
+.mb--larger {
+  margin-bottom: $margin-larger;
+}
+
+.mb--largest {
+  margin-bottom: $margin-largest;
+}
+
 .hidden {
   display: none;
 }
