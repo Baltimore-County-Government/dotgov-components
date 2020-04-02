@@ -5,6 +5,7 @@
 @import "node_modules/bootstrap/scss/mixins/text-hide";
 @import "node_modules/bootstrap/scss/utilities/text";
 
+/*Margin Bottom*/
 .mb--smallest {
   margin-bottom: $margin-smallest;
   }
@@ -27,6 +28,84 @@ margin-bottom: $margin-small;
 
 .mb--largest {
   margin-bottom: $margin-largest;
+}
+
+/*Margin Left*/
+
+.ml--smallest {
+  margin-left: $margin-smallest;
+  }
+
+.ml--small {
+  margin-left: $margin-small;
+}
+
+.ml--default {
+  margin-left: $default-margin;
+}
+
+.ml--large {
+  margin-left: $margin-large;
+}
+
+.ml--larger {
+  margin-left: $margin-larger;
+}
+
+.ml--largest {
+  margin-left: $margin-largest;
+}
+
+/*Margin Right*/
+
+.mr--smallest {
+  margin-right: $margin-smallest;
+  }
+
+.mr--small {
+  margin-right: $margin-small;
+}
+
+.mr--default {
+  margin-right: $default-margin;
+}
+
+.mr--large {
+  margin-right: $margin-large;
+}
+
+.mr--larger {
+  margin-right: $margin-larger;
+}
+
+.mr--largest {
+  margin-right: $margin-largest;
+}
+
+/*Margin Top*/
+
+.mt--smallest {
+  margin-top: $margin-smallest;
+  }
+
+.mt--small {
+  margin-top: $margin-small;
+}
+
+.mt--default {
+  margin-top: $default-margin;
+}
+
+.mt--large {
+  margin-top: $margin-large;
+}
+
+.mt--larger {
+  margin-top: $margin-larger;
+}
+
+.mt--largest {
+  margin-top: $margin-largest;
 }
 
 .hidden {
