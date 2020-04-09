@@ -10,41 +10,41 @@
       legend {
         @extend .dg_legend;
       }
+    }
 
-      .seRadioLabel {
-        @extend .dg_label;
-        @extend .dg_radio-label;
+    .seRadioLabel {
+      @extend .dg_label;
+      @extend .dg_radio-label;
+    }
+
+    .seCheckboxLabel {
+      @extend .dg_label;
+      @extend .dg_checkbox-label;
+    }
+
+    .seRadio {
+      @extend .dg_radio-input;
+    }
+
+    .seCheckbox {
+      @extend .dg_checkbox-input;
+    }
+
+    .seLabelCell {
+      @extend .dg_label;
+      margin-top: 0;
+      margin-bottom: $margin-smallest;
+
+      .seRequiredMarker {
+        margin-left: $margin-smallest;
       }
+    }
 
-      .seCheckboxLabel {
-        @extend .dg_label;
-        @extend .dg_checkbox-label;
-      }
-
-      .seRadio {
-        @extend .dg_radio-input;
-      }
-
-      .seCheckbox {
-        @extend .dg_checkbox-input;
-      }
-
-      .seLabelCell {
-        @extend .dg_label;
-        margin-top: 0;
-        margin-bottom: $margin-smallest;
-
-        .seRequiredMarker {
-          margin-left: $margin-smallest;
-        }
-      }
-
-      .SEAFGroupHorizontal,
-      .SEAFLabelHorizontal,
-      .SEAFGroupVertical,
-      .SEAFLabelVertical {
-        margin-bottom: $default-margin;
-      }
+    .SEAFGroupHorizontal,
+    .SEAFLabelHorizontal,
+    .SEAFGroupVertical,
+    .SEAFLabelVertical {
+      margin-bottom: $default-margin;
     }
 
     .seRequiredMarker {
