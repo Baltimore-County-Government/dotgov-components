@@ -10,6 +10,14 @@
   text-align: center;
   width: 100%;
 
+  h1,
+  h2,
+  h3 {
+    > a {
+      text-decoration: none;
+    }
+  }
+
   .dg_card__content {
     flex: 0 0 auto;
     p,
