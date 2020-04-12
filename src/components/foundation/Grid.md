@@ -40,7 +40,14 @@ Html Snippet:
 </div>
 ```
 
-## This is a really cool test
+## CSS Grid (Experimental)
+
+We still are required to support IE11 so we can't skip to using CSS Grid fully.
+This experimental grid only supports 3 columns layouts and uses
+[modernizr](https://modernizr.com/) to let us know if the browser we are in
+supports css grid. It is meant for the use in inside templates. If you find
+another use please submit a
+[pull request](https://github.com/baltimorecounty/dotgov-components/compare).
 
 ```jsx
 import IconButton from "../basic/IconButton";
