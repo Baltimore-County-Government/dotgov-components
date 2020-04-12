@@ -6,8 +6,47 @@ $small-breakpoint: 576px;
 $header-breakpoint: 900px;
 
 $container-max-widths: (
-  xl: $max-container-width
+  xl: $max-container-width,
 );
 
 @import "node_modules/bootstrap/scss/bootstrap-grid";
 @import "node_modules/bootstrap/scss/utilities/sizing";
+
+.dg_grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  & > * {
+    margin: 7.5px;
+    width: 30%;
+  }
+}
+
+.cssgrid {
+  .dg_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 15px;
+
+    & > * {
+      margin: 0;
+      width: auto;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .dg_grid {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .dg_grid {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
