@@ -4,6 +4,7 @@
   justify-content: flex-start;
 
   & > * {
+    padding: $default-padding !important;
     margin: 7.5px;
     width: 30%;
   }
@@ -12,27 +13,41 @@
 .cssgrid {
   .dg_grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-gap: 15px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    grid-gap: $default-margin;
 
     & > * {
       margin: 0;
       width: auto;
     }
   }
+}
 
-  @media screen and (max-width: $medium-breakpoint) {
-    .dg_grid {
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-columns: repeat(2, 1fr);
+@media screen and (max-width: $medium-breakpoint) {
+  .dg_grid {
+    & > * {
+      margin: $default-margin / 2;
+      width: 45%;
     }
   }
 
-  @media screen and (max-width: $small-breakpoint) {
-    .dg_grid {
-      grid-template-columns: repeat(1, 1fr);
-      grid-template-columns: repeat(1, 1fr);
+  .cssgrid .dg_grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: $small-breakpoint) {
+  .dg_grid {
+    & > * {
+      margin: auto auto $default-margin;
+      width: 100%;
     }
+  }
+
+  .cssgrid .dg_grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 }
