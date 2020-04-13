@@ -14,6 +14,7 @@ $tiny-icon-link-size: 25px;
   cursor: pointer;
   border: $border-width-small solid $gray;
   display: inline-block;
+  font-size: $small-heading-font-size;
   font-family: $default-heading-font;
   font-weight: $font-bold;
   padding: $default-padding $padding-jumbo;
