@@ -43,8 +43,13 @@
     .SEAFGroupHorizontal,
     .SEAFLabelHorizontal,
     .SEAFGroupVertical,
-    .SEAFLabelVertical {
+    .SEAFLabelVertical,
+    .SEAFWrapper {
       margin-bottom: $default-margin;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
 
     .seRequiredMarker {
