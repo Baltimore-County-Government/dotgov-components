@@ -29,6 +29,23 @@
     & > * {
       margin: $default-margin / 2;
       width: 45%;
+
+      &.dg_icon-link {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: left;
+        padding: $padding-small;
+      }
+
+      &.dg_icon-link.dg_icon-link--large i {
+        padding: $padding-small $default-padding $padding-small $padding-small;
+        line-height: 1;
+        height: auto;
+        min-width: 75px;
+        text-align: center;
+        width: auto;
+      }
     }
   }
 
