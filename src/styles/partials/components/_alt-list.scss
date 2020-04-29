@@ -68,6 +68,17 @@ $icon-arrow-width: 32px;
   }
 }
 
+.dg_sidebar__section {
+  .dg_alt-list {
+    li {
+      margin: $base-spacing-unit 0 0 0;
+    }
+    a {
+      margin: 0 0 0 0;
+    }
+  }
+}
+
 @media screen and (max-width: $medium-breakpoint) {
   .dg_alt-list.inline {
     li {
