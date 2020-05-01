@@ -12,7 +12,6 @@ $icon-arrow-width: 32px;
     }
 
     li {
-      margin: $base-spacing-unit 0 0 0;
       float: left;
       margin-right: 5%;
       width: 40%;
@@ -32,7 +31,7 @@ $icon-arrow-width: 32px;
     font-size: $smallest-heading-font-size;
     font-weight: $font-bold;
     line-height: 44px;
-    margin-top: $margin-smallest;
+    margin: $base-spacing-unit 0 0 0;
     text-decoration: none;
     text-transform: uppercase;
     @include default-transition(color);
