@@ -7,6 +7,7 @@
   margin-bottom: $margin-larger;
   overflow-wrap: break-word;
   word-wrap: break-word;
+
   h1,
   h2,
   h3,
@@ -18,7 +19,6 @@
   p {
     font-family: $default-heading-font;
     font-size: $smallest-heading-font-size;
-    margin: 0 0 $default-margin 0;
   }
 
   h2 {
