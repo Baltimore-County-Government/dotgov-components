@@ -6,6 +6,18 @@
     object-fit: fill;
     width: 100%;
   }
+  a {
+    &:hover {
+      > .dg_card-content {
+        p {
+          &:last-of-type {
+            color: $vibrant-blue;
+            transition: $default-duration;
+          }
+        }
+      }
+    }
+  }
 }
 
 .dg_card-content {
