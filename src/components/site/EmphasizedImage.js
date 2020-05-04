@@ -1,16 +1,16 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const EmphasizedImage = props => {
+const EmphasizedImage = (props) => {
   return (
     <div className="dg_card-image">
-      <img alt={props.imageHeader} src={props.imageSrc}></img>
-      <div className="dg_card-content">
-        <p>{props.imageHeader}</p>
-        <p>
-          <a href={props.imageLink}>{props.imageSubHeader}</a>
-        </p>
-      </div>
+      <a href={props.imageLink}>
+        <img alt={props.imageHeader} src={props.imageSrc}></img>
+        <div className="dg_card-content">
+          <p>{props.imageHeader}</p>
+          <p>{props.imageSubHeader}</p>
+        </div>
+      </a>
     </div>
   );
 };
@@ -23,7 +23,7 @@ EmphasizedImage.propTypes = {
   /** Adds a sub heading to the image */
   imageSubHeader: PropTypes.string.isRequired,
   /** Adds a link to the image */
-  imageLink: PropTypes.string.isRequired
+  imageLink: PropTypes.string.isRequired,
 };
 
 export default EmphasizedImage;
