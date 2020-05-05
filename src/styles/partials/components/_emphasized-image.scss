@@ -16,6 +16,10 @@
           }
         }
       }
+      > img {
+        filter: grayscale(70%);
+        transition: $default-duration;
+      }
     }
   }
 }
