@@ -20,6 +20,15 @@
     font-size: $smallest-heading-font-size;
   }
 
+  .dg_sidebar__content {
+    margin: 10px 20px;
+  }
+
+  .dg_sidebar__content_gray {
+    background-color: $gray-lightest;
+    margin: 10px 20px;
+  }
+
   h2 {
     border: none;
     color: $gray-dark;
