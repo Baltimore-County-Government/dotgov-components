@@ -4,15 +4,15 @@
   padding: 0;
 
   li {
-    background-color: #ebebeb;
-    color: #444;
+    background-color: $gray-lightest;
+    color: $gray;
     flex: 1 1 auto;
     font-family: "Montserrat", sans-serif;
-    font-size: 18px;
-    margin: 0 10px;
-    padding: 15px;
-    height: 40px;
-    line-height: 20px;
+    font-size: $small-heading-font-size;
+    margin: 0 $margin-small;
+    padding: $default-padding;
+    height: $padding-largest;
+    line-height: $padding-large;
     position: relative;
     -moz-box-sizing: content-box;
     -webkit-box-sizing: content-box;
@@ -20,7 +20,7 @@
 
     &.highlight {
       background-color: $blue;
-      color: white;
+      color: $white;
     }
 
     &:before,
@@ -32,10 +32,10 @@
     }
 
     &:before {
-      border-top: 35px solid #ebebeb;
-      border-bottom: 35px solid #ebebeb;
-      border-left: 15px solid transparent;
-      left: -15px;
+      border-top: $base-spacing-unit * 7 solid $gray-lightest;
+      border-bottom: $base-spacing-unit * 7 solid $gray-lightest;
+      border-left: $default-padding solid transparent;
+      left: -$default-padding;
       top: 0;
     }
 
@@ -49,10 +49,10 @@
     }
 
     &:after {
-      border-top: 35px solid transparent;
-      border-bottom: 35px solid transparent;
-      border-left: 15px solid #ebebeb;
-      right: -15px;
+      border-top: $base-spacing-unit * 7 solid transparent;
+      border-bottom: $base-spacing-unit * 7 solid transparent;
+      border-left: $default-padding solid $gray-lightest;
+      right: -$default-padding;
       top: 0;
     }
 
@@ -61,15 +61,15 @@
     }
 
     &:last-child {
-      background: #ebebeb;
+      background: $gray-lightest;
       list-style: none;
       margin-right: 0;
 
       &:before {
-        border-top: 35px solid #ebebeb;
-        border-bottom: 35px solid #ebebeb;
-        border-left: 15px solid transparent;
-        left: -15px;
+        border-top: $base-spacing-unit * 7 solid $gray-lightest;
+        border-bottom: $base-spacing-unit * 7 solid $gray-lightest;
+        border-left: $default-padding solid transparent;
+        left: -$default-padding;
         top: 0;
       }
 
