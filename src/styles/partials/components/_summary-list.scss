@@ -15,7 +15,7 @@
 
 .dg_summary-list {
   background: $gray-lightest;
-  padding: ($base-spacing-unit * 10) $padding-large; /* this spacing unit is only used in the summary list */
+  padding: $padding-larger; /* this spacing unit is only used in the summary list */
 
   .dg_summary-list__item {
     display: flex;
