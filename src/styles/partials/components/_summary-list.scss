@@ -4,12 +4,8 @@
       display: block;
       margin-bottom: $margin-larger;
 
-      i,
-      & > div {
-        width: 100%;
-      }
-
       i {
+        display: block;
         margin-bottom: $default-margin;
         text-align: left;
       }
@@ -32,10 +28,6 @@
     p {
       color: $gray;
     }
-
-    & > div {
-      width: 75%;
-    }
   }
 
   h3 {
@@ -43,10 +35,9 @@
   }
 
   i {
-    display: block;
     text-align: center;
     font-size: $h1-font-size;
-    width: 25%;
+    margin-right: $default-padding;
   }
 
   a {
@@ -55,28 +46,6 @@
 
     &:hover {
       text-decoration: underline;
-    }
-  }
-}
-
-@media screen and (max-width: $large-breakpoint) {
-  @include stacked-icon-layout;
-}
-
-@media screen and (max-width: $medium-breakpoint) {
-  .dg_summary-list {
-    .dg_summary-list__item {
-      display: flex;
-      margin-bottom: $default-margin;
-
-      & > div {
-        width: 75%;
-      }
-
-      i {
-        text-align: center;
-        width: 25%;
-      }
     }
   }
 }
