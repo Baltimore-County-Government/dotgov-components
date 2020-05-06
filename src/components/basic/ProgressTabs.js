@@ -23,7 +23,7 @@ const ProgressTabs = (props) => {
 };
 
 ProgressTabs.propTypes = {
-  /** Populates the selectable items in the ProgressTabs.*/
+  /** Populates the Progress Tabs.*/
   tabItems: PropTypes.array.isRequired,
 };
 
