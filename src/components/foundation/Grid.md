@@ -52,11 +52,15 @@ another use please submit a
 ```jsx
 import IconButton from "../basic/IconButton";
 <div className="dg_grid">
-  <IconButton text="Fish Button" icon="fas fa-fish" />
-  <IconButton text="Fish Button" icon="fas fa-fish" />
-  <IconButton text="Fish Button" icon="fas fa-fish" />
-  <IconButton text="Fish Button" icon="fas fa-fish" />
-  <IconButton text="Fish Button" icon="fas fa-fish" />
-  <IconButton text="Really Long, Long, Fish Button" icon="fas fa-fish" />
+  <IconButton text="Fish Button" icon="fas fa-fish" description="" />
+  <IconButton text="Fish Button" icon="fas fa-fish" description="" />
+  <IconButton text="Fish Button" icon="fas fa-fish" description="" />
+  <IconButton text="Fish Button" icon="fas fa-fish" description="" />
+  <IconButton text="Fish Button" icon="fas fa-fish" description="" />
+  <IconButton
+    text="Really Long, Long, Fish Button"
+    icon="fas fa-fish"
+    description=""
+  />
 </div>;
 ```

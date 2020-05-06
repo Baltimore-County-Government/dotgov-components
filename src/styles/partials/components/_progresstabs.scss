@@ -1,0 +1,81 @@
+.dg_progress-tabs {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+
+  li {
+    background-color: #ebebeb;
+    color: #444;
+    flex: 1 1 auto;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    margin: 0 10px;
+    padding: 15px;
+    height: 40px;
+    line-height: 20px;
+    position: relative;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+
+    &.highlight {
+      background-color: $blue;
+      color: white;
+    }
+
+    &:before,
+    &:after {
+      content: "";
+      height: 0;
+      position: absolute;
+      width: 0;
+    }
+
+    &:before {
+      border-top: 35px solid #ebebeb;
+      border-bottom: 35px solid #ebebeb;
+      border-left: 15px solid transparent;
+      left: -15px;
+      top: 0;
+    }
+
+    &:first-child:before {
+      border: none;
+    }
+
+    &.highlight:before {
+      border-top-color: $blue;
+      border-bottom-color: $blue;
+    }
+
+    &:after {
+      border-top: 35px solid transparent;
+      border-bottom: 35px solid transparent;
+      border-left: 15px solid #ebebeb;
+      right: -15px;
+      top: 0;
+    }
+
+    &.highlight:after {
+      border-left-color: $blue;
+    }
+
+    &:last-child {
+      background: #ebebeb;
+      list-style: none;
+      margin-right: 0;
+
+      &:before {
+        border-top: 35px solid #ebebeb;
+        border-bottom: 35px solid #ebebeb;
+        border-left: 15px solid transparent;
+        left: -15px;
+        top: 0;
+      }
+
+      &:after {
+        border: none;
+      }
+    }
+  }
+}
