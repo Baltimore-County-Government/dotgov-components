@@ -11,7 +11,7 @@ const ProgressTabs = (props) => {
     <div>
       <ol className={cssClasses}>
         {tabItems.map((item) => {
-          return <ProgressTabsItem item={item} />;
+          return <ProgressTabsItem key={item.id} item={item} />;
         })}
       </ol>
     </div>
