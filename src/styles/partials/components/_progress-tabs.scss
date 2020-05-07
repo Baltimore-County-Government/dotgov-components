@@ -87,12 +87,8 @@
     list-style-type: decimal;
     list-style-position: inside;
     li {
-      display: list-item;
-      float: none;
       height: auto;
-      line-height: $padding-large;
       margin: 0 0 $margin-smallest;
-      width: 100%;
       br,
       &:after,
       &:before,
