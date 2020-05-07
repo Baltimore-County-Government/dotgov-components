@@ -1,0 +1,99 @@
+.dg_progress-tabs {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+
+  li {
+    background-color: $gray-lightest;
+    color: $gray;
+    flex: 1 1 auto;
+    font-family: $default-heading-font;
+    font-size: $small-heading-font-size;
+    margin: 0 $margin-small;
+    padding: $default-padding;
+    height: $padding-largest;
+    line-height: $padding-large;
+    position: relative;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+
+    &.highlight {
+      background-color: $blue;
+      color: $white;
+    }
+
+    &:before,
+    &:after {
+      content: "";
+      height: 0;
+      position: absolute;
+      width: 0;
+    }
+
+    &:before {
+      border-top: $base-spacing-unit * 7 solid $gray-lightest;
+      border-bottom: $base-spacing-unit * 7 solid $gray-lightest;
+      border-left: $default-padding solid transparent;
+      left: -$default-padding;
+      top: 0;
+    }
+
+    &:first-child:before {
+      border: none;
+    }
+
+    &.highlight:before {
+      border-top-color: $blue;
+      border-bottom-color: $blue;
+    }
+
+    &:after {
+      border-top: $base-spacing-unit * 7 solid transparent;
+      border-bottom: $base-spacing-unit * 7 solid transparent;
+      border-left: $default-padding solid $gray-lightest;
+      right: -$default-padding;
+      top: 0;
+    }
+
+    &.highlight:after {
+      border-left-color: $blue;
+    }
+
+    &:last-child {
+      background: $gray-lightest;
+      list-style: none;
+      margin-right: 0;
+
+      &:before {
+        border-top: $base-spacing-unit * 7 solid $gray-lightest;
+        border-bottom: $base-spacing-unit * 7 solid $gray-lightest;
+        border-left: $default-padding solid transparent;
+        left: -$default-padding;
+        top: 0;
+      }
+
+      &:after {
+        border: none;
+      }
+    }
+  }
+}
+
+@media (max-width: $medium-breakpoint) {
+  .dg_progress-tabs {
+    display: block;
+    list-style-type: decimal;
+    list-style-position: inside;
+    li {
+      height: auto;
+      margin: 0 0 $margin-smallest;
+      br,
+      &:after,
+      &:before,
+      &:last-child {
+        display: none;
+      }
+    }
+  }
+}
