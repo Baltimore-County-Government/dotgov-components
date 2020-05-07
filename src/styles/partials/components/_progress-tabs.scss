@@ -7,7 +7,7 @@
     background-color: $gray-lightest;
     color: $gray;
     flex: 1 1 auto;
-    font-family: "Montserrat", sans-serif;
+    font-family: $default-heading-font;
     font-size: $small-heading-font-size;
     margin: 0 $margin-small;
     padding: $default-padding;
@@ -74,6 +74,29 @@
 
       &:after {
         border: none;
+      }
+    }
+  }
+}
+
+@media (max-width: $medium-breakpoint) {
+  .dg_progress-tabs {
+    display: block;
+    padding-right: $padding-large;
+    list-style-type: decimal;
+    list-style-position: inside;
+    li {
+      display: list-item;
+      float: none;
+      height: auto;
+      line-height: $padding-large;
+      margin: 0 0 $margin-smallest;
+      width: 100%;
+      br,
+      :after,
+      :before,
+      :last-child {
+        display: none;
       }
     }
   }
