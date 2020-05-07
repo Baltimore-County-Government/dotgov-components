@@ -102,24 +102,3 @@
     }
   }
 }
-
-@media (max-width: 768px) {
-  .dg_progress-tabs {
-    display: block;
-    list-style-type: decimal;
-    list-style-position: inside;
-  }
-  .dg_progress-tabs li {
-    display: list-item;
-    height: auto;
-    line-height: 20px;
-    margin: 0 0 2px;
-    width: 100%;
-  }
-  .dg_progress-tabs li br,
-  .dg_progress-tabs li:after,
-  .dg_progress-tabs li:before,
-  .dg_progress-tabs li:last-child {
-    display: none;
-  }
-}
