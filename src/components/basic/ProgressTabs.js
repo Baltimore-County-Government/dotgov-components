@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import classnames from "classnames";
+import ProgressTabsItem from "./ProgressTabsItem";
 
 const ProgressTabs = (props) => {
   const { className, tabItems = [] } = props;
@@ -10,12 +11,7 @@ const ProgressTabs = (props) => {
     <div>
       <ol className={cssClasses}>
         {tabItems.map((item) => {
-          const { id, isHighlighted, name } = item;
-          return (
-            <li key={id} className={isHighlighted ? "highlight" : ""}>
-              {name}
-            </li>
-          );
+          return <ProgressTabsItem item={item} />;
         })}
       </ol>
     </div>
