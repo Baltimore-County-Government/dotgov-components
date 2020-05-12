@@ -2,8 +2,7 @@ $icon-arrow-width: 32px;
 
 .dg_alt-list {
   list-style-type: none;
-  margin-bottom: $margin-large;
-  margin-left: 0;
+  margin: 0px 0px $margin-small 0px;
   padding-left: 0;
   text-decoration: none;
 
@@ -32,8 +31,6 @@ $icon-arrow-width: 32px;
     font-family: $default-heading-font;
     font-size: $smallest-heading-font-size;
     font-weight: $font-bold;
-    line-height: 44px;
-    margin-top: $margin-smallest;
     text-decoration: none;
     text-transform: uppercase;
     @include default-transition(color);
@@ -57,6 +54,9 @@ $icon-arrow-width: 32px;
 
     a {
       display: block;
+      line-height: 30px;
+      margin-bottom: $margin-smallest;
+      margin-top: $margin-smallest;
       text-decoration: none;
 
       i {

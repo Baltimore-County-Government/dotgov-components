@@ -20,6 +20,11 @@
     font-size: $smallest-heading-font-size;
   }
 
+  .dg_sidebar__content {
+    background-color: $gray-lightest;
+    padding: $padding-small $padding-large;
+  }
+
   h2 {
     border: none;
     color: $gray-dark;
