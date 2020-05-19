@@ -25,3 +25,107 @@
     }
   }
 }
+
+/* Details */
+#SECalendarEventWrapper {
+  div.SECalendarEventName h3 {
+    @extend h2;
+  }
+
+  .SECalendarBackLink {
+    display: inline-block;
+    margin-bottom: $default-margin;
+  }
+
+  .SECalendarEventDetails {
+    @extend .dg_card;
+    text-align: left;
+  }
+
+  .SECalendarPropertyLabel {
+    font-weight: $font-bold;
+  }
+
+  .SECalendarProperty {
+    margin-bottom: $default-margin;
+  }
+
+  .SECalendarLocation,
+  .SECalendarAddress {
+    display: block;
+  }
+
+  .SEClear {
+    display: none;
+  }
+
+  .SECalendarPropertyLabel,
+  .SECalendarProperty {
+    &:blank {
+      display: none;
+      margin: 0;
+    }
+  }
+
+  .SECalendarEventActions {
+    margin: $default-margin auto 0;
+
+    &:first-of-type {
+      display: none;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        display: inline-block;
+        margin-right: $default-margin;
+        margin-bottom: $default-margin;
+
+        a {
+          @extend .dg_button;
+          display: inline-block;
+
+          &:before {
+            margin-right: $margin-smallest;
+          }
+        }
+
+        &.eventDownload a,
+        &.eventReminder a,
+        &.eventShare a {
+          background-image: none;
+        }
+
+        &.eventDownload a {
+          &:before {
+            @include icon-content($icon-download);
+          }
+        }
+
+        &.eventReminder a {
+          &:before {
+            @include icon-content($icon-reminder);
+          }
+        }
+
+        &.eventShare a {
+          &:before {
+            @include icon-content($icon-share);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $small-breakpoint) {
+  #SECalendarEventWrapper .SECalendarEventActions ul {
+    li,
+    a {
+      display: block !important;
+    }
+  }
+}
