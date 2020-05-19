@@ -1,0 +1,27 @@
+.SECalendarViewletDetails {
+  ul {
+    list-style-type: none;
+    @extend .dg_card;
+    text-align: left;
+
+    li {
+      .eventcalevent {
+        @extend h2;
+      }
+
+      .eventcaldate,
+      .eventcaldate:before,
+      .eventcaltime:before {
+        margin-right: $margin-small;
+      }
+
+      .eventcaldate:before {
+        @include icon-content($icon-calendar);
+      }
+
+      .eventcaltime:before {
+        @include icon-content($icon-clock);
+      }
+    }
+  }
+}
