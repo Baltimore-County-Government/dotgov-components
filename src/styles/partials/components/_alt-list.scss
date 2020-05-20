@@ -40,7 +40,7 @@ $icon-arrow-width: 32px;
     &:after {
       color: $gray-light;
       @include default-transition;
-      @include icon-content($icon-arrow-right);
+      @include icon-content($icon-arrow-right-circle);
       font-size: $icon-arrow-default-size;
       margin-left: $default-margin;
       position: absolute;
