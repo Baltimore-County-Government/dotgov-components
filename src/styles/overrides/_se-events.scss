@@ -28,8 +28,8 @@
 
 /* Details */
 #SECalendarEventWrapper {
-  div.SECalendarEventName h3 {
-    @extend h2;
+  div.SECalendarEventName {
+    display: none;
   }
 
   .SECalendarBackLink {
