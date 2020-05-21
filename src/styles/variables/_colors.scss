@@ -38,8 +38,11 @@ $gray-dark: mix(black, $gray, $gray-light-ratio);
 $gray-darkest: mix(black, $gray, $gray-lightest-ratio);
 $black: black;
 $white: white;
-
+$alice-blue: #E8F4FD;
 $green: #99d679;
+$light-green: rgb(237, 247, 237);
+$pale-yellow: rgb(255, 244, 229);
+$pale-red: rgb(253, 236, 234);
 
 /*
   Sass Map for use with generating helper classes, this should be consistent with the variables above .

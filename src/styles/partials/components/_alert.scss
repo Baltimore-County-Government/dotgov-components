@@ -42,7 +42,7 @@
   }
 
   &.emergency {
-    background: $error-color;
+    background: $emergency-color;
 
     a:hover {
       background: $white;
@@ -79,16 +79,30 @@
       background: $info-color;
       outline-color: $info-color;
 
+      .dg_alert__status {
+        color: $black;
+      }
+
+      .dg_alert__icon {
+        color: $black;
+      }
+
+      p {
+        color: $black;
+      }
+      * {
+        color: $black;
+      }
       a:hover {
-        background: $white;
+        background: $black;
         color: $info-color;
       }
     }
 
     &.warning {
-      background: $warning;
+      background: $warning-color;
       border-color: $black;
-      outline-color: $warning;
+      outline-color: $warning-color;
 
       * {
         color: $black;
@@ -104,8 +118,22 @@
       background: $error-color;
       outline-color: $error-color;
 
+      .dg_alert__status {
+        color: $black;
+      }
+
+      .dg_alert__icon {
+        color: $black;
+      }
+      * {
+        color: $black;
+      }
+      p {
+        color: $black;
+      }
+
       a:hover {
-        background: $white;
+        background: $black;
         color: $error-color;
       }
     }
