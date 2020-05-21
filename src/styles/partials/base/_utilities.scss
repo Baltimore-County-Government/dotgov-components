@@ -7,41 +7,42 @@
 
 /*Margin Bottom*/
 .mb--smallest {
-  margin-bottom: $margin-smallest;
+    margin-bottom: $margin-smallest;
 }
 
 .mb--small {
-  margin-bottom: $margin-small;
+    margin-bottom: $margin-small;
 }
 
 .mb--default {
-  margin-bottom: $default-margin;
+    margin-bottom: $default-margin;
 }
 
 .mb--large {
-  margin-bottom: $margin-large;
+    margin-bottom: $margin-large;
 }
 
 .mb--larger {
-  margin-bottom: $margin-larger;
+    margin-bottom: $margin-larger;
 }
 
+
 .hidden {
-  display: none;
+    display: none;
 }
 
 .no-scroll {
-  overflow-y: auto !important;
+    overflow-y: auto !important;
 }
 
 .table-responsive {
-  display: block;
-  width: 100%;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  -ms-overflow-style: -ms-autohiding-scrollbar;
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
 }
 
 .table-fixed {
-  table-layout: fixed;
+    table-layout: fixed;
 }
