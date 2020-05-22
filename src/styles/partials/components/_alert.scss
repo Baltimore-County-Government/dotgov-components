@@ -80,22 +80,13 @@
 
     &.information {
       background: $info-color;
+      color: $black;
       outline-color: $info-color;
 
-      .dg_alert__status {
-        color: $black;
-      }
-
-      .dg_alert__icon {
-        color: $black;
-      }
-
-      p {
-        color: $black;
-      }
       * {
         color: $black;
       }
+
       a:hover {
         background: $black;
         color: $info-color;
@@ -121,20 +112,9 @@
       background: $error-color;
       outline-color: $error-color;
 
-      .dg_alert__status {
-        color: $black;
-      }
-
-      .dg_alert__icon {
-        color: $black;
-      }
       * {
         color: $black;
       }
-      p {
-        color: $black;
-      }
-
       a:hover {
         background: $black;
         color: $error-color;
