@@ -24,7 +24,10 @@
 
   p {
     font-size: $smallest-heading-font-size;
-    margin-bottom: 0;
+    margin-bottom: $margin-small;
+    &:last-child {
+      margin-bottom: 0px;
+    }
   }
 
   p,
@@ -42,7 +45,7 @@
   }
 
   &.emergency {
-    background: $error-color;
+    background: $red-dark;
 
     a:hover {
       background: $white;
@@ -51,7 +54,7 @@
   }
 
   &.status {
-    border: $border-width-small solid $white;
+    border: $border-width-small solid $black;
     outline: $border-width-large solid transparent;
     margin-bottom: $default-margin;
     text-align: left;
@@ -77,18 +80,23 @@
 
     &.information {
       background: $info-color;
+      color: $black;
       outline-color: $info-color;
 
+      * {
+        color: $black;
+      }
+
       a:hover {
-        background: $white;
+        background: $black;
         color: $info-color;
       }
     }
 
     &.warning {
-      background: $warning;
+      background: $warning-color;
       border-color: $black;
-      outline-color: $warning;
+      outline-color: $warning-color;
 
       * {
         color: $black;
@@ -104,8 +112,11 @@
       background: $error-color;
       outline-color: $error-color;
 
+      * {
+        color: $black;
+      }
       a:hover {
-        background: $white;
+        background: $black;
         color: $error-color;
       }
     }
