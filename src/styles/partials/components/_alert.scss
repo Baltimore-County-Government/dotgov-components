@@ -24,7 +24,10 @@
 
   p {
     font-size: $smallest-heading-font-size;
-    margin-bottom: 0;
+    margin-bottom: $margin-small;
+    &:last-child {
+      margin-bottom: 0px;
+    }
   }
 
   p,
