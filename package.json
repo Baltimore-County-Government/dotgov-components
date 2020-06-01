@@ -1,6 +1,6 @@
 {
   "name": "@baltimorecounty/dotgov-components",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "UI design system for Baltimore County's primary [website](https://www.baltimorecountymd.gov).",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -46,7 +46,7 @@
     "gh-pages": "^2.1.0",
     "jest": "^24.8.0",
     "jest-prop-type-error": "^1.1.0",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.14.1",
     "nwb": "0.23.x",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",

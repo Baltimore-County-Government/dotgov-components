@@ -3,10 +3,6 @@
   margin-bottom: $margin-larger;
   padding-top: $padding-large;
 
-  .dg_form-field {
-    padding-top: $padding-largest;
-  }
-
   .dg_fieldset-hint {
     display: block;
     margin-bottom: $default-margin;
@@ -21,7 +17,6 @@
     font-weight: $font-bold;
     letter-spacing: 10px;
     margin-bottom: $default-margin;
-    margin-top: $margin-smallest;
     padding-bottom: $padding-small;
     text-transform: uppercase;
     width: 100%;
