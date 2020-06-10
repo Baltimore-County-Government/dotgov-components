@@ -20,6 +20,10 @@
         border-left: none;
         padding: $padding-small;
 
+        &#SECalendarSmallCalMonth {
+          text-decoration: none;
+        }
+
         &#SECalendarSmallCalPrevious {
           a {
             font-size: 0;
