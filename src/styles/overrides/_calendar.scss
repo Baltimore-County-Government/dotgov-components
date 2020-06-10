@@ -18,6 +18,13 @@
         background-color: white;
         border-bottom: 5px solid #002280;
         border-left: none;
+        padding: $padding-small;
+
+        &#SECalendarSmallCalMonth {
+          a {
+            text-decoration: none;
+          }
+        }
 
         &#SECalendarSmallCalPrevious {
           a {
@@ -60,6 +67,25 @@
     tbody {
       .controls {
         display: none;
+      }
+      .SECalendarDay {
+        padding: $padding-small;
+        &.currentDay {
+          background-color: $gold;
+        }
+
+        &.pastDayOtherMonthWeekend {
+          background-color: #c2c2c2;
+        }
+        &.pastDayOtherMonth {
+          background-color: #c2c2c2;
+        }
+        &.futureDayOtherMonthWeekend {
+          background-color: #c2c2c2;
+        }
+        &.futureDayOtherMonth {
+          background-color: #c2c2c2;
+        }
       }
     }
   }
