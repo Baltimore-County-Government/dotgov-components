@@ -11,23 +11,23 @@
   overflow-x: auto;
 
   table {
-    border: 1px solid $gray-light;
-    color: #292929;
-    font-family: "Montserrat", sans-serif;
-    font-size: 16px;
-    margin-bottom: 20px;
+    border: $border-width-small solid $gray-light;
+    color: $gray-dark;
+    font-family: $default-heading-font;
+    font-size: $smallest-heading-font-size;
+    margin-bottom: $default-margin;
     text-align: center;
     width: 100%;
     th {
-      color: black;
-      font-family: "Montserrat", sans-serif;
-      font-size: 18px;
-      font-weight: 600;
+      color: $black;
+      font-family: $default-heading-font;
+      font-size: $small-heading-font-size;
+      font-weight: $font-medium;
     }
     thead {
       th {
-        background-color: white;
-        border-bottom: 5px solid #002280;
+        background-color: $white;
+        border-bottom: $border-width-large solid $blue;
         border-left: none;
         padding: $padding-small;
 
@@ -80,7 +80,7 @@
         display: none;
       }
       .SECalendarDay {
-        border-bottom: 1px solid $gray-light;
+        border-bottom: $border-width-small solid $gray-light;
         padding: $padding-small;
 
         a {
