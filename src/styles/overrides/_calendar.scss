@@ -63,6 +63,9 @@
       }
       .SECalendarDay {
         padding: $padding-small;
+        &.currentDay {
+          background-color: $gold;
+        }
 
         &.pastDayOtherMonthWeekend {
           background-color: #c2c2c2;
