@@ -1,0 +1,66 @@
+.SECalendarSmallCal {
+  table {
+    border: 1px solid #c2c2c2;
+    color: #292929;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+    th {
+      color: black;
+      font-family: "Montserrat", sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+    }
+    thead {
+      th {
+        background-color: white;
+        border-bottom: 5px solid #002280;
+        border-left: none;
+
+        &#SECalendarSmallCalPrevious {
+          a {
+            font-size: 0;
+            text-decoration: none;
+            &:before {
+              position: relative;
+              font-size: $breadcrumb-icon-size;
+              font-weight: $font-bold;
+              content: $icon-caret-left;
+              font-family: $font-awesome-pro;
+              vertical-align: baseline;
+              left: 10px;
+            }
+          }
+        }
+
+        &#SECalendarSmallCalNext {
+          a {
+            font-size: 0;
+            text-decoration: none;
+            &:after {
+              position: relative;
+              font-size: $breadcrumb-icon-size;
+              font-weight: $font-bold;
+              content: $icon-caret-right;
+              font-family: $font-awesome-pro;
+              vertical-align: baseline;
+              right: 10px;
+            }
+          }
+        }
+      }
+
+      td {
+        display: none;
+      }
+    }
+
+    tbody {
+      .controls {
+        display: none;
+      }
+    }
+  }
+}
