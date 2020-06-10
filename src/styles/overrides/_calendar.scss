@@ -61,6 +61,11 @@
       .controls {
         display: none;
       }
+      .SECalendarDay {
+        &.futureDayOtherMonth {
+          background-color: #c2c2c2;
+        }
+      }
     }
   }
 }
