@@ -1,3 +1,9 @@
+.SECalendarKeyword {
+  .SEApplicationSubmit {
+    @extend .dg_button;
+  }
+}
+
 .SECalendarSmallCal {
   table {
     border: 1px solid #c2c2c2;
