@@ -84,6 +84,7 @@
     /*Table List*/
     .SECalendarEventDate {
         @extend h2;
+        display: block;
     }
 
     .SECalendarEventName {
@@ -93,6 +94,10 @@
 
     .SECalendarNoEvent {
         margin-bottom: $default-margin;
+    }
+
+    tr {
+        display: flex;
     }
 
     tr.odd,
