@@ -71,6 +71,10 @@
       .SECalendarDay {
         border-bottom: 1px solid #c2c2c2;
         padding: $padding-small;
+
+        a {
+          text-decoration: none;
+        }
         &.currentDay {
           background-color: $gold;
         }
