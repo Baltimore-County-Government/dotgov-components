@@ -21,7 +21,9 @@
         padding: $padding-small;
 
         &#SECalendarSmallCalMonth {
-          text-decoration: none;
+          a {
+            text-decoration: none;
+          }
         }
 
         &#SECalendarSmallCalPrevious {
