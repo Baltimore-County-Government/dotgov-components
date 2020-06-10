@@ -11,7 +11,7 @@
   overflow-x: auto;
 
   table {
-    border: 1px solid #c2c2c2;
+    border: 1px solid $gray-light;
     color: #292929;
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
@@ -80,7 +80,7 @@
         display: none;
       }
       .SECalendarDay {
-        border-bottom: 1px solid #c2c2c2;
+        border-bottom: 1px solid $gray-light;
         padding: $padding-small;
 
         a {
@@ -91,16 +91,16 @@
         }
 
         &.pastDayOtherMonthWeekend {
-          background-color: #c2c2c2;
+          background-color: $gray-light;
         }
         &.pastDayOtherMonth {
-          background-color: #c2c2c2;
+          background-color: $gray-light;
         }
         &.futureDayOtherMonthWeekend {
-          background-color: #c2c2c2;
+          background-color: $gray-light;
         }
         &.futureDayOtherMonth {
-          background-color: #c2c2c2;
+          background-color: $gray-light;
         }
       }
     }
