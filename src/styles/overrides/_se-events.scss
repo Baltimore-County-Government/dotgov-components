@@ -77,6 +77,36 @@
     }
 }
 
+
+
+.SECalendarListEvents {
+
+    /*Table List*/
+    .SECalendarEventDate {
+        @extend h2;
+    }
+
+    .SECalendarEventName {
+        @extend h3;
+        margin-bottom: $margin-small;
+    }
+
+    .SECalendarNoEvent {
+        margin-bottom: $default-margin;
+    }
+
+    tr.odd,
+    tr.even {
+        @extend .dg_card;
+        @extend .text-left;
+    }
+
+    .SECalendarEventTime:before {
+        @include icon-content($icon-clock);
+        margin-right: $margin-small;
+    }
+}
+
 @media screen and (max-width: $small-breakpoint) {
     .dg_actions-list {
 
