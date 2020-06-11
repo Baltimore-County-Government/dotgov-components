@@ -81,13 +81,15 @@
       }
       .SECalendarDay {
         border-bottom: $border-width-small solid $gray-light;
-        padding: $padding-small;
+
+        &:hover {
+          background-color: $gold;
+        }
 
         a {
+          display: block;
           text-decoration: none;
-          &:hover {
-            background-color: $gold;
-          }
+          padding: $padding-small;
         }
         &.currentDay {
           background-color: $gold;
@@ -95,15 +97,27 @@
 
         &.pastDayOtherMonthWeekend {
           background-color: $gray-light;
+          &:hover {
+            background-color: $gold;
+          }
         }
         &.pastDayOtherMonth {
           background-color: $gray-light;
+          &:hover {
+            background-color: $gold;
+          }
         }
         &.futureDayOtherMonthWeekend {
           background-color: $gray-light;
+          &:hover {
+            background-color: $gold;
+          }
         }
         &.futureDayOtherMonth {
           background-color: $gray-light;
+          &:hover {
+            background-color: $gold;
+          }
         }
       }
     }
