@@ -85,6 +85,9 @@
 
         a {
           text-decoration: none;
+          &:hover {
+            background-color: $gold;
+          }
         }
         &.currentDay {
           background-color: $gold;
