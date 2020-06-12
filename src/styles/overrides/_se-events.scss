@@ -77,8 +77,6 @@
     }
 }
 
-
-
 .SECalendarListEvents {
     table {
         width: 100%;
@@ -112,6 +110,17 @@
     .SECalendarEventTime:before {
         @include icon-content($icon-clock);
         margin-right: $margin-small;
+    }
+}
+
+.dg_filter-links {
+    list-style-type: none;
+    font-size: $base-font-size;
+    margin: auto 0;
+    padding: 0;
+
+    li {
+        margin: $margin-smallest auto;
     }
 }
 
