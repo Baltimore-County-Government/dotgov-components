@@ -124,6 +124,10 @@
     }
 }
 
+.eventcalitem {
+    @extend .mb--small;
+}
+
 @media screen and (max-width: $small-breakpoint) {
     .dg_actions-list {
 
