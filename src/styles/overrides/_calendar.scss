@@ -93,30 +93,35 @@
         }
         &.currentDay {
           background-color: $gold;
+          font-weight: $font-bold;
         }
 
         &.pastDayOtherMonthWeekend {
           background-color: $gray-light;
           &:hover {
             background-color: $gold;
+            font-weight: $font-bold;
           }
         }
         &.pastDayOtherMonth {
           background-color: $gray-light;
           &:hover {
             background-color: $gold;
+            font-weight: $font-bold;
           }
         }
         &.futureDayOtherMonthWeekend {
           background-color: $gray-light;
           &:hover {
             background-color: $gold;
+            font-weight: $font-bold;
           }
         }
         &.futureDayOtherMonth {
           background-color: $gray-light;
           &:hover {
             background-color: $gold;
+            font-weight: $font-bold;
           }
         }
       }
