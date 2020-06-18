@@ -6,6 +6,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+strong {
+  font-weight: 900;
+}
+
 p {
   color: $gray-dark;
   font-size: $base-font-size;
