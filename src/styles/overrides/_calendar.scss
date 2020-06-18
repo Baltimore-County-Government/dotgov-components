@@ -92,8 +92,14 @@
           padding: $padding-small;
         }
         &.currentDay {
-          background-color: $gold;
           font-weight: $font-bold;
+          &:hover {
+            background-color: $gold;
+          }
+        }
+
+        &.SECalendarSelectedDay {
+          background-color: $gold;
         }
 
         &.pastDayOtherMonthWeekend {
