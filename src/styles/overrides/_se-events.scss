@@ -79,6 +79,16 @@
           @include icon-content($icon-register);
         }
       }
+      &.twitter {
+        &:before {
+          @include icon-content($icon-twitter);
+        }
+      }
+      &.facebook {
+        &:before {
+          @include icon-content($icon-facebook);
+        }
+      }
     }
   }
 }
