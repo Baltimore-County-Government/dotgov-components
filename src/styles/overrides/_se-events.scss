@@ -61,7 +61,6 @@
           @include icon-content($icon-reminder);
         }
       }
-
       &.share a {
         &:before {
           @include icon-content($icon-share);
@@ -74,19 +73,23 @@
         }
       }
 
-      &.register {
+      &.register a {
         &:before {
           @include icon-content($icon-register);
         }
       }
-      &.twitter {
+      &.twitter a {
         &:before {
-          @include icon-content($icon-twitter);
+          font-family: "Font Awesome 5 Brands";
+          font-weight: 900;
+          content: $icon-twitter;
         }
       }
-      &.facebook {
+      &.facebook a {
         &:before {
-          @include icon-content($icon-facebook);
+          font-family: "Font Awesome 5 Brands";
+          font-weight: 900;
+          content: $icon-facebook;
         }
       }
     }
