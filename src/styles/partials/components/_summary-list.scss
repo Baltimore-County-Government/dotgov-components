@@ -45,7 +45,7 @@
     background-color: transparent;
     overflow-wrap: break-word;
     word-wrap: break-word;
-    word-break: break-word;
+    word-break: break-all;
 
     &:hover {
       text-decoration: underline;
