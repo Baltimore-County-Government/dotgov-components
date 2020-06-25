@@ -24,6 +24,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     margin-bottom: $default-margin;
+    word-break: break-all;
 
     p {
       color: $gray;
@@ -43,7 +44,6 @@
   a {
     text-decoration: none;
     background-color: transparent;
-    word-break: break-all;
 
     &:hover {
       text-decoration: underline;
