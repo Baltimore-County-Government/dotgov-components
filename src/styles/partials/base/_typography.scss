@@ -85,6 +85,8 @@ h6 {
 
   h1 {
     margin-bottom: $margin-large / 2;
-    word-break: break-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: keep-all;
   }
 }
