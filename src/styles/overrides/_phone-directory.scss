@@ -1,0 +1,32 @@
+#BACO_table {
+    @extend .table;
+
+    th {
+        border-left: none;
+        border-bottom: $border-width-large solid $blue;
+    }
+
+    #Next {
+        @extend .dg_button;
+    }
+
+    #Previous {
+        @extend .dg_button-link;
+    }
+
+
+}
+
+#phoneDirForm {
+    #submit {
+        margin-right: $default-margin;
+    }
+}
+
+#Next {
+    @extend .dg_button;
+}
+
+#Previous {
+    @extend .dg_button-link;
+}
