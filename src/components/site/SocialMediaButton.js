@@ -8,18 +8,22 @@ const SocialMediaButton = (props) => {
   const actionClass = classnames("action", icon);
 
   return (
-    <li className={actionClass}>
-      <a
-        id={id}
-        className={cssClassNames}
-        title={title}
-        target={target}
-        href={href}
-        onclick={onclick}
-      >
-        {content}
-      </a>
-    </li>
+    <div class="dg_actions-list">
+      <ul>
+        <li className={actionClass}>
+          <a
+            id={id}
+            className={cssClassNames}
+            title={title}
+            target={target}
+            href={href}
+            onclick={onclick}
+          >
+            {content}
+          </a>
+        </li>
+      </ul>
+    </div>
   );
 };
 
