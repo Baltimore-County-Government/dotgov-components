@@ -48,7 +48,7 @@
               content: $icon-caret-left;
               font-family: $font-awesome-pro;
               vertical-align: baseline;
-              left: 10px;
+              left: $padding-small;
             }
           }
         }
@@ -64,7 +64,7 @@
               content: $icon-caret-right;
               font-family: $font-awesome-pro;
               vertical-align: baseline;
-              right: 10px;
+              right: $padding-small;
             }
           }
         }

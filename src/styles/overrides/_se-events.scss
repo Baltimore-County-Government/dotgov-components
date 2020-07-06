@@ -80,15 +80,15 @@
       }
       &.twitter a {
         &:before {
-          font-family: "Font Awesome 5 Brands";
-          font-weight: 900;
+          font-family: $font-awesome-brands;
+          font-weight: $font-boldest;
           content: $icon-twitter;
         }
       }
       &.facebook a {
         &:before {
-          font-family: "Font Awesome 5 Brands";
-          font-weight: 900;
+          font-family: $font-awesome-brands;
+          font-weight: $font-boldest;
           content: $icon-facebook;
         }
       }
