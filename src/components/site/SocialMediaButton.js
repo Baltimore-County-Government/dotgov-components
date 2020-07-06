@@ -41,7 +41,7 @@ SocialMediaButton.propTypes = {
   /** social media icon i.e. twitter bird, facebook F*/
   icon: PropTypes.string.isRequired,
   /** some social media buttons require a click event such as facebook. This would be described on their development page*/
-  onclick: PropTypes.string,
+  onClick: PropTypes.string,
   /** some social media buttons require a target such as facebook. This would be described on their development page*/
   target: PropTypes.string,
 };
