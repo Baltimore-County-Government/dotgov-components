@@ -58,7 +58,7 @@ import Section from "../basic/containers/Section";
 Html Snippet:
 
 ```html
-<div class="dg_actions-list">
+<div className="dg_actions-list">
   <ul>
     <li class="action twitter">
       <a

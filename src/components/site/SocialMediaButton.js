@@ -8,7 +8,7 @@ const SocialMediaButton = (props) => {
   const actionClass = classnames("action", icon);
 
   return (
-    <div class="dg_actions-list">
+    <div className="dg_actions-list">
       <ul>
         <li className={actionClass}>
           <a
@@ -17,7 +17,7 @@ const SocialMediaButton = (props) => {
             title={title}
             target={target}
             href={href}
-            onclick={onclick}
+            onClick={onclick}
           >
             {content}
           </a>
