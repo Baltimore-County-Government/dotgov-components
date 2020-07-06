@@ -17,7 +17,7 @@ const SocialMediaButton = (props) => {
             title={title}
             target={target}
             href={href}
-            onClick={onClick()}
+            onClick={onClick}
           >
             {content}
           </a>
