@@ -35,10 +35,11 @@
   }
 
   i {
-    text-align: left;
+    text-align: center;
     font-size: $h1-font-size;
     margin-right: $default-padding;
-    width: 40px;
+    width: 45px;
+    max-width: 45px;
   }
 
   a {
