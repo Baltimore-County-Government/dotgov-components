@@ -16,7 +16,6 @@ import Section from "../basic/containers/Section";
   <SocialMediaButton
     id="facebookButton"
     href="https://www.facebook.com/sharer/sharer.php"
-    onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
     target="_blank"
     title="Share on Facebook"
     icon="facebook"
@@ -45,7 +44,6 @@ import Section from "../basic/containers/Section";
   <SocialMediaButton
     id="facebookButton"
     href="https://www.facebook.com/sharer/sharer.php"
-    onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
     target="_blank"
     title="Share on Facebook"
     icon="facebook"

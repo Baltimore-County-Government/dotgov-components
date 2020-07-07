@@ -3,16 +3,7 @@ import PropTypes from "prop-types";
 import classnames from "classnames";
 
 const SocialMediaButton = (props) => {
-  const {
-    title,
-    className,
-    href,
-    id,
-    content,
-    icon,
-    onClickEvent,
-    target,
-  } = props;
+  const { title, className, href, id, content, icon, target } = props;
   const cssClassNames = classnames("dg_Button", className);
   const actionClass = classnames("action", icon);
 
@@ -26,7 +17,6 @@ const SocialMediaButton = (props) => {
             title={title}
             target={target}
             href={href}
-            onClick={onClickEvent}
           >
             {content}
           </a>
@@ -49,8 +39,6 @@ SocialMediaButton.propTypes = {
   content: PropTypes.string.isRequired,
   /** social media icon i.e. twitter bird, facebook F*/
   icon: PropTypes.string.isRequired,
-  /** some social media buttons require a click event such as facebook. This would be described on their development page*/
-  onClickEvent: PropTypes.string,
   /** some social media buttons require a target such as facebook. This would be described on their development page*/
   target: PropTypes.string,
 };

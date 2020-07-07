@@ -27,6 +27,7 @@
     "get-v": "npm -v react-styleguidist"
   },
   "dependencies": {
+    "@baltimorecounty/javascript-utilities": "^1.0.7",
     "classnames": "^2.2.6",
     "date-fns": "^2.14.0",
     "font-awesome": "^4.7.0"
