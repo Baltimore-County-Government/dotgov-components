@@ -1,97 +1,104 @@
 .seform {
-  form {
-    .seText label {
-      @extend .dg_label;
-    }
+    form {
 
-    fieldset {
-      @extend .dg_fieldset;
+        .seformRow {
+            margin-bottom: $default-margin;
+        }
 
-      legend {
-        @extend .dg_legend;
-      }
-    }
+        label,
+        .seText label {
+            @extend .dg_label;
+        }
 
-    .seRadioLabel {
-      @extend .dg_label;
-      @extend .dg_radio-label;
-    }
+        fieldset {
+            @extend .dg_fieldset;
 
-    .seCheckboxLabel {
-      @extend .dg_label;
-      @extend .dg_checkbox-label;
-    }
+            legend {
+                @extend .dg_legend;
+            }
+        }
 
-    .seRadio {
-      @extend .dg_radio-input;
-    }
+        .seRadioLabel {
+            @extend .dg_label;
+            @extend .dg_radio-label;
+        }
 
-    .seCheckbox {
-      @extend .dg_checkbox-input;
-    }
+        .seCheckboxLabel {
+            @extend .dg_label;
+            @extend .dg_checkbox-label;
+        }
 
-    .seLabelCell {
-      @extend .dg_label;
-      margin-top: 0;
-      margin-bottom: $margin-smallest;
+        .seRadio {
+            @extend .dg_radio-input;
+        }
 
-      .seRequiredMarker {
-        margin-left: $margin-smallest;
-      }
+        .seCheckbox {
+            @extend .dg_checkbox-input;
+        }
+
+        .seLabelCell {
+            @extend .dg_label;
+            margin-top: 0;
+            margin-bottom: $margin-smallest;
+
+            .seRequiredMarker {
+                margin-left: $margin-smallest;
+            }
+        }
+
+        .SEAFGroupHorizontal,
+        .SEAFLabelHorizontal,
+        .SEAFGroupVertical,
+        .SEAFLabelVertical,
+        .SEAFWrapper {
+            margin-bottom: $default-margin;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        .requiredFieldIcon,
+        .seRequiredMarker {
+            color: $red;
+            font-size: 0;
+            font-weight: $font-medium;
+            position: relative;
+            visibility: hidden;
+
+            &:after {
+                @include icon-content($icon-asterisk);
+                font-size: $smallest-heading-font-size;
+                visibility: visible;
+            }
+        }
     }
 
     .SEAFGroupHorizontal,
-    .SEAFLabelHorizontal,
+    .seFieldCellHorizontal,
+    .seLabelCellHorizontal,
+    .SEAFLabelHorizontal {
+        display: block;
+        vertical-align: auto;
+    }
+
     .SEAFGroupVertical,
-    .SEAFLabelVertical,
-    .SEAFWrapper {
-      margin-bottom: $default-margin;
-
-      &:last-child {
-        margin-bottom: 0;
-      }
+    .seFieldCellVertical,
+    .seLabelCellVertical,
+    .SEAFLabelVertical {
+        display: block;
     }
 
-    .seRequiredMarker {
-      color: $red;
-      font-size: 0;
-      font-weight: $font-medium;
-      position: relative;
-      visibility: hidden;
-
-      &:after {
-        @include icon-content($icon-asterisk);
-        font-size: $smallest-heading-font-size;
-        visibility: visible;
-      }
+    input[type="submit"] {
+        @extend .dg_button;
     }
-  }
 
-  .SEAFGroupHorizontal,
-  .seFieldCellHorizontal,
-  .seLabelCellHorizontal,
-  .SEAFLabelHorizontal {
-    display: block;
-    vertical-align: auto;
-  }
-
-  .SEAFGroupVertical,
-  .seFieldCellVertical,
-  .seLabelCellVertical,
-  .SEAFLabelVertical {
-    display: block;
-  }
-
-  input[type="submit"] {
-    @extend .dg_button;
-  }
-
-  input[type="reset"] {
-    @extend .dg_button-link;
-  }
+    input[type="reset"] {
+        @extend .dg_button-link;
+    }
 }
 
-.SEAFWrapper > .seText > div > span {
-  display: block;
-  margin-bottom: $default-margin;
+.SEAFWrapper>.seText>div>span {
+    display: block;
+    margin-bottom: $default-margin;
 }

@@ -1,0 +1,117 @@
+.SECalendarKeyword {
+  .SEApplicationSubmit {
+    @extend .dg_button;
+  }
+  .SEApplicationText {
+    margin-bottom: $default-margin;
+  }
+}
+
+.SECalendarSmallCal {
+  overflow-x: auto;
+
+  table {
+    border: $border-width-small solid $gray-light;
+    color: $gray-dark;
+    font-family: $default-heading-font;
+    font-size: $smallest-heading-font-size;
+    margin-bottom: $default-margin;
+    text-align: center;
+    width: 100%;
+    th {
+      color: $black;
+      font-family: $default-heading-font;
+      font-size: $small-heading-font-size;
+      font-weight: $font-medium;
+    }
+    thead {
+      th {
+        background-color: $white;
+        border-bottom: $border-width-large solid $blue;
+        border-left: none;
+        padding: $padding-small;
+
+        &#SECalendarSmallCalMonth {
+          a {
+            text-decoration: none;
+          }
+        }
+
+        &#SECalendarSmallCalPrevious {
+          a {
+            font-size: 0;
+            text-decoration: none;
+            &:before {
+              position: relative;
+              font-size: $breadcrumb-icon-size;
+              font-weight: $font-bold;
+              content: $icon-caret-left;
+              font-family: $font-awesome-pro;
+              vertical-align: baseline;
+              left: $padding-small;
+            }
+          }
+        }
+
+        &#SECalendarSmallCalNext {
+          a {
+            font-size: 0;
+            text-decoration: none;
+            &:after {
+              position: relative;
+              font-size: $breadcrumb-icon-size;
+              font-weight: $font-bold;
+              content: $icon-caret-right;
+              font-family: $font-awesome-pro;
+              vertical-align: baseline;
+              right: $padding-small;
+            }
+          }
+        }
+      }
+
+      td {
+        display: none;
+      }
+    }
+
+    tbody {
+      .controls {
+        display: none;
+      }
+      .SECalendarDay {
+        border-bottom: $border-width-small solid $gray-light;
+
+        &:hover {
+          background-color: $gold;
+        }
+
+        a {
+          display: block;
+          text-decoration: none;
+          padding: $padding-small;
+        }
+        &.currentDay {
+          font-weight: $font-bold;
+          &:hover {
+            background-color: $gold;
+          }
+        }
+
+        &.SECalendarSelectedDay {
+          background-color: $gold;
+        }
+
+        &.pastDayOtherMonthWeekend,
+        &.pastDayOtherMonth,
+        &.futureDayOtherMonthWeekend,
+        &.futureDayOtherMonth {
+          background-color: $gray-light;
+          &:hover {
+            background-color: $gold;
+          }
+        }
+      }
+    }
+  }
+}
