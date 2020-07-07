@@ -102,24 +102,9 @@
           background-color: $gold;
         }
 
-        &.pastDayOtherMonthWeekend {
-          background-color: $gray-light;
-          &:hover {
-            background-color: $gold;
-          }
-        }
-        &.pastDayOtherMonth {
-          background-color: $gray-light;
-          &:hover {
-            background-color: $gold;
-          }
-        }
-        &.futureDayOtherMonthWeekend {
-          background-color: $gray-light;
-          &:hover {
-            background-color: $gold;
-          }
-        }
+        &.pastDayOtherMonthWeekend,
+        &.pastDayOtherMonth,
+        &.futureDayOtherMonthWeekend,
         &.futureDayOtherMonth {
           background-color: $gray-light;
           &:hover {
