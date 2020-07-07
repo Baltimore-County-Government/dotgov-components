@@ -3,7 +3,16 @@ import PropTypes from "prop-types";
 import classnames from "classnames";
 
 const SocialMediaButton = (props) => {
-  const { title, className, href, id, content, icon, onClick, target } = props;
+  const {
+    title,
+    className,
+    href,
+    id,
+    content,
+    icon,
+    onClickEvent,
+    target,
+  } = props;
   const cssClassNames = classnames("dg_Button", className);
   const actionClass = classnames("action", icon);
 
@@ -17,7 +26,7 @@ const SocialMediaButton = (props) => {
             title={title}
             target={target}
             href={href}
-            onClick={onClick}
+            onClick={onClickEvent}
           >
             {content}
           </a>
