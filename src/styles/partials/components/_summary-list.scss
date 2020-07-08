@@ -45,6 +45,7 @@
   a {
     text-decoration: none;
     background-color: transparent;
+    word-break: break-all;
 
     &:hover {
       text-decoration: underline;
