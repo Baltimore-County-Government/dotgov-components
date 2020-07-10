@@ -1,0 +1,13 @@
+.dg_date-container {
+  position: relative;
+  min-width: 40%;
+  margin-right: $padding-large;
+
+  .dg_date-btn {
+    display: block;
+    position: absolute;
+    right: $base-spacing-unit * 2;
+    top: $padding-small;
+    cursor: pointer;
+  }
+}
