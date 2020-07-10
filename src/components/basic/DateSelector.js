@@ -4,7 +4,12 @@ import FieldSet from "./form/FieldSet";
 import "react-datepicker/dist/react-datepicker.css";
 
 const DateSelector = (props) => {
-  const { date = new Date(), onChange = () => {}, ...otherProps } = props;
+  const {
+    date = new Date(),
+    onChange = () => {},
+    title,
+    ...otherProps
+  } = props;
 
   const [state, setState] = useState({
     date,
@@ -17,7 +22,7 @@ const DateSelector = (props) => {
 
   return (
     <div className="dg_date-container">
-      <FieldSet title="Start Date">
+      <FieldSet title={title}>
         <DatePicker
           selected={state.date}
           onChange={handleChange}

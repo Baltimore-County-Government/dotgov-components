@@ -2,6 +2,6 @@
 
 ```jsx
 <div style={{ padding: "10px" }}>
-  <DateSelector />
+  <DateSelector title="Start Date" />
 </div>
 ```
