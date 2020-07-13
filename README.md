@@ -23,9 +23,17 @@ _Note_: When adding a markdown file for a component you will need to restart.
 
 Runs tests for the project. If you wish to watch the tests, use the watch command.
 
+### `npm login` and `npm publish`
+
+Logs into npm registry.npmjs.org. This is required to publish. Once logged in npm publish will push out the latest version of the application.
+
+### `npm run-script deploy locally`
+
+This will push the latest build to https://baltimorecounty.github.io/dotgov-components/
+
 ## Usage
 
-```npm i @baltimorecounty/dotgov-components```
+`npm i @baltimorecounty/dotgov-components`
 
 ### Including Styles
 
@@ -35,13 +43,16 @@ Runs tests for the project. If you wish to watch the tests, use the watch comman
 import "@baltimorecounty/dotgov-components/lib/styles/dotgov.min.css";
 ```
 
-*Note*: This import should be included your primary js file. Example `App.js` in a create react app.
+_Note_: This import should be included your primary js file. Example `App.js` in a create react app.
 
 ### Including Components
 
 Available components can be found in our [docs](https://baltimorecounty.github.io/dotgov-components/).
 
 ```js
-import { FormField, TextInput, TextArea } from "@baltimorecounty/dotgov-components";
+import {
+  FormField,
+  TextInput,
+  TextArea,
+} from "@baltimorecounty/dotgov-components";
 ```
-

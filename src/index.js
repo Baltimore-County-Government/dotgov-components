@@ -57,3 +57,4 @@ export { default as IconHeading } from "./components/basic/IconHeading";
 export { default as IconLink } from "./components/basic/IconLink";
 export { default as DateNewsCard } from "./components/basic/DateNewsCard";
 export { default as ProgressTabs } from "./components/basic/ProgressTabs";
+export { default as DateSelector } from "./components/basic/DateSelector";
