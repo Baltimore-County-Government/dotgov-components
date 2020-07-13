@@ -37,6 +37,9 @@ $icon-arrow-width: 32px;
     position: relative;
     padding-right: $icon-arrow-width; /* leave space for the absolutely position icon */
     &.active {
+      &:hover:after {
+        color: $pale-blue;
+      }
       a {
         color: $pale-blue;
       }
