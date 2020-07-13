@@ -5,9 +5,9 @@
   .dg_fieldset {
     .dg_date-btn {
       display: block;
-      position: absolute;
-      right: $base-spacing-unit * 2;
-      top: $padding-small;
+      position: relative;
+      right: -240px;
+      top: -35px;
       cursor: pointer;
     }
   }
