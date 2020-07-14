@@ -9,15 +9,8 @@ import FieldSet from "./form/FieldSet";
     label="Start Date"
     dateId="StartDate"
     formId="formStart"
-    hint="Select start date"
   />
-  <DateSelector
-    name="end"
-    label="End Date"
-    dateId="EndDate"
-    formId="formEnd"
-    hint="Select end date"
-  />
+  <DateSelector name="end" label="End Date" dateId="EndDate" formId="formEnd" />
 </FieldSet>;
 ```
 
