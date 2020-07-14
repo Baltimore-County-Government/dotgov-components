@@ -1,17 +1,27 @@
 import React, { useEffect, useState } from "react";
 import DatePicker from "react-datepicker";
-import FieldSet from "./form/FieldSet";
+import FormField from "./form/FormField";
 
 const DateSelector = (props) => {
   const {
     date = new Date(),
-    onChange = () => {},
-    title,
+    datePickerIsOpen,
+    onChange,
+    selected,
+    dateId,
+    formId,
+    name,
+    hint,
+    error,
+    label,
+    minDate,
+    maxDate,
     ...otherProps
   } = props;
 
   const [state, setState] = useState({
     date,
+    datePickerIsOpen,
   });
 
   const handleChange = (date) => {
@@ -19,18 +29,29 @@ const DateSelector = (props) => {
     onChange({ date });
   };
 
+  const openDatePicker = () => {
+    setState({
+      datePickerIsOpen: !state.datePickerIsOpen,
+    });
+  };
+
   return (
     <div className="dg_date-container">
-      <FieldSet title={title}>
+      <FormField id={formId} hint={hint} label={label} error={error}>
         <DatePicker
           selected={state.date}
-          onChange={handleChange}
+          onChange={onChange ? onChange : handleChange}
+          name={name}
+          id={dateId}
+          minDate={minDate}
+          maxDate={maxDate}
+          open={state.datePickerIsOpen}
           {...otherProps}
         />
-        <button className="dg_date-btn" type="submit">
-          <i class="fa fa-calendar" aria-hidden="true"></i>
-        </button>
-      </FieldSet>
+      </FormField>
+      <button className="dg_date-btn" type="submit" onClick={openDatePicker}>
+        <i class="fa fa-calendar" aria-hidden="true"></i>
+      </button>
     </div>
   );
 };
