@@ -4,8 +4,20 @@
 import FieldSet from "./form/FieldSet";
 
 <FieldSet title="Date Range Filter">
-  <DateSelector label="Start Date" dateId="StartDate" formId="formStart" />
-  <DateSelector label="End Date" dateId="EndDate" formId="formEnd" />
+  <DateSelector
+    name="start"
+    label="Start Date"
+    dateId="StartDate"
+    formId="formStart"
+    hint="Select start date"
+  />
+  <DateSelector
+    name="end"
+    label="End Date"
+    dateId="EndDate"
+    formId="formEnd"
+    hint="Select end date"
+  />
 </FieldSet>;
 ```
 
