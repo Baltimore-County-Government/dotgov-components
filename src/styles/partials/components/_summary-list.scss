@@ -25,6 +25,9 @@
     align-items: flex-start;
     margin-bottom: $default-margin;
 
+    div {
+      width: 100%; /*This addresses a flex bug in IE that requires width to be specified*/
+    }
     p {
       color: $gray;
     }
