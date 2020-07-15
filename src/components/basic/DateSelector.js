@@ -4,12 +4,11 @@ import FormField from "./form/FormField";
 
 const DateSelector = (props) => {
   const {
-    date = new Date(),
     datePickerIsOpen,
     onChange,
     selected,
     dateId,
-    formId,
+    formId = "Daterange",
     name,
     hint,
     error,
@@ -20,14 +19,8 @@ const DateSelector = (props) => {
   } = props;
 
   const [state, setState] = useState({
-    date,
     datePickerIsOpen,
   });
-
-  const handleChange = (date) => {
-    setState({ date });
-    onChange({ date });
-  };
 
   const openDatePicker = () => {
     setState({
@@ -39,8 +32,8 @@ const DateSelector = (props) => {
     <div className="dg_date-container">
       <FormField id={formId} hint={hint} label={label} error={error}>
         <DatePicker
-          selected={state.date}
-          onChange={onChange ? onChange : handleChange}
+          selected={selected}
+          onChange={onChange}
           name={name}
           id={dateId}
           minDate={minDate}
