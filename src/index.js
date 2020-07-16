@@ -33,6 +33,7 @@ export { default as Breadcrumbs } from "./components/site/Breadcrumbs";
 export { default as SideBarSection } from "./components/site/SideBarSection";
 export { default as BreadCrumbLinkItem } from "./components/site/BreadCrumbLinkItem";
 export { default as ExploreLink } from "./components/site/ExploreLink";
+export { default as SocialMediaButton } from "./components/site/SocialMediaButton";
 
 /** Table */
 export { default as Table } from "./components/basic/table/Table";
