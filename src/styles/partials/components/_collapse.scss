@@ -11,6 +11,11 @@
     font-weight: $font-normal;
     font-family: $default-heading-font;
     font-size: $smallest-heading-font-size;
+    * {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
 
   .dg_accordion-btn {
