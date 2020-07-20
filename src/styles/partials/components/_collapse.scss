@@ -9,14 +9,8 @@
   .dg_accordion-item-body {
     background: $gray-lightest;
     font-weight: $font-normal;
-    * {
-      font-family: $default-heading-font;
-      font-size: $smallest-heading-font-size;
-
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
+    font-family: $default-heading-font;
+    font-size: $smallest-heading-font-size;
   }
 
   .dg_accordion-btn {
