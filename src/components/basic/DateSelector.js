@@ -20,11 +20,20 @@ const DateSelector = (props) => {
 
   const [state, setState] = useState({
     datePickerIsOpen,
+    datePickerIsClosed,
   });
+
+  const datePickerIsClosed = true;
 
   const openDatePicker = () => {
     setState({
       datePickerIsOpen: !state.datePickerIsOpen,
+    });
+  };
+
+  const handlesClose = () => {
+    setState({
+      datePickerIsClosed: !state.datePickerIsClosed,
     });
   };
 
@@ -38,6 +47,7 @@ const DateSelector = (props) => {
           id={dateId}
           minDate={minDate}
           maxDate={maxDate}
+          onClickOutside={handlesClose}
           open={state.datePickerIsOpen}
           {...otherProps}
         />

@@ -3,11 +3,21 @@
   min-width: 40%;
   margin-right: $padding-large;
   .dg_form-field {
+    .dg_date-btn {
+      display: block;
+      position: relative;
+      right: -240px;
+      top: -55px;
+      cursor: pointer;
+    }
   }
+}
+
+@media screen and (max-width: $small-breakpoint) {
   .dg_date-btn {
     display: block;
     position: relative;
-    right: -240px;
+    right: -200px;
     top: -55px;
     cursor: pointer;
   }
