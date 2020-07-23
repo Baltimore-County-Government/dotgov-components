@@ -28,6 +28,12 @@ $pale-blue-darkest: mix(black, $pale-blue, $default-lightest-ratio);
 /* Does not contain any shades */
 $vibrant-blue: #1076bc;
 
+/*Brand colors i.e. Twitter and Facebook*/
+$twitter-blue: #1b95e0;
+$twitter-darkblue: #0c7abf;
+$facebook-blue: #1877f2;
+$facebook-darkblue: #577fbc;
+
 $gray-lightest-ratio: 95%;
 $gray-light-ratio: 60%;
 
@@ -38,7 +44,7 @@ $gray-dark: mix(black, $gray, $gray-light-ratio);
 $gray-darkest: mix(black, $gray, $gray-lightest-ratio);
 $black: black;
 $white: white;
-$info-color: #E8F4FD;
+$info-color: #e8f4fd;
 $green: #99d679;
 $success-color: rgb(237, 247, 237);
 $warning-color: rgb(255, 244, 229);
@@ -76,5 +82,5 @@ $colors: (
   "gray--dark": $gray-dark,
   "gray--darkest": $gray-darkest,
   "black": $black,
-  "white": $white
+  "white": $white,
 );

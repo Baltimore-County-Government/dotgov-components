@@ -1,0 +1,176 @@
+.SECalendarViewletDetails {
+  ul {
+    list-style-type: none;
+    @extend .dg_card;
+    text-align: left;
+
+    li {
+      .eventcalevent {
+        @extend h2;
+      }
+
+      .eventcaldate,
+      .eventcaldate:before,
+      .eventcaltime:before {
+        margin-right: $margin-small;
+      }
+
+      .eventcaldate:before {
+        @include icon-content($icon-calendar);
+      }
+
+      .eventcaltime:before {
+        @include icon-content($icon-clock);
+      }
+    }
+  }
+}
+
+.dg_actions-list {
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      margin-right: $default-margin;
+      margin-bottom: $default-margin;
+
+      a {
+        @extend .dg_button;
+        display: inline-block;
+
+        &:before {
+          margin-right: $margin-smallest;
+        }
+      }
+
+      &.action a {
+        background-image: none;
+      }
+
+      &.download a {
+        &:before {
+          @include icon-content($icon-download);
+        }
+      }
+
+      &.reminder a {
+        &:before {
+          @include icon-content($icon-reminder);
+        }
+      }
+      &.share a {
+        &:before {
+          @include icon-content($icon-share);
+        }
+      }
+
+      &.email a {
+        &:before {
+          @include icon-content($icon-email);
+        }
+      }
+
+      &.register a {
+        &:before {
+          @include icon-content($icon-register);
+        }
+      }
+      &.twitter a {
+        &:before {
+          font-family: $font-awesome-brands;
+          font-weight: $font-boldest;
+          content: $icon-twitter;
+        }
+      }
+      &.facebook a {
+        &:before {
+          font-family: $font-awesome-brands;
+          font-weight: $font-boldest;
+          content: $icon-facebook;
+        }
+      }
+    }
+  }
+}
+
+.SECalendarFilter {
+  .rssLink {
+    display: none;
+  }
+}
+
+.SECalendarListEvents {
+  table {
+    width: 100%;
+    display: flex;
+
+    tbody {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      tr {
+        .SECalendarEventLocation {
+          display: flex;
+        }
+      }
+    }
+  }
+
+  /*Table List*/
+  .SECalendarEventDate {
+    @extend h2;
+    display: block;
+  }
+
+  .SECalendarEventName {
+    @extend h3;
+    margin-bottom: $margin-small;
+  }
+
+  .SECalendarNoEvent {
+    margin-bottom: $default-margin;
+  }
+
+  tr {
+    display: flex;
+  }
+
+  tr.odd,
+  tr.even {
+    @extend .dg_card;
+    @extend .text-left;
+  }
+
+  .SECalendarEventTime:before {
+    @include icon-content($icon-clock);
+    margin-right: $margin-small;
+  }
+}
+
+.dg_filter-links {
+  list-style-type: none;
+  font-size: $base-font-size;
+  margin: auto 0;
+  padding: 0;
+
+  li {
+    margin: $margin-smallest auto;
+  }
+}
+
+.eventcalitem {
+  @extend .mb--small;
+}
+
+@media screen and (max-width: $small-breakpoint) {
+  .dg_actions-list {
+    li,
+    a {
+      display: block !important;
+    }
+  }
+}

@@ -48,6 +48,24 @@
     background: $gray-light;
     border-color: $gray-light;
   }
+
+  &.dg_twitter-button {
+    background: $twitter-blue;
+    border-color: $twitter-blue;
+    &:hover {
+      background-color: $twitter-darkblue;
+      border-color: $twitter-darkblue;
+    }
+  }
+
+  &.dg_facebook-button {
+    background: $facebook-blue;
+    border-color: $facebook-blue;
+    &:hover {
+      background: $facebook-darkblue;
+      border-color: $facebook-darkblue;
+    }
+  }
 }
 
 .dg_button-secondary {

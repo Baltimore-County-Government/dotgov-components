@@ -25,6 +25,9 @@
     align-items: flex-start;
     margin-bottom: $default-margin;
 
+    div {
+      width: 100%; /*This addresses a flex bug in IE that requires width to be specified*/
+    }
     p {
       color: $gray;
     }
@@ -38,11 +41,14 @@
     text-align: center;
     font-size: $h1-font-size;
     margin-right: $default-padding;
+    width: 45px;
+    max-width: 45px;
   }
 
   a {
     text-decoration: none;
     background-color: transparent;
+    word-break: break-all;
 
     &:hover {
       text-decoration: underline;
