@@ -4,15 +4,16 @@
   margin-right: $padding-large;
   .dg_form-field {
     .react-datepicker-wrapper {
-      .react-datepicker__input-container {
-        .dg_date-btn {
-          display: inline-block;
-          position: absolute;
-          left: 85%;
-          top: 20%;
-          cursor: pointer;
-        }
-      }
+      width: 100%;
     }
+  }
+  .dg_date-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0%;
+    top: 45%;
+    width: 5%;
+    cursor: pointer;
+    margin: 10px;
   }
 }
