@@ -5,13 +5,7 @@ const Search = props => (
     <label htmlFor="main-search" className="visuallyhidden">
       Search:
     </label>
-    <input
-      className="dg_search-input"
-      id="main-search"
-      type="text"
-      placeholder="Search for services and more..."
-      autoComplete="off"
-    ></input>
+	<div class="gcse-searchbox-only"></div>
     <button className="dg_search-btn" type="submit">
       <i className="fas fa-search" aria-hidden="true"></i>
     </button>
