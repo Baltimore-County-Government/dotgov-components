@@ -11,9 +11,15 @@
     display: inline-block;
     position: absolute;
     right: 0%;
-    top: 45%;
+    top: 43%;
     width: 5%;
     cursor: pointer;
     margin: 10px;
+  }
+}
+
+.dg_accordion-item-body {
+  i {
+    font-family: $font-awesome-pro !important;
   }
 }
