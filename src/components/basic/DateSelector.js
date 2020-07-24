@@ -53,7 +53,7 @@ const DateSelector = (props) => {
         />
       </FormField>
       <button className="dg_date-btn" type="submit" onClick={openDatePicker}>
-        <i class="fa fa-calendar" aria-hidden="true"></i>
+        <i className="fa fa-calendar" aria-hidden="true"></i>
       </button>
     </div>
   );
