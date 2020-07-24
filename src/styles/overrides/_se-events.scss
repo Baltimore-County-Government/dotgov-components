@@ -105,6 +105,19 @@
 .SECalendarListEvents {
   table {
     width: 100%;
+    display: flex;
+
+    tbody {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      tr {
+        .SECalendarEventLocation {
+          display: flex;
+        }
+      }
+    }
   }
 
   /*Table List*/
