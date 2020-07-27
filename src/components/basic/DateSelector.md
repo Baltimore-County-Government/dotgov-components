@@ -2,6 +2,19 @@
 
 ```jsx
 import Collapse from "./Collapse";
+import React, { useEffect, useState } from "react";
+import { format } from "date-fns";
+
+let [selectedStartValue, setStart] = useState();
+let [selectedEndValue, setEnd] = useState();
+
+const handlesStartChange = (date) => {
+  setStart(date);
+};
+
+const handlesEndChange = (date) => {
+  setEnd(date);
+};
 
 <Collapse id="sample-collapse" header="Default Example">
   <DateSelector
@@ -9,8 +22,19 @@ import Collapse from "./Collapse";
     label="Start Date"
     dateId="StartDate"
     formId="formStart"
+    maxDate={new Date()}
+    selected={selectedStartValue}
+    onChange={handlesStartChange}
   />
-  <DateSelector name="end" label="End Date" dateId="EndDate" formId="formEnd" />
+  <DateSelector
+    name="end"
+    label="End Date"
+    dateId="EndDate"
+    formId="formEnd"
+    maxDate={new Date()}
+    selected={selectedEndValue}
+    onChange={handlesEndChange}
+  />
 </Collapse>;
 ```
 
