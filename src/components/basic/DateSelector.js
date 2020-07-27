@@ -4,7 +4,6 @@ import FormField from "./form/FormField";
 
 const DateSelector = (props) => {
   const {
-    datePickerIsOpen,
     onChange,
     selected,
     dateId,
@@ -13,8 +12,12 @@ const DateSelector = (props) => {
     hint,
     error,
     label,
+    onClickOutside = () => {},
+    datePickerIsOpen,
     minDate,
     maxDate,
+    open = () => {},
+    btnOnClick,
     ...otherProps
   } = props;
 
@@ -29,12 +32,14 @@ const DateSelector = (props) => {
     setState({
       datePickerIsOpen: !state.datePickerIsOpen,
     });
+    open(!state.datePickerIsOpen);
   };
 
-  const handlesClose = () => {
+  const handleClose = () => {
     setState({
       datePickerIsClosed: !state.datePickerIsClosed,
     });
+    onClickOutside(!state.datePickerIsClosed);
   };
 
   return (
@@ -47,8 +52,9 @@ const DateSelector = (props) => {
           id={dateId}
           minDate={minDate}
           maxDate={maxDate}
-          onClickOutside={handlesClose}
+          onClickOutside={handleClose}
           open={state.datePickerIsOpen}
+          onSelect={handleClose}
           {...otherProps}
         />
       </FormField>
