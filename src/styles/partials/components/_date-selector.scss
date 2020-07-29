@@ -2,11 +2,24 @@
   position: relative;
   min-width: 40%;
   margin-right: $padding-large;
+  .dg_form-field {
+    .react-datepicker-wrapper {
+      width: 100%;
+    }
+  }
   .dg_date-btn {
-    display: block;
-    position: relative;
-    right: -240px;
-    top: -55px;
+    display: inline-block;
+    position: absolute;
+    right: 0%;
+    top: 43%;
+    width: 5%;
     cursor: pointer;
+    margin: 10px;
+  }
+}
+
+.dg_accordion-item-body {
+  i {
+    font-family: $font-awesome-pro !important;
   }
 }

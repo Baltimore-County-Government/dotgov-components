@@ -4,7 +4,6 @@ import FormField from "./form/FormField";
 
 const DateSelector = (props) => {
   const {
-    datePickerIsOpen,
     onChange,
     selected,
     dateId,
@@ -13,19 +12,34 @@ const DateSelector = (props) => {
     hint,
     error,
     label,
+    onClickOutside = () => {},
+    datePickerIsOpen,
     minDate,
     maxDate,
+    open = () => {},
+    btnOnClick,
     ...otherProps
   } = props;
 
   const [state, setState] = useState({
     datePickerIsOpen,
+    datePickerIsClosed,
   });
+
+  const datePickerIsClosed = true;
 
   const openDatePicker = () => {
     setState({
       datePickerIsOpen: !state.datePickerIsOpen,
     });
+    open(!state.datePickerIsOpen);
+  };
+
+  const handleClose = () => {
+    setState({
+      datePickerIsClosed: !state.datePickerIsClosed,
+    });
+    onClickOutside(!state.datePickerIsClosed);
   };
 
   return (
@@ -38,12 +52,14 @@ const DateSelector = (props) => {
           id={dateId}
           minDate={minDate}
           maxDate={maxDate}
+          onClickOutside={handleClose}
           open={state.datePickerIsOpen}
+          onSelect={handleClose}
           {...otherProps}
         />
       </FormField>
       <button className="dg_date-btn" type="submit" onClick={openDatePicker}>
-        <i class="fa fa-calendar" aria-hidden="true"></i>
+        <i className="fa fa-calendar" aria-hidden="true"></i>
       </button>
     </div>
   );
