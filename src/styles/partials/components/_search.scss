@@ -17,5 +17,9 @@
 }
 
 .dg_search-input {
-  padding: $padding-small;
+    padding: $padding-small;
+    border: 2px solid #000;
+    font-size: 20px;
+    font-family: "Montserrat",sans-serif;
+    width: 100%;
 }
