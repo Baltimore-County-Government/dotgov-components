@@ -104,13 +104,13 @@
 }
 
 @media screen and (max-width: $medium-breakpoint) {
-  .dg_accordion__collapsible.collapsed .dg_accordion-btn {
+  .dg_collapse.dg_accordion__collapsible.collapsed .dg_accordion-btn {
     &:after {
       @include icon-content($icon-plus);
     }
   }
 
-  .dg_accordion__collapsible {
+  .dg_collapse.dg_accordion__collapsible {
     .dg_accordion-btn {
       &:after {
         @include icon-content($icon-minus);
