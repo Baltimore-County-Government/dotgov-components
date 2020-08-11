@@ -2,21 +2,10 @@
 
 ```jsx
 import Section from "../basic/containers/Section";
-import BreadCrumbLinkItem from "./BreadCrumbLinkItem";
+import ScrollToTop from "./ScrollToTop";
 
 <Section>
-  <Breadcrumbs>
-    <BreadCrumbLinkItem text="Departments" link="/departments/health" />
-    <BreadCrumbLinkItem
-      text="Department of Health"
-      link="/departments/health"
-    />
-    <BreadCrumbLinkItem
-      className="breadcrumb-last"
-      text="Adoptable Pets"
-      link="/departments/health"
-    />
-  </Breadcrumbs>
+  <ScrollToTop></ScrollToTop>
 </Section>;
 ```
 
@@ -24,20 +13,8 @@ Html Snippet:
 
 ```html
 <div class="dg_section">
-  <div class="dg_breadcrumbs">
-    <a
-      class="breadcrumb breadcrumb-first"
-      href="https://beta.baltimorecountymd.gov/prototyping/"
-      >Home</a
-    >
-    <a class="breadcrumb" href="https://beta.baltimorecountymd.gov/prototyping/"
-      >prototyping</a
-    >
-    <a
-      class="breadcrumb breadcrumb-last"
-      href="https://beta.baltimorecountymd.gov/prototyping/index.html"
-      >Prototyping Homepage</a
-    >
-  </div>
+  <a href="#" id="back-to-top" title="Back to top" class="show">
+        <i class="fa fa-chevron-circle-up fa-2x" aria-hidden="true"></i>
+    </a>
 </div>
 ```
