@@ -118,3 +118,14 @@
     }
   }
 }
+
+@media screen and (min-width: 768px) {
+  .col-md-9 {
+    flex: 0 0 70%;
+    max-width: 70%;
+  }
+  .col-md-3 {
+    flex: 0 0 30%;
+    max-width: 30%;
+  }
+}
