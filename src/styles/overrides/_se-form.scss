@@ -102,7 +102,7 @@
   margin-bottom: $default-margin;
 }
 
-@media screen and (max-width: $medium-breakpoint) {
+@media screen and (max-width: $large-breakpoint) {
   .buttonSet {
     padding-bottom: $padding-largest;
   }

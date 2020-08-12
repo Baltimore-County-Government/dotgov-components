@@ -1,0 +1,9 @@
+.dg_department_group {
+  .dg_card:nth-of-type(2n + 1) {
+    background-color: $gray-lightest;
+  }
+
+  .dg_card:hover {
+    background-color: $gold-lightest;
+  }
+}
