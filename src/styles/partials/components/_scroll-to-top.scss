@@ -1,0 +1,9 @@
+#dg_back-to-top {
+  bottom: 10px;
+  opacity: 0;
+  padding: 12px;
+  position: fixed;
+  right: 10px;
+  transition: opacity 0.3s ease-out;
+  z-index: 8000;
+}
