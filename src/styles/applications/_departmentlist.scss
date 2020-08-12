@@ -1,5 +1,5 @@
 .dg_department_group {
-  .dg_department_card:nth-of-type(2n + 1) {
+  .dg_card:nth-of-type(2n + 1) {
     background-color: $gray-lightest;
   }
 
