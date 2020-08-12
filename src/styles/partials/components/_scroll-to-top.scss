@@ -6,4 +6,8 @@
   right: 10px;
   transition: opacity 0.3s ease-out;
   z-index: 8000;
+
+  &.show {
+    opacity: 1;
+  }
 }
