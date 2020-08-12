@@ -27,6 +27,9 @@
 @import "./styles/partials/base/state";
 @import "./styles/partials/base/utilities";
 
+/** Applications */
+@import "./styles/applications/departmentlist";
+
 /** partials */
 
 /** components */
@@ -38,10 +41,8 @@
 @import "./styles/partials/components/site-nav-button";
 @import "./styles/partials/components/search";
 @import "./styles/partials/components/site-header";
-
 @import "./styles/partials/components/page-header";
 @import "./styles/partials/components/page-header-dark";
-
 @import "./styles/partials/components/accordion";
 @import "./styles/partials/components/accordion-dark";
 @import "./styles/partials/components/collapse";
