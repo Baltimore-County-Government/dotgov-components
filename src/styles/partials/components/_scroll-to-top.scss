@@ -1,11 +1,11 @@
 #dg_back-to-top {
   bottom: 10px;
   opacity: 0;
-  padding: 12px;
+  padding: $padding-small;
   position: fixed;
   right: 10px;
-  transition: opacity 0.3s ease-out;
-  z-index: 8000;
+  transition: opacity 0.3s $default-timing-function;
+  z-index: 999;
 
   &.show {
     opacity: 1;
