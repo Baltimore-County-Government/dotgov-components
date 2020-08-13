@@ -1,4 +1,5 @@
 ### Scroll To Top Button
+This component can be seen in the bottom right corner of the window. As you scroll down the page, the icon will appear and will take you to the top of the page, when clicked.
 
 ```jsx
 import Section from "../basic/containers/Section";
