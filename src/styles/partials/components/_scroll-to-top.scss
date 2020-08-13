@@ -1,0 +1,13 @@
+#dg_back-to-top {
+  bottom: 10px;
+  opacity: 0;
+  padding: $padding-small;
+  position: fixed;
+  right: 10px;
+  transition: opacity 0.3s $default-timing-function;
+  z-index: 999;
+
+  &.show {
+    opacity: 1;
+  }
+}
