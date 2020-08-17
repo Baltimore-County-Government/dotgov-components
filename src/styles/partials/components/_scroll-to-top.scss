@@ -11,6 +11,21 @@
     --fa-primary-color: #ffffff;
     --fa-secondary-color: #002280;
     --fa-secondary-opacity: 1;
+
+    &:hover,
+    &.hovered {
+      --fa-secondary-color: $vibrant-blue;
+    }
+
+    &:active,
+    &.active {
+      --fa-secondary-color: $pale-blue;
+    }
+
+    &:disabled,
+    &.disabled {
+      --fa-secondary-color: $gray-light;
+    }
   }
 
   &.show {
