@@ -17,7 +17,7 @@ Html Snippet:
 <div class="dg_section">
   <a href="#" id="dg_back-to-top" title="Back to top">
     <i
-      class="dg_scroll-top-icon fad fa-chevron-circle-up fa-2x"
+      class="dg_scroll-top-icon fas fa-fw fa-chevron-circle-up fa-2x"
       aria-hidden="true"
     ></i>
   </a>

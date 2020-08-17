@@ -8,24 +8,10 @@
   z-index: 999;
 
   .dg_scroll-top-icon {
-    --fa-primary-color: #ffffff;
-    --fa-secondary-color: #002280;
-    --fa-secondary-opacity: 1;
-
-    &:hover,
-    &.hovered {
-      --fa-secondary-color: $vibrant-blue;
-    }
-
-    &:active,
-    &.active {
-      --fa-secondary-color: $pale-blue;
-    }
-
-    &:disabled,
-    &.disabled {
-      --fa-secondary-color: $gray-light;
-    }
+    background-color: $white;
+    border-radius: 50%;
+    height: 1.25em;
+    padding-top: 15%;
   }
 
   &.show {
