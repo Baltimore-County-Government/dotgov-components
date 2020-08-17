@@ -7,6 +7,12 @@
   transition: opacity 0.3s $default-timing-function;
   z-index: 999;
 
+  .dg_scroll-top-icon {
+    --fa-primary-color: #ffffff;
+    --fa-secondary-color: #002280;
+    --fa-secondary-opacity: 1;
+  }
+
   &.show {
     opacity: 1;
   }
