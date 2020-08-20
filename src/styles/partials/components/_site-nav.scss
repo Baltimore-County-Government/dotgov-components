@@ -50,7 +50,6 @@ $mobile-menu-width: 245px;
     top: 0;
     bottom: 0;
     @include default-transition(transform);
-    z-index: $max-z-index-minus-1;
 
     .bc_site-nav__list {
       list-style-type: none;
