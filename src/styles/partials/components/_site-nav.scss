@@ -49,7 +49,8 @@ $mobile-menu-width: 245px;
     overflow-y: auto;
     top: 0;
     bottom: 0;
-    @include default-transition(transform);
+    @include default-transition(all);
+    z-index: $max-z-index-minus-1;
 
     .bc_site-nav__list {
       list-style-type: none;
