@@ -50,6 +50,10 @@ $mobile-menu-width: 245px;
     top: 0;
     bottom: 0;
     z-index: $max-z-index-minus-1;
+    -webkit-transition: all $default-duration $default-timing-function;
+    -moz-transition: all $default-duration $default-timing-function;
+    -o-transition: all $default-duration $default-timing-function;
+    transition: all $default-duration $default-timing-function;
 
     .bc_site-nav__list {
       list-style-type: none;
