@@ -63,7 +63,6 @@
       font-size: 0;
       font-weight: $font-medium;
       position: relative;
-      visibility: hidden;
 
       &:after {
         @include icon-content($icon-asterisk);
