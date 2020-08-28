@@ -67,6 +67,10 @@
     display: block;
   }
 
+  &.gold:after {
+    background: rgba($gold, 0.9);
+  }
+
   &.blue:after {
     background: rgba($pale-blue, 0.9);
   }
