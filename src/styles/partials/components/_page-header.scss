@@ -71,6 +71,10 @@
     background: rgba($gold, 0.9);
   }
 
+  &.gray:after {
+    background: rgba($gray, 0.9);
+  }
+
   &.blue:after {
     background: rgba($pale-blue, 0.9);
   }
