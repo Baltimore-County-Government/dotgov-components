@@ -1,0 +1,24 @@
+.dg_page-header.themed.gold {
+  .dg_breadcrumbs {
+    color: $black;
+    .breadcrumb {
+      &:after {
+        color: $gray-dark;
+      }
+
+      &:last-child {
+        color: $black;
+
+        &:hover {
+          color: $vibrant-blue;
+        }
+      }
+
+      &.breadcrumb-first {
+        &:before {
+          /*any update to color goes here*/
+        }
+      }
+    }
+  }
+}
