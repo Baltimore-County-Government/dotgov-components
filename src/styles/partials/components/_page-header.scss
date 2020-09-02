@@ -72,7 +72,7 @@
   }
 
   &.purple:after {
-    background: rgba(#3a1057, 0.9);
+    background: rgba($purple, 0.9);
   }
 
   &.gray:after {
@@ -81,6 +81,10 @@
 
   &.blue:after {
     background: rgba($pale-blue, 0.9);
+  }
+
+  &.brand-blue:after {
+    background: rgba(#002280, 0.9);
   }
 }
 
