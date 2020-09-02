@@ -21,3 +21,15 @@
     color: $black;
   }
 }
+
+.dg_page-header.themed.purple {
+  color: $white;
+
+  h1 {
+    color: $white;
+  }
+
+  .dg_page-header__deck {
+    color: $white;
+  }
+}

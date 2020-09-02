@@ -42,3 +42,29 @@
     }
   }
 }
+
+.dg_page-header.themed.purple {
+  .dg_breadcrumbs {
+    color: $white;
+
+    a.breadcrumb {
+      color: $white;
+
+      &:hover {
+        color: $vibrant-blue;
+      }
+
+      &:after {
+        color: $white;
+      }
+
+      &:last-child {
+        color: $gold;
+
+        &:hover {
+          color: $vibrant-blue;
+        }
+      }
+    }
+  }
+}
