@@ -67,8 +67,24 @@
     display: block;
   }
 
+  &.gold:after {
+    background: rgba($gold, 0.9);
+  }
+
+  &.purple:after {
+    background: rgba($purple, 0.9);
+  }
+
+  &.gray:after {
+    background: rgba($gray, 0.9);
+  }
+
   &.blue:after {
     background: rgba($pale-blue, 0.9);
+  }
+
+  &.brand-blue:after {
+    background: rgba($blue, 0.9);
   }
 }
 
