@@ -2,6 +2,8 @@
 
 #### Default
 
+The button component can be used by adding the desired class to an a tag (the most common use on the site) or a button tag (a more niche case usage of the button).
+
 ```jsx
 <div
   style={{ display: "flex", justifyContent: "space-between", padding: "10px" }}
@@ -31,7 +33,7 @@ import Section from "./containers/Section";
     style={{
       display: "flex",
       justifyContent: "space-between",
-      padding: "10px"
+      padding: "10px",
     }}
   >
     <Button text="Default" />
@@ -162,7 +164,7 @@ import Section from "./containers/Section";
     style={{
       display: "flex",
       justifyContent: "space-between",
-      padding: "10px"
+      padding: "10px",
     }}
   >
     <Button text="Default" className="dg_button-link" />
@@ -357,7 +359,7 @@ import Section from "./containers/Section";
   <div
     style={{
       display: "flex",
-      justifyContent: "space-between"
+      justifyContent: "space-between",
     }}
   >
     <IconLink
@@ -433,7 +435,7 @@ import Section from "./containers/Section";
   <div
     style={{
       display: "flex",
-      justifyContent: "space-between"
+      justifyContent: "space-between",
     }}
   >
     <IconLink
