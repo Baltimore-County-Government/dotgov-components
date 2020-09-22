@@ -166,7 +166,7 @@ Html Snippet:
 <button type="button" class="dg_button-link">Default</button>
 ```
 
-### Decorative Links
+### Decorative Link
 
 #### Large
 
@@ -572,7 +572,7 @@ import IconLink from "./IconLink";
 </div>
 ```
 
-Html Snippet for Links:
+Html Snippet for Link:
 
 ```html
 <a
@@ -644,7 +644,7 @@ import IconLink from "./IconLink";
 </Section>;
 ```
 
-Html Snippet for Links:
+Html Snippet for Link:
 
 ```html
 <a
