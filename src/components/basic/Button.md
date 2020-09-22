@@ -332,6 +332,48 @@ Html Snippet:
 </a>
 ```
 
+### Decorative Icon Buttons
+This example displays the decorative icon buttons in the context of using the class for a button tag.
+
+```jsx
+import IconButton from "./IconButton";
+import Section from "./containers/Section";
+<Section>
+<IconButton
+    size="large"
+    shape="circle"
+    icon="far fa-times"
+    description="View your favorite default items."
+  />
+  <IconButton
+    size="small"
+    shape="circle"
+    icon="far fa-times"
+    description="View your favorite default items."
+  />
+  <IconButton
+    size="tiny"
+    shape="circle"
+    icon="far fa-times"
+    description="View your favorite default items."
+  />
+</Section>;
+```
+
+Html Snippet:
+
+```html
+<button class="dg_icon-link dg_icon-link--large dg_icon-link--circle" type="button" aria-label="View your favorite default items.">
+    <i aria-hidden="true" class="dg_icon far fa-times"></i>
+</button>
+<button class="dg_icon-link dg_icon-link--small dg_icon-link--circle" type="button" aria-label="View your favorite default items.">
+    <i aria-hidden="true" class="dg_icon far fa-times"></i>
+</button>
+<button class="dg_icon-link dg_icon-link--tiny dg_icon-link--circle" type="button" aria-label="View your favorite default items.">
+    <i aria-hidden="true" class="dg_icon far fa-times"></i>
+</button>
+```
+
 #### Large in a Dark Section
 
 By including a button inside of a [dark section](dark-section), it will automatically be styled appropriately.
