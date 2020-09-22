@@ -16,8 +16,13 @@ The button component can be used by adding the desired class to an a tag (the mo
 </div>
 ```
 
-Html Snippet:
+Html Snippet for Link:
 
+```html
+<a href="#" class="dg_button">Default</a>
+```
+
+Html Snippet for Button:
 ```html
 <button type="button" class="dg_button">Default</button>
 ```
@@ -45,8 +50,13 @@ import Section from "./containers/Section";
 </Section>;
 ```
 
-Html Snippet:
+Html Snippet for Link:
 
+```html
+<a class="dg_button" href="#">Default</a>
+```
+
+Html Snippet for Button:
 ```html
 <button type="button" class="dg_button">Default</button>
 ```
@@ -65,7 +75,15 @@ Html Snippet:
 </div>
 ```
 
-Html Snippet:
+Html Snippet for Link:
+
+```html
+<a class="dg_button" href="#">
+  <i aria-hidden="true" class="dg_button_icon fas fa-star"></i>Icon Button
+</a>
+```
+
+Html Snippet for Button:
 
 ```html
 <button type="button" class="dg_button">
@@ -87,50 +105,16 @@ Html Snippet:
 </div>
 ```
 
-Html Snippet:
-
-```html
-<button type="button" class="dg_button dg_button-secondary">Default</button>
-```
-
-### Secondary Button (as Link)
-
-```jsx
-<div
-  style={{ display: "flex", justifyContent: "space-between", padding: "10px" }}
->
-  <Button as="a" href="#" text="Default" className="dg_button-secondary" />
-  <Button
-    as="a"
-    href="#"
-    text="Hovered"
-    className="hovered dg_button-secondary"
-  />
-  <Button
-    as="a"
-    href="#"
-    text="Active"
-    className="active dg_button-secondary"
-  />
-  <Button
-    as="a"
-    href="#"
-    text="Focused"
-    className="focused dg_button-secondary"
-  />
-  <Button
-    as="a"
-    href="#"
-    text="Disabled"
-    className="disabled dg_button-secondary"
-  />
-</div>
-```
-
-Html Snippet:
+Html Snippet for Link:
 
 ```html
 <a class="dg_button dg_button-secondary" href="#">Default</a>
+```
+
+Html Snippet for Button:
+
+```html
+<button type="button" class="dg_button dg_button-secondary">Default</button>
 ```
 
 ### Text Button
