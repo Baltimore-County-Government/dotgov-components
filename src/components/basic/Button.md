@@ -2,6 +2,8 @@
 
 #### Default
 
+The button component can be used by adding the desired class to an a tag (the most common use on the site) or a button tag (a more niche case usage of the button).
+
 ```jsx
 <div
   style={{ display: "flex", justifyContent: "space-between", padding: "10px" }}
@@ -14,8 +16,13 @@
 </div>
 ```
 
-Html Snippet:
+Html Snippet for Link:
 
+```html
+<a href="#" class="dg_button">Default</a>
+```
+
+Html Snippet for Button:
 ```html
 <button type="button" class="dg_button">Default</button>
 ```
@@ -31,7 +38,7 @@ import Section from "./containers/Section";
     style={{
       display: "flex",
       justifyContent: "space-between",
-      padding: "10px"
+      padding: "10px",
     }}
   >
     <Button text="Default" />
@@ -43,8 +50,13 @@ import Section from "./containers/Section";
 </Section>;
 ```
 
-Html Snippet:
+Html Snippet for Link:
 
+```html
+<a class="dg_button" href="#">Default</a>
+```
+
+Html Snippet for Button:
 ```html
 <button type="button" class="dg_button">Default</button>
 ```
@@ -63,7 +75,15 @@ Html Snippet:
 </div>
 ```
 
-Html Snippet:
+Html Snippet for Link:
+
+```html
+<a class="dg_button" href="#">
+  <i aria-hidden="true" class="dg_button_icon fas fa-star"></i>Icon Button
+</a>
+```
+
+Html Snippet for Button:
 
 ```html
 <button type="button" class="dg_button">
@@ -85,50 +105,16 @@ Html Snippet:
 </div>
 ```
 
-Html Snippet:
-
-```html
-<button type="button" class="dg_button dg_button-secondary">Default</button>
-```
-
-### Secondary Button (as Link)
-
-```jsx
-<div
-  style={{ display: "flex", justifyContent: "space-between", padding: "10px" }}
->
-  <Button as="a" href="#" text="Default" className="dg_button-secondary" />
-  <Button
-    as="a"
-    href="#"
-    text="Hovered"
-    className="hovered dg_button-secondary"
-  />
-  <Button
-    as="a"
-    href="#"
-    text="Active"
-    className="active dg_button-secondary"
-  />
-  <Button
-    as="a"
-    href="#"
-    text="Focused"
-    className="focused dg_button-secondary"
-  />
-  <Button
-    as="a"
-    href="#"
-    text="Disabled"
-    className="disabled dg_button-secondary"
-  />
-</div>
-```
-
-Html Snippet:
+Html Snippet for Link:
 
 ```html
 <a class="dg_button dg_button-secondary" href="#">Default</a>
+```
+
+Html Snippet for Button:
+
+```html
+<button type="button" class="dg_button dg_button-secondary">Default</button>
 ```
 
 ### Text Button
@@ -162,7 +148,7 @@ import Section from "./containers/Section";
     style={{
       display: "flex",
       justifyContent: "space-between",
-      padding: "10px"
+      padding: "10px",
     }}
   >
     <Button text="Default" className="dg_button-link" />
@@ -180,7 +166,7 @@ Html Snippet:
 <button type="button" class="dg_button-link">Default</button>
 ```
 
-### Decorative Links
+### Decorative Link
 
 #### Large
 
@@ -346,6 +332,48 @@ Html Snippet:
 </a>
 ```
 
+### Decorative Icon Buttons
+This example displays the decorative icon buttons in the context of using the class for a button tag.
+
+```jsx
+import IconButton from "./IconButton";
+import Section from "./containers/Section";
+<Section>
+<IconButton
+    size="large"
+    shape="circle"
+    icon="far fa-times"
+    description="View your favorite default items."
+  />
+  <IconButton
+    size="small"
+    shape="circle"
+    icon="far fa-times"
+    description="View your favorite default items."
+  />
+  <IconButton
+    size="tiny"
+    shape="circle"
+    icon="far fa-times"
+    description="View your favorite default items."
+  />
+</Section>;
+```
+
+Html Snippet:
+
+```html
+<button class="dg_icon-link dg_icon-link--large dg_icon-link--circle" type="button" aria-label="View your favorite default items.">
+    <i aria-hidden="true" class="dg_icon far fa-times"></i>
+</button>
+<button class="dg_icon-link dg_icon-link--small dg_icon-link--circle" type="button" aria-label="View your favorite default items.">
+    <i aria-hidden="true" class="dg_icon far fa-times"></i>
+</button>
+<button class="dg_icon-link dg_icon-link--tiny dg_icon-link--circle" type="button" aria-label="View your favorite default items.">
+    <i aria-hidden="true" class="dg_icon far fa-times"></i>
+</button>
+```
+
 #### Large in a Dark Section
 
 By including a button inside of a [dark section](dark-section), it will automatically be styled appropriately.
@@ -357,7 +385,7 @@ import Section from "./containers/Section";
   <div
     style={{
       display: "flex",
-      justifyContent: "space-between"
+      justifyContent: "space-between",
     }}
   >
     <IconLink
@@ -433,7 +461,7 @@ import Section from "./containers/Section";
   <div
     style={{
       display: "flex",
-      justifyContent: "space-between"
+      justifyContent: "space-between",
     }}
   >
     <IconLink
@@ -494,4 +522,267 @@ Html Snippet:
 >
   <i aria-hidden="true" class="dg_icon fas fa-star"></i>
 </a>
+```
+
+### Default Icon Button
+
+```jsx
+import IconLink from "./IconLink";
+
+<div style={{ padding: "10px" }}>
+  <IconLink
+    icon="fa fa-users"
+    size="large"
+    description="Visit our users dashboard to learn more."
+    text="Default"
+    href="https://www.w3schools.com"
+  />
+  <IconLink
+    className="hovered"
+    icon="fa fa-users"
+    size="large"
+    description="Visit our users dashboard to learn more."
+    text="Hovered"
+    href="https://www.w3schools.com"
+  />
+  <IconLink
+    className="active"
+    icon="fa fa-users"
+    size="large"
+    description="Visit our users dashboard to learn more."
+    text="Active"
+    href="https://www.w3schools.com"
+  />
+  <IconLink
+    className="focused"
+    icon="fa fa-users"
+    size="large"
+    description="Visit our users dashboard to learn more."
+    text="Focused"
+    href="https://www.w3schools.com"
+  />
+  <IconLink
+    className="disabled"
+    icon="fa fa-users"
+    size="large"
+    description="Visit our users dashboard to learn more."
+    text="Disabled"
+    href="https://www.w3schools.com"
+  />
+</div>
+```
+
+Html Snippet for Link:
+
+```html
+<a
+  href="https://www.w3schools.com"
+  class="dg_icon-link dg_icon-link--large"
+  aria-label="Visit our users dashboard to learn more."
+>
+  <i aria-hidden="true" class="dg_icon fa fa-users"></i>
+  <span>Default</span>
+</a>
+```
+
+Html Snippet for Buttons:
+
+```html
+<button class="dg_icon-link dg_icon-link--large" type="button" aria-label="Visit our users dashboard to learn more.">
+    <i aria-hidden="true" class="dg_icon fa fa-users"></i>
+    <span>Default</span>
+</button>
+```
+
+### Default Link Button in a Dark Section
+
+```jsx
+import Section from "./containers/Section";
+import IconLink from "./IconLink";
+<Section className="dark">
+  <div style={{ padding: "10px" }}>
+    <IconLink
+      icon="fa fa-users"
+      size="large"
+      description="Visit our users dashboard to learn more."
+      text="Default"
+      href="https://www.w3schools.com"
+    />
+    <IconLink
+      className="hovered"
+      icon="fa fa-users"
+      size="large"
+      description="Visit our users dashboard to learn more."
+      text="Hovered"
+      href="https://www.w3schools.com"
+    />
+    <IconLink
+      className="active"
+      icon="fa fa-users"
+      size="large"
+      description="Visit our users dashboard to learn more."
+      text="Active"
+      href="https://www.w3schools.com"
+    />
+    <IconLink
+      className="focused"
+      icon="fa fa-users"
+      size="large"
+      description="Visit our users dashboard to learn more."
+      text="Focused"
+      href="https://www.w3schools.com"
+    />
+    <IconLink
+      className="disabled"
+      icon="fa fa-users"
+      size="large"
+      description="Visit our users dashboard to learn more."
+      text="Disabled"
+      href="https://www.w3schools.com"
+    />
+  </div>
+</Section>;
+```
+
+Html Snippet for Link:
+
+```html
+<a
+  href="https://www.w3schools.com"
+  class="dg_icon-link dg_icon-link--large"
+  aria-label="Visit our users dashboard to learn more."
+>
+  <i aria-hidden="true" class="dg_icon fa fa-users"></i>
+  <span>Default</span>
+</a>
+```
+
+Html Snippet for Buttons:
+
+```html
+<button class="dg_icon-link dg_icon-link--large" type="button" aria-label="Visit our users dashboard to learn more.">
+    <i aria-hidden="true" class="dg_icon fa fa-users"></i>
+    <span>Default</span>
+</button>
+```
+
+### Grid
+
+```jsx
+import Section from "./containers/Section";
+import IconLink from "./IconLink";
+<div className="dg_main-content">
+  <Section className="dark">
+    <div style={{ padding: "10px" }}>
+      <div className="dg_item-grid">
+        <IconLink
+          icon="fa fa-users"
+          size="large"
+          description="Visit our users dashboard to learn more."
+          text="Default"
+          href="https://www.w3schools.com"
+        />
+        <IconLink
+          className="hovered"
+          icon="fa fa-users"
+          size="large"
+          description="Visit our users dashboard to learn more."
+          text="Hovered"
+          href="https://www.w3schools.com"
+        />
+        <IconLink
+          className="active"
+          icon="fa fa-users"
+          size="large"
+          description="Visit our users dashboard to learn more."
+          text="Active"
+          href="https://www.w3schools.com"
+        />
+        <IconLink
+          className="focused"
+          icon="fa fa-users"
+          size="large"
+          description="Visit our users dashboard to learn more."
+          text="Focused"
+          href="https://www.w3schools.com"
+        />
+        <IconLink
+          className="disabled"
+          icon="fa fa-users"
+          size="large"
+          description="Visit our users dashboard to learn more."
+          text="Disabled"
+          href="https://www.w3schools.com"
+        />
+        <IconLink
+          className="disabled"
+          icon="fa fa-users"
+          size="large"
+          description="Visit our users dashboard to learn more."
+          text="Disabled"
+          href="https://www.w3schools.com"
+        />
+      </div>
+    </div>
+  </Section>
+</div>;
+```
+
+Html Snippet:
+
+```html
+<div class="dg_main-content">
+  <div class="dg_section dark" style="padding: 10px;">
+    <div class="dg_item-grid">
+      <a
+        href="https://www.w3schools.com"
+        class="dg_icon-link dg_icon-link--large"
+        aria-label="Visit our users dashboard to learn more."
+      >
+        <i aria-hidden="true" class="dg_icon fa fa-users"></i>
+        <span>Default</span>
+      </a>
+      <a
+        href="https://www.w3schools.com"
+        class="dg_icon-link dg_icon-link--large hovered"
+        aria-label="Visit our users dashboard to learn more."
+      >
+        <i aria-hidden="true" class="dg_icon fa fa-users"></i>
+        <span>Hovered</span>
+      </a>
+      <a
+        href="https://www.w3schools.com"
+        class="dg_icon-link dg_icon-link--large active"
+        aria-label="Visit our users dashboard to learn more."
+      >
+        <i aria-hidden="true" class="dg_icon fa fa-users"></i>
+        <span>Active</span>
+      </a>
+      <a
+        href="https://www.w3schools.com"
+        class="dg_icon-link dg_icon-link--large focused"
+        aria-label="Visit our users dashboard to learn more."
+      >
+        <i aria-hidden="true" class="dg_icon fa fa-users"></i>
+        <span>Focused</span>
+      </a>
+      <a
+        href="https://www.w3schools.com"
+        class="dg_icon-link dg_icon-link--large disabled"
+        aria-label="Visit our users dashboard to learn more."
+      >
+        <i aria-hidden="true" class="dg_icon fa fa-users"></i>
+        <span>Disabled</span>
+      </a>
+      <a
+        href="https://www.w3schools.com"
+        class="dg_icon-link dg_icon-link--large disabled"
+        aria-label="Visit our users dashboard to learn more."
+      >
+        <i aria-hidden="true" class="dg_icon fa fa-users"></i>
+        <span>Disabled</span>
+      </a>
+    </div>
+  </div>
+</div>
 ```
