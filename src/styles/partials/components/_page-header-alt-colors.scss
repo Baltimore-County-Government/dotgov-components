@@ -37,6 +37,23 @@
 .dg_page-header.themed.brand-blue {
   color: $white;
 
+  
+  h1 {
+    color: $white;
+  }
+
+  .dg_page-header__deck {
+    color: $white;
+  }
+}
+
+.dg_page-header.themed.blue {
+  color: $white;
+
+a:hover {
+  color: #FFD986;
+}
+  
   h1 {
     color: $white;
   }
