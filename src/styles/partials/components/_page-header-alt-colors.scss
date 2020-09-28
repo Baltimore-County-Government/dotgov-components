@@ -48,19 +48,23 @@
 
 .dg_page-header.themed.blue {
   color: $white;
-
-  a:hover {
-    color: #feb309;
-  }
-  a:focus {
-    color: #feb309;
-    outline-color: #feb309;
+  a {
+    &:hover {
+      color: $gold;
+    }
+    &:focus {
+      color: $gold;
+      outline-color: $gold;
+    }
   }
 
   .dg_breadcrumbs {
     a {
       &:hover {
-        color: #feb309;
+        color: $gold;
+      }
+      &:focus {
+        outline-color: $gold;
       }
     }
   }
