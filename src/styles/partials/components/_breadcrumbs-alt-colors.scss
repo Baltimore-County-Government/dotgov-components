@@ -1,16 +1,29 @@
 .dg_page-header.themed.gold {
   .dg_breadcrumbs {
     color: $black;
-    .breadcrumb {
-      &:after {
-        color: $gray-dark;
-      }
-
-      &:last-child {
-        color: $black;
-
+    a {
+      &.breadcrumb {
+        &:after {
+          color: $gray-dark;
+        }
         &:hover {
-          color: $vibrant-blue;
+          color: $black;
+        }
+        &:focus {
+          color: $black;
+          outline-color: $black;
+        }
+
+        &:last-child {
+          color: $black;
+
+          &:hover {
+            color: $blue;
+          }
+          &:focus {
+            color: $blue;
+            outline-color: $blue;
+          }
         }
       }
     }
