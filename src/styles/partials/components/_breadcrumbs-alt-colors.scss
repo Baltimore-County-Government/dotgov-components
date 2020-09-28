@@ -2,6 +2,9 @@
   .dg_breadcrumbs {
     color: $black;
     a {
+      &:hover {
+        color: $blue;
+      }
       &.breadcrumb {
         &:after {
           color: $gray-dark;
