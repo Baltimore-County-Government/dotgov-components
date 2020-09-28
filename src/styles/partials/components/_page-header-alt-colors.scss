@@ -37,7 +37,6 @@
 .dg_page-header.themed.brand-blue {
   color: $white;
 
-  
   h1 {
     color: $white;
   }
@@ -50,10 +49,22 @@
 .dg_page-header.themed.blue {
   color: $white;
 
-a:hover {
-  color: #FFD986;
-}
-  
+  a:hover {
+    color: #feb309;
+  }
+  a:focus {
+    color: #feb309;
+    outline-color: #feb309;
+  }
+
+  .dg_breadcrumbs {
+    a {
+      &:hover {
+        color: #feb309;
+      }
+    }
+  }
+
   h1 {
     color: $white;
   }
