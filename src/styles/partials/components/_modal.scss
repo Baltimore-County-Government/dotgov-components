@@ -54,6 +54,7 @@ $default-modal-width: 640px;
 
 .dialog-backdrop.active {
   display: block;
+  max-height: calc(100vh - 5px);
 }
 
 /* this is added to the body when a dialog is open */
