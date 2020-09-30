@@ -67,7 +67,11 @@
       color: $white;
 
       &:hover {
-        color: $vibrant-blue;
+        color: $gold;
+      }
+      &:focus {
+        color: $gold;
+        outline-color: $gold;
       }
 
       &:after {
@@ -78,7 +82,11 @@
         color: $gold;
 
         &:hover {
-          color: $vibrant-blue;
+          color: $gold;
+        }
+        &:focus {
+          color: $gold;
+          outline-color: $gold;
         }
       }
     }
