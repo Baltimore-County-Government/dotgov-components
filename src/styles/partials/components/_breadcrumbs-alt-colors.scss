@@ -41,7 +41,12 @@
       color: $white;
 
       &:hover {
-        color: $vibrant-blue;
+        color: $gold;
+      }
+
+      &:focus {
+        color: $gold;
+        outline-color: $gold;
       }
 
       &:after {
@@ -50,6 +55,11 @@
 
       &:last-child {
         color: $gold;
+
+        &:focus {
+          color: $gold;
+          outline-color: $gold;
+        }
 
         &:hover {
           color: $vibrant-blue;
