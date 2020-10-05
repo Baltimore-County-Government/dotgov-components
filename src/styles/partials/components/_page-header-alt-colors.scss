@@ -45,3 +45,36 @@
     color: $white;
   }
 }
+
+.dg_page-header.themed.blue {
+  color: $white;
+
+  a {
+    &:hover {
+      color: $gold;
+    }
+    &:focus {
+      color: $gold;
+      outline-color: $gold;
+    }
+  }
+
+  .dg_breadcrumbs {
+    a {
+      &:hover {
+        color: $gold;
+      }
+      &:focus {
+        outline-color: $gold;
+      }
+    }
+  }
+
+  h1 {
+    color: $white;
+  }
+
+  .dg_page-header__deck {
+    color: $white;
+  }
+}

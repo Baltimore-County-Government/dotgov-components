@@ -1,16 +1,32 @@
 .dg_page-header.themed.gold {
   .dg_breadcrumbs {
     color: $black;
-    .breadcrumb {
-      &:after {
-        color: $gray-dark;
+    a {
+      &:hover {
+        color: $blue;
       }
-
-      &:last-child {
-        color: $black;
-
+      &.breadcrumb {
+        &:after {
+          color: $gray-dark;
+        }
         &:hover {
-          color: $vibrant-blue;
+          color: $black;
+        }
+        &:focus {
+          color: $black;
+          outline-color: $black;
+        }
+
+        &:last-child {
+          color: $black;
+
+          &:hover {
+            color: $blue;
+          }
+          &:focus {
+            color: $blue;
+            outline-color: $blue;
+          }
         }
       }
     }
@@ -25,7 +41,12 @@
       color: $white;
 
       &:hover {
-        color: $vibrant-blue;
+        color: $gold;
+      }
+
+      &:focus {
+        color: $gold;
+        outline-color: $gold;
       }
 
       &:after {
@@ -34,6 +55,11 @@
 
       &:last-child {
         color: $gold;
+
+        &:focus {
+          color: $gold;
+          outline-color: $gold;
+        }
 
         &:hover {
           color: $vibrant-blue;
@@ -51,7 +77,11 @@
       color: $white;
 
       &:hover {
-        color: $vibrant-blue;
+        color: $gold;
+      }
+      &:focus {
+        color: $gold;
+        outline-color: $gold;
       }
 
       &:after {
@@ -62,7 +92,11 @@
         color: $gold;
 
         &:hover {
-          color: $vibrant-blue;
+          color: $gold;
+        }
+        &:focus {
+          color: $gold;
+          outline-color: $gold;
         }
       }
     }
@@ -77,7 +111,15 @@
       color: $white;
 
       &:hover {
-        color: $vibrant-blue;
+        color: $gold;
+      }
+      &:focus {
+        color: $gold;
+        outline-color: $gold;
+      }
+      &:focus {
+        color: $gold;
+        outline-color: $gold;
       }
 
       &:after {
@@ -88,7 +130,11 @@
         color: $gold;
 
         &:hover {
-          color: $vibrant-blue;
+          color: $gold;
+        }
+        &:focus {
+          color: $gold;
+          outline-color: $gold;
         }
       }
     }
