@@ -140,3 +140,21 @@
     }
   }
 }
+
+.dg_page-header.themed.blue {
+  .dg_breadcrumbs {
+    a.breadcrumb {
+      &:last-child {
+        color: $gold;
+
+        &:hover {
+          color: $gold;
+        }
+        &:focus {
+          color: $gold;
+          outline-color: $gold;
+        }
+      }
+    }
+  }
+}
