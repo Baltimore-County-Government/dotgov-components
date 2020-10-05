@@ -21,11 +21,11 @@
           color: $black;
 
           &:hover {
-            color: $blue;
+            color: $black;
           }
           &:focus {
-            color: $blue;
-            outline-color: $blue;
+            color: $black;
+            outline-color: $black;
           }
         }
       }
@@ -57,7 +57,7 @@
         color: $gold;
 
         &:focus {
-          color: $gold;
+          color: $black;
           outline-color: $gold;
         }
 
