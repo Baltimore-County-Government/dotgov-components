@@ -21,11 +21,11 @@
           color: $black;
 
           &:hover {
-            color: $blue;
+            color: $black;
           }
           &:focus {
-            color: $blue;
-            outline-color: $blue;
+            color: $black;
+            outline-color: $black;
           }
         }
       }
@@ -62,7 +62,7 @@
         }
 
         &:hover {
-          color: $vibrant-blue;
+          color: $gold;
         }
       }
     }
@@ -126,6 +126,24 @@
         color: $white;
       }
 
+      &:last-child {
+        color: $gold;
+
+        &:hover {
+          color: $gold;
+        }
+        &:focus {
+          color: $gold;
+          outline-color: $gold;
+        }
+      }
+    }
+  }
+}
+
+.dg_page-header.themed.blue {
+  .dg_breadcrumbs {
+    a.breadcrumb {
       &:last-child {
         color: $gold;
 
