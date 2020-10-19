@@ -19,7 +19,7 @@ $checkbox-size: 40px;
     width: 40px;
     height: 40px;
     margin: 0;
-    outline:2px solid $black;
+    outline: 1px solid $black;
     /*opacity: 0;*/
 
     &:checked + .dg_checkbox-label::after,
