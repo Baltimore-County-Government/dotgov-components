@@ -72,6 +72,7 @@ $checkbox-size: 40px;
       height: $checkbox-size;
       border: $default-border-width solid $black;
       background: transparent;
+      opacity: 1;
     }
 
     &::after {
