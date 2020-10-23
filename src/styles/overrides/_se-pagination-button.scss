@@ -1,4 +1,10 @@
 .SEBlogViewPagingArea {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-grow: inherit;
+  justify-content: flex-start;
+  width: 100%;
   .SEBlogViewPagingPrev {
   }
   .SEBlogViewPagingNext {
