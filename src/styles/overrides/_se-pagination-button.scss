@@ -6,7 +6,15 @@
   justify-content: flex-start;
   width: 100%;
   .SEBlogViewPagingPrev {
+    margin-right: 30px;
+    a {
+      @extend .dg_button;
+    }
   }
   .SEBlogViewPagingNext {
+    margin-right: 30px;
+    a {
+      @extend .dg_button;
+    }
   }
 }
