@@ -1,0 +1,20 @@
+.SEBlogViewPagingArea {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-grow: inherit;
+  height: auto;
+  justify-content: space-between;
+  margin-bottom: $margin-larger;
+  width: 100%;
+  .SEBlogViewPagingPrev {
+    a {
+      @extend .dg_button;
+    }
+  }
+  .SEBlogViewPagingNext {
+    a {
+      @extend .dg_button;
+    }
+  }
+}
