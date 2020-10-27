@@ -3,16 +3,16 @@
   flex-direction: row;
   flex-wrap: wrap;
   flex-grow: inherit;
-  justify-content: flex-start;
+  height: auto;
+  justify-content: space-between;
+  margin-bottom: $margin-larger;
   width: 100%;
   .SEBlogViewPagingPrev {
-    margin-right: 30px;
     a {
       @extend .dg_button;
     }
   }
   .SEBlogViewPagingNext {
-    margin-right: 30px;
     a {
       @extend .dg_button;
     }
