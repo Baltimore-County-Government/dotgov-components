@@ -14,13 +14,10 @@ $checkbox-size: 40px;
   .dg_checkbox-input {
     cursor: pointer;
     position: absolute;
-    /*top: -2px;*/
     left: 0px;
     width: 40px;
     height: 40px;
     margin: 0;
-    /*outline: 2px solid $black;*/
-    /*opacity: 0;*/
 
     &:checked + .dg_checkbox-label::after,
     &:checked + .dg_radio-label::after {
@@ -44,10 +41,9 @@ $checkbox-size: 40px;
     cursor: default;
     -webkit-appearance: checkbox;
     box-sizing: border-box;
-    /*margin: 3px 3px 3px 4px;*/
     padding: initial;
     border: initial;
-    opacity:0;
+    opacity: 0;
   }
 
   .dg_radio-label,
