@@ -13,6 +13,13 @@
     padding: $padding-large;
   }
 
+  .td_overflow {
+    max-width: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
   thead {
     th {
       background-color: $white;
