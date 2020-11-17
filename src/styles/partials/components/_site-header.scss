@@ -36,6 +36,10 @@ $header-height: 65px;
   }
 }
 
+.dg_search-btn {
+  right: 10px;
+}
+
 .dg_mobile-search-button {
   display: none;
 }
@@ -93,7 +97,7 @@ $header-height: 65px;
 
   #search-form {
     .dg_search-btn {
-      right: 30px;
+      right: 10px;
     }
   }
 }
