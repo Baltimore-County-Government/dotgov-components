@@ -13,8 +13,8 @@
     padding: $padding-large;
   }
 
-  .td_overflow {
-    max-width: $padding-small;
+  .td_weather_details_overflow {
+    max-width: 1000px; //This is excessively large because its exclusive to the weather closing section.
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
