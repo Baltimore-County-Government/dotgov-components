@@ -6,7 +6,7 @@
   .dg_search-btn {
     display: block;
     position: absolute;
-    right: $base-spacing-unit * 6;
+    right: $padding-small;
     top: $padding-small;
     cursor: pointer;
 
@@ -17,9 +17,9 @@
 }
 
 .dg_search-input {
-    padding: $padding-small;
-    border: 2px solid #000;
-    font-size: 20px;
-    font-family: "Montserrat",sans-serif;
-    width: 100%;
+  padding: $padding-small;
+  border: 2px solid #000;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
 }
