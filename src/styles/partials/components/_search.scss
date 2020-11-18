@@ -18,8 +18,8 @@
 
 .dg_search-input {
   padding: $padding-small;
-  border: 2px solid #000;
-  font-size: 20px;
+  border: $default-border-width solid $black;
+  font-size: $padding-large;
   font-family: $default-heading-font;
   width: 100%;
 }
