@@ -1,6 +1,6 @@
 .dg_video-embed-wrapper {
   height: 0;
-  padding-bottom: calc(var(--aspect-ratio, 0.5625) * 100%); /* Defaults to 16/9 aspect ratio. Can be adjusted via HTML to allow additional aspect ratios.*/
+  padding-bottom: 56.25%; /* Defaults to 16/9 aspect ratio. Can be adjusted via HTML to allow additional aspect ratios.*/
   position: relative;
 
   iframe,
