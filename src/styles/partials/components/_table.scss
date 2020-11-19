@@ -2,8 +2,7 @@
 .table {
   border: $border-width-small solid $gray-light;
   color: $gray-dark;
-  font-family: $default-heading-font;
-  font-size: $smallest-heading-font-size;
+  font-size: $small-heading-font-size;
   margin-bottom: $default-margin;
   text-align: left;
   width: 100%;
@@ -11,6 +10,9 @@
   td {
     border-bottom: $border-width-small solid $gray-light;
     padding: $padding-large;
+    p {
+      font-size: $small-heading-font-size;
+    }
   }
 
   thead {
