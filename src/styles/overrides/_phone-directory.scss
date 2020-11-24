@@ -4,6 +4,8 @@
     th {
         border-left: none;
         border-bottom: $border-width-large solid $blue;
+        font-family: $default-heading-font;
+        font-size: $small-heading-font-size;
     }
 
     #Next {
