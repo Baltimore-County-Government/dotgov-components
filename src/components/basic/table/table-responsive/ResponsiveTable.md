@@ -112,7 +112,7 @@ import TableRow from "../TableRow";
             aria-hidden="true"
           ></i>
         </TableCell>
-        <TableCell className="sorting_1">Modified&nbsp;</TableCell>
+        <TableCell className="sorting_1">Modified</TableCell>
         <TableCell>
           <a
             title="Get the latest closing information."
