@@ -1,0 +1,319 @@
+.hero-unit {
+  background: #ebebeb;
+  border-top: 2px solid $blue;
+  padding: 20px;
+  margin-bottom: 20px;
+
+  img {
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.icon-small {
+  border-radius: 5px;
+  color: white;
+  padding: 5px 10px;
+}
+
+.icon-extra-large {
+  border-radius: 10px;
+  color: #ebebeb;
+  padding: 20px;
+}
+
+.icon-success,
+.icon-open,
+.icon-operating {
+  background: green;
+}
+
+.icon-success:before,
+.icon-open:before,
+.icon-operating:before {
+  content: "\f00c";
+}
+
+.icon-success.icon-small,
+.icon-open.icon-small,
+.icon-operating.icon-small {
+  padding: 5px 7px;
+}
+
+.icon-closed,
+.icon-cancelled,
+.icon-canceled {
+  background: red;
+}
+
+.icon-closed:before,
+.icon-cancelled:before,
+.icon-canceled:before {
+  content: "\f00d";
+}
+
+.icon-closed.icon-extra-large,
+.icon-cancelled.icon-extra-large {
+  padding: 10px 20px;
+}
+
+.icon-modified {
+  color: goldenrod;
+
+  &:before {
+    content: "\f071";
+  }
+}
+
+.icon-external,
+.icon-seewebsite {
+  color: #002280;
+}
+
+.icon-external:before,
+.icon-seewebsite:before {
+  content: "\f08e";
+}
+
+.icon-modified.icon-small,
+.icon-external.icon-small {
+  font-size: 2.5em;
+  padding: 0 4px;
+}
+
+.closings {
+  margin-bottom: 40px;
+}
+
+.county-closings-image-container {
+  text-align: center;
+}
+
+/*jQuery Datatable Specific Code*/
+
+table.dataTable thead {
+  th,
+  td {
+    text-align: left;
+  }
+}
+
+.dataTables_wrapper .dataTables_filter {
+  background: #ebebeb;
+  float: none;
+  padding: 20px;
+  text-align: left;
+
+  input {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .closings {
+    /*margin-bottom: 0;*/
+  }
+
+  table.dataTable {
+    font-size: 16px;
+
+    &.stripe tbody tr {
+      &.odd {
+        &.canceled > td,
+        &.closed > td {
+          background-color: rgba(255, 0, 0, 0.5);
+        }
+      }
+
+      &.even {
+        &.canceled > td,
+        &.closed > td {
+          background-color: rgba(255, 0, 0, 0.5);
+        }
+      }
+
+      &.odd > .sorting_1 {
+        &.canceled > td,
+        &.closed > td {
+          background-color: rgba(255, 0, 0, 0.5);
+        }
+      }
+
+      &.even > .sorting_1 {
+        &.canceled > td,
+        &.closed > td {
+          background-color: rgba(255, 0, 0, 0.5);
+        }
+      }
+    }
+
+    &.display tbody tr {
+      &.odd {
+        &.canceled > td,
+        &.closed > td {
+          background-color: rgba(255, 0, 0, 0.5);
+        }
+      }
+
+      &.even {
+        &.canceled > td,
+        &.closed > td {
+          background-color: rgba(255, 0, 0, 0.5);
+        }
+      }
+
+      &.odd > .sorting_1 {
+        &.canceled > td,
+        &.closed > td {
+          background-color: rgba(255, 0, 0, 0.5);
+        }
+      }
+
+      &.even > .sorting_1 {
+        &.canceled > td,
+        &.closed > td {
+          background-color: rgba(255, 0, 0, 0.5);
+        }
+      }
+    }
+
+    &.stripe tbody tr {
+      &.odd {
+        &.cancelled > td,
+        &.closed > td {
+          background-color: rgba(255, 0, 0, 0.5);
+        }
+      }
+
+      &.even {
+        &.cancelled > td,
+        &.closed > td {
+          background-color: rgba(255, 0, 0, 0.5);
+        }
+      }
+
+      &.odd > .sorting_1 {
+        &.cancelled > td,
+        &.closed > td {
+          background-color: rgba(255, 0, 0, 0.5);
+        }
+      }
+
+      &.even > .sorting_1 {
+        &.cancelled > td,
+        &.closed > td {
+          background-color: rgba(255, 0, 0, 0.5);
+        }
+      }
+    }
+
+    &.display tbody tr {
+      &.odd {
+        &.cancelled > td,
+        &.closed > td {
+          background-color: rgba(255, 0, 0, 0.5);
+        }
+      }
+
+      &.even {
+        &.cancelled > td,
+        &.closed > td {
+          background-color: rgba(255, 0, 0, 0.5);
+        }
+      }
+
+      &.odd > .sorting_1 {
+        &.cancelled > td,
+        &.closed > td {
+          background-color: rgba(255, 0, 0, 0.5);
+        }
+      }
+
+      &.even > .sorting_1 {
+        &.cancelled > td,
+        &.closed > td {
+          background-color: rgba(255, 0, 0, 0.5);
+        }
+      }
+    }
+
+    &.stripe tbody tr {
+      &.odd {
+        &.open > td,
+        &.operating > td {
+          background-color: rgba(0, 128, 0, 0.5);
+        }
+      }
+
+      &.even {
+        &.open > td,
+        &.operating > td {
+          background-color: rgba(0, 128, 0, 0.5);
+        }
+      }
+
+      &.odd > .sorting_1 {
+        &.open > td,
+        &.operating > td {
+          background-color: rgba(0, 128, 0, 0.5);
+        }
+      }
+
+      &.even > .sorting_1 {
+        &.open > td,
+        &.operating > td {
+          background-color: rgba(0, 128, 0, 0.5);
+        }
+      }
+    }
+
+    &.display tbody tr {
+      &.odd {
+        &.open > td,
+        &.operating > td {
+          background-color: rgba(0, 128, 0, 0.5);
+        }
+      }
+
+      &.even {
+        &.open > td,
+        &.operating > td {
+          background-color: rgba(0, 128, 0, 0.5);
+        }
+      }
+
+      &.odd > .sorting_1 {
+        &.open > td,
+        &.operating > td {
+          background-color: rgba(0, 128, 0, 0.5);
+        }
+      }
+
+      &.even > .sorting_1 {
+        &.open > td,
+        &.operating > td {
+          background-color: rgba(0, 128, 0, 0.5);
+        }
+      }
+    }
+
+    &.stripe tbody tr {
+      &.odd.modified > td,
+      &.even.modified > td,
+      &.odd > .sorting_1.modified > td,
+      &.even > .sorting_1.modified > td {
+        background-color: rgba(218, 165, 32, 0.5);
+      }
+    }
+
+    &.display tbody tr {
+      &.odd.modified > td,
+      &.even.modified > td,
+      &.odd > .sorting_1.modified > td,
+      &.even > .sorting_1.modified > td {
+        background-color: rgba(218, 165, 32, 0.5);
+      }
+    }
+  }
+}
