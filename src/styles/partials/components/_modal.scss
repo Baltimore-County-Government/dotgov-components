@@ -52,9 +52,22 @@ $default-modal-width: 640px;
   }
 }
 
+@supports (-webkit-touch-callout: none) {
+  /* CSS specific to iOS devices */
+  .dialog-backdrop.active {
+    max-height: -webkit-fill-available;
+  }
+}
+
+@supports not (-webkit-touch-callout: none) {
+  /* CSS specific to non-iOS devices */
+  .dialog-backdrop.active {
+    max-height: calc(100vh - 5px);
+  }
+}
+
 .dialog-backdrop.active {
   display: block;
-  max-height: calc(100vh - 5px);
 }
 
 /* this is added to the body when a dialog is open */
