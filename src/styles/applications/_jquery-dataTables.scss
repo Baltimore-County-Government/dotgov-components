@@ -6,7 +6,6 @@ table.dataTable {
   width: 100%;
   margin: 0 auto;
   clear: both;
-  border-collapse: separate;
   border-spacing: 0;
 
   /*
@@ -15,11 +14,6 @@ table.dataTable {
   /*
      * Body styles
      */
-
-  thead th,
-  tfoot th {
-    font-weight: bold;
-  }
 
   thead {
     th,
@@ -92,20 +86,6 @@ table.dataTable {
     td {
       padding: 8px 10px;
       font-size: 22px;
-    }
-  }
-
-  &.row-border tbody {
-    th,
-    td {
-      border-top: 1px dotted #999;
-    }
-  }
-
-  &.display tbody {
-    th,
-    td {
-      border-top: 1px dotted #999;
     }
   }
 
@@ -290,10 +270,6 @@ table.dataTable {
   &.display tbody tr:hover.selected > .sorting_3,
   &.order-column.hover tbody tr:hover.selected > .sorting_3 {
     background-color: #a4b2cb;
-  }
-
-  &.no-footer {
-    border-bottom: 1px solid #111;
   }
 
   &.nowrap {
