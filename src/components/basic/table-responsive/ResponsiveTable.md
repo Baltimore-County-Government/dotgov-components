@@ -11,7 +11,7 @@ import TableRow from "../table/TableRow";
 <Table id="responsive-main-table" className="display">
   <TableHead>
     <TableRow>
-      <TableHeadCell>Icon</TableHeadCell>
+      <TableHeadCell></TableHeadCell>
       <TableHeadCell>Name</TableHeadCell>
       <TableHeadCell>Position</TableHeadCell>
       <TableHeadCell>Office</TableHeadCell>
@@ -47,7 +47,30 @@ import TableRow from "../table/TableRow";
     <TableRow>
       <TableCell>
         <i
-          className="fa fa-exclamation-triangle fa-2x icon-small icon-inline icon-modified"
+          className="fa fa-times fa-2x icon-small icon-inline icon-closed"
+          aria-hidden="true"
+        ></i>
+      </TableCell>
+      <TableCell>Stumpy McGhee</TableCell>
+      <TableCell>
+        <p>
+          <a
+            href="http://www.baltimorecountymd.gov/Agencies/recreation/programdivision/weather.html"
+            title="Get the latest closing information."
+          >
+            Recreation Centers
+          </a>
+        </p>
+      </TableCell>
+      <TableCell>Paris</TableCell>
+      <TableCell>58</TableCell>
+      <TableCell>2010/07/25</TableCell>
+      <TableCell>$98,750</TableCell>
+    </TableRow>
+    <TableRow>
+      <TableCell>
+        <i
+          className="fa fa-check fa-2x icon-small icon-inline icon-open"
           aria-hidden="true"
         ></i>
       </TableCell>
@@ -75,7 +98,7 @@ import TableRow from "../table/TableRow";
 <table id="responsive-main-table" className="display">
   <thead>
     <tr>
-      <th>Icon</th>
+      <th></th>
       <th>Name</th>
       <th>Position</th>
       <th>Office</th>
