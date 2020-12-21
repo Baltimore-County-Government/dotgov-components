@@ -77,7 +77,7 @@ module.exports = {
         {
           // Replaced prod link with dev link to be able to test changes to dotgov-site.min.js
           //src: "//baltimorecountymd.gov/sebin/z/l/dotgov-site.min.js"
-          src: "//dev.baltimorecountymd.gov/sebin/z/m/dotgov-site.min.js",
+          src: "https://dev.baltimorecountymd.gov/sebin/z/m/dotgov-site.min.js",
         },
         {
           src: "https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js",
@@ -85,6 +85,10 @@ module.exports = {
         {
           src:
             "https://cdn.datatables.net/responsive/2.2.6/js/dataTables.responsive.min.js",
+        },
+        {
+          src:
+            "https://dev.baltimorecountymd.gov/sebin/l/s/dotgov-responsivetable.min.js",
         },
       ],
     },
