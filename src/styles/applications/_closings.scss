@@ -14,7 +14,6 @@
 .icon-small {
   border-radius: 5px;
   color: white;
-  padding: 5px 10px;
 }
 
 .icon-extra-large {
@@ -45,6 +44,7 @@
 .icon-cancelled,
 .icon-canceled {
   background: red;
+  padding: 5px 12px;
 }
 
 .icon-closed:before,
@@ -79,7 +79,6 @@
 .icon-modified.icon-small,
 .icon-external.icon-small {
   font-size: 2.5em;
-  padding: 0 4px;
 }
 
 .closings {

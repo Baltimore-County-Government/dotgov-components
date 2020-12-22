@@ -6,7 +6,6 @@ table.dataTable {
   width: 100%;
   margin: 0 auto;
   clear: both;
-  border-collapse: separate;
   border-spacing: 0;
 
   /*
@@ -15,11 +14,6 @@ table.dataTable {
   /*
      * Body styles
      */
-
-  thead th,
-  tfoot th {
-    font-weight: bold;
-  }
 
   thead {
     th,
@@ -67,7 +61,7 @@ table.dataTable {
     }
 
     .sorting_desc {
-      background-image: url("/sebin/b/f/sort_desc_disabled.png ");
+      background-image: url("/sebin/b/f/sort_desc_disabled.png");
     }
 
     .sorting_asc_disabled {
@@ -91,21 +85,6 @@ table.dataTable {
     th,
     td {
       padding: 8px 10px;
-      font-size: 22px;
-    }
-  }
-
-  &.row-border tbody {
-    th,
-    td {
-      border-top: 1px dotted #999;
-    }
-  }
-
-  &.display tbody {
-    th,
-    td {
-      border-top: 1px dotted #999;
     }
   }
 
@@ -169,7 +148,7 @@ table.dataTable {
     .sorting_1,
     .sorting_2,
     .sorting_3 {
-      background-color: #f9f9f9;
+      background-color: inherit !important;
     }
   }
 
@@ -177,7 +156,7 @@ table.dataTable {
     .sorting_1,
     .sorting_2,
     .sorting_3 {
-      background-color: #f9f9f9;
+      background-color: inherit !important;
     }
   }
 
@@ -199,12 +178,12 @@ table.dataTable {
     }
 
     &.odd > .sorting_1 {
-      background-color: #f1f1f1;
+      background-color: inherit !important;
     }
   }
 
   &.order-column.stripe tbody tr.odd > .sorting_1 {
-    background-color: #f1f1f1;
+    background-color: inherit !important;
   }
 
   &.display tbody tr.odd > .sorting_2,
@@ -234,7 +213,7 @@ table.dataTable {
 
   &.display tbody tr.even > .sorting_1,
   &.order-column.stripe tbody tr.even > .sorting_1 {
-    background-color: #f9f9f9;
+    background-color: inherit !important;
   }
 
   &.display tbody tr.even > .sorting_2,
@@ -290,10 +269,6 @@ table.dataTable {
   &.display tbody tr:hover.selected > .sorting_3,
   &.order-column.hover tbody tr:hover.selected > .sorting_3 {
     background-color: #a4b2cb;
-  }
-
-  &.no-footer {
-    border-bottom: 1px solid #111;
   }
 
   &.nowrap {
