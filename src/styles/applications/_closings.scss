@@ -16,7 +16,8 @@
   color: white;
 }
 
-.icon-extra-large {
+.icon-extra-large,
+.icon-large {
   border-radius: 10px;
   color: #ebebeb;
   padding: 20px;
@@ -54,7 +55,9 @@
 }
 
 .icon-closed.icon-extra-large,
-.icon-cancelled.icon-extra-large {
+.icon-cancelled.icon-extra-large,
+.icon-closed.icon-large,
+.icon-cancelled.icon-large {
   padding: 10px 20px;
 }
 
