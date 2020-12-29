@@ -41,8 +41,9 @@ This will push the latest build to https://baltimorecounty.github.io/dotgov-comp
 
 ```js
 import "@baltimorecounty/dotgov-components/lib/styles/dotgov.min.css";
-```
 
+```
+_Note_: To generate dotgov.min.css => npm run generate-css
 _Note_: This import should be included your primary js file. Example `App.js` in a create react app.
 
 ### Including Components
