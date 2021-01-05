@@ -127,7 +127,7 @@ table.dataTable {
   }
 }
 
-@media screen and (max-width: $weather-table-breakpoint) {
+@media screen and (max-width: $responsive-table-icon-breakpoint) {
   #responsive-main-table {
     .dtr-control {
       .icon-closed {
