@@ -128,15 +128,15 @@ table.dataTable {
 }
 
 @media screen and (max-width: $medium-breakpoint) {
-  .dtr-control { 
+  .dtr-control {
     .icon-closed {
-    display:none;
+      display: none;
+    }
+    .icon-open {
+      display: none;
+    }
+    .icon-modified {
+      display: none;
+    }
   }
-  .icon-open {
-    display:none;
-  }
-  .icon-modified {
-    display:none;
-  }
-}
 }
