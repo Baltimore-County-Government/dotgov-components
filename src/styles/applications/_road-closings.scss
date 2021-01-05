@@ -1,0 +1,235 @@
+@font-face {
+    font-family: 'footable';
+    src: url('/sebin/o/n/footable.eot');
+    src: url('/sebin/o/n/footable.eot?#iefix') format("embedded-opentype"), url('/sebin/s/y/footable.woff') format("woff"), url('/sebin/s/m/footable.ttf') format("truetype"), url('/sebin/r/b/footable.svg#footable') format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @media screen and (-webkit-min-device-pixel-ratio: 0) {
+    @font-face {
+      font-family: 'footable';
+      src: url('/sebin/r/b/footable.svg#footable') format("svg");
+      font-weight: normal;
+      font-style: normal;
+    }
+  }
+  
+  .footable {
+    width: 100%;
+  
+    &.breakpoint {
+      > tbody > tr {
+        &.footable-detail-show > td {
+          border-bottom: 0;
+  
+          > span.footable-toggle:before {
+            content: "\e001";
+          }
+        }
+  
+        &:hover:not(.footable-row-detail) {
+          cursor: pointer;
+        }
+  
+        > td {
+          &.footable-cell-detail {
+            background: #eee;
+            border-top: 0;
+          }
+  
+          > span.footable-toggle {
+            display: inline-block;
+            font-family: 'footable';
+            speak: none;
+            font-style: normal;
+            font-weight: normal;
+            font-variant: normal;
+            text-transform: none;
+            -webkit-font-smoothing: antialiased;
+            padding-right: 5px;
+            font-size: 14px;
+            color: #888;
+  
+            &:before {
+              content: "\e000";
+            }
+          }
+        }
+      }
+  
+      &.toggle-circle > tbody > tr {
+        &.footable-detail-show > td > span.footable-toggle:before {
+          content: "\e005";
+        }
+  
+        > td > span.footable-toggle:before {
+          content: "\e004";
+        }
+      }
+  
+      &.toggle-circle-filled > tbody > tr {
+        &.footable-detail-show > td > span.footable-toggle:before {
+          content: "\e003";
+        }
+  
+        > td > span.footable-toggle:before {
+          content: "\e002";
+        }
+      }
+  
+      &.toggle-square > tbody > tr {
+        &.footable-detail-show > td > span.footable-toggle:before {
+          content: "\e007";
+        }
+  
+        > td > span.footable-toggle:before {
+          content: "\e006";
+        }
+      }
+  
+      &.toggle-square-filled > tbody > tr {
+        &.footable-detail-show > td > span.footable-toggle:before {
+          content: "\e009";
+        }
+  
+        > td > span.footable-toggle:before {
+          content: "\e008";
+        }
+      }
+  
+      &.toggle-arrow > tbody > tr {
+        &.footable-detail-show > td > span.footable-toggle:before {
+          content: "\e00f";
+        }
+  
+        > td > span.footable-toggle:before {
+          content: "\e011";
+        }
+      }
+  
+      &.toggle-arrow-small > tbody > tr {
+        &.footable-detail-show > td > span.footable-toggle:before {
+          content: "\e013";
+        }
+  
+        > td > span.footable-toggle:before {
+          content: "\e015";
+        }
+      }
+  
+      &.toggle-arrow-circle > tbody > tr {
+        &.footable-detail-show > td > span.footable-toggle:before {
+          content: "\e01b";
+        }
+  
+        > td > span.footable-toggle:before {
+          content: "\e01d";
+        }
+      }
+  
+      &.toggle-arrow-circle-filled > tbody > tr {
+        &.footable-detail-show > td > span.footable-toggle:before {
+          content: "\e00b";
+        }
+  
+        > td > span.footable-toggle:before {
+          content: "\e00d";
+        }
+      }
+  
+      &.toggle-arrow-tiny > tbody > tr {
+        &.footable-detail-show > td > span.footable-toggle:before {
+          content: "\e01f";
+        }
+  
+        > td > span.footable-toggle:before {
+          content: "\e021";
+        }
+      }
+  
+      &.toggle-arrow-alt > tbody > tr {
+        &.footable-detail-show > td > span.footable-toggle:before {
+          content: "\e017";
+        }
+  
+        > td > span.footable-toggle:before {
+          content: "\e019";
+        }
+      }
+  
+      &.toggle-medium > tbody > tr > td > span.footable-toggle {
+        font-size: 18px;
+      }
+  
+      &.toggle-large > tbody > tr > td > span.footable-toggle {
+        font-size: 24px;
+      }
+    }
+  
+    > {
+      thead > tr > th {
+        &.footable-sortable:hover {
+          cursor: pointer;
+        }
+  
+        &.footable-sorted > span.footable-sort-indicator:before {
+          content: "\e013";
+        }
+  
+        &.footable-sorted-desc > span.footable-sort-indicator:before {
+          content: "\e012";
+        }
+  
+        > span.footable-sort-indicator {
+          display: inline-block;
+          font-family: 'footable';
+          speak: none;
+          font-style: normal;
+          font-weight: normal;
+          font-variant: normal;
+          text-transform: none;
+          -webkit-font-smoothing: antialiased;
+          padding-left: 5px;
+  
+          &:before {
+            content: "\e022";
+          }
+        }
+      }
+  
+      tfoot .pagination {
+        margin: 0;
+      }
+    }
+  
+    &.no-paging .hide-if-no-paging {
+      display: none;
+    }
+  }
+  
+  .footable-row-detail-inner {
+    display: table;
+  }
+  
+  .footable-row-detail-row {
+    display: table-row;
+    line-height: 1.5em;
+  }
+  
+  .footable-row-detail-group {
+    display: block;
+    line-height: 2em;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  .footable-row-detail-name {
+    display: table-cell;
+    font-weight: bold;
+    padding-right: .5em;
+  }
+  
+  .footable-row-detail-value {
+    display: table-cell;
+  }
