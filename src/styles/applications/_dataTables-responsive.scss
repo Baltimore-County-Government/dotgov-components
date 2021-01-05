@@ -127,7 +127,7 @@ table.dataTable {
   }
 }
 
-@media screen and (max-width: $medium-breakpoint) {
+@media screen and (max-width: $weather-table-breakpoint) {
   .dtr-control {
     .icon-closed {
       display: none;
