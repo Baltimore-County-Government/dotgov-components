@@ -128,15 +128,20 @@ table.dataTable {
 }
 
 @media screen and (max-width: $weather-table-breakpoint) {
-  .dtr-control {
-    .icon-closed {
-      display: none;
-    }
-    .icon-open {
-      display: none;
-    }
-    .icon-modified {
-      display: none;
+  #responsive-main-table {
+    .dtr-control {
+      .icon-closed {
+        display: none;
+      }
+      .icon-modified {
+        display: none;
+      }
+      .icon-open {
+        display: none;
+      }
+      .icon-seewebsite {
+        display: none;
+      }
     }
   }
 }
