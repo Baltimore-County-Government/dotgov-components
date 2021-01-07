@@ -1,5 +1,10 @@
 import React from "react";
+import classnames from "classnames";
 
-const TableHeadCell = props => <th>{props.children}</th>;
+const TableHeadCell = ({ className, children, ...rest }) => (
+  <th  {...rest}>
+    {children}
+  </th>
+);
 
 export default TableHeadCell;
