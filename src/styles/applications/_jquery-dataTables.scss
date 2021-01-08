@@ -56,6 +56,7 @@ table.dataTable {
       &:after {
         font-size: $smallest-heading-font-size;
         color: $gray;
+        padding-left: $padding-small;
         @include icon-content($icon-sort-both);
       }
     }
@@ -64,6 +65,7 @@ table.dataTable {
       &:after {
         font-size: $smallest-heading-font-size;
         color: $blue;
+        padding-left: $padding-small;
         @include icon-content($icon-sort-up);
       }
     }
@@ -72,6 +74,7 @@ table.dataTable {
       &:after {
         font-size: $smallest-heading-font-size;
         color: $blue;
+        padding-left: $padding-small;
         @include icon-content($icon-sort-down);
       }
     }
@@ -80,6 +83,7 @@ table.dataTable {
       &:after {
         font-size: $smallest-heading-font-size;
         color: $gray;
+        padding-left: $padding-small;
         @include icon-content($icon-sort-up);
       }
     }
@@ -88,6 +92,7 @@ table.dataTable {
       &:after {
         font-size: $smallest-heading-font-size;
         color: $gray;
+        padding-left: $padding-small;
         @include icon-content($icon-sort-down);
       }
     }
