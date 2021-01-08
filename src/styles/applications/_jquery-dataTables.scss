@@ -53,23 +53,43 @@ table.dataTable {
     }
 
     .sorting {
-      background-image: url("/sebin/t/i/sort_both.png");
+      &:after {
+        font-size: $smallest-heading-font-size;
+        color: $gray;
+        @include icon-content($icon-sort-both);
+      }
     }
 
     .sorting_asc {
-      background-image: url("/sebin/l/k/sort_asc.png");
+      &:after {
+        font-size: $smallest-heading-font-size;
+        color: $blue;
+        @include icon-content($icon-sort-up);
+      }
     }
 
     .sorting_desc {
-      background-image: url("/sebin/b/f/sort_desc_disabled.png");
+      &:after {
+        font-size: $smallest-heading-font-size;
+        color: $blue;
+        @include icon-content($icon-sort-down);
+      }
     }
 
-    .sorting_asc_disabled {
-      background-image: url("/sebin/h/a/sort_asc_disabled.png");
+    .sorting_asc_disabled:disabled {
+      &:after {
+        font-size: $smallest-heading-font-size;
+        color: $gray;
+        @include icon-content($icon-sort-up);
+      }
     }
 
-    .sorting_desc_disabled {
-      background-image: url("/sebin/b/f/sort_desc_disabled.png");
+    .sorting_desc_disabled:disabled {
+      &:after {
+        font-size: $smallest-heading-font-size;
+        color: $gray;
+        @include icon-content($icon-sort-down);
+      }
     }
   }
 
