@@ -126,3 +126,22 @@ table.dataTable {
     }
   }
 }
+
+@media screen and (max-width: $responsive-table-icon-breakpoint) {
+  #responsive-main-table {
+    .dtr-control {
+      .icon-closed {
+        display: none;
+      }
+      .icon-modified {
+        display: none;
+      }
+      .icon-open {
+        display: none;
+      }
+      .icon-seewebsite {
+        display: none;
+      }
+    }
+  }
+}
