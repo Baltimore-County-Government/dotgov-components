@@ -54,33 +54,40 @@ table.dataTable {
 
     .sorting {
       &:after {
-        color: #cccccc;
+        font-size: $smallest-heading-font-size;
+        color: $gray;
         @include icon-content($icon-sort-both);
       }
     }
 
     .sorting_asc {
       &:after {
+        font-size: $smallest-heading-font-size;
+        color: $blue;
         @include icon-content($icon-sort-up);
       }
     }
 
     .sorting_desc {
       &:after {
+        font-size: $smallest-heading-font-size;
+        color: $blue;
         @include icon-content($icon-sort-down);
       }
     }
 
     .sorting_asc_disabled:disabled {
       &:after {
-        color: #cccccc;
+        font-size: $smallest-heading-font-size;
+        color: $gray;
         @include icon-content($icon-sort-up);
       }
     }
 
     .sorting_desc_disabled:disabled {
       &:after {
-        color: #cccccc;
+        font-size: $smallest-heading-font-size;
+        color: $gray;
         @include icon-content($icon-sort-down);
       }
     }
