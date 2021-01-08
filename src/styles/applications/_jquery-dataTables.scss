@@ -53,23 +53,36 @@ table.dataTable {
     }
 
     .sorting {
-      background-image: url("/sebin/t/i/sort_both.png");
+      &:after {
+        color: #cccccc;
+        @include icon-content($icon-sort-both);
+      }
     }
 
     .sorting_asc {
-      background-image: url("/sebin/l/k/sort_asc.png");
+      &:after {
+        @include icon-content($icon-sort-up);
+      }
     }
 
     .sorting_desc {
-      background-image: url("/sebin/b/f/sort_desc_disabled.png");
+      &:after {
+        @include icon-content($icon-sort-down);
+      }
     }
 
-    .sorting_asc_disabled {
-      background-image: url("/sebin/h/a/sort_asc_disabled.png");
+    .sorting_asc_disabled:disabled {
+      &:after {
+        color: #cccccc;
+        @include icon-content($icon-sort-up);
+      }
     }
 
-    .sorting_desc_disabled {
-      background-image: url("/sebin/b/f/sort_desc_disabled.png");
+    .sorting_desc_disabled:disabled {
+      &:after {
+        color: #cccccc;
+        @include icon-content($icon-sort-down);
+      }
     }
   }
 
