@@ -8,10 +8,10 @@ import TableHead from "../table/TableHead";
 import TableHeadCell from "../table/TableHeadCell";
 import TableRow from "../table/TableRow";
 
-<Table id="responsive-main-table" className="display">
+<Table className="responsive-main-table">
   <TableHead>
     <TableRow>
-      <TableHeadCell></TableHeadCell>
+      <TableHeadCell className="no-sort"></TableHeadCell>
       <TableHeadCell>Name</TableHeadCell>
       <TableHeadCell>Position</TableHeadCell>
       <TableHeadCell>Office</TableHeadCell>
@@ -95,10 +95,10 @@ import TableRow from "../table/TableRow";
 ```
 
 ```html
-<table id="responsive-main-table" className="display">
+<table className="responsive-main-table">
   <thead>
     <tr>
-      <th></th>
+      <th className="no-sort"></th>
       <th>Name</th>
       <th>Position</th>
       <th>Office</th>
