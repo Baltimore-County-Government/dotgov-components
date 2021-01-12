@@ -128,7 +128,7 @@ table.dataTable {
 }
 
 @media screen and (max-width: $responsive-table-icon-breakpoint) {
-  #responsive-main-table {
+  .responsive-main-table {
     .dtr-control {
       .icon-closed {
         display: none;
