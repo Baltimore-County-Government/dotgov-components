@@ -111,7 +111,7 @@ table.dataTable thead {
   }
 }
 
-@media screen and (max-width: $responsive-table-icon-breakpoint) {
+@media screen and (max-width: 605px) {
   .closings {
     /*margin-bottom: 0;*/
   }
@@ -121,7 +121,7 @@ table.dataTable thead {
 
     tr.canceled,
     tr.closed {
-      background-color: $red;
+      background-color: $red-lightest;
     }
 
     tr.open,
@@ -130,7 +130,7 @@ table.dataTable thead {
     }
 
     tr.modified {
-      background-color: $gold;
+      background-color: $gold-lightest;
     }
   }
 }
