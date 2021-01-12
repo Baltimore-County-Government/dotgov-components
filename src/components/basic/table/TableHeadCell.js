@@ -1,7 +1,8 @@
 import React from "react";
+import classnames from "classnames";
 
 const TableHeadCell = ({ className, children, ...rest }) => (
-  <th className={className} {...rest}>
+  <th className={classnames(className)} {...rest}>
     {children}
   </th>
 );
