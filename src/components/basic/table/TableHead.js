@@ -3,7 +3,7 @@ import classnames from "classnames";
 
 const TableHead = ({ className, children, ...rest }) => (
   <thead className={classnames(className)} {...rest}>
-    {props.children}
+    {children}
   </thead>
 );
 
