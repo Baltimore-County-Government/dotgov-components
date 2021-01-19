@@ -481,11 +481,10 @@ table.dataTable {
   }
 
   .dataTables_filter {
-    float: right;
-    text-align: right;
+    margin-bottom: 20px;
 
     input {
-      margin-left: 0.5em;
+      margin-top: 10px;
     }
   }
 
