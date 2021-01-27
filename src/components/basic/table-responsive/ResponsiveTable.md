@@ -1,5 +1,11 @@
 ### Responsive Table
 
+**Note**: At this time, an external script reference is required in order to use responsive table.
+
+**Requirements**: In order for the javascript to add the responsive classes the table must have a css class of responsive-main-table
+
+**Optional**: If there is an empty header column to hold things like icons then add the class no-sort to the header cell. This will disable the arrow sort icons. The order-by css class needs to be added to the column that will be pre-sorted.
+
 ```jsx
 import Table from "../table/Table";
 import TableBody from "../table/TableBody";
@@ -12,7 +18,7 @@ import TableRow from "../table/TableRow";
   <TableHead>
     <TableRow>
       <TableHeadCell className="no-sort"></TableHeadCell>
-      <TableHeadCell>Name</TableHeadCell>
+      <TableHeadCell className="order-by">Name</TableHeadCell>
       <TableHeadCell>Position</TableHeadCell>
       <TableHeadCell>Office</TableHeadCell>
       <TableHeadCell>Age</TableHeadCell>
@@ -95,11 +101,11 @@ import TableRow from "../table/TableRow";
 ```
 
 ```html
-<table className="responsive-main-table">
+<table class="responsive-main-table">
   <thead>
     <tr>
-      <th className="no-sort"></th>
-      <th>Name</th>
+      <th class="no-sort"></th>
+      <th class="order-by">Name</th>
       <th>Position</th>
       <th>Office</th>
       <th>Age</th>
@@ -111,7 +117,7 @@ import TableRow from "../table/TableRow";
     <tr>
       <td>
         <i
-          className="fa fa-exclamation-triangle fa-2x icon-small icon-inline icon-modified"
+          class="fa fa-exclamation-triangle fa-2x icon-small icon-inline icon-modified"
           aria-hidden="true"
         ></i>
       </td>
@@ -133,7 +139,7 @@ import TableRow from "../table/TableRow";
     <tr>
       <td>
         <i
-          className="fa fa-exclamation-triangle fa-2x icon-small icon-inline icon-modified"
+          class="fa fa-exclamation-triangle fa-2x icon-small icon-inline icon-modified"
           aria-hidden="true"
         ></i>
       </td>

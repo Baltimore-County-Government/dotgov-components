@@ -80,15 +80,8 @@ module.exports = {
           src: "https://dev.baltimorecountymd.gov/sebin/z/m/dotgov-site.min.js",
         },
         {
-          src: "https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js",
-        },
-        {
           src:
-            "https://cdn.datatables.net/responsive/2.2.6/js/dataTables.responsive.min.js",
-        },
-        {
-          src:
-            "https://dev.baltimorecountymd.gov/sebin/l/s/dotgov-responsivetable.min.js",
+            "https://staging.baltimorecountymd.gov/sebin/l/t/dotgov-responsivetable.min.js",
         },
       ],
     },
