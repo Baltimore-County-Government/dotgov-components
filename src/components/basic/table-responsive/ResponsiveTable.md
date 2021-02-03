@@ -27,7 +27,7 @@ import TableRow from "../table/TableRow";
     </TableRow>
   </TableHead>
   <TableBody>
-    <TableRow>
+    <TableRow className="modified">
       <TableCell>
         <i
           className="fa fa-exclamation-triangle fa-2x icon-small icon-inline icon-modified"
@@ -50,7 +50,7 @@ import TableRow from "../table/TableRow";
       <TableCell>2011/04/25</TableCell>
       <TableCell>$320,800</TableCell>
     </TableRow>
-    <TableRow>
+    <TableRow className="closed">
       <TableCell>
         <i
           className="fa fa-times fa-2x icon-small icon-inline icon-closed"
@@ -73,7 +73,7 @@ import TableRow from "../table/TableRow";
       <TableCell>2010/07/25</TableCell>
       <TableCell>$98,750</TableCell>
     </TableRow>
-    <TableRow>
+    <TableRow className="open">
       <TableCell>
         <i
           className="fa fa-check fa-2x icon-small icon-inline icon-open"
@@ -114,7 +114,7 @@ import TableRow from "../table/TableRow";
     </tr>
   </thead>
   <tbody>
-    <tr>
+    <tr class="modified">
       <td>
         <i
           class="fa fa-exclamation-triangle fa-2x icon-small icon-inline icon-modified"
@@ -136,10 +136,10 @@ import TableRow from "../table/TableRow";
       <td>2011/04/25</td>
       <td>$320,800</td>
     </tr>
-    <tr>
+    <tr class="open">
       <td>
         <i
-          class="fa fa-exclamation-triangle fa-2x icon-small icon-inline icon-modified"
+          class="fa fa-check fa-2x icon-small icon-inline icon-open"
           aria-hidden="true"
         ></i>
       </td>
