@@ -27,7 +27,7 @@ Html Snippet:
 </div>
 ```
 
-### Basic with Icon
+### With Icon
 
 ```jsx
 <TextInput
