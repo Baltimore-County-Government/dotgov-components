@@ -53,6 +53,8 @@ TextInput.propTypes = {
   type: PropTypes.string,
   /** Function that will validate the field */
   validate: PropTypes.func,
+  /** Icon to be placed inside of the input */
+  icon: PropTypes.string,
 };
 
 export default TextInput;
