@@ -112,10 +112,6 @@ table.dataTable thead {
 }
 
 @media screen and (max-width: $medium-breakpoint) {
-  .closings {
-    /*margin-bottom: 0;*/
-  }
-
   table {
     &.dataTable.display {
       tbody {
