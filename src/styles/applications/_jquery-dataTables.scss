@@ -36,23 +36,16 @@ table.dataTable {
   }
 
   thead {
-    .sorting,
-    .sorting_asc,
-    .sorting_desc {
-      cursor: pointer;
-      *cursor: hand;
+    th {
+      &.sorting,
+      &.sorting_asc,
+      &.sorting_desc {
+        cursor: pointer;
+        *cursor: hand;
+      }
     }
 
-    .sorting,
-    .sorting_asc,
-    .sorting_desc,
-    .sorting_asc_disabled,
-    .sorting_desc_disabled {
-      background-repeat: no-repeat;
-      background-position: center right;
-    }
-
-    .sorting {
+    th.sorting {
       &:after {
         font-size: $smallest-heading-font-size;
         color: $gray;
@@ -61,7 +54,7 @@ table.dataTable {
       }
     }
 
-    .sorting_asc {
+    th.sorting_asc {
       &:after {
         font-size: $smallest-heading-font-size;
         color: $blue;
@@ -70,7 +63,7 @@ table.dataTable {
       }
     }
 
-    .sorting_desc {
+    th.sorting_desc {
       &:after {
         font-size: $smallest-heading-font-size;
         color: $blue;
@@ -79,7 +72,7 @@ table.dataTable {
       }
     }
 
-    .sorting_asc_disabled:disabled {
+    th.sorting_asc_disabled:disabled {
       &:after {
         font-size: $smallest-heading-font-size;
         color: $gray;
@@ -88,7 +81,7 @@ table.dataTable {
       }
     }
 
-    .sorting_desc_disabled:disabled {
+    th.sorting_desc_disabled:disabled {
       &:after {
         font-size: $smallest-heading-font-size;
         color: $gray;

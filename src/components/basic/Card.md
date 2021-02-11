@@ -183,3 +183,96 @@ HTML Snippet:
   </div>
 </div>
 ```
+
+### Card Container Image Left to Right
+
+```jsx
+import Card from "./Card";
+import CardContent from "./CardContent";
+import Section from "./containers/Section";
+
+<Section>
+  <div className="container">
+    <div className="row">
+      <div className="d-flex col-md-4">
+        <Card>
+          <CardContent>
+            <div className="row align-items-center">
+              <div className="col-md-2 col-xs-12">
+                <i className="fas fa-snowflake"></i>
+              </div>
+              <div className="col-md-10 col-xs-12">
+                <p>Less Than 6 inches</p>
+                <h3>24 Hours</h3>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+      <div className="d-flex col-md-4">
+        <Card>
+          <CardContent>
+            <div className="row align-items-center">
+              <div className="col-md-2 col-xs-12">
+                <i className="fas fa-snowflakes"></i>
+              </div>
+              <div className="col-md-10 col-xs-12">
+                <p>More Than 6 inches</p>
+                <h3>48 Hours</h3>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+      <div className="d-flex col-md-4">
+        <Card>
+          <CardContent>
+            <div className="row align-items-center">
+              <div className="col-md-2 col-xs-12">
+                <i className="fas fa-truck-plow"></i>
+              </div>
+              <div className="col-md-10 col-xs-12">
+                <h3>423</h3>
+                <p>trucks and equipment</p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+    </div>
+  </div>
+</Section>;
+```
+
+```html
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 d-flex">
+      <div class="dg_card">
+        <div class="row align-items-center">
+          <div class="col-md-2 col-xs-12">
+            <i class="fas fa-snowflake"></i>
+          </div>
+          <div class="col-md-10 col-xs-12">
+            <p>Less Than 6 inches</p>
+            <h3>24 Hours</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4  d-flex">
+      <div class="dg_card">
+        <div class="row align-items-center">
+          <div class="col-md-2 col-xs-12">
+            <i style="font-size: 30px" class="fas fa-snowflakes"></i>
+          </div>
+          <div class="col-md-10 col-xs-12">
+            <p>More Than 6 inches</p>
+            <h3>48 Hours</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+```
