@@ -15,6 +15,12 @@ textarea {
   &::-webkit-search-results-decoration {
     -webkit-appearance: none;
   }
+  &::-ms-clear,
+  &::-ms-reveal {
+    display: none;
+    width: 0;
+    height: 0;
+  }
 }
 
 @include placeholder {
