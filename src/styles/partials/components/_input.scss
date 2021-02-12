@@ -1,19 +1,26 @@
 input,
 select,
 textarea {
-	border: $default-border-width solid $black;
-	border-radius: 0; /** needed for safari mobile */
-	color: $gray-dark;
-	font-size: $h3-font-size;
-	font-family: $default-heading-font;
-	padding: $padding-smallest;
-	width: 100%;
+  border: $default-border-width solid $black;
+  border-radius: 0; /** needed for safari mobile */
+  color: $gray-dark;
+  font-size: $h3-font-size;
+  font-family: $default-heading-font;
+  padding: $padding-smallest;
+  width: 100%;
+
+  &::-webkit-search-decoration,
+  &::-webkit-search-cancel-button,
+  &::-webkit-search-results-button,
+  &::-webkit-search-results-decoration {
+    -webkit-appearance: none;
+  }
 }
 
 @include placeholder {
-	font-style: italic;
+  font-style: italic;
 }
 
 textarea {
-	min-height: 8em;
+  min-height: 8em;
 }
