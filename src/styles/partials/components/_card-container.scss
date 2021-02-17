@@ -10,6 +10,14 @@
   text-align: center;
   width: 100%;
 
+&.dg_infographic-card {
+
+  p {
+    font-size: $smallest-font-size;
+  }
+
+}
+
   h1,
   h2,
   h3 {
