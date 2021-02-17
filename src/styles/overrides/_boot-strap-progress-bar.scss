@@ -21,3 +21,8 @@
   background-color: $blue;
   transition: width 0.6s ease;
 }
+
+.back-arrow {
+  color: $blue;
+  @include icon-content($icon-arrow-left);
+}
