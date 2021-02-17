@@ -26,3 +26,8 @@
   color: $blue;
   @include icon-content($icon-arrow-left);
 }
+
+.success-checkmark {
+  font-size: $h1-font-size;
+  color: $green;
+}
