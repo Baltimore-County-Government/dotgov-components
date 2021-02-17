@@ -1,0 +1,23 @@
+.progress {
+  display: -ms-flexbox;
+  display: flex;
+  height: $default-padding;
+  overflow: hidden;
+  font-size: $smallest-font-size;
+  background-color: $white;
+  border-radius: $border-width-large;
+}
+
+.progress-bar {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: $white;
+  text-align: center;
+  white-space: nowrap;
+  background-color: $blue;
+  transition: width 0.6s ease;
+}
