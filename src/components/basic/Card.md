@@ -16,7 +16,7 @@ import ImagePlaceholder from "./ImagePlaceholder";
             <div className="dg_icon-container">
               <i className="fas fa-star" aria-hidden="true"></i>
             </div>
-            <h3>Centered With Icon</h3>
+            <h1>Centered With Icon</h1>
             <p>.8 acres</p>
             <a href="https://www.google.com/maps">
               300 Lennox Avenue Room 202 Towson, Maryland 21286
@@ -33,7 +33,7 @@ import ImagePlaceholder from "./ImagePlaceholder";
         <Card>
           <CardContent>
             <ImagePlaceholder />
-            <h3>Centered With Image</h3>
+            <h2>Centered With Image</h2>
             <p>.8 acres</p>
             <a href="https://www.google.com/maps">
               300 Lennox Avenue Room 202 Towson, Maryland 21286
@@ -50,7 +50,7 @@ import ImagePlaceholder from "./ImagePlaceholder";
         <Card>
           <CardContent className="text-left">
             <ImagePlaceholder />
-            <h3>Align Left With Image</h3>
+            <h5>Align Left With Image</h5>
             <p>.8 acres</p>
             <a href="https://www.google.com/maps">
               300 Lennox Avenue Room 202 Towson, Maryland 21286
