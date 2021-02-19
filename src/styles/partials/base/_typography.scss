@@ -19,15 +19,12 @@ p {
 
 a {
   color: $blue;
-  border-bottom: 2px solid;
-  text-decoration: none;
 
   &:hover,
   &:focus,
   &.hovered,
   &.focused {
     color: $vibrant-blue;
-    border-bottom: none;
   }
 
   &:active,
