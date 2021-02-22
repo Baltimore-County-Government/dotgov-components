@@ -195,7 +195,8 @@ import Section from "./containers/Section";
   <div className="container">
     <div className="row">
       <div className="d-flex col-md-4">
-        <Card>
+        <Card
+        className="dg_infographic-card">
           <CardContent>
             <div className="row align-items-center">
               <div className="col-md-2 col-xs-12">
@@ -210,7 +211,9 @@ import Section from "./containers/Section";
         </Card>
       </div>
       <div className="d-flex col-md-4">
-        <Card>
+        <Card
+        className="dg_infographic-card"
+        >
           <CardContent>
             <div className="row align-items-center">
               <div className="col-md-2 col-xs-12">
@@ -225,7 +228,9 @@ import Section from "./containers/Section";
         </Card>
       </div>
       <div className="d-flex col-md-4">
-        <Card>
+        <Card
+        className="dg_infographic-card"
+        >
           <CardContent>
             <div className="row align-items-center">
               <div className="col-md-2 col-xs-12">
