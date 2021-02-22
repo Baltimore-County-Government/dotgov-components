@@ -17,6 +17,18 @@ p {
   margin-bottom: $default-margin;
 }
 
+a.tip{
+  color:#002280;
+  border-bottom: 2px solid;
+  text-decoration: none
+}
+a.tip:hover,
+a.tip:focus,
+a.tp.hovered,
+a.tip.focused{color:#1076bc;border-bottom:none}a:active,
+a.tip.active{color:#243e5d}
+a.tip:disabled,a.tip.disabled{color:#929fae;border-bottom:none}
+
 a {
   color: $blue;
   border-bottom: 2px solid;
