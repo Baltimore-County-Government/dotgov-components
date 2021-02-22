@@ -112,25 +112,27 @@ table.dataTable thead {
 }
 
 @media screen and (max-width: $medium-breakpoint) {
-  .closings {
-    /*margin-bottom: 0;*/
-  }
-
-  table.dataTable {
-    font-size: 16px;
-
-    tr.canceled,
-    tr.closed {
-      background-color: $red-lightest;
-    }
-
-    tr.open,
-    tr.operating {
-      background-color: $green;
-    }
-
-    tr.modified {
-      background-color: $gold-lightest;
+  table {
+    &.dataTable.display {
+      tbody {
+        font-size: 16px;
+        tr {
+          &.odd,
+          &.even {
+            &.canceled,
+            &.closed {
+              background-color: $red-lightest;
+            }
+            &.open,
+            &.operating {
+              background-color: $green;
+            }
+            &.modified {
+              background-color: $gold-lightest;
+            }
+          }
+        }
+      }
     }
   }
 }
