@@ -195,8 +195,7 @@ import Section from "./containers/Section";
   <div className="container">
     <div className="row">
       <div className="d-flex col-md-4">
-        <Card
-        className="dg_infographic-card">
+        <Card className="dg_infographic-card">
           <CardContent>
             <div className="row align-items-center">
               <div className="col-md-2 col-xs-12">
@@ -211,9 +210,7 @@ import Section from "./containers/Section";
         </Card>
       </div>
       <div className="d-flex col-md-4">
-        <Card
-        className="dg_infographic-card"
-        >
+        <Card className="dg_infographic-card">
           <CardContent>
             <div className="row align-items-center">
               <div className="col-md-2 col-xs-12">
@@ -228,9 +225,7 @@ import Section from "./containers/Section";
         </Card>
       </div>
       <div className="d-flex col-md-4">
-        <Card
-        className="dg_infographic-card"
-        >
+        <Card className="dg_infographic-card">
           <CardContent>
             <div className="row align-items-center">
               <div className="col-md-2 col-xs-12">
@@ -253,7 +248,7 @@ import Section from "./containers/Section";
 <div class="container">
   <div class="row">
     <div class="col-md-4 d-flex">
-      <div class="dg_infographic-card">
+      <div class="dg_card dg_infographic-card">
         <div class="row align-items-center">
           <div class="col-md-2 col-xs-12">
             <i class="fas fa-snowflake"></i>
@@ -266,7 +261,7 @@ import Section from "./containers/Section";
       </div>
     </div>
     <div class="col-md-4  d-flex">
-      <div class="dg_infographic-card">
+      <div class="dg_card dg_infographic-card">
         <div class="row align-items-center">
           <div class="col-md-2 col-xs-12">
             <i style="font-size: 30px" class="fas fa-snowflakes"></i>
