@@ -234,14 +234,7 @@ Html Snippet:
     Open All
   </button>
   <div class="collapsed dg_accordion__collapsible">
-    <button
-      class="dg_accordion-btn"
-      type="button"
-      data-toggle="collapse"
-      data-target="#collapseOne1"
-      aria-expanded="true"
-      aria-controls="collapseOne"
-    >
+    <button class="dg_accordion-btn" type="button" aria-expanded="true">
       <h4 class="dg_accordion_buttontext-holder">Collapsible Group Item #1</h4>
     </button>
     <div
@@ -256,14 +249,7 @@ Html Snippet:
     </div>
   </div>
   <div class="collapsed dg_accordion__collapsible">
-    <button
-      class="dg_accordion-btn"
-      type="button"
-      data-toggle="collapse"
-      data-target="#collapseTwo2"
-      aria-expanded="false"
-      aria-controls="collapseTwo"
-    >
+    <button class="dg_accordion-btn" type="button" aria-expanded="false">
       <h4 class="dg_accordion_buttontext-holder">Collapsible Group Item #2</h4>
     </button>
     <div>This is a sub header</div>
@@ -278,14 +264,7 @@ Html Snippet:
     </div>
   </div>
   <div class="collapsed dg_accordion__collapsible">
-    <button
-      class="dg_accordion-btn"
-      type="button"
-      data-toggle="collapse"
-      data-target="#collapseThree3"
-      aria-expanded="false"
-      aria-controls="collapseThree"
-    >
+    <button class="dg_accordion-btn" type="button" aria-expanded="false">
       <h4 class="dg_accordion_buttontext-holder">Collapsible Group Item #3</h4>
     </button>
     <div
