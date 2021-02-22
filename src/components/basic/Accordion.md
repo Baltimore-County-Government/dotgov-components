@@ -1,4 +1,4 @@
-**Note**: At this time, an external script reference is required in order to use accordions
+**Note**: At this time, an external script reference is required in order to use accordions. To use span tag, remove prority from the code
 
 ## Examples
 
@@ -109,7 +109,7 @@ const collapseItems = [
 import Section from "../basic/containers/Section";
 <div id="dg_main-content">
   <Section>
-    <Accordion collapseItems={collapseItems} />
+    <Accordion collapseItems={collapseItems} priority="2" />
   </Section>
 </div>;
 ```
