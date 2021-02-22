@@ -234,14 +234,15 @@ Html Snippet:
     Open All
   </button>
   <div class="collapsed dg_accordion__collapsible">
-    <button class="dg_accordion-btn" type="button" aria-expanded="true">
+    <button
+      class="dg_accordion-btn"
+      type="button"
+      aria-expanded="false"
+      aria-controls="collapseOne1"
+    >
       <h4 class="dg_accordion_buttontext-holder">Collapsible Group Item #1</h4>
     </button>
-    <div
-      id="collapseOne1"
-      class="multi-collapse collapse"
-      data-parent="#accordionExample1"
-    >
+    <div id="collapseOne1" class="multi-collapse collapse">
       <div class="dg_accordion-item-body">
         occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
         you probably haven't heard of them accusamus labore sustainable VHS.
@@ -249,29 +250,31 @@ Html Snippet:
     </div>
   </div>
   <div class="collapsed dg_accordion__collapsible">
-    <button class="dg_accordion-btn" type="button" aria-expanded="false">
+    <button
+      class="dg_accordion-btn"
+      type="button"
+      aria-expanded="false"
+      aria-controls="collapseTwo2"
+    >
       <h4 class="dg_accordion_buttontext-holder">Collapsible Group Item #2</h4>
     </button>
     <div>This is a sub header</div>
-    <div
-      id="collapseTwo2"
-      class="multi-collapse collapse"
-      data-parent="#accordionExample1"
-    >
+    <div id="collapseTwo2" class="multi-collapse collapse">
       <div class="dg_accordion-item-body">
         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
       </div>
     </div>
   </div>
   <div class="collapsed dg_accordion__collapsible">
-    <button class="dg_accordion-btn" type="button" aria-expanded="false">
+    <button
+      class="dg_accordion-btn"
+      type="button"
+      aria-expanded="false"
+      aria-controls="collapseThree3"
+    >
       <h4 class="dg_accordion_buttontext-holder">Collapsible Group Item #3</h4>
     </button>
-    <div
-      id="collapseThree3"
-      class="multi-collapse collapse"
-      data-parent="#accordionExample1"
-    >
+    <div id="collapseThree3" class="multi-collapse collapse">
       <div class="dg_accordion-item-body">
         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
         terry richardson ad squid. 3 wolf moon officia aute, non cupidatat you
