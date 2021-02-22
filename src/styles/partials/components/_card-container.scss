@@ -13,12 +13,11 @@
   &.dg_infographic-card {
     p:first-of-type {
       font-size: $smallest-font-size;
-      margin-bottom: 0px;
+      margin-bottom: $margin-smallest;
     }
     i:first-of-type {
       font-size: $h1-font-size;
       margin-bottom: 0px;
-      margin-right: $margin-smallest;
     }
     h1,
     h2,
