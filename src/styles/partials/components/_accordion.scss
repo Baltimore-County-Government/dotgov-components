@@ -35,6 +35,15 @@
     color: $vibrant-blue;
   }
 
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: inherit;
+  }
+
   .dg_accordion__subheader {
     font-size: $smallest-heading-font-size;
     font-weight: $font-medium;
