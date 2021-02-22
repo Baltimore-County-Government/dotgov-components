@@ -253,7 +253,7 @@ import Section from "./containers/Section";
 <div class="container">
   <div class="row">
     <div class="col-md-4 d-flex">
-      <div class="dg_card">
+      <div class="dg_infographic-card">
         <div class="row align-items-center">
           <div class="col-md-2 col-xs-12">
             <i class="fas fa-snowflake"></i>
@@ -266,7 +266,7 @@ import Section from "./containers/Section";
       </div>
     </div>
     <div class="col-md-4  d-flex">
-      <div class="dg_card">
+      <div class="dg_infographic-card">
         <div class="row align-items-center">
           <div class="col-md-2 col-xs-12">
             <i style="font-size: 30px" class="fas fa-snowflakes"></i>
