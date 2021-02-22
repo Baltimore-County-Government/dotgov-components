@@ -2,7 +2,15 @@ import React from "react";
 import classNames from "classnames";
 
 const AccordionPanel = props => {
-  const { id, header, children, subHeader, className, isExpanded } = props;
+  const {
+    id,
+    header,
+    children,
+    subHeader,
+    className,
+    isExpanded,
+    priority
+  } = props;
   const panelCssClasses = classNames(
     "dg_accordion__collapsible",
     isExpanded ? null : "collapsed",
@@ -13,7 +21,8 @@ const AccordionPanel = props => {
     isExpanded ? "show" : null
   );
   const buttonId = `accordion-btn-${id}`;
-
+  const CustomTag =
+    JSON.stringify({ priority }) === "{}" ? "span" : `h${priority}`;
   return (
     <div className={panelCssClasses}>
       <button
@@ -22,7 +31,9 @@ const AccordionPanel = props => {
         id={buttonId}
         aria-expanded={isExpanded}
       >
-        <span className="dg_accordion_buttontext-holder">{header}</span>
+        <CustomTag className="dg_accordion_buttontext-holder">
+          {header}
+        </CustomTag>
         {subHeader && (
           <div className="dg_accordion__subheader">{subHeader}</div>
         )}
