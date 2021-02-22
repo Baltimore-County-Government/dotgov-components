@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import AccordionPanel from "./AccordionPanel";
 
 const Accordion = props => {
-  const { collapseItems = [] } = props;
+  const { collapseItems = [], priority } = props;
 
   return (
     <div className="dg_accordion" key="accordion1">
@@ -21,6 +21,7 @@ const Accordion = props => {
             id={id}
             header={header}
             subHeader={subheader}
+            priority={priority}
           >
             {content}
           </AccordionPanel>
