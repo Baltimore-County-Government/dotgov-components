@@ -1,8 +1,13 @@
 .dg_header {
   &.styleguide-header {
+      border-top: none;
     .dg_brand {
       .header-seal {
         padding-left: $padding-large;
+      }
+      .styleguide-nav {
+          display: flex;
+          font-family: $default-heading-font;
       }
     }
   }
