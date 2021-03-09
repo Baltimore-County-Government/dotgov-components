@@ -100,6 +100,9 @@
 @import "./styles/partials/template/subpage";
 @import "./styles/partials/template/sidebar";
 
+/** styleguide */
+@import "./styles/styleguide/header";
+
 /** overrides */
 @import "./styles/overrides/ie-hacks";
 @import "./styles/overrides/se-events";
