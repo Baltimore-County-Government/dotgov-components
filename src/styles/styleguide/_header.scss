@@ -1,13 +1,17 @@
 .dg_header {
   &.styleguide-header {
-      border-top: none;
+    border-top: none;
     .dg_brand {
       .header-seal {
         padding-left: $padding-large;
       }
-      .styleguide-nav {
+      ul {
+        &.styleguide-nav {
           display: flex;
           font-family: $default-heading-font;
+          font-size: $smallest-heading-font-size;
+          list-style-type: none;
+        }
       }
     }
   }
