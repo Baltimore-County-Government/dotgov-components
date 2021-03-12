@@ -12,7 +12,7 @@
           font-size: $smallest-heading-font-size;
           font-weight: $font-medium;
           list-style-type: none;
-          padding-left: 20px;
+          padding-left: $padding-large;
 
           li {
             padding-right: $base-spacing-unit;
