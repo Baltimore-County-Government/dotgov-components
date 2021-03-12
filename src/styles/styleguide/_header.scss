@@ -10,7 +10,9 @@
           display: flex;
           font-family: $default-heading-font;
           font-size: $smallest-heading-font-size;
+          font-weight: $font-medium;
           list-style-type: none;
+          margin-left: 20px;
         }
       }
     }
