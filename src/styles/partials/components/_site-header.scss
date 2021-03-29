@@ -39,6 +39,12 @@ $header-height: 65px;
     width: 100%;
     z-index: $max-z-index;
   }
+  &.dg_site-header-sticky-IE {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: $max-z-index;
+  }
 }
 
 .dg_mobile-search-button {
