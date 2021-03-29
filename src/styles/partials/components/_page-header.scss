@@ -17,6 +17,12 @@
     }
   }
 
+  .dg_page-header-sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
   .dg_page-header__backgroundImage {
     width: 100%;
     position: absolute;
@@ -86,12 +92,6 @@
   &.brand-blue:after {
     background: rgba($blue, 0.9);
   }
-}
-
-.dg_page-header-sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
 }
 
 @media screen and (max-width: $extra-large-breakpoint) {
