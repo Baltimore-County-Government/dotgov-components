@@ -34,16 +34,16 @@ $header-height: 65px;
     }
   }
   &.dg_site-header-sticky {
-    position: sticky;
+    position: fixed;
     top: 0;
     width: 100%;
-    z-index: $max-z-index;
+    z-index: 2000;
   }
   &.dg_site-header-sticky-IE {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: $max-z-index;
+    z-index: 2000;
   }
 }
 
