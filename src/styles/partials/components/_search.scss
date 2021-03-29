@@ -17,6 +17,10 @@
 }
 
 .dg_search-input {
+  border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   padding: $padding-small;
   border: $default-border-width solid $black;
   font-size: $padding-large;
