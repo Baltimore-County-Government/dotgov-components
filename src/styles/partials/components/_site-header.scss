@@ -20,7 +20,6 @@ $header-height: 65px;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-
   .dg_brand {
     display: flex;
     align-items: center;
@@ -35,9 +34,10 @@ $header-height: 65px;
     }
   }
   &.dg_site-header-sticky {
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
+    z-index: $max-z-index;
   }
 }
 
