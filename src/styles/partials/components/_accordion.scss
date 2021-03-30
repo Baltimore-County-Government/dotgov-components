@@ -35,6 +35,10 @@
     color: $vibrant-blue;
   }
 
+  .dg_accordion_buttontext-holder {
+    margin-left: 50px;
+  }
+
   h1,
   h2,
   h3,
@@ -43,7 +47,6 @@
   h6 {
     color: inherit;
     margin-bottom: 0px;
-    margin-left: 50px;
   }
 
   .dg_accordion__subheader {
@@ -96,8 +99,8 @@
       padding-bottom: $padding-small;
       font-size: $icon-arrow-default-size;
       @include icon-content($icon-minus);
-      top: $padding-small;
-      left: 0;
+      top: 7px;
+      left: $padding-large;
     }
   }
 }
