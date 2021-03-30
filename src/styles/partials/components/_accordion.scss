@@ -83,7 +83,9 @@
     font-size: $small-heading-font-size;
     font-weight: $font-bold;
     cursor: pointer;
-
+&:hover {
+  background-color: #1076bc;
+}
     &:focus {
       outline: none;
     }
