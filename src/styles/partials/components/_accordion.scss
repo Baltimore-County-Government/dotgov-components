@@ -36,7 +36,7 @@
   }
 
   .dg_accordion_buttontext-holder {
-    margin-left: 50px;
+    margin-left: $margin-largest;
   }
 
   h1,
@@ -53,7 +53,7 @@
     font-size: $smallest-heading-font-size;
     font-weight: $font-medium;
     color: #ffffff;
-    margin-left: 50px;
+    margin-left: $margin-largest;
     padding-top: $padding-small;
     text-transform: none;
   }
