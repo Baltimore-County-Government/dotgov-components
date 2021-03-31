@@ -52,7 +52,7 @@
   .dg_accordion__subheader {
     font-size: $smallest-heading-font-size;
     font-weight: $font-medium;
-    color: #ffffff;
+    color: $white;
     margin-left: $margin-largest;
     padding-top: $padding-small;
     text-transform: none;
@@ -66,12 +66,12 @@
     letter-spacing: 0;
     color: $gray-dark;
     text-transform: none;
-    border: $border-width-small solid #002278;
+    border: $border-width-small solid $blue;
   }
 
   .dg_accordion-btn {
-    background-color: #002280;
-    color: #ffffff;
+    background-color: $blue;
+    color: $white;
     position: relative;
     padding-top: $padding-large;
     padding-bottom: $padding-large;
@@ -84,7 +84,7 @@
     font-weight: $font-bold;
     cursor: pointer;
 &:hover {
-  background-color: #1076bc;
+  background-color: $vibrant-blue;
 }
     &:focus {
       outline: none;
