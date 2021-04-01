@@ -5,7 +5,6 @@
   &:last-child {
     border-bottom: none;
   }
-
   .dg_accordion-item-body {
     background: $gray-lightest;
     border: none;
@@ -18,28 +17,42 @@
       }
     }
   }
+  &.dg_accordion__collapsible {
+    .dg_accordion-btn {
+      background-color: inherit;
+      color: $black;
+      margin-bottom: $margin-small;
+      &:hover {
+        background-color: inherit;
+      }
 
-  .dg_accordion-btn {
-    background-color: none;
-    color: $black;
-    margin-bottom: $margin-small;
+      &:before {
+        content: none;
+      }
 
-    &:after {
-      color: $blue;
-      display: inline-block;
-      left: 0;
-      padding: 7.5px 0;
+      &:after {
+        position: absolute;
+        font-size: $icon-arrow-default-size;
+        cursor: pointer;
+        @include icon-content($icon-arrow-down);
+        color: $blue;
+        display: inline-block;
+        left: 0;
+        padding: 7.5px 0;
+        top: 10px;
+      }
     }
 
-    :before {
-      position: absolute;
-      font-size: $icon-arrow-default-size;
-      cursor: pointer;
-      @include icon-content($icon-caret-right);
+    .dg_accordion_buttontext-holder {
+      margin-left: $margin-large;
     }
   }
 
-  .dg_accordion_buttontext-holder {
-    margin-left: $margin-large;
+  &.collapsed {
+    .dg_accordion-btn {
+      &:after {
+        @include icon-content($icon-arrow-right);
+      }
+    }
   }
 }

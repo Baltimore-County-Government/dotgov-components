@@ -83,9 +83,9 @@
     font-size: $small-heading-font-size;
     font-weight: $font-bold;
     cursor: pointer;
-&:hover {
-  background-color: $vibrant-blue;
-}
+    &:hover {
+      background-color: $vibrant-blue;
+    }
     &:focus {
       outline: none;
     }
@@ -121,20 +121,4 @@
 
 .show {
   display: block;
-}
-
-@media screen and (max-width: $small-breakpoint) {
-  .dg_collapse.dg_accordion__collapsible.collapsed .dg_accordion-btn {
-    &:after {
-      @include icon-content($icon-plus);
-    }
-  }
-
-  .dg_collapse.dg_accordion__collapsible {
-    .dg_accordion-btn {
-      &:after {
-        @include icon-content($icon-minus);
-      }
-    }
-  }
 }
