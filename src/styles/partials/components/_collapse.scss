@@ -19,11 +19,11 @@
   }
   &.dg_accordion__collapsible {
     .dg_accordion-btn {
-      background-color: inherit;
+      background-color: transparent;
       color: $black;
       margin-bottom: $margin-small;
       &:hover {
-        background-color: inherit;
+        background-color: transparent;
       }
 
       &:before {
