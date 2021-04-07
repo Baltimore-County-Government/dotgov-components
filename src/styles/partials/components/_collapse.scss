@@ -5,9 +5,9 @@
   &:last-child {
     border-bottom: none;
   }
-
   .dg_accordion-item-body {
     background: $gray-lightest;
+    border: none;
     font-weight: $font-normal;
     font-family: $default-heading-font;
     font-size: $smallest-heading-font-size;
@@ -17,20 +17,42 @@
       }
     }
   }
+  &.dg_accordion__collapsible {
+    .dg_accordion-btn {
+      background-color: transparent;
+      color: $black;
+      margin-bottom: $margin-small;
+      &:hover {
+        background-color: transparent;
+      }
 
-  .dg_accordion-btn {
-    color: $black;
-    margin-bottom: $margin-small;
+      &:before {
+        content: none;
+      }
 
-    &:after {
-      color: $blue;
-      display: inline-block;
-      left: 0;
-      padding: 7.5px 0;
+      &:after {
+        position: absolute;
+        font-size: $icon-arrow-default-size;
+        cursor: pointer;
+        @include icon-content($icon-arrow-down);
+        color: $blue;
+        display: inline-block;
+        left: 0;
+        padding: 7.5px 0;
+        top: 10px;
+      }
+    }
+
+    .dg_accordion_buttontext-holder {
+      margin-left: $margin-large;
     }
   }
 
-  .dg_accordion_buttontext-holder {
-    margin-left: $margin-large;
+  &.collapsed {
+    .dg_accordion-btn {
+      &:after {
+        @include icon-content($icon-arrow-right);
+      }
+    }
   }
 }
