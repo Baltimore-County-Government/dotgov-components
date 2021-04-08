@@ -1,4 +1,11 @@
 $header-height: 65px;
+.is-disabled .dg_site-header {
+  transform: translateX(400px);
+   -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
+}
 
 .dg_header {
   background-color: $gray-lightest;
@@ -8,9 +15,6 @@ $header-height: 65px;
   padding: 0;
   display: flex;
   align-items: center;
-  position: fixed;
-  top: 0px;
-  z-index: 999;
 
   p {
     padding: $padding-large;
@@ -23,6 +27,11 @@ $header-height: 65px;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
+  transform: translateX(0);
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
   .dg_brand {
     display: flex;
     align-items: center;
