@@ -63,6 +63,18 @@ $icon-arrow-width: 32px;
       color: $vibrant-blue;
     }
 
+    &.dg_alt-list-selected {
+      background-color: $blue;
+      &:after {
+        color: $white;
+        padding-right: $padding-smallest;
+      }
+      a {
+        padding-left: $padding-smallest;
+        color: $white;
+      }
+    }
+
     a {
       display: block;
       line-height: 30px;
