@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 const AlternateListItem = (props) => {
   const { link, linkText } = props;
 
-  const handlesOnClick = (elem) => {
+  const handlesAlternateListItemOnClick = (elem) => {
     var list = document.getElementsByClassName("dg_alt-list");
     var currentListItem = elem.target;
 
@@ -26,7 +26,7 @@ const AlternateListItem = (props) => {
   };
 
   return (
-    <li onClick={handlesOnClick}>
+    <li onClick={handlesAlternateListItemOnClick}>
       <a href={link}>{linkText}</a>
     </li>
   );
