@@ -14,7 +14,6 @@ const AlternateListItem = (props) => {
 
     list.forEach((item) => {
       var listItem = item.getElementsByTagName("li");
-      console.log(listItem);
       listItem.forEach((x) => {
         if (x === currentListItem) {
           x.className = "dg_alt-list-current";
