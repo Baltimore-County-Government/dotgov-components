@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const AlternateListItem = (props) => {
-  const { link, linkText } = props;
+  const { link, linkText, className } = props;
 
   const handlesAlternateListItemOnClick = (elem) => {
     var list = document.getElementsByClassName("dg_alt-list");
@@ -17,7 +17,7 @@ const AlternateListItem = (props) => {
       console.log(listItem);
       listItem.forEach((x) => {
         if (x === currentListItem) {
-          x.className = "dg_alt-list-selected";
+          x.className = "dg_alt-list-current";
         } else {
           x.className = "";
         }
@@ -26,7 +26,7 @@ const AlternateListItem = (props) => {
   };
 
   return (
-    <li onClick={handlesAlternateListItemOnClick}>
+    <li onClick={handlesAlternateListItemOnClick} className={className}>
       <a href={link}>{linkText}</a>
     </li>
   );
