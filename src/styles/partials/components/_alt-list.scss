@@ -37,44 +37,29 @@ $icon-arrow-width: 32px;
     position: relative;
     padding-right: $icon-arrow-width; /* leave space for the absolutely position icon */
     &.active {
-      &:hover:after {
+      &:hover a i {
         color: $pale-blue;
       }
       a {
         color: $pale-blue;
       }
-
-      &:after {
-        color: $pale-blue;
-      }
-    }
-    &:after {
-      color: $gray-light;
-      @include default-transition;
-      @include icon-content($icon-arrow-link);
-      font-size: $icon-arrow-default-size;
-      margin-left: $default-margin;
-      padding-right: $padding-smallest;
-      padding-top: $padding-smallest - 3;
-      position: absolute;
-      right: 0;
-      top: 0;
     }
 
-    &:hover:after {
+    &:hover a i {
       color: $vibrant-blue;
     }
 
     &.dg_alt-list-current {
       background-color: $blue;
-      &:after {
-        color: $white;
-      }
+
       &:hover {
         background-color: $vibrant-blue;
       }
       a {
         color: $white;
+        i {
+          color: $white;
+        }
       }
     }
 
@@ -88,9 +73,16 @@ $icon-arrow-width: 32px;
       text-decoration: none;
 
       i {
-        @include list-icon;
-        text-align: left;
-        min-width: $icon-arrow-width;
+        color: $gray-light;
+        @include default-transition;
+        @include icon-content($icon-arrow-link);
+        font-size: $icon-arrow-default-size;
+        margin-left: $default-margin;
+        padding-right: $padding-smallest;
+        padding-top: $padding-smallest + 2;
+        position: absolute;
+        right: 0;
+        top: 0;
       }
     }
   }

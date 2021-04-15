@@ -23,9 +23,13 @@ const AlternateListItem = (props) => {
       });
     });
   };
+  //className="fas fa-arrow-circle-right"
   return (
     <li onClick={handlesAlternateListItemOnClick} className={className}>
-      <a href={link}>{linkText}</a>
+      <a href={link}>
+        {linkText}
+        <i className="fas fa-arrow-circle-right"></i>
+      </a>
     </li>
   );
 };
@@ -34,7 +38,7 @@ AlternateListItem.propTypes = {
   /** The link or href for the a tag */
   link: PropTypes.string.isRequired,
   /** The copy that exists inside the a tag */
-  linkText: PropTypes.string.isRequired
+  linkText: PropTypes.string.isRequired,
 };
 
 export default AlternateListItem;
