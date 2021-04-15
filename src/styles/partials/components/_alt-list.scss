@@ -54,6 +54,7 @@ $icon-arrow-width: 32px;
       @include icon-content($icon-arrow-link);
       font-size: $icon-arrow-default-size;
       margin-left: $default-margin;
+      padding-right: $padding-smallest;
       position: absolute;
       right: 0;
       top: 0;
@@ -63,9 +64,23 @@ $icon-arrow-width: 32px;
       color: $vibrant-blue;
     }
 
+    &.dg_alt-list-current {
+      background-color: $blue;
+      &:after {
+        color: $white;
+      }
+      &:hover {
+        background-color: $vibrant-blue;
+      }
+      a {
+        color: $white;
+      }
+    }
+
     a {
       display: block;
       line-height: 30px;
+      padding-left: $padding-smallest;
       margin-bottom: $margin-smallest;
       margin-top: $margin-smallest;
       text-decoration: none;

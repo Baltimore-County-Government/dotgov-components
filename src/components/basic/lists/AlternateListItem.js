@@ -1,10 +1,30 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const AlternateListItem = props => {
-  const { link, linkText } = props;
+const AlternateListItem = (props) => {
+  const { link, linkText, className } = props;
+
+  const handlesAlternateListItemOnClick = (elem) => {
+    var list = document.getElementsByClassName("dg_alt-list");
+    var currentListItem = elem.target;
+
+    if (currentListItem.tagName.toLowerCase() != "li") {
+      currentListItem = currentListItem.parentNode;
+    }
+
+    list.forEach((item) => {
+      var listItem = item.getElementsByTagName("li");
+      listItem.forEach((x) => {
+        if (x === currentListItem) {
+          x.className = "dg_alt-list-current";
+        } else {
+          x.className = "";
+        }
+      });
+    });
+  };
   return (
-    <li>
+    <li onClick={handlesAlternateListItemOnClick} className={className}>
       <a href={link}>{linkText}</a>
     </li>
   );
