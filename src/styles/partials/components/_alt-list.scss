@@ -74,8 +74,6 @@ $icon-arrow-width: 32px;
 
       i {
         color: $gray-light;
-        @include default-transition;
-        @include icon-content($icon-arrow-link);
         font-size: $icon-arrow-default-size;
         margin-left: $default-margin;
         padding-right: $padding-smallest;

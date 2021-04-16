@@ -19,16 +19,16 @@ Html Snippet:
 ```html
 <ul class="dg_alt-list">
   <li className="dg_alt-list-current">
-    <a href="#">Item One</a>
+    <a href="#">Item One <i className="fas fa-arrow-circle-right"></i></a>
   </li>
   <li>
-    <a href="#">Item Two</a>
+    <a href="#">Item Two <i className="fas fa-arrow-circle-right"></i></a>
   </li>
   <li>
-    <a href="#">Item Three</a>
+    <a href="#">Item Three <i className="fas fa-arrow-circle-right"></i></a>
   </li>
   <li>
-    <a href="#">Item Four</a>
+    <a href="#">Item Four <i className="fas fa-arrow-circle-right"></i></a>
   </li>
 </ul>
 ```

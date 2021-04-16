@@ -10,6 +10,9 @@ const AlternateListItem = (props) => {
 
     if (currentListItem.tagName.toLowerCase() != "li") {
       currentListItem = currentListItem.parentNode;
+      if (currentListItem.tagName.toLowerCase() == "a") {
+        currentListItem = currentListItem.parentNode;
+      }
     }
 
     list.forEach((item) => {
