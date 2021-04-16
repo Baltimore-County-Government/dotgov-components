@@ -35,7 +35,6 @@ $icon-arrow-width: 32px;
     text-transform: uppercase;
     @include default-transition(color);
     position: relative;
-    padding-right: $icon-arrow-width; /* leave space for the absolutely position icon */
     &.active {
       &:hover a i {
         color: $pale-blue;
