@@ -26,7 +26,7 @@ const AlternateListItem = (props) => {
       });
     });
   };
-  //className="fas fa-arrow-circle-right"
+
   return (
     <li onClick={handlesAlternateListItemOnClick} className={className}>
       <a href={link}>
