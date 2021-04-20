@@ -1,90 +1,91 @@
 $icon-arrow-width: 32px;
-
-.dg_alt-list {
-  list-style-type: none;
-  margin: 0px 0px $margin-small 0px;
-  padding-left: 0;
-  text-decoration: none;
-
-  &.inline {
-    &:before {
-      content: "";
-      text-decoration: none;
-    }
-
-    li {
-      float: left;
-      margin-right: 5%;
-      width: 40%;
-    }
-
-    &:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-  }
-
-  li {
-    border-bottom: $border-width-small solid $gray-light;
-    color: $blue;
-    font-family: $default-heading-font;
-    font-size: $smallest-heading-font-size;
-    font-weight: $font-bold;
+.dg_footer-list-column {
+  .dg_alt-list {
+    list-style-type: none;
+    margin: 0px 0px $margin-small 0px;
+    padding-left: 0;
     text-decoration: none;
-    text-transform: uppercase;
-    @include default-transition(color);
-    position: relative;
-    padding-right: $icon-arrow-width; /* leave space for the absolutely position icon */
-    &.active {
-      &:hover:after {
-        color: $pale-blue;
+
+    &.inline {
+      &:before {
+        content: "";
+        text-decoration: none;
       }
-      a {
-        color: $pale-blue;
+
+      li {
+        float: left;
+        margin-right: 5%;
+        width: 40%;
       }
 
       &:after {
-        color: $pale-blue;
+        content: "";
+        display: table;
+        clear: both;
       }
     }
-    &:after {
-      color: $gray-light;
-      @include default-transition;
-      @include icon-content($icon-arrow-link);
-      font-size: $icon-arrow-default-size;
-      margin-left: $default-margin;
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
 
-    &:hover:after {
-      color: $vibrant-blue;
-    }
-
-    a {
-      display: block;
-      line-height: 30px;
-      margin-bottom: $margin-smallest;
-      margin-top: $margin-smallest;
+    li {
+      border-bottom: $border-width-small solid $gray-light;
+      color: $blue;
+      font-family: $default-heading-font;
+      font-size: $smallest-heading-font-size;
+      font-weight: $font-bold;
       text-decoration: none;
+      text-transform: uppercase;
+      @include default-transition(color);
+      position: relative;
+      padding-right: $icon-arrow-width; /* leave space for the absolutely position icon */
+      &.active {
+        &:hover:after {
+          color: $pale-blue;
+        }
+        a {
+          color: $pale-blue;
+        }
 
-      i {
-        @include list-icon;
-        text-align: left;
-        min-width: $icon-arrow-width;
+        &:after {
+          color: $pale-blue;
+        }
+      }
+      &:after {
+        color: $gray-light;
+        @include default-transition;
+        @include icon-content($icon-arrow-link);
+        font-size: $icon-arrow-default-size;
+        margin-left: $default-margin;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+
+      &:hover:after {
+        color: $vibrant-blue;
+      }
+
+      a {
+        display: block;
+        line-height: 30px;
+        margin-bottom: $margin-smallest;
+        margin-top: $margin-smallest;
+        text-decoration: none;
+
+        i {
+          @include list-icon;
+          text-align: left;
+          min-width: $icon-arrow-width;
+        }
       }
     }
   }
-}
 
-@media screen and (max-width: $medium-breakpoint) {
-  .dg_alt-list.inline {
-    li {
-      float: none;
-      min-width: auto;
-      width: 100%;
+  @media screen and (max-width: $medium-breakpoint) {
+    .dg_alt-list.inline {
+      li {
+        float: none;
+        min-width: auto;
+        width: 100%;
+      }
     }
   }
 }
