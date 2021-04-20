@@ -5,27 +5,7 @@ const AlternateListItem = (props) => {
   const { link, linkText, className } = props;
 
   const handlesAlternateListItemOnClick = (elem) => {
-    // var list = document.getElementsByClassName("dg_alt-list");
-    // var currentListItem = elem.target;
-    // var url = window.location.href;
 
-    // if (currentListItem.tagName.toLowerCase() != "li") {
-    //   currentListItem = currentListItem.parentNode.parentNode;
-    //   if (currentListItem.tagName.toLowerCase() == "a") {
-    //     currentListItem = currentListItem.parentNode;
-    //   }
-    // }
-
-    // list.forEach((item) => {
-    //   var listItem = item.getElementsByTagName("li");
-    //   listItem.forEach((x) => {
-    //     if (x === currentListItem) {
-    //       x.className = "dg_alt-list-current";
-    //     } else {
-    //       x.className = "";
-    //     }
-    //   });
-    // });
     var list = document.getElementsByClassName("dg_alt-list");
     var url = window.location.href;
   
