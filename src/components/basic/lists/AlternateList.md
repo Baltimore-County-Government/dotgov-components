@@ -4,9 +4,8 @@
 import AlternateListItem from "./AlternateListItem";
 <AlternateList>
   <AlternateListItem
-    link="#"
+    link="http://localhost:6060/#alternatelist"
     linkText="Item One"
-    className="dg_alt-list-current"
   />
   <AlternateListItem link="#" linkText="Item Two" />
   <AlternateListItem link="#" linkText="Item Three" />
