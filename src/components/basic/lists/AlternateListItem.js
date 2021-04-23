@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const AlternateListItem = (props) => {
-  const { link, linkText, className } = props;
+  const { link, linkText, className, icon } = props;
 
   const handlesAlternateListItemOnClick = (elem) => {
 
@@ -23,7 +23,8 @@ const AlternateListItem = (props) => {
     <li onClick={handlesAlternateListItemOnClick} className={className}>
       <a href={link}>
         {linkText}
-        <i className="fas fa-arrow-circle-right"></i>
+        {icon ? <i className="fas fa-arrow-circle-right"></i> : null}
+        
       </a>
     </li>
   );
