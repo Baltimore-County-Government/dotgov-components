@@ -10,6 +10,16 @@
       &.feedItems {
         padding-left: 0px;
         list-style: none;
+
+        li {
+          &.item {
+            .extras {
+              .pubDate {
+                display: block;
+              }
+            }
+          }
+        }
       }
     }
   }
