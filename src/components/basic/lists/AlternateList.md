@@ -55,7 +55,7 @@ Html Snippet:
     <a href="#">Item Three</a>
   </li>
   <li>
-    <a href="#">Item Four</i></a>
+    <a href="#">Item Four</a>
   </li>
 </ul>
 
