@@ -5,5 +5,12 @@
         display: none;
       }
     }
+    ol,
+    ul {
+      &.feedItems {
+        padding-left: 0px;
+        list-style: none;
+      }
+    }
   }
 }
