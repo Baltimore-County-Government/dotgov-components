@@ -1,6 +1,6 @@
 $icon-arrow-width: 32px;
 
-.dg_alt-list {
+.dg_sidebar-alt-list {
   list-style-type: none;
   margin: 0px 0px $margin-small 0px;
   padding-left: 0;
@@ -48,7 +48,7 @@ $icon-arrow-width: 32px;
       color: $vibrant-blue;
     }
 
-    &.dg_alt-list-current {
+    &.dg_sidebar-alt-list-current {
       background-color: $blue;
 
       &:hover {

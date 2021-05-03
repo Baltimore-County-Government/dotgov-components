@@ -6,7 +6,6 @@
   margin-bottom: $default-margin;
   text-align: left;
   width: 100%;
-
   tbody {
     font-family: $default-body-font;
     font-weight: normal;
@@ -15,6 +14,7 @@
   td {
     border-bottom: $border-width-small solid $gray-light;
     padding: $padding-large;
+    color: $black;
     p {
       font-size: $small-heading-font-size;
     }
