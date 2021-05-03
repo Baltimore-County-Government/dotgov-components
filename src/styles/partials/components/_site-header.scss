@@ -147,6 +147,15 @@ $header-height: 65px;
   }
 
   .dg_site-header {
+    &.dg_site-header-sticky,
+    &.dg_site-header-sticky-IE {
+      transform: translateX(245px);
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+    }
+
     .dg_brand {
       .dg_brand-text {
         top: 3px; /* visually calculated in the browser. */
