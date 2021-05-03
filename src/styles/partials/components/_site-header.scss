@@ -145,8 +145,7 @@ $header-height: 65px;
       font-size: 30px; /* specific to this component only */
     }
   }
-
-  .dg_site-header {
+  .is-disabled .dg_site-header {
     &.dg_site-header-sticky,
     &.dg_site-header-sticky-IE {
       transform: translateX(245px);
@@ -155,7 +154,9 @@ $header-height: 65px;
       -o-transition: all 0.3s ease;
       transition: all 0.3s ease;
     }
+  }
 
+  .dg_site-header {
     .dg_brand {
       .dg_brand-text {
         top: 3px; /* visually calculated in the browser. */
