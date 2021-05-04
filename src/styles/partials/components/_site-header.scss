@@ -46,12 +46,6 @@ $header-height: 65px;
     }
   }
   &.dg_site-header-sticky {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 2000;
-  }
-  &.dg_site-header-sticky-IE {
     position: fixed;
     top: 0;
     width: 100%;
@@ -146,8 +140,7 @@ $header-height: 65px;
     }
   }
   .is-disabled .dg_site-header {
-    &.dg_site-header-sticky,
-    &.dg_site-header-sticky-IE {
+    &.dg_site-header-sticky {
       transform: translateX(245px);
       -webkit-transition: all 0.3s ease;
       -moz-transition: all 0.3s ease;
