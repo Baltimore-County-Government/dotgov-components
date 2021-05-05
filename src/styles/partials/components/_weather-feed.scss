@@ -26,6 +26,8 @@
     }
   }
   .SESyndicationModule {
+    border: 1px solid #002280;
+    padding: 10px 20px;
     .feedDetails {
       h1 {
         display: none;
@@ -47,6 +49,9 @@
             .extras {
               .pubDate {
                 display: block;
+              }
+              .itemURL {
+                display: none;
               }
             }
           }
