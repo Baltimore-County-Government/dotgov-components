@@ -1,60 +1,63 @@
-.noaa {
-  .dg_weather-alerts-header {
-    background-color: #002280;
-    display: flex;
-    flex-direction: row;
-    font-family: "Montserrat", sans-serif;
-    padding: 10px 20px;
-    color: #ffffff;
+#dg_main-content,
+.dg_sidebar__section {
+  .noaa {
+    .dg_weather-alerts-header {
+      background-color: #002280;
+      display: flex;
+      flex-direction: row;
+      font-family: "Montserrat", sans-serif;
+      padding: 10px 20px;
+      color: #ffffff;
 
-    img {
-      &.dg_noaa-image {
-        height: 100%;
-        width: 40px;
-        max-width: 100%;
-        margin-bottom: 0px;
-        margin-right: 10px;
+      img {
+        &.dg_noaa-image {
+          height: 100%;
+          width: 40px;
+          max-width: 100%;
+          margin-bottom: 0px;
+          margin-right: 10px;
+        }
+      }
+
+      .dg_weather-text-area {
+        font-size: 16px;
+        h2,
+        h3,
+        h4 {
+          color: #ffffff;
+          margin-bottom: 0px;
+          line-height: 16px;
+        }
       }
     }
-
-    .dg_weather-text-area {
-      font-size: 16px;
-      h2,
-      h3,
-      h4 {
-        color: #ffffff;
-        margin-bottom: 0px;
-        line-height: 16px;
+    .SESyndicationModule {
+      border: 1px solid #002280;
+      padding: 10px 20px;
+      .feedDetails {
+        h1 {
+          display: none;
+        }
       }
-    }
-  }
-  .SESyndicationModule {
-    border: 1px solid #002280;
-    padding: 10px 20px;
-    .feedDetails {
-      h1 {
-        display: none;
-      }
-    }
-    ol,
-    ul {
-      &.feedItems {
-        padding-left: 0px;
-        list-style: none;
+      ol,
+      ul {
+        &.feedItems {
+          padding-left: 0px;
+          list-style: none;
 
-        li {
-          &.item {
-            h3 {
-              &.title {
-                margin-bottom: 10px;
+          li {
+            &.item {
+              h3 {
+                &.title {
+                  margin-bottom: 10px;
+                }
               }
-            }
-            .extras {
-              .pubDate {
-                display: block;
-              }
-              .itemURL {
-                display: none;
+              .extras {
+                .pubDate {
+                  display: block;
+                }
+                .itemURL {
+                  display: none;
+                }
               }
             }
           }
