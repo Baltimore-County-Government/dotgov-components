@@ -2,12 +2,12 @@
 .dg_sidebar__section {
   .noaa {
     .dg_weather-alerts-header {
-      background-color: #002280;
+      background-color: $blue;
       display: flex;
       flex-direction: row;
-      font-family: "Montserrat", sans-serif;
-      padding: 15px 20px 10px 20px;
-      color: #ffffff;
+      font-family: $default-heading-font;
+      padding: $default-padding $padding-large $padding-small $padding-large;
+      color: $white;
 
       img {
         &.dg_noaa-image {
@@ -15,24 +15,24 @@
           width: 40px;
           max-width: 100%;
           margin-bottom: 0px;
-          margin-right: 10px;
+          margin-right: $margin-small;
         }
       }
 
       .dg_weather-text-area {
-        font-size: 16px;
+        font-size: $smallest-heading-font-size;
         h2,
         h3,
         h4 {
-          color: #ffffff;
+          color: $white;
           margin-bottom: 0px;
           line-height: 24px;
         }
       }
     }
     .SESyndicationModule {
-      border: 1px solid #002280;
-      padding: 10px 20px;
+      border: $border-width-small solid $blue;
+      padding: $padding-small $padding-large;
       .feedDetails {
         h1 {
           display: none;
@@ -48,10 +48,10 @@
             &.item {
               h3 {
                 &.title {
-                  font-family: "Crimson Text", serif;
-                  font-size: 24px;
+                  font-family: $default-body-font;
+                  font-size: $h2-font-size;
                   font-weight: inherit;
-                  margin-bottom: 10px;
+                  margin-bottom: $margin-small;
                   text-transform: none;
                 }
               }
