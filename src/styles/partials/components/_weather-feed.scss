@@ -8,10 +8,13 @@
     color: #ffffff;
 
     img {
-      width: 40px;
-      max-width: 100%;
-      margin-bottom: 0px;
-      margin-right: 10px;
+      &.dg_noaa-image {
+        height: 100%;
+        width: 40px;
+        max-width: 100%;
+        margin-bottom: 0px;
+        margin-right: 10px;
+      }
     }
 
     .dg_weather-text-area {
