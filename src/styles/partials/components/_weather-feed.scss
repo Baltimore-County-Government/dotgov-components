@@ -6,7 +6,7 @@
       display: flex;
       flex-direction: row;
       font-family: "Montserrat", sans-serif;
-      padding: 10px 20px;
+      padding: 15px 20px 10px 20px;
       color: #ffffff;
 
       img {
@@ -26,7 +26,7 @@
         h4 {
           color: #ffffff;
           margin-bottom: 0px;
-          line-height: 16px;
+          line-height: 24px;
         }
       }
     }
@@ -48,7 +48,11 @@
             &.item {
               h3 {
                 &.title {
+                  font-family: "Crimson Text", serif;
+                  font-size: 24px;
+                  font-weight: inherit;
                   margin-bottom: 10px;
+                  text-transform: none;
                 }
               }
               .extras {
