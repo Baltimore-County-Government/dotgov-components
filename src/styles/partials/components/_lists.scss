@@ -1,5 +1,18 @@
 .dg_list {
-	li {
-		padding-left: $padding-small;
-	}
+  &ul {
+    li {
+      padding-left: $padding-small;
+    }
+  }
+  &ol {
+    li {
+      padding-left: $padding-small;
+    }
+  }
+}
+
+ul,
+ol {
+  margin-bottom: 10px;
+  margin-top: 10px;
 }

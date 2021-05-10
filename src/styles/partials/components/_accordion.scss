@@ -3,7 +3,8 @@
   margin: $default-margin 0px;
 
   p,
-  ul {
+  ul,
+  ol {
     font-family: $default-heading-font;
     font-size: $smallest-heading-font-size;
     font-weight: $font-normal;
@@ -25,7 +26,7 @@
   font-size: $h2-font-size;
   font-weight: $font-bold;
   width: 100%;
-  border-top: $border-width-small $gray solid;
+  margin-bottom: $border-width-small;
 
   &:last-child {
     border-bottom: $border-width-small $gray solid;
@@ -33,6 +34,11 @@
 
   &:hover {
     color: $vibrant-blue;
+  }
+
+  .dg_accordion_buttontext-holder {
+    display: block;
+    margin-left: $margin-largest;
   }
 
   h1,
@@ -48,7 +54,8 @@
   .dg_accordion__subheader {
     font-size: $smallest-heading-font-size;
     font-weight: $font-medium;
-    color: $gray-dark;
+    color: $white;
+    margin-left: $margin-largest;
     padding-top: $padding-small;
     text-transform: none;
   }
@@ -61,12 +68,15 @@
     letter-spacing: 0;
     color: $gray-dark;
     text-transform: none;
+    border: $border-width-small solid $blue;
   }
 
   .dg_accordion-btn {
+    background-color: $blue;
+    color: $white;
     position: relative;
     padding-top: $padding-large;
-    padding-bottom: $padding-small;
+    padding-bottom: $padding-large;
     width: 100%;
     text-align: left;
     text-transform: uppercase;
@@ -75,7 +85,9 @@
     font-size: $small-heading-font-size;
     font-weight: $font-bold;
     cursor: pointer;
-
+    &:hover {
+      background-color: $vibrant-blue;
+    }
     &:focus {
       outline: none;
     }
@@ -86,23 +98,23 @@
       }
     }
 
-    &:after {
+    &:before {
       position: absolute;
       padding-top: $padding-small;
       padding-bottom: $padding-small;
       font-size: $icon-arrow-default-size;
-      @include icon-content($icon-arrow-down);
-      top: $padding-small;
-      right: 0;
+      @include icon-content($icon-minus);
+      top: 7px;
+      left: $padding-large;
     }
   }
 }
 
-.collapsed .dg_accordion-btn::after {
+.collapsed .dg_accordion-btn::before {
   position: absolute;
   font-size: $icon-arrow-default-size;
   cursor: pointer;
-  @include icon-content($icon-arrow-right);
+  @include icon-content($icon-plus);
 }
 
 .collapse {
@@ -111,20 +123,4 @@
 
 .show {
   display: block;
-}
-
-@media screen and (max-width: $small-breakpoint) {
-  .dg_collapse.dg_accordion__collapsible.collapsed .dg_accordion-btn {
-    &:after {
-      @include icon-content($icon-plus);
-    }
-  }
-
-  .dg_collapse.dg_accordion__collapsible {
-    .dg_accordion-btn {
-      &:after {
-        @include icon-content($icon-minus);
-      }
-    }
-  }
 }

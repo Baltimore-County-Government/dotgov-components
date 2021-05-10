@@ -66,6 +66,7 @@
 @import "./styles/partials/components/label";
 @import "./styles/partials/components/lists";
 @import "./styles/partials/components/alt-list";
+@import "./styles/partials/components/sidebar-nav";
 @import "./styles/partials/components/input";
 @import "./styles/partials/components/icon-heading";
 @import "./styles/partials/components/icon-heading-dark";
@@ -92,6 +93,7 @@
 @import "./styles/partials/components/scrollable-container";
 @import "./styles/partials/components/progress-tabs";
 @import "./styles/partials/components/video";
+@import "./styles/partials/components/weather-feed";
 
 /** dark themed components - please start your file with .dark and nest the styles below it **/
 @import "./styles/partials/components/table-dark";
