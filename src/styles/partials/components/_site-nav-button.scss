@@ -7,11 +7,6 @@
   height: 85px;
   width: 95px;
 
-  &.bc_site-nav__toggle-button-sticky {
-    position: fixed !important;
-    top: 0;
-    z-index: $max-z-index;
-  }
   i,
   .bc_site-nav__toggle-button__text {
     display: block;
