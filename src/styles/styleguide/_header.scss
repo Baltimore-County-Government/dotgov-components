@@ -1,9 +1,17 @@
 .dg_header {
   &.styleguide-header {
     border-top: none;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
     .dg_brand {
       .header-seal {
         padding-left: $padding-large;
+
+        img {
+          max-width: 70px;
+          padding-top: 10px;
+        }
       }
       ul {
         &.styleguide-nav {
