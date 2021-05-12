@@ -10,15 +10,32 @@
   text-align: center;
   width: 100%;
 
-&.dark {
-  color: $white;
-  background-color: $pale-blue;
-  
-   p {
-     color: $white;
-   }
+  &.dark {
+    color: $white;
+    background-color: $pale-blue;
 
-}
+    i {
+      &.card-information-icon {
+        background-color: #feb30c;
+        font-size: 60px;
+        border-radius: 50%;
+        color: #000000;
+        width: 100px;
+        height: 100px;
+        line-height: 105px;
+      }
+    }
+
+    h1,
+    h2,
+    h3 {
+      letter-spacing: 5px;
+    }
+
+    p {
+      color: $white;
+    }
+  }
 
   &.dg_infographic-card {
     p:first-of-type {
