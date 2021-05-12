@@ -1,4 +1,6 @@
 .noaa {
+  border: $border-width-small solid $blue;
+
   .dg_weather-alerts-header {
     background-color: $blue;
     display: flex;
