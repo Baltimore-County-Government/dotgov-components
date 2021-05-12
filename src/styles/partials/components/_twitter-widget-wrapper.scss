@@ -1,0 +1,69 @@
+.noaa {
+  .dg_weather-alerts-header {
+    background-color: $blue;
+    display: flex;
+    flex-direction: row;
+    font-family: $default-heading-font;
+    padding: $default-padding $padding-large $padding-small $padding-large;
+    color: $white;
+
+    img {
+      &.dg_noaa-image {
+        height: 100%;
+        width: 40px;
+        max-width: 100%;
+        margin-bottom: 0px;
+        margin-right: $margin-small;
+      }
+    }
+
+    .dg_weather-text-area {
+      font-size: $smallest-heading-font-size;
+      h2,
+      h3,
+      h4 {
+        color: $white;
+        margin-bottom: 0px;
+        line-height: 24px;
+      }
+    }
+  }
+  .SESyndicationModule {
+    border: $border-width-small solid $blue;
+    padding: $padding-small $padding-large;
+    .feedDetails {
+      h1 {
+        display: none;
+      }
+    }
+    ol,
+    ul {
+      &.feedItems {
+        padding-left: 0px;
+        list-style: none;
+
+        li {
+          &.item {
+            h3 {
+              &.title {
+                font-family: $default-body-font;
+                font-size: $h2-font-size;
+                font-weight: inherit;
+                margin-bottom: $margin-small;
+                text-transform: none;
+              }
+            }
+            .extras {
+              .pubDate {
+                display: block;
+              }
+              .itemURL {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
