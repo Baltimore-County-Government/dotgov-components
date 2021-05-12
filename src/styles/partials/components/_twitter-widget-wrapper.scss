@@ -3,51 +3,13 @@
   .dg_twitter-feed-wrapper {
     border: $border-width-small solid $blue;
 
-    .dg_weather-alerts-header {
+    .dg_twitter-feed-header {
       background-color: $blue;
       display: flex;
       flex-direction: row;
       font-family: $default-heading-font;
       padding: $default-padding $padding-large $padding-small $padding-large;
       color: $white;
-    }
-    .SESyndicationModule {
-      padding: $padding-small $padding-large;
-
-      .feedDetails {
-        h1 {
-          display: none;
-        }
-      }
-      ol,
-      ul {
-        &.feedItems {
-          padding-left: 0px;
-          list-style: none;
-
-          li {
-            &.item {
-              h3 {
-                &.title {
-                  font-family: $default-body-font;
-                  font-size: $h2-font-size;
-                  font-weight: inherit;
-                  margin-bottom: $margin-small;
-                  text-transform: none;
-                }
-              }
-              .extras {
-                .pubDate {
-                  display: block;
-                }
-                .itemURL {
-                  display: none;
-                }
-              }
-            }
-          }
-        }
-      }
     }
   }
 }
