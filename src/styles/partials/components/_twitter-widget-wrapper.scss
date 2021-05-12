@@ -10,17 +10,6 @@
       font-family: $default-heading-font;
       padding: $default-padding $padding-large $padding-small $padding-large;
       color: $white;
-
-      .dg_weather-text-area {
-        font-size: $smallest-heading-font-size;
-        h2,
-        h3,
-        h4 {
-          color: $white;
-          margin-bottom: 0px;
-          line-height: 24px;
-        }
-      }
     }
     .SESyndicationModule {
       padding: $padding-small $padding-large;
