@@ -3,6 +3,11 @@
   .dg_twitter-feed-wrapper {
     border: $border-width-small solid $blue;
 
+    .dg_twitter-feed-wrapper .twitter-container {
+      max-height: 600px;
+      overflow: scroll;
+    }
+
     .dg_twitter-feed-header {
       background-color: $blue;
       display: flex;
@@ -10,6 +15,24 @@
       font-family: $default-heading-font;
       padding: $default-padding $padding-large $padding-small $padding-large;
       color: $white;
+
+      h1,
+      h2,
+      h3 {
+        color: $white;
+        padding-left: 15px;
+
+        &:before {
+          position: relative;
+          font-size: 20px;
+          color: #ffffff;
+          font-family: "Font Awesome 5 Pro";
+          font-weight: 700;
+          content: $icon-twitter;
+          vertical-align: baseline;
+          left: -10px;
+      }
+      }
     }
   }
 }
