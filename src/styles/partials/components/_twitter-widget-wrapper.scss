@@ -20,14 +20,14 @@
       h2,
       h3 {
         color: $white;
-        padding-left: 15px;
+        padding-left: $default-padding;
 
         &:before {
           position: relative;
-          font-size: 20px;
+          font-size: 30px;
           color: #ffffff;
           font-family: "Font Awesome 5 Pro";
-          font-weight: 700;
+          font-weight: $font-bold;
           content: $icon-twitter;
           vertical-align: baseline;
           left: -10px;
