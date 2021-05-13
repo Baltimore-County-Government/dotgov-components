@@ -21,6 +21,7 @@
       h3 {
         color: $white;
         padding-left: $default-padding;
+        text-overflow: ellipsis;
 
         &:before {
           position: relative;
@@ -31,7 +32,7 @@
           content: $icon-twitter;
           vertical-align: baseline;
           left: -10px;
-      }
+        }
       }
     }
   }
