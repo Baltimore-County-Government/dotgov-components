@@ -4,6 +4,8 @@
     border: $border-width-small solid $blue;
 
     .dg_twitter-feed-wrapper .twitter-container {
+      margin-bottom: $default-margin;
+      margin-top: $default-margin;
       max-height: 600px;
       overflow: scroll;
     }
