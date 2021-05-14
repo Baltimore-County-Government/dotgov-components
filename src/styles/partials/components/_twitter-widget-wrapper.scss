@@ -1,0 +1,41 @@
+#dg_main-content,
+.dg_sidebar__section {
+  .dg_twitter-feed-wrapper {
+    border: $border-width-small solid $blue;
+
+    .dg_twitter-feed-wrapper .twitter-container {
+      margin-bottom: $default-margin;
+      margin-top: $default-margin;
+      max-height: 600px;
+      overflow: scroll;
+    }
+
+    .dg_twitter-feed-header {
+      background-color: $blue;
+      display: flex;
+      flex-direction: row;
+      font-family: $default-heading-font;
+      padding: $default-padding $padding-large $padding-small $padding-large;
+      color: $white;
+
+      h1,
+      h2,
+      h3 {
+        color: $white;
+        padding-left: $default-padding;
+        text-overflow: ellipsis;
+
+        &:before {
+          position: relative;
+          font-size: 30px;
+          color: #ffffff;
+          font-family: "Font Awesome 5 Pro";
+          font-weight: $font-bold;
+          content: $icon-twitter;
+          vertical-align: baseline;
+          left: -10px;
+        }
+      }
+    }
+  }
+}
