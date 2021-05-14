@@ -3,7 +3,7 @@
   .dg_twitter-feed-wrapper {
     border: $border-width-small solid $blue;
 
-    .dg_twitter-feed-wrapper .twitter-container {
+    .twitter-container {
       margin-bottom: $default-margin;
       margin-top: $default-margin;
       max-height: 600px;
@@ -22,6 +22,7 @@
       h2,
       h3 {
         color: $white;
+        margin-bottom: $margin-small;
         padding-left: $default-padding;
         text-overflow: ellipsis;
 
@@ -29,7 +30,7 @@
           position: relative;
           font-size: 30px;
           color: #ffffff;
-          font-family: "Font Awesome 5 Pro";
+          font-family: "Font Awesome 5 Brands";
           font-weight: $font-bold;
           content: $icon-twitter;
           vertical-align: baseline;
