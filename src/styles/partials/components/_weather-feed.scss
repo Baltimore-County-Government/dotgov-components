@@ -1,6 +1,8 @@
 #dg_main-content,
 .dg_sidebar__section {
   .noaa {
+    border: $border-width-small solid $blue;
+
     .dg_weather-alerts-header {
       background-color: $blue;
       display: flex;
@@ -30,9 +32,15 @@
         }
       }
     }
+
+    .noaa-additional-content {
+      padding-left: $padding-large;
+      padding-right: $padding-large;
+    }
+
     .SESyndicationModule {
-      border: $border-width-small solid $blue;
       padding: $padding-small $padding-large;
+
       .feedDetails {
         h1 {
           display: none;
