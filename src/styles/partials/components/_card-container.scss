@@ -13,7 +13,7 @@
   &.dark {
     color: $white;
     background-color: $pale-blue;
-    
+
     .dg_icon-container {
       font-size: 2em;
       margin-bottom: 0px;
@@ -34,12 +34,15 @@
     h2,
     h3 {
       &.information-card-headline {
+        font-size: 18px;
         letter-spacing: 5px;
       }
     }
 
     p {
       color: $white;
+      font-size: 18px;
+      text-align: left;
     }
   }
 
