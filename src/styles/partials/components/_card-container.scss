@@ -13,19 +13,23 @@
   &.dark {
     color: $white;
     background-color: $pale-blue;
+    
+    .dg_icon-container {
+      font-size: 2em;
+      margin-bottom: 0px;
 
-    i {
-      &.card-information-icon {
-        background-color: #feb30c;
-        font-size: 35px;
-        border-radius: 50%;
-        color: #000000;
-        width: 55px;
-        height: 55px;
-        line-height: 60px;
+      i {
+        &.card-information-icon {
+          background-color: #feb30c;
+          font-size: 35px;
+          border-radius: 50%;
+          color: #000000;
+          width: 55px;
+          height: 55px;
+          line-height: 60px;
+        }
       }
     }
-
     h1,
     h2,
     h3 {
