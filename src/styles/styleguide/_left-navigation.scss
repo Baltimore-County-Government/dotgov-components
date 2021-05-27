@@ -1,13 +1,17 @@
 .styleguide-left-navigation {
-    background-color: #f2f2f2;
-    font-family: $default-heading-font;
-    
-    ul {
-        list-style: none;
-        padding-left: 0px;
+  background-color: #f2f2f2;
+  font-family: $default-heading-font;
 
-        li {
+  h3 {
+    margin-bottom: 0px;
+  }
 
-        }
+  ul {
+    list-style: none;
+    margin-top: 0px;
+    padding-left: 0px;
+
+    li {
     }
+  }
 }
