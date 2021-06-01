@@ -30,3 +30,12 @@
 .dg_form-field_input--text {
   font-family: $default-body-font;
 }
+
+.styleguide-left-navigation {
+  .dg_search-input {
+    font-family: $default-heading-font;
+  }
+  .dg_form-field_input--text {
+    font-family: $default-heading-font;
+  }
+}
