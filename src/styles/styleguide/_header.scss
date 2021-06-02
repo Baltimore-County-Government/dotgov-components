@@ -30,3 +30,15 @@
     }
   }
 }
+
+@media screen and (max-width: 900px) {
+  .dg_site-header {
+    &.styleguide-header {
+      .dg_brand {
+        .dg_brand-text {
+          padding: 0 20px;
+        }
+      }
+    }
+  }
+}
