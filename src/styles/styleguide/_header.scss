@@ -34,6 +34,7 @@
 @media screen and (max-width: 900px) {
   .dg_site-header {
     &.styleguide-header {
+      justify-content: flex-start;
       .dg_brand {
         .dg_brand-text {
           padding: 0 20px;
