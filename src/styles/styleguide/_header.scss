@@ -45,3 +45,16 @@
     }
   }
 }
+
+@media screen and (max-width: 680px) {
+  .dg_site-header {
+    &.styleguide-header {
+      justify-content: flex-start;
+      .dg_brand {
+        .styleguide-nav {
+          display: none;
+        }
+      }
+    }
+  }
+}
