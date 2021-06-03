@@ -5,6 +5,63 @@
     padding-top: 10px;
 
     .dg_brand {
+      /* Icon 3 */
+      #styleguide-hamburger {
+        display: none;
+        width: 60px;
+        height: 45px;
+        position: relative;
+        margin: 50px auto;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: 0.5s ease-in-out;
+        -moz-transition: 0.5s ease-in-out;
+        -o-transition: 0.5s ease-in-out;
+        transition: 0.5s ease-in-out;
+        cursor: pointer;
+      }
+
+      #styleguide-hamburger span:nth-child(1) {
+        top: 0px;
+      }
+
+      #styleguide-hamburger span:nth-child(2),
+      #styleguide-hamburger span:nth-child(3) {
+        top: 18px;
+      }
+
+      #styleguide-hamburger span:nth-child(4) {
+        top: 36px;
+      }
+
+      #styleguide-hamburger.open span:nth-child(1) {
+        top: 18px;
+        width: 0%;
+        left: 50%;
+      }
+
+      #styleguide-hamburger.open span:nth-child(2) {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+
+      #styleguide-hamburger.open span:nth-child(3) {
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+      }
+
+      #styleguide-hamburger.open span:nth-child(4) {
+        top: 18px;
+        width: 0%;
+        left: 50%;
+      }
+
       .header-seal {
         padding-left: $padding-large;
 
@@ -51,6 +108,10 @@
     &.styleguide-header {
       justify-content: flex-start;
       .dg_brand {
+        #styleguide-hamburger {
+          display: block !important;
+        }
+
         .styleguide-nav {
           display: none !important;
         }
