@@ -22,3 +22,9 @@
     }
   }
 }
+
+@media screen and (max-width: 767px) {
+  .styleguide-left-navigation {
+    display: none;
+  }
+}

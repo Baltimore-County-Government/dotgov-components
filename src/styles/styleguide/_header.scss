@@ -4,83 +4,83 @@
     padding-bottom: 10px;
     padding-top: 10px;
 
+    /* Icon 3 */
+    #styleguide-hamburger span {
+      display: block;
+      position: absolute;
+      height: 9px;
+      width: 100%;
+      background: #000000;
+      border-radius: 9px;
+      opacity: 1;
+      left: 0;
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transition: 0.25s ease-in-out;
+      -moz-transition: 0.25s ease-in-out;
+      -o-transition: 0.25s ease-in-out;
+      transition: 0.25s ease-in-out;
+    }
+
+    #styleguide-hamburger {
+      display: none;
+      width: 60px;
+      height: 45px;
+      position: relative;
+      margin: 0 10px;
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transition: 0.5s ease-in-out;
+      -moz-transition: 0.5s ease-in-out;
+      -o-transition: 0.5s ease-in-out;
+      transition: 0.5s ease-in-out;
+      cursor: pointer;
+    }
+
+    #styleguide-hamburger span:nth-child(1) {
+      top: 0px;
+    }
+
+    #styleguide-hamburger span:nth-child(2),
+    #styleguide-hamburger span:nth-child(3) {
+      top: 18px;
+    }
+
+    #styleguide-hamburger span:nth-child(4) {
+      top: 36px;
+    }
+
+    #styleguide-hamburger.open span:nth-child(1) {
+      top: 18px;
+      width: 0%;
+      left: 50%;
+    }
+
+    #styleguide-hamburger.open span:nth-child(2) {
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+
+    #styleguide-hamburger.open span:nth-child(3) {
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+    }
+
+    #styleguide-hamburger.open span:nth-child(4) {
+      top: 18px;
+      width: 0%;
+      left: 50%;
+    }
+
     .dg_brand {
-      /* Icon 3 */
-      #styleguide-hamburger span {
-        display: block;
-        position: absolute;
-        height: 9px;
-        width: 100%;
-        background: #000000;
-        border-radius: 9px;
-        opacity: 1;
-        left: 0;
-        -webkit-transform: rotate(0deg);
-        -moz-transform: rotate(0deg);
-        -o-transform: rotate(0deg);
-        transform: rotate(0deg);
-        -webkit-transition: 0.25s ease-in-out;
-        -moz-transition: 0.25s ease-in-out;
-        -o-transition: 0.25s ease-in-out;
-        transition: 0.25s ease-in-out;
-      }
-
-      #styleguide-hamburger {
-        display: none;
-        width: 60px;
-        height: 45px;
-        position: relative;
-        margin: 50px auto;
-        -webkit-transform: rotate(0deg);
-        -moz-transform: rotate(0deg);
-        -o-transform: rotate(0deg);
-        transform: rotate(0deg);
-        -webkit-transition: 0.5s ease-in-out;
-        -moz-transition: 0.5s ease-in-out;
-        -o-transition: 0.5s ease-in-out;
-        transition: 0.5s ease-in-out;
-        cursor: pointer;
-      }
-
-      #styleguide-hamburger span:nth-child(1) {
-        top: 0px;
-      }
-
-      #styleguide-hamburger span:nth-child(2),
-      #styleguide-hamburger span:nth-child(3) {
-        top: 18px;
-      }
-
-      #styleguide-hamburger span:nth-child(4) {
-        top: 36px;
-      }
-
-      #styleguide-hamburger.open span:nth-child(1) {
-        top: 18px;
-        width: 0%;
-        left: 50%;
-      }
-
-      #styleguide-hamburger.open span:nth-child(2) {
-        -webkit-transform: rotate(45deg);
-        -moz-transform: rotate(45deg);
-        -o-transform: rotate(45deg);
-        transform: rotate(45deg);
-      }
-
-      #styleguide-hamburger.open span:nth-child(3) {
-        -webkit-transform: rotate(-45deg);
-        -moz-transform: rotate(-45deg);
-        -o-transform: rotate(-45deg);
-        transform: rotate(-45deg);
-      }
-
-      #styleguide-hamburger.open span:nth-child(4) {
-        top: 18px;
-        width: 0%;
-        left: 50%;
-      }
-
       .header-seal {
         padding-left: $padding-large;
 
@@ -125,12 +125,19 @@
 @media screen and (max-width: 767px) {
   .dg_site-header {
     &.styleguide-header {
-      justify-content: flex-start;
+      margin-bottom: 5px;
+      justify-content: space-between;
+      #styleguide-hamburger {
+        display: block !important;
+      }
       .dg_brand {
-        #styleguide-hamburger {
-          display: block !important;
+        .dg_brand-text {
+          padding: 0 5px;
         }
 
+        .header-seal {
+          padding-left: 10px;
+        }
         .styleguide-nav {
           display: none !important;
         }
