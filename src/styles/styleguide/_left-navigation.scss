@@ -53,10 +53,6 @@
         transition: opacity 0.3s;
         -webkit-transition: opacity 0.3s;
 
-        .styleguide-nav {
-          display: block;
-        }
-
         h1,
         h2,
         h3,
@@ -69,6 +65,17 @@
             color: #f7f7f7;
             a {
               color: #f7f7f7;
+            }
+          }
+          &.styleguide-nav {
+            border-bottom: 1px solid #ffffff;
+            display: block;
+            margin-bottom: 5px;
+            padding-bottom: 5px;
+
+            li {
+              font-size: 16px;
+              text-decoration: none;
             }
           }
         }
