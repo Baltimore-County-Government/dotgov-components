@@ -75,7 +75,12 @@
 
             li {
               font-size: 16px;
-              text-decoration: none;
+              font-weight: 700;
+              a {
+                font-size: 16px;
+                font-weight: 700;
+                text-decoration: none;
+              }
             }
           }
         }
