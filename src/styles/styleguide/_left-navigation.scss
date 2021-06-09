@@ -2,6 +2,10 @@
   background-color: #f2f2f2;
   font-family: $default-heading-font;
 
+  .styleguide-nav {
+    display: none;
+  }
+
   h3 {
     font-size: 16px;
     margin-bottom: 0px;
@@ -24,12 +28,50 @@
 }
 
 @media screen and (max-width: 767px) {
+  body {
+    &.open {
+      overflow: hidden;
+      position: fixed;
+    }
+  }
+
   .styleguide-left-navigation {
     display: none;
+    opacity: 0;
+    transition: opacity 0.3s;
+    -webkit-transition: opacity 0.3s;
 
     &#styleguide-mobile-menu {
       &.open {
+        background-color: #1b2f46;
         display: block;
+        height: 100%;
+        position: fixed;
+        opacity: 1;
+        overflow-y: scroll;
+        z-index: 999;
+        transition: opacity 0.3s;
+        -webkit-transition: opacity 0.3s;
+
+        .styleguide-nav {
+          display: block;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+          color: #ffffff;
+        }
+
+        ul {
+          li {
+            color: #f7f7f7;
+            a {
+              color: #f7f7f7;
+            }
+          }
+        }
       }
     }
   }
