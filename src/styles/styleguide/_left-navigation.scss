@@ -70,7 +70,7 @@
 
               &:after {
                 position: relative;
-                font-size: $icon-arrow-default-size;
+                font-size: 17px;
                 @include icon-content($icon-minus);
                 margin-left: 10px;
               }
@@ -83,7 +83,7 @@
             &.collapsed {
               .dg_accordion-btn {
                 &:after {
-                  font-size: $icon-arrow-default-size;
+                  font-size: 17px;
                   @include icon-content($icon-plus);
                   margin-left: 10px;
                 }
