@@ -55,6 +55,10 @@
 
         .dg_accordion {
           .dg_accordion__collapsible {
+            &:last-child {
+              border: none;
+            }
+
             .dg_accordion-btn {
               background-color: transparent;
 
