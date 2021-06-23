@@ -58,9 +58,37 @@
             .dg_accordion-btn {
               background-color: transparent;
 
+              &:before {
+                content: none;
+                display: none;
+              }
+
+              &:after {
+                position: relative;
+                font-size: $icon-arrow-default-size;
+                @include icon-content($icon-minus);
+                margin-left: 10px;
+              }
+
               .dg_accordion_buttontext-holder {
+                display: inline;
                 margin-left: 0px;
               }
+            }
+            &.collapsed {
+              .dg_accordion-btn {
+                &:after {
+                  font-size: $icon-arrow-default-size;
+                  @include icon-content($icon-plus);
+                  margin-left: 10px;
+                }
+              }
+            }
+
+            .dg_accordion-item-body {
+              border: none;
+              padding-left: 0px;
+              padding-right: 0px;
             }
           }
         }
