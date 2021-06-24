@@ -1,3 +1,5 @@
+// Google Search CSS Classes
+
 /* Main Search Container */
 .gsc-control-cse {
   padding: 0 !important;
@@ -151,5 +153,19 @@
         padding: $base-spacing-unit;
       }
     }
+  }
+}
+
+//Google reCaptcha classes
+
+.grecaptcha-badge {
+  visibility: hidden;
+}
+
+.grecaptcha-legaltext {
+  padding-top: $default-padding;
+  color: $gray-light;
+  a {
+    color: $blue;
   }
 }
