@@ -164,8 +164,9 @@
 
 .grecaptcha-legaltext {
   padding-top: $default-padding;
-  color: $gray-light;
+  color: $gray;
+  font-weight: normal;
   a {
-    color: $blue;
+    color: $blue-light;
   }
 }
