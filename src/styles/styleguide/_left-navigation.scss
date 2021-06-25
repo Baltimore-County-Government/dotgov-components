@@ -25,6 +25,53 @@
       }
     }
   }
+
+  .dg_accordion {
+    .dg_accordion__collapsible {
+      &:last-child {
+        border: none;
+      }
+
+      .dg_accordion-btn {
+        color: #000000;
+        background-color: transparent;
+        font-size: 16px;
+        font-weight: 700;
+        padding-bottom: 0px;
+
+        &:before {
+          content: none;
+          display: none;
+        }
+
+        &:after {
+          position: relative;
+          font-size: 17px;
+          @include icon-content($icon-minus);
+          margin-left: 10px;
+        }
+
+        .dg_accordion_buttontext-holder {
+          display: inline;
+          margin-left: 0px;
+        }
+      }
+      &.collapsed {
+        .dg_accordion-btn {
+          &:after {
+            font-size: 17px;
+            @include icon-content($icon-plus);
+            margin-left: 10px;
+          }
+        }
+      }
+
+      .dg_accordion-item-body {
+        border: none;
+        padding: 0px;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 767px) {
