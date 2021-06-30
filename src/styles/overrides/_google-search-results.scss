@@ -153,3 +153,18 @@
     }
   }
 }
+
+//Google reCaptcha classes
+
+.grecaptcha-badge {
+  visibility: hidden;
+}
+
+.grecaptcha-legaltext {
+  padding-top: $default-padding;
+  color: $gray;
+  font-weight: normal;
+  a {
+    color: $blue-light;
+  }
+}
