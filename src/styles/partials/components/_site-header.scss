@@ -120,6 +120,19 @@ $header-height: 65px;
   }
 }
 
+@media screen and (max-width: $medium-breakpoint) {
+  .is-disabled .dg_site-header {
+    transform: translateX(245px);
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    &.dg_site-header-sticky {
+      transform: translateX(50px);
+    }
+  }
+}
+
 /* On small screens we need to shrink the hamburger menu button in order to fit all of the header content. */
 @media screen and (max-width: $small-breakpoint) {
   .bc_site-nav__toggle-button,
