@@ -81,7 +81,7 @@ $header-height: 65px;
 
   .dg_site-header {
     background: $white;
-    position: relative;
+    position: sticky;
     z-index: 99;
     margin-bottom: 64px; /* Visually calculated for this component only */
     justify-content: flex-end;

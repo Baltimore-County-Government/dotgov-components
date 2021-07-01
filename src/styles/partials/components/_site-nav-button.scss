@@ -1,9 +1,7 @@
 .bc_site-nav__toggle-button {
   background: $gold;
   color: $black;
-  position: fixed !important;
-  top: 0;
-  z-index: $max-z-index;
+
   cursor: pointer;
   padding: $default-padding;
   /* Height, Width, Allows us to properly fake the menu button */
