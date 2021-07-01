@@ -24,6 +24,8 @@ $header-height: 65px;
 
 .dg_site-header {
   display: flex;
+  position: sticky;
+  z-index: 200;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
@@ -32,6 +34,7 @@ $header-height: 65px;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  top: 0;
   .dg_brand {
     display: flex;
     align-items: center;
@@ -44,12 +47,6 @@ $header-height: 65px;
     a {
       text-decoration: none;
     }
-  }
-  &.dg_site-header-sticky {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 2000;
   }
   &.dg_site-header-sticky-IE {
     position: fixed;
@@ -88,6 +85,7 @@ $header-height: 65px;
     z-index: 99;
     margin-bottom: 64px; /* Visually calculated for this component only */
     justify-content: flex-end;
+    top: 0;
   }
 
   #search-form.is-visible {
@@ -164,6 +162,7 @@ $header-height: 65px;
   }
 
   .dg_site-header {
+    top: 0;
     .dg_brand {
       .dg_brand-text {
         top: 3px; /* visually calculated in the browser. */
