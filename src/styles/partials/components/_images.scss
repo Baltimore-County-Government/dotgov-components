@@ -4,6 +4,16 @@
     We want images to display to their natural size, and respond as screens become smaller.
 */
 #dg_main-content {
+
+  img {
+    &.dg_external-link-image {
+      margin-bottom: 0px;
+      margin-left: $base-spacing-unit;
+      position: relative;
+      top: 5px;
+    }
+  }
+  
   img,
   .dg_image {
     max-width: 100%;
@@ -41,6 +51,7 @@ img {
     margin-bottom: 0px;
     margin-left: $base-spacing-unit;
     position: relative;
+    top: 5px;
   }
 }
 
