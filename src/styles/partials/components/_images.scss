@@ -36,6 +36,14 @@
   }
 }
 
+img {
+  &.dg_external-link-image {
+    margin-bottom: 0px;
+    margin-left: 5px;
+    position: relative;
+  }
+}
+
 @media screen and (max-width: $medium-breakpoint) {
   #dg_main-content .dg_image {
     &.left,
