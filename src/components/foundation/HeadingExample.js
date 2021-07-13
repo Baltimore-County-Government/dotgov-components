@@ -2,16 +2,16 @@ import React from "react";
 
 const headingExampleStyles = {
   borderTop: "1px solid lightgray",
-  padding: "20px"
+  padding: "20px",
 };
 
 const titleStyles = {
   color: "gray",
   display: "block",
-  marginBottom: "15px"
+  marginBottom: "15px",
 };
 
-const HeadingExample = props => {
+const HeadingExample = (props) => {
   return (
     <React.Fragment>
       <section className="example-section">
@@ -21,11 +21,11 @@ const HeadingExample = props => {
         </div>
         <div style={headingExampleStyles}>
           <span style={titleStyles}>Heading 2</span>
-          <h2>Montserrat 24px bold</h2>
+          <h2>Montserrat 30px bold</h2>
         </div>
         <div style={headingExampleStyles} className="subpage">
           <span style={titleStyles}>Heading 2 - Subpage</span>
-          <h2>Montserrat 24px bold</h2>
+          <h2>Montserrat 30px bold</h2>
         </div>
         <div style={headingExampleStyles} className="dg_sidebar">
           <span style={titleStyles}>
@@ -35,11 +35,19 @@ const HeadingExample = props => {
         </div>
         <div style={headingExampleStyles}>
           <span style={titleStyles}>Heading 3</span>
-          <h3>Montserrat 20px bold</h3>
+          <h3>Montserrat 24px bold</h3>
         </div>
         <div style={headingExampleStyles}>
-          <span style={titleStyles}>Heading 4-6</span>
+          <span style={titleStyles}>Heading 4</span>
           <h4>Montserrat 18px bold</h4>
+        </div>
+        <div style={headingExampleStyles}>
+          <span style={titleStyles}>Heading 5</span>
+          <h5>Montserrat 14px bold</h5>
+        </div>
+        <div style={headingExampleStyles}>
+          <span style={titleStyles}>Heading 6</span>
+          <h6>Montserrat 12px bold</h6>
         </div>
       </section>
     </React.Fragment>

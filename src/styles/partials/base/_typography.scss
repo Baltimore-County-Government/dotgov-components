@@ -57,19 +57,20 @@ h1 {
   font-size: $h1-font-size;
   margin-bottom: $margin-large;
 }
-
 h2 {
   font-size: $h2-font-size;
 }
-
 h3 {
   font-size: $h3-font-size;
 }
-
-h4,
-h5,
+h4 {
+  font-size: $h4-font-size;
+}
+h5 {
+  font-size: $h5-font-size;
+}
 h6 {
-  font-size: $small-heading-font-size;
+  font-size: $h6-font-size;
 }
 
 @media screen and (max-width: $medium-breakpoint) {

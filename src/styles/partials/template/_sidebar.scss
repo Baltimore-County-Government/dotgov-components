@@ -1,5 +1,12 @@
 .dg_sidebar {
   margin-bottom: $margin-larger;
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: $default-heading-font;
+    font-size: $smallest-heading-font-size;
+  }
 }
 
 .dg_sidebar__section {
@@ -8,11 +15,7 @@
   overflow-wrap: break-word;
   word-wrap: break-word;
   h1,
-  h2,
   h3,
-  h4,
-  h5,
-  h6,
   a,
   li,
   p {
