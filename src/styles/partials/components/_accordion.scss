@@ -69,6 +69,9 @@
     color: $gray-dark;
     text-transform: none;
     border: $border-width-small solid $blue;
+    .dg_button {
+      display: block;
+    }
   }
 
   .dg_accordion-btn {
