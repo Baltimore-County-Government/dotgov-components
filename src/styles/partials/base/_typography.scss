@@ -19,7 +19,7 @@ p {
 
 a {
   color: $blue;
-
+  word-wrap: break-word;
   &:hover,
   &:focus,
   &.hovered,
