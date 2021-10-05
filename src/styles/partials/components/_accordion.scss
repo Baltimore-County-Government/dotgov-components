@@ -69,9 +69,6 @@
     color: $gray-dark;
     text-transform: none;
     border: $border-width-small solid $blue;
-    .dg_button {
-      display: block;
-    }
   }
 
   .dg_accordion-btn {
@@ -126,4 +123,12 @@
 
 .show {
   display: block;
+}
+
+@media screen and (max-width: $medium-breakpoint) {
+  .dg_accordion-item-body {
+    .dg_button {
+      display: block;
+    }
+  }
 }
