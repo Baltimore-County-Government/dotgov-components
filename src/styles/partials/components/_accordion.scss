@@ -125,7 +125,7 @@
   display: block;
 }
 
-@media screen and (max-width: $medium-breakpoint) {
+@media screen and (max-width: $small-breakpoint) {
   .dg_accordion-item-body {
     .dg_button {
       display: block;
