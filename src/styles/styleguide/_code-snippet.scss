@@ -30,5 +30,11 @@ pre {
       padding: 15px 20px 12px 22px;
       line-height: 1.75;
     }
+
+    &.dg-html {
+      code {
+          color:#F09800 /*#a7d6f9*/;
+      }
+    }
   }
 }
