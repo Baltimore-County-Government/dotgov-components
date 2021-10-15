@@ -33,7 +33,14 @@ pre {
 
     &.dg-html {
       code {
-          color:#F09800 /*#a7d6f9*/;
+        .tag {
+          color: #a7d6f9;
+        }
+
+        .attribute {
+          color:#F09800;
+        }
+          
       }
     }
   }
