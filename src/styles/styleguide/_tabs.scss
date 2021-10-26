@@ -1,15 +1,15 @@
 .dg_pg-tab {
     button {
         &.dg_tablinks {
-            background-color: #4d4d4d;
-            color: #ffffff;
-            font-family: "Montserrat",sans-serif;
-            font-weight: 700;
-            padding: 10px;
+            background-color: $gray;
+            color: $white;
+            font-family: $default-heading-font;
+            font-weight: $font-bold;
+            padding: $padding-small;
             text-transform: uppercase;
 
             &.active {
-                background-color: #1b1b1b;
+                background-color: $gray-dark;
             }
         }
     }

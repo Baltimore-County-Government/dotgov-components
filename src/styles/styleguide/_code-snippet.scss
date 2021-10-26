@@ -2,8 +2,8 @@ pre {
   &.dg-code-box {
     font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
     clear: both;
-    color: #fff;
-    background: #1b1b1b;
+    color: $white;
+    background: $gray-dark;
     padding: 0;
     -moz-tab-size: 2;
     -o-tab-size: 2;
@@ -27,8 +27,8 @@ pre {
       display: block;
       max-width: 100%;
       min-width: 100px;
-      font-size: 16px;
-      padding: 15px 20px 12px 22px;
+      font-size: $smallest-heading-font-size;
+      padding: $default-padding $padding-large $padding-small $padding-large;
       line-height: 1.75;
     }
 
