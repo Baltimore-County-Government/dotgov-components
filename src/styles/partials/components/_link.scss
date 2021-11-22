@@ -9,6 +9,12 @@ $tiny-icon-link-size: 25px;
   width: $iconLinkSize;
 }
 
+a {
+  .dg_anchor-link  {
+    padding-top: 110px;
+  }
+}
+
 .dg_icon-link {
   color: $gray-darkest;
   cursor: pointer;
