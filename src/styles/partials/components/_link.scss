@@ -10,7 +10,7 @@ $tiny-icon-link-size: 25px;
 }
 
 a {
-  &.dg_anchor-link  {
+  &.dg_anchor-link {
     padding-top: 110px;
   }
 }
@@ -158,5 +158,13 @@ a {
 
   i {
     @include list-icon;
+  }
+}
+
+@media screen and (max-width: $small-breakpoint) {
+  a {
+    &.dg_anchor-link {
+      padding-top: 165px;
+    }
   }
 }
