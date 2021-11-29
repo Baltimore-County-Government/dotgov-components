@@ -22,6 +22,11 @@
       a {
         color: #666666;
         font-size: 16px;
+
+        &.localnavactive {
+          color: #1076bc;
+          font-weight: 700;
+        }
       }
     }
   }
