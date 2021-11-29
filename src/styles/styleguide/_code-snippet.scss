@@ -9,7 +9,7 @@ pre {
     -o-tab-size: 2;
     tab-size: 2;
     -ms-word-break: normal;
-    word-break: normal;
+    word-break: normal; 
     -webkit-hyphens: none;
     -ms-hyphens: none;
     hyphens: none;
@@ -39,12 +39,9 @@ pre {
         }
 
         .attribute {
-          color:#F09800;
+          color: #f09800;
         }
-          
       }
     }
   }
 }
-
-
