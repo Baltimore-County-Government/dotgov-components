@@ -161,7 +161,7 @@ a {
   }
 }
 
-@media screen and (max-width: $medium-breakpoint) {
+@media screen and (max-width: $header-breakpoint) {
   a {
     &.dg_anchor-link {
       padding-top: 165px;
