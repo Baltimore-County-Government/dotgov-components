@@ -5,3 +5,12 @@
   border: $border-width-small solid $gray;
   border-left-width: $base-spacing-unit;
 }
+
+@media screen and (max-width: $medium-breakpoint) {
+  .sg_callout,
+  .bs-callout {
+    a {
+      word-break: break-all;
+    }
+  }
+}
