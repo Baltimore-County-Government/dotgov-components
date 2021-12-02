@@ -27,7 +27,7 @@ $mobile-menu-width: 245px;
   top: 0;
 
   .bc_site-nav__toggle-button {
-    position: absolute;
+    position: fixed;
     top: $site-border-width; /* account for the top border of the site */
     transform: translateX(0);
     z-index: $max-z-index;

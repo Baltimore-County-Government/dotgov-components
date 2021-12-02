@@ -1,6 +1,6 @@
 {
   "name": "@baltimorecounty/dotgov-components",
-  "version": "1.0.51",
+  "version": "1.0.55",
   "description": "UI design system for Baltimore County's primary [website](https://www.baltimorecountymd.gov).",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -32,7 +32,8 @@
     "css-loader": "^3.6.0",
     "date-fns": "^2.14.0",
     "font-awesome": "^4.7.0",
-    "react-datepicker": "^3.1.3"
+    "react-datepicker": "^3.1.3",
+    "ua-parser-js": "^1.0.1"
   },
   "peerDependencies": {
     "react": "16.x",
