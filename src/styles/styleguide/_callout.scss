@@ -1,9 +1,7 @@
-.sg_callout, .bs-callout {
-    padding: 0px 20px;
-    margin: 20px 20px 20px 40px;
-    border: 1px solid #777;
-    border-left-width: 5px;
-    border-radius: 3px;
-    font-style: italic;
-    width: 100%;
+.sg_callout,
+.bs-callout {
+  padding: $padding-large;
+  margin: $default-margin $default-margin $default-margin $margin-larger;
+  border: $border-width-small solid $gray;
+  border-left-width: $base-spacing-unit;
 }
