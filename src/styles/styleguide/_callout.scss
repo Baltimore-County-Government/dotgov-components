@@ -4,6 +4,22 @@
   margin: $default-margin $default-margin $default-margin $margin-larger;
   border: $border-width-small solid $gray;
   border-left-width: $base-spacing-unit;
+
+  &.blue {
+    border: $border-width-small solid $blue-dark;
+  }
+
+  &.gold {
+    border: $border-width-small solid $gold-light;
+  }
+
+  &.red {
+    border: $border-width-small solid $red-dark;
+  }
+
+  &.vibrant-blue {
+    border: $border-width-small solid $vibrant-blue;
+  }
 }
 
 @media screen and (max-width: $medium-breakpoint) {
