@@ -11,7 +11,9 @@ $tiny-icon-link-size: 25px;
 
 a {
   &.dg_anchor-link {
-    padding-top: 110px;
+    display: block;
+    margin-top: -160px;
+    padding-top: 160px;
   }
 }
 
@@ -164,7 +166,10 @@ a {
 @media screen and (max-width: $header-breakpoint) {
   a {
     &.dg_anchor-link {
-      padding-top: 165px;
+      display: block;
+      margin-top: -200px;
+      padding-top: 200px;
+      
     }
   }
 }
