@@ -28,6 +28,14 @@ ol {
       font-size: $smallest-heading-font-size;
       font-weight: 700;
       padding: 0px 20px;
+
+      a {
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
     }
   }
 }
