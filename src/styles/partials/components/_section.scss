@@ -5,6 +5,11 @@
   &.dg_one-pg-hdr {
     margin-bottom: 110px;
     padding-bottom: 400px;
+
+    h2 {
+      border-bottom: none;
+      font-size: 30px;
+    }
   }
 
   .dg_section__background-image {
