@@ -2,6 +2,11 @@
   padding: $padding-jumbo 0;
   position: relative;
 
+  &.dg_one-pg-hdr {
+    margin-bottom: 110px;
+    padding-bottom: 400px;
+  }
+
   .dg_section__background-image {
     width: 100%;
     position: absolute;
