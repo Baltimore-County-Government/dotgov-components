@@ -7,8 +7,12 @@
     padding-bottom: 400px;
 
     h2 {
-      border-bottom: none;
-      font-size: 30px;
+      &.dg_onepg-hdr-txt {
+        border-bottom: none;
+        font-size: 30px;
+        padding:0 0 5px;
+        text-transform: capitalize;
+      }
     }
   }
 
