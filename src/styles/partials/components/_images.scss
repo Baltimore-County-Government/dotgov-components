@@ -58,6 +58,7 @@ img {
   &.dg_one-pg-hdr {
     img {
       &.dg_ft-hdrimg {
+        box-shadow: 0px 3px 10px #999999;
         left: 0;
         right: 0;
         margin-left: auto;
@@ -84,5 +85,16 @@ img {
 @media screen and (max-width: $small-breakpoint) {
   #dg_main-content .dg_image {
     width: 100% !important;
+  }
+
+  .dg_section {
+    &.dg_one-pg-hdr {
+      img {
+        &.dg_ft-hdrimg {
+          max-width: 395px;
+          width: 100%;
+        }
+      }
+    }
   }
 }
