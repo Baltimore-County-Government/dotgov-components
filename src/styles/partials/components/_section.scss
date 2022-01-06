@@ -10,7 +10,7 @@
       &.dg_onepg-hdr-txt {
         border-bottom: none;
         font-size: 30px;
-        padding:0 0 5px;
+        padding: 0 0 5px;
         text-transform: capitalize;
       }
     }
@@ -69,6 +69,11 @@
       background: rgba($pale-blue, 0.9);
     }
   }
+}
+
+.container-loop-card {
+  overflow: hidden;
+  overflow-x: scroll;
 }
 
 .dg_section__background-image {
