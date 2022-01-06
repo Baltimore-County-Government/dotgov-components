@@ -71,6 +71,16 @@ img {
   }
 }
 
+.container-loop-card {
+  .dg_card {
+    .dg_card__content {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: $medium-breakpoint) {
   #dg_main-content .dg_image {
     &.left,
