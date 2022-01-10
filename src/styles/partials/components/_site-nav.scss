@@ -149,9 +149,11 @@ body.is-disabled {
   #bc_site-nav .bc_site-nav__list-container ul a i {
     display: none;
   }
-
-  .dg_onepg-header {
-    flex-direction: column;
+  .dg_site-header {
+    &.dg_onepg-header {
+      flex-direction: column;
+      margin-bottom: 0px;
+    }
   }
 
   .dg_onepg-nav {
