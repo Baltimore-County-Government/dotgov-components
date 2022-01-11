@@ -40,3 +40,15 @@ ol {
     }
   }
 }
+
+@media screen and (max-width: $small-breakpoint) {
+  .dg_onepg-nav {
+
+    ul {
+
+      li {
+        padding: 0px 5px;
+      }
+    }
+  }
+}
