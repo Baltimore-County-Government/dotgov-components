@@ -28,8 +28,12 @@
       color: $gray-light;
     }
   }
+}
 
-  .dg_onepg-hdr-h2 {
-    border-bottom: none;
+.dg_section {
+  &.dark {
+    .dg_onepg-hdr-h2 {
+      border-bottom: none;
+    }
   }
 }
