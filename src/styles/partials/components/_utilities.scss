@@ -57,3 +57,21 @@
 .dg_order-4 {
   order: 4;
 }
+
+@media screen and (max-width: $medium-breakpoint) {
+  .dg_order-md-1 {
+    order: 1;
+  }
+  
+  .dg_order-md-2 {
+    order: 2;
+  }
+  
+  .dg_order-md-3 {
+    order: 3;
+  }
+  
+  .dg_order-md-4 {
+    order: 4;
+  }
+}
