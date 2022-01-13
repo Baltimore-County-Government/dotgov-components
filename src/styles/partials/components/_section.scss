@@ -153,6 +153,12 @@
 }
 
 @media screen and (max-width: $small-breakpoint) {
+  .dg_onepg-header {
+    .dg_brand {
+      margin-top: 20px;
+    }
+  }
+
   .dg_section {
     padding: $padding-larger 0;
 
