@@ -151,3 +151,12 @@
   }
 }
 
+@media screen and (max-width: $small-breakpoint) {
+  .dg_section {
+    padding: $padding-larger 0;
+
+    &.dg_one-pg-hdr {
+      margin-bottom: 20px;
+      padding-bottom: 150px;
+    }
+}
