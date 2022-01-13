@@ -104,6 +104,11 @@
       .dg_section__background-image {
         display: inherit;
       }
+      img {
+        &.dg_ft-hdrimg {
+          max-width: 400px;
+        }
+      }
 
       h2 {
         &.dg_onepg-hdr-txt {
@@ -116,6 +121,8 @@
     }
 
     &.one-pg-ft-section {
+      text-align: center;
+
       .dg_section__background-image {
         display: inherit;
       }
