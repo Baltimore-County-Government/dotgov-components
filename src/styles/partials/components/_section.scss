@@ -2,6 +2,15 @@
   padding: $padding-jumbo 0;
   position: relative;
 
+  &.dark {
+    &.dg_one-pg-hdr {
+      &:after {
+        background: #001a60;
+        opacity: 0.9;
+      }
+    }
+  }
+
   &.dg_one-pg-hdr {
     margin-bottom: 110px;
     padding-bottom: 400px;
@@ -141,3 +150,4 @@
     }
   }
 }
+

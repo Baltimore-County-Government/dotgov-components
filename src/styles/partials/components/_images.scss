@@ -108,8 +108,11 @@ img {
     &.dg_one-pg-hdr {
       img {
         &.dg_ft-hdrimg {
+          box-shadow: none;
           max-width: 395px;
           width: 100%;
+          padding-left: 10px;
+          padding-right: 10px;
         }
       }
     }
