@@ -88,8 +88,6 @@
   object-fit: cover;
 }
 
-
-
 @media screen and (max-width: $extra-large-breakpoint) {
   .dg_section .dg_section-cta {
     padding: $padding-larger 0 0;
@@ -99,6 +97,29 @@
 @media screen and (max-width: $medium-breakpoint) {
   .dg_section {
     padding: $padding-larger 0;
+
+    &.dg_one-pg-hdr {
+      margin-bottom: 110px;
+      padding-bottom: 400px;
+      .dg_section__background-image {
+        display: inherit;
+      }
+
+      h2 {
+        &.dg_onepg-hdr-txt {
+          border-bottom: none;
+          font-size: 25px;
+          padding: 0 0 5px;
+          text-transform: capitalize;
+        }
+      }
+    }
+
+    &.one-pg-ft-section {
+      .dg_section__background-image {
+        display: inherit;
+      }
+    }
 
     .dg_section__background-image {
       display: none;
