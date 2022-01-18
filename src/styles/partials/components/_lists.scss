@@ -50,6 +50,15 @@ ol {
     margin: 0 5px;
     padding: 0;
     cursor: pointer;
+
+    &.slick-active {
+      button {
+        &:before {
+          content: "\f111";
+          font-weight: 400;
+        }
+      }
+    }
     button {
       font-size: 0;
       line-height: 0;
@@ -63,8 +72,9 @@ ol {
       outline: none;
       background: transparent;
       &:before {
-        content: "•";
+        content: "\f111";
         font-size: 22px;
+        font-weight: 900;
         line-height: 20px;
         position: absolute;
         top: 0;
@@ -73,7 +83,7 @@ ol {
         height: 20px;
         text-align: center;
         opacity: 0.25;
-        color: black;
+        color: #ffffff;
       }
     }
   }
