@@ -55,7 +55,7 @@ ol {
       button {
         &:before {
           content: "\f111";
-          font-family: "Font Awesome 5 Pro"
+          font-family: "Font Awesome 5 Pro";
           font-weight: 400;
         }
       }
@@ -73,7 +73,7 @@ ol {
       outline: none;
       background: transparent;
       &:before {
-        font-family: "Font Awesome 5 Pro"
+        font-family: "Font Awesome 5 Pro";
         content: "\f111";
         font-size: 22px;
         font-weight: 900;
@@ -84,7 +84,6 @@ ol {
         width: 20px;
         height: 20px;
         text-align: center;
-        opacity: 0.25;
         color: #ffffff;
       }
     }
