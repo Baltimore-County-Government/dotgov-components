@@ -41,6 +41,44 @@ ol {
   }
 }
 
+.slick-dots {
+  li {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+    button {
+      font-size: 0;
+      line-height: 0;
+      display: block;
+      width: 20px;
+      height: 20px;
+      padding: 5px;
+      cursor: pointer;
+      color: transparent;
+      border: 0;
+      outline: none;
+      background: transparent;
+      &:before {
+        content: "•";
+        font-size: 22px;
+        line-height: 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        opacity: 0.25;
+        color: black;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: $medium-breakpoint) {
   .dg_onepg-nav {
     ul {
