@@ -4,7 +4,6 @@
     We want images to display to their natural size, and respond as screens become smaller.
 */
 #dg_main-content {
-
   img {
     &.dg_external-link-image {
       margin-bottom: 0px;
@@ -13,7 +12,7 @@
       top: 2px;
     }
   }
-  
+
   img,
   .dg_image {
     max-width: 100%;
@@ -55,6 +54,39 @@ img {
   }
 }
 
+.dg_section {
+  &.dg_one-pg-hdr {
+    img {
+      &.dg_ft-hdrimg {
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        position: absolute;
+        max-width: 875px;
+        width: 100%;
+      }
+    }
+  }
+
+  &.one-pg-ft-section {
+
+    img {
+     width: 100%;
+    }
+  }
+}
+
+.container-loop-card {
+  .dg_card {
+    .dg_card__content {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: $medium-breakpoint) {
   #dg_main-content .dg_image {
     &.left,
@@ -69,5 +101,19 @@ img {
 @media screen and (max-width: $small-breakpoint) {
   #dg_main-content .dg_image {
     width: 100% !important;
+  }
+
+  .dg_section {
+    &.dg_one-pg-hdr {
+      img {
+        &.dg_ft-hdrimg {
+          box-shadow: none;
+          max-width: 395px;
+          width: 100%;
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+      }
+    }
   }
 }

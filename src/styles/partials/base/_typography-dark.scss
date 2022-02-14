@@ -29,3 +29,11 @@
     }
   }
 }
+
+.dg_section {
+  &.dark {
+    .dg_onepg-hdr-h2 {
+      border-bottom: none !important;
+    }
+  }
+}
