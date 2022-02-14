@@ -9,11 +9,9 @@ $tiny-icon-link-size: 25px;
   width: $iconLinkSize;
 }
 
-a {
-  &.dg_anchor-link {
+:target {
     padding-top: 110px;
   }
-}
 
 .dg_icon-link {
   color: $gray-darkest;
@@ -162,9 +160,8 @@ a {
 }
 
 @media screen and (max-width: $medium-breakpoint) {
-  a {
-    &.dg_anchor-link {
+    :target {
       padding-top: 165px;
     }
-  }
+ 
 }
