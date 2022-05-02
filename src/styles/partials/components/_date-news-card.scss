@@ -88,6 +88,35 @@
   }
 }
 
+.dg_news-preview {
+  .seBlogViewletContainer {
+    border: $border-width-small solid $gray;
+    display: flex;
+    flex-wrap: inherit;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: $margin-large;
+    padding: $padding-large;
+    text-align: left;
+    width: 100%;
+
+    .seBlogViewletTitle {
+      font-family: "Montserrat", sans-serif;
+      font-weight: $font-bold;
+      letter-spacing: 0;
+      text-transform: uppercase;
+      text-decoration: none;
+      margin-bottom: $default-margin;
+      font-size: $h2-font-size;
+    }
+
+    .seBlogViewletDate {
+      margin-bottom: $default-margin;
+    }
+  }
+}
+
 @media screen and (max-width: $extra-large-breakpoint) {
   .dg_date-news-card {
     margin-bottom: $margin-large;
