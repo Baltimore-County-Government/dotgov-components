@@ -1,0 +1,17 @@
+.dg_questionnaire {
+  &#navaccordion {
+    h3 {
+      background: #002280;
+      color: #ffffff;
+      padding: 20px;
+      margin-bottom: 0px;
+    }
+    #root {
+      padding: 20px;
+
+      .dg_button {
+        cursor: pointer;
+      }
+    }
+  }
+}
