@@ -92,7 +92,7 @@ Html Snippet:
 Html Snippet:
 
 ```html
-<div class="dg_alert status info">
+<div class="dg_alert status information">
     <span class="dg_alert__status">Information</span>
     <p>This is information you need to know.</p>
 </div>
