@@ -5,7 +5,7 @@
     display: none;
     
     &.map-legend-visible {
-      background:#fff;
+      background: $white;
       display: block;
     }
   }
@@ -43,16 +43,22 @@
 
 .parks-container {
 
+  .initial-message {
+    font-size: 1.5em;
+    padding: $padding-small;
+    text-align: center;
+  }
+
   .loading > p {
     display: block;
     font-size: 1.5em;
-    padding: 10px 0;
+    padding: $padding-small 0;
     text-align: center;
   }
 
   .park {
-    border-bottom: 2px solid gray;
-    padding: 20px 0;
+    border-bottom: $default-border-width solid $gray;
+    padding: $padding-large 0;
 
     &:last-child {
       border: none;
@@ -60,44 +66,48 @@
 
     .park-map,
     .trail-map {
-      margin-bottom: 10px;
+      margin-bottom: $margin-small;
       position: relative;
       display: inline-block;
 
       a {
         background: none;
-        border: 2px solid #002280;
-        color: #002280;
+        border: $default-border-width solid $blue;
+        color: $blue;
         font-family: "Montserrat",sans-serif;
         font-size: 16px;
         font-weight: 700;
-        padding: 15px;
+        padding: $padding-small;
         text-transform: uppercase;
         text-decoration: none;
 
         &:hover {
-          background: #1076bc;
-          border-color: #002280;
-          color: #fff;
+          background: $vibrant-blue;
+          border-color: $blue;
+          color: $white;
         }
       }
     }
 
     .park-address {
-      border: 1px solid #e0e0e0;
+      border: $border-width-small solid $gray-light;
       font-style: normal;
-      margin-bottom: 10px;
-      padding: 10px;
+      margin-bottom: $margin-small;
+      padding: $padding-small;
+
+      .address-label {
+        color: $gray-dark;
+      }
     }
 
     .health-coalition {
       display: inline-block;
-      margin: 0 auto 10px;
+      margin: 0 auto $margin-small;
       text-align: right;
 
       img {
         border: none;
-        float:right;
+        float: right;
         margin: 0;
         padding: 0;
       }
@@ -122,28 +132,128 @@
     }
 
     li {
-      border: 1px solid #d3d3d3;
-      border-bottom-color:#fff;
+      border: $border-width-small solid $gray-light;
+      border-bottom-color:$white;
       display: inline-block;
       list-style: none;
-      padding: 10px;
+      padding: $padding-small;
 
       a {
         text-decoration: none;
       }
     }
   }
+
+  .trail {
+    padding: $padding-small;
+    border: $border-width-small solid $gray-light;
+  }
 } //park-trails
 
 .filter-walking-trails {
 
+  .js-trails-filter {
+    width: 85%;
+  }
+
+  .filter-container {
+    padding: $padding-small $padding-large;
+
+    .filter {
+      .input {
+        font-size: 1.25em;
+        padding: $padding-smallest;
+
+        .page-info,
+        .records-info {
+          font-size: .7em
+        }
+
+        span {
+          padding: $padding-small 0;
+        }
+      }
+
+      .show-records {
+        display: flex;
+        font-size: 0.8em;
+        justify-content: center;
+        padding: $padding-smallest;
+        text-align: right;
+
+        .dg_button-link {
+          padding: $default-padding $padding-smallest;
+        }
+      }
+    }
+  }
+
+  .filter-container-top {
+    border-bottom: $default-border-width solid $gray;
+
+    .filter {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+
+  .paging {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.8em;
+    justify-content: space-between;
+    padding: $padding-small;
+    text-align: center;
+
+    .prev-page {
+      text-align: left;
+    }
+
+    .next-page {
+      text-align: right;
+    }
+
+    .btn-group {
+      margin: auto $margin-smallest;
+    }
+
+    .paging-numbers {
+
+      button {
+        background: none;
+        border: none;
+        color: $blue;
+        font-size: 22px;
+        margin: 0 $margin-smallest;
+        text-decoration: underline;
+        text-transform: inherit;
+
+        &:hover {
+          color: $vibrant-blue;
+        }
+      }
+    }
+  }
+
+  & + .disclaimer {
+    background:$gray-light;
+    border: $border-width-small solid $gray;
+    margin-top: $margin-larger;
+    padding: $padding-small;
+  }
 }
 
-
-
 .search-container-trails {
-  margin-bottom: 15px;
-  margin-top: 25px;
+  margin-bottom: $default-margin;
+  margin-top: $default-margin;
+
+  .clear-filter {
+    margin-left: $default-margin;
+  }
 
   & > div {
     align-items: center;
@@ -152,177 +262,27 @@
   }
 }
 
-.page-info,
-.records-info {
-  font-size: .7em
-}
+@media screen and (max-width: 786px) {
+  .filter-walking-trails {
+    .paging {
+      justify-content: center;
+    }
 
-#mainContent .active a {
-  text-decoration: none;
-}
+    .filter-container-top .filter {
+      justify-content: center;
+    }
 
-.disclaimer {
-  margin-top: 40px;
-  padding: 10px;
-  border: 1px solid gray;
-  background:#f3f3f3;
-}
-
-.actionsPane {
-  display: none;
-}
-
-.address-label {
-  color:#444;
-}
-
-.trails-header-hidden {
-  display: none;
-}
-
-#maincontainer .search-container {
-  margin: 10px auto;
-  padding: 10px;
-  background:#e5e5e5;
-  width: 100% !important;
-}
-
-.search-container label {
-  font-size: 1.25em;
-  display: block;
-  padding: 13px;
-}
-
-.filter-container {
-  padding: 10px 20px;
-}
-
-.filter-container-top .filter {
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.filter-container-top {
-  border-bottom: 3px solid gray;
-}
-
-.filter-container-bottom {
-  border-top: 3px solid gray;
-}
-
-.filter .input{
-  font-size: 1.25em;
-  padding: 5px;
-}
-
-.filter .input span {
-  padding: 10px 0;
-}
-
-.filter input {
-  width: 85%;
-}
-
-.clear-filter {
-  margin-left: 20px;
-}
-
-.paging-numbers button {
-  background: none;
-  border: none;
-  color: #002280;
-  font-family: "Crimson Text",serif;
-  font-size: 22px;
-  margin: 0 5px;
-  text-transform: inherit;
-  text-decoration: underline;
-}
-
-.paging-numbers button:hover {
-  color: #1076bc;
-}
-
-.prev-page {
-  text-align: left;
-}
-
-.next-page {
-  text-align: right;
-}
-
-.initial-message {
-  font-size: 1.5em;
-  padding: 10px;
-  text-align: center;
-}
-
-.paging {
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  text-align: center;
-}
-
-@media screen and (max-width:786px) {
-  .paging {
-    justify-content: center;
+    .btn-group.paging-numbers {
+      display: flex;
+      justify-content: center;
+      margin: $margin-default;
+      width: 100%;
+    }
   }
+}
 
-  .filter-container-top .filter {
-    justify-content: center;
-  }
-
-  .btn-group.paging-numbers {
-    display: flex;
-    justify-content: center;
-    margin: 15px;
+@media (max-width: 600px) {
+  .js-trails-filter {
     width: 100%;
   }
-}
-
-.paging .btn-group {
-  margin: auto 5px;
-}
-
-.show-records {
-  text-align: right;
-  display: flex;
-  justify-content: center;
-  padding: 5px;
-}
-
-.show-records .dg_button-link {
-  padding: 15px 5px;
-}
-
-@media (max-width:600px){
-  #filter {
-    width:100%;
-  }
-}
-
-.js-trails-filter {
-  width: 80%;
-}
-
-#mainContent button,
-#mainContent .search-form .search-button,
-#mainContent input,
-#mainContent optgroup,
-#mainContent select,
-#mainContent textarea { 
-  width:auto;
-}
-
-.show-records {
-  font-size: 0.8em;
-}
-
-.paging {
-  font-size: 0.8em;
-  padding: 10px;
 }
