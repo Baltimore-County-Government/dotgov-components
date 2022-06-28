@@ -1,0 +1,279 @@
+.legend-container {
+  position: relative;
+
+  .map-legend {
+    display: none;
+    
+    &.map-legend-visible {
+      background: $white;
+      display: block;
+    }
+  }
+
+  .map-container {
+    width: 100%;
+
+    .map {
+      width: 100%;
+
+      #map_root {
+        width: 100% !important;
+
+        img {
+          border: none !important;
+          padding: 0 !important;
+        }
+      }
+    }
+
+    .map,
+    .map-container,
+    .map-legend {
+      height: 525px;
+    }
+  }
+
+  .legend-toggle {
+    bottom: 10px;
+    left: 30px;
+    position: absolute;
+    z-index: 1;
+  }
+}
+
+.parks-container {
+
+  .initial-message {
+    font-size: 1.5em;
+    padding: $padding-small;
+    text-align: center;
+  }
+
+  .loading > p {
+    display: block;
+    font-size: 1.5em;
+    padding: $padding-small 0;
+    text-align: center;
+  }
+
+  .park {
+    border-bottom: $default-border-width solid $gray;
+    padding: $padding-large 0;
+
+    &:last-child {
+      border: none;
+    }
+
+    .park-map,
+    .trail-map {
+      margin-bottom: $margin-small;
+      position: relative;
+      display: inline-block;
+
+      a {
+        background: none;
+        border: $default-border-width solid $blue;
+        color: $blue;
+        font-family: "Montserrat",sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        padding: $padding-small;
+        text-transform: uppercase;
+        text-decoration: none;
+
+        &:hover {
+          background: $vibrant-blue;
+          border-color: $blue;
+          color: $white;
+        }
+      }
+    }
+
+    .park-address {
+      border: $border-width-small solid $gray-light;
+      font-style: normal;
+      margin-bottom: $margin-small;
+      padding: $padding-small;
+
+      .address-label {
+        color: $gray-dark;
+      }
+    }
+
+    .health-coalition {
+      display: none;
+    }
+  } // park
+
+  .trails {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+} // parks-container
+
+.park-trails {
+
+  .park-trails-nav {
+    margin: 0 0 -1px;
+    padding: 0;
+
+    &.nav-tabs {
+      border-bottom: none;
+    }
+
+    li {
+      border: $border-width-small solid $gray-light;
+      border-bottom-color:$white;
+      display: inline-block;
+      list-style: none;
+      padding: $padding-small;
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .trail {
+    padding: $padding-small;
+    border: $border-width-small solid $gray-light;
+  }
+} //park-trails
+
+.filter-walking-trails {
+
+  .js-trails-filter {
+    width: 85%;
+  }
+
+  .filter-container {
+    padding: $padding-small $padding-large;
+
+    .filter {
+      .input {
+        font-size: 1.25em;
+        padding: $padding-smallest;
+
+        .page-info,
+        .records-info {
+          font-size: .7em
+        }
+
+        span {
+          padding: $padding-small 0;
+        }
+      }
+
+      .show-records {
+        display: flex;
+        font-size: 0.8em;
+        justify-content: center;
+        padding: $padding-smallest;
+        text-align: right;
+
+        .dg_button-link {
+          padding: $default-padding $padding-smallest;
+        }
+      }
+    }
+  }
+
+  .filter-container-top {
+    border-bottom: $default-border-width solid $gray;
+
+    .filter {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+
+  .paging {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.8em;
+    justify-content: space-between;
+    padding: $padding-small;
+    text-align: center;
+
+    .prev-page {
+      text-align: left;
+    }
+
+    .next-page {
+      text-align: right;
+    }
+
+    .btn-group {
+      margin: auto $margin-smallest;
+    }
+
+    .paging-numbers {
+
+      button {
+        background: none;
+        border: none;
+        color: $blue;
+        font-size: 22px;
+        margin: 0 $margin-smallest;
+        text-decoration: underline;
+        text-transform: inherit;
+
+        &:hover {
+          color: $vibrant-blue;
+        }
+      }
+    }
+  }
+
+  & + .disclaimer {
+    background:$gray-light;
+    border: $border-width-small solid $gray;
+    margin-top: $margin-larger;
+    padding: $padding-small;
+  }
+}
+
+.search-container-trails {
+  margin-bottom: $default-margin;
+  margin-top: $default-margin;
+
+  .clear-filter {
+    margin-left: $default-margin;
+  }
+
+  & > div {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 786px) {
+  .filter-walking-trails {
+    .paging {
+      justify-content: center;
+    }
+
+    .filter-container-top .filter {
+      justify-content: center;
+    }
+
+    .btn-group.paging-numbers {
+      display: flex;
+      justify-content: center;
+      margin: $default-margin;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .js-trails-filter {
+    width: 100%;
+  }
+}
