@@ -1,0 +1,43 @@
+.dg_leadership-card {
+  align-items: center;
+  border: $border-width-small solid $gray;
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - $margin-large);
+  height: expression(100% - $margin-large); //IE11 Fallback
+  justify-content: flex-start;
+  margin-bottom: $margin-large;
+  min-height: 280px;
+  padding: $padding-large $padding-large $padding-largest;
+  text-align: center;
+
+  img {
+    align-self: center;
+    height: 100%;
+    max-height: 150px;
+    width: auto;
+
+    #dg_main-content & {
+      margin-bottom: $default-margin;
+    }
+
+    &.img-rnd {
+      border-radius: 50%;
+      border: $default-border-width solid $red;
+      float: none;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 130px;
+      padding: 0;
+      width: 100%;
+    }
+
+    &.no-border {
+      border: none;
+    }
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}
