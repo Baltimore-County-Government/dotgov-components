@@ -144,6 +144,7 @@
 .filter-walking-trails {
 
   .js-trails-filter {
+    padding: $padding-small;
     width: 85%;
   }
 
@@ -239,6 +240,7 @@
 }
 
 .search-container-trails {
+  justify-content: center;
   margin-bottom: $default-margin;
   margin-top: $default-margin;
 
@@ -250,10 +252,12 @@
     align-items: center;
     display: flex;
     justify-content: center;
+    padding: 0 $padding-small;
+    width: 100%;
   }
 }
 
-@media screen and (max-width: 786px) {
+@media screen and (max-width: $medium-breakpoint) {
   .filter-walking-trails {
     .paging {
       justify-content: center;
@@ -269,11 +273,19 @@
       margin: $default-margin;
       width: 100%;
     }
+
+    .search-container-trails {
+      & > div {
+        padding: 0 $padding-large;
+      }
+    }
   }
 }
 
 @media (max-width: 600px) {
-  .js-trails-filter {
-    width: 100%;
+  .filter-walking-trails {
+    .js-trails-filter {
+      width: 100%;
+    }
   }
 }
