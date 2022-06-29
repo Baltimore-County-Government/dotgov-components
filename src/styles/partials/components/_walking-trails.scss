@@ -294,3 +294,9 @@
     }
   }
 }
+
+@media screen and (max-width: $small-breakpoint) {
+  .legend-container {
+    display: none;
+  }
+}
