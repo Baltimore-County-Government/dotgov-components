@@ -253,7 +253,7 @@
     margin-left: $default-margin;
   }
 
-  & > div {
+  .search-container_inner {
     align-items: center;
     display: flex;
     justify-content: center;
@@ -280,7 +280,7 @@
     }
 
     .search-container-trails {
-      & > div {
+      .search-container_inner {
         padding: 0 $padding-large;
       }
     }
