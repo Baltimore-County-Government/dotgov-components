@@ -7,6 +7,11 @@
     &.map-legend-visible {
       background: $white;
       display: block;
+      height: 525px;
+    }
+
+    .esriLegendLayer {
+      font-size: .7em;
     }
   }
 
@@ -101,7 +106,15 @@
     }
 
     .health-coalition {
-      display: none;
+      display: inline-block;
+      margin: 0 auto $margin-small;
+      text-align: right;
+
+      img {
+        #dg_main-content & {
+          margin: 0;
+        }
+      }
     }
   } // park
 
@@ -143,7 +156,14 @@
 
 .filter-walking-trails {
 
+  .paging button:not(:disabled),
+  .show-records button,
+  .search-container-trails button {
+      cursor: pointer;
+  }
+
   .js-trails-filter {
+    padding: $padding-small;
     width: 85%;
   }
 
@@ -174,6 +194,10 @@
 
         .dg_button-link {
           padding: $default-padding $padding-smallest;
+        }
+
+        button.active {
+          display: none;
         }
       }
     }
@@ -220,18 +244,28 @@
         color: $blue;
         font-size: 22px;
         margin: 0 $margin-smallest;
-        text-decoration: underline;
+        text-decoration: none;
         text-transform: inherit;
 
         &:hover {
           color: $vibrant-blue;
+          text-decoration: underline;
+        }
+
+        &.active {
+          color: #243e5d;
+          font-weight: 900;
+
+          &:hover {
+            cursor: default;
+          }
         }
       }
     }
   }
 
   & + .disclaimer {
-    background:$gray-light;
+    background: $gray-lightest;
     border: $border-width-small solid $gray;
     margin-top: $margin-larger;
     padding: $padding-small;
@@ -239,6 +273,7 @@
 }
 
 .search-container-trails {
+  justify-content: center;
   margin-bottom: $default-margin;
   margin-top: $default-margin;
 
@@ -246,20 +281,23 @@
     margin-left: $default-margin;
   }
 
-  & > div {
+  .search-container_inner {
     align-items: center;
     display: flex;
     justify-content: center;
+    padding: 0 $padding-small;
+    width: 100%;
   }
 }
 
-@media screen and (max-width: 786px) {
+@media screen and (max-width: $medium-breakpoint) {
   .filter-walking-trails {
     .paging {
       justify-content: center;
     }
 
     .filter-container-top .filter {
+      flex-direction: column;
       justify-content: center;
     }
 
@@ -269,11 +307,27 @@
       margin: $default-margin;
       width: 100%;
     }
+
+    .search-container-trails {
+      .search-container_inner {
+        padding: 0 $padding-large;
+      }
+    }
+  }
+
+  .parks-container .park .health-coalition {
+    text-align: left;
   }
 }
 
-@media (max-width: 600px) {
-  .js-trails-filter {
-    width: 100%;
+@media screen and (max-width: $small-breakpoint) {
+  .legend-container {
+    display: none;
+  }
+
+  .filter-walking-trails {
+    .js-trails-filter {
+      width: 100%;
+    }
   }
 }
