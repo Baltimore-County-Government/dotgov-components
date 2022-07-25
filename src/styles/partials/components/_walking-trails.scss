@@ -297,6 +297,7 @@
     }
 
     .filter-container-top .filter {
+      flex-direction: column;
       justify-content: center;
     }
 
@@ -315,16 +316,14 @@
   }
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: $small-breakpoint) {
+  .legend-container {
+    display: none;
+  }
+
   .filter-walking-trails {
     .js-trails-filter {
       width: 100%;
     }
-  }
-}
-
-@media screen and (max-width: $small-breakpoint) {
-  .legend-container {
-    display: none;
   }
 }
