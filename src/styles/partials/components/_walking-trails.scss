@@ -319,8 +319,10 @@
     display: block;
     width: auto;
 
-    .park .health-coalition {
-      text-align: left;
+    .park {
+      .health-coalition {
+        text-align: left;
+      }
     }
   }
 }
