@@ -315,8 +315,16 @@
     }
   }
 
-  .parks-container .park .health-coalition {
-    text-align: left;
+  .parks-container {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+
+    .park {
+      .health-coalition {
+        text-align: left;
+      }
+    }
   }
 }
 
