@@ -3,8 +3,8 @@
   border: $border-width-small solid $gray;
   display: flex;
   flex-direction: column;
-  height: calc(100% - $margin-large);
-  height: expression(100% - $margin-large); //IE11 Fallback
+  height: calc(100% - #{$margin-large});
+  height: expression(100% - #{$margin-large}); //IE11 Fallback
   justify-content: flex-start;
   margin-bottom: $margin-large;
   min-height: 280px;
