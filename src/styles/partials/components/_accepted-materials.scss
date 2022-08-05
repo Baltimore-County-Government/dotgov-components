@@ -1,0 +1,25 @@
+.accepted-materials-key {
+    border-top: $default-border-width dotted $gray-light;
+
+    .fa-ban {
+        color: $red;
+    }
+
+    .fa-recycle {
+        color:green;
+    }
+
+    .fa-trash-alt {
+        color: $pale-blue;
+    }
+
+    .fa-truck {
+        color: $gray;
+    }
+}
+
+.accepted-materials-table {
+    .fa {
+        margin-bottom: $margin-large;
+    }
+}
