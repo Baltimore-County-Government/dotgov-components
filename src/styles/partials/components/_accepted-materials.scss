@@ -1,5 +1,6 @@
 .accepted-materials-key {
     border-top: $default-border-width dotted $gray-light;
+    padding-top: $padding-large;
 
     .fa-ban {
         color: $red;
@@ -16,10 +17,10 @@
     .fa-truck {
         color: $gray;
     }
-}
 
-.accepted-materials-table {
-    .fa {
-        margin-bottom: $margin-large;
+    + #BACO_table_wrapper {
+        .fas {
+            margin-bottom: $margin-large;
+        }
     }
 }
