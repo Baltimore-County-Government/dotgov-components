@@ -19,8 +19,10 @@
     }
 
     + #BACO_table_wrapper {
-        .fas {
-            margin-bottom: $margin-large;
+        #BACO_table {
+            .fas {
+                margin-bottom: $margin-large;
+            }
         }
     }
 }
