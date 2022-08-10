@@ -1,7 +1,4 @@
-.accepted-materials-key {
-    border-top: $default-border-width dotted $gray-light;
-    padding-top: $padding-large;
-
+.accepted-materials-wrapper {
     .fa-ban {
         color: $red;
     }
@@ -18,11 +15,14 @@
         color: $gray;
     }
 
-    + #BACO_table_wrapper {
-        #BACO_table {
-            .fas {
-                margin-bottom: $margin-large;
-            }
+    .key {
+        border-top: $default-border-width dotted $gray-light;
+        padding-top: $padding-large;
+    }
+
+    #BACO_table {
+        .fas {
+            margin-bottom: $margin-large;
         }
     }
 }
