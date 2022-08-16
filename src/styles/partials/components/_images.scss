@@ -18,13 +18,13 @@
   .image_right {
     border: none;
     float: right;
-    margin: 0 0 20px 20px;
+    margin: 0 0 $default-margin $default-margin;
   }
 
   .image_left {
     border: none;
     float: left;
-    margin: 0 20px 20px 0;
+    margin: 0 $default-margin $default-margin 0;
   }
 
   img,
