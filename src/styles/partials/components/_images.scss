@@ -13,6 +13,20 @@
     }
   }
 
+  /*** This is a holdover from the previous template for the Resource blog. Please do not use this going forward. ***/
+
+  .image_right {
+    border: none;
+    float: right;
+    margin: 0 0 20px 20px;
+  }
+
+  .image_left {
+    border: none;
+    float: left;
+    margin: 0 20px 20px 0;
+  }
+
   img,
   .dg_image {
     max-width: 100%;
