@@ -1,0 +1,186 @@
+/* --- Translate Header Button: Desktop --- */
+.dg_mobile-translate-button {
+    display: none;
+}
+
+.dg_search-container {
+    .dg_header-right & {
+        margin-right: 15px;
+        width: 100%;
+    }
+}
+
+.dg_button {
+    .dg_header-right & {
+        align-items: center;
+        cursor: pointer;
+        display: flex;
+        font-size: $smallest-font-size;
+        min-width: 130px;
+        padding: $padding-small;
+
+        i {
+            &.dg_button_icon {
+                + i,
+                + font + i {
+                    margin-left: 8px;
+                    margin-right: 0;
+                }
+            }
+        }
+
+        .fa-angle-down {
+            transition: all .3s ease-in;
+        }
+        
+        &[aria-expanded="true"] {
+            .fa-angle-down {
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
+
+.dropdown.language-dropdown {
+    position: relative;
+
+    .language-dropdown-menu {
+        background-clip: padding-box;
+        background-color: $white;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, .18);
+        display: none;
+        float: left;
+        font-size: $smallest-font-size;
+        left: 0;
+        list-style: none;
+        margin: 2px 0 0;
+        padding: $padding-smallest 0;
+        position: absolute;
+        text-align: left;
+        top: 100%;
+        width: 100%;
+        z-index: 1000;
+
+        > li {
+            > a {
+                background:transparent;
+                clear: both;
+                color: $black;
+                cursor: pointer;
+                display: block;
+                font-family: $default-heading-font;
+                font-weight: $font-medium;
+                line-height: 1.4;
+                padding: $padding-smallest $default-padding;
+                position: relative;
+                text-align: left;
+                text-transform: uppercase;
+                text-decoration: none;
+                white-space: nowrap;
+                width: 100%;
+
+                &:after {
+                    background: $gray-light;
+                    bottom: 0;
+                    content: '';
+                    height: 1px;
+                    left: 50%;
+                    position: absolute;
+                    transform: translateX(-50%);
+                    width: calc(100% - 30px);
+                }
+
+                &:focus,
+                &:hover {
+                    background-color: $white;
+                    color: $vibrant-blue;
+                    text-decoration: none;
+                }
+            }
+
+            &:last-of-type {
+                > a {
+                    &:after {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* --- Translate Header Button: Mobile --- */
+.dg_mobile-translate-button {
+    align-items: center;
+    display: none;
+    flex-direction: column;
+    font-family: $default-heading-font;
+    font-size: $smallest-font-size;
+    font-weight: $font-normal;
+    justify-content: center;
+    position: relative;
+    text-transform: uppercase;
+
+    i {
+        font-size: $h2-font-size;
+        margin-bottom: $margin-smallest;
+    }
+}
+
+.language-dropdown--mobile {
+    display: none;
+}
+
+/* --- Google Translate Fix --- */
+/* --- When Google Translate is active, '.translated-ltr' class is added to the html element on the page --- */
+.translated-ltr {
+    .dg_site-header {
+        top: 40px !important;
+    }
+
+    #bc_site-nav {
+        .bc_site-nav__toggle-button,
+        #fake-site-nav-button {
+            top: 50px !important;
+        }
+    }
+}
+
+/* --- Media Queries --- */
+@media screen and (max-width: $header-breakpoint) {
+    .dg_mobile-translate-button {
+        display: flex;
+    }
+
+    .dg_header-right {
+        .dropdown {
+            &.language-dropdown {
+                display: none;
+            }
+        }
+    }
+
+    .dg_status-text {
+        bottom: -131px;
+    }
+
+    .dropdown {
+        &.language-dropdown {
+            &.language-dropdown--mobile {
+                display: flex;
+                height: 100%;
+                justify-content: flex-end;
+                padding: 0 $padding-large;
+                position: absolute;
+                right: 0;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $small-breakpoint) {
+    .dg_mobile-translate-button {
+        font-size: $tiny-font-size;
+    }
+}
