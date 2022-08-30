@@ -65,7 +65,7 @@
             > a {
                 background:transparent;
                 clear: both;
-                color: $black;
+                color: $gray; //Bug 22759
                 cursor: pointer;
                 display: block;
                 font-family: $default-heading-font;
