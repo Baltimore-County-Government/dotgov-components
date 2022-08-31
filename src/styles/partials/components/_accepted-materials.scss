@@ -1,0 +1,28 @@
+.accepted-materials-wrapper {
+    .fa-ban {
+        color: $red;
+    }
+
+    .fa-recycle {
+        color: $vibrant-green;
+    }
+
+    .fa-trash-alt {
+        color: $pale-blue;
+    }
+
+    .fa-truck {
+        color: $gray;
+    }
+
+    .key {
+        border-top: $default-border-width dotted $gray-light;
+        padding-top: $padding-large;
+    }
+
+    #BACO_table {
+        .fas {
+            margin-bottom: $margin-large;
+        }
+    }
+}
