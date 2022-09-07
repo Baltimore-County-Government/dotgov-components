@@ -55,7 +55,7 @@
     "nwb": "^0.25.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-styleguidist": "^9.2.0",
+    "react-styleguidist": "^12.0.0",
     "react-test-renderer": "^16.13.1",
     "sass-loader": "^7.3.1",
     "webpack": "^4.43.0"
