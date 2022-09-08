@@ -135,13 +135,13 @@
 /* --- When Google Translate is active, '.translated-ltr' class is added to the html element on the page --- */
 .translated-ltr {
     .dg_site-header {
-        top: 40px !important;
+        top: 40px;
     }
 
     #bc_site-nav {
         .bc_site-nav__toggle-button,
         #fake-site-nav-button {
-            top: 50px !important;
+            top: 50px;
         }
     }
 }
