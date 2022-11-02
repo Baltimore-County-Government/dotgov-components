@@ -20,7 +20,8 @@
     }
   }
 
-  p {
+  p,
+  ul {
     font-size: $smallest-heading-font-size;
     margin-bottom: $margin-small;
     &:last-child {
@@ -29,7 +30,8 @@
   }
 
   p,
-  .dg_alert__status {
+  .dg_alert__status,
+  ul {
     font-family: $default-heading-font;
   }
 
