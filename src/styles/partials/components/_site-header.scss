@@ -54,6 +54,15 @@ $header-height: 65px;
     width: 100%;
     z-index: 2000;
   }
+  &.dg_min-header {
+    height: 85px;
+
+    .dg_brand {
+      .dg_brand-text {
+        border-right: none;
+      }
+    }
+  }
 }
 
 .dg_header-right {
