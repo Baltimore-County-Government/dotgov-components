@@ -139,8 +139,8 @@ $header-height: 65px;
     }
 
     &.dg_min-header {
-      background: #f7f7f7;
-      margin-bottom: 10px;
+      background: $gray-lightest;
+      margin-bottom: $margin-small;
     }
   }
 
