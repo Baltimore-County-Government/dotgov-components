@@ -54,6 +54,15 @@ $header-height: 65px;
     width: 100%;
     z-index: 2000;
   }
+  &.dg_min-header {
+    height: 85px;
+
+    .dg_brand {
+      .dg_brand-text {
+        border-right: none;
+      }
+    }
+  }
 }
 
 .dg_header-right {
@@ -114,17 +123,24 @@ $header-height: 65px;
   .dg_header p {
     padding: $padding-large + 1;
   }
-  .dg_site-header .dg_brand {
-    .dg_brand-text {
-      border-right: none;
-      text-align: center;
 
-      position: absolute;
-      top: 12.5px; /* Visually calculated for this component only*/
-      bottom: 0;
-      left: 0;
-      right: 0;
-      padding: 0;
+  .dg_site-header {
+    .dg_brand {
+      .dg_brand-text {
+        border-right: none;
+        text-align: center;
+        position: absolute;
+        top: 12.5px; /* Visually calculated for this component only*/
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 0;
+      }
+    }
+
+    &.dg_min-header {
+      background: $gray-lightest;
+      margin-bottom: $margin-small;
     }
   }
 
