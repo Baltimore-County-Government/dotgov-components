@@ -40,7 +40,6 @@ $header-height: 65px;
     align-items: center;
 
     .dg_brand-text {
-      border-right: $border-width-small solid $gray-light;
       padding: 0 $padding-large;
     }
 
@@ -103,7 +102,7 @@ $header-height: 65px;
     background: $white;
     position: sticky;
     z-index: 99;
-    margin-bottom: 130px; /* Visually calculated for this component only */ /* Edited margin for 22583-header-translate */
+    margin-bottom: 65px; /* Visually calculated for this component only */ /* Edited margin for 22583-header-translate */
     justify-content: flex-end;
     top: 0;
   }
