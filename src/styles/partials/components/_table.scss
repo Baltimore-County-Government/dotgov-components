@@ -54,7 +54,7 @@
 
 #BACO_table {
   /* IMPORTANT IS USED HERE TO OVERRIDE THE SE TABLE STYLING */
-  border: $border-width-small solid $gray-light !important; 
+  border: $border-width-small solid $gray-light !important;
   margin-bottom: $default-margin;
   max-width: 100%;
   width: 100%;
@@ -62,12 +62,19 @@
   min-height: 0.01%;
   overflow-x: auto;
 
-  .BACOTableHeader {
-    border-bottom: $border-width-large solid $blue;
-    color: $black;
-    font-family: $default-heading-font;
-    font-size: $small-heading-font-size;
-    font-weight: $font-medium;
-    padding: $padding-large;
+  td {
+    &.BACOTableHeader {
+      border-bottom: $border-width-large solid $blue;
+      color: $black;
+      font-family: $default-heading-font;
+      font-size: $small-heading-font-size;
+      font-weight: $font-medium;
+      padding: $padding-large;
+
+      p {
+        font-family: $default-heading-font;
+        font-size: $small-heading-font-size;
+      }
+    }
   }
 }
