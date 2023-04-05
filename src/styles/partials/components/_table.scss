@@ -49,3 +49,25 @@
     }
   }
 }
+
+/* BRINGING OLDER SE CLASSES UP TO SPEED WITH THE NEW TEMPLATE */
+
+#BACO_table {
+  /* IMPORTANT IS USED HERE TO OVERRIDE THE SE TABLE STYLING */
+  border: $border-width-small solid $gray-light !important; 
+  margin-bottom: $default-margin;
+  max-width: 100%;
+  width: 100%;
+  display: inline-block;
+  min-height: 0.01%;
+  overflow-x: auto;
+
+  .BACOTableHeader {
+    border-bottom: $border-width-large solid $blue;
+    color: $black;
+    font-family: $default-body-font;
+    font-size: $small-heading-font-size;
+    font-weight: $font-medium;
+    padding: $padding-large;
+  }
+}
